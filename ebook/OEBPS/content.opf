@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uid" xml:lang="en">
+
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:identifier id="uid">soe-rhythm-quest-picture-dictionary-v1</dc:identifier>
+    <dc:title>SOE Rhythm Quest: Essential Picture Dictionary</dc:title>
+    <dc:creator>Sound of Essentials</dc:creator>
+    <dc:language>en</dc:language>
+    <dc:description>A 4,000+ word picture dictionary mapped across the 7 Lands of the Rhythm Quest universe. Designed for ESOL families, adult learners, and early childhood language development. Adjacent in scope to the Oxford Picture Dictionary.</dc:description>
+    <dc:subject>ESOL</dc:subject>
+    <dc:subject>English Language Learning</dc:subject>
+    <dc:subject>Picture Dictionary</dc:subject>
+    <dc:subject>Family Literacy</dc:subject>
+    <dc:rights>© Sound of Essentials. All rights reserved.</dc:rights>
+    <meta property="dcterms:modified">2026-03-01T00:00:00Z</meta>
+  </metadata>
+
+  <manifest>
+    <!-- Styles -->
+    <item id="css-main" href="styles/dictionary.css" media-type="text/css"/>
+
+    <!-- Pages -->
+    <item id="cover" href="pages/cover.xhtml" media-type="application/xhtml+xml"/>
+    <item id="frontmatter" href="pages/frontmatter.xhtml" media-type="application/xhtml+xml"/>
+    <item id="land3-barnyard" href="pages/land3-barnyard.xhtml" media-type="application/xhtml+xml"/>
+    <item id="land3-wild-animals" href="pages/land3-wild-animals.xhtml" media-type="application/xhtml+xml"/>
+    <item id="land5-human-body" href="pages/land5-human-body.xhtml" media-type="application/xhtml+xml"/>
+    <item id="land5-produce-market" href="pages/land5-produce-market.xhtml" media-type="application/xhtml+xml"/>
+
+    <!-- Navigation -->
+    <item id="nav" href="pages/nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+  </manifest>
+
+  <spine>
+    <itemref idref="cover"/>
+    <itemref idref="frontmatter"/>
+    <itemref idref="land3-barnyard"/>
+    <itemref idref="land3-wild-animals"/>
+    <itemref idref="land5-human-body"/>
+    <itemref idref="land5-produce-market"/>
+  </spine>
+
+</package>

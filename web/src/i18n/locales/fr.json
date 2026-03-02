@@ -1,0 +1,515 @@
+{
+    "app_title": "The Sound of Essentials : Rhythm Quest",
+    "navbar": {
+        "home": "Accueil",
+        "universe": "L'Univers",
+        "heroes": "Héros",
+        "science": "Science",
+        "media": "Médiathèque",
+        "mission": "Notre Mission",
+        "join": "Rejoindre l'Aventure",
+        "toggle_menu": "Afficher le menu de navigation",
+        "toggle_lang": "Changer la langue"
+    },
+    "hero": {
+        "title": "Conçu pour le cerveau en développement,",
+        "subtitle": "pas pour l'algorithme.",
+        "join_button": "Rejoindre la Quête"
+    },
+    "footer": {
+        "tagline": "Conçu pour le cerveau en développement, pas pour l'algorithme.",
+        "explore": "Explorer",
+        "get_involved": "S'engager",
+        "stay_connected": "Rester Connecté",
+        "subscribe": "S'abonner",
+        "all_rights_reserved": "Tous droits réservés.",
+        "sci_sound": "Science du Son",
+        "partner": "Participer",
+        "newsletter": "Newsletter",
+        "weekly_activities": "Activités hebdomadaires neuro-affirmantes et sorties musicales."
+    },
+    "home": {
+        "hero_label": "L'Anti-Cocomelon",
+        "hero_title_1": "Conçu pour le cerveau en développement,",
+        "hero_title_2": "pas pour l'algorithme.",
+        "hero_subtitle": "Un écosystème scientifiquement fondé et axé sur la musique.",
+        "hero_note": "Pour les enfants de 2 à 8 ans · Fondé sur les neurosciences",
+        "why_label": "La Double Crise",
+        "why_title_1": "Nous transformons un État d'Urgence",
+        "why_title_2": "en Sound of Essentials: Rhythm Quest.",
+        "why_subtitle": "300 millions d'enfants dans le monde ne savent pas lire correctement.",
+        "stat_1_val": "300M",
+        "stat_1_lab": "Les enfants manquent de compétences en lecture",
+        "stat_2_val": "44M",
+        "stat_2_lab": "Déficit mondial d'enseignants",
+        "stat_3_val": "1M",
+        "stat_3_lab": "Connexions neurales formées par seconde durant les 1 000 premiers jours",
+        "approach_label": "Notre Approche",
+        "approach_title_1": "Pas du divertissement.",
+        "approach_title_2": "Une intervention.",
+        "approach_subtitle": "Chaque élément de SOE est conçu pour protéger et nourrir le cerveau.",
+        "curriculum_label": "Le Programme",
+        "curriculum_title_1": "Cinq Domaines d'",
+        "curriculum_title_2": "Apprentissage Essentiel",
+        "curriculum_subtitle": "Chaque leçon tisse les cinq domaines de développement.",
+        "cta_title": "La biologie n'attend pas que les systèmes se réparent d'eux-mêmes.",
+        "cta_subtitle": "Rejoignez l'écosystème de soutien.",
+        "explore_media": "Explorer la Médiathèque →",
+        "domains": {
+            "language": {
+                "title": "Langage",
+                "desc": "Phonétique, vocabulaire et communication par la chanson et le rythme."
+            },
+            "cognitive": {
+                "title": "Cognitif",
+                "desc": "Reconnaissance des formes, mémoire et résolution de problèmes par le jeu musical."
+            },
+            "physical": {
+                "title": "Physique",
+                "desc": "Capacités motrices et conscience corporelle par le mouvement et la danse."
+            },
+            "science": {
+                "title": "Science",
+                "desc": "Nature, anatomy and discovery through sensory exploration."
+            },
+            "social_emotional": {
+                "title": "Socio-Émotionnel",
+                "desc": "Manners, empathy and self-regulation through collaborative music."
+            }
+        },
+        "features": {
+            "active": {
+                "title": "Actif, Pas Passif",
+                "subtitle": "Enseignant-en-Boîte",
+                "desc": "Chaque épisode est une leçon structurée."
+            },
+            "neuro": {
+                "title": "Neuro-Affirmant",
+                "subtitle": "Calme par Conception",
+                "desc": "Un rythme lent, un design audio axé sur l'ASMR et un silence intentionnel."
+            },
+            "scalable": {
+                "title": "Mondialement Évolutif",
+                "subtitle": "Aucun Enseignant Requis",
+                "desc": "Conçu pour le déficit d'enseignants."
+            }
+        }
+    },
+    "universe": {
+        "hero_label": "Le Programme",
+        "hero_title_1": "L'Univers de",
+        "hero_title_2": "Sound of Essentials: Rhythm Quest",
+        "hero_subtitle": "Guidés par Seriphia, une Mère d'Apprentissage Éternelle.",
+        "seriphia_label": "Votre Guide",
+        "seriphia_title": "Rencontrez Seriphia",
+        "seriphia_subtitle": "Une Mère d'Apprentissage Éternelle",
+        "seriphia_desc_1": "Seriphia est la gardienne radieuse qui veille sur les sept terres.",
+        "seriphia_desc_2": "Elle représente le facilitateur idéal.",
+        "map_label": "Le Voyage",
+        "map_title": "La Carte Sonore Mondiale",
+        "map_subtitle": "Chaque terre représente un domaine critique.",
+        "map_pin_title": "Explorer {{land}}",
+        "lands_label": "Les 7 Terres",
+        "lands_title_1": "Rencontrez les",
+        "lands_title_2": "Duos de Héros",
+        "lands_subtitle": "Sept paires de héros.",
+        "science_label": "La Science",
+        "science_title_1": "Ancré dans une",
+        "science_title_2": "Pédagogie Éprouvée",
+        "science_subtitle": "Le programme repose sur trois méthodologies.",
+        "lands": {
+            "Harmonia": {
+                "focus": "Langage et Savoir-vivre",
+                "desc": "Dans la Terre d'Harmonia, Kenji et Aiko découvrent que les mots portent de la musique."
+            },
+            "Numeria": {
+                "focus": "Nombres et Mathématiques",
+                "desc": "Kwame et Octavia naviguent dans le monde rythmique de Numeria."
+            },
+            "Vitalis": {
+                "focus": "Capacités Physiques et Motrices",
+                "desc": "Felix et Amara traversent Vitalis."
+            },
+            "Chronia": {
+                "focus": "Temps et Saisons",
+                "desc": "En Chronia, Elias et Selene apprennent les rythmes du temps."
+            },
+            "Lexiconia": {
+                "focus": "Langage Avancé",
+                "desc": "Ronan et Nerissa s'attaquent aux mots difficiles."
+            },
+            "Geometria": {
+                "focus": "Formes et Raisonnement Spatial",
+                "desc": "Silas et Vesta explorent les paysages géométriques."
+            },
+            "Natura": {
+                "focus": "Science et Nature",
+                "desc": "Ezra et Athena plongent dans Natura."
+            }
+        },
+        "pedagogy": {
+            "Dalcroze": {
+                "name": "Eurythmie Dalcroze",
+                "desc": "Apprendre par le mouvement et le rythme."
+            },
+            "Orff": {
+                "name": "Orff Schulwerk",
+                "desc": "Création musicale active."
+            },
+            "Kodaly": {
+                "name": "Méthode Kodály",
+                "desc": "Développer l'audition intérieure."
+            }
+        }
+    },
+    "heroes": {
+        "hero_label": "Héros",
+        "hero_title_1": "Nos",
+        "hero_title_2": "Héros",
+        "hero_subtitle": "15 héros à travers 7 terres — chacun étant un guide.",
+        "filter_all": "Tous",
+        "read_more": "Lire la suite ▼",
+        "show_less": "Moins ▲",
+        "cta_title_1": "Prêt à Commencer la",
+        "cta_title_2": "Quête",
+        "cta_subtitle": "Rejoignez le mouvement.",
+        "traits": {
+            "Wisdom": {
+                "name": "Sagesse",
+                "desc": "La capacité d'appliquer les connaissances."
+            },
+            "Patience": {
+                "name": "Patience",
+                "desc": "Rester calme et constant."
+            },
+            "Nurturing": {
+                "name": "Bienveillance",
+                "desc": "Offrir chaleur et soin."
+            },
+            "Creative": {
+                "name": "Créatif",
+                "desc": "Penser au-delà de l'évident."
+            },
+            "Curious": {
+                "name": "Curieux",
+                "desc": "Un désir profond d'explorer."
+            },
+            "Respectful": {
+                "name": "Respectueux",
+                "desc": "Traiter chaque personne avec dignité."
+            },
+            "Empathetic": {
+                "name": "Empathique",
+                "desc": "La capacité de ressentir les autres."
+            },
+            "Articulate": {
+                "name": "Éloquent",
+                "desc": "Exprimer ses pensées clairement."
+            },
+            "Kind": {
+                "name": "Gentil",
+                "desc": "Agir avec soin."
+            },
+            "Analytical": {
+                "name": "Analytique",
+                "desc": "Décomposer les problèmes."
+            },
+            "Rhythmic": {
+                "name": "Rythmique",
+                "desc": "Un sens naturel du motif."
+            },
+            "Observant": {
+                "name": "Observateur",
+                "desc": "Remarquer les détails."
+            },
+            "Logical": {
+                "name": "Logique",
+                "desc": "Penser par étapes claires."
+            },
+            "Playful": {
+                "name": "Ludique",
+                "desc": "Aborder l'apprentissage avec joie."
+            },
+            "Energetic": {
+                "name": "Énergique",
+                "desc": "Apporter vitalité."
+            },
+            "Coordinated": {
+                "name": "Coordonné",
+                "desc": "Bouger avec contrôle."
+            },
+            "Joyful": {
+                "name": "Joyeux",
+                "desc": "Rayonner de bonheur."
+            },
+            "Graceful": {
+                "name": "Gracieux",
+                "desc": "Bouger avec élégance."
+            },
+            "Encouraging": {
+                "name": "Encourageant",
+                "desc": "Elever les autres."
+            },
+            "Strong": {
+                "name": "Fort",
+                "desc": "Résilience."
+            },
+            "Thoughtful": {
+                "name": "Réfléchi",
+                "desc": "Considérer les idées."
+            },
+            "Steady": {
+                "name": "Constant",
+                "desc": "Fiable et cohérent."
+            },
+            "Wise": {
+                "name": "Sage",
+                "desc": "Guider les autres."
+            },
+            "Intuitive": {
+                "name": "Intuitif",
+                "desc": "Sentir ce qui est nécessaire."
+            },
+            "Melodic": {
+                "name": "Mélodique",
+                "desc": "Porter la musique."
+            },
+            "Reflective": {
+                "name": "Pensif",
+                "desc": "Regarder à l'intérieur."
+            },
+            "Brave": {
+                "name": "Courageux",
+                "desc": "Faire face aux défis."
+            },
+            "Persistent": {
+                "name": "Persévérant",
+                "desc": "Ne jamais abandonner."
+            },
+            "Precise": {
+                "name": "Précis",
+                "desc": "Attention aux détails."
+            },
+            "Determined": {
+                "name": "Déterminé",
+                "desc": "Mener à bien."
+            },
+            "Inventive": {
+                "name": "Inventif",
+                "desc": "Solutions créatives."
+            },
+            "Confident": {
+                "name": "Confiant",
+                "desc": "Croire en soi."
+            },
+            "Spatial": {
+                "name": "Spatial",
+                "desc": "Objets dans l'espace."
+            },
+            "Methodical": {
+                "name": "Méthodique",
+                "desc": "Travailler par étapes."
+            },
+            "Gentle": {
+                "name": "Doux",
+                "desc": "Douceur et soin."
+            },
+            "Scientific": {
+                "name": "Scientifique",
+                "desc": "Questionner et découvrir."
+            },
+            "Adventurous": {
+                "name": "Aventureux",
+                "desc": "Explorer l'inconnu."
+            }
+        },
+        "lands": {
+            "The Celestial": "Le Céleste",
+            "Harmonia": "Harmonia",
+            "Numeria": "Numeria",
+            "Vitalis": "Vitalis",
+            "Chronia": "Chronia",
+            "Lexiconia": "Lexiconia",
+            "Geometria": "Geometria",
+            "Natura": "Natura"
+        },
+        "data": {
+            "Seriphia": {
+                "title": "Une Mère d'Apprentissage Éternelle",
+                "bio": "Seriphia est la gardienne radieuse.",
+                "focus": "Gardienne et Guide"
+            },
+            "Kenji": {
+                "title": "Le Musicien des Mots",
+                "bio": "Kenji découvre que chaque mot porte une mélodie.",
+                "focus": "Langage et Savoir-vivre"
+            },
+            "Aiko": {
+                "title": "La Gardienne de l'Harmonie",
+                "bio": "Aiko apporte l'harmonie.",
+                "focus": "Langage et Savoir-vivre"
+            },
+            "Kwame": {
+                "title": "Le Compteur de Rythme",
+                "bio": "Kwame entend des chiffres dans chaque battement.",
+                "focus": "Nombres et Mathématiques"
+            },
+            "Octavia": {
+                "title": "La Tisseuse de Motifs",
+                "bio": "Octavia voit des motifs partout.",
+                "focus": "Nombres et Mathématiques"
+            },
+            "Felix": {
+                "title": "Le Maître du Mouvement",
+                "bio": "Felix traverse Vitalis.",
+                "focus": "Capacités Physiques et Motrices"
+            },
+            "Amara": {
+                "title": "La Guide de Danse",
+                "bio": "Amara sait que le corps est le premier instrument.",
+                "focus": "Capacités Physiques et Motrices"
+            },
+            "Elias": {
+                "title": "Le Gardien du Temps",
+                "bio": "Elias comprend le rythme du temps.",
+                "focus": "Temps et Saisons"
+            },
+            "Selene": {
+                "title": "La Chanteuse des Saisons",
+                "bio": "Selene chante les saisons.",
+                "focus": "Temps et Saisons"
+            },
+            "Ronan": {
+                "title": "Le Guerrier des Mots",
+                "bio": "Ronan s'attaque aux mots difficiles.",
+                "focus": "Langage Avancé"
+            },
+            "Nerissa": {
+                "title": "La Sculptrice de Sons",
+                "bio": "Nerissa sculpte les sons.",
+                "focus": "Langage Avancé"
+            },
+            "Silas": {
+                "title": "Le Chercheur de Formes",
+                "bio": "Silas voit de la géométrie en tout.",
+                "focus": "Formes et Raisonnement Spatial"
+            },
+            "Vesta": {
+                "title": "La Navigatrice de l'Espace",
+                "bio": "Vesta navigue dans l'espace.",
+                "focus": "Formes et Raisonnement Spatial"
+            },
+            "Ezra": {
+                "title": "L'Écouteur de la Nature",
+                "bio": "Ezra écoute la nature.",
+                "focus": "Science et Nature"
+            },
+            "Athena": {
+                "title": "La Sage de la Découverte",
+                "bio": "Athena apporte la sagesse.",
+                "focus": "Science et Nature"
+            }
+        }
+    },
+    "science": {
+        "hero_label": "Pédagogie et Science",
+        "hero_title_1": "La Science du",
+        "hero_title_2": "Son",
+        "hero_subtitle": "Chroniques de l'Horloge : Comprendre l'architecture neurologique derrière chaque rythme.",
+        "track_label": "Le Morceau",
+        "track_title": "Savez-vous quelle heure il est ?",
+        "listen_btn": "Ecoutez les morceaux →",
+        "beyond_title_1": "Au-delà de la",
+        "beyond_title_2": "Mélodie",
+        "beyond_desc_1": "Cela peut sembler n'être que les paroles d'une chanson entraînante, mais plongez plus profondément et vous verrez une leçon brillamment déguisée.",
+        "beyond_desc_2": "Ce morceau est un ajout vital à Celestia : Le Jardin du Temps, où nos héros Elias et Selene guident les enfants.",
+        "breakdown_label": "Analyse Pédagogique",
+        "breakdown_title_1": "Pourquoi ce morceau est",
+        "breakdown_title_2": "Stratégiquement Essentiel",
+        "breakdown_subtitle": "Chaque élément est conçu pour soutenir le développement neurologique.",
+        "cards": {
+            "sequencing": {
+                "title": "Séquençage Rythmique",
+                "desc": "En séparant distinctement les heures pleines des demi-heures, nous introduisons des concepts fractionnaires."
+            },
+            "anchoring": {
+                "title": "Ancrage de Concepts Abstraits",
+                "desc": "Le temps est invisible. Nous résolvons cela en liant les nombres à des ancres physiques concrètes."
+            },
+            "regulation": {
+                "title": "Régulation Émotionnelle",
+                "desc": "L'imprévisibilité crée de l'anxiété. Cartographier la journée renforce les fonctions exécutives."
+            }
+        },
+        "implementation_label": "Mise en Pratique",
+        "implementation_title_1": "Passez à la",
+        "implementation_title_2": "Pratique",
+        "implementation_desc_1": "Dans notre « Guide de l'enseignant », nous associons cette chanson à un « tableau de routine quotidienne » visuel.",
+        "implementation_desc_2": "Les parents et les éducateurs pointent vers un cadran d'horloge. Cette interaction physique consolide l'apprentissage.",
+        "cta_title_1": "La science n'est que le",
+        "cta_title_2": "Début",
+        "cta_subtitle": "Découvrez comment ces principes neurologiques se traduisent en mélodies joyeuses."
+    },
+    "join": {
+        "hero_label": "Rejoignez l'Aventure",
+        "hero_title_1": "Faites partie de l' ",
+        "hero_title_2": "Écosystème de Soutien",
+        "hero_subtitle": "Que vous soyez parent, éducateur, leader communautaire ou investisseur à impact, il y a une place pour vous dans le mouvement The Sound of Essentials : Rhythm Quest.",
+        "stay_connected": "Restez Connecté",
+        "newsletter_desc": "Recevez chaque semaine des activités neuro-affirmatives, des sorties musicales exclusives et des nouvelles de Rhythm Quest, directement dans votre boîte de réception.",
+        "welcome_quest": "Bienvenue dans l'Aventure !",
+        "welcome_desc": "Merci de nous avoir rejoint. Votre première surprise est en route.",
+        "email_placeholder": "Entrez votre adresse e-mail",
+        "subscribe": "S'abonner",
+        "email_error": "Veuillez entrer une adresse e-mail valide.",
+        "org_email_error": "Veuillez entrer une adresse e-mail d'organisation valide.",
+        "no_spam": "Pas de spam. Juste du contenu essentiel et apaisant. Désabonnez-vous à tout moment.",
+        "who_we_serve": "Qui nous servons",
+        "find_your_role_1": "Trouvez votre ",
+        "find_your_role_2": "Rôle",
+        "find_your_role_3": " dans l'aventure",
+        "audience_1_title": "Parents et aidants",
+        "audience_1_desc": "Vous cherchez des alternatives sûres et intentionnelles au temps d'écran ? SOE transforme les médias passifs en expériences de développement actives. Abonnez-vous pour des activités hebdomadaires à faire à la maison.",
+        "audience_2_title": "Éducateurs et leaders communautaires",
+        "audience_2_desc": "Vous cherchez un programme évolutif ? Notre modèle « Teacher-in-a-Box » vous permet de déployer SOE dans votre classe ou centre communautaire sans formation spécialisée.",
+        "audience_3_title": "Investisseurs à impact et ONG",
+        "audience_3_desc": "Vous financez des solutions pour la crise mondiale de l'éducation préscolaire ? SOE est conçu pour un impact à grande échelle, une intervention musicale qui fonctionne là où les infrastructures traditionnelles ne peuvent atteindre.",
+        "partnerships_label": "Partenariats",
+        "build_together_1": "Construisons ",
+        "build_together_2": "Ensemble",
+        "partnerships_subtitle": "Écoles, ONG, investisseurs et organisations communautaires, contactez-nous pour découvrir comment le modèle SOE peut servir votre communauté.",
+        "message_received": "Message reçu !",
+        "partnership_thank_you": "Merci de votre intérêt pour un partenariat avec SOE. Notre équipe vous répondra sous 48 heures.",
+        "label_name": "Votre nom",
+        "label_org": "Organisation",
+        "label_email": "Adresse e-mail",
+        "label_partner": "Comment pouvons-nous collaborer ?",
+        "placeholder_name": "Jane Doe",
+        "placeholder_org": "École, ONG ou Entreprise",
+        "placeholder_email": "vous@organisation.com",
+        "placeholder_message": "Parlez-nous de votre communauté, de vos objectifs et de la manière dont SOE peut vous aider.",
+        "sending": "Envoi de la demande...",
+        "send_btn": "Envoyer la demande",
+        "mission_title_1": "La mission commence par la ",
+        "mission_title_2": "Musique",
+        "mission_subtitle": "Entrez dans l'Espace Média et écoutez l'essentiel par vous-même.",
+        "explore_media": "Explorer l'Espace Média →"
+    },
+    "assistant": {
+        "badge": "SAGE IA",
+        "title": "Assistant de Recherche",
+        "subtitle": "Posez vos questions sur la pédagogie, l'architecture neurologique ou les objectifs du projet.",
+        "empty_state": "« Comment le séquençage rythmique soutient-il les fonctions exécutives ? »",
+        "placeholder": "Demandez au Sage IA...",
+        "ask_btn": "Demander",
+        "error_conn": "Attendez, Elias vérifie l'heure... (Échec de la connexion. Veuillez vérifier votre clé API ou votre connexion).",
+        "error_key": "La clé API Perplexity est manquante dans le fichier .env. Veuillez ajouter VITE_PERPLEXITY_API_KEY.",
+        "system_prompt": "Vous êtes un assistant de recherche pour Flavor Codes et The Sound of Essentials. Vous analysez l'architecture neurologique, la pédagogie et la mise en œuvre stratégique d'outils de développement basés sur la musique. Soyez perspicace, encourageant et très détaillé."
+    },
+    "splash": {
+        "line1": "Le Son de",
+        "line2": "l'Essentiel",
+        "subtitle": "Rhythm Quest",
+        "tagline": "Conçu pour le cerveau en développement"
+    }
+}

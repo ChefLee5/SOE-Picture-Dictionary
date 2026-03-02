@@ -1,0 +1,63 @@
+name: "🎨 Hero Variation"
+description: "Request a new pose or scene for an existing hero"
+title: "[VARIATION] "
+labels: ["hero-variation", "pending"]
+body:
+  - type: dropdown
+    id: hero-name
+    attributes:
+      label: Hero
+      description: "Which hero should appear in this variation?"
+      options:
+        - Seriphia
+        - Kenji
+        - Aiko
+        - Kwame
+        - Octavia
+        - Felix
+        - Amara
+        - Elias
+        - Selene
+        - Ronan
+        - Nerissa
+        - Silas
+        - Vesta
+        - Ezra
+        - Athena
+    validations:
+      required: true
+
+  - type: textarea
+    id: scene-description
+    attributes:
+      label: Scene / Pose Description
+      description: "Describe the setting, pose, or action you'd like to see this hero in."
+      placeholder: "e.g. Seriphia meditating under a starlit sky with fireflies around her..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: mood
+    attributes:
+      label: Mood
+      description: "What's the overall vibe?"
+      options:
+        - Joyful & Energetic
+        - Calm & Peaceful
+        - Adventurous & Bold
+        - Thoughtful & Reflective
+        - Playful & Fun
+    validations:
+      required: true
+
+  - type: dropdown
+    id: aspect-ratio
+    attributes:
+      label: Aspect Ratio
+      description: "What format do you need?"
+      options:
+        - Square (1:1)
+        - Landscape (16:9)
+        - Portrait (9:16)
+    validations:
+      required: false

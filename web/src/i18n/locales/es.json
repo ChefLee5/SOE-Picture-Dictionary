@@ -1,0 +1,453 @@
+{
+    "app_title": "The Sound of Essentials: Rhythm Quest",
+    "navbar": {
+        "home": "Inicio",
+        "universe": "El Universo",
+        "heroes": "Héroes",
+        "science": "Ciencia",
+        "media": "Sala de Medios",
+        "mission": "Nuestra Misión",
+        "join": "Únete a la Búsqueda",
+        "toggle_menu": "Alternar menú de navegación",
+        "toggle_lang": "Cambiar idioma"
+    },
+    "hero": {
+        "title": "Diseñado para el cerebro en desarrollo,",
+        "subtitle": "no para el algoritmo.",
+        "join_button": "Únete a la Búsqueda"
+    },
+    "footer": {
+        "tagline": "Diseñado para el cerebro en desarrollo, no para el algoritmo.",
+        "explore": "Explorar",
+        "get_involved": "Involúcrate",
+        "stay_connected": "Mantente Conectado",
+        "subscribe": "Suscribirse",
+        "all_rights_reserved": "Todos los derechos reservados.",
+        "sci_sound": "Ciencia del Sonido",
+        "partner": "Asóciate con Nosotros",
+        "newsletter": "Boletín Informativo",
+        "weekly_activities": "Actividades neuro-afirmativas semanales y lanzamientos musicales."
+    },
+    "home": {
+        "hero_label": "El Anti-Cocomelon",
+        "hero_title_1": "Diseñado para el cerebro en desarrollo,",
+        "hero_title_2": "no para el algoritmo.",
+        "hero_subtitle": "Un ecosistema basado en la ciencia e impulsado por la música para el desarrollo de la primera infancia. Calma. Enfoque. Esencial.",
+        "hero_note": "Para niños de 2 a 8 años · Basado en la neurociencia",
+        "why_label": "La Doble Crisis",
+        "why_title_1": "Estamos transformando un Estado de Emergencia",
+        "why_title_2": "en El Sonido de lo Esencial: Rhythm Quest.",
+        "why_subtitle": "300 millones de niños en todo el mundo no pueden leer con fluidez.",
+        "stat_1_val": "300M",
+        "stat_1_lab": "Niños carecen de fluidez lectora",
+        "stat_2_val": "44M",
+        "stat_2_lab": "Déficit global de maestros",
+        "stat_3_val": "1M",
+        "stat_3_lab": "Conexiones neuronales formadas por segundo en los primeros 1,000 días",
+        "approach_label": "Nuestro Enfoque",
+        "approach_title_1": "No es entretenimiento.",
+        "approach_title_2": "Es intervención.",
+        "approach_subtitle": "Cada elemento de SOE está diseñado para proteger y nutrir el cerebro en desarrollo a través del lenguaje universal de la música.",
+        "curriculum_label": "El Currículo",
+        "curriculum_title_1": "Cinco Dominios de",
+        "curriculum_title_2": "Aprendizaje Esencial",
+        "curriculum_subtitle": "Cada lección se entrelaza a través de los cinco dominios del desarrollo.",
+        "cta_title": "La biología no espera a que los sistemas se arreglen solos.",
+        "cta_subtitle": "Únete al ecosistema de apoyo.",
+        "explore_media": "Explorar la Sala de Medios →",
+        "domains": {
+            "language": {
+                "title": "Lenguaje",
+                "desc": "Fonética, vocabulario y comunicación a través de la canción y el ritmo."
+            },
+            "cognitive": {
+                "title": "Cognitivo",
+                "desc": "Reconocimiento de patrones, memoria y resolución de problemas mediante el juego musical."
+            },
+            "physical": {
+                "title": "Físico",
+                "desc": "Habilidades motoras y conciencia corporal a través del movimiento y el baile."
+            },
+            "science": {
+                "title": "Ciencia",
+                "desc": "Naturaleza, anatomía y descubrimiento a través de la exploración sensorial."
+            },
+            "social_emotional": {
+                "title": "Socio-Emocional",
+                "desc": "Modales, empatía y autorregulación a través de la música colaborativa."
+            }
+        },
+        "features": {
+            "active": {
+                "title": "Activo, No Pasivo",
+                "subtitle": "Maestro-en-una-Caja",
+                "desc": "Cada episodio es una lección estructurada, no una distracción."
+            },
+            "neuro": {
+                "title": "Neuro-Afirmativo",
+                "subtitle": "Tranquilo por Diseño",
+                "desc": "Ritmo pausado, diseño de audio enfocado en ASMR y silencios intencionales."
+            },
+            "scalable": {
+                "title": "Globalmente Escalable",
+                "subtitle": "No se requiere Maestro",
+                "desc": "Construido para enfrentar el déficit de 44 millones de maestros."
+            }
+        }
+    },
+    "universe": {
+        "hero_label": "El Currículo",
+        "hero_title_1": "El Universo de",
+        "hero_title_2": "Sound of Essentials: Rhythm Quest",
+        "hero_subtitle": "Guiado por Seriphia, una Madre de Aprendizaje Eterno.",
+        "seriphia_label": "Tu Guía",
+        "seriphia_title": "Conoce a Seriphia",
+        "seriphia_subtitle": "Una Madre de Aprendizaje Eterno",
+        "seriphia_desc_1": "Seriphia es la radiante guardiana que supervisa las siete tierras.",
+        "seriphia_desc_2": "Ella representa la facilitadora ideal.",
+        "map_label": "El Viaje",
+        "map_title": "El Mapa Global del Sonido",
+        "map_subtitle": "Cada tierra representa un dominio crítico del aprendizaje en la primera infancia.",
+        "map_pin_title": "Explorar {{land}}",
+        "lands_label": "Las 7 Tierras",
+        "lands_title_1": "Conoce a los",
+        "lands_title_2": "Dúos de Héroes",
+        "lands_subtitle": "Siete parejas de héroes.",
+        "science_label": "La Ciencia",
+        "science_title_1": "Basado en",
+        "science_title_2": "Pedagogía Probada",
+        "science_subtitle": "El currículo de SOE se basa en tres metodologías reconocidas mundialmente.",
+        "lands": {
+            "Harmonia": {
+                "focus": "Lenguaje y Modales",
+                "desc": "En la Tierra de Harmonia, Kenji y Aiko descubren que las palabras llevan música."
+            },
+            "Numeria": {
+                "focus": "Números y Matemáticas",
+                "desc": "Kwame y Octavia navegan por el mundo rítmico de Numeria."
+            },
+            "Vitalis": {
+                "focus": "Habilidades Físicas y Motoras",
+                "desc": "Felix y Amara se mueven a través de Vitalis."
+            },
+            "Chronia": {
+                "focus": "Tiempo y Estaciones",
+                "desc": "En Chronia, Elias y Selene aprenden los ritmos del tiempo."
+            },
+            "Lexiconia": {
+                "focus": "Lenguaje Avanzado",
+                "desc": "Ronan y Nerissa se enfrentan a palabras difíciles y sonidos complejos en Lexiconia."
+            },
+            "Geometria": {
+                "focus": "Formas y Razonamiento Espacial",
+                "desc": "Silas y Vesta exploran los paisajes geométricos de Geometria."
+            },
+            "Natura": {
+                "focus": "Ciencia y Naturaleza",
+                "desc": "Ezra y Athena se sumergen en Natura."
+            }
+        },
+        "pedagogy": {
+            "Dalcroze": {
+                "name": "Euritmia Dalcroze",
+                "desc": "Aprendizaje a través del movimiento y el ritmo."
+            },
+            "Orff": {
+                "name": "Orff Schulwerk",
+                "desc": "Creación musical activa a través del habla, el ritmo y los instrumentos."
+            },
+            "Kodaly": {
+                "name": "Método Kodály",
+                "desc": "Desarrollo de la audición interna a través del canto, señas manuales y música folclórica."
+            }
+        }
+    },
+    "heroes": {
+        "hero_label": "Héroes",
+        "hero_title_1": "Nuestros",
+        "hero_title_2": "Héroes",
+        "hero_subtitle": "15 héroes en 7 tierras: cada uno es un guía a través de un dominio crítico del aprendizaje en la primera infancia. Cada niño se encuentra reflejado en al menos un personaje.",
+        "filter_all": "Todos",
+        "read_more": "Leer más ▼",
+        "show_less": "Mostrar menos ▲",
+        "cta_title_1": "¿Listo para comenzar la",
+        "cta_title_2": "Búsqueda?",
+        "cta_subtitle": "Únete al movimiento y ayuda a llevar el aprendizaje impulsado por la música a todos los niños.",
+        "traits": {
+            "Wisdom": {
+                "name": "Sabiduría",
+                "desc": "La capacidad de aplicar el conocimiento con una comprensión profunda."
+            },
+            "Patience": {
+                "name": "Paciencia",
+                "desc": "Permanecer tranquilo y firme, dándole a cada niño el tiempo que necesita."
+            },
+            "Nurturing": {
+                "name": "Nutritivo",
+                "desc": "Proporcionar calidez, cuidado y seguridad emocional."
+            },
+            "Creative": {
+                "name": "Creativo",
+                "desc": "Pensar más allá de lo obvio: encontrar nuevas conexiones entre ideas, sonidos e historias."
+            },
+            "Curious": {
+                "name": "Curioso",
+                "desc": "Un profundo deseo de explorar, cuestionar y descubrir."
+            },
+            "Respectful": {
+                "name": "Respetuoso",
+                "desc": "Tratar a cada persona e idea con dignidad."
+            },
+            "Empathetic": {
+                "name": "Empático",
+                "desc": "La capacidad de sentir lo que otros sienten."
+            },
+            "Articulate": {
+                "name": "Articulado",
+                "desc": "Expresar pensamientos de forma clara y hermosa."
+            },
+            "Kind": {
+                "name": "Amable",
+                "desc": "Actuar con cuidado y consideración genuinos."
+            },
+            "Analytical": {
+                "name": "Analítico",
+                "desc": "Dividir los problemas en partes para entender cómo funcionan."
+            },
+            "Rhythmic": {
+                "name": "Rítmico",
+                "desc": "Un sentido natural del patrón, el tiempo y el flujo."
+            },
+            "Observant": {
+                "name": "Observador",
+                "desc": "Notar detalles que otros pasan por alto."
+            },
+            "Logical": {
+                "name": "Lógico",
+                "desc": "Pensar en pasos claros y ordenados."
+            },
+            "Playful": {
+                "name": "Lúdico",
+                "desc": "Abordar el aprendizaje con alegría, humor y sentido de la aventura."
+            },
+            "Energetic": {
+                "name": "Enérgico",
+                "desc": "Aportar vitalidad y entusiasmo a cada actividad."
+            },
+            "Coordinated": {
+                "name": "Coordinado",
+                "desc": "Moverse con control y propósito."
+            },
+            "Joyful": {
+                "name": "Alegre",
+                "desc": "Irradiar felicidad y positividad."
+            },
+            "Graceful": {
+                "name": "Grácil",
+                "desc": "Moverse con elegancia e intención."
+            },
+            "Encouraging": {
+                "name": "Alentador",
+                "desc": "Animar a los demás con palabras y acciones."
+            },
+            "Strong": {
+                "name": "Fuerte",
+                "desc": "Resiliencia interna y externa."
+            },
+            "Thoughtful": {
+                "name": "Reflexivo",
+                "desc": "Considerar las ideas profundamente antes de actuar."
+            },
+            "Steady": {
+                "name": "Firme",
+                "desc": "Confiable y constante."
+            },
+            "Wise": {
+                "name": "Sabio",
+                "desc": "Combinar el conocimiento con la experiencia para guiar a otros."
+            },
+            "Intuitive": {
+                "name": "Intuitivo",
+                "desc": "Sentir lo que se necesita antes de que se diga."
+            },
+            "Melodic": {
+                "name": "Melódico",
+                "desc": "Llevar la música por dentro."
+            },
+            "Reflective": {
+                "name": "Reflexivo",
+                "desc": "Tomar tiempo para mirar hacia adentro y aprender de la experiencia."
+            },
+            "Brave": {
+                "name": "Valiente",
+                "desc": "Enfrentar los desafíos con coraje."
+            },
+            "Persistent": {
+                "name": "Persistente",
+                "desc": "Nunca rendirse."
+            },
+            "Precise": {
+                "name": "Preciso",
+                "desc": "Prestar cuidadosa atención a los detalles."
+            },
+            "Determined": {
+                "name": "Decidido",
+                "desc": "Comprometido a llevar las cosas hasta el final."
+            },
+            "Inventive": {
+                "name": "Inventivo",
+                "desc": "Encontrar soluciones creativas a los problemas."
+            },
+            "Confident": {
+                "name": "Seguro",
+                "desc": "Creer en tus propias habilidades."
+            },
+            "Spatial": {
+                "name": "Espacial",
+                "desc": "Entender cómo se relacionan los objetos en el espacio."
+            },
+            "Methodical": {
+                "name": "Metódico",
+                "desc": "Trabajar paso a paso con cuidado y orden."
+            },
+            "Gentle": {
+                "name": "Gentil",
+                "desc": "Acercarse al mundo con suavidad y cuidado."
+            },
+            "Scientific": {
+                "name": "Científico",
+                "desc": "Cuestionar, experimentar y descubrir."
+            },
+            "Adventurous": {
+                "name": "Aventurero",
+                "desc": "Ansioso por explorar lo desconocido."
+            }
+        },
+        "lands": {
+            "The Celestial": "Lo Celestial",
+            "Harmonia": "Harmonia",
+            "Numeria": "Numeria",
+            "Vitalis": "Vitalis",
+            "Chronia": "Chronia",
+            "Lexiconia": "Lexiconia",
+            "Geometria": "Geometria",
+            "Natura": "Natura"
+        },
+        "data": {
+            "Seriphia": {
+                "title": "Una Madre de Aprendizaje Eterno",
+                "bio": "Seriphia es la radiante guardiana que supervisa las siete tierras.",
+                "focus": "Guardiana y Guía"
+            },
+            "Kenji": {
+                "title": "El Músico de las Palabras",
+                "bio": "Kenji descubre que cada palabra lleva una melodía.",
+                "focus": "Lenguaje y Modales"
+            },
+            "Aiko": {
+                "title": "La Guardiana de la Armonía",
+                "bio": "Aiko aporta armonía a cada conversación.",
+                "focus": "Lenguaje y Modales"
+            },
+            "Kwame": {
+                "title": "El Contador del Ritmo",
+                "bio": "Kwame escucha números en cada compás.",
+                "focus": "Números y Matemáticas"
+            },
+            "Octavia": {
+                "title": "La Tejedora de Patrones",
+                "bio": "Octavia ve patrones en todas partes.",
+                "focus": "Números y Matemáticas"
+            },
+            "Felix": {
+                "title": "El Maestro del Movimiento",
+                "bio": "Felix se mueve a través de Vitalis con una energía inagotable.",
+                "focus": "Habilidades Físicas y Motoras"
+            },
+            "Amara": {
+                "title": "La Guía de la Danza",
+                "bio": "Amara sabe que el cuerpo es el primer instrumento.",
+                "focus": "Habilidades Físicas y Motoras"
+            },
+            "Elias": {
+                "title": "El Guardián del Tiempo",
+                "bio": "Elias comprende el ritmo del tiempo mismo.",
+                "focus": "Tiempo y Estaciones"
+            },
+            "Selene": {
+                "title": "La Cantante de las Estaciones",
+                "bio": "Selene canta las canciones de las estaciones.",
+                "focus": "Tiempo y Estaciones"
+            },
+            "Ronan": {
+                "title": "El Guerrero de las Palabras",
+                "bio": "Ronan se enfrenta a las palabras más difíciles con valentía.",
+                "focus": "Lenguaje Avanzado"
+            },
+            "Nerissa": {
+                "title": "La Escultora del Sonido",
+                "bio": "Nerissa esculpe sonidos difíciles en hermosas palabras.",
+                "focus": "Lenguaje Avanzado"
+            },
+            "Silas": {
+                "title": "El Buscador de Formas",
+                "bio": "Silas ve geometría en todo.",
+                "focus": "Formas y Razonamiento Espacial"
+            },
+            "Vesta": {
+                "title": "La Navegante del Espacio",
+                "bio": "Vesta navega por los paisajes geométricos con confianza.",
+                "focus": "Formas y Razonamiento Espacial"
+            },
+            "Ezra": {
+                "title": "El Oyente de la Naturaleza",
+                "bio": "Ezra escucha lo que la naturaleza tiene que enseñar.",
+                "focus": "Ciencia y Naturaleza"
+            },
+            "Athena": {
+                "title": "La Sabia del Descubrimiento",
+                "bio": "Athena lleva la sabiduría del mundo natural a cada niño.",
+                "focus": "Ciencia y Naturaleza"
+            }
+        }
+    },
+    "science": {
+        "hero_label": "Pedagogía y Ciencia",
+        "hero_title_1": "Ciencia del",
+        "hero_title_2": "Sonido",
+        "hero_subtitle": "Crónicas del Reloj: Comprendiendo la arquitectura neurológica detrás de cada ritmo.",
+        "track_label": "La Pista",
+        "track_title": "¿Sabes qué hora es?",
+        "listen_btn": "Escuchar las pistas →",
+        "beyond_title_1": "Más allá de la",
+        "beyond_title_2": "Melodía",
+        "beyond_desc_1": "Pueden parecer solo letras de una canción pegadiza, pero si profundizas, verás una lección brillantemente disfrazada de Andamiaje Temporal y Numeración.",
+        "beyond_desc_2": "Esta pista es una adición vital a Celestia: El Jardín del Tiempo, donde nuestros héroes Elias y Selene guían a los niños a través de conceptos abstractos.",
+        "breakdown_label": "Desglose Pedagógico",
+        "breakdown_title_1": "Por qué esta pista es",
+        "breakdown_title_2": "Estratégicamente Esencial",
+        "breakdown_subtitle": "Cada elemento del currículo de SOE está diseñado para apoyar el desarrollo neurológico y la función ejecutiva.",
+        "cards": {
+            "sequencing": {
+                "title": "Secuenciación Rítmica",
+                "desc": "Al separar claramente las horas completas de las medias horas, introducimos conceptos fraccionarios y lógica secuencial."
+            },
+            "anchoring": {
+                "title": "Anclaje de Conceptos Abstractos",
+                "desc": "El tiempo es invisible y difícil de captar para los niños pequeños. Lo resolvemos vinculando números abstractos con anclajes físicos y concretos."
+            },
+            "regulation": {
+                "title": "Regulación Emocional",
+                "desc": "La imprevisibilidad crea ansiedad. Mapear el día desarrolla la Función Ejecutiva."
+            }
+        },
+        "implementation_label": "Implementación",
+        "implementation_title_1": "Ponerlo en",
+        "implementation_title_2": "Práctica",
+        "implementation_desc_1": "En nuestra \"Guía del Maestro\" o sitio web interactivo, combinamos esta canción con un \"cuadro de rutina diaria\" visual.",
+        "implementation_desc_2": "Los padres y educadores señalan la esfera de un reloj durante los números. Esta interacción física de \"servir y devolver\" cementa permanentemente el aprendizaje.",
+        "cta_title_1": "La ciencia es solo el",
+        "cta_title_2": "Comienzo",
+        "cta_subtitle": "Experimenta cómo estos principios neurológicos se traducen en una melodía alegre."
+    }
+}

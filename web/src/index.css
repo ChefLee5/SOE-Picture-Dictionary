@@ -1,0 +1,558 @@
+/* ========================================
+   SOE: RHYTHM QUEST — Design System
+   Bright & Fun — Playful. Vibrant. Essential.
+   ======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+:root {
+  /* ── Bright & Fun Color Palette ── */
+  --color-bg-white: #ffffff;
+  --color-bg-cream: #f8f9fa;
+  --color-bg-light: #f0f4f8;
+  --color-bg-card: #ffffff;
+  --color-bg-card-hover: #f0f7ff;
+
+  --color-green: #4CAF50;
+  --color-green-light: #66BB6A;
+  --color-green-soft: rgba(76, 175, 80, 0.1);
+
+  --color-purple: #7B1FA2;
+  --color-purple-light: #9C27B0;
+  --color-purple-soft: rgba(123, 31, 162, 0.08);
+
+  --color-orange: #FF6F00;
+  --color-orange-light: #FF8F00;
+  --color-orange-soft: rgba(255, 111, 0, 0.1);
+
+  --color-blue: #1E88E5;
+  --color-blue-light: #42A5F5;
+  --color-blue-soft: rgba(30, 136, 229, 0.08);
+
+  --color-yellow: #FFB300;
+  --color-yellow-light: #FFC107;
+  --color-yellow-soft: rgba(255, 179, 0, 0.1);
+
+  --color-red: #E53935;
+  --color-red-soft: rgba(229, 57, 53, 0.08);
+
+  /* Keep legacy aliases for components that reference them */
+  --color-sage: #4CAF50;
+  --color-sage-light: #66BB6A;
+  --color-sage-glow: rgba(76, 175, 80, 0.1);
+
+  --color-plum: #7B1FA2;
+  --color-plum-light: #9C27B0;
+  --color-plum-glow: rgba(123, 31, 162, 0.08);
+
+  --color-gold: #FF6F00;
+  --color-gold-light: #FF8F00;
+  --color-gold-glow: rgba(255, 111, 0, 0.1);
+
+  --color-bg-deep: #ffffff;
+  --color-bg-navy: #f0f4f8;
+
+  --color-text-primary: #1a1a2e;
+  --color-text-secondary: #4a4a68;
+  --color-text-muted: #8888a0;
+  --color-text-dark: #1a1a2e;
+
+  --color-border: rgba(0, 0, 0, 0.08);
+  --color-border-light: rgba(0, 0, 0, 0.12);
+
+  /* ── Typography ── */
+  --font-heading: 'Fredoka', 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-accent: 'Fredoka', sans-serif;
+  --font-cursive: 'Dancing Script', cursive;
+
+  /* ── Spacing & Radius ── */
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 28px;
+  --radius-xl: 50px;
+  --radius-full: 50%;
+
+  /* ── Transitions ── */
+  --ease-gentle: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --transition-slow: 0.6s var(--ease-gentle);
+  --transition-med: 0.3s var(--ease-gentle);
+}
+
+/* ── Reset ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background: var(--color-bg-white);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.7;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ── Typography ── */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-text-primary);
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: clamp(2rem, 8vw, 3.8rem);
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: clamp(1.6rem, 6vw, 2.8rem);
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: clamp(1.2rem, 5vw, 1.6rem);
+}
+
+h4 {
+  font-size: 1.15rem;
+}
+
+p {
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+  max-width: 680px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color var(--transition-med);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ── Layout ── */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+}
+
+.section {
+  padding: 7rem 0;
+  position: relative;
+}
+
+.section-sm {
+  padding: 4rem 0;
+}
+
+/* ── Accent Text ── */
+.accent-text {
+  font-family: var(--font-accent);
+  font-style: normal;
+  color: var(--color-green);
+}
+
+.text-gold {
+  color: var(--color-orange);
+}
+
+.text-sage {
+  color: var(--color-green);
+}
+
+.text-plum {
+  color: var(--color-purple);
+}
+
+.logo-accent-cursive {
+  font-family: var(--font-cursive);
+  font-weight: 500;
+  font-size: 1.15em;
+  font-style: normal;
+  color: var(--color-orange);
+  letter-spacing: 0.02em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* ── Section Headers ── */
+.section-label {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(135deg, var(--color-green), var(--color-blue));
+  padding: 0.4rem 1.4rem;
+  border-radius: var(--radius-xl);
+  margin-bottom: 1.5rem;
+  border: none;
+}
+
+.section-title {
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  font-size: 1.15rem;
+  color: var(--color-text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* ── Buttons ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.9rem 2rem;
+  border-radius: var(--radius-xl);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-med);
+  text-decoration: none;
+  line-height: 1;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, var(--color-orange), var(--color-orange-light));
+  color: #fff;
+  box-shadow: 0 4px 20px var(--color-orange-soft);
+}
+
+.btn-gold:hover {
+  box-shadow: 0 8px 32px rgba(255, 111, 0, 0.25);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--color-text-primary);
+  border: 2px solid var(--color-border-light);
+}
+
+.btn-outline:hover {
+  background: var(--color-bg-cream);
+  border-color: var(--color-green);
+  color: var(--color-green);
+}
+
+.btn-sage {
+  background: linear-gradient(135deg, var(--color-green), var(--color-green-light));
+  color: #fff;
+  box-shadow: 0 4px 20px var(--color-green-soft);
+}
+
+.btn-plum {
+  background: linear-gradient(135deg, var(--color-purple), var(--color-purple-light));
+  color: #fff;
+  box-shadow: 0 4px 20px var(--color-purple-soft);
+}
+
+.page-bottom-link {
+  color: var(--color-orange);
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.page-bottom-link:hover {
+  transform: translateX(5px);
+}
+
+/* ── Cards ── */
+.glass-card {
+  background: var(--color-bg-card);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
+  transition: all var(--transition-med);
+}
+
+.glass-card:hover {
+  border-color: var(--color-green-soft);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
+/* ── Colored Section Backgrounds ── */
+.glow-sage {
+  position: relative;
+  background: linear-gradient(180deg, var(--color-green-soft) 0%, transparent 100%);
+}
+
+.glow-sage::before {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(76, 175, 80, 0.06) 0%, transparent 70%);
+  border-radius: 50%;
+  top: -100px;
+  right: -100px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.glow-plum {
+  position: relative;
+  background: linear-gradient(180deg, var(--color-purple-soft) 0%, transparent 100%);
+}
+
+.glow-plum::before {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(123, 31, 162, 0.05) 0%, transparent 70%);
+  border-radius: 50%;
+  top: -150px;
+  left: -150px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── Animations ── */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes gentleFloat {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes softPulse {
+
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s var(--ease-gentle) both;
+}
+
+.animate-fade-up {
+  animation: fadeInUp 0.8s var(--ease-gentle) both;
+}
+
+.animate-float {
+  animation: gentleFloat 6s ease-in-out infinite;
+}
+
+.animate-delay-1 {
+  animation-delay: 0.1s;
+}
+
+.animate-delay-2 {
+  animation-delay: 0.2s;
+}
+
+.animate-delay-3 {
+  animation-delay: 0.3s;
+}
+
+.animate-delay-4 {
+  animation-delay: 0.4s;
+}
+
+.animate-delay-5 {
+  animation-delay: 0.5s;
+}
+
+.animate-delay-6 {
+  animation-delay: 0.6s;
+}
+
+.animate-delay-7 {
+  animation-delay: 0.7s;
+}
+
+/* ── Grid Helpers ── */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.grid-auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* ── Dividers ── */
+.divider {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(to right, var(--color-green), var(--color-blue));
+  border-radius: 2px;
+  margin: 1.5rem 0;
+}
+
+.divider-center {
+  margin: 1.5rem auto;
+}
+
+/* ── Responsive ── */
+@media (max-width: 968px) {
+
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+
+  .container {
+    padding: 0 1.25rem;
+  }
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 15px;
+  }
+
+  .section {
+    padding: 3rem 0;
+  }
+
+  .glass-card {
+    padding: 1.5rem;
+  }
+}
+
+/* ── Accessibility ── */
+:focus-visible {
+  outline: 3px solid var(--color-blue);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-green);
+}

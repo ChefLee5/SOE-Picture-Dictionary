@@ -1,0 +1,59 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+build/
+
+# EPUB output (regeneratable via build_epub.py)
+*.epub
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Misc
+*.tgz
+.cache/
+
+# ─── Large Media (excluded to keep repo under GitHub limits) ───
+# These folders contain large PNGs, MP3s, and MP4s
+# that exceed GitHub's recommended 100MB repo size.
+# Store these on a separate media host or Git LFS.
+
+# Duplicate / raw reference photos
+The Sound of Essentials_ The Rhythm Quest/
+Book Illustrations/
+Prototypes/
+
+# Audio files (large MP3s)
+web/public/audio/
+web/dist/
+The Sound of Essentials Deluxe Edition Music/
+
+# Video files
+*.mp4
+*.mov
+*.avi
+
+# Large images (>5MB)
+*.psd
+*.ai

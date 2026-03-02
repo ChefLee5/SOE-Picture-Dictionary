@@ -1,0 +1,213 @@
+[
+    {
+        "name": "Seriphia",
+        "title": "An Eternal Learning Mother",
+        "land": "The Celestial",
+        "landColor": "#9C27B0",
+        "focus": "Guardian & Guide",
+        "img": "/assets/characters/ETERNAL LEARNING MOTHER.png",
+        "bio": "Seriphia is the radiant guardian who oversees all seven lands. Her calm, nurturing presence anchors every lesson, guiding children through each stage of their developmental journey with warmth and wisdom. She is ever-present, attuned to each child's pace.",
+        "traits": [
+            "Wisdom",
+            "Patience",
+            "Nurturing"
+        ],
+        "featured": true
+    },
+    {
+        "name": "Kenji",
+        "title": "The Word Musician",
+        "land": "Harmonia",
+        "landColor": "#d4a843",
+        "focus": "Language & Manners",
+        "img": "/assets/characters/KENJI.jpg",
+        "bio": "Kenji discovers that every word carries a melody. Through phonics, vocabulary songs, and the art of respectful communication, he unlocks the musical power hidden within language itself.",
+        "traits": [
+            "Creative",
+            "Curious",
+            "Respectful"
+        ]
+    },
+    {
+        "name": "Aiko",
+        "title": "The Harmony Keeper",
+        "land": "Harmonia",
+        "landColor": "#d4a843",
+        "focus": "Language & Manners",
+        "img": "/assets/characters/AIKO.png",
+        "bio": "Aiko brings harmony to every conversation. She teaches children that communication is a musical exchange—listening is as important as speaking, and kindness gives every word its truest note.",
+        "traits": [
+            "Empathetic",
+            "Articulate",
+            "Kind"
+        ]
+    },
+    {
+        "name": "Kwame",
+        "title": "The Rhythm Counter",
+        "land": "Numeria",
+        "landColor": "#7fb685",
+        "focus": "Numbers & Mathematics",
+        "img": "/assets/characters/KWAME.jpg",
+        "bio": "Kwame hears numbers in every beat. In Numeria, he transforms counting, patterns, and mathematical foundations into rhythmic adventures that make abstract concepts tangible and fun.",
+        "traits": [
+            "Analytical",
+            "Rhythmic",
+            "Patient"
+        ]
+    },
+    {
+        "name": "Octavia",
+        "title": "The Pattern Weaver",
+        "land": "Numeria",
+        "landColor": "#7fb685",
+        "focus": "Numbers & Mathematics",
+        "img": "/assets/characters/OCTAVIA.jpg",
+        "bio": "Octavia sees patterns everywhere—in music, in nature, in numbers. She weaves mathematical thinking into every melody, helping children recognize the beautiful order underlying the world.",
+        "traits": [
+            "Observant",
+            "Logical",
+            "Playful"
+        ]
+    },
+    {
+        "name": "Felix",
+        "title": "The Movement Master",
+        "land": "Vitalis",
+        "landColor": "#c4785a",
+        "focus": "Physical & Motor Skills",
+        "img": "/assets/characters/FELIX.jpg",
+        "bio": "Felix moves through Vitalis with boundless energy. Dance, stretching, and body coordination come alive as he builds strong physical foundations through joyful, musical movement.",
+        "traits": [
+            "Energetic",
+            "Coordinated",
+            "Joyful"
+        ]
+    },
+    {
+        "name": "Amara",
+        "title": "The Dance Guide",
+        "land": "Vitalis",
+        "landColor": "#c4785a",
+        "focus": "Physical & Motor Skills",
+        "img": "/assets/characters/AMARA.jpg",
+        "bio": "Amara knows that the body is the first instrument. She guides children through rhythmic movement exercises that develop motor skills, spatial awareness, and physical confidence.",
+        "traits": [
+            "Graceful",
+            "Encouraging",
+            "Strong"
+        ]
+    },
+    {
+        "name": "Elias",
+        "title": "The Time Keeper",
+        "land": "Chronia",
+        "landColor": "#9678c4",
+        "focus": "Time & Seasons",
+        "img": "/assets/characters/ELIAS.jpg",
+        "bio": "Elias understands the rhythm of time itself. Days, months, and seasons become musical compositions in Chronia, making the abstract flow of time something children can feel and understand.",
+        "traits": [
+            "Thoughtful",
+            "Steady",
+            "Wise"
+        ]
+    },
+    {
+        "name": "Selene",
+        "title": "The Season Singer",
+        "land": "Chronia",
+        "landColor": "#9678c4",
+        "focus": "Time & Seasons",
+        "img": "/assets/characters/SELENE.jpg",
+        "bio": "Selene sings the songs of seasons. Her melodies teach children to recognize the cyclical nature of time—spring's renewal, summer's warmth, autumn's change, and winter's rest.",
+        "traits": [
+            "Intuitive",
+            "Melodic",
+            "Reflective"
+        ]
+    },
+    {
+        "name": "Ronan",
+        "title": "The Word Warrior",
+        "land": "Lexiconia",
+        "landColor": "#d4a843",
+        "focus": "Advanced Language",
+        "img": "/assets/characters/RONAN.jpg",
+        "bio": "Ronan tackles the hardest words with courage and rhythm. In Lexiconia, phonetic challenges become musical adventures, turning complex sounds into conquerable melodies.",
+        "traits": [
+            "Brave",
+            "Persistent",
+            "Articulate"
+        ]
+    },
+    {
+        "name": "Nerissa",
+        "title": "The Sound Sculptor",
+        "land": "Lexiconia",
+        "landColor": "#d4a843",
+        "focus": "Advanced Language",
+        "img": "/assets/characters/NERISSA.jpg",
+        "bio": "Nerissa sculpts difficult sounds into beautiful words. She shows children that every challenging phoneme is just a note waiting to be learned, practiced, and mastered.",
+        "traits": [
+            "Precise",
+            "Creative",
+            "Determined"
+        ]
+    },
+    {
+        "name": "Silas",
+        "title": "The Shape Finder",
+        "land": "Geometria",
+        "landColor": "#7fb685",
+        "focus": "Shapes & Spatial Reasoning",
+        "img": "/assets/characters/SILAS.jpg",
+        "bio": "Silas sees geometry in everything. The landscapes of Geometria come alive as he helps children recognize shapes, spatial relationships, and the mathematical beauty of the world around them.",
+        "traits": [
+            "Observant",
+            "Inventive",
+            "Precise"
+        ]
+    },
+    {
+        "name": "Vesta",
+        "title": "The Space Navigator",
+        "land": "Geometria",
+        "landColor": "#7fb685",
+        "focus": "Shapes & Spatial Reasoning",
+        "img": "/assets/characters/VESTA.jpg",
+        "bio": "Vesta navigates the geometric landscapes with confidence. She teaches spatial awareness through melody, helping children understand how shapes fit together and relate to one another.",
+        "traits": [
+            "Confident",
+            "Spatial",
+            "Methodical"
+        ]
+    },
+    {
+        "name": "Ezra",
+        "title": "The Nature Listener",
+        "land": "Natura",
+        "landColor": "#5ba4c9",
+        "focus": "Science & Nature",
+        "img": "/assets/characters/EZRA.jpg",
+        "bio": "Ezra listens to what nature has to teach. The body, the ocean, the rain—every natural phenomenon becomes a musical lesson, illuminating the wonders of science through sound.",
+        "traits": [
+            "Curious",
+            "Gentle",
+            "Scientific"
+        ]
+    },
+    {
+        "name": "Athena",
+        "title": "The Discovery Sage",
+        "land": "Natura",
+        "landColor": "#5ba4c9",
+        "focus": "Science & Nature",
+        "img": "/assets/characters/ATHENA.jpg",
+        "bio": "Athena brings the wisdom of the natural world to every child. She uses music to illuminate how bodies work, why rain falls, and what makes the ocean sing—science made magical.",
+        "traits": [
+            "Wise",
+            "Adventurous",
+            "Nurturing"
+        ]
+    }
+]
