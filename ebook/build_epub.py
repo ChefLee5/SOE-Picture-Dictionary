@@ -36,18 +36,22 @@ STYLES_DIR = OEBPS_DIR / "styles"
 CONTENT_DIR = EBOOK_DIR / "content"
 OUTPUT_FILE = EBOOK_DIR / "SOE_Essential_Picture_Dictionary.epub"
 
-# File reading order (spine)
-SPINE_ORDER = [
-    "cover.xhtml",
-    "frontmatter.xhtml",
-    "land3-barnyard.xhtml",
-    "land3-wild-animals.xhtml",
-    "land5-human-body.xhtml",
-    "land5-produce-market.xhtml",
-]
-
-# Navigation page (must be in manifest with nav property)
+# File reading order (spine) — dynamically built from pages/ directory
 NAV_FILE = "nav.xhtml"
+STATIC_PAGES = ["cover.xhtml", "frontmatter.xhtml"]
+
+
+def get_all_pages():
+    """Discover all land*.xhtml pages and sort them in land/scene order."""
+    pages = []
+    for f in PAGES_DIR.glob("land*.xhtml"):
+        pages.append(f.name)
+    # Sort by land number then alphabetically within each land
+    def sort_key(name):
+        match = re.match(r'land(\d+)-', name)
+        land_num = int(match.group(1)) if match else 99
+        return (land_num, name)
+    return sorted(pages, key=sort_key)
 
 
 def build_epub():
@@ -83,11 +87,9 @@ def build_epub():
             print(f"  ❌ Missing required file: {f}")
             sys.exit(1)
 
-    for page in SPINE_ORDER:
-        page_path = PAGES_DIR / page
-        if not page_path.exists():
-            print(f"  ❌ Missing page: {page_path}")
-            sys.exit(1)
+    # Build dynamic page list
+    land_pages = get_all_pages()
+    all_pages = STATIC_PAGES + land_pages
 
     # Remove old output if exists
     if OUTPUT_FILE.exists():
@@ -122,11 +124,14 @@ def build_epub():
         epub.write(nav_path, f"OEBPS/pages/{NAV_FILE}")
         print(f"  ✅ OEBPS/pages/{NAV_FILE}")
 
-        # 6. Content pages
-        for page in SPINE_ORDER:
+        # 6. All content pages (static + land pages)
+        for page in all_pages:
             page_path = PAGES_DIR / page
-            epub.write(page_path, f"OEBPS/pages/{page}")
-            print(f"  ✅ OEBPS/pages/{page}")
+            if page_path.exists():
+                epub.write(page_path, f"OEBPS/pages/{page}")
+                print(f"  ✅ OEBPS/pages/{page}")
+            else:
+                print(f"  ⚠️  Skipping missing: {page}")
 
         # 7. Any images in OEBPS/images/
         images_dir = OEBPS_DIR / "images"

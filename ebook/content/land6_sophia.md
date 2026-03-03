@@ -336,6 +336,311 @@
 
 ---
 
+## Scene 11: Forms & Documents
+
+*Living in Sophia means knowing your paperwork. Ezra and Athena practice filling out the forms that matter most.*
+
+| # | Word | Phonetic | In the Story… | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Form | /FORM/ | Fill out the form with your personal information. | ___________ |
+| 2 | Signature | /SIG-nuh-chur/ | Sign your signature on the line at the bottom. | ___________ |
+| 3 | Social Security number | /SOH-shul sih-KYOOR-ih-tee NUM-ber/ | Your Social Security number is private — never share it. | ___________ |
+| 4 | Birth certificate | /BURTH sur-TIF-ih-kit/ | A birth certificate proves where and when you were born. | ___________ |
+| 5 | Driver's license | /DRY-verz LY-sens/ | A driver's license is a common form of photo ID. | ___________ |
+| 6 | State ID | /STAYT EYE-DEE/ | A state ID works as identification if you don't drive. | ___________ |
+| 7 | Passport | /PAS-port/ | A passport is required for international travel. | ___________ |
+| 8 | Green card | /GREEN KARD/ | A green card allows a person to live and work in the U.S. | ___________ |
+| 9 | Work permit | /WURK PUR-mit/ | A work permit gives you legal permission to be employed. | ___________ |
+| 10 | Tax return | /TAKS rih-TURN/ | File your tax return by April fifteenth. | ___________ |
+| 11 | W-2 form | /DUB-ul-yoo TOO FORM/ | The W-2 form shows how much you earned last year. | ___________ |
+| 12 | Application | /ap-lih-KAY-shun/ | Fill out the application completely and neatly. | ___________ |
+| 13 | Notary | /NOH-tuh-ree/ | A notary stamps official documents to verify them. | ___________ |
+| 14 | Photocopy | /FOH-toh-kop-ee/ | Make a photocopy of every important document. | ___________ |
+| 15 | Translate | /TRANS-layt/ | Ask someone to translate the form into your language. | ___________ |
+| 16 | Print | /PRINT/ | Print your name clearly in capital letters. | ___________ |
+| 17 | Date of birth | /DAYT UV BURTH/ | Write your date of birth as month, day, year. | ___________ |
+| 18 | Marital status | /MAIR-ih-tul STAT-us/ | Marital status means single, married, or divorced. | ___________ |
+| 19 | Emergency contact | /ih-MUR-jen-see KON-takt/ | List an emergency contact person and their phone number. | ___________ |
+| 20 | Legal name | /LEE-gul NAYM/ | Write your full legal name as it appears on your ID. | ___________ |
+
+> **📋 Ezra's Tip:** *"Practice filling out forms! Write your full name, your address, your date of birth, and your phone number. These four things appear on EVERY form."*
+
+---
+
+## Scene 12: Housing & Renting
+
+*Finding a place to live in Sophia means learning the language of landlords, leases, and home life.*
+
+| # | Word | Phonetic | In the Story… | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Lease | /LEES/ | A lease is a contract to rent a home for a set time. | ___________ |
+| 2 | Tenant | /TEN-unt/ | A tenant is the person who rents the apartment. | ___________ |
+| 3 | Landlord | /LAND-lord/ | The landlord owns the building and collects rent. | ___________ |
+| 4 | Security deposit | /sih-KYOOR-ih-tee dih-POZ-it/ | The security deposit is returned when you move out. | ___________ |
+| 5 | Rent | /RENT/ | Rent is due on the first day of every month. | ___________ |
+| 6 | Apartment | /uh-PART-ment/ | The apartment has two bedrooms and one bathroom. | ___________ |
+| 7 | Studio | /STOO-dee-oh/ | A studio apartment has one room for living and sleeping. | ___________ |
+| 8 | Maintenance | /MAYN-tuh-nuns/ | Call maintenance if the sink is leaking. | ___________ |
+| 9 | Eviction | /ih-VIK-shun/ | An eviction is when a landlord forces you to move out. | ___________ |
+| 10 | Move in | /MOOV IN/ | Move in day is the first of September. | ___________ |
+| 11 | Move out | /MOOV OWT/ | Clean the apartment before you move out. | ___________ |
+| 12 | Utilities | /yoo-TIL-ih-teez/ | Utilities like water and gas may be included in rent. | ___________ |
+| 13 | Furnished | /FUR-nisht/ | A furnished apartment comes with beds and a couch. | ___________ |
+| 14 | Unfurnished | /un-FUR-nisht/ | An unfurnished apartment is empty — bring your own furniture. | ___________ |
+| 15 | Application fee | /ap-lih-KAY-shun FEE/ | The application fee is twenty-five dollars. | ___________ |
+| 16 | Credit check | /KRED-it CHEK/ | The landlord runs a credit check before approving you. | ___________ |
+| 17 | Roommate | /ROOM-mayt/ | A roommate shares the apartment and splits rent. | ___________ |
+| 18 | Neighborhood | /NAY-ber-hood/ | Choose a safe neighborhood close to school or work. | ___________ |
+| 19 | Repair | /rih-PAIR/ | The landlord must repair broken appliances. | ___________ |
+| 20 | Inspection | /in-SPEK-shun/ | The inspection checks the apartment's condition. | ___________ |
+
+> **🏠 Athena's Tip:** *"Know your renting words! Practice: 'I am a TENANT. I signed a LEASE. My RENT is due on the first. I call MAINTENANCE for repairs.' These sentences make you a confident renter."*
+
+---
+
+## Scene 13: Childcare & Parenting
+
+*In Sophia, parents and caregivers learn the vocabulary of raising children — from infancy to school age.*
+
+| # | Word | Phonetic | In the Story… | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Daycare | /DAY-kair/ | Drop off the baby at daycare before going to work. | ___________ |
+| 2 | Babysitter | /BAY-bee-sit-er/ | The babysitter watches the children on Friday nights. | ___________ |
+| 3 | Diaper | /DY-per/ | Change the baby's diaper every two hours. | ___________ |
+| 4 | Bottle | /BOT-ul/ | Warm the baby's bottle to the right temperature. | ___________ |
+| 5 | Formula | /FOR-myoo-luh/ | Baby formula provides nutrition when breastfeeding isn't possible. | ___________ |
+| 6 | Crib | /KRIB/ | The baby sleeps safely in the crib. | ___________ |
+| 7 | Stroller | /STROH-ler/ | Push the stroller through the park on sunny days. | ___________ |
+| 8 | Pacifier | /PAS-ih-fy-er/ | The pacifier soothes the baby when she cries. | ___________ |
+| 9 | Car seat | /KAR SEET/ | Every child must ride in a car seat until a certain age. | ___________ |
+| 10 | Highchair | /HY-chair/ | The baby eats in the highchair at the table. | ___________ |
+| 11 | Sippy cup | /SIP-ee KUP/ | The toddler drinks milk from a sippy cup. | ___________ |
+| 12 | Teething | /TEE-thing/ | Teething means the baby's first teeth are coming in. | ___________ |
+| 13 | Lullaby | /LUL-uh-by/ | Sing a soft lullaby to help the baby fall asleep. | ___________ |
+| 14 | Nap | /NAP/ | The toddler takes a nap after lunch. | ___________ |
+| 15 | Potty training | /POT-ee TRAY-ning/ | Potty training teaches toddlers to use the toilet. | ___________ |
+| 16 | Pediatrician | /pee-dee-uh-TRISH-un/ | The pediatrician is a doctor for children. | ___________ |
+| 17 | Immunization | /im-yoo-nih-ZAY-shun/ | Immunization shots protect children from diseases. | ___________ |
+| 18 | Play date | /PLAY DAYT/ | The children have a play date at the park. | ___________ |
+| 19 | Preschool | /PREE-skool/ | Preschool prepares children for kindergarten. | ___________ |
+| 20 | Bedtime | /BED-tym/ | Bedtime is eight o'clock on school nights. | ___________ |
+
+> **👶 Athena's Tip:** *"Parenting words are LIFE words! Practice: 'The baby needs a DIAPER change. It's time for a NAP. We have a PEDIATRICIAN appointment.' Knowing these words helps you care for your family."*
+
+---
+
+## Scene 14: Legal & Court Terms
+
+*Ezra and Athena visit the Sophia Courthouse to learn the vocabulary of justice, rights, and the legal system.*
+
+| # | Word | Phonetic | In the Story… | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Attorney | /uh-TUR-nee/ | An attorney is a person trained in the law. | ___________ |
+| 2 | Plaintiff | /PLAYN-tif/ | The plaintiff is the person who brings a case to court. | ___________ |
+| 3 | Defendant | /dih-FEN-dunt/ | The defendant is the person accused in court. | ___________ |
+| 4 | Evidence | /EV-ih-dens/ | Evidence includes facts and objects that prove a point. | ___________ |
+| 5 | Witness | /WIT-nes/ | A witness tells the court what they saw or heard. | ___________ |
+| 6 | Testimony | /TES-tih-moh-nee/ | The witness gives testimony under oath. | ___________ |
+| 7 | Verdict | /VUR-dikt/ | The verdict is the jury's decision — guilty or not guilty. | ___________ |
+| 8 | Sentence | /SEN-tens/ | The judge gives a sentence after a guilty verdict. | ___________ |
+| 9 | Fine | /FYN/ | A fine is money you pay as a penalty. | ___________ |
+| 10 | Bail | /BAYL/ | Bail is money paid to be released before trial. | ___________ |
+| 11 | Guilty | /GIL-tee/ | Guilty means the person committed the crime. | ___________ |
+| 12 | Not guilty | /NOT GIL-tee/ | Not guilty means the person is found innocent. | ___________ |
+| 13 | Oath | /OHTH/ | An oath is a promise to tell the truth. | ___________ |
+| 14 | Summons | /SUM-unz/ | A summons orders you to appear in court. | ___________ |
+| 15 | Subpoena | /suh-PEE-nuh/ | A subpoena requires a person to testify or bring documents. | ___________ |
+| 16 | Arraignment | /uh-RAYN-ment/ | The arraignment is the first court appearance. | ___________ |
+| 17 | Misdemeanor | /mis-dih-MEE-ner/ | A misdemeanor is a minor crime with lighter punishment. | ___________ |
+| 18 | Felony | /FEL-uh-nee/ | A felony is a serious crime with heavy punishment. | ___________ |
+| 19 | Probation | /proh-BAY-shun/ | Probation means supervision instead of prison time. | ___________ |
+| 20 | Legal aid | /LEE-gul AYD/ | Legal aid provides free lawyers for people who can't afford one. | ___________ |
+
+> **⚖️ Ezra's Tip:** *"Knowing legal words protects you. Practice: 'I have the right to an ATTORNEY. I understand my RIGHTS.' If you ever need help, contact LEGAL AID — it's free."*
+
+---
+
+
+## Scene 15: Job Interview Skills
+
+*At the Sophia Career Center, Dara practices for the big interview*
+
+| # | Word | Phonetic | In the Story... | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Interview | /IN-ter-vyoo/ | Prepare for the job interview. | ___________ |
+| 2 | Resume | /REZ-oo-may/ | Submit your resume with the application. | ___________ |
+| 3 | Qualifications | /kwol-ih-fih-KAY-shunz/ | List your qualifications on your resume. | ___________ |
+| 4 | Experience | /ek-SPEER-ee-ents/ | She has five years of work experience. | ___________ |
+| 5 | Reference | /REF-er-ents/ | Provide three references who know your work. | ___________ |
+| 6 | Strengths | /STRENGTHS/ | My strengths include teamwork and communication. | ___________ |
+| 7 | Weakness | /WEEK-nes/ | Describe a weakness and how you overcame it. | ___________ |
+| 8 | Punctual | /PUNK-choo-ul/ | Be punctual and arrive five minutes early. | ___________ |
+| 9 | Professional | /proh-FESH-un-ul/ | Dress in professional clothes for the interview. | ___________ |
+| 10 | Handshake | /HAND-shayk/ | Give a firm handshake when you meet the interviewer. | ___________ |
+| 11 | Eye contact | /EYE KON-takt/ | Make eye contact when answering questions. | ___________ |
+| 12 | Confident | /KON-fih-dent/ | Speak in a confident and clear voice. | ___________ |
+| 13 | Nervous | /NUR-vus/ | It is normal to feel nervous before an interview. | ___________ |
+| 14 | Hire | /HYR/ | The company will hire the best candidate. | ___________ |
+| 15 | Position | /poh-ZISH-un/ | What position are you applying for? | ___________ |
+| 16 | Salary | /SAL-er-ee/ | The salary for this job is competitive. | ___________ |
+| 17 | Benefits | /BEN-ih-fits/ | Benefits include health insurance and vacation. | ___________ |
+| 18 | Full-time | /FULL-tym/ | A full-time job is forty hours per week. | ___________ |
+| 19 | Part-time | /PART-tym/ | She works part-time while attending school. | ___________ |
+| 20 | Shift | /SHIFT/ | The morning shift starts at seven. | ___________ |
+| 21 | Background check | /BAK-grownd CHEK/ | The employer runs a background check. | ___________ |
+| 22 | Follow up | /FOL-oh UP/ | Follow up with a thank-you email. | ___________ |
+| 23 | Offer | /OF-er/ | She received a job offer on Friday. | ___________ |
+| 24 | Accept | /ak-SEPT/ | He decided to accept the position. | ___________ |
+| 25 | Decline | /dih-KLYN/ | She had to decline the offer. | ___________ |
+
+> **💼 Dara's Tip:** *"Practice: TELL ME ABOUT YOURSELF, WHAT ARE YOUR STRENGTHS? Confidence starts with words!"*
+
+---
+
+## Scene 16: Resume & Applications
+
+*Dara builds a winning resume at the Sophia Writing Lab*
+
+| # | Word | Phonetic | In the Story... | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Application | /ap-lih-KAY-shun/ | Fill out the job application completely. | ___________ |
+| 2 | Cover letter | /KUV-er LET-er/ | Write a cover letter to introduce yourself. | ___________ |
+| 3 | Objective | /ob-JEK-tiv/ | The objective states what kind of job you want. | ___________ |
+| 4 | Education | /ej-oo-KAY-shun/ | List your education history. | ___________ |
+| 5 | Degree | /dih-GREE/ | She earned a degree in nursing. | ___________ |
+| 6 | Certificate | /ser-TIF-ih-kit/ | A certificate proves you completed training. | ___________ |
+| 7 | Skills | /SKILZ/ | List your skills such as bilingual or computer. | ___________ |
+| 8 | Achievement | /uh-CHEEV-ment/ | Describe your achievements in past jobs. | ___________ |
+| 9 | Employer | /em-PLOY-er/ | Your previous employer can give a reference. | ___________ |
+| 10 | Employee | /em-PLOY-ee/ | Every employee must attend the meeting. | ___________ |
+| 11 | Deadline | /DED-lyn/ | Submit the application before the deadline. | ___________ |
+| 12 | Online | /ON-lyn/ | Apply online through the company website. | ___________ |
+| 13 | Upload | /UP-lohd/ | Upload your resume as a PDF file. | ___________ |
+| 14 | Contact info | /KON-takt IN-foh/ | Include your contact info at the top. | ___________ |
+| 15 | Work history | /WURK HIS-ter-ee/ | List your work history from most recent. | ___________ |
+| 16 | Volunteer | /vol-un-TEER/ | Include volunteer experience on your resume. | ___________ |
+| 17 | Training | /TRAYN-ing/ | Complete the required training before starting. | ___________ |
+| 18 | Certification | /ser-tih-fih-KAY-shun/ | Get your CPR certification for the job. | ___________ |
+| 19 | Licensed | /LY-sensd/ | She is a licensed cosmetologist. | ___________ |
+| 20 | Bilingual | /by-LING-gwul/ | Being bilingual is a valuable skill. | ___________ |
+| 21 | Proofread | /PROOF-reed/ | Proofread your resume for spelling errors. | ___________ |
+| 22 | Font | /FONT/ | Use a clean professional font. | ___________ |
+| 23 | Format | /FOR-mat/ | Keep the format simple and easy to read. | ___________ |
+| 24 | Summary | /SUM-er-ee/ | Write a brief career summary at the top. | ___________ |
+| 25 | Portfolio | /port-FOH-lee-oh/ | Bring your portfolio to show your work. | ___________ |
+
+> **📄 Dara's Tip:** *"Your resume is your FIRST IMPRESSION. Make every word count!"*
+
+---
+
+## Scene 17: Banking & Online Services
+
+*At the Sophia Digital Bank, Dara manages money online*
+
+| # | Word | Phonetic | In the Story... | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Account | /uh-KOWNT/ | Open a checking account at the bank. | ___________ |
+| 2 | Deposit | /dih-POZ-it/ | Deposit your paycheck into savings. | ___________ |
+| 3 | Withdraw | /with-DRAW/ | Withdraw cash from the ATM. | ___________ |
+| 4 | Transfer | /TRANS-fer/ | Transfer money between your accounts. | ___________ |
+| 5 | Balance | /BAL-ents/ | Check your account balance online. | ___________ |
+| 6 | Statement | /STAYT-ment/ | Review your monthly bank statement. | ___________ |
+| 7 | ATM | /AY-TEE-EM/ | The ATM is outside the bank. | ___________ |
+| 8 | PIN | /PIN/ | Never share your PIN with anyone. | ___________ |
+| 9 | Password | /PAS-wurd/ | Create a strong password for online banking. | ___________ |
+| 10 | Mobile app | /MOH-bul AP/ | Use the mobile app to check your balance. | ___________ |
+| 11 | Direct deposit | /dih-REKT dih-POZ-it/ | Set up direct deposit to get paid faster. | ___________ |
+| 12 | Check | /CHEK/ | Write a check to pay the landlord. | ___________ |
+| 13 | Wire transfer | /WYR TRANS-fer/ | A wire transfer sends money electronically. | ___________ |
+| 14 | Savings account | /SAY-vingz uh-KOWNT/ | A savings account earns interest. | ___________ |
+| 15 | Checking account | /CHEK-ing uh-KOWNT/ | Use your checking account for daily expenses. | ___________ |
+| 16 | Credit card | /KRED-it KARD/ | Pay with a credit card and pay the balance monthly. | ___________ |
+| 17 | Debit card | /DEB-it KARD/ | A debit card takes money directly from your account. | ___________ |
+| 18 | Loan | /LOHN/ | Apply for a loan to buy a car. | ___________ |
+| 19 | Mortgage | /MOR-gij/ | A mortgage is a loan to buy a house. | ___________ |
+| 20 | Payment | /PAY-ment/ | Make your car payment on time every month. | ___________ |
+| 21 | Due date | /DOO DAYT/ | The payment due date is the fifteenth. | ___________ |
+| 22 | Overdue | /OH-ver-doo/ | The bill is overdue by two weeks. | ___________ |
+| 23 | Late fee | /LAYT FEE/ | Avoid the late fee by paying on time. | ___________ |
+| 24 | Fraud | /FROD/ | Report fraud to your bank immediately. | ___________ |
+| 25 | Security | /seh-KYOOR-ih-tee/ | Online security protects your personal information. | ___________ |
+
+> **🏦 Dara's Tip:** *"ACCOUNT, DEPOSIT, TRANSFER — banking English is ESSENTIAL!"*
+
+---
+
+## Scene 18: Taxes & Filing
+
+*At the Sophia Tax Office, Dara learns that taxes support community*
+
+| # | Word | Phonetic | In the Story... | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Tax | /TAKS/ | Pay your income tax every year. | ___________ |
+| 2 | Tax return | /TAKS rih-TURN/ | File your tax return by April fifteenth. | ___________ |
+| 3 | Refund | /REE-fund/ | You may get a refund if you overpaid taxes. | ___________ |
+| 4 | W-2 | /DUB-ul-yoo TOO/ | Your employer sends a W-2 form each January. | ___________ |
+| 5 | Income | /IN-kum/ | Report all income on your tax return. | ___________ |
+| 6 | Deduction | /dih-DUK-shun/ | A deduction reduces the tax you owe. | ___________ |
+| 7 | Dependent | /dih-PEN-dent/ | Claim your children as dependents. | ___________ |
+| 8 | Filing status | /FY-ling STAT-us/ | Choose your filing status: single or married. | ___________ |
+| 9 | Federal | /FED-er-ul/ | Federal taxes go to the national government. | ___________ |
+| 10 | State tax | /STAYT TAKS/ | State tax rates vary by state. | ___________ |
+| 11 | Sales tax | /SAYLZ TAKS/ | Sales tax is added at the register. | ___________ |
+| 12 | Property tax | /PROP-er-tee TAKS/ | Property tax is based on home value. | ___________ |
+| 13 | Audit | /AW-dit/ | An audit reviews your tax records. | ___________ |
+| 14 | Receipt | /rih-SEET/ | Keep receipts for tax deductions. | ___________ |
+| 15 | Accountant | /uh-KOWN-tent/ | Hire an accountant to prepare your taxes. | ___________ |
+| 16 | IRS | /EYE-AR-ES/ | The IRS collects federal taxes. | ___________ |
+| 17 | Extension | /ek-STEN-shun/ | File an extension if you need more time. | ___________ |
+| 18 | Withholding | /with-HOHL-ding/ | Withholding is tax taken from your paycheck. | ___________ |
+| 19 | Exempt | /eg-ZEMPT/ | Some items are exempt from sales tax. | ___________ |
+| 20 | Penalty | /PEN-ul-tee/ | A penalty is charged for late filing. | ___________ |
+| 21 | Gross pay | /GROHS PAY/ | Gross pay is your total earnings before taxes. | ___________ |
+| 22 | Net pay | /NET PAY/ | Net pay is what you take home after taxes. | ___________ |
+| 23 | Tax bracket | /TAKS BRAK-it/ | Your tax bracket determines your rate. | ___________ |
+| 24 | Volunteer tax help | /VOL-un-TEER TAKS HELP/ | Free volunteer tax help is available. | ___________ |
+| 25 | E-file | /EE-fyl/ | E-file your tax return for faster processing. | ___________ |
+
+> **📋 Dara's Tip:** *"TAX, REFUND, W-2, DEDUCTION — these words put money BACK in your pocket!"*
+
+---
+
+## Scene 19: Voting & Elections
+
+*At the Sophia Civic Center, Dara exercises the power of the vote*
+
+| # | Word | Phonetic | In the Story... | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Vote | /VOHT/ | Every citizen has the right to vote. | ___________ |
+| 2 | Ballot | /BAL-ut/ | Mark your choices on the ballot. | ___________ |
+| 3 | Candidate | /KAN-dih-dayt/ | The candidate gave a speech at the rally. | ___________ |
+| 4 | Election | /ee-LEK-shun/ | The election is held on the first Tuesday of November. | ___________ |
+| 5 | Register | /REJ-ih-ster/ | Register to vote before the deadline. | ___________ |
+| 6 | Polling place | /POHL-ing PLAYS/ | Go to your polling place to cast your vote. | ___________ |
+| 7 | Campaign | /kam-PAYN/ | The campaign lasted several months. | ___________ |
+| 8 | Debate | /dih-BAYT/ | The candidates debated on television. | ___________ |
+| 9 | Platform | /PLAT-form/ | The party platform outlines their goals. | ___________ |
+| 10 | Democrat | /DEM-oh-krat/ | The Democrat ran for city council. | ___________ |
+| 11 | Republican | /rih-PUB-lih-kun/ | The Republican candidate won the local race. | ___________ |
+| 12 | Independent | /in-dih-PEN-dent/ | An independent candidate has no party. | ___________ |
+| 13 | Issue | /ISH-oo/ | Education is an important issue this election. | ___________ |
+| 14 | Polling | /POHL-ing/ | Polling shows the race is very close. | ___________ |
+| 15 | Absentee ballot | /AB-sen-tee BAL-ut/ | An absentee ballot lets you vote by mail. | ___________ |
+| 16 | Primary | /PRY-mair-ee/ | The primary election narrows the candidates. | ___________ |
+| 17 | General election | /JEN-er-ul ee-LEK-shun/ | The general election determines the winner. | ___________ |
+| 18 | Inauguration | /in-aw-gyoo-RAY-shun/ | The inauguration ceremony is in January. | ___________ |
+| 19 | Governor | /GUV-er-ner/ | The governor leads the state government. | ___________ |
+| 20 | Mayor | /MAY-er/ | The mayor is the leader of the city. | ___________ |
+| 21 | Senator | /SEN-uh-ter/ | Each state elects two senators. | ___________ |
+| 22 | Representative | /rep-rih-ZEN-tuh-tiv/ | Your representative speaks for your district. | ___________ |
+| 23 | Amendment | /uh-MEND-ment/ | An amendment changes the constitution. | ___________ |
+| 24 | Democracy | /dih-MOK-ruh-see/ | Democracy means government by the people. | ___________ |
+| 25 | Civic duty | /SIV-ik DOO-tee/ | Voting is a civic duty. | ___________ |
+
+> **🗳 Dara's Tip:** *"VOTE, BALLOT, CANDIDATE — your voice matters! Use it!"*
+
+---
+
 ## Land 6 Summary
 
 | Sub-Scene | Word Count |
@@ -350,4 +655,13 @@
 | School Subjects & Education | 20 |
 | Community Helpers & Services | 15 |
 | Rights & Responsibilities | 15 |
-| **TOTAL** | **220** |
+| Forms & Documents | 20 |
+| Housing & Renting | 20 |
+| Childcare & Parenting | 20 |
+| Legal & Court Terms | 20 |
+| Job Interview Skills | 25 |
+| Resume & Applications | 25 |
+| Banking & Online Services | 25 |
+| Taxes & Filing | 25 |
+| Voting & Elections | 25 |
+| **TOTAL** | **425** |

@@ -321,6 +321,280 @@
 
 ---
 
+## Scene 11: Telling Time & Clocks
+
+*In the Celestia Clock Tower, Elias and Selene learn to read every kind of timekeeper — from sundials to smartphones.*
+
+| # | Word | Phonetic | In the Story… | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Clock | /KLOK/ | The clock on the wall shows it is ten fifteen. | ___________ |
+| 2 | Watch | /WOCH/ | Selene wears a watch on her wrist to tell time. | ___________ |
+| 3 | Hour | /OW-er/ | An hour is sixty minutes long. | ___________ |
+| 4 | Minute | /MIN-it/ | Each minute is sixty seconds long. | ___________ |
+| 5 | Second | /SEK-und/ | A second is the smallest common unit of time. | ___________ |
+| 6 | Quarter past | /KWOR-ter PAST/ | It is quarter past three — that means 3:15. | ___________ |
+| 7 | Half past | /HAF PAST/ | Half past six means 6:30. | ___________ |
+| 8 | Quarter to | /KWOR-ter TOO/ | Quarter to nine means 8:45. | ___________ |
+| 9 | Noon | /NOON/ | Noon is twelve o'clock in the daytime. | ___________ |
+| 10 | A.M. | /AY-EM/ | A.M. means the morning hours, before noon. | ___________ |
+| 11 | P.M. | /PEE-EM/ | P.M. means the afternoon and evening hours. | ___________ |
+| 12 | Alarm | /uh-LARM/ | Set the alarm for seven A.M. to wake up for school. | ___________ |
+| 13 | Timer | /TY-mer/ | Set a timer for twenty minutes to bake the cookies. | ___________ |
+| 14 | Stopwatch | /STOP-woch/ | Use the stopwatch to time the race. | ___________ |
+| 15 | Sundial | /SUN-dy-ul/ | A sundial uses the sun's shadow to tell time. | ___________ |
+| 16 | Hourglass | /OW-er-glas/ | Sand flows through the hourglass in exactly one hour. | ___________ |
+| 17 | Time zone | /TYM ZOHN/ | New York and Los Angeles are in different time zones. | ___________ |
+| 18 | On time | /ON TYM/ | Always try to be on time for appointments. | ___________ |
+| 19 | Late | /LAYT/ | If you leave at eight, you will be late for class. | ___________ |
+| 20 | Early | /UR-lee/ | Arriving early gives you time to prepare. | ___________ |
+
+> **⏰ Elias's Tip:** *"Practice telling time all day! Look at a clock and say: 'It is ___.' Try: 'quarter past,' 'half past,' and 'quarter to.' Time is the one English skill you use EVERY SINGLE DAY."*
+
+---
+
+## Scene 12: Ages & Life Stages
+
+*The Garden of Time grows a tree for every stage of life. Elias and Selene walk along its rings.*
+
+| # | Word | Phonetic | In the Story… | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Baby | /BAY-bee/ | A baby is a child from birth to about one year old. | ___________ |
+| 2 | Toddler | /TOD-ler/ | A toddler is learning to walk and talk. | ___________ |
+| 3 | Child | /CHYLD/ | A child is a young person between two and twelve. | ___________ |
+| 4 | Teenager | /TEEN-ay-jer/ | A teenager is between thirteen and nineteen years old. | ___________ |
+| 5 | Adult | /uh-DULT/ | An adult is a fully grown person, usually eighteen or older. | ___________ |
+| 6 | Senior | /SEEN-yer/ | A senior citizen is over sixty-five years old. | ___________ |
+| 7 | Age | /AYJ/ | What is your age? I am thirty-two years old. | ___________ |
+| 8 | Birthday | /BURTH-day/ | Your birthday is the day you were born. | ___________ |
+| 9 | Anniversary | /an-ih-VUR-suh-ree/ | An anniversary marks years since a special event. | ___________ |
+| 10 | Generation | /jen-er-AY-shun/ | A generation is about twenty-five to thirty years. | ___________ |
+| 11 | Youth | /YOOTH/ | Youth is the time of life when you are young. | ___________ |
+| 12 | Elderly | /EL-der-lee/ | The elderly deserve our respect and care. | ___________ |
+| 13 | Grow up | /GROH UP/ | What do you want to be when you grow up? | ___________ |
+| 14 | Milestone | /MYL-stohn/ | A first word is a milestone in every baby's life. | ___________ |
+| 15 | Lifespan | /LYF-span/ | The average human lifespan is about seventy-five years. | ___________ |
+| 16 | Mature | /muh-CHOOR/ | To mature means to grow older and wiser. | ___________ |
+| 17 | Infant | /IN-funt/ | An infant needs constant care from a parent. | ___________ |
+| 18 | Middle-aged | /MID-ul AYJD/ | A middle-aged person is usually between forty and sixty. | ___________ |
+| 19 | Aging | /AY-jing/ | Aging is a natural part of every living thing. | ___________ |
+| 20 | Memory | /MEM-or-ee/ | A memory is something you remember from the past. | ___________ |
+
+> **🌳 Selene's Tip:** *"Draw your own 'Tree of Life!' Label the rings: INFANT, TODDLER, CHILD, TEENAGER, ADULT, SENIOR. Where are YOU on the tree? Say: 'I am a ___ . I am ___ years old.'"*
+
+---
+
+## Scene 13: Seasons & Time in Nature
+
+*The Garden of Time blooms and fades with the turning seasons. Nature keeps its own clock.*
+
+| # | Word | Phonetic | In the Story… | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Spring | /SPRING/ | Flowers bloom and baby animals are born in spring. | ___________ |
+| 2 | Summer | /SUM-er/ | Summer brings long, hot days and school vacation. | ___________ |
+| 3 | Fall | /FAWL/ | In fall, the leaves change color and drop from trees. | ___________ |
+| 4 | Winter | /WIN-ter/ | Winter is the coldest season with short days. | ___________ |
+| 5 | Season | /SEE-zun/ | A season is one of four parts of the year. | ___________ |
+| 6 | Harvest | /HAR-vest/ | Harvest is the time when farmers pick their crops. | ___________ |
+| 7 | Bloom | /BLOOM/ | Roses bloom in late spring and early summer. | ___________ |
+| 8 | Migrate | /MY-grayt/ | Birds migrate south when winter comes. | ___________ |
+| 9 | Hibernate | /HY-ber-nayt/ | Bears hibernate through the entire winter. | ___________ |
+| 10 | Sunrise | /SUN-ryz/ | Sunrise is earlier in summer and later in winter. | ___________ |
+| 11 | Sunset | /SUN-set/ | The sunset paints the sky orange and pink. | ___________ |
+| 12 | Annual | /AN-yoo-ul/ | An annual event happens once every year. | ___________ |
+| 13 | Monthly | /MUNTH-lee/ | Rent is a monthly expense — paid every month. | ___________ |
+| 14 | Weekly | /WEEK-lee/ | The weekly schedule is posted on the bulletin board. | ___________ |
+| 15 | Daily | /DAY-lee/ | Daily exercise keeps your body and mind strong. | ___________ |
+| 16 | Hourly | /OW-er-lee/ | The bus runs on an hourly schedule. | ___________ |
+| 17 | Cycle | /SY-kul/ | The seasons move in a cycle, year after year. | ___________ |
+| 18 | Change | /CHAYNJ/ | Nature teaches us that change is constant. | ___________ |
+| 19 | Rhythm | /RITH-um/ | The rhythm of the seasons guides all living things. | ___________ |
+| 20 | Eternal | /ee-TUR-nul/ | The Garden of Time reminds us that time is eternal. | ___________ |
+
+> **🌸 Elias & Selene's Tip:** *"Time moves in circles — like the SEASONS! Say: 'In SPRING I ___. In SUMMER I ___. In FALL I ___. In WINTER I ___.' Fill in YOUR activities and you've just described your year!"*
+
+---
+
+
+## Scene 14: Historical Timekeeping
+
+*In the Celestia Time Museum, Elias explores how humans measured time throughout history*
+
+| # | Word | Phonetic | In the Story... | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Sundial | /SUN-dy-ul/ | The sundial uses shadows to tell time. | ___________ |
+| 2 | Hourglass | /OW-er-glas/ | Flip the hourglass to start the timer. | ___________ |
+| 3 | Pendulum | /PEN-joo-lum/ | The pendulum swings back and forth in the clock. | ___________ |
+| 4 | Candle clock | /KAN-dul KLOK/ | A candle clock burns down to mark the hours. | ___________ |
+| 5 | Water clock | /WOT-er KLOK/ | The water clock drips to measure time passing. | ___________ |
+| 6 | Pocket watch | /POK-it WOTCH/ | Grandfather keeps a pocket watch on a chain. | ___________ |
+| 7 | Wristwatch | /RIST-wotch/ | Check the wristwatch to see if we are late. | ___________ |
+| 8 | Grandfather clock | /GRAND-fah-ther KLOK/ | The grandfather clock chimes every hour. | ___________ |
+| 9 | Cuckoo clock | /KOO-koo KLOK/ | The cuckoo clock has a little bird that pops out. | ___________ |
+| 10 | Clocktower | /KLOK-tow-er/ | Big Ben is a famous clocktower. | ___________ |
+| 11 | Timekeeper | /TYM-kee-per/ | The timekeeper records the runners' times. | ___________ |
+| 12 | Chronometer | /kroh-NOM-eh-ter/ | A chronometer is an extremely accurate clock. | ___________ |
+| 13 | Dial | /DY-ul/ | The dial shows the numbers one through twelve. | ___________ |
+| 14 | Hands | /HANDZ/ | The clock hands point to the hour and minute. | ___________ |
+| 15 | Tick | /TIK/ | The clock goes tick tock every second. | ___________ |
+| 16 | Chime | /CHYM/ | The clock chimes at noon and midnight. | ___________ |
+| 17 | Ancient | /AYN-shent/ | Ancient civilizations measured time with the stars. | ___________ |
+| 18 | Modern | /MOD-ern/ | Modern clocks use quartz crystals. | ___________ |
+| 19 | Invention | /in-VEN-shun/ | The clock was one of history's greatest inventions. | ___________ |
+| 20 | Accurate | /AK-yur-it/ | Atomic clocks are the most accurate. | ___________ |
+| 21 | Timezone | /TYM-zohn/ | The world has twenty-four timezones. | ___________ |
+| 22 | Greenwich | /GREN-itch/ | Greenwich Mean Time is the world standard. | ___________ |
+| 23 | AM | /AY-EM/ | AM means before noon. | ___________ |
+| 24 | PM | /PEE-EM/ | PM means after noon. | ___________ |
+| 25 | Era | /EER-uh/ | Each era of history has its own timekeeping method. | ___________ |
+
+> **⏳ Elias's Tip:** *"SUNDIAL, HOURGLASS, PENDULUM — time has been measured for thousands of years!"*
+
+---
+
+## Scene 15: Digital Time & Screens
+
+*Selene discovers how technology changed how we experience time*
+
+| # | Word | Phonetic | In the Story... | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Digital clock | /DIJ-ih-tul KLOK/ | The digital clock shows numbers instead of hands. | ___________ |
+| 2 | Timer | /TY-mer/ | Set the timer for ten minutes. | ___________ |
+| 3 | Alarm | /uh-LARM/ | The alarm rings at six thirty every morning. | ___________ |
+| 4 | Countdown | /KOWNT-down/ | The countdown starts at ten, nine, eight... | ___________ |
+| 5 | Stopwatch | /STOP-wotch/ | Use the stopwatch to time the race. | ___________ |
+| 6 | Snooze | /SNOOZ/ | Press snooze for five more minutes of sleep. | ___________ |
+| 7 | Reminder | /rih-MYN-der/ | Set a reminder for your doctor appointment. | ___________ |
+| 8 | Calendar app | /KAL-en-der AP/ | Add events to your calendar app. | ___________ |
+| 9 | Notification | /noh-tih-fih-KAY-shun/ | A notification pops up on your screen. | ___________ |
+| 10 | Screen time | /SKREEN TYM/ | Limit screen time to two hours per day. | ___________ |
+| 11 | Streaming | /STREEM-ing/ | Streaming a movie takes about two hours. | ___________ |
+| 12 | Loading | /LOH-ding/ | The page is still loading. | ___________ |
+| 13 | Buffering | /BUF-er-ing/ | The video keeps buffering because the internet is slow. | ___________ |
+| 14 | Download | /DOWN-lohd/ | Download the file in about three minutes. | ___________ |
+| 15 | Upload | /UP-lohd/ | Upload the photo to the cloud. | ___________ |
+| 16 | Update | /up-DAYT/ | The software update takes fifteen minutes. | ___________ |
+| 17 | Real-time | /REEL-tym/ | GPS gives real-time directions. | ___________ |
+| 18 | Instant | /IN-stunt/ | The message was delivered in an instant. | ___________ |
+| 19 | Lag | /LAG/ | A lag means there is a delay in the connection. | ___________ |
+| 20 | Sync | /SINK/ | Sync your watch with your phone for accuracy. | ___________ |
+| 21 | Timestamp | /TYM-stamp/ | The timestamp shows when the photo was taken. | ___________ |
+| 22 | Log in | /LOG IN/ | Log in to your account to check the schedule. | ___________ |
+| 23 | Schedule | /SKEJ-ool/ | Schedule the meeting for tomorrow at two. | ___________ |
+| 24 | Time zone | /TYM ZOHN/ | Adjust for the time zone when calling overseas. | ___________ |
+| 25 | 24-hour clock | /TWEN-tee-for OW-er KLOK/ | The military uses a 24-hour clock. | ___________ |
+
+> **📱 Selene's Tip:** *"TIMER, ALARM, COUNTDOWN — your phone is a time machine!"*
+
+---
+
+## Scene 16: Holidays & Celebrations Calendar
+
+*The Celestia Festival Calendar marks every special day*
+
+| # | Word | Phonetic | In the Story... | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | New Year | /NOO YEER/ | Happy New Year! January first is a fresh start. | ___________ |
+| 2 | Valentine's Day | /VAL-en-tynz DAY/ | Exchange cards on Valentine's Day. | ___________ |
+| 3 | Presidents' Day | /PREZ-ih-dents DAY/ | Presidents' Day honors past leaders. | ___________ |
+| 4 | Easter | /EES-ter/ | Children hunt for Easter eggs in the park. | ___________ |
+| 5 | Mother's Day | /MUTH-erz DAY/ | Celebrate Mother's Day with flowers. | ___________ |
+| 6 | Father's Day | /FAH-therz DAY/ | Father's Day is in June. | ___________ |
+| 7 | Independence Day | /in-dih-PEN-dents DAY/ | Fireworks on Independence Day light up the sky. | ___________ |
+| 8 | Labor Day | /LAY-ber DAY/ | Labor Day honors all workers. | ___________ |
+| 9 | Halloween | /HAL-oh-ween/ | Dress in costume on Halloween night. | ___________ |
+| 10 | Veterans Day | /VET-er-unz DAY/ | Veterans Day honors those who served. | ___________ |
+| 11 | Thanksgiving | /THANKS-giv-ing/ | The family gathers for Thanksgiving dinner. | ___________ |
+| 12 | Christmas | /KRIS-mus/ | Decorate the tree for Christmas. | ___________ |
+| 13 | Hanukkah | /HAH-nuh-kuh/ | Light the menorah during Hanukkah. | ___________ |
+| 14 | Kwanzaa | /KWAN-zuh/ | Kwanzaa celebrates African heritage. | ___________ |
+| 15 | Ramadan | /RAH-muh-don/ | Ramadan is a month of fasting. | ___________ |
+| 16 | Eid | /EED/ | Eid marks the end of Ramadan. | ___________ |
+| 17 | Diwali | /dih-WAH-lee/ | Diwali is the festival of lights. | ___________ |
+| 18 | Lunar New Year | /LOO-ner NOO YEER/ | Lunar New Year celebrations last many days. | ___________ |
+| 19 | Birthday | /BURTH-day/ | Blow out the candles on your birthday cake. | ___________ |
+| 20 | Anniversary | /an-ih-VUR-ser-ee/ | An anniversary marks a special date each year. | ___________ |
+| 21 | Memorial Day | /meh-MOR-ee-ul DAY/ | Memorial Day remembers fallen soldiers. | ___________ |
+| 22 | Martin Luther King Day | /MAR-tin LOO-ther KING DAY/ | MLK Day celebrates equality. | ___________ |
+| 23 | Earth Day | /URTH DAY/ | Plant a tree on Earth Day, April twenty-second. | ___________ |
+| 24 | Graduation day | /graj-oo-AY-shun DAY/ | Graduation day is a proud milestone. | ___________ |
+| 25 | Back to school | /BAK too SKOOL/ | Back to school means new supplies and new friends. | ___________ |
+
+> **🎄 Elias's Tip:** *"HOLIDAYS mark time! NEW YEAR, INDEPENDENCE DAY, THANKSGIVING — the calendar tells stories!"*
+
+---
+
+## Scene 17: School Schedules & Timetables
+
+*Selene maps out every period, break, and deadline*
+
+| # | Word | Phonetic | In the Story... | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Period | /PEER-ee-ud/ | First period starts at eight o'clock. | ___________ |
+| 2 | Bell | /BEL/ | The bell rings to start and end each class. | ___________ |
+| 3 | Homeroom | /HOHM-room/ | Check in with your teacher during homeroom. | ___________ |
+| 4 | Advisory | /ad-VY-zor-ee/ | Advisory is a short class for announcements. | ___________ |
+| 5 | Break | /BRAYK/ | We have a ten-minute break between classes. | ___________ |
+| 6 | Lunch period | /LUNCH PEER-ee-ud/ | Lunch period is from noon to twelve thirty. | ___________ |
+| 7 | After school | /AF-ter SKOOL/ | Stay for after school tutoring. | ___________ |
+| 8 | Early dismissal | /UR-lee dis-MIS-ul/ | Early dismissal is at one o'clock today. | ___________ |
+| 9 | Late start | /LAYT START/ | Late start means school begins at ten. | ___________ |
+| 10 | Snow day | /SNOH DAY/ | A snow day means no school due to weather. | ___________ |
+| 11 | Substitute | /SUB-stih-toot/ | A substitute teacher fills in today. | ___________ |
+| 12 | Syllabus | /SIL-uh-bus/ | The syllabus outlines the course. | ___________ |
+| 13 | Due date | /DOO DAYT/ | The project due date is Friday. | ___________ |
+| 14 | Midterm | /MID-turm/ | Study hard for the midterm exam. | ___________ |
+| 15 | Final | /FY-nul/ | The final exam covers the entire semester. | ___________ |
+| 16 | Quarter | /KWOR-ter/ | Report cards are issued every quarter. | ___________ |
+| 17 | Trimester | /try-MES-ter/ | The school year has three trimesters. | ___________ |
+| 18 | School year | /SKOOL YEER/ | The school year runs from August to June. | ___________ |
+| 19 | Summer break | /SUM-er BRAYK/ | Summer break lasts about ten weeks. | ___________ |
+| 20 | Spring break | /SPRING BRAYK/ | Spring break is one week in March or April. | ___________ |
+| 21 | Winter break | /WIN-ter BRAYK/ | Winter break includes two weeks off. | ___________ |
+| 22 | Tardy | /TAR-dee/ | Three tardies equal one absence. | ___________ |
+| 23 | Absent | /AB-sent/ | Mark the student absent if they are not here. | ___________ |
+| 24 | Present | /PREZ-ent/ | Raise your hand to be marked present. | ___________ |
+| 25 | Attendance | /uh-TEN-dents/ | The teacher takes attendance every morning. | ___________ |
+
+> **📅 Selene's Tip:** *"PERIOD, BELL, SCHEDULE — say your school day out loud in English!"*
+
+---
+
+## Scene 18: Time in Music & Rhythm
+
+*Where Celestia meets Harmonia! Time and music are one*
+
+| # | Word | Phonetic | In the Story... | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Beat | /BEET/ | Clap on every beat of the music. | ___________ |
+| 2 | Tempo | /TEM-poh/ | A fast tempo makes you want to dance. | ___________ |
+| 3 | Measure | /MEZH-er/ | Each measure has four beats. | ___________ |
+| 4 | Rest | /REST/ | A rest is a moment of silence in the music. | ___________ |
+| 5 | Duration | /dur-AY-shun/ | The duration of the song is three minutes. | ___________ |
+| 6 | Whole note | /HOHL NOHT/ | A whole note lasts four beats. | ___________ |
+| 7 | Half note | /HAF NOHT/ | A half note lasts two beats. | ___________ |
+| 8 | Quarter note | /KWOR-ter NOHT/ | A quarter note gets one beat. | ___________ |
+| 9 | Eighth note | /AYTTH NOHT/ | An eighth note is half a beat. | ___________ |
+| 10 | Time signature | /TYM SIG-nuh-chur/ | The time signature tells how many beats per measure. | ___________ |
+| 11 | Metronome | /MET-roh-nohm/ | The metronome clicks to keep steady time. | ___________ |
+| 12 | Rhythm | /RITH-um/ | Feel the rhythm in your body. | ___________ |
+| 13 | Syncopation | /sin-koh-PAY-shun/ | Syncopation puts the beat in unexpected places. | ___________ |
+| 14 | Upbeat | /UP-beet/ | The upbeat comes before the downbeat. | ___________ |
+| 15 | Downbeat | /DOWN-beet/ | The downbeat is the first beat of the measure. | ___________ |
+| 16 | Repeat | /rih-PEET/ | Repeat the chorus one more time. | ___________ |
+| 17 | Verse | /VURS/ | The verse tells the story of the song. | ___________ |
+| 18 | Chorus | /KOR-us/ | The chorus is the part everyone sings along to. | ___________ |
+| 19 | Bridge | /BRIJ/ | The bridge connects the verse to the chorus. | ___________ |
+| 20 | Finale | /fih-NAL-ee/ | The finale is the exciting ending of the performance. | ___________ |
+| 21 | Encore | /ON-kor/ | The crowd shouted encore for one more song. | ___________ |
+| 22 | Crescendo | /kreh-SHEN-doh/ | A crescendo means the music gets louder. | ___________ |
+| 23 | Pause | /PAWZ/ | There was a dramatic pause before the last note. | ___________ |
+| 24 | Timing | /TY-ming/ | Good timing means playing the note at the right moment. | ___________ |
+| 25 | Countdown | /KOWNT-down/ | The conductor gives a countdown before the first note. | ___________ |
+
+> **🎶 Elias's Tip:** *"Music IS time! BEAT, TEMPO, MEASURE — clap the rhythm of English!"*
+
+---
+
 ## Land 7 Summary
 
 | Sub-Scene | Word Count |
@@ -335,4 +609,12 @@
 | The Calendar & Cycles | 15 |
 | Environment & Sustainability | 20 |
 | The Future & Dreams | 15 |
-| **TOTAL** | **205** |
+| Telling Time & Clocks | 20 |
+| Ages & Life Stages | 20 |
+| Seasons & Time in Nature | 20 |
+| Historical Timekeeping | 25 |
+| Digital Time & Screens | 25 |
+| Holidays & Celebrations Calendar | 25 |
+| School Schedules & Timetables | 25 |
+| Time in Music & Rhythm | 25 |
+| **TOTAL** | **390** |

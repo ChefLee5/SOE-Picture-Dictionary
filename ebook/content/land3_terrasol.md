@@ -454,6 +454,363 @@
 
 ---
 
+## Scene 11: Insects & Bugs
+
+*Under every leaf and stone, tiny creatures go about their busy lives. Vesta has a magnifying glass to study them all.*
+
+| # | Word | Phonetic | In the Story… | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Insect | /IN-sekt/ | An insect has six legs and three body parts. | ___________ |
+| 2 | Ant | /ANT/ | The ant carries a crumb ten times its own weight. | ___________ |
+| 3 | Bee | /BEE/ | The bee buzzes from flower to flower collecting pollen. | ___________ |
+| 4 | Butterfly | /BUT-er-fly/ | The colorful butterfly was once a caterpillar. | ___________ |
+| 5 | Caterpillar | /KAT-er-pil-er/ | The caterpillar eats leaves before spinning a cocoon. | ___________ |
+| 6 | Ladybug | /LAY-dee-bug/ | The red ladybug has small black spots. | ___________ |
+| 7 | Dragonfly | /DRAG-un-fly/ | The dragonfly hovers over the pond. | ___________ |
+| 8 | Grasshopper | /GRAS-hop-er/ | The grasshopper jumps through the tall grass. | ___________ |
+| 9 | Cricket | /KRIK-it/ | The cricket chirps loudly on summer nights. | ___________ |
+| 10 | Spider | /SPY-der/ | The spider is not an insect — it has eight legs. | ___________ |
+| 11 | Web | /WEB/ | The spider's web sparkles with morning dew. | ___________ |
+| 12 | Mosquito | /mus-KEE-toh/ | The mosquito buzzes near your ear at night. | ___________ |
+| 13 | Fly | /FLY/ | A fly landed on the picnic table. | ___________ |
+| 14 | Beetle | /BEE-tul/ | The shiny beetle crawls along the branch. | ___________ |
+| 15 | Worm | /WURM/ | The earthworm helps make the soil healthy. | ___________ |
+| 16 | Cocoon | /kuh-KOON/ | Inside the cocoon, the caterpillar transforms. | ___________ |
+| 17 | Hive | /HYV/ | Thousands of bees live together in a hive. | ___________ |
+| 18 | Honey | /HUN-ee/ | Sweet honey comes from the bees' hard work. | ___________ |
+| 19 | Colony | /KOL-uh-nee/ | The ant colony works together underground. | ___________ |
+| 20 | Pest | /PEST/ | A pest is an insect that damages crops. | ___________ |
+| 21 | Pollinate | /POL-ih-nayt/ | Bees pollinate flowers so that fruit can grow. | ___________ |
+| 22 | Larvae | /LAR-vee/ | The larvae of the butterfly look like tiny worms. | ___________ |
+| 23 | Antenna | /an-TEN-uh/ | The butterfly uses its antenna to sense the world. | ___________ |
+| 24 | Wing | /WING/ | Each wing of the butterfly is painted with color. | ___________ |
+| 25 | Magnifying glass | /MAG-nih-fy-ing GLAS/ | Use a magnifying glass to see the tiny details. | ___________ |
+
+> **🐛 Silas's Tip:** *"Go outside and look under a rock or a leaf. What tiny creature do you find? Say its name in English. You are now a real nature scientist!"*
+
+---
+
+## Scene 12: Fruits & Vegetables
+
+*Silas and Vesta visit the Terrasol Market stand overflowing with fresh produce from their garden.*
+
+| # | Word | Phonetic | In the Story… | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Apple | /AP-ul/ | The red apple is crisp and sweet. | ___________ |
+| 2 | Banana | /buh-NAN-uh/ | Peel the yellow banana before eating it. | ___________ |
+| 3 | Orange | /OR-inj/ | Squeeze the orange to make fresh juice. | ___________ |
+| 4 | Grape | /GRAYP/ | A bunch of purple grapes hangs from the vine. | ___________ |
+| 5 | Strawberry | /STRAW-bair-ee/ | The strawberry is small, red, and sweet. | ___________ |
+| 6 | Watermelon | /WAW-ter-mel-un/ | A slice of watermelon is perfect on a hot day. | ___________ |
+| 7 | Peach | /PEECH/ | The fuzzy peach is soft and juicy. | ___________ |
+| 8 | Pear | /PAIR/ | The green pear grows in the orchard. | ___________ |
+| 9 | Lemon | /LEM-un/ | A lemon is sour and yellow. | ___________ |
+| 10 | Tomato | /tuh-MAY-toh/ | Is a tomato a fruit or a vegetable? | ___________ |
+| 11 | Carrot | /KAIR-ut/ | The orange carrot grows underground. | ___________ |
+| 12 | Potato | /puh-TAY-toh/ | Bake the potato in the oven for one hour. | ___________ |
+| 13 | Onion | /UN-yun/ | Chopping an onion can make your eyes water. | ___________ |
+| 14 | Broccoli | /BROK-uh-lee/ | Broccoli looks like a tiny green tree. | ___________ |
+| 15 | Lettuce | /LET-is/ | Lettuce is the base of a good salad. | ___________ |
+| 16 | Cucumber | /KYOO-kum-ber/ | Cool cucumber slices are refreshing in summer. | ___________ |
+| 17 | Corn | /KORN/ | Corn on the cob is a summer favorite. | ___________ |
+| 18 | Pepper | /PEP-er/ | Red and green peppers add color to the salad. | ___________ |
+| 19 | Bean | /BEEN/ | Green beans grow on a vine in the garden. | ___________ |
+| 20 | Pea | /PEE/ | Pop open the pod to find tiny green peas inside. | ___________ |
+| 21 | Spinach | /SPIN-ich/ | Spinach is a dark green leafy vegetable. | ___________ |
+| 22 | Celery | /SEL-er-ee/ | Celery is crunchy and good with peanut butter. | ___________ |
+| 23 | Pumpkin | /PUMP-kin/ | The big orange pumpkin sits in the fall garden. | ___________ |
+| 24 | Mushroom | /MUSH-room/ | Mushrooms grow in dark, damp places. | ___________ |
+| 25 | Garlic | /GAR-lik/ | Garlic adds strong flavor to any dish. | ___________ |
+| 26 | Avocado | /av-uh-KAH-doh/ | An avocado is green inside with a big seed. | ___________ |
+| 27 | Mango | /MANG-oh/ | The tropical mango is sweet and orange. | ___________ |
+| 28 | Pineapple | /PYN-ap-ul/ | The prickly pineapple is sweet inside. | ___________ |
+| 29 | Cherry | /CHAIR-ee/ | Pick a red cherry from the branch. | ___________ |
+| 30 | Blueberry | /BLOO-bair-ee/ | Tiny blueberries burst with sweet flavor. | ___________ |
+
+> **🍎 Vesta's Tip:** *"Open the refrigerator! How many fruits and vegetables can you name in English? Point and say: 'That is a CARROT. That is a TOMATO.' You are learning new words every time you eat!"*
+
+---
+
+## Scene 13: Weather & Seasons
+
+*Terrasol experiences all four seasons. Silas and Vesta watch the sky and describe what they see.*
+
+| # | Word | Phonetic | In the Story… | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Sunny | /SUN-ee/ | It is sunny and warm outside today. | ___________ |
+| 2 | Cloudy | /KLOWD-ee/ | The sky is gray and cloudy this afternoon. | ___________ |
+| 3 | Rainy | /RAYN-ee/ | Bring an umbrella — it's rainy today. | ___________ |
+| 4 | Windy | /WIN-dee/ | The windy day blows the leaves off the trees. | ___________ |
+| 5 | Snowy | /SNOH-ee/ | Everything looks white and beautiful on a snowy day. | ___________ |
+| 6 | Stormy | /STORM-ee/ | Thunder and lightning make the night stormy. | ___________ |
+| 7 | Hot | /HOT/ | It is very hot in July and August. | ___________ |
+| 8 | Cold | /KOHLD/ | Wear a coat because it is cold outside. | ___________ |
+| 9 | Warm | /WORM/ | Spring days are warm but not hot. | ___________ |
+| 10 | Cool | /KOOL/ | Fall mornings are cool and crisp. | ___________ |
+| 11 | Fog | /FOG/ | Thick fog makes it hard to see the road. | ___________ |
+| 12 | Hail | /HAYL/ | Small balls of ice called hail fell from the sky. | ___________ |
+| 13 | Thunder | /THUN-der/ | The loud thunder shakes the windows. | ___________ |
+| 14 | Lightning | /LYT-ning/ | A flash of lightning lights up the sky. | ___________ |
+| 15 | Rainbow | /RAYN-boh/ | A rainbow appears after the rain stops. | ___________ |
+| 16 | Umbrella | /um-BREL-uh/ | Vesta opens her umbrella when it starts to rain. | ___________ |
+| 17 | Thermometer | /thur-MOM-ih-ter/ | The thermometer shows the temperature outside. | ___________ |
+| 18 | Forecast | /FOR-kast/ | The weather forecast says it will rain tomorrow. | ___________ |
+| 19 | Spring | /SPRING/ | Flowers bloom and baby animals are born in spring. | ___________ |
+| 20 | Summer | /SUM-er/ | Summer has the longest and warmest days. | ___________ |
+| 21 | Fall | /FAWL/ | Leaves change color and fall from the trees in autumn. | ___________ |
+| 22 | Winter | /WIN-ter/ | Winter brings snow, ice, and short cold days. | ___________ |
+| 23 | Breeze | /BREEZ/ | A gentle breeze cools us on a warm day. | ___________ |
+| 24 | Frost | /FROST/ | White frost covers the grass early in the morning. | ___________ |
+| 25 | Humidity | /hyoo-MID-ih-tee/ | High humidity makes the air feel thick and sticky. | ___________ |
+
+> **🌦️ Silas's Tip:** *"Look out the window right now! What is the weather? Say: 'Today it is ___.' Sunny? Rainy? Cloudy? Now say the temperature: 'It is ___ degrees.' You just gave a weather report!"*
+
+---
+
+## Scene 14: Rocks & Minerals
+
+*Deep in the Terrasol Cavern, Silas and Vesta discover a world of sparkling stones and ancient formations.*
+
+| # | Word | Phonetic | In the Story… | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Rock | /ROK/ | Silas picks up a smooth rock from the riverbed. | ___________ |
+| 2 | Stone | /STOHN/ | The garden path is lined with flat stones. | ___________ |
+| 3 | Pebble | /PEB-ul/ | A pebble is a very small, smooth rock. | ___________ |
+| 4 | Boulder | /BOHL-der/ | The giant boulder sits at the bottom of the hill. | ___________ |
+| 5 | Sand | /SAND/ | The sand on the beach is warm between your toes. | ___________ |
+| 6 | Gravel | /GRAV-ul/ | Gravel crunches under your feet on the path. | ___________ |
+| 7 | Clay | /KLAY/ | Vesta shapes the wet clay into a bowl. | ___________ |
+| 8 | Crystal | /KRIS-tul/ | The purple crystal sparkles in the cave light. | ___________ |
+| 9 | Mineral | /MIN-er-ul/ | A mineral is a natural substance found in the earth. | ___________ |
+| 10 | Fossil | /FOS-ul/ | The fossil shows a fern leaf from millions of years ago. | ___________ |
+| 11 | Gem | /JEM/ | A polished gem shines like a tiny star. | ___________ |
+| 12 | Quartz | /KWORTS/ | Quartz is one of the most common minerals. | ___________ |
+| 13 | Marble | /MAR-bul/ | The smooth marble feels cool in your hand. | ___________ |
+| 14 | Granite | /GRAN-it/ | The kitchen counter is made of hard granite. | ___________ |
+| 15 | Limestone | /LYM-stohn/ | Limestone is used to build strong walls. | ___________ |
+| 16 | Lava | /LAH-vuh/ | Hot lava flows down the side of a volcano. | ___________ |
+| 17 | Magma | /MAG-muh/ | Magma is melted rock deep inside the earth. | ___________ |
+| 18 | Erosion | /ih-ROH-zhun/ | Erosion is when wind or water wears away rock. | ___________ |
+| 19 | Sediment | /SED-ih-ment/ | Layers of sediment build up on the river bottom. | ___________ |
+| 20 | Stalactite | /stuh-LAK-tyt/ | A stalactite hangs down from the ceiling of the cave. | ___________ |
+
+> **💎 Vesta's Tip:** *"Collect rocks from your yard or a park. Describe each one: Is it SMOOTH or ROUGH? Is it DARK or LIGHT? Is it HEAVY or LIGHT? Science starts with observation!"*
+
+---
+
+## Scene 15: Recycling & Sustainability
+
+*Silas and Vesta teach everyone in Terrasol how to protect the land for future generations.*
+
+| # | Word | Phonetic | In the Story… | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Recycle | /ree-SY-kul/ | Recycle paper, plastic, and glass. | ___________ |
+| 2 | Reuse | /ree-YOOZ/ | Reuse the bag instead of throwing it away. | ___________ |
+| 3 | Reduce | /rih-DOOS/ | Reduce waste by buying only what you need. | ___________ |
+| 4 | Trash | /TRASH/ | Put trash in the trash can, not on the ground. | ___________ |
+| 5 | Garbage | /GAR-bij/ | Garbage trucks pick up the bins every week. | ___________ |
+| 6 | Litter | /LIT-er/ | Never litter — always find a proper bin. | ___________ |
+| 7 | Bin | /BIN/ | The blue bin is for recycling. | ___________ |
+| 8 | Compost | /KOM-pohst/ | Compost turns food scraps into rich soil. | ___________ |
+| 9 | Landfill | /LAND-fil/ | Trash goes to the landfill when it can't be recycled. | ___________ |
+| 10 | Pollution | /puh-LOO-shun/ | Pollution makes the air and water dirty. | ___________ |
+| 11 | Clean energy | /KLEEN EN-er-jee/ | Solar and wind are forms of clean energy. | ___________ |
+| 12 | Solar panel | /SOH-ler PAN-ul/ | A solar panel turns sunlight into electricity. | ___________ |
+| 13 | Wind turbine | /WIND TUR-byn/ | The wind turbine spins to make electricity from wind. | ___________ |
+| 14 | Water bottle | /WAW-ter BOT-ul/ | Use a reusable water bottle instead of plastic. | ___________ |
+| 15 | Plastic | /PLAS-tik/ | Too much plastic ends up in the ocean. | ___________ |
+| 16 | Paper | /PAY-per/ | Recycle paper to save trees. | ___________ |
+| 17 | Glass | /GLAS/ | Glass can be recycled again and again. | ___________ |
+| 18 | Aluminum | /uh-LOO-mih-num/ | Aluminum cans are easy to recycle. | ___________ |
+| 19 | Conserve | /kun-SURV/ | Conserve water by turning off the faucet. | ___________ |
+| 20 | Protect | /proh-TEKT/ | It is our job to protect the environment. | ___________ |
+
+> **♻️ Silas's Tip:** *"Here are three words to remember forever: REDUCE, REUSE, RECYCLE. Say them every day. Practice them every day. The earth will thank you!"*
+
+---
+
+
+## Scene 16: The Ocean & Beach
+
+*Silas and Vesta visit where land meets sea*
+
+| # | Word | Phonetic | In the Story... | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Ocean | /OH-shun/ | The ocean covers most of planet Earth. | ___________ |
+| 2 | Wave | /WAYV/ | The waves crash on the sandy shore. | ___________ |
+| 3 | Sand | /SAND/ | Build a sandcastle on the warm sand. | ___________ |
+| 4 | Shell | /SHEL/ | Collect beautiful shells along the beach. | ___________ |
+| 5 | Tide | /TYD/ | The tide comes in and goes out twice a day. | ___________ |
+| 6 | Seaweed | /SEE-weed/ | Green seaweed washes up on the shore. | ___________ |
+| 7 | Coral | /KOR-ul/ | The coral reef is home to colorful fish. | ___________ |
+| 8 | Starfish | /STAR-fish/ | The starfish has five arms. | ___________ |
+| 9 | Jellyfish | /JEL-ee-fish/ | The jellyfish floats through the water. | ___________ |
+| 10 | Crab | /KRAB/ | The crab walks sideways on the sand. | ___________ |
+| 11 | Dolphin | /DOL-fin/ | Dolphins jump out of the sea. | ___________ |
+| 12 | Whale | /WAYL/ | The blue whale is the largest animal on Earth. | ___________ |
+| 13 | Lighthouse | /LYT-hows/ | The lighthouse guides ships safely to shore. | ___________ |
+| 14 | Pier | /PEER/ | Walk to the end of the pier to watch the sunset. | ___________ |
+| 15 | Surfboard | /SURF-bord/ | Stand on the surfboard and ride the wave. | ___________ |
+| 16 | Lifeguard | /LYF-gard/ | The lifeguard watches swimmers. | ___________ |
+| 17 | Sunscreen | /SUN-skreen/ | Put on sunscreen to protect your skin. | ___________ |
+| 18 | Towel | /TOW-ul/ | Dry off with a towel after swimming. | ___________ |
+| 19 | Sandcastle | /SAND-kas-ul/ | Decorate the sandcastle with shells. | ___________ |
+| 20 | Seagull | /SEE-gul/ | The seagull flies over the beach. | ___________ |
+| 21 | Horizon | /hor-RY-zun/ | The sun sets on the horizon. | ___________ |
+| 22 | Current | /KUR-ent/ | The current moves water in big circles. | ___________ |
+| 23 | Anchor | /ANG-ker/ | Drop the anchor to stop the boat. | ___________ |
+| 24 | Shore | /SHOR/ | The boat returned to shore. | ___________ |
+| 25 | Reef | /REEF/ | The reef is full of colorful sea creatures. | ___________ |
+
+> **🏖 Vesta's Tip:** *"The beach has SO many words! WAVE, SAND, SHELL, TIDE!"*
+
+---
+
+## Scene 17: Desert & Dry Lands
+
+*Silas treks into the Terrasol Desert*
+
+| # | Word | Phonetic | In the Story... | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Desert | /DEZ-ert/ | The desert is hot and dry with very little rain. | ___________ |
+| 2 | Cactus | /KAK-tus/ | The cactus stores water inside its stem. | ___________ |
+| 3 | Sand dune | /SAND DOON/ | Wind shapes the sand dune into hills. | ___________ |
+| 4 | Oasis | /oh-AY-sis/ | An oasis is a green spot with water. | ___________ |
+| 5 | Drought | /DROWT/ | A drought means no rain for a long time. | ___________ |
+| 6 | Scorpion | /SKOR-pee-un/ | Watch out for the scorpion under the rock. | ___________ |
+| 7 | Lizard | /LIZ-erd/ | The lizard basks in the sun on a rock. | ___________ |
+| 8 | Rattlesnake | /RAT-ul-snayk/ | The rattlesnake shakes its tail as warning. | ___________ |
+| 9 | Vulture | /VUL-chur/ | The vulture circles high in the sky. | ___________ |
+| 10 | Tumbleweed | /TUM-bul-weed/ | A dry tumbleweed rolls across the road. | ___________ |
+| 11 | Canyon | /KAN-yun/ | The Grand Canyon is a mile deep. | ___________ |
+| 12 | Mesa | /MAY-suh/ | A mesa is a flat-topped desert hill. | ___________ |
+| 13 | Mirage | /mih-RAHJ/ | A mirage looks like water but is hot air. | ___________ |
+| 14 | Arid | /AIR-id/ | Arid land has very little rainfall. | ___________ |
+| 15 | Shade | /SHAYD/ | Rest in the shade to escape the sun. | ___________ |
+| 16 | Canteen | /kan-TEEN/ | Fill your canteen with water before hiking. | ___________ |
+| 17 | Compass | /KUM-pus/ | Use a compass to find north. | ___________ |
+| 18 | Fossil | /FOS-ul/ | Scientists found a dinosaur fossil. | ___________ |
+| 19 | Erosion | /ee-ROH-zhun/ | Wind erosion carved the rock. | ___________ |
+| 20 | Sandstorm | /SAND-storm/ | A sandstorm fills the air with sand. | ___________ |
+| 21 | Sunrise | /SUN-ryz/ | The desert sunrise paints the sky orange. | ___________ |
+| 22 | Sunset | /SUN-set/ | The sunset over the desert is breathtaking. | ___________ |
+| 23 | Stars | /STARZ/ | You can see thousands of stars in the desert. | ___________ |
+| 24 | Heat | /HEET/ | Desert heat can reach over one hundred degrees. | ___________ |
+| 25 | Survive | /sur-VYV/ | Desert animals survive with very little water. | ___________ |
+
+> **🏜 Silas's Tip:** *"The desert teaches survival! DROUGHT, SHADE, CANTEEN, SURVIVE."*
+
+---
+
+## Scene 18: Rivers & Lakes
+
+*Vesta discovers freshwater that gives life*
+
+| # | Word | Phonetic | In the Story... | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | River | /RIV-er/ | The river flows from mountains to sea. | ___________ |
+| 2 | Stream | /STREEM/ | A small stream runs through the forest. | ___________ |
+| 3 | Creek | /KREEK/ | The children played by the creek. | ___________ |
+| 4 | Lake | /LAYK/ | The lake is calm and perfect for fishing. | ___________ |
+| 5 | Pond | /POND/ | Ducks swim in the pond at the park. | ___________ |
+| 6 | Waterfall | /WOT-er-fall/ | The waterfall drops into the pool below. | ___________ |
+| 7 | Dam | /DAM/ | The dam holds back the water. | ___________ |
+| 8 | Bridge | /BRIJ/ | Walk across the bridge to the other side. | ___________ |
+| 9 | Bank | /BANK/ | Sit on the river bank and watch the water. | ___________ |
+| 10 | Current | /KUR-ent/ | The river current carries leaves downstream. | ___________ |
+| 11 | Upstream | /UP-streem/ | Salmon swim upstream to lay their eggs. | ___________ |
+| 12 | Downstream | /DOWN-streem/ | The boat floated downstream. | ___________ |
+| 13 | Canal | /kuh-NAL/ | The canal connects two rivers. | ___________ |
+| 14 | Rapids | /RAP-idz/ | The white-water rapids are exciting. | ___________ |
+| 15 | Kayak | /KY-ak/ | Paddle the kayak down the calm river. | ___________ |
+| 16 | Canoe | /kuh-NOO/ | Two people can paddle a canoe together. | ___________ |
+| 17 | Fishing rod | /FISH-ing ROD/ | Cast the fishing rod into the deep part. | ___________ |
+| 18 | Trout | /TROWT/ | The trout jumps out of the stream. | ___________ |
+| 19 | Frog | /FROG/ | The frog sits on a lily pad. | ___________ |
+| 20 | Turtle | /TUR-tul/ | The turtle suns itself on a log. | ___________ |
+| 21 | Beaver | /BEE-ver/ | The beaver builds a dam with sticks. | ___________ |
+| 22 | Marsh | /MARSH/ | A marsh is a wetland with tall grasses. | ___________ |
+| 23 | Swamp | /SWOMP/ | The swamp is wet and muddy. | ___________ |
+| 24 | Flood | /FLUD/ | Heavy rain caused a flood in the valley. | ___________ |
+| 25 | Fresh water | /FRESH WOT-er/ | Fresh water from rivers is safe to drink. | ___________ |
+
+> **🏞 Vesta's Tip:** *"Water is LIFE! RIVER, LAKE, STREAM, WATERFALL!"*
+
+---
+
+## Scene 19: Camping & Hiking
+
+*Silas and Vesta gear up for wilderness adventure*
+
+| # | Word | Phonetic | In the Story... | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Tent | /TENT/ | Set up the tent before dark. | ___________ |
+| 2 | Sleeping bag | /SLEEP-ing BAG/ | Zip up inside your sleeping bag to stay warm. | ___________ |
+| 3 | Campfire | /KAMP-fyr/ | Gather around the campfire and tell stories. | ___________ |
+| 4 | Flashlight | /FLASH-lyt/ | Shine the flashlight to see in the dark. | ___________ |
+| 5 | Backpack | /BAK-pak/ | Carry food and water in your backpack. | ___________ |
+| 6 | Trail | /TRAYL/ | Follow the trail through the woods. | ___________ |
+| 7 | Hike | /HYK/ | We hiked five miles to the mountain top. | ___________ |
+| 8 | Compass | /KUM-pus/ | Use the compass to navigate the forest. | ___________ |
+| 9 | Binoculars | /buh-NOK-yoo-lerz/ | Look through the binoculars to see the eagle. | ___________ |
+| 10 | Firewood | /FYR-wood/ | Collect firewood for the campfire. | ___________ |
+| 11 | Marshmallow | /MARSH-mal-oh/ | Roast a marshmallow over the campfire. | ___________ |
+| 12 | Canoe | /kuh-NOO/ | Paddle the canoe across the calm lake. | ___________ |
+| 13 | Cliff | /KLIF/ | Be careful near the edge of the cliff. | ___________ |
+| 14 | Cabin | /KAB-in/ | The log cabin sits at the forest edge. | ___________ |
+| 15 | Wildlife | /WYLD-lyf/ | We saw a lot of wildlife on the trail. | ___________ |
+| 16 | Map | /MAP/ | Study the map before choosing your trail. | ___________ |
+| 17 | Boots | /BOOTS/ | Wear sturdy boots on the rocky trail. | ___________ |
+| 18 | Insect repellent | /IN-sekt rih-PEL-ent/ | Spray insect repellent to keep mosquitoes away. | ___________ |
+| 19 | First aid kit | /FURST AYD KIT/ | Always bring a first aid kit camping. | ___________ |
+| 20 | Constellation | /kon-stuh-LAY-shun/ | Find the Big Dipper in the night sky. | ___________ |
+| 21 | Bear | /BAIR/ | Store food properly so bears cannot find it. | ___________ |
+| 22 | Deer | /DEER/ | A deer quietly crossed the trail. | ___________ |
+| 23 | Owl | /OWL/ | The owl hoots in the dark forest. | ___________ |
+| 24 | Nature | /NAY-chur/ | Nature is the greatest teacher of all. | ___________ |
+| 25 | Wilderness | /WIL-der-nes/ | The wilderness is untouched natural land. | ___________ |
+
+> **🏕 Silas's Tip:** *"Camping is the best vocabulary classroom! TENT, TRAIL, CAMPFIRE!"*
+
+---
+
+## Scene 20: Seeds & Growing
+
+*In Vesta's Greenhouse, every seed tells a story*
+
+| # | Word | Phonetic | In the Story... | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Seed | /SEED/ | Plant the seed in the soil and water it. | ___________ |
+| 2 | Sprout | /SPROWT/ | The sprout pushes up through the soil. | ___________ |
+| 3 | Seedling | /SEED-ling/ | The seedling needs sunlight to grow strong. | ___________ |
+| 4 | Root | /ROOT/ | Roots grow underground and drink water. | ___________ |
+| 5 | Stem | /STEM/ | The stem holds the flower up toward the sun. | ___________ |
+| 6 | Leaf | /LEEF/ | Each leaf catches sunlight. | ___________ |
+| 7 | Bud | /BUD/ | A bud is a flower before it opens. | ___________ |
+| 8 | Bloom | /BLOOM/ | The flowers bloom in spring. | ___________ |
+| 9 | Petal | /PET-ul/ | Each petal of the rose is soft and colorful. | ___________ |
+| 10 | Pollen | /POL-en/ | Bees carry pollen from flower to flower. | ___________ |
+| 11 | Compost | /KOM-pohst/ | Add compost to make soil richer. | ___________ |
+| 12 | Fertilizer | /FUR-tih-ly-zer/ | Fertilizer helps plants grow bigger. | ___________ |
+| 13 | Greenhouse | /GREEN-hows/ | Grow plants year-round in the greenhouse. | ___________ |
+| 14 | Water | /WOT-er/ | Water the plants every morning. | ___________ |
+| 15 | Sunlight | /SUN-lyt/ | Plants need sunlight to make food. | ___________ |
+| 16 | Soil | /SOYL/ | Healthy soil is dark and rich. | ___________ |
+| 17 | Pot | /POT/ | Plant the herb in a small clay pot. | ___________ |
+| 18 | Planter | /PLAN-ter/ | The window planter is full of flowers. | ___________ |
+| 19 | Weed | /WEED/ | Pull the weeds so they do not steal nutrients. | ___________ |
+| 20 | Harvest | /HAR-vest/ | Harvest the tomatoes when they turn red. | ___________ |
+| 21 | Vine | /VYN/ | The vine climbs up the garden fence. | ___________ |
+| 22 | Branch | /BRANCH/ | The bird sits on a branch of the oak tree. | ___________ |
+| 23 | Trunk | /TRUNK/ | The trunk of the tree is thick and strong. | ___________ |
+| 24 | Bark | /BARK/ | The bark protects the tree like a coat. | ___________ |
+| 25 | Growth | /GROHTH/ | The growth of the plant was amazing. | ___________ |
+
+> **🌱 Vesta's Tip:** *"Learning English is like growing a garden! Plant SEED, WATER it, give SUNLIGHT!"*
+
+---
+
+
 ## Land 3 Summary
 
 | Sub-Scene | Word Count |
@@ -468,4 +825,14 @@
 | Inside the Home | 45 |
 | Shapes in the World | 30 |
 | Farm to Table | 35 |
-| **TOTAL** | **340** |
+| Insects & Bugs | 25 |
+| Fruits & Vegetables | 30 |
+| Weather & Seasons | 25 |
+| Rocks & Minerals | 20 |
+| Recycling & Sustainability | 20 |
+| The Ocean & Beach | 25 |
+| Desert & Dry Lands | 25 |
+| Rivers & Lakes | 25 |
+| Camping & Hiking | 25 |
+| Seeds & Growing | 25 |
+| **TOTAL** | **585** |

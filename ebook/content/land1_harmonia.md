@@ -456,6 +456,396 @@
 
 ---
 
+## Scene 11: Manners & Politeness
+
+*At the Harmonia Etiquette Garden, Kenji and Aiko practice the gentle words that build bridges between people.*
+
+| # | Word | Phonetic | In the Story… | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Polite | /poh-LYT/ | Polite words open doors that rudeness cannot. | ___________ |
+| 2 | Rude | /ROOD/ | Speaking rudely hurts people's feelings. | ___________ |
+| 3 | Manners | /MAN-erz/ | Good manners show respect for others. | ___________ |
+| 4 | May I | /MAY eye/ | May I please borrow your pencil? | ___________ |
+| 5 | Pardon | /PAR-dun/ | Pardon me, could you repeat that? | ___________ |
+| 6 | After you | /AF-ter yoo/ | After you — please go first through the door. | ___________ |
+| 7 | Bless you | /BLES yoo/ | Bless you! Kenji says after Aiko sneezes. | ___________ |
+| 8 | Congratulations | /kun-grat-yoo-LAY-shunz/ | Congratulations on winning the spelling bee! | ___________ |
+| 9 | I appreciate it | /eye uh-PREE-shee-ayt it/ | I appreciate your help with my homework. | ___________ |
+| 10 | No problem | /noh PROB-lum/ | No problem! I'm happy to help you. | ___________ |
+| 11 | Certainly | /SUR-ten-lee/ | Certainly! I can show you the way. | ___________ |
+| 12 | Of course | /ov KORS/ | Of course you can sit with us at lunch. | ___________ |
+| 13 | Patience | /PAY-shunss/ | Patience means waiting without getting upset. | ___________ |
+| 14 | Kind | /KYND/ | A kind word can change someone's whole day. | ___________ |
+| 15 | Gentle | /JEN-tul/ | Speak in a gentle voice when someone is sad. | ___________ |
+| 16 | Share | /SHAIR/ | Kenji shares his crayons with the new student. | ___________ |
+| 17 | Take turns | /TAYK TURNZ/ | Take turns so everyone gets a chance to play. | ___________ |
+| 18 | Interrupt | /in-ter-UPT/ | Don't interrupt when someone else is talking. | ___________ |
+| 19 | Listen | /LIS-en/ | Listen carefully when your teacher speaks. | ___________ |
+| 20 | Apologize | /uh-POL-oh-jyz/ | Apologize sincerely when you make a mistake. | ___________ |
+| 21 | Forgive | /for-GIV/ | Forgive your friend and start fresh. | ___________ |
+| 22 | Compliment | /KOM-plih-ment/ | Give a compliment: "I like your drawing!" | ___________ |
+| 23 | Gratitude | /GRAT-ih-tood/ | Gratitude means being thankful for what you have. | ___________ |
+| 24 | Considerate | /kun-SID-er-it/ | Being considerate means thinking about how others feel. | ___________ |
+| 25 | Courteous | /KUR-tee-us/ | A courteous person holds the door open for others. | ___________ |
+
+> **🌸 Kenji's Tip:** *"Magic words unlock the world! Practice every day: 'Please. Thank you. Excuse me. May I?' These four phrases will take you ANYWHERE."*
+
+---
+
+## Scene 12: Daily Routines
+
+*Follow Kenji and Aiko through one full day in Harmonia — from sunrise to bedtime.*
+
+| # | Word | Phonetic | In the Story… | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Wake up | /WAYK UP/ | Kenji wakes up at six o'clock every morning. | ___________ |
+| 2 | Get up | /GET UP/ | Get up when the alarm rings. | ___________ |
+| 3 | Brush teeth | /BRUSH TEETH/ | Brush your teeth for two minutes morning and night. | ___________ |
+| 4 | Wash face | /WASH FAYS/ | Aiko washes her face with warm water. | ___________ |
+| 5 | Comb hair | /KOHM HAIR/ | Comb your hair before you leave the house. | ___________ |
+| 6 | Get dressed | /GET DRESD/ | Get dressed and put on your shoes. | ___________ |
+| 7 | Eat breakfast | /EET BREK-fust/ | Eat a healthy breakfast to start the day. | ___________ |
+| 8 | Pack lunch | /PAK LUNCH/ | Pack your lunch in a bag with an ice pack. | ___________ |
+| 9 | Leave home | /LEEV HOHM/ | Kenji leaves home at seven thirty. | ___________ |
+| 10 | Walk to school | /WAWK too SKOOL/ | Aiko walks to school with her neighbor. | ___________ |
+| 11 | Arrive | /uh-RYV/ | The students arrive before the bell rings. | ___________ |
+| 12 | Study | /STUD-ee/ | Study your vocabulary words every day. | ___________ |
+| 13 | Take a break | /TAYK uh BRAYK/ | Take a break and stretch your legs. | ___________ |
+| 14 | Eat lunch | /EET LUNCH/ | Students eat lunch in the cafeteria at noon. | ___________ |
+| 15 | Come home | /KUM HOHM/ | Kenji comes home at three thirty. | ___________ |
+| 16 | Do homework | /DOO HOHM-wurk/ | Do your homework before you play outside. | ___________ |
+| 17 | Practice | /PRAK-tis/ | Aiko practices piano for thirty minutes. | ___________ |
+| 18 | Play | /PLAY/ | Children play in the yard after school. | ___________ |
+| 19 | Eat dinner | /EET DIN-er/ | The family eats dinner together at six o'clock. | ___________ |
+| 20 | Watch TV | /WOCH TEE-VEE/ | Kenji watches TV for one hour before bed. | ___________ |
+| 21 | Take a bath | /TAYK uh BATH/ | Take a warm bath before bedtime. | ___________ |
+| 22 | Read a book | /REED uh BOOK/ | Read a book in bed to relax your mind. | ___________ |
+| 23 | Say goodnight | /SAY GOOD-nyt/ | Say goodnight to everyone in the house. | ___________ |
+| 24 | Turn off the light | /TURN OFF thuh LYT/ | Turn off the light and close your eyes. | ___________ |
+| 25 | Go to sleep | /GOH too SLEEP/ | Aiko goes to sleep at nine o'clock. | ___________ |
+| 26 | Alarm clock | /uh-LARM KLOK/ | The alarm clock rings at six every morning. | ___________ |
+| 27 | Routine | /roo-TEEN/ | A routine is a set of things you do every day. | ___________ |
+| 28 | Schedule | /SKED-yool/ | Follow your schedule so you have time for everything. | ___________ |
+| 29 | On time | /ON TYM/ | Being on time shows you respect other people. | ___________ |
+| 30 | Late | /LAYT/ | If you are late, say "I'm sorry I'm late." | ___________ |
+| 31 | Early | /UR-lee/ | Aiko likes to arrive early to help set up. | ___________ |
+| 32 | Habit | /HAB-it/ | A good habit makes your life easier and better. | ___________ |
+| 33 | Chores | /CHORZ/ | Everyone in the family helps with chores. | ___________ |
+| 34 | Make the bed | /MAYK thuh BED/ | Make the bed first thing when you wake up. | ___________ |
+| 35 | Set the table | /SET thuh TAY-bul/ | Set the table with plates, forks, and napkins. | ___________ |
+| 36 | Clean up | /KLEEN UP/ | Clean up your room before going outside. | ___________ |
+| 37 | Take out trash | /TAYK OWT TRASH/ | Take out the trash on Tuesday nights. | ___________ |
+| 38 | Feed the pet | /FEED thuh PET/ | Feed the pet before you eat your own breakfast. | ___________ |
+| 39 | Water plants | /WAW-ter PLANTS/ | Water the plants every other day. | ___________ |
+| 40 | Bedtime | /BED-tym/ | Bedtime is at nine o'clock on school nights. | ___________ |
+
+> **⏰ Aiko's Tip:** *"Make YOUR daily routine list! Write what you do from morning to night: 'I wake up. I brush my teeth. I eat breakfast.' Now you've written TEN English sentences about YOUR life!"*
+
+---
+
+## Scene 13: Hobbies & Recreation
+
+*In the Harmonia Fun House, Kenji and Aiko explore all the ways people spend their free time.*
+
+| # | Word | Phonetic | In the Story… | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Hobby | /HOB-ee/ | A hobby is something you enjoy doing in your free time. | ___________ |
+| 2 | Read | /REED/ | Aiko loves to read adventure stories. | ___________ |
+| 3 | Draw | /DRAW/ | Kenji draws pictures of animals in his sketchbook. | ___________ |
+| 4 | Paint | /PAYNT/ | Aiko paints landscapes with watercolors. | ___________ |
+| 5 | Sing | /SING/ | Kenji sings with the Harmonia choir every Saturday. | ___________ |
+| 6 | Dance | /DANS/ | Aiko loves to dance to her favorite songs. | ___________ |
+| 7 | Cook | /KOOK/ | Kenji helps his mother cook dinner on Sundays. | ___________ |
+| 8 | Bake | /BAYK/ | Aiko bakes cookies for her classmates. | ___________ |
+| 9 | Garden | /GAR-den/ | Many people garden to grow flowers and vegetables. | ___________ |
+| 10 | Swim | /SWIM/ | Kenji swims at the community pool on hot days. | ___________ |
+| 11 | Ride a bike | /RYD uh BYK/ | Aiko rides her bike to the park every weekend. | ___________ |
+| 12 | Skateboard | /SKAYT-bord/ | Kenji practices tricks on his skateboard. | ___________ |
+| 13 | Soccer | /SOK-er/ | Soccer is a popular sport played with a round ball. | ___________ |
+| 14 | Basketball | /BAS-ket-bawl/ | Shoot the basketball through the hoop! | ___________ |
+| 15 | Baseball | /BAYS-bawl/ | Baseball uses a bat, a ball, and a glove. | ___________ |
+| 16 | Tennis | /TEN-is/ | Hit the tennis ball over the net. | ___________ |
+| 17 | Board game | /BORD GAYM/ | The family plays a board game on rainy days. | ___________ |
+| 18 | Video game | /VID-ee-oh GAYM/ | Kenji plays video games for one hour after homework. | ___________ |
+| 19 | Puzzle | /PUZ-ul/ | Aiko works on a 500-piece puzzle of the ocean. | ___________ |
+| 20 | Collect | /kuh-LEKT/ | Some people collect stamps, coins, or stickers. | ___________ |
+| 21 | Photography | /foh-TOG-ruh-fee/ | Photography captures special moments in pictures. | ___________ |
+| 22 | Sew | /SOH/ | Grandmother teaches Aiko to sew a button. | ___________ |
+| 23 | Knit | /NIT/ | Kenji's mother knits warm scarves in winter. | ___________ |
+| 24 | Camp | /KAMP/ | The family goes camping in the mountains each summer. | ___________ |
+| 25 | Hike | /HYK/ | Hike along the trail to see the waterfall. | ___________ |
+| 26 | Fish | /FISH/ | Grandfather fishes at the lake early in the morning. | ___________ |
+| 27 | Instrument | /IN-stroo-ment/ | Kenji plays three musical instruments. | ___________ |
+| 28 | Piano | /pee-AN-oh/ | Aiko practices piano chords every evening. | ___________ |
+| 29 | Guitar | /gih-TAR/ | Kenji strums his guitar and sings along. | ___________ |
+| 30 | Drum | /DRUM/ | The drum keeps the beat steady for the whole band. | ___________ |
+| 31 | Yoga | /YOH-guh/ | Yoga helps your body stretch and your mind relax. | ___________ |
+| 32 | Martial arts | /MAR-shul ARTS/ | Martial arts teaches discipline and self-defense. | ___________ |
+| 33 | Volunteer | /vol-un-TEER/ | Kenji volunteers at the food bank every month. | ___________ |
+| 34 | Free time | /FREE TYM/ | What do you like to do in your free time? | ___________ |
+| 35 | Fun | /FUN/ | Having fun is important for a happy life. | ___________ |
+
+> **🎸 Kenji's Tip:** *"What is YOUR hobby? Say: 'My hobby is ___. I like to ___ because ___.' Now ask a friend: 'What is YOUR hobby?' You just had a REAL conversation in English!"*
+
+---
+
+## Scene 14: The Playground & Recess
+
+*The Harmonia Schoolyard is alive with laughter and games. Kenji and Aiko join their friends.*
+
+| # | Word | Phonetic | In the Story… | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Playground | /PLAY-grownd/ | The playground has swings, slides, and monkey bars. | ___________ |
+| 2 | Swing | /SWING/ | Aiko pumps her legs high on the swing. | ___________ |
+| 3 | Slide | /SLYD/ | Go down the slide feet-first for safety. | ___________ |
+| 4 | Seesaw | /SEE-saw/ | Two friends go up and down on the seesaw. | ___________ |
+| 5 | Monkey bars | /MUN-kee BARZ/ | Kenji crosses the monkey bars hand over hand. | ___________ |
+| 6 | Sandbox | /SAND-boks/ | The sandbox is for building castles and digging. | ___________ |
+| 7 | Jump rope | /JUMP ROHP/ | The girls jump rope and count to one hundred. | ___________ |
+| 8 | Hopscotch | /HOP-skoch/ | Draw the hopscotch squares with chalk. | ___________ |
+| 9 | Tag | /TAG/ | "You're it!" Kenji shouts as they play tag. | ___________ |
+| 10 | Hide and seek | /HYD and SEEK/ | In hide and seek, one person counts while others hide. | ___________ |
+| 11 | Catch | /KACH/ | Throw the ball and catch it with both hands. | ___________ |
+| 12 | Throw | /THROH/ | Throw the ball gently to your partner. | ___________ |
+| 13 | Kick | /KIK/ | Kick the soccer ball toward the goal. | ___________ |
+| 14 | Run | /RUN/ | Run fast in the relay race! | ___________ |
+| 15 | Jump | /JUMP/ | Jump over the puddle so your shoes stay dry! | ___________ |
+| 16 | Climb | /KLYM/ | Climb the rock wall one hand at a time. | ___________ |
+| 17 | Skip | /SKIP/ | Skip along the path and sing a song. | ___________ |
+| 18 | Race | /RAYS/ | Ready, set, go! It's a running race. | ___________ |
+| 19 | Team | /TEEM/ | Pick your team and choose who plays first. | ___________ |
+| 20 | Fair | /FAIR/ | Play fair so everyone has a good time. | ___________ |
+| 21 | Winner | /WIN-er/ | The winner shakes hands with the other players. | ___________ |
+| 22 | Loser | /LOO-zer/ | A gracious loser says "good game" and tries again. | ___________ |
+| 23 | Score | /SKOR/ | The score is five to three — we're winning! | ___________ |
+| 24 | Whistle | /WIS-ul/ | The teacher blows the whistle to end recess. | ___________ |
+| 25 | Line up | /LYN UP/ | Line up quietly to go back inside. | ___________ |
+| 26 | Bench | /BENCH/ | Sit on the bench if you need to rest. | ___________ |
+| 27 | Shade | /SHAYD/ | Find the shade under the tree on hot days. | ___________ |
+| 28 | Water fountain | /WAW-ter FOWN-tun/ | Get a drink from the water fountain. | ___________ |
+| 29 | Recess | /REE-ses/ | Recess is everybody's favorite time of day. | ___________ |
+| 30 | Outdoor | /OWT-dor/ | Outdoor games are best on sunny days. | ___________ |
+
+> **🤸 Aiko's Tip:** *"Name the ACTIONS you do at recess: 'I RUN. I JUMP. I CLIMB. I THROW.' Action words (verbs!) are the most powerful words in any language!"*
+
+---
+
+## Scene 15: Body Language & Gestures
+
+*In the Harmonia Mirror Room, Kenji and Aiko learn that communication goes beyond words.*
+
+| # | Word | Phonetic | In the Story… | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Nod | /NOD/ | Nod your head up and down to mean "yes." | ___________ |
+| 2 | Shake head | /SHAYK HED/ | Shake your head side to side to mean "no." | ___________ |
+| 3 | Point | /POYNT/ | Point to the picture you want to talk about. | ___________ |
+| 4 | Shrug | /SHRUG/ | Shrug your shoulders to say "I don't know." | ___________ |
+| 5 | Thumbs up | /THUMZ UP/ | A thumbs up means "good job" or "yes." | ___________ |
+| 6 | Thumbs down | /THUMZ DOWN/ | A thumbs down means "no" or "I don't like it." | ___________ |
+| 7 | Clap | /KLAP/ | Clap your hands to show you enjoyed the show. | ___________ |
+| 8 | Gesture | /JES-chur/ | A gesture is a movement that communicates meaning. | ___________ |
+| 9 | Eye contact | /EYE KON-takt/ | Make eye contact when someone is talking to you. | ___________ |
+| 10 | Facial expression | /FAY-shul ek-SPRESH-un/ | A smile is a facial expression that means "I'm happy." | ___________ |
+| 11 | Frown | /FROWN/ | A frown shows you are unhappy or worried. | ___________ |
+| 12 | Wink | /WINK/ | A friendly wink means "I'm joking with you." | ___________ |
+| 13 | Yawn | /YAWN/ | If you yawn, cover your mouth with your hand. | ___________ |
+| 14 | Stretch | /STRECH/ | Stretch your arms after sitting for a long time. | ___________ |
+| 15 | Cross arms | /KROS ARMZ/ | Crossing your arms can mean you are cold or upset. | ___________ |
+| 16 | High five | /HY FYV/ | Give your teammate a high five after a great play. | ___________ |
+| 17 | Fist bump | /FIST BUMP/ | A fist bump is a friendly greeting between friends. | ___________ |
+| 18 | Shake hands | /SHAYK HANDZ/ | Shake hands firmly when meeting someone new. | ___________ |
+| 19 | Bow | /BOW/ | In many cultures, a bow is a sign of respect. | ___________ |
+| 20 | Tone of voice | /TOHN ov VOYS/ | Your tone of voice tells people how you feel. | ___________ |
+| 21 | Whisper | /WIS-per/ | Whisper quietly in the library. | ___________ |
+| 22 | Shout | /SHOWT/ | Shout for help if you are in danger. | ___________ |
+| 23 | Body language | /BOD-ee LANG-gwij/ | Body language speaks louder than words sometimes. | ___________ |
+| 24 | Personal space | /PUR-sun-ul SPAYS/ | Respect other people's personal space. | ___________ |
+| 25 | Posture | /POS-chur/ | Good posture means sitting and standing up straight. | ___________ |
+
+> **🪞 Kenji's Tip:** *"Stand in front of a mirror and practice! SMILE — that's happy. FROWN — that's sad. NOD — that's yes. SHRUG — that's 'I don't know.' Your BODY speaks English too!"*
+
+---
+
+## Scene 16: Music & Instruments
+
+*The Harmonia Music Hall is alive with sound! Kenji teaches Aiko the names of every instrument.*
+
+| # | Word | Phonetic | In the Story… | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Piano | /pee-AN-oh/ | She plays the piano beautifully. | ___________ |
+| 2 | Guitar | /gih-TAR/ | Kenji strums the guitar and sings a song. | ___________ |
+| 3 | Drum | /DRUM/ | Beat the drum to keep the rhythm. | ___________ |
+| 4 | Violin | /vy-oh-LIN/ | The violin makes a sweet, high sound. | ___________ |
+| 5 | Flute | /FLOOT/ | The flute is a wind instrument made of metal. | ___________ |
+| 6 | Trumpet | /TRUM-pit/ | The trumpet plays a bright, bold melody. | ___________ |
+| 7 | Tambourine | /TAM-buh-reen/ | Shake the tambourine to add rhythm. | ___________ |
+| 8 | Xylophone | /ZY-loh-fohn/ | Each bar of the xylophone plays a different note. | ___________ |
+| 9 | Melody | /MEL-oh-dee/ | A melody is the main tune of a song. | ___________ |
+| 10 | Rhythm | /RITH-um/ | Clap the rhythm with your hands. | ___________ |
+| 11 | Beat | /BEET/ | The beat is the steady pulse of the music. | ___________ |
+| 12 | Lyrics | /LEER-iks/ | The lyrics are the words of a song. | ___________ |
+| 13 | Choir | /KWY-er/ | The school choir sings in four-part harmony. | ___________ |
+| 14 | Orchestra | /OR-kes-truh/ | An orchestra has many different instruments. | ___________ |
+| 15 | Concert | /KON-sert/ | We went to a concert in the park last night. | ___________ |
+| 16 | Note | /NOHT/ | Each note has a different pitch and length. | ___________ |
+| 17 | Tempo | /TEM-poh/ | The tempo tells you how fast to play. | ___________ |
+| 18 | Volume | /VOL-yoom/ | Turn down the volume — it's too loud. | ___________ |
+| 19 | Harmony | /HAR-moh-nee/ | Harmony is when different notes sound good together. | ___________ |
+| 20 | Microphone | /MY-kroh-fohn/ | Speak into the microphone so everyone can hear. | ___________ |
+| 21 | Headphones | /HED-fohnz/ | Put on your headphones to listen to the recording. | ___________ |
+| 22 | Record | /rih-KORD/ | Let's record our song and share it. | ___________ |
+| 23 | Practice | /PRAK-tis/ | Practice the piano for thirty minutes every day. | ___________ |
+| 24 | Performer | /per-FOR-mer/ | The performer bowed after the standing ovation. | ___________ |
+| 25 | Audience | /AW-dee-ents/ | The audience clapped at the end of the concert. | ___________ |
+
+> **🎵 Kenji's Tip:** *"Music IS language! Every song has LYRICS, MELODY, and RHYTHM. Play your favorite English song and follow the LYRICS — you'll learn new words while having fun!"*
+
+---
+
+## Scene 17: School Events & Activities
+
+*The Harmonia School Calendar is packed with exciting events all year long!*
+
+| # | Word | Phonetic | In the Story… | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Assembly | /uh-SEM-blee/ | The whole school meets in the gym for assembly. | ___________ |
+| 2 | Field trip | /FEELD TRIP/ | Our field trip to the zoo is next Wednesday. | ___________ |
+| 3 | Science fair | /SY-ents FAIR/ | Aiko won first place at the science fair. | ___________ |
+| 4 | Talent show | /TAL-ent SHOH/ | Students sing and dance at the talent show. | ___________ |
+| 5 | Picture day | /PIK-chur DAY/ | Wear your nicest clothes for picture day. | ___________ |
+| 6 | Spirit week | /SPIR-it WEEK/ | During spirit week, everyone wears school colors. | ___________ |
+| 7 | Book fair | /BOOK FAIR/ | Buy new books at the school book fair. | ___________ |
+| 8 | Fire drill | /FYR DRIL/ | During a fire drill, walk quickly to the exit. | ___________ |
+| 9 | Pep rally | /PEP RAL-ee/ | The pep rally gets everyone excited for the game. | ___________ |
+| 10 | Graduation | /graj-oo-AY-shun/ | Graduation is a proud day for students and families. | ___________ |
+| 11 | Award | /uh-WORD/ | She received an award for perfect attendance. | ___________ |
+| 12 | Certificate | /ser-TIF-ih-kit/ | The certificate shows you completed the program. | ___________ |
+| 13 | Ceremony | /SAIR-eh-moh-nee/ | The ceremony will be held in the auditorium. | ___________ |
+| 14 | Auditorium | /aw-dih-TOR-ee-um/ | The auditorium has seats for five hundred people. | ___________ |
+| 15 | Stage | /STAYJ/ | The actors perform on the stage. | ___________ |
+| 16 | Cafeteria | /kaf-eh-TEER-ee-uh/ | We eat lunch in the cafeteria every day. | ___________ |
+| 17 | Gymnasium | /jim-NAY-zee-um/ | The basketball game is in the gymnasium. | ___________ |
+| 18 | Recess | /REE-ses/ | Recess is the best part of the school day! | ___________ |
+| 19 | Semester | /seh-MES-ter/ | Each school year has two semesters. | ___________ |
+| 20 | Yearbook | /YEER-book/ | Sign my yearbook on the last day of school! | ___________ |
+| 21 | Clubs | /KLUBZ/ | Join clubs to make friends who share your interests. | ___________ |
+| 22 | Team | /TEEM/ | Our soccer team won the championship. | ___________ |
+| 23 | Coach | /KOHCH/ | The coach teaches the team how to play. | ___________ |
+| 24 | Captain | /KAP-tin/ | The team captain leads warm-ups before practice. | ___________ |
+| 25 | Tryout | /TRY-owt/ | Tryouts for the basketball team are on Monday. | ___________ |
+
+> **🏫 Aiko's Tip:** *"School is MORE than homework! Say these words: ASSEMBLY, FIELD TRIP, TALENT SHOW. Which one is YOUR favorite? Tell a friend in English!"*
+
+---
+
+## Scene 18: Celebrations & Traditions
+
+*In Harmonia, every culture brings its own special celebrations. Kenji and Aiko celebrate them all!*
+
+| # | Word | Phonetic | In the Story… | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Holiday | /HOL-ih-day/ | Our favorite holiday is Thanksgiving. | ___________ |
+| 2 | Tradition | /truh-DISH-un/ | A tradition is something families do year after year. | ___________ |
+| 3 | Celebration | /sel-eh-BRAY-shun/ | The celebration includes food, music, and dancing. | ___________ |
+| 4 | Festival | /FES-tih-vul/ | The community festival has games and live music. | ___________ |
+| 5 | Parade | /puh-RAYD/ | Marching bands walk in the parade down Main Street. | ___________ |
+| 6 | Fireworks | /FYR-wurks/ | Colorful fireworks light up the sky at midnight. | ___________ |
+| 7 | Candle | /KAN-dul/ | Light a candle on the birthday cake. | ___________ |
+| 8 | Decoration | /dek-oh-RAY-shun/ | Hang the decoration on the wall for the party. | ___________ |
+| 9 | Costume | /KOS-toom/ | Children wear a costume on Halloween. | ___________ |
+| 10 | Gift | /GIFT/ | A gift is something you give to show you care. | ___________ |
+| 11 | Wrap | /RAP/ | Wrap the gift in colorful paper. | ___________ |
+| 12 | Card | /KARD/ | Write a birthday card for your friend. | ___________ |
+| 13 | Feast | /FEEST/ | The family prepared a feast for the holiday meal. | ___________ |
+| 14 | Toast | /TOHST/ | Raise your glass and make a toast to the new year. | ___________ |
+| 15 | Reunion | /ree-YOON-yun/ | The family reunion brings everyone together. | ___________ |
+| 16 | Ceremony | /SAIR-eh-moh-nee/ | A wedding ceremony celebrates love. | ___________ |
+| 17 | Custom | /KUS-tum/ | Every country has its own customs and practices. | ___________ |
+| 18 | Heritage | /HAIR-ih-tij/ | Share your cultural heritage with your classmates. | ___________ |
+| 19 | Feast day | /FEEST DAY/ | A feast day is a special meal for a holiday. | ___________ |
+| 20 | Ancestor | /AN-ses-ter/ | An ancestor is a family member from long ago. | ___________ |
+| 21 | Gathering | /GATH-er-ing/ | A gathering is when people come together. | ___________ |
+| 22 | Potluck | /POT-luk/ | Everyone brings a dish to the potluck dinner. | ___________ |
+| 23 | Invitation | /in-vih-TAY-shun/ | Send an invitation to your friends for the party. | ___________ |
+| 24 | Guest | /GEST/ | A guest is someone you invite to your home. | ___________ |
+| 25 | Host | /HOHST/ | The host welcomes everyone to the party. | ___________ |
+
+> **🎉 Kenji's Tip:** *"What celebrations does YOUR family have? Say: 'My family celebrates ___. We eat ___. We wear ___. We listen to ___.' Sharing YOUR traditions in English is beautiful!"*
+
+---
+
+## Scene 19: The Neighborhood
+
+*Kenji and Aiko explore their neighborhood, discovering all the places and people nearby.*
+
+| # | Word | Phonetic | In the Story… | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Neighbor | /NAY-ber/ | A neighbor is someone who lives next to you. | ___________ |
+| 2 | Block | /BLOK/ | Walk around the block for exercise. | ___________ |
+| 3 | Corner | /KOR-ner/ | The bakery is on the corner of Oak Street. | ___________ |
+| 4 | Lane | /LAYN/ | Our house is on a quiet lane with big trees. | ___________ |
+| 5 | Avenue | /AV-eh-noo/ | The parade goes down the main avenue. | ___________ |
+| 6 | Apartment | /uh-PART-ment/ | We live in an apartment on the third floor. | ___________ |
+| 7 | Townhouse | /TOWN-hows/ | A townhouse shares walls with its neighbors. | ___________ |
+| 8 | Yard | /YARD/ | The children play in the front yard. | ___________ |
+| 9 | Community | /kuh-MYOO-nih-tee/ | Our community has a park, library, and school. | ___________ |
+| 10 | Park | /PARK/ | The park has swings, slides, and a basketball court. | ___________ |
+| 11 | Library | /LY-brair-ee/ | Borrow books for free at the public library. | ___________ |
+| 12 | Church | /CHURCH/ | The church opens its doors for community meals. | ___________ |
+| 13 | Mosque | /MOSK/ | The mosque is a place of worship and community. | ___________ |
+| 14 | Temple | /TEM-pul/ | The temple hosts cultural celebrations. | ___________ |
+| 15 | Grocery store | /GROH-ser-ee STOR/ | The grocery store is three blocks from our house. | ___________ |
+| 16 | Laundromat | /LAWN-droh-mat/ | Wash your clothes at the laundromat. | ___________ |
+| 17 | Pharmacy | /FAR-muh-see/ | The pharmacy is next to the doctor's office. | ___________ |
+| 18 | Gas station | /GAS STAY-shun/ | Fill up the tank at the gas station. | ___________ |
+| 19 | Barbershop | /BAR-ber-shop/ | Get a haircut at the barbershop on Main Street. | ___________ |
+| 20 | Salon | /suh-LON/ | She gets her hair done at the salon. | ___________ |
+| 21 | Daycare | /DAY-kair/ | Drop off the baby at daycare before work. | ___________ |
+| 22 | Clinic | /KLIN-ik/ | The community clinic provides low-cost health care. | ___________ |
+| 23 | Senior center | /SEEN-yer SEN-ter/ | The senior center offers activities for older adults. | ___________ |
+| 24 | Playground | /PLAY-grownd/ | Meet me at the playground after school. | ___________ |
+| 25 | Community garden | /kuh-MYOO-nih-tee GAR-den/ | Grow vegetables in the community garden. | ___________ |
+
+> **🏘️ Aiko's Tip:** *"Take a 'neighborhood vocabulary walk!' Name every place you pass: PHARMACY, LIBRARY, PARK, LAUNDROMAT. If you can name 20 places, you already know your neighborhood in English!"*
+
+---
+
+## Scene 20: Pets at Home
+
+*Kenji and Aiko visit the Harmonia Pet Shop. Caring for a pet teaches responsibility — and lots of vocabulary!*
+
+| # | Word | Phonetic | In the Story… | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Pet | /PET/ | A pet is an animal you keep at home. | ___________ |
+| 2 | Dog | /DOG/ | The dog wags its tail when it is happy. | ___________ |
+| 3 | Cat | /KAT/ | The cat purrs when you scratch behind its ears. | ___________ |
+| 4 | Fish | /FISH/ | The goldfish swims in a round bowl. | ___________ |
+| 5 | Bird | /BURD/ | The bird sings a cheerful song every morning. | ___________ |
+| 6 | Hamster | /HAM-ster/ | The hamster runs on its wheel at night. | ___________ |
+| 7 | Turtle | /TUR-tul/ | The turtle moves slowly but lives a long time. | ___________ |
+| 8 | Rabbit | /RAB-it/ | The rabbit hops around the yard eating clover. | ___________ |
+| 9 | Collar | /KOL-er/ | Put a collar and tag on your dog. | ___________ |
+| 10 | Leash | /LEESH/ | Walk the dog on a leash for safety. | ___________ |
+| 11 | Bowl | /BOHL/ | Fill the water bowl for the cat. | ___________ |
+| 12 | Cage | /KAYJ/ | The bird lives in a large cage with perches. | ___________ |
+| 13 | Veterinarian | /vet-er-ih-NAIR-ee-un/ | Take your pet to the veterinarian for checkups. | ___________ |
+| 14 | Feed | /FEED/ | Feed the fish twice a day. | ___________ |
+| 15 | Groom | /GROOM/ | Groom the dog by brushing its fur. | ___________ |
+| 16 | Train | /TRAYN/ | Train the puppy to sit and stay. | ___________ |
+| 17 | Walk | /WAWK/ | Walk the dog around the block every morning. | ___________ |
+| 18 | Adopt | /uh-DOPT/ | Adopt a pet from the animal shelter. | ___________ |
+| 19 | Shelter | /SHEL-ter/ | The animal shelter cares for homeless pets. | ___________ |
+| 20 | Loyal | /LOY-ul/ | Dogs are loyal companions to their owners. | ___________ |
+| 21 | Playful | /PLAY-ful/ | The playful kitten chases a ball of yarn. | ___________ |
+| 22 | Bark | /BARK/ | The dog barks when someone knocks on the door. | ___________ |
+| 23 | Purr | /PUR/ | The cat purrs softly while sleeping on my lap. | ___________ |
+| 24 | Fetch | /FECH/ | Throw the ball and the dog will fetch it. | ___________ |
+| 25 | Companion | /kum-PAN-yun/ | A pet is a loving companion for the whole family. | ___________ |
+
+> **🐾 Kenji's Tip:** *"Do you have a pet? Describe it! 'My ___ is ___. It likes to ___. I feed it ___.' If you don't have a pet, describe your DREAM pet in English!"*
+
+---
+
 ## Land 1 Summary
 
 | Sub-Scene | Word Count |
@@ -470,4 +860,14 @@
 | The Home | 45 |
 | Days, Months & Numbers | 30 |
 | Communication & Technology | 30 |
-| **TOTAL** | **340** |
+| Manners & Politeness | 25 |
+| Daily Routines | 40 |
+| Hobbies & Recreation | 35 |
+| The Playground & Recess | 30 |
+| Body Language & Gestures | 25 |
+| Music & Instruments | 25 |
+| School Events & Activities | 25 |
+| Celebrations & Traditions | 25 |
+| The Neighborhood | 25 |
+| Pets at Home | 25 |
+| **TOTAL** | **620** |

@@ -471,6 +471,249 @@
 
 ---
 
+## Scene 11: Nutrition & Food Groups
+
+*In the Vitalis Nutrition Lab, Felix and Amara learn about the five food groups and how to build a balanced plate.*
+
+| # | Word | Phonetic | In the Story… | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Nutrition | /noo-TRISH-un/ | Good nutrition means eating foods that help your body. | ___________ |
+| 2 | Protein | /PROH-teen/ | Chicken, beans, and eggs are rich in protein. | ___________ |
+| 3 | Carbohydrate | /kar-boh-HY-drayt/ | Bread and rice are carbohydrates that give you energy. | ___________ |
+| 4 | Fiber | /FY-ber/ | Fruits, vegetables, and whole grains have lots of fiber. | ___________ |
+| 5 | Calcium | /KAL-see-um/ | Milk and cheese have calcium that makes bones strong. | ___________ |
+| 6 | Iron | /EYE-urn/ | Spinach and red meat contain iron for healthy blood. | ___________ |
+| 7 | Vitamin | /VY-tuh-min/ | Oranges are full of Vitamin C. | ___________ |
+| 8 | Calorie | /KAL-uh-ree/ | A calorie is a unit that measures energy in food. | ___________ |
+| 9 | Sugar | /SHOOG-er/ | Too much sugar is bad for your teeth and body. | ___________ |
+| 10 | Fat | /FAT/ | Healthy fats come from nuts, fish, and avocados. | ___________ |
+| 11 | Dairy | /DAIR-ee/ | Milk, yogurt, and cheese belong to the dairy group. | ___________ |
+| 12 | Grain | /GRAYN/ | Bread, oatmeal, and pasta are made from grains. | ___________ |
+| 13 | Whole grain | /HOHL GRAYN/ | Whole grain bread is healthier than white bread. | ___________ |
+| 14 | Serving size | /SUR-ving SYZ/ | The serving size tells you how much to eat at one time. | ___________ |
+| 15 | Balanced meal | /BAL-unst MEEL/ | A balanced meal has protein, grains, and vegetables. | ___________ |
+| 16 | Sodium | /SOH-dee-um/ | Too much sodium, or salt, raises blood pressure. | ___________ |
+| 17 | Organic | /or-GAN-ik/ | Organic vegetables are grown without pesticides. | ___________ |
+| 18 | Portion | /POR-shun/ | A small portion of rice is about the size of your fist. | ___________ |
+| 19 | Nutrient | /NOO-tree-unt/ | Every nutrient has a job inside the body. | ___________ |
+| 20 | Food label | /FOOD LAY-bul/ | Read the food label to know what's inside the package. | ___________ |
+
+> **🥗 Felix's Tip:** *"Look at your plate! Is it colorful? A plate full of different colors means different NUTRIENTS. Green spinach, red tomatoes, orange carrots — eat the rainbow!"*
+
+---
+
+## Scene 12: Mental Health & Emotions
+
+*In Vitalis, the heart matters as much as the body. Felix and Amara learn to name feelings and care for their minds.*
+
+| # | Word | Phonetic | In the Story… | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Stress | /STRES/ | Deep breathing helps reduce stress. | ___________ |
+| 2 | Anxiety | /ang-ZY-uh-tee/ | Anxiety is when you feel worried about many things. | ___________ |
+| 3 | Calm | /KAHM/ | Yoga and music help Felix feel calm. | ___________ |
+| 4 | Relax | /rih-LAKS/ | Take a break and relax your mind and body. | ___________ |
+| 5 | Mindfulness | /MYND-ful-nes/ | Mindfulness means paying attention to the present moment. | ___________ |
+| 6 | Self-care | /SELF-KAIR/ | Self-care includes rest, exercise, and healthy eating. | ___________ |
+| 7 | Therapy | /THAIR-uh-pee/ | Therapy is talking to a professional about your feelings. | ___________ |
+| 8 | Counselor | /KOWN-sel-er/ | A school counselor helps students solve problems. | ___________ |
+| 9 | Support | /suh-PORT/ | Friends and family give you emotional support. | ___________ |
+| 10 | Resilience | /rih-ZIL-yuns/ | Resilience means bouncing back after a hard time. | ___________ |
+| 11 | Gratitude | /GRAT-ih-tood/ | Writing a gratitude list helps you see the good things. | ___________ |
+| 12 | Confidence | /KON-fih-dens/ | Practice builds confidence in speaking English. | ___________ |
+| 13 | Overwhelmed | /oh-ver-WELMD/ | Amara feels overwhelmed when there's too much to do. | ___________ |
+| 14 | Meditation | /med-ih-TAY-shun/ | Meditation means sitting quietly and focusing on breathing. | ___________ |
+| 15 | Well-being | /WEL-BEE-ing/ | Well-being includes feeling good in body AND mind. | ___________ |
+| 16 | Cope | /KOHP/ | Exercise and music help Felix cope with hard days. | ___________ |
+| 17 | Journal | /JUR-nul/ | Writing in a journal helps you understand your feelings. | ___________ |
+| 18 | Patience | /PAY-shuns/ | Learning a new language requires patience. | ___________ |
+| 19 | Self-esteem | /SELF-es-TEEM/ | High self-esteem means believing in yourself. | ___________ |
+| 20 | Rest | /REST/ | Your mind needs rest just as much as your body. | ___________ |
+
+> **🧠 Amara's Tip:** *"Name your feeling right now! 'I feel ___.' Happy? Tired? Nervous? Calm? When you NAME your emotion, you take CONTROL of it."*
+
+---
+
+
+## Scene 13: First Aid & Injuries
+
+*At the Vitalis First Aid Station, Zara teaches emergency care*
+
+| # | Word | Phonetic | In the Story... | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Bandage | /BAN-dij/ | Wrap the bandage around the cut. | ___________ |
+| 2 | Cut | /KUT/ | Clean the cut with soap and water. | ___________ |
+| 3 | Bruise | /BROOZ/ | The bruise turned purple after the fall. | ___________ |
+| 4 | Burn | /BURN/ | Run cold water over a minor burn. | ___________ |
+| 5 | Blister | /BLIS-ter/ | A blister formed on her heel from new shoes. | ___________ |
+| 6 | Sprain | /SPRAYN/ | He sprained his ankle playing basketball. | ___________ |
+| 7 | Fracture | /FRAK-chur/ | A fracture is a broken bone. | ___________ |
+| 8 | Swelling | /SWEL-ing/ | Apply ice to reduce the swelling. | ___________ |
+| 9 | Ice pack | /YS PAK/ | Put an ice pack on the injury. | ___________ |
+| 10 | Splint | /SPLINT/ | A splint keeps the broken bone still. | ___________ |
+| 11 | Wound | /WOOND/ | Keep the wound clean to prevent infection. | ___________ |
+| 12 | Sting | /STING/ | A bee sting hurts but usually heals quickly. | ___________ |
+| 13 | Rash | /RASH/ | The rash is red and itchy. | ___________ |
+| 14 | Fever | /FEE-ver/ | A fever means your temperature is too high. | ___________ |
+| 15 | Cough | /KOF/ | Cover your mouth when you cough. | ___________ |
+| 16 | Sneeze | /SNEEZ/ | Sneeze into your elbow, not your hand. | ___________ |
+| 17 | Dizzy | /DIZ-ee/ | She felt dizzy and needed to sit down. | ___________ |
+| 18 | Nausea | /NAW-zee-uh/ | Nausea means feeling sick to your stomach. | ___________ |
+| 19 | CPR | /SEE-PEE-AR/ | Learn CPR to help in an emergency. | ___________ |
+| 20 | Poison | /POY-zun/ | Call poison control if a child swallows chemicals. | ___________ |
+| 21 | Allergic reaction | /uh-LUR-jik ree-AK-shun/ | An allergic reaction can cause hives. | ___________ |
+| 22 | Ambulance | /AM-byoo-lents/ | Call an ambulance for serious injuries. | ___________ |
+| 23 | Emergency room | /ee-MUR-jen-see ROOM/ | Go to the emergency room for broken bones. | ___________ |
+| 24 | Stretcher | /STRECH-er/ | The paramedic placed the patient on a stretcher. | ___________ |
+| 25 | Recover | /rih-KUV-er/ | Rest and fluids help you recover faster. | ___________ |
+
+> **🩹 Zara's Tip:** *"BANDAGE, ICE, SPLINT — first aid words can save a life!"*
+
+---
+
+## Scene 14: Eye Care & Vision
+
+*At the Vitalis Eye Clinic, Zara learns about seeing clearly*
+
+| # | Word | Phonetic | In the Story... | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Eye | /EYE/ | Protect your eyes from bright sunlight. | ___________ |
+| 2 | Vision | /VIZH-un/ | Good vision helps you read and drive safely. | ___________ |
+| 3 | Glasses | /GLAS-ez/ | She wears glasses to see the board clearly. | ___________ |
+| 4 | Contacts | /KON-takts/ | Contact lenses sit directly on the eye. | ___________ |
+| 5 | Sunglasses | /SUN-glas-ez/ | Wear sunglasses to protect your eyes from UV rays. | ___________ |
+| 6 | Eye exam | /EYE eg-ZAM/ | Get an eye exam every two years. | ___________ |
+| 7 | Optometrist | /op-TOM-eh-trist/ | The optometrist checks your eyes. | ___________ |
+| 8 | Prescription | /prih-SKRIP-shun/ | Your glasses prescription may change over time. | ___________ |
+| 9 | Lens | /LENZ/ | The lens of the eye focuses light. | ___________ |
+| 10 | Frame | /FRAYM/ | Choose a frame that fits your face. | ___________ |
+| 11 | Pupil | /PYOO-pul/ | The pupil gets bigger in the dark. | ___________ |
+| 12 | Iris | /EYE-ris/ | The iris is the colored part of the eye. | ___________ |
+| 13 | Retina | /RET-ih-nuh/ | The retina receives images at the back of the eye. | ___________ |
+| 14 | Eyelid | /EYE-lid/ | The eyelid protects and moistens the eye. | ___________ |
+| 15 | Eyelash | /EYE-lash/ | An eyelash keeps dust out of your eye. | ___________ |
+| 16 | Eyebrow | /EYE-brow/ | The eyebrow sits above the eye. | ___________ |
+| 17 | Tear | /TEER/ | A tear rolls down her cheek when she cries. | ___________ |
+| 18 | Blurry | /BLUR-ee/ | Without glasses everything looks blurry. | ___________ |
+| 19 | Focus | /FOH-kus/ | Focus your eyes on the letters on the chart. | ___________ |
+| 20 | Nearsighted | /NEER-sy-tid/ | Nearsighted means you see close things clearly. | ___________ |
+| 21 | Farsighted | /FAR-sy-tid/ | Farsighted means distant objects are clearer. | ___________ |
+| 22 | Blind | /BLYND/ | Braille helps blind people read. | ___________ |
+| 23 | Color blind | /KUL-er BLYND/ | Color blind people have trouble seeing certain colors. | ___________ |
+| 24 | Reading glasses | /REE-ding GLAS-ez/ | Reading glasses help you see small print. | ___________ |
+| 25 | Eye drops | /EYE DROPS/ | Use eye drops when your eyes feel dry. | ___________ |
+
+> **👁 Zara's Tip:** *"Your EYES are precious! Know: GLASSES, CONTACTS, EYE EXAM."*
+
+---
+
+## Scene 15: Sleep & Rest
+
+*In the Vitalis Dream Chamber, rest is medicine*
+
+| # | Word | Phonetic | In the Story... | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Sleep | /SLEEP/ | Get eight hours of sleep every night. | ___________ |
+| 2 | Bed | /BED/ | Make your bed every morning. | ___________ |
+| 3 | Pillow | /PIL-oh/ | Fluff the pillow before going to sleep. | ___________ |
+| 4 | Blanket | /BLANK-it/ | Pull the blanket up when you feel cold. | ___________ |
+| 5 | Mattress | /MAT-res/ | A good mattress supports your back. | ___________ |
+| 6 | Alarm clock | /uh-LARM KLOK/ | The alarm clock wakes you up at six. | ___________ |
+| 7 | Nap | /NAP/ | A short nap can recharge your energy. | ___________ |
+| 8 | Dream | /DREEM/ | She had a wonderful dream last night. | ___________ |
+| 9 | Nightmare | /NYT-mair/ | A nightmare is a scary dream. | ___________ |
+| 10 | Rest | /REST/ | Rest your body after a long day. | ___________ |
+| 11 | Yawn | /YAWN/ | A yawn means you are tired. | ___________ |
+| 12 | Snore | /SNOR/ | He snores loudly when he sleeps. | ___________ |
+| 13 | Drowsy | /DROW-zee/ | Feeling drowsy means you are getting sleepy. | ___________ |
+| 14 | Insomnia | /in-SOM-nee-uh/ | Insomnia means having trouble falling asleep. | ___________ |
+| 15 | Pajamas | /puh-JAH-muhz/ | Put on pajamas before going to bed. | ___________ |
+| 16 | Lullaby | /LUL-uh-by/ | Sing a lullaby to help the baby sleep. | ___________ |
+| 17 | Bedtime | /BED-tym/ | Bedtime is at nine o'clock on school nights. | ___________ |
+| 18 | Wake up | /WAYK UP/ | Wake up early to have a good morning. | ___________ |
+| 19 | Stretch | /STRECH/ | Stretch your body when you first wake up. | ___________ |
+| 20 | Rested | /REST-ed/ | I feel rested after a good night of sleep. | ___________ |
+| 21 | Toss and turn | /TOS and TURN/ | She tossed and turned all night. | ___________ |
+| 22 | Night light | /NYT LYT/ | The night light glows softly in the room. | ___________ |
+| 23 | Sleepy | /SLEEP-ee/ | The baby looks sleepy after lunch. | ___________ |
+| 24 | Relax | /rih-LAKS/ | Relax your muscles before bed. | ___________ |
+| 25 | Routine | /roo-TEEN/ | A bedtime routine helps you fall asleep faster. | ___________ |
+
+> **😴 Zara's Tip:** *"Sleep is MEDICINE! BED, PILLOW, REST, DREAM — healthy bodies need healthy sleep."*
+
+---
+
+## Scene 16: Personal Care Products
+
+*At the Vitalis Hygiene Market, Zara names every product*
+
+| # | Word | Phonetic | In the Story... | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Shampoo | /sham-POO/ | Use shampoo to wash your hair. | ___________ |
+| 2 | Conditioner | /kun-DISH-un-er/ | Conditioner makes hair soft and smooth. | ___________ |
+| 3 | Soap | /SOHP/ | Wash your hands with soap and water. | ___________ |
+| 4 | Body wash | /BOD-ee WOSH/ | Use body wash in the shower. | ___________ |
+| 5 | Toothpaste | /TOOTH-payst/ | Squeeze toothpaste onto your toothbrush. | ___________ |
+| 6 | Toothbrush | /TOOTH-brush/ | Replace your toothbrush every three months. | ___________ |
+| 7 | Floss | /FLOS/ | Floss between your teeth every day. | ___________ |
+| 8 | Mouthwash | /MOWTH-wosh/ | Gargle with mouthwash after brushing. | ___________ |
+| 9 | Deodorant | /dee-OH-der-unt/ | Apply deodorant under your arms. | ___________ |
+| 10 | Lotion | /LOH-shun/ | Put lotion on your hands to keep them soft. | ___________ |
+| 11 | Sunscreen | /SUN-skreen/ | Apply sunscreen before going outside. | ___________ |
+| 12 | Razor | /RAY-zer/ | Use a razor carefully to shave. | ___________ |
+| 13 | Comb | /KOHM/ | Comb your hair to remove tangles. | ___________ |
+| 14 | Brush | /BRUSH/ | Brush your hair before leaving the house. | ___________ |
+| 15 | Hair dryer | /HAIR DRY-er/ | Use the hair dryer on a low setting. | ___________ |
+| 16 | Cotton ball | /KOT-un BAWL/ | Use a cotton ball to apply medicine. | ___________ |
+| 17 | Band-Aid | /BAND-ayd/ | Put a Band-Aid on the small cut. | ___________ |
+| 18 | Tissues | /TISH-ooz/ | Grab a tissue when you need to sneeze. | ___________ |
+| 19 | Hand sanitizer | /HAND SAN-ih-ty-zer/ | Use hand sanitizer when soap is not available. | ___________ |
+| 20 | Nail clipper | /NAYL KLIP-er/ | Trim your nails with a nail clipper. | ___________ |
+| 21 | Mirror | /MEER-er/ | Check your appearance in the mirror. | ___________ |
+| 22 | Towel | /TOW-ul/ | Dry your face with a clean towel. | ___________ |
+| 23 | Washcloth | /WOSH-kloth/ | Scrub your face gently with a washcloth. | ___________ |
+| 24 | Tweezers | /TWEE-zerz/ | Use tweezers to remove a splinter. | ___________ |
+| 25 | Q-tip | /KYOO-tip/ | Use a Q-tip carefully to clean your ears. | ___________ |
+
+> **🧴 Zara's Tip:** *"Name every product in your bathroom! SHAMPOO, TOOTHPASTE, DEODORANT!"*
+
+---
+
+## Scene 17: Sports & Fitness
+
+*At the Vitalis Arena, healthy bodies are built through sport*
+
+| # | Word | Phonetic | In the Story... | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Soccer | /SOK-er/ | Soccer is the most popular sport worldwide. | ___________ |
+| 2 | Basketball | /BAS-kit-bawl/ | Dribble and shoot in basketball. | ___________ |
+| 3 | Baseball | /BAYS-bawl/ | Hit the baseball with the bat. | ___________ |
+| 4 | Football | /FOOT-bawl/ | The quarterback throws the football. | ___________ |
+| 5 | Tennis | /TEN-is/ | Hit the tennis ball over the net. | ___________ |
+| 6 | Swimming | /SWIM-ing/ | Swimming is great exercise for the whole body. | ___________ |
+| 7 | Running | /RUN-ing/ | Running helps build strong legs. | ___________ |
+| 8 | Volleyball | /VOL-ee-bawl/ | Spike the volleyball over the net. | ___________ |
+| 9 | Golf | /GOLF/ | Swing the golf club to hit the ball. | ___________ |
+| 10 | Gymnastics | /jim-NAS-tiks/ | Gymnastics requires balance and flexibility. | ___________ |
+| 11 | Referee | /ref-er-EE/ | The referee blows the whistle to start the game. | ___________ |
+| 12 | Score | /SKOR/ | The final score was three to one. | ___________ |
+| 13 | Champion | /CHAM-pee-un/ | The champion wins the tournament. | ___________ |
+| 14 | Trophy | /TROH-fee/ | The team celebrated with the trophy. | ___________ |
+| 15 | Medal | /MED-ul/ | She won a gold medal at the Olympics. | ___________ |
+| 16 | Stadium | /STAY-dee-um/ | The stadium holds fifty thousand fans. | ___________ |
+| 17 | Court | /KORT/ | Play basketball on the indoor court. | ___________ |
+| 18 | Field | /FEELD/ | The soccer field is one hundred yards long. | ___________ |
+| 19 | Pool | /POOL/ | Swim laps in the pool for exercise. | ___________ |
+| 20 | Track | /TRAK/ | Run four laps around the track for one mile. | ___________ |
+| 21 | Uniform | /YOO-nih-form/ | Wear your team uniform to the game. | ___________ |
+| 22 | Coach | /KOHCH/ | The coach designs the practice drills. | ___________ |
+| 23 | Warm up | /WARM UP/ | Always warm up before exercising. | ___________ |
+| 24 | Cool down | /KOOL DOWN/ | Cool down with stretches after the game. | ___________ |
+| 25 | Sportsmanship | /SPORTS-mun-ship/ | Good sportsmanship means playing fair. | ___________ |
+
+> **⚽ Zara's Tip:** *"What sport do YOU play? SOCCER, BASKETBALL, SWIMMING? Say it in English!"*
+
+---
+
 ## Land 5 Summary
 
 | Sub-Scene | Word Count |
@@ -485,4 +728,11 @@
 | The Kitchen | 40 |
 | Meal Time | 35 |
 | Exercise & Movement | 30 |
-| **TOTAL** | **355** |
+| Nutrition & Food Groups | 20 |
+| Mental Health & Emotions | 20 |
+| First Aid & Injuries | 25 |
+| Eye Care & Vision | 25 |
+| Sleep & Rest | 25 |
+| Personal Care Products | 25 |
+| Sports & Fitness | 25 |
+| **TOTAL** | **520** |

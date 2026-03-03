@@ -396,6 +396,311 @@
 
 ---
 
+## Scene 11: Freshwater Life
+
+*Not all of Aquaria is saltwater. Ronan and Nerissa explore streams, ponds, and rivers teeming with life.*
+
+| # | Word | Phonetic | In the Story… | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Freshwater | /FRESH-waw-ter/ | Lakes and rivers are freshwater — not salty. | ___________ |
+| 2 | Trout | /TROWT/ | The rainbow trout swims in the cold mountain stream. | ___________ |
+| 3 | Bass | /BAS/ | The largemouth bass hides near the lily pads. | ___________ |
+| 4 | Catfish | /KAT-fish/ | The catfish has long whiskers near its mouth. | ___________ |
+| 5 | Salmon | /SAM-un/ | Salmon swim upstream to lay their eggs. | ___________ |
+| 6 | Tadpole | /TAD-pohl/ | A tadpole will grow into a frog. | ___________ |
+| 7 | Crayfish | /KRAY-fish/ | The crayfish looks like a tiny lobster. | ___________ |
+| 8 | Pond weed | /POND WEED/ | Pond weed gives shelter to small fish. | ___________ |
+| 9 | Lily pad | /LIL-ee PAD/ | The frog sits on a wide green lily pad. | ___________ |
+| 10 | Cattail | /KAT-tayl/ | Tall cattails grow at the edge of the marsh. | ___________ |
+| 11 | Dragonfly | /DRAG-un-fly/ | A blue dragonfly darts over the water. | ___________ |
+| 12 | Heron | /HAIR-un/ | The great blue heron stands still in the shallows. | ___________ |
+| 13 | Beaver dam | /BEE-ver DAM/ | The beaver dam blocks the stream and makes a pond. | ___________ |
+| 14 | Minnow | /MIN-oh/ | Tiny minnows swim in a school near the bank. | ___________ |
+| 15 | Algae | /AL-jee/ | Green algae grows on rocks in the sunlight. | ___________ |
+| 16 | Fishing rod | /FISH-ing ROD/ | Ronan casts the fishing rod into the lake. | ___________ |
+| 17 | Bait | /BAYT/ | Use a worm as bait to catch fish. | ___________ |
+| 18 | Hook | /HOOK/ | The hook holds the bait for the fish. | ___________ |
+| 19 | Net | /NET/ | Nerissa scoops up minnows with a small net. | ___________ |
+| 20 | Dock | /DOK/ | The wooden dock stretches out over the lake. | ___________ |
+
+> **🐟 Ronan's Tip:** *"Compare freshwater and saltwater animals! Which live in rivers? Which live in the ocean? Make two lists and you'll see how nature sorts itself!"*
+
+---
+
+## Scene 12: Mail & Postal Services
+
+*In Aquaria, letters and packages connect people across oceans. Ronan and Nerissa visit the post office.*
+
+| # | Word | Phonetic | In the Story… | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Letter | /LET-er/ | I wrote a letter to my grandmother. | ___________ |
+| 2 | Envelope | /EN-vuh-lohp/ | Put the letter inside the envelope. | ___________ |
+| 3 | Stamp | /STAMP/ | Buy a stamp to mail the letter. | ___________ |
+| 4 | Address | /AD-res/ | Write the address on the front of the envelope. | ___________ |
+| 5 | Return address | /rih-TURN AD-res/ | The return address is in the top left corner. | ___________ |
+| 6 | Zip code | /ZIP KOHD/ | The zip code helps mail get to the right place. | ___________ |
+| 7 | Package | /PAK-ij/ | The package arrived in a brown cardboard box. | ___________ |
+| 8 | Mail carrier | /MAYL KAIR-ee-er/ | The mail carrier delivers letters to every house. | ___________ |
+| 9 | Post office | /POHST OF-is/ | Go to the post office to send a package. | ___________ |
+| 10 | Mailbox | /MAYL-boks/ | Drop the letter in the blue mailbox. | ___________ |
+| 11 | Postcard | /POHST-kard/ | Nerissa sends a postcard from every city she visits. | ___________ |
+| 12 | Delivery | /dih-LIV-er-ee/ | The delivery truck brings packages to the door. | ___________ |
+| 13 | Tracking number | /TRAK-ing NUM-ber/ | Use the tracking number to find your package online. | ___________ |
+| 14 | Fragile | /FRAJ-ul/ | Mark the box "Fragile" if it contains glass. | ___________ |
+| 15 | Priority mail | /pry-OR-ih-tee MAYL/ | Priority mail arrives faster than regular mail. | ___________ |
+| 16 | Express | /ek-SPRES/ | Express delivery gets the package there by tomorrow. | ___________ |
+| 17 | Scale | /SKAYL/ | The clerk weighs the package on the scale. | ___________ |
+| 18 | Certified mail | /SUR-tih-fyd MAYL/ | Certified mail requires a signature when delivered. | ___________ |
+| 19 | P.O. Box | /PEE-OH BOKS/ | Some people receive mail at a P.O. Box. | ___________ |
+| 20 | Sort | /SORT/ | Workers sort the mail by zip code. | ___________ |
+
+> **📬 Nerissa's Tip:** *"Pretend to address an envelope! Write the name, the street, the city, the state, and the ZIP CODE. Now you know all five parts of a mailing address!"*
+
+---
+
+## Scene 13: Emergency Services
+
+*Safety is important in Aquaria. Ronan and Nerissa learn who to call and what to do in an emergency.*
+
+| # | Word | Phonetic | In the Story… | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Emergency | /ih-MUR-jen-see/ | Call 911 in an emergency. | ___________ |
+| 2 | 911 | /NYN-WUN-WUN/ | Dial 911 for police, fire, or medical help. | ___________ |
+| 3 | Firefighter | /FYR-fy-ter/ | The brave firefighter climbs the ladder. | ___________ |
+| 4 | Paramedic | /pair-uh-MED-ik/ | The paramedic gives first aid at the scene. | ___________ |
+| 5 | Police officer | /puh-LEES OF-ih-ser/ | The police officer keeps the community safe. | ___________ |
+| 6 | First aid | /FURST AYD/ | A first aid kit has bandages and antiseptic. | ___________ |
+| 7 | Bandage | /BAN-dij/ | Put a bandage on the cut to keep it clean. | ___________ |
+| 8 | Fire extinguisher | /FYR ek-STING-gwish-er/ | The fire extinguisher is mounted on the wall. | ___________ |
+| 9 | Smoke detector | /SMOHK dih-TEK-ter/ | The smoke detector beeps when it senses smoke. | ___________ |
+| 10 | Escape route | /es-KAYP ROOT/ | Know the escape route in case of fire. | ___________ |
+| 11 | CPR | /SEE-PEE-AR/ | CPR can save a life in a cardiac emergency. | ___________ |
+| 12 | Stretcher | /STRECH-er/ | The paramedic carries the patient on a stretcher. | ___________ |
+| 13 | Siren | /SY-ren/ | The ambulance siren warns cars to move aside. | ___________ |
+| 14 | Safety | /SAYF-tee/ | Safety means protecting yourself and others. | ___________ |
+| 15 | Hazard | /HAZ-erd/ | A wet floor is a slip hazard. | ___________ |
+| 16 | Evacuate | /ih-VAK-yoo-ayt/ | Evacuate the building when the alarm sounds. | ___________ |
+| 17 | Alarm | /uh-LARM/ | Pull the alarm if you see fire or smoke. | ___________ |
+| 18 | Rescue | /RES-kyoo/ | The coast guard performs a water rescue. | ___________ |
+| 19 | Dispatcher | /dis-PACH-er/ | The 911 dispatcher asks what the emergency is. | ___________ |
+| 20 | Safe place | /SAYF PLAYS/ | Go to a safe place during a tornado warning. | ___________ |
+
+> **🚒 Ronan's Tip:** *"Memorize this sentence: 'In an emergency, I call 911.' Practice saying your full address out loud — the dispatcher will need it. Knowing these words could SAVE A LIFE."*
+
+---
+
+## Scene 14: Road Signs & Safety
+
+*Walking or driving through Aquaria, Ronan and Nerissa learn to read the signs that keep everyone safe.*
+
+| # | Word | Phonetic | In the Story… | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Stop | /STOP/ | The red stop sign means come to a complete halt. | ___________ |
+| 2 | Yield | /YEELD/ | Yield means slow down and let others go first. | ___________ |
+| 3 | One way | /WUN WAY/ | This is a one way street — traffic goes in one direction. | ___________ |
+| 4 | Do not enter | /DOO NOT EN-ter/ | The "Do Not Enter" sign means you cannot go that way. | ___________ |
+| 5 | Speed limit | /SPEED LIM-it/ | The speed limit is 25 miles per hour in a school zone. | ___________ |
+| 6 | School zone | /SKOOL ZOHN/ | Drive slowly through the school zone. | ___________ |
+| 7 | Crosswalk | /KROS-wawk/ | Pedestrians cross at the crosswalk. | ___________ |
+| 8 | Pedestrian crossing | /peh-DES-tree-un KROS-ing/ | Watch for the pedestrian crossing sign. | ___________ |
+| 9 | Railroad crossing | /RAYL-rohd KROS-ing/ | Stop and look both ways at a railroad crossing. | ___________ |
+| 10 | Merge | /MURJ/ | The merge sign means two lanes become one. | ___________ |
+| 11 | Exit | /EG-zit/ | Take the next exit off the highway. | ___________ |
+| 12 | Detour | /DEE-toor/ | Follow the detour signs around road construction. | ___________ |
+| 13 | No parking | /NOH PAR-king/ | You will get a ticket if you park in a no parking zone. | ___________ |
+| 14 | Handicapped parking | /HAN-dee-kapt PAR-king/ | Handicapped parking spaces are near the entrance. | ___________ |
+| 15 | Caution | /KAW-shun/ | The caution sign warns of danger ahead. | ___________ |
+| 16 | Construction zone | /kun-STRUK-shun ZOHN/ | Workers are ahead in the construction zone. | ___________ |
+| 17 | Dead end | /DED END/ | The road ends at a dead end. | ___________ |
+| 18 | U-turn | /YOO-TURN/ | Make a U-turn to go back the other way. | ___________ |
+| 19 | Curve | /KURV/ | Slow down at the sharp curve ahead. | ___________ |
+| 20 | Warning sign | /WORN-ing SYN/ | A warning sign alerts you to possible danger. | ___________ |
+
+> **⚠️ Nerissa's Tip:** *"How many road signs can you spot on your next car ride? Count the STOP signs, the SPEED LIMIT signs, and the CROSSWALK markers. Signs are English in the real world!"*
+
+---
+
+
+## Scene 15: Public Transportation
+
+*Nerissa rides every kind of public transit in Aquaria*
+
+| # | Word | Phonetic | In the Story... | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Bus | /BUS/ | Take the bus to school every morning. | ___________ |
+| 2 | Subway | /SUB-way/ | The subway runs underground through the city. | ___________ |
+| 3 | Train | /TRAYN/ | The train travels between cities. | ___________ |
+| 4 | Station | /STAY-shun/ | Wait at the station for the next train. | ___________ |
+| 5 | Platform | /PLAT-form/ | Stand on the platform until the train stops. | ___________ |
+| 6 | Ticket | /TIK-it/ | Buy a ticket before boarding the train. | ___________ |
+| 7 | Fare | /FAIR/ | The bus fare is two dollars. | ___________ |
+| 8 | Transfer | /TRANS-fer/ | Transfer to the blue line at Main Street. | ___________ |
+| 9 | Schedule | /SKEJ-ool/ | Check the bus schedule for departure times. | ___________ |
+| 10 | Route | /ROOT/ | This bus route goes to the hospital. | ___________ |
+| 11 | Stop | /STOP/ | Pull the cord to request a stop. | ___________ |
+| 12 | Driver | /DRY-ver/ | The bus driver opens the doors. | ___________ |
+| 13 | Passenger | /PAS-en-jer/ | Each passenger must pay the fare. | ___________ |
+| 14 | Seat | /SEET/ | Give your seat to an elderly passenger. | ___________ |
+| 15 | Standing room | /STAN-ding ROOM/ | The bus is full — standing room only. | ___________ |
+| 16 | Rush hour | /RUSH OW-er/ | Trains are crowded during rush hour. | ___________ |
+| 17 | Commute | /kuh-MYOOT/ | My daily commute takes forty-five minutes. | ___________ |
+| 18 | Metro | /MET-roh/ | The metro is fast and goes everywhere. | ___________ |
+| 19 | Trolley | /TROL-ee/ | The trolley runs on tracks through downtown. | ___________ |
+| 20 | Ferry | /FAIR-ee/ | The ferry carries people across the river. | ___________ |
+| 21 | Terminal | /TUR-mih-nul/ | Meet me at the bus terminal downtown. | ___________ |
+| 22 | Pass | /PAS/ | Buy a monthly pass to save money. | ___________ |
+| 23 | Delay | /dih-LAY/ | There is a ten-minute delay on the red line. | ___________ |
+| 24 | On time | /ON TYM/ | The bus arrived on time today. | ___________ |
+| 25 | Accessible | /ak-SES-ih-bul/ | All buses are accessible for wheelchairs. | ___________ |
+
+> **🚌 Nerissa's Tip:** *"BUS, SUBWAY, TRAIN — say the name of every ride you take!"*
+
+---
+
+## Scene 16: Bicycle & Walking
+
+*Nerissa and Reef explore Aquaria on foot and by bike*
+
+| # | Word | Phonetic | In the Story... | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Bicycle | /BY-sih-kul/ | Ride your bicycle to the park. | ___________ |
+| 2 | Helmet | /HEL-met/ | Always wear a helmet when riding a bike. | ___________ |
+| 3 | Pedal | /PED-ul/ | Pedal faster to go up the hill. | ___________ |
+| 4 | Chain | /CHAYN/ | The chain connects the pedals to the wheel. | ___________ |
+| 5 | Tire | /TYR/ | Pump air into the flat tire. | ___________ |
+| 6 | Handlebar | /HAN-dul-bar/ | Hold the handlebar to steer the bike. | ___________ |
+| 7 | Brake | /BRAYK/ | Squeeze the brake to slow down. | ___________ |
+| 8 | Kickstand | /KIK-stand/ | Use the kickstand to park your bike. | ___________ |
+| 9 | Bike lane | /BYK LAYN/ | Ride in the bike lane for safety. | ___________ |
+| 10 | Lock | /LOK/ | Lock your bike to the rack. | ___________ |
+| 11 | Sidewalk | /SYD-wawk/ | Walk on the sidewalk not in the street. | ___________ |
+| 12 | Crosswalk | /KROS-wawk/ | Cross the street at the crosswalk. | ___________ |
+| 13 | Pedestrian | /peh-DES-tree-un/ | The pedestrian waits for the walk signal. | ___________ |
+| 14 | Jogging | /JOG-ing/ | She goes jogging in the park every morning. | ___________ |
+| 15 | Stroller | /STROH-ler/ | Push the baby in the stroller. | ___________ |
+| 16 | Wheelchair | /WEEL-chair/ | The ramp is for wheelchair access. | ___________ |
+| 17 | Scooter | /SKOO-ter/ | The electric scooter is fun to ride. | ___________ |
+| 18 | Skateboard | /SKAYT-bord/ | He does tricks on his skateboard. | ___________ |
+| 19 | Path | /PATH/ | Follow the path through the garden. | ___________ |
+| 20 | Trail | /TRAYL/ | The hiking trail goes to the waterfall. | ___________ |
+| 21 | Ramp | /RAMP/ | Use the ramp instead of the stairs. | ___________ |
+| 22 | Stairs | /STAIRZ/ | Climb the stairs to the second floor. | ___________ |
+| 23 | Elevator | /EL-eh-vay-ter/ | Take the elevator to the top floor. | ___________ |
+| 24 | Escalator | /ES-kuh-lay-ter/ | The escalator moves you up automatically. | ___________ |
+| 25 | Shortcut | /SHORT-kut/ | Take the shortcut through the park. | ___________ |
+
+> **🚲 Reef's Tip:** *"Walk and bike everywhere! Name what you see: SIDEWALK, CROSSWALK, BIKE LANE!"*
+
+---
+
+## Scene 17: Travel Documents
+
+*At the Aquaria Border Office, papers open doors*
+
+| # | Word | Phonetic | In the Story... | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Passport | /PAS-port/ | You need a passport to travel to other countries. | ___________ |
+| 2 | Visa | /VEE-zuh/ | Apply for a visa before your trip. | ___________ |
+| 3 | ID | /EYE-DEE/ | Show your ID at the airport security. | ___________ |
+| 4 | Birth certificate | /BURTH ser-TIF-ih-kit/ | A birth certificate proves where you were born. | ___________ |
+| 5 | Social Security | /SOH-shul seh-KYOOR-ih-tee/ | Your Social Security number is private. | ___________ |
+| 6 | Green card | /GREEN KARD/ | A green card allows permanent residence. | ___________ |
+| 7 | Citizenship | /SIT-ih-zen-ship/ | She studied hard to earn her citizenship. | ___________ |
+| 8 | Application | /ap-lih-KAY-shun/ | Fill out the application completely. | ___________ |
+| 9 | Form | /FORM/ | Sign the form at the bottom of the page. | ___________ |
+| 10 | Photo | /FOH-toh/ | Bring two passport photos for the application. | ___________ |
+| 11 | Signature | /SIG-nuh-chur/ | Write your signature on the dotted line. | ___________ |
+| 12 | Expiration | /ek-spih-RAY-shun/ | Check the expiration date on your passport. | ___________ |
+| 13 | Renewal | /rih-NOO-ul/ | Submit a renewal before your visa expires. | ___________ |
+| 14 | Embassy | /EM-buh-see/ | Visit the embassy for help abroad. | ___________ |
+| 15 | Consulate | /KON-suh-lut/ | The consulate can replace a lost passport. | ___________ |
+| 16 | Customs | /KUS-tumz/ | Declare your items at customs. | ___________ |
+| 17 | Immigration | /im-ih-GRAY-shun/ | The immigration officer checks your passport. | ___________ |
+| 18 | Boarding pass | /BOR-ding PAS/ | Show your boarding pass to enter the plane. | ___________ |
+| 19 | Luggage | /LUG-ij/ | Check your luggage at the counter. | ___________ |
+| 20 | Declaration | /dek-luh-RAY-shun/ | Fill out the customs declaration form. | ___________ |
+| 21 | Stamp | /STAMP/ | The officer stamps your passport. | ___________ |
+| 22 | Arrival | /uh-RY-vul/ | Your arrival time is three PM. | ___________ |
+| 23 | Departure | /dih-PAR-chur/ | The departure gate is B twelve. | ___________ |
+| 24 | International | /in-ter-NASH-un-ul/ | The international terminal has flights worldwide. | ___________ |
+| 25 | Domestic | /doh-MES-tik/ | Domestic flights stay within the country. | ___________ |
+
+> **🛂 Nerissa's Tip:** *"Know your documents: PASSPORT, VISA, ID. These words are your ticket to the world!"*
+
+---
+
+## Scene 18: Map Reading & GPS
+
+*Reef learns to navigate using maps and technology*
+
+| # | Word | Phonetic | In the Story... | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Map | /MAP/ | Unfold the map to find your location. | ___________ |
+| 2 | GPS | /JEE-PEE-ES/ | The GPS recalculates when you make a wrong turn. | ___________ |
+| 3 | North | /NORTH/ | The compass needle points north. | ___________ |
+| 4 | South | /SOWTH/ | Texas is in the south of the United States. | ___________ |
+| 5 | East | /EEST/ | The sun rises in the east. | ___________ |
+| 6 | West | /WEST/ | The sun sets in the west. | ___________ |
+| 7 | Landmark | /LAND-mark/ | The Statue of Liberty is a famous landmark. | ___________ |
+| 8 | Navigate | /NAV-ih-gayt/ | Navigate to the store using your phone. | ___________ |
+| 9 | Compass | /KUM-pus/ | A compass shows magnetic north. | ___________ |
+| 10 | Legend | /LEJ-end/ | The map legend explains the symbols. | ___________ |
+| 11 | Scale | /SKAYL/ | The scale shows one inch equals one mile. | ___________ |
+| 12 | Coordinate | /koh-OR-dih-nit/ | Enter the coordinates into the GPS. | ___________ |
+| 13 | Latitude | /LAT-ih-tood/ | Latitude measures position north or south. | ___________ |
+| 14 | Longitude | /LON-jih-tood/ | Longitude measures east and west position. | ___________ |
+| 15 | Destination | /des-tih-NAY-shun/ | Your destination is on the right. | ___________ |
+| 16 | Intersection | /in-ter-SEK-shun/ | Turn left at the next intersection. | ___________ |
+| 17 | Highway | /HY-way/ | Take the highway for a faster route. | ___________ |
+| 18 | Exit | /EK-sit/ | Take exit twelve to reach the mall. | ___________ |
+| 19 | Detour | /DEE-toor/ | Follow the detour around the construction. | ___________ |
+| 20 | U-turn | /YOO-turn/ | Make a U-turn at the next light. | ___________ |
+| 21 | Roundabout | /ROWND-uh-bowt/ | Go around the roundabout and take the second exit. | ___________ |
+| 22 | One-way | /WUN-way/ | This is a one-way street going east. | ___________ |
+| 23 | Dead end | /DED END/ | The road ends at a dead end. | ___________ |
+| 24 | Scenic route | /SEE-nik ROOT/ | Take the scenic route to enjoy the view. | ___________ |
+| 25 | Satellite | /SAT-uh-lyt/ | GPS uses satellite signals to locate you. | ___________ |
+
+> **🗺 Reef's Tip:** *"NORTH, SOUTH, EAST, WEST. Say directions out loud when using your GPS!"*
+
+---
+
+## Scene 19: Restaurants & Dining
+
+*Nerissa and Reef dine at the Aquaria Seaside Cafe*
+
+| # | Word | Phonetic | In the Story... | My Language |
+|---|------|----------|----------------|-------------|
+| 1 | Menu | /MEN-yoo/ | Look at the menu to choose your meal. | ___________ |
+| 2 | Appetizer | /AP-eh-ty-zer/ | Start with an appetizer before the main course. | ___________ |
+| 3 | Entree | /ON-tray/ | The entree is the main dish of the meal. | ___________ |
+| 4 | Dessert | /dih-ZURT/ | Save room for dessert after dinner. | ___________ |
+| 5 | Beverage | /BEV-er-ij/ | Would you like a beverage with your meal? | ___________ |
+| 6 | Waiter | /WAY-ter/ | The waiter takes your order at the table. | ___________ |
+| 7 | Hostess | /HOH-stis/ | The hostess seats you at your table. | ___________ |
+| 8 | Reservation | /rez-er-VAY-shun/ | Make a reservation for seven o'clock. | ___________ |
+| 9 | Order | /OR-der/ | Are you ready to order? | ___________ |
+| 10 | Specials | /SPESH-ulz/ | The daily specials are on the board. | ___________ |
+| 11 | Check | /CHEK/ | May I have the check, please? | ___________ |
+| 12 | Tip | /TIP/ | Leave a fifteen percent tip for good service. | ___________ |
+| 13 | Takeout | /TAYK-owt/ | Order takeout if you want to eat at home. | ___________ |
+| 14 | Drive-through | /DRYV-throo/ | The drive-through is open late. | ___________ |
+| 15 | Buffet | /buh-FAY/ | The buffet has many choices. | ___________ |
+| 16 | Booth | /BOOTH/ | Sit in the booth by the window. | ___________ |
+| 17 | Napkin | /NAP-kin/ | Place the napkin on your lap. | ___________ |
+| 18 | Silverware | /SIL-ver-wair/ | The silverware includes a fork, knife, and spoon. | ___________ |
+| 19 | Refill | /REE-fil/ | May I have a refill on my water? | ___________ |
+| 20 | Allergies | /AL-er-jeez/ | Tell the waiter about any food allergies. | ___________ |
+| 21 | Portion | /POR-shun/ | The portion size is very generous. | ___________ |
+| 22 | Gratuity | /gruh-TOO-ih-tee/ | Gratuity is included for large groups. | ___________ |
+| 23 | Side dish | /SYD DISH/ | Choose a side dish with your entree. | ___________ |
+| 24 | To go | /too GOH/ | I would like my coffee to go, please. | ___________ |
+| 25 | Compliment | /KOM-plih-ment/ | Compliment the chef on the delicious meal. | ___________ |
+
+> **🍽 Nerissa's Tip:** *"Practice ordering: TABLE FOR TWO, I WOULD LIKE, CHECK PLEASE!"*
+
+---
+
 ## Land 4 Summary
 
 | Sub-Scene | Word Count |
@@ -410,4 +715,13 @@
 | Community Places | 20 |
 | Tricky English Words | 20 |
 | Seasons & Nature Cycles | 20 |
-| **TOTAL** | **280** |
+| Freshwater Life | 20 |
+| Mail & Postal Services | 20 |
+| Emergency Services | 20 |
+| Road Signs & Safety | 20 |
+| Public Transportation | 25 |
+| Bicycle & Walking | 25 |
+| Travel Documents | 25 |
+| Map Reading & GPS | 25 |
+| Restaurants & Dining | 25 |
+| **TOTAL** | **485** |
