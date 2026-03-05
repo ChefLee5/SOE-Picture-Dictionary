@@ -124,6 +124,22 @@ BACK_MATTER = {
         "char_desc": '<strong>All Rhythm Quest Heroes</strong>',
         "prefix": "back",
     },
+    "back_asl_alphabet": {
+        "name": "ASL Alphabet & Numbers",
+        "icon": "🤟",
+        "color": "#8B5CF6",
+        "characters": "All Rhythm Quest Heroes",
+        "char_desc": '<strong>All Rhythm Quest Heroes</strong>',
+        "prefix": "back",
+    },
+    "back_asl_essential": {
+        "name": "100 Essential ASL Signs",
+        "icon": "🤟",
+        "color": "#7C3AED",
+        "characters": "All Rhythm Quest Heroes",
+        "char_desc": '<strong>All Rhythm Quest Heroes</strong>',
+        "prefix": "back",
+    },
 }
 
 
@@ -177,17 +193,32 @@ def parse_markdown(filepath):
         # Extract vocabulary rows from the table
         words = []
         for line in lines:
-            # Match table rows: | number | word | phonetic | context | translation |
-            match = re.match(
+            # Match table rows: | num | word | phonetic | context | asl | translation |
+            # First try 6-column (with ASL)
+            match6 = re.match(
+                r'^\|\s*(\d+)\s*\|\s*(.+?)\s*\|\s*(.+?)\s*\|\s*(.+?)\s*\|\s*(.+?)\s*\|\s*.*\|',
+                line.strip()
+            )
+            # Fallback to 5-column (without ASL)
+            match5 = re.match(
                 r'^\|\s*(\d+)\s*\|\s*(.+?)\s*\|\s*(.+?)\s*\|\s*(.+?)\s*\|\s*.*\|',
                 line.strip()
             )
-            if match:
+            if match6:
                 words.append({
-                    'num': match.group(1).strip(),
-                    'word': match.group(2).strip(),
-                    'phonetic': match.group(3).strip(),
-                    'context': match.group(4).strip(),
+                    'num': match6.group(1).strip(),
+                    'word': match6.group(2).strip(),
+                    'phonetic': match6.group(3).strip(),
+                    'context': match6.group(4).strip(),
+                    'asl': match6.group(5).strip(),
+                })
+            elif match5:
+                words.append({
+                    'num': match5.group(1).strip(),
+                    'word': match5.group(2).strip(),
+                    'phonetic': match5.group(3).strip(),
+                    'context': match5.group(4).strip(),
+                    'asl': '',
                 })
 
         # Extract character tip
@@ -231,14 +262,18 @@ def generate_xhtml(land_num, scene, land_config, prefix=None):
 
     word_count = len(scene['words'])
 
+    # Check if any word in this scene has ASL data
+    has_asl = any(w.get('asl', '') for w in scene['words'])
+
     # Build table rows
     rows = []
     for w in scene['words']:
+        asl_cell = f'\n                <td class="col-asl">{escape_xml(w.get("asl", ""))}</td>' if has_asl else ''
         rows.append(f"""            <tr>
                 <td class="col-num">{escape_xml(w['num'])}</td>
                 <td class="col-word">{escape_xml(w['word'])}</td>
                 <td class="col-phonetic">{escape_xml(w['phonetic'])}</td>
-                <td class="col-context">{escape_xml(w['context'])}</td>
+                <td class="col-context">{escape_xml(w['context'])}</td>{asl_cell}
                 <td class="col-translation"></td>
             </tr>""")
 
@@ -296,13 +331,14 @@ def generate_xhtml(land_num, scene, land_config, prefix=None):
     </div>
 
     <!-- Vocabulary Table -->
-    <table class="vocab-table">
+    <table class="vocab-table{' has-asl' if has_asl else ''}">
         <thead>
             <tr>
                 <th class="col-num">#</th>
                 <th>Word</th>
                 <th>Pronunciation</th>
-                <th>In the Story…</th>
+                <th>In the Story\u2026</th>
+                {'<th>ASL Sign \U0001F91F</th>' if has_asl else ''}
                 <th>My Language</th>
             </tr>
         </thead>

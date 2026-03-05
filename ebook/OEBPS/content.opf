@@ -166,6 +166,13 @@
     <item id="back_parent_teacher_classroom_language_commands" href="pages/back_parent_teacher-classroom-language-commands.xhtml" media-type="application/xhtml+xml"/>
     <item id="back_parent_teacher_parent_engagement_vocabulary" href="pages/back_parent_teacher-parent-engagement-vocabulary.xhtml" media-type="application/xhtml+xml"/>
     <item id="back_parent_teacher_study_skills_learning_strategies" href="pages/back_parent_teacher-study-skills-learning-strategies.xhtml" media-type="application/xhtml+xml"/>
+    <item id="back_asl_alphabet_asl_alphabet_am" href="pages/back_asl_alphabet-asl-alphabet-am.xhtml" media-type="application/xhtml+xml"/>
+    <item id="back_asl_alphabet_asl_alphabet_nz" href="pages/back_asl_alphabet-asl-alphabet-nz.xhtml" media-type="application/xhtml+xml"/>
+    <item id="back_asl_alphabet_asl_numbers_010" href="pages/back_asl_alphabet-asl-numbers-010.xhtml" media-type="application/xhtml+xml"/>
+    <item id="back_asl_essential_essential_asl_greetings_social_25_signs" href="pages/back_asl_essential-essential-asl-greetings-social-25-signs.xhtml" media-type="application/xhtml+xml"/>
+    <item id="back_asl_essential_essential_asl_family_people_25_signs" href="pages/back_asl_essential-essential-asl-family-people-25-signs.xhtml" media-type="application/xhtml+xml"/>
+    <item id="back_asl_essential_essential_asl_actions_daily_life_25_signs" href="pages/back_asl_essential-essential-asl-actions-daily-life-25-signs.xhtml" media-type="application/xhtml+xml"/>
+    <item id="back_asl_essential_essential_asl_feelings_food_places_25_signs" href="pages/back_asl_essential-essential-asl-feelings-food-places-25-signs.xhtml" media-type="application/xhtml+xml"/>
   </manifest>
 
   <spine>
@@ -321,6 +328,13 @@
     <itemref idref="back_parent_teacher_classroom_language_commands"/>
     <itemref idref="back_parent_teacher_parent_engagement_vocabulary"/>
     <itemref idref="back_parent_teacher_study_skills_learning_strategies"/>
+    <itemref idref="back_asl_alphabet_asl_alphabet_am"/>
+    <itemref idref="back_asl_alphabet_asl_alphabet_nz"/>
+    <itemref idref="back_asl_alphabet_asl_numbers_010"/>
+    <itemref idref="back_asl_essential_essential_asl_greetings_social_25_signs"/>
+    <itemref idref="back_asl_essential_essential_asl_family_people_25_signs"/>
+    <itemref idref="back_asl_essential_essential_asl_actions_daily_life_25_signs"/>
+    <itemref idref="back_asl_essential_essential_asl_feelings_food_places_25_signs"/>
   </spine>
 
 </package>

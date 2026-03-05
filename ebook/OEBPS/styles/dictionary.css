@@ -335,6 +335,26 @@ p {
     min-width: 100px;
 }
 
+/* ── ASL Sign Column ── */
+.vocab-table .col-asl {
+    font-style: italic;
+    font-size: 8.5pt;
+    color: #4a5568;
+    border-left: 2px solid #8B5CF6;
+    padding-left: 8px;
+    min-width: 120px;
+    line-height: 1.4;
+}
+
+.vocab-table.has-asl th:nth-last-child(2) {
+    background: linear-gradient(135deg, #8B5CF6, #7C3AED);
+    color: white;
+}
+
+.vocab-table.has-asl .col-context {
+    font-size: 8.5pt;
+}
+
 
 /* ═══════════════════════════════════════════════════
  *  CHARACTER TIP BOX
