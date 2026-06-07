@@ -46,7 +46,7 @@ function serveEbookPlugin() {
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), serveEbookPlugin()],
-  base: '/',
+  base: process.env.GITHUB_REPOSITORY ? `/${process.env.GITHUB_REPOSITORY.split('/')[1]}/` : '/',
   server: {
     fs: {
       allow: ['..'],
