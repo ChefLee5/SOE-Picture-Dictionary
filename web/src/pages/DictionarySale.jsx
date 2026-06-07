@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { RevealSection } from '../hooks/useReveal';
 import heroesData from '../data/heroes.json';
 import landsData from '../data/lands.json';
+import { assetPath } from '../utils/assetPath';
 import './DictionarySale.css';
 
 /* ── Land-specific stats from the pipeline knowledge base ── */
@@ -80,7 +81,6 @@ const dictPreviews = [
 
 const DictionarySale = () => {
   const scrollRef = useRef(null);
-  const BASE = import.meta.env.BASE_URL;
 
   useEffect(() => {
     document.title = 'SOE Rhythm Quest: Essential Picture Dictionary — 3,400+ Words Across 7 Lands';
@@ -96,7 +96,7 @@ const DictionarySale = () => {
   const paradeChars = [...allChars, ...allChars];
 
   return (
-    <div className="dict-sale">
+    <div className="dict-sale" style={{ '--dict-hero-bg': `url('${assetPath('/assets/scenes/tulip-river-path.webp')}')` }}>
 
       {/* ═══ HERO ═══ */}
       <header className="dict-hero">
@@ -134,7 +134,7 @@ const DictionarySale = () => {
             <div className="dict-book-3d">
               <div className="dict-book-3d__inner">
                 <img
-                  src={`${BASE}assets/book/SOE_RQ_COVER.png`}
+                  src={assetPath('/assets/book/SOE_RQ_COVER.webp')}
                   alt="SOE Rhythm Quest: Essential Picture Dictionary — Front Cover"
                   className="dict-book-3d__cover"
                 />
@@ -219,7 +219,7 @@ const DictionarySale = () => {
           {dictPreviews.map((pg) => (
             <div key={pg.file} className="dict-preview__card">
               <img
-                src={`${BASE}assets/dictionary/${pg.file}`}
+                src={assetPath(`/assets/dictionary/${pg.file}`)}
                 alt={pg.label}
                 loading="lazy"
               />
@@ -265,7 +265,7 @@ const DictionarySale = () => {
                       {heroes.map(h => (
                         <img
                           key={h.id}
-                          src={`${BASE}assets/characters/${h.name.toUpperCase()}.webp`}
+                          src={assetPath(`/assets/characters/${h.name.toUpperCase()}.webp`)}
                           alt={h.name}
                           className="dict-land-card__hero-img"
                           loading="lazy"
@@ -286,7 +286,7 @@ const DictionarySale = () => {
           {paradeChars.map((c, i) => (
             <div key={`${c.id}-${i}`} className="dict-char-item">
               <img
-                src={`${BASE}assets/characters/${c.name.toUpperCase()}.webp`}
+                src={assetPath(`/assets/characters/${c.name.toUpperCase()}.webp`)}
                 alt={c.name}
                 className="dict-char-item__img"
                 loading="lazy"
@@ -389,7 +389,7 @@ const DictionarySale = () => {
             <div className="dict-cta-card">
               <div className="scene-backdrop" aria-hidden="true">
                 <img
-                  src={`${BASE}assets/marketing/quest-collage.webp`}
+                  src={assetPath('/assets/marketing/quest-collage.webp')}
                   alt=""
                   className="scene-backdrop__img"
                 />

@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { assetPath } from '../utils/assetPath';
 
 /**
  * ParallaxHero — floating branded SVG shapes that respond to scroll.
@@ -109,9 +110,9 @@ const ParallaxHero = ({ variant = 'home' }) => {
 
     const elements = variant === 'universe' ? universeElements : homeElements;
     const bgMap = {
-        home: `${import.meta.env.BASE_URL}assets/backgrounds/bg1.png`,
-        universe: `${import.meta.env.BASE_URL}assets/backgrounds/bg2.png`,
-        media: `${import.meta.env.BASE_URL}assets/backgrounds/bg3.png`,
+        home: assetPath('/assets/backgrounds/bg1.png'),
+        universe: assetPath('/assets/backgrounds/bg2.png'),
+        media: assetPath('/assets/backgrounds/bg3.png'),
     };
     const bgImage = bgMap[variant];
 

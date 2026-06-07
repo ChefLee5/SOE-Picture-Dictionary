@@ -24,7 +24,7 @@
   width: 110%;
   height: 110%;
   z-index: 0;
-  background: url('/assets/scenes/tulip-river-path.webp') center center / cover no-repeat;
+  background: var(--dict-hero-bg) center center / cover no-repeat;
   animation: dictKenBurns 30s ease-in-out infinite alternate;
   will-change: transform;
 }

@@ -71,6 +71,27 @@ src/assets/
 `-- icons/
 ```
 
+### Hosted Asset Origin
+
+The site can serve public media from a CDN or object storage bucket while keeping the original files in this repo. Mirror the contents of `public/` to the hosted origin, then set:
+
+```bash
+VITE_ASSET_HOST=https://your-asset-host.example.com
+```
+
+For example, `assetPath('/assets/marketing/quest-collage.webp')` resolves to `https://your-asset-host.example.com/assets/marketing/quest-collage.webp` when the env var is set, and falls back to the Vite base path during local development.
+
+Keep original high-resolution PNG/JPG masters in `public/assets` when needed, but point pages at optimized WebP display files for normal browsing.
+
+To build a small deploy bundle that omits the hosted media folders from `dist/assets`, run:
+
+```powershell
+$env:VITE_ASSET_HOST='https://your-asset-host.example.com'
+npm run build:hosted-assets
+```
+
+Use `npm run build` when you want the normal all-local static build.
+
 ## Deployment
 
 The app is currently configured for GitHub Pages under `/SOE-Picture-Dictionary/`.

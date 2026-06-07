@@ -5,6 +5,7 @@ import { useAnimeReveal } from '../hooks/useAnimeReveal';
 import landsData from '../data/lands.json';
 import JsonLd from '../components/JsonLd';
 import { universeSchema } from '../utils/schema';
+import { assetCssUrl, assetPath } from '../utils/assetPath';
 
 /* ── Reveal Hook ── */
 const useReveal = () => {
@@ -47,8 +48,8 @@ const Universe = () => {
     landColor: land.color,
     duo: land.heroes.map(h => h.charAt(0).toUpperCase() + h.slice(1)),
     chars: land.heroes.map(h => h.toUpperCase()),
-    ...(land.groupShot ? { groupShot: `${import.meta.env.BASE_URL}assets/duos/${land.groupShot}` } : {}),
-    sceneBg: `${import.meta.env.BASE_URL}assets/scenes/${land.sceneBg}`,
+    ...(land.groupShot ? { groupShot: assetPath(`/assets/duos/${land.groupShot}`) } : {}),
+    sceneBg: assetPath(`/assets/scenes/${land.sceneBg}`),
     focus: t(`universe.lands.${land.name}.focus`),
     desc: t(`universe.lands.${land.name}.desc`),
   }));
@@ -107,7 +108,7 @@ const Universe = () => {
             <div className="seriphia-block">
               <div className="seriphia-block__image">
                 <img
-                  src={`${import.meta.env.BASE_URL}assets/scenes/seriphia-valley.webp`}
+                  src={assetPath('/assets/scenes/seriphia-valley.webp')}
                   alt="Seriphia — the guardian of the Seven Lands"
                   className="seriphia-portrait"
                 />
@@ -156,7 +157,7 @@ const Universe = () => {
                   <span className="land-tile__icon">{land.icon}</span>
                   {land.panorama && (
                     <img
-                      src={`${import.meta.env.BASE_URL}assets/lands/${land.panorama}`}
+                      src={assetPath(`/assets/lands/${land.panorama}`)}
                       alt=""
                       className="land-tile__panorama"
                       loading="lazy"
@@ -213,12 +214,12 @@ const Universe = () => {
                 <div className="duo-card__image-wrap">
                   <div className="duo-card__char-pair">
                     <img
-                      src={`${import.meta.env.BASE_URL}assets/characters/${duo.chars[0]}.webp`}
+                      src={assetPath(`/assets/characters/${duo.chars[0]}.webp`)}
                       alt={duo.duo[0]}
                       className="duo-card__char-img"
                     />
                     <img
-                      src={`${import.meta.env.BASE_URL}assets/characters/${duo.chars[1]}.webp`}
+                      src={assetPath(`/assets/characters/${duo.chars[1]}.webp`)}
                       alt={duo.duo[1]}
                       className="duo-card__char-img"
                     />
@@ -247,7 +248,7 @@ const Universe = () => {
               ].map((img) => (
                 <div key={img.src} className="accent-strip__item">
                   <img
-                    src={`${import.meta.env.BASE_URL}assets/lands/${img.src}`}
+                    src={assetPath(`/assets/lands/${img.src}`)}
                     alt={img.label}
                     loading="lazy"
                     className="accent-strip__img"
@@ -296,7 +297,7 @@ const Universe = () => {
           height: 110%;
           z-index: -1;
           background:
-            url('${import.meta.env.BASE_URL}assets/scenes/universe-tree-bg.jpg') center center / cover no-repeat;
+            ${assetCssUrl('/assets/scenes/universe-tree-bg.jpg')} center center / cover no-repeat;
           animation: universeBg 35s ease-in-out infinite;
           will-change: transform;
         }

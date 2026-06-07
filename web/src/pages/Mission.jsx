@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { useAnimeReveal } from '../hooks/useAnimeReveal';
 import GooeyMarquee from '../components/GooeyMarquee';
 import StoryScroll, { FlowSection } from '../components/StoryScroll';
+import { assetCssUrl, assetPath } from '../utils/assetPath';
 
 /* ── Reveal Hook ── */
 const useReveal = () => {
@@ -123,7 +124,7 @@ const MissionSceneGallery = () => {
           {SCENES.map((s) => (
             <div key={s.src} className="mission-scene anime-item">
               <img
-                src={`${import.meta.env.BASE_URL}assets/scenes/${s.src}`}
+                src={assetPath(`/assets/scenes/${s.src}`)}
                 alt={s.caption}
                 loading="lazy"
               />
@@ -252,7 +253,7 @@ const Mission = () => {
                   <div className="flow-bio-block__visual">
                     <div className="neural-viz" aria-hidden="true">
                       <img
-                        src={`${import.meta.env.BASE_URL}assets/marketing/busy-brain.webp`}
+                        src={assetPath('/assets/marketing/busy-brain.webp')}
                         alt="Busy brain illustration"
                         className="neural-brain-img"
                       />
@@ -441,7 +442,7 @@ const Mission = () => {
             {/* ── Scene Strip: Into the World ── */}
             <div className="scene-strip" aria-hidden="true">
               <img
-                src={`${import.meta.env.BASE_URL}assets/scenes/wildflower-path.webp`}
+                src={assetPath('/assets/scenes/wildflower-path.webp')}
                 alt=""
                 className="scene-strip__img"
                 loading="lazy"
@@ -518,7 +519,7 @@ const Mission = () => {
           height: 110%;
           z-index: -1;
           background:
-            url('${import.meta.env.BASE_URL}assets/scenes/wave.webp') center center / cover no-repeat;
+            ${assetCssUrl('/assets/scenes/wave.webp')} center center / cover no-repeat;
           animation: kenBurnsMission 38s ease-in-out infinite;
           will-change: transform;
         }

@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import JsonLd from '../components/JsonLd';
 import { heroesSchema } from '../utils/schema';
 import { ShaderBackground } from '../components/ui/AnimatedShaderHero';
+import { assetPath } from '../utils/assetPath';
 
 /* ── Scene images for expanded character cards ── */
 const CHAR_SCENES = {
@@ -109,7 +110,7 @@ const CharacterCard = ({ char, index, isExpanded, onToggle }) => {
                 <div className="char-card__image-wrap">
                         <div className="char-card__img-bg char-card__img-bg--selfie">
                             <img
-                                src={`${import.meta.env.BASE_URL}assets/heroes/${char.name.toLowerCase()}-selfie.webp`}
+                                src={assetPath(`/assets/heroes/${char.name.toLowerCase()}-selfie.webp`)}
                                 alt={char.name}
                                 className="char-card__image char-card__image--selfie"
                             />
@@ -128,7 +129,7 @@ const CharacterCard = ({ char, index, isExpanded, onToggle }) => {
                         <div className="char-card__details animate-fade-in">
                             {CHAR_SCENES[char.name] && (
                                 <img
-                                    src={`${import.meta.env.BASE_URL}assets/scenes/${CHAR_SCENES[char.name]}`}
+                                    src={assetPath(`/assets/scenes/${CHAR_SCENES[char.name]}`)}
                                     alt={`${char.name} in their world`}
                                     className="char-scene-img"
                                     loading="lazy"

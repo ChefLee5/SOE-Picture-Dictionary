@@ -8,6 +8,7 @@ import heroesData from '../data/heroes.json';
 import JsonLd from '../components/JsonLd';
 import { homeSchema } from '../utils/schema';
 import DictionaryCarousel from '../components/DictionaryCarousel';
+import { assetCssUrl, assetPath } from '../utils/assetPath';
 
 const Home = () => {
   const { t } = useTranslation();
@@ -62,8 +63,6 @@ const Home = () => {
     { icon: '💛', title: t('home.domains.social_emotional.title'), desc: t('home.domains.social_emotional.desc'), color: '#FFB300' },
   ];
 
-  const BASE = import.meta.env.BASE_URL;
-
   return (
     <div className="home-page">
       <JsonLd data={homeSchema()} />
@@ -113,7 +112,7 @@ const Home = () => {
               >
                 <div className="hero__char-note">{char.note}</div>
                 <img
-                  src={`${BASE}assets/characters/${char.file}`}
+                  src={assetPath(`/assets/characters/${char.file}`)}
                   alt={char.name}
                   className="hero__char-img"
                   loading={i < 7 ? 'eager' : 'lazy'}
@@ -267,7 +266,7 @@ const Home = () => {
           <RevealSection>
             <div className="cta-card" style={{ position: 'relative', overflow: 'hidden' }}>
               <div className="scene-backdrop" aria-hidden="true">
-                <img src={`${import.meta.env.BASE_URL}assets/marketing/quest-collage.webp`} alt="" className="scene-backdrop__img" />
+                <img src={assetPath('/assets/marketing/quest-collage.webp')} alt="" className="scene-backdrop__img" />
                 <div className="scene-backdrop__scrim" />
               </div>
               <div className="cta-icon" aria-hidden="true">🔔</div>
@@ -314,7 +313,7 @@ const Home = () => {
           height: 110%;
           z-index: -1;
           background:
-            url('${BASE}assets/scenes/golden-path-bg.jpg') center center / cover no-repeat;
+            ${assetCssUrl('/assets/scenes/golden-path-bg.jpg')} center center / cover no-repeat;
           animation: kenBurns 35s ease-in-out infinite;
           will-change: transform;
         }

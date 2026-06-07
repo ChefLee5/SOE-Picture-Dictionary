@@ -12,6 +12,7 @@
  */
 import React, { useRef, useCallback, useState, useEffect } from 'react';
 import { motion, useSpring, AnimatePresence } from 'motion/react';
+import { assetPath } from '../utils/assetPath';
 import './DictionaryCarousel.css';
 
 const PANEL_COUNT = 22;
@@ -22,32 +23,30 @@ const SCROLL_SPRING = { stiffness: 120, damping: 26, mass: 0.8 };
 const Z_SPREAD = 42;
 const SIGMA = 2.8;
 
-const BASE = import.meta.env.BASE_URL;
-
 const PANEL_IMAGES = [
-  `${BASE}assets/dictionary/land7-school-schedules-timetables.png`,
-  `${BASE}assets/dictionary/land7-holidays-celebrations-calendar.png`,
-  `${BASE}assets/dictionary/back_asl_alphabet-asl-alphabet-am.png`,
-  `${BASE}assets/dictionary/back_parent_teacher-parent-engagement-vocabulary.png`,
-  `${BASE}assets/dictionary/land2-shapes-geometry.png`,
-  `${BASE}assets/dictionary/land2-time-clocks.png`,
-  `${BASE}assets/dictionary/land3-wild-animals.png`,
-  `${BASE}assets/dictionary/land3-the-garden.png`,
-  `${BASE}assets/dictionary/land3-camping-hiking.png`,
-  `${BASE}assets/dictionary/land4-directions-navigation.png`,
-  `${BASE}assets/dictionary/land4-transportation.png`,
-  `${BASE}assets/dictionary/land4-seasons-nature-cycles.png`,
-  `${BASE}assets/dictionary/land5-exercise-movement.png`,
-  `${BASE}assets/dictionary/back_parent_teacher-classroom-language-commands.png`,
-  `${BASE}assets/dictionary/land5-the-produce-market.png`,
-  `${BASE}assets/dictionary/land6-community-helpers-services.png`,
-  `${BASE}assets/dictionary/land6-occupations-careers.png`,
-  `${BASE}assets/dictionary/land6-government-civics.png`,
-  `${BASE}assets/dictionary/land7-planet-earth.png`,
-  `${BASE}assets/dictionary/land7-the-solar-system.png`,
-  `${BASE}assets/dictionary/land7-holidays-celebrations-calendar.png`,
-  `${BASE}assets/dictionary/land7-seasons-time-in-nature.png`,
-];
+  '/assets/dictionary/land7-school-schedules-timetables.png',
+  '/assets/dictionary/land7-holidays-celebrations-calendar.png',
+  '/assets/dictionary/back_asl_alphabet-asl-alphabet-am.png',
+  '/assets/dictionary/back_parent_teacher-parent-engagement-vocabulary.png',
+  '/assets/dictionary/land2-shapes-geometry.png',
+  '/assets/dictionary/land2-time-clocks.png',
+  '/assets/dictionary/land3-wild-animals.png',
+  '/assets/dictionary/land3-the-garden.png',
+  '/assets/dictionary/land3-camping-hiking.png',
+  '/assets/dictionary/land4-directions-navigation.png',
+  '/assets/dictionary/land4-transportation.png',
+  '/assets/dictionary/land4-seasons-nature-cycles.png',
+  '/assets/dictionary/land5-exercise-movement.png',
+  '/assets/dictionary/back_parent_teacher-classroom-language-commands.png',
+  '/assets/dictionary/land5-the-produce-market.png',
+  '/assets/dictionary/land6-community-helpers-services.png',
+  '/assets/dictionary/land6-occupations-careers.png',
+  '/assets/dictionary/land6-government-civics.png',
+  '/assets/dictionary/land7-planet-earth.png',
+  '/assets/dictionary/land7-the-solar-system.png',
+  '/assets/dictionary/land7-holidays-celebrations-calendar.png',
+  '/assets/dictionary/land7-seasons-time-in-nature.png',
+].map(assetPath);
 
 const PANEL_LABELS = [
   'School Schedules & Timetables',
