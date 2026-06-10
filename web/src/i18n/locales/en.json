@@ -445,7 +445,37 @@
         "implementation_title_1": "Put it into",
         "implementation_title_2": "Practice",
         "implementation_desc_1": "In our \"Teacher's Guide\" or interactive website, we pair this song with a visual \"daily routine chart.\"",
-        "implementation_desc_2": "Parents and educators point to a clock face during the numbers. This physical \"serve and return\" interaction permanently cements the learning.",
+        "implementation_desc_2": "Parents and educators point to a clock face during the numbers. This physical \"serve and return\" interaction durably anchors the learning.",
+        "rhythm_label": "The Reading Connection",
+        "rhythm_title_1": "Rhythm Builds",
+        "rhythm_title_2": "Readers",
+        "rhythm_subtitle": "Independent research keeps arriving at the same conclusion. Rhythm is the musical element that prepares young brains to read.",
+        "rhythm_cards": {
+            "rhythm_not_melody": {
+                "title": "Rhythm, Not Melody",
+                "desc": "A 2022 study in Nature Scientific Reports found that rhythm perception, not melody, links musical ability to reading through phonological awareness. Rhythm is our foundation by design."
+            },
+            "preschool": {
+                "title": "Proven in Preschool",
+                "desc": "In a controlled trial, 10 minutes of daily music training built phonological awareness in preschoolers as effectively as a dedicated phonics program. The window is ages 2 to 8. So is our focus."
+            },
+            "genetics": {
+                "title": "Written in Our DNA",
+                "desc": "A 2024 study of over one million people found 16 genome regions shared between rhythm ability and language skills. Music and reading grow from the same roots."
+            }
+        },
+        "equity_note": "In one study, a single year of music training brought low-income children to age-appropriate reading levels while untrained peers fell behind. This is why we call music essential.",
+        "track2_label": "The Track",
+        "track2_title": "Hard Words",
+        "beyond2_title_1": "Syllables, Set to a",
+        "beyond2_title_2": "Beat",
+        "beyond2_desc_1": "\"Slow down and say\" is the whole lesson. Each hard word is broken into syllables and carried by the beat. Researchers call this phonological segmentation, and it is one of the strongest predictors of reading success.",
+        "beyond2_desc_2": "This track lives in Luminosity, where our heroes Athena & Ezra turn intimidating words into rhythmic play. A child who can feel the beat of a word is learning to read it.",
+        "pedagogy_validated": "Published research links these group methods to reading achievement in school-age children.",
+        "references_label": "The Research",
+        "references_title_1": "Sources Behind the",
+        "references_title_2": "Science",
+        "references_subtitle": "A selection of the peer-reviewed research that informs the SOE method.",
         "cta_title_1": "Science is only the",
         "cta_title_2": "Beginning",
         "cta_subtitle": "Experience how these neurological principles translate into joyful melody."

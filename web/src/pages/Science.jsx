@@ -51,6 +51,54 @@ const Science = () => {
                             </RevealSection>
                         ))}
                     </div>
+                    <RevealSection className="text-center">
+                        <p className="pedagogy-validated">{t('science.pedagogy_validated')}<sup>[1]</sup></p>
+                    </RevealSection>
+                </div>
+            </section>
+
+            {/* ── Rhythm Builds Readers ── */}
+            <section className="section">
+                <div className="container">
+                    <RevealSection className="text-center">
+                        <div className="section-label">{t('science.rhythm_label')}</div>
+                        <h2 className="section-title">
+                            {t('science.rhythm_title_1')} <span className="text-gold">{t('science.rhythm_title_2')}</span>
+                        </h2>
+                        <p className="section-subtitle" style={{ margin: '0 auto 4rem auto' }}>
+                            {t('science.rhythm_subtitle')}
+                        </p>
+                    </RevealSection>
+
+                    <div className="grid-3">
+                        <RevealSection delay={0.1}>
+                            <div className="glass-card science-card">
+                                <div className="science-card__icon">🥁</div>
+                                <h3>{t('science.rhythm_cards.rhythm_not_melody.title')}</h3>
+                                <p>{t('science.rhythm_cards.rhythm_not_melody.desc')}<sup>[2]</sup></p>
+                            </div>
+                        </RevealSection>
+
+                        <RevealSection delay={0.2}>
+                            <div className="glass-card science-card">
+                                <div className="science-card__icon">📖</div>
+                                <h3>{t('science.rhythm_cards.preschool.title')}</h3>
+                                <p>{t('science.rhythm_cards.preschool.desc')}<sup>[3]</sup></p>
+                            </div>
+                        </RevealSection>
+
+                        <RevealSection delay={0.3}>
+                            <div className="glass-card science-card">
+                                <div className="science-card__icon">🧬</div>
+                                <h3>{t('science.rhythm_cards.genetics.title')}</h3>
+                                <p>{t('science.rhythm_cards.genetics.desc')}<sup>[4]</sup></p>
+                            </div>
+                        </RevealSection>
+                    </div>
+
+                    <RevealSection className="text-center">
+                        <p className="equity-note">{t('science.equity_note')}<sup>[5]</sup></p>
+                    </RevealSection>
                 </div>
             </section>
 
@@ -99,6 +147,45 @@ const Science = () => {
                                 <div style={{ marginTop: '3rem' }}>
                                     <ResearchAssistant />
                                 </div>
+                            </div>
+                        </RevealSection>
+                    </div>
+                </div>
+            </section>
+
+            {/* ── Lyrics Section 2: Hard Words (literacy) ── */}
+            <section className="section glow-sage">
+                <div className="container">
+                    <div className="grid-2 align-center">
+                        <RevealSection>
+                            <div className="lyrics-card glass-card">
+                                <span className="section-label" style={{ background: 'var(--color-orange)' }}>{t('science.track2_label')}</span>
+                                <h2 style={{ marginBottom: '1.5rem' }}>{t('science.track2_title')}</h2>
+                                <div className="lyrics-content" style={{ maxHeight: '400px', overflowY: 'auto', paddingRight: '1rem' }}>
+                                    <p>Sometimes you may hear a word that's hard to say,</p>
+                                    <p>but don't worry. Slow down and say...</p>
+                                    <p>Balloon. Hawaii. Oklahoma.</p>
+                                    <p>Louisiana. Octopus. Vegetables.</p>
+                                    <p>Spaghetti. Macaroni.</p>
+                                    <p>Alaska. Nevada. Colorado.</p>
+                                </div>
+                                <div style={{ marginTop: '2rem' }}>
+                                    <Link to="/listen" className="btn btn-outline">
+                                        {t('science.listen_btn')}
+                                    </Link>
+                                </div>
+                            </div>
+                        </RevealSection>
+
+                        <RevealSection delay={0.2}>
+                            <div className="science-intro">
+                                <h2 className="section-title">{t('science.beyond2_title_1')} <span className="text-sage">{t('science.beyond2_title_2')}</span></h2>
+                                <p>
+                                    {t('science.beyond2_desc_1')}<sup>[2][6]</sup>
+                                </p>
+                                <p style={{ marginTop: '1rem' }}>
+                                    {t('science.beyond2_desc_2')}
+                                </p>
                             </div>
                         </RevealSection>
                     </div>
@@ -174,6 +261,27 @@ const Science = () => {
                                     />
                                 </div>
                             </div>
+                        </div>
+                    </RevealSection>
+                </div>
+            </section>
+
+            {/* ── References ── */}
+            <section className="section">
+                <div className="container">
+                    <RevealSection>
+                        <div className="references-block glass-card">
+                            <div className="section-label">{t('science.references_label')}</div>
+                            <h2 style={{ marginBottom: '0.5rem' }}>{t('science.references_title_1')} <span className="text-gold">{t('science.references_title_2')}</span></h2>
+                            <p className="section-subtitle" style={{ marginBottom: '2rem' }}>{t('science.references_subtitle')}</p>
+                            <ol className="references-list">
+                                <li>Scoping Review of Music Interventions Aimed at Improving Reading Skills in Children with Reading Disabilities. <em>PubMed</em> (2024). <a href="https://pubmed.ncbi.nlm.nih.gov/38683748/" target="_blank" rel="noopener noreferrer">pubmed.ncbi.nlm.nih.gov</a></li>
+                                <li>Rhythm but not melody processing helps reading via phonological awareness. <em>Nature Scientific Reports</em> (2022). <a href="https://www.nature.com/articles/s41598-022-15596-7" target="_blank" rel="noopener noreferrer">nature.com</a></li>
+                                <li>The Effect of a Music Program on Phonological Awareness in Preschoolers. <em>Frontiers in Psychology</em> (2011). <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3121007/" target="_blank" rel="noopener noreferrer">pmc.ncbi.nlm.nih.gov</a></li>
+                                <li>Genome-wide study of musical rhythm and language/reading skills, 1M+ individuals (2024). <a href="https://neurosciencenews.com/genetics-music-language-28151/" target="_blank" rel="noopener noreferrer">neurosciencenews.com</a></li>
+                                <li>Neural correlates of phonological processing in children; music training and reading achievement. <em>PMC</em>. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6481189/" target="_blank" rel="noopener noreferrer">pmc.ncbi.nlm.nih.gov</a></li>
+                                <li>Music Training Increases Phonological Awareness and Reading Skills in Developmental Dyslexia (RCT). <em>PLOS ONE</em> (2015). <a href="https://amu.hal.science/hal-01236724/document" target="_blank" rel="noopener noreferrer">amu.hal.science</a></li>
+                            </ol>
                         </div>
                     </RevealSection>
                 </div>
@@ -348,6 +456,50 @@ const Science = () => {
                     padding: 4rem;
                 }
 
+                .pedagogy-validated {
+                    margin-top: 2rem;
+                    font-size: 0.95rem;
+                    color: rgba(255, 255, 255, 0.75);
+                    font-style: italic;
+                }
+
+                .equity-note {
+                    margin: 3rem auto 0;
+                    max-width: 640px;
+                    font-size: 1.1rem;
+                    line-height: 1.7;
+                    color: rgba(255, 255, 255, 0.92);
+                    font-style: italic;
+                }
+
+                .references-block {
+                    padding: 3rem;
+                }
+
+                .references-list {
+                    margin: 0;
+                    padding-left: 1.25rem;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.75rem;
+                }
+
+                .references-list li {
+                    font-size: 0.9rem;
+                    line-height: 1.6;
+                    color: rgba(255, 255, 255, 0.8);
+                }
+
+                .references-list a {
+                    color: rgba(255, 255, 255, 0.95);
+                    text-decoration: underline;
+                }
+
+                .science-page sup {
+                    font-size: 0.65em;
+                    opacity: 0.7;
+                }
+
                 .align-center {
                     align-items: center;
                 }
@@ -380,6 +532,9 @@ const Science = () => {
                 @media (max-width: 768px) {
                     .implementation-block {
                         padding: 2rem;
+                    }
+                    .references-block {
+                        padding: 1.5rem;
                     }
                     .grid-2 {
                         grid-template-columns: 1fr;
