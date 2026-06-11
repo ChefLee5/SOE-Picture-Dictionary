@@ -60,7 +60,7 @@ const Listen = () => {
 
   // ── Unlock handler ──────────────────────────────────────────
   const unlock = () => {
-    try { localStorage.setItem(STORAGE_KEY, '1'); } catch {}
+    try { localStorage.setItem(STORAGE_KEY, '1'); } catch { /* ignore localStorage error */ }
     setIsUnlocked(true);
     setJustUnlocked(true);
   };

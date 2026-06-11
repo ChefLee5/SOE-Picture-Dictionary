@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import ParallaxHero from '../components/ParallaxHero';
 import { RevealSection } from '../hooks/useReveal';
-import { useAnimeReveal } from '../hooks/useAnimeReveal';
+
 import heroesData from '../data/heroes.json';
 import JsonLd from '../components/JsonLd';
 import { homeSchema } from '../utils/schema';
-import DictionaryCarousel from '../components/DictionaryCarousel';
+import ExpandableGallery from '../components/ExpandableGallery';
 import { assetCssUrl, assetPath } from '../utils/assetPath';
 
 const Home = () => {
@@ -17,15 +17,21 @@ const Home = () => {
     document.title = 'SOE: Rhythm Quest — Designed for the Developing Brain';
   }, []);
 
-  /* ── All characters (from canonical data layer) ── */
-  const allChars = heroesData
-    .filter(h => h.id !== 'seriphia')
-    .map(h => ({
+  /* ── All characters (from canonical data layer, ordered for color contrast & no pairs) ── */
+  const carouselOrder = [
+    'Kenji', 'Elias', 'Ezra', 'Ronan', 'Kwame', 'Silas', 'Aiko', 
+    'Felix', 'Selene', 'Nerissa', 'Octavia', 'Amara', 'Vesta', 'Athena'
+  ];
+
+  const allChars = carouselOrder.map(name => {
+    const h = heroesData.find(char => char.name === name);
+    return {
       name: h.name,
       file: `${h.name.toUpperCase()}.webp`,
       color: h.carouselColor,
       note: h.carouselNote,
-    }));
+    };
+  });
 
   const numChars = allChars.length;
   const theta = 360 / numChars;
@@ -91,41 +97,63 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Interactive 3D Circle Carousel */}
+        {/* Interactive Carousel Section */}
         <div className="hero__carousel-scene">
-          <button className="carousel-btn prev-btn" onClick={rotateLeft} aria-label="Previous characters">
-            &#10094;
-          </button>
-          
-          <div 
-            className="hero__carousel-spinner" 
-            style={{ transform: `rotateY(${rotation}deg)` }}
-          >
-            {allChars.map((char, i) => (
-              <div
-                key={`${char.name}-${i}`}
-                className="hero__char"
-                style={{ 
-                  '--char-color': char.color,
-                  transform: `rotateY(${i * theta}deg) translateZ(${radius}px)`
-                }}
-              >
-                <div className="hero__char-note">{char.note}</div>
-                <img
-                  src={assetPath(`/assets/characters/${char.file}`)}
-                  alt={char.name}
-                  className="hero__char-img"
-                  loading={i < 7 ? 'eager' : 'lazy'}
-                  draggable="false"
-                />
-                <div className="hero__char-label">{char.name}</div>
-              </div>
-            ))}
+          {/* Desktop 3D Spinner */}
+          <div className="hero__carousel-desktop-only">
+            <button className="carousel-btn prev-btn" onClick={rotateLeft} aria-label="Previous characters">
+              &#10094;
+            </button>
+            <div 
+              className="hero__carousel-spinner" 
+              style={{ transform: `rotateY(${rotation}deg)` }}
+            >
+              {allChars.map((char, i) => (
+                <div
+                  key={`${char.name}-${i}`}
+                  className="hero__char"
+                  style={{ 
+                    '--char-color': char.color,
+                    transform: `rotateY(${i * theta}deg) translateZ(${radius}px)`
+                  }}
+                >
+                  <div className="hero__char-note">{char.note}</div>
+                  <img
+                    src={assetPath(`/assets/characters/${char.file}`)}
+                    alt={char.name}
+                    className="hero__char-img"
+                    loading={i < 7 ? 'eager' : 'lazy'}
+                    draggable="false"
+                  />
+                  <div className="hero__char-label">{char.name}</div>
+                </div>
+              ))}
+            </div>
+            <button className="carousel-btn next-btn" onClick={rotateRight} aria-label="Next characters">
+              &#10095;
+            </button>
           </div>
 
-          <button className="carousel-btn next-btn" onClick={rotateRight} aria-label="Next characters">
-            &#10095;
-          </button>
+          {/* Mobile Swipeable Card Deck */}
+          <div className="hero__carousel-mobile-only">
+            <div className="hero__mobile-scroll">
+              {allChars.map((char, i) => (
+                <div 
+                  key={`${char.name}-mobile-${i}`} 
+                  className="hero__mobile-card"
+                  style={{ '--char-color': char.color }}
+                >
+                  <div className="hero__mobile-card-note">{char.note}</div>
+                  <img
+                    src={assetPath(`/assets/characters/${char.file}`)}
+                    alt={char.name}
+                    className="hero__mobile-card-img"
+                  />
+                  <div className="hero__mobile-card-label">{char.name}</div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
 
         {/* Bottom info strip */}
@@ -237,23 +265,7 @@ const Home = () => {
           </RevealSection>
 
           <RevealSection delay={0.2}>
-            <div className="book-feature-layout">
-              <div className="dict-carousel-home">
-                <DictionaryCarousel />
-              </div>
-
-              <div className="book-feature-copy">
-                <ul className="book-feature-list">
-                  <li>🎵 <strong>14 characters</strong>, each with a unique rhythm and learning style</li>
-                  <li>🌏 <strong>7 magical lands</strong> — from Harmonia to Celestia</li>
-                  <li>📝 <strong>157 immersive scenes</strong> with full vocabulary context</li>
-                  <li>🎯 <strong>5 core domains:</strong> Language, Numbers, Science, Music, Life Skills</li>
-                </ul>
-                <Link to="/join" className="btn btn-gold" style={{ marginTop: '1.5rem' }}>
-                  Reserve My Copy
-                </Link>
-              </div>
-            </div>
+            <ExpandableGallery />
           </RevealSection>
         </div>
       </section>
@@ -466,7 +478,6 @@ const Home = () => {
         .prev-btn { left: 5%; }
         .next-btn { right: 5%; }
 
-        /* Individual character item in 3D */
         .hero__char {
           position: absolute;
           top: 0;
@@ -477,7 +488,7 @@ const Home = () => {
           flex-direction: column;
           align-items: center;
           gap: 0.35rem;
-          backface-visibility: visible;
+          backface-visibility: hidden;
           cursor: pointer;
         }
         .hero__char-note {
@@ -688,16 +699,74 @@ const Home = () => {
         }
 
         /* ── Responsive ── */
+        .hero__carousel-mobile-only {
+          display: none;
+        }
+
         @media (max-width: 768px) {
-          .hero__carousel-scene { height: 360px; perspective: 800px; }
-          .hero__carousel-spinner { width: 120px; height: 260px; }
-          .hero__char { width: 120px; }
-          .hero__char-img { width: 120px; height: 180px; }
-          .hero__char-label { font-size: 0.68rem; padding: 0.15rem 0.5rem; }
-          .hero__char-note { font-size: 1rem; }
-          .carousel-btn { width: 40px; height: 40px; font-size: 1.1rem; }
-          .prev-btn { left: 2%; }
-          .next-btn { right: 2%; }
+          .hero__carousel-desktop-only { display: none; }
+          .hero__carousel-mobile-only { display: block; width: 100%; }
+          .hero__carousel-scene {
+            height: auto;
+            padding: 1rem 0;
+            perspective: none;
+            margin-top: 1.5rem;
+            background: none;
+            backdrop-filter: none;
+            -webkit-backdrop-filter: none;
+            mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+            -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+          }
+          .hero__mobile-scroll {
+            display: flex;
+            gap: 1.25rem;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding: 1rem 2rem;
+            scrollbar-width: none;
+          }
+          .hero__mobile-scroll::-webkit-scrollbar {
+            display: none;
+          }
+          .hero__mobile-card {
+            flex: 0 0 135px;
+            scroll-snap-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.45);
+            border-radius: var(--radius-md);
+            padding: 1.25rem 0.5rem;
+            border: 1.5px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+          }
+          .hero__mobile-card-note {
+            font-size: 1rem;
+            color: var(--char-color);
+            height: 1.25rem;
+            animation: noteFloat 3s ease-in-out infinite;
+          }
+          .hero__mobile-card-img {
+            width: 110px;
+            height: 155px;
+            object-fit: contain;
+            filter: drop-shadow(0 6px 12px rgba(0,0,0,0.1));
+            mix-blend-mode: multiply;
+          }
+          .hero__mobile-card-label {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 0.72rem;
+            color: var(--char-color);
+            letter-spacing: 0.04em;
+            padding: 0.2rem 0.6rem;
+            background: color-mix(in srgb, var(--char-color) 10%, transparent);
+            border-radius: var(--radius-xl);
+            border: 1px solid color-mix(in srgb, var(--char-color) 25%, transparent);
+            margin-top: 0.5rem;
+          }
           .hero__info-strip { font-size: 0.75rem; gap: 0.5rem; flex-wrap: wrap; justify-content: center; }
           .why-stats    { grid-template-columns: 1fr; }
           .features-grid  { grid-template-columns: 1fr; }
@@ -710,12 +779,6 @@ const Home = () => {
         @media (max-width: 640px) {
           .hero__content  { text-align: center; }
           .hero__actions  { justify-content: center; }
-          .hero__carousel-scene { height: 290px; perspective: 600px; margin-top: 1rem; }
-          .hero__carousel-spinner { width: 90px; height: 210px; }
-          .hero__char { width: 90px; }
-          .hero__char-img { width: 90px; height: 135px; }
-          .hero__char-label { font-size: 0.6rem; }
-          .hero__char-note { font-size: 0.85rem; height: 1.2rem; }
           .domains-grid   { grid-template-columns: 1fr; }
           .cta-card       { padding: 3rem 1.5rem; }
           .dict-carousel-home { height: 320px; }

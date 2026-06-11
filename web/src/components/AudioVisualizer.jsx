@@ -12,23 +12,6 @@ const AudioVisualizer = ({ analyser, isPlaying, color = '#FF6B6B' }) => {
     const canvasRef = useRef(null);
     const animationIdRef = useRef(null);
 
-    useEffect(() => {
-        // Start animation loop
-        if (isPlaying && analyser) {
-            renderFrame();
-        } else {
-            if (animationIdRef.current) {
-                cancelAnimationFrame(animationIdRef.current);
-            }
-        }
-
-        return () => {
-            if (animationIdRef.current) {
-                cancelAnimationFrame(animationIdRef.current);
-            }
-        };
-    }, [isPlaying, analyser]);
-
     const renderFrame = () => {
         const canvas = canvasRef.current;
         if (!canvas || !analyser) return;
@@ -66,6 +49,23 @@ const AudioVisualizer = ({ analyser, isPlaying, color = '#FF6B6B' }) => {
         };
         draw();
     };
+
+    useEffect(() => {
+        // Start animation loop
+        if (isPlaying && analyser) {
+            renderFrame();
+        } else {
+            if (animationIdRef.current) {
+                cancelAnimationFrame(animationIdRef.current);
+            }
+        }
+
+        return () => {
+            if (animationIdRef.current) {
+                cancelAnimationFrame(animationIdRef.current);
+            }
+        };
+    }, [isPlaying, analyser]);
 
     return (
         <canvas

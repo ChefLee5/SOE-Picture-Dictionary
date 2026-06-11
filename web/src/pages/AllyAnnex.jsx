@@ -1,5 +1,4 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { assetPath } from '../utils/assetPath';
 import JsonLd from '../components/JsonLd';
@@ -106,7 +105,6 @@ const PartnerCard = ({ p }) => {
 /* ─── Main Page ────────────────────────────────────────────────────── */
 
 const AllyAnnex = () => {
-  const { t } = useTranslation();
   const [activeCategory, setActiveCategory] = useState('all');
   const [activeTier, setActiveTier] = useState(0); // 0 = all
 

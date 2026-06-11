@@ -26,6 +26,9 @@ const Navbar = () => {
   const langRef = useRef(null);
   const location = useLocation();
 
+  // Dark-background pages where navbar needs inverted colors
+  const isDark = location.pathname.startsWith('/player');
+
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 40);
     window.addEventListener('scroll', handleScroll, { passive: true });
@@ -79,7 +82,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}
+      className={`navbar ${scrolled ? 'navbar--scrolled' : ''} ${isDark ? 'navbar--dark' : ''}`}
       role="navigation"
       aria-label="Main navigation"
     >
@@ -706,6 +709,86 @@ const Navbar = () => {
             font-size: 0.82rem;
             padding: 0.4rem 0.55rem;
           }
+        }
+
+        /* ═══════════════════════════════════════
+           Dark Variant — Player page
+           ═══════════════════════════════════════ */
+        .navbar--dark {
+          background: rgba(10, 6, 4, 0.6);
+          backdrop-filter: blur(14px);
+          -webkit-backdrop-filter: blur(14px);
+        }
+
+        .navbar--dark.navbar--scrolled {
+          background: rgba(10, 6, 4, 0.92);
+          box-shadow: 0 1px 0 rgba(255,200,120,0.08), 0 4px 24px rgba(0,0,0,0.4);
+        }
+
+        /* Logo text */
+        .navbar--dark .navbar__logo-soe {
+          background: linear-gradient(90deg, #FFB74D, #FFD54F, #FFF8E1);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+
+        .navbar--dark .navbar__logo-sub {
+          background: linear-gradient(90deg, rgba(255,200,120,0.7), rgba(255,213,79,0.7));
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+
+        /* Nav links */
+        .navbar--dark .navbar__link {
+          color: rgba(255,200,120,0.75);
+        }
+
+        .navbar--dark .navbar__link:hover {
+          color: #FFD54F;
+          background: rgba(255,200,120,0.1);
+        }
+
+        .navbar--dark .navbar__link--active {
+          color: #FFB74D;
+        }
+
+        .navbar--dark .navbar__link--active::after {
+          background: linear-gradient(90deg, #FF8F00, #FFD54F);
+        }
+
+        /* Language button */
+        .navbar--dark .navbar__lang {
+          color: rgba(255,200,120,0.7);
+          border-color: rgba(255,200,120,0.2);
+        }
+
+        .navbar--dark .navbar__lang:hover,
+        .navbar--dark .navbar__lang--open {
+          color: #FFD54F;
+          border-color: #FFB74D;
+          background: rgba(255,200,120,0.1);
+        }
+
+        /* CTA button */
+        .navbar--dark .navbar__cta-btn {
+          background: linear-gradient(135deg, #FF8F00, #FFB74D);
+          color: #1a0f00;
+          box-shadow: 0 2px 10px rgba(255,143,0,0.3);
+        }
+
+        .navbar--dark .navbar__cta-btn:hover {
+          box-shadow: 0 6px 20px rgba(255,143,0,0.4);
+        }
+
+        /* Hamburger bars */
+        .navbar--dark .navbar__hamburger span {
+          background: #FFB74D;
+        }
+
+        .navbar--dark .navbar__hamburger:hover {
+          background: rgba(255,200,120,0.1);
         }
       `}</style>
     </nav>

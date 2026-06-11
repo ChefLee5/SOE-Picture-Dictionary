@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
 import { useAnimeReveal } from '../hooks/useAnimeReveal';
 import GooeyMarquee from '../components/GooeyMarquee';
 import StoryScroll, { FlowSection } from '../components/StoryScroll';
@@ -41,22 +40,6 @@ const AnimatedStat = ({ value, suffix = '', label, color }) => {
     const ref = useRef(null);
     const numRef = useRef(null);
 
-    useEffect(() => {
-        const el = ref.current;
-        if (!el) return;
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                if (entry.isIntersecting) {
-                    animateCount();
-                    observer.unobserve(el);
-                }
-            },
-            { threshold: 0.5 }
-        );
-        observer.observe(el);
-        return () => observer.disconnect();
-    }, []);
-
     const animateCount = () => {
         const target = parseInt(value);
         const dur = 2000;
@@ -73,6 +56,22 @@ const AnimatedStat = ({ value, suffix = '', label, color }) => {
         };
         requestAnimationFrame(step);
     };
+
+    useEffect(() => {
+        const el = ref.current;
+        if (!el) return;
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    animateCount();
+                    observer.unobserve(el);
+                }
+            },
+            { threshold: 0.5 }
+        );
+        observer.observe(el);
+        return () => observer.disconnect();
+    }, []);
 
     return (
         <div ref={ref} className="mission-stat glass-card">
@@ -141,7 +140,6 @@ const MissionSceneGallery = () => {
 };
 
 const Mission = () => {
-    const { t } = useTranslation();
     React.useEffect(() => { document.title = 'Our Mission — SOE Rhythm Quest'; }, []);
     return (
         <div className="mission-page">

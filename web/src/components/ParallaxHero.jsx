@@ -179,6 +179,12 @@ const ParallaxHero = ({ variant = 'home' }) => {
                     animation: parallaxFloat 9s ease-in-out infinite;
                 }
 
+                @media (max-width: 768px) {
+                    .parallax-hero-layer__item {
+                        display: none;
+                    }
+                }
+
                 @keyframes parallaxFloat {
                     0%, 100% { transform: translateY(0) rotate(0deg); }
                     33% { transform: translateY(-10px) rotate(4deg); }

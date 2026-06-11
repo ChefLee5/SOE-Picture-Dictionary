@@ -1,0 +1,210 @@
+/* ═══════════════════════════════════════════════════════════════
+   SOE Expandable Gallery — Styles
+   Uses site design tokens from index.css
+   ═══════════════════════════════════════════════════════════════ */
+
+.xg {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  padding: 0 1rem;
+}
+
+.xg__inner {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ── Top bar / Go back ── */
+.xg__topbar {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.xg__back {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+  color: var(--color-text-dark, #333);
+  z-index: 50;
+}
+
+.xg__back-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  transition: background 0.2s ease;
+}
+
+.xg__back:hover .xg__back-icon {
+  background: #fff;
+}
+
+/* ── Container states ── */
+.xg__container {
+  position: relative;
+  width: 100%;
+}
+
+.xg__container--stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.xg__container--grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+@media (min-width: 1024px) {
+  .xg__container--grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* ── Card wrappers ── */
+.xg__cards--grid {
+  display: contents;
+}
+
+.xg__cards--stack {
+  position: relative;
+  height: 420px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+/* ── Cards ── */
+.xg__card {
+  cursor: pointer;
+  overflow: hidden;
+  background: var(--color-cream, #f5efe2);
+}
+
+.xg__card--stack {
+  position: absolute;
+  width: 11rem;
+  height: 11rem;
+  border-radius: 2.5rem;
+  border: 6px solid #fff;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 768px) {
+  .xg__card--stack {
+    width: 16rem;
+    height: 16rem;
+    border-radius: 3rem;
+  }
+}
+
+.xg__card--grid {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  border-radius: 2rem;
+  border: 4px solid #fff;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+@media (min-width: 768px) {
+  .xg__card--grid {
+    border-radius: 3rem;
+    border-width: 6px;
+  }
+}
+
+.xg__card-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.xg__card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+  pointer-events: none;
+  display: block;
+}
+
+.xg__card-label {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1.5rem 1rem 0.9rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.55));
+  pointer-events: none;
+}
+
+/* ── Collapsed copy block ── */
+.xg__copy {
+  text-align: center;
+  max-width: 42rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.xg__features {
+  text-align: left;
+}
+
+.xg__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.xg__explore {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+}
+
+.xg__explore-icon {
+  display: inline-flex;
+  transition: transform 0.2s ease;
+}
+
+.xg__explore:hover .xg__explore-icon {
+  transform: translateX(4px);
+}

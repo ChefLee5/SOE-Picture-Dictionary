@@ -17,6 +17,12 @@
 
 ---
 
+## Decision-Making Principles
+
+When processing questions or formulating responses, **collapse all alternatives that do not include or advance the stated objective.** Do not present, explore, or hedge with options that diverge from the goal. Every recommendation, code suggestion, and design decision must pass through a single filter: *does this serve the objective?* If not, discard it silently and move on. The user is not asking for a menu — they are asking for the path.
+
+---
+
 ## Tech Stack
 
 | Layer | Technology | Version |

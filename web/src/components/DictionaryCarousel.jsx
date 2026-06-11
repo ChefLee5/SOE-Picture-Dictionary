@@ -87,11 +87,11 @@ const ChevronRight = () => (
 );
 
 /* ── Single Panel ── */
-function Panel({ index, displayIndex, total, waveY, scaleY, onPanelClick }) {
+function Panel({ index, displayIndex, total, waveY, scaleY, onPanelClick, scaleFactor }) {
   const t = displayIndex / (total - 1);
   const baseZ = (displayIndex - (total - 1)) * Z_SPREAD;
-  const w = 267 + t * 107;
-  const h = 280 + t * 120;
+  const w = (267 + t * 107) * scaleFactor;
+  const h = (280 + t * 120) * scaleFactor;
   const opacity = 0.25 + t * 0.75;
   const imageUrl = PANEL_IMAGES[index % PANEL_IMAGES.length];
 
@@ -190,6 +190,15 @@ export default function DictionaryCarousel() {
   const isHovering = useRef(false);
   const [lightboxIndex, setLightboxIndex] = useState(null);
   const [scrollOffset, setScrollOffset] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   const maxOffset = PANEL_COUNT - VISIBLE_COUNT;
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -342,6 +351,7 @@ export default function DictionaryCarousel() {
                 waveY={waveYSprings[displayIdx]}
                 scaleY={scaleYSprings[displayIdx]}
                 onPanelClick={handlePanelClick}
+                scaleFactor={isMobile ? 0.65 : 1.0}
               />
             ))}
           </AnimatePresence>

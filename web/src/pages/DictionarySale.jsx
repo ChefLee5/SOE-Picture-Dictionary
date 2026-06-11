@@ -87,12 +87,20 @@ const DictionarySale = () => {
   }, []);
 
   /* Build the character parade — double the array for seamless loop */
-  const allChars = heroesData.map(h => ({
-    id: h.id,
-    name: h.name,
-    img: h.img,
-    color: h.carouselColor,
-  }));
+  const carouselOrder = [
+    'Seriphia', 'Kenji', 'Elias', 'Ezra', 'Ronan', 'Kwame', 'Silas', 'Aiko', 
+    'Felix', 'Selene', 'Nerissa', 'Octavia', 'Amara', 'Vesta', 'Athena'
+  ];
+
+  const allChars = carouselOrder.map(name => {
+    const h = heroesData.find(char => char.name === name);
+    return {
+      id: h.id,
+      name: h.name,
+      img: h.img,
+      color: h.carouselColor,
+    };
+  });
   const paradeChars = [...allChars, ...allChars];
 
   return (
