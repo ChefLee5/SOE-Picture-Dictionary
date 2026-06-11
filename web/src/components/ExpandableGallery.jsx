@@ -20,7 +20,7 @@ const PHOTOS = [
   {
     id: 'occupations',
     src: assetPath('/assets/dictionary/land6-occupations-careers.png'),
-    alt: 'Terrasol — Occupations & Careers',
+    alt: 'Luminosity — Occupations & Careers',
     rotation: -15,
     x: -90,
     y: 10,
@@ -29,7 +29,7 @@ const PHOTOS = [
   {
     id: 'wild-animals',
     src: assetPath('/assets/dictionary/land3-wild-animals.png'),
-    alt: 'Sophia — Wild Animals',
+    alt: 'Terrasol — Wild Animals',
     rotation: -3,
     x: -10,
     y: -15,
@@ -52,7 +52,7 @@ const PHOTOS = [
   {
     id: 'garden',
     src: assetPath('/assets/dictionary/land3-the-garden.png'),
-    alt: 'Sophia — The Garden',
+    alt: 'Terrasol — The Garden',
   },
   {
     id: 'transportation',
@@ -62,7 +62,7 @@ const PHOTOS = [
   {
     id: 'community-helpers',
     src: assetPath('/assets/dictionary/land6-community-helpers-services.png'),
-    alt: 'Terrasol — Community Helpers',
+    alt: 'Luminosity — Community Helpers',
   },
   {
     id: 'planet-earth',
