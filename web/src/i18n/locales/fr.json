@@ -136,15 +136,15 @@
             },
             "Luminosity": {
                 "focus": "Langage Avancé",
-                "desc": "Ronan et Nerissa s'attaquent aux mots difficiles."
+                "desc": "Athena et Ezra illuminent le langage avancé à Luminosity."
             },
-            "Geometria": {
-                "focus": "Formes et Raisonnement Spatial",
-                "desc": "Silas et Vesta explorent les paysages géométriques."
+            "Aquaria": {
+                "focus": "Eau et Émotion",
+                "desc": "Nerissa et Ronan sculptent les sons et les émotions sur les rives d'Aquaria."
             },
             "Terrasol": {
                 "focus": "Science et Nature",
-                "desc": "Ezra et Athena plongent dans Terrasol."
+                "desc": "Vesta et Silas explorent les formes et merveilles de Terrasol."
             }
         },
         "pedagogy": {
@@ -330,7 +330,7 @@
             "Vitalis": "Vitalis",
             "Celestia": "Celestia",
             "Luminosity": "Luminosity",
-            "Geometria": "Geometria",
+            "Aquaria": "Aquaria",
             "Terrasol": "Terrasol"
         },
         "data": {
@@ -382,32 +382,32 @@
             "Ronan": {
                 "title": "Le Guerrier des Mots",
                 "bio": "Ronan s'attaque aux mots difficiles.",
-                "focus": "Langage Avancé"
+                "focus": "Eau et Émotion"
             },
             "Nerissa": {
                 "title": "La Sculptrice de Sons",
                 "bio": "Nerissa sculpte les sons.",
-                "focus": "Langage Avancé"
+                "focus": "Eau et Émotion"
             },
             "Silas": {
                 "title": "Le Chercheur de Formes",
                 "bio": "Silas voit de la géométrie en tout.",
-                "focus": "Formes et Raisonnement Spatial"
+                "focus": "Science et Nature"
             },
             "Vesta": {
                 "title": "La Navigatrice de l'Espace",
                 "bio": "Vesta navigue dans l'espace.",
-                "focus": "Formes et Raisonnement Spatial"
+                "focus": "Science et Nature"
             },
             "Ezra": {
                 "title": "L'Écouteur de la Nature",
                 "bio": "Ezra écoute la nature.",
-                "focus": "Science et Nature"
+                "focus": "Langage Avancé"
             },
             "Athena": {
                 "title": "La Sage de la Découverte",
                 "bio": "Athena apporte la sagesse.",
-                "focus": "Science et Nature"
+                "focus": "Langage Avancé"
             }
         }
     },
@@ -581,7 +581,7 @@
             "13": { "title": "Cent",                            "domain": "Mathématiques et Numeria",   "desc": "Octavia compte jusqu'à 100 — une étape importante en numératie." },
             "14": { "title": "L'Océan",                         "domain": "Science et Terrasol",          "desc": "Un voyage sonore immersif explorant les merveilles de l'océan." },
             "15": { "title": "Les Mots Difficiles",             "domain": "Langage et Luminosity",       "desc": "Ronan et Nerissa s'attaquent au vocabulaire polysyllabique avec des exercices rythmiques." },
-            "16": { "title": "Les Formes",                      "domain": "Mathématiques et Geometria", "desc": "Silas et Vesta chantent les cercles, carrés, triangles et plus encore." },
+            "16": { "title": "Les Formes",                      "domain": "Mathématiques et Terrasol", "desc": "Silas et Vesta chantent les cercles, carrés, triangles et plus encore." },
             "17": { "title": "Les Mois de l'Année",             "domain": "Temps et Celestia",           "desc": "Elias guide une récitation complète du calendrier sur une mélodie mémorable." },
             "18": { "title": "La Pluie",                        "domain": "Science et Terrasol",          "desc": "Athena et Ezra explorent le cycle de l'eau et la beauté de la pluie." },
             "19": { "title": "Après la Tempête (Outro)",       "domain": "Introduction",               "desc": "Une piste de clôture apaisante — la promesse que la lumière suit toujours la tempête." }

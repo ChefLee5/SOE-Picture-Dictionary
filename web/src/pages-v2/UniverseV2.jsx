@@ -13,9 +13,9 @@ const LAND_BLURBS = {
   numeria: 'A land that counts in beats. Kwame and Octavia reveal the rhythm hidden inside numbers, patterns, and early math.',
   vitalis: 'The body as the first instrument. Felix and Amara build coordination, balance, and confidence through joyful movement.',
   celestia: 'The rhythm of time itself. Elias and Selene sing the days, months, and seasons into something children can feel.',
-  luminosity: 'Where hard words become conquerable melodies. Ronan and Nerissa sculpt difficult sounds into beautiful language.',
-  geometria: 'Shapes and space, set to song. Silas and Vesta help children see the geometry woven through the whole world.',
-  terrasol: 'The wonder of the natural world. Ezra and Athena listen to rain, ocean, and body — science made magical.',
+  luminosity: 'Where language deepens into discovery. Athena and Ezra turn advanced words and the wonders of the world into song.',
+  aquaria: 'Where hard words become conquerable melodies. Nerissa and Ronan sculpt difficult sounds and deep feelings into beautiful language.',
+  terrasol: 'Shapes, science, and the natural world, set to song. Vesta and Silas trace the patterns woven through everything.',
 };
 
 const heroById = Object.fromEntries(heroes.map((h) => [h.id, h]));

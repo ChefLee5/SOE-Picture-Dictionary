@@ -523,7 +523,7 @@ const Listen = () => {
                   <div className="section-label">📐 Shape Art</div>
                   <h2 className="section-title">Interactive <span className="text-plum">Shape Gallery</span></h2>
                   <p className="section-subtitle" style={{ margin: '0 auto 2.5rem auto' }}>
-                    Beautiful hand-drawn shapes from the land of Geometria.
+                    Beautiful hand-drawn shapes from the land of Terrasol.
                   </p>
                 </RevealSection>
                 <div className="shape-gallery">

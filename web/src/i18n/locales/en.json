@@ -136,15 +136,15 @@
             },
             "Luminosity": {
                 "focus": "Advanced Language",
-                "desc": "Ronan and Nerissa tackle hard words and complex sounds in Luminosity."
+                "desc": "Athena and Ezra illuminate advanced language and discovery in Luminosity."
             },
-            "Geometria": {
-                "focus": "Shapes & Spatial Reasoning",
-                "desc": "Silas and Vesta explore the geometric landscapes of Geometria."
+            "Aquaria": {
+                "focus": "Water & Emotion",
+                "desc": "Nerissa and Ronan sculpt sounds and feelings along the shores of Aquaria."
             },
             "Terrasol": {
                 "focus": "Science & Nature",
-                "desc": "Ezra and Athena dive into Terrasol."
+                "desc": "Vesta and Silas explore the shapes and wonders of Terrasol."
             }
         },
         "pedagogy": {
@@ -330,7 +330,7 @@
             "Vitalis": "Vitalis",
             "Celestia": "Celestia",
             "Luminosity": "Luminosity",
-            "Geometria": "Geometria",
+            "Aquaria": "Aquaria",
             "Terrasol": "Terrasol"
         },
         "data": {
@@ -382,32 +382,32 @@
             "Ronan": {
                 "title": "The Word Warrior",
                 "bio": "Ronan tackles the hardest words with courage.",
-                "focus": "Advanced Language"
+                "focus": "Water & Emotion"
             },
             "Nerissa": {
                 "title": "The Sound Sculptor",
                 "bio": "Nerissa sculpts difficult sounds into beautiful words.",
-                "focus": "Advanced Language"
+                "focus": "Water & Emotion"
             },
             "Silas": {
                 "title": "The Shape Finder",
                 "bio": "Silas sees geometry in everything.",
-                "focus": "Shapes & Spatial Reasoning"
+                "focus": "Science & Nature"
             },
             "Vesta": {
                 "title": "The Space Navigator",
                 "bio": "Vesta navigates the geometric landscapes with confidence.",
-                "focus": "Shapes & Spatial Reasoning"
+                "focus": "Science & Nature"
             },
             "Ezra": {
                 "title": "The Nature Listener",
                 "bio": "Ezra listens to what nature has to teach.",
-                "focus": "Science & Nature"
+                "focus": "Advanced Language"
             },
             "Athena": {
                 "title": "The Discovery Sage",
                 "bio": "Athena brings the wisdom of the natural world to every child.",
-                "focus": "Science & Nature"
+                "focus": "Advanced Language"
             }
         }
     },
@@ -581,7 +581,7 @@
             "13": { "title": "The One Hundred Song",      "domain": "Math & Numeria",         "desc": "Octavia counts all the way to 100 — a milestone in early numeracy." },
             "14": { "title": "The Ocean",                "domain": "Science & Terrasol",       "desc": "An immersive sound journey exploring the wonders of the ocean." },
             "15": { "title": "Hard Words",               "domain": "Language & Luminosity",   "desc": "Ronan & Nerissa tackle multi-syllabic vocabulary with rhythmic articulation drills." },
-            "16": { "title": "Shapes",                   "domain": "Math & Geometria",       "desc": "Silas & Vesta sing about circles, squares, triangles, and beyond." },
+            "16": { "title": "Shapes",                   "domain": "Math & Terrasol",       "desc": "Silas & Vesta sing about circles, squares, triangles, and beyond." },
             "17": { "title": "Months of the Year",       "domain": "Time & Celestia",         "desc": "Elias guides a full calendar recitation set to a memorable melody." },
             "18": { "title": "Rain",                     "domain": "Science & Terrasol",       "desc": "Athena & Ezra explore the water cycle and the beauty of rainfall." },
             "19": { "title": "After the Storm (Outro)", "domain": "Introduction",           "desc": "A calm closing track — a promise that light always follows the storm." }

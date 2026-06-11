@@ -53,34 +53,34 @@
     "icon": "📖",
     "color": "#d4897a",
     "focus": "Advanced Language",
-    "heroes": ["ronan", "nerissa"],
-    "duoLabel": "Ronan & Nerissa",
+    "heroes": ["athena", "ezra"],
+    "duoLabel": "Athena & Ezra",
     "panorama": "luminosity.webp",
+    "sceneBg": "wildflower-path.webp",
+    "groupShot": "Luminosity_Athena_Ezra.webp"
+  },
+  {
+    "id": "aquaria",
+    "name": "Aquaria",
+    "icon": "💧",
+    "color": "#5ba4c9",
+    "focus": "Water & Emotion",
+    "heroes": ["nerissa", "ronan"],
+    "duoLabel": "Nerissa & Ronan",
+    "panorama": "aquaria.webp",
     "sceneBg": "b-roll-boats.webp",
     "groupShot": "Aquaria_Ronan_Nerissa.webp"
   },
   {
-    "id": "geometria",
-    "name": "Geometria",
-    "icon": "📐",
-    "color": "#5fb685",
-    "focus": "Shapes & Spatial Reasoning",
-    "heroes": ["silas", "vesta"],
-    "duoLabel": "Silas & Vesta",
-    "panorama": "aquaria.webp",
-    "sceneBg": "wildflower-path.webp",
-    "groupShot": null
-  },
-  {
     "id": "terrasol",
     "name": "Terrasol",
-    "icon": "🌊",
-    "color": "#5ba4c9",
+    "icon": "🌿",
+    "color": "#5fb685",
     "focus": "Science & Nature",
-    "heroes": ["ezra", "athena"],
-    "duoLabel": "Ezra & Athena",
+    "heroes": ["vesta", "silas"],
+    "duoLabel": "Vesta & Silas",
     "panorama": "valley.webp",
     "sceneBg": "b-roll-flowers.webp",
-    "groupShot": "Luminosity_Athena_Ezra.webp"
+    "groupShot": null
   }
 ]

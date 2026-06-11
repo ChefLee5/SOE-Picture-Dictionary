@@ -13,7 +13,7 @@ const landStats = {
   vitalis:   { words: 395, scenes: 12 },
   celestia:   { words: 265, scenes: 13 },
   luminosity: { words: 360, scenes: 14 },
-  geometria: { words: 460, scenes: 15 },
+  aquaria:    { words: 460, scenes: 15 },
   terrasol:    { words: 300, scenes: 14 },
 };
 
@@ -24,7 +24,7 @@ const dictLandNames = {
   vitalis:   'Vitalis',
   celestia:   'Celestia',
   luminosity: 'Luminosity',
-  geometria: 'Terrasol',
+  aquaria:    'Aquaria',
   terrasol:    'Terrasol',
 };
 

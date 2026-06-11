@@ -20,12 +20,12 @@ const heroes = [
     { name: 'Amara', land: 'Vitalis', icon: '🤸', color: '#c4785a', img: '/assets/characters/AMARA.jpg' },
     { name: 'Elias', land: 'Celestia', icon: '⏰', color: '#9678c4', img: '/assets/characters/ELIAS.jpg' },
     { name: 'Selene', land: 'Celestia', icon: '⏰', color: '#9678c4', img: '/assets/characters/SELENE.jpg' },
-    { name: 'Ronan', land: 'Luminosity', icon: '📖', color: '#d4a843', img: '/assets/characters/RONAN.jpg' },
-    { name: 'Nerissa', land: 'Luminosity', icon: '📖', color: '#d4a843', img: '/assets/characters/NERISSA.jpg' },
-    { name: 'Silas', land: 'Geometria', icon: '📐', color: '#7fb685', img: '/assets/characters/SILAS.jpg' },
-    { name: 'Vesta', land: 'Geometria', icon: '📐', color: '#7fb685', img: '/assets/characters/VESTA.jpg' },
-    { name: 'Ezra', land: 'Terrasol', icon: '🌊', color: '#5ba4c9', img: '/assets/characters/EZRA.jpg' },
-    { name: 'Athena', land: 'Terrasol', icon: '🌊', color: '#5ba4c9', img: '/assets/characters/ATHENA.jpg' },
+    { name: 'Ronan', land: 'Aquaria', icon: '💧', color: '#5ba4c9', img: '/assets/characters/RONAN.jpg' },
+    { name: 'Nerissa', land: 'Aquaria', icon: '💧', color: '#5ba4c9', img: '/assets/characters/NERISSA.jpg' },
+    { name: 'Silas', land: 'Terrasol', icon: '🌿', color: '#5fb685', img: '/assets/characters/SILAS.jpg' },
+    { name: 'Vesta', land: 'Terrasol', icon: '🌿', color: '#5fb685', img: '/assets/characters/VESTA.jpg' },
+    { name: 'Ezra', land: 'Luminosity', icon: '📖', color: '#d4897a', img: '/assets/characters/EZRA.jpg' },
+    { name: 'Athena', land: 'Luminosity', icon: '📖', color: '#d4897a', img: '/assets/characters/ATHENA.jpg' },
 ];
 
 /* ── Scene 1: Episode Title Card ── */
