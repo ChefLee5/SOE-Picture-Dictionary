@@ -1,0 +1,48 @@
+# The Sound of Essentials: Rhythm Quest
+
+The Sound of Essentials (SOE) is a music-powered, scientifically grounded early-learning ecosystem designed for children ages 2 to 8 (Pre-K through Grade 3).
+
+## Brand Identity & Vision
+- **Tagline:** "Designed for the developing brain — not the algorithm."
+- **Core Thesis:** Music and rhythm are the ultimate delivery mechanisms for early learning (phonics, math, movement, science, and time).
+- **Positioning:** The "Anti-Cocomelon" — calm, organic, neuro-affirming, screen-limited, and crafted by a parent's heart.
+
+## World Model (Canonical Mapping)
+The curriculum spans 5 Core Domains of Essential Learning (Language, Cognitive, Physical, Science, Social-Emotional) mapped across 7 Lands and 15 hero characters overseen by the guardian **Seriphia**:
+
+| Land | Focus / Theme | Color | Hero Characters |
+|---|---|---|---|
+| **Harmonia** | Music, Language, Phonics | `#d4a843` | Kenji & Aiko |
+| **Numeria** | Math, Counting, Shapes | `#7fb685` | Kwame & Octavia |
+| **Vitalis** | Physical Skills, Body, Movement | `#c4785a` | Amara & Felix |
+| **Luminosity** | Advanced Language, Careers, Civics | `#d4a843` | Athena & Ezra |
+| **Aquaria** | Water, Emotions, Self-Regulation | `#5ba4c9` | Nerissa & Ronan |
+| **Terrasol** | Earth, Nature, Science | `#5fb685` | Vesta & Silas |
+| **Celestia** | Sky, Time, Seasons | `#9678c4` | Selene & Elias |
+
+*Note: Gabriel (Lil G, "The Keeper") is the 16th character, kept intentionally unreleased as a scarcity incentive for early sign-ups.*
+
+## Product Catalog & Funnel
+SOE uses a pay-what-you-want and discounted value ladder:
+- **Rhythm Quest Album (19 Tracks):** Free stream / $19 download (lead magnet).
+- **Free Coloring Book:** Free digital lead magnet.
+- **Rhythm Quest eBook:** $19 conversion offer (funnel entry).
+- **Summer Stretch Workbook:** $35 print / $21 digital (8-week activity book).
+- **Essential Picture Dictionary:** $55 discounted / $79 retail (4,232 words, 157 scenes).
+- **The Full Quest Bundle:** Digital bundle of the Dictionary, Album, and eBook.
+
+## Website Routes & Pages
+- **`/` (Home):** Core entry with the brand story, domains layout, book feature, and primary CTAs.
+- **`/universe`:** Visual explorer for the 7 Lands.
+- **`/heroes`:** Character catalog with land-based filtering.
+- **`/listen`:** Music streaming hub and conversion gate.
+- **`/player`:** Persistent multi-track media player.
+- **`/dictionary`:** Sales page for the Essential Picture Dictionary.
+- **`/science`:** Academic research (Dalcroze, Orff, Kodaly methods, phonology science).
+- **`/mission`:** Mission statement and the founder's story.
+- **`/join`:** Newsletter signup and partnership forms.
+- **`/allies`:** Affiliate referral program.
+
+## Core Pedagogy
+- **Sound Before Symbol:** Sound-first phonics and rhythm training.
+- **Academic Roots:** Dalcroze Eurhythmics, Orff Schulwerk, and Kodály Method.

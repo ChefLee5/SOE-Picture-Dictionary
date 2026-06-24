@@ -1,0 +1,25 @@
+# robots.txt for The Sound of Essentials
+# Optimized for search engines and AI agent crawlers.
+
+User-agent: *
+Allow: /
+Disallow: /ebook/OEBPS/images/   # Prevents raw scraping of ebook source images
+
+# AI and LLM Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Sitemap
+Sitemap: https://thesoundofessentials.com/sitemap.xml

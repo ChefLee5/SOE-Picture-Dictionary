@@ -4,13 +4,12 @@
  * Each function returns a plain object (or array) ready to be passed
  * to the <JsonLd data={...} /> component.
  */
-
 import heroesData from '../data/heroes.json';
 import tracksData from '../data/tracks.json';
 import landsData  from '../data/lands.json';
 import productsData from '../data/products.json';
 
-const SITE_URL  = 'https://cheflee5.github.io/SOE-Picture-Dictionary';
+const SITE_URL  = 'https://thesoundofessentials.com';
 const SITE_NAME = 'The Sound of Essentials: Rhythm Quest';
 const ORG_LOGO  = `${SITE_URL}/assets/marketing/quest-collage.webp`;
 
