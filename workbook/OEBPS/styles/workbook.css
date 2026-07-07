@@ -1,12 +1,13 @@
 /* =========================================================
    SOE The Summer Stretch Workbook — workbook.css
-   Design System: "Calm. Focused. Essential."
-   Version: 1.0.0
-   Inherits token naming from dictionary.css
+   Design System: "Bright & Playful — Dynamic Edition"
+   Version: 2.0.0  (visual redesign, 2026-07-04)
+   Canonical land colors per seven-lands canon.
+   Layered, editorial, print-first: diagonal header bands,
+   floating goal strip, depth cards, practice-sheet zones.
    ========================================================= */
 
-/* --- Google Fonts (loaded via network; fallbacks always present) --- */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Lexend:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=Bricolage+Grotesque:wght@700;800&display=swap');
 
 /* --- EPUB / Print Reset --- */
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -16,32 +17,42 @@ html { font-size: 16px; }
    DESIGN TOKENS
    ========================================================= */
 :root {
-  /* Land accent colors (matches dictionary.css exactly) */
-  --land1-color:   #d4a843; /* Harmonia  – Reading & Phonics       */
-  --land2-color:   #7fb685; /* Numeria   – Math & Problem-Solving  */
-  --land3-color:   #10B981; /* Terrasol  – Science & Nature        */
-  --land4-color:   #2563EB; /* Aquaria   – Geography & Mapping     */
-  --land5-color:   #c4785a; /* Vitalis   – Fitness & Health        */
-  --land6-color:   #5ba4c9; /* Luminosity    – Community & Civics      */
-  --land7-color:   #9678c4; /* Celestia  – Time & Reflection       */
+  /* Canonical land colors (seven-lands canon, 2026-06-09) */
+  --land1-color: #d4a843;  /* Harmonia   — Language & Manners   */
+  --land2-color: #7fb685;  /* Numeria    — Numbers & Math       */
+  --land3-color: #5fb685;  /* Terrasol   — Science & Nature     */
+  --land4-color: #5ba4c9;  /* Aquaria    — Water & Emotion      */
+  --land5-color: #c4785a;  /* Vitalis    — Physical & Motor     */
+  --land6-color: #d4897a;  /* Luminosity — Advanced Language    */
+  --land7-color: #9678c4;  /* Celestia   — Time & Seasons       */
 
-  /* Neutral palette */
-  --bg-page:       #FAFAF8;
+  /* Deep companions for text-on-tint */
+  --land1-deep: #8a6d2f;
+  --land2-deep: #3f7a4c;
+  --land3-deep: #2f6e57;
+  --land4-deep: #2c6a86;
+  --land5-deep: #8f4f37;
+  --land6-deep: #9c5546;
+  --land7-deep: #5e4b8c;
+
+  /* Brand neutrals (Bright & Playful) */
+  --brand-orange:  #FF6F00;
+  --bg-page:       #FFFDF6;   /* cream */
   --bg-card:       #FFFFFF;
   --text-primary:  #1a1a2e;
   --text-secondary:#4a5568;
-  --text-hint:     #9ca3af;
-  --border-soft:   #e8e8e8;
-  --border-dashed: #d1d5db;
+  --text-hint:     #9c9683;
+  --border-soft:   #ece6d6;
+  --border-dashed: #d8d2c2;
 
-  /* Activity box backgrounds (light tints) */
-  --land1-tint:    #fef9ee;
-  --land2-tint:    #f0faf2;
-  --land3-tint:    #ecfdf5;
-  --land4-tint:    #eff6ff;
-  --land5-tint:    #fdf4f1;
-  --land6-tint:    #f0f8fd;
-  --land7-tint:    #f5f1fd;
+  /* Activity tint backgrounds */
+  --land1-tint: #fdf7e9;
+  --land2-tint: #eef8f0;
+  --land3-tint: #eaf5ee;
+  --land4-tint: #ecf5fa;
+  --land5-tint: #fbf0ea;
+  --land6-tint: #fbf0ed;
+  --land7-tint: #f3eefb;
 
   /* Spacing scale */
   --space-xs:  4px;
@@ -51,16 +62,16 @@ html { font-size: 16px; }
   --space-xl:  40px;
 
   /* Typography */
-  --font-body:    'Nunito', 'Segoe UI', Arial, sans-serif;
-  --font-display: 'Lexend', 'Segoe UI', Arial, sans-serif;
-  --line-height:  1.75;
-  --letter-spacing: 0.01em;
+  --font-body:    'Inter', 'Nunito', 'Segoe UI', Arial, sans-serif;
+  --font-display: 'Fredoka', 'Lexend', 'Segoe UI', Arial, sans-serif;
+  --font-accent:  'Bricolage Grotesque', 'Fredoka', 'Segoe UI', Arial, sans-serif;
+  --line-height:  1.7;
 
   /* Shape */
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 16px;
-  --radius-xl: 24px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+  --radius-xl: 26px;
 }
 
 /* =========================================================
@@ -73,46 +84,65 @@ body {
   color: var(--text-primary);
   background-color: var(--bg-page);
   padding: var(--space-lg);
-  max-width: 740px;
+  max-width: 780px;
   margin: 0 auto;
 }
 
-/* Page break before every new day */
 .day-page { page-break-before: always; }
 
 /* =========================================================
-   DAY HEADER BAND
+   DAY HEADER — diagonal band with layered depth
    ========================================================= */
 .day-header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: var(--space-md);
-  padding: var(--space-md) var(--space-lg);
-  border-radius: var(--radius-lg);
-  margin-bottom: var(--space-lg);
-  background: linear-gradient(
-    135deg,
-    var(--land-color, #d4a843) 0%,
-    color-mix(in srgb, var(--land-color, #d4a843) 60%, white) 100%
-  );
+  padding: 30px 34px 44px;
+  margin: 0 0 -16px;
+  position: relative;
   color: #fff;
+  background: linear-gradient(
+    120deg,
+    var(--land-color, #d4a843) 0%,
+    color-mix(in srgb, var(--land-color, #d4a843) 72%, #1a1a2e) 100%
+  );
+  clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+/* decorative oversized music glyph, mockup's "ghost numeral" role */
+.day-header::after {
+  content: '♪';
+  position: absolute;
+  top: -28px;
+  right: 18px;
+  font-family: var(--font-accent);
+  font-size: 130px;
+  font-weight: 800;
+  line-height: 1;
+  color: rgba(255,255,255,0.14);
+  pointer-events: none;
 }
 
 .day-header .day-label {
-  font-family: var(--font-display);
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.14em;
+  font-family: var(--font-accent);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  opacity: 0.85;
-  margin-bottom: 4px;
+  opacity: 0.88;
+  margin-bottom: 5px;
 }
 
 .day-header .day-title {
   font-family: var(--font-display);
-  font-size: 1.45rem;
+  font-size: 1.9rem;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.08;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  max-width: 480px;
 }
 
 .day-header .character-badge {
@@ -123,43 +153,50 @@ body {
   align-items: center;
   gap: 4px;
   font-size: 0.7rem;
-  font-weight: 600;
-  opacity: 0.9;
+  font-weight: 700;
   text-align: center;
-  max-width: 80px;
+  max-width: 92px;
+  position: relative;
+  z-index: 3;
 }
 
 .day-header .character-badge img {
-  width: 60px;
-  height: 60px;
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
-  border: 2.5px solid rgba(255,255,255,0.85);
+  border: 3.5px solid #fff;
   object-fit: cover;
   object-position: top center;
-  background: rgba(255,255,255,0.25);
-  overflow: hidden;
+  background: rgba(255,255,255,0.3);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  transform: rotate(-4deg);
   display: block;
-  flex-shrink: 0;
 }
 
 /* =========================================================
-   DAILY GOAL TRACKER (print-referencing)
+   GOAL STRIP — floats over the header's diagonal cut
    ========================================================= */
 .goal-tracker {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-sm) var(--space-md);
-  margin-bottom: var(--space-lg);
-  padding: var(--space-sm) var(--space-md);
+  position: relative;
+  z-index: 5;
+  margin: 0 18px var(--space-lg);
+  padding: 12px 18px;
   background: var(--bg-card);
-  border: 1.5px solid var(--border-soft);
+  border: none;
   border-radius: var(--radius-md);
+  box-shadow: 0 10px 26px rgba(26,26,46,0.13);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 
 .goal-tracker-label {
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
+  font-family: var(--font-accent);
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--text-hint);
   width: 100%;
@@ -169,128 +206,147 @@ body {
   display: flex;
   align-items: center;
   gap: 6px;
-  font-size: 0.82rem;
+  font-size: 0.78rem;
+  font-weight: 600;
   color: var(--text-secondary);
 }
 
-/* Print-ready checkboxes — clear squares learners can physically check */
 .goal-item .check-box {
-  width: 18px;
-  height: 18px;
-  border: 2px solid var(--border-dashed);
-  border-radius: 4px;
+  width: 17px;
+  height: 17px;
+  border: 2.5px solid var(--border-dashed);
+  border-radius: 5px;
   flex-shrink: 0;
   display: inline-block;
 }
 
 /* =========================================================
-   ACTIVITY BLOCK
+   ACTIVITY BLOCK — depth cards, land-tinted
    ========================================================= */
 .activity-block {
   background: var(--bg-card);
-  border-radius: var(--radius-md);
-  border-left: 5px solid var(--land-color, #d4a843);
-  padding: var(--space-md) var(--space-lg);
-  margin-bottom: var(--space-md);
-  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  border-radius: var(--radius-lg);
+  border-left: none;
+  border-top: 5px solid var(--land-color, #d4a843);
+  padding: 20px 24px;
+  margin-bottom: var(--space-lg);
+  box-shadow: 0 6px 18px rgba(26,26,46,0.08);
+  position: relative;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 
-/* Land colour scoping */
-.activity-block.land1 { --land-color: var(--land1-color); background: var(--land1-tint); }
-.activity-block.land2 { --land-color: var(--land2-color); background: var(--land2-tint); }
-.activity-block.land3 { --land-color: var(--land3-color); background: var(--land3-tint); }
-.activity-block.land4 { --land-color: var(--land4-color); background: var(--land4-tint); }
-.activity-block.land5 { --land-color: var(--land5-color); background: var(--land5-tint); }
-.activity-block.land6 { --land-color: var(--land6-color); background: var(--land6-tint); }
-.activity-block.land7 { --land-color: var(--land7-color); background: var(--land7-tint); }
+.activity-block.land1 { --land-color: var(--land1-color); --land-deep: var(--land1-deep); background: var(--land1-tint); }
+.activity-block.land2 { --land-color: var(--land2-color); --land-deep: var(--land2-deep); background: var(--land2-tint); }
+.activity-block.land3 { --land-color: var(--land3-color); --land-deep: var(--land3-deep); background: var(--land3-tint); }
+.activity-block.land4 { --land-color: var(--land4-color); --land-deep: var(--land4-deep); background: var(--land4-tint); }
+.activity-block.land5 { --land-color: var(--land5-color); --land-deep: var(--land5-deep); background: var(--land5-tint); }
+.activity-block.land6 { --land-color: var(--land6-color); --land-deep: var(--land6-deep); background: var(--land6-tint); }
+.activity-block.land7 { --land-color: var(--land7-color); --land-deep: var(--land7-deep); background: var(--land7-tint); }
 
 .activity-block .block-tag {
-  font-size: 0.68rem;
+  font-family: var(--font-accent);
+  font-size: 0.64rem;
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--land-color, #d4a843);
-  margin-bottom: var(--space-xs);
+  color: var(--land-deep, #8a6d2f);
+  margin-bottom: 4px;
 }
 
 .activity-block .block-title {
   font-family: var(--font-display);
-  font-size: 1.05rem;
-  font-weight: 700;
+  font-size: 1.18rem;
+  font-weight: 600;
   color: var(--text-primary);
-  margin-bottom: var(--space-xs);
+  margin-bottom: 3px;
 }
 
+/* time as a pill chip */
 .activity-block .block-time {
-  font-size: 0.72rem;
-  color: var(--text-hint);
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #fff;
+  background: var(--land-color, #d4a843);
+  padding: 3px 12px;
+  border-radius: 100px;
   margin-bottom: var(--space-sm);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 
 .activity-block .block-body {
   font-size: 0.9rem;
-  line-height: 1.7;
+  line-height: 1.65;
   color: var(--text-secondary);
 }
 
+.activity-block .block-body p + p {
+  margin-top: var(--space-sm);
+}
+
 /* =========================================================
-   DICTIONARY IMAGE ZONE
+   DICTIONARY IMAGE ZONE — polaroid treatment
    ========================================================= */
 .dict-image-zone {
-  border: 2px dashed var(--border-dashed);
+  background: #fff;
+  border: none;
   border-radius: var(--radius-sm);
+  padding: 8px 8px 4px;
   margin: var(--space-sm) 0;
   overflow: hidden;
   text-align: center;
-  background: rgba(255,255,255,0.6);
+  box-shadow: 0 4px 14px rgba(26,26,46,0.12);
+  transform: rotate(-0.6deg);
 }
 
 .dict-image-zone img {
   max-width: 100%;
   height: auto;
   display: block;
-  max-height: 180px;
+  max-height: 175px;
   object-fit: contain;
   margin: 0 auto;
+  border-radius: 6px;
 }
 
 .dict-image-zone figcaption {
-  font-size: 0.68rem;
+  font-size: 0.64rem;
   color: var(--text-hint);
-  padding: var(--space-xs) var(--space-sm);
+  padding: 5px 6px 4px;
   font-style: italic;
-  border-top: 1px solid var(--border-soft);
 }
 
 /* =========================================================
-   WRITING / DRAWING ZONES (print-referencing)
+   WRITING / DRAWING ZONES
    ========================================================= */
-
-/* WRITE ZONE: minimum 4 lined rows for a child's handwriting */
 .write-zone {
-  border: 1.5px solid var(--border-dashed);
+  border: none;
   border-radius: var(--radius-sm);
-  min-height: 116px;   /* 4 rows × 29px line height */
+  min-height: 112px;
   margin: var(--space-sm) 0;
   padding: 8px var(--space-sm) 0;
   background:
     repeating-linear-gradient(
       transparent,
-      transparent 28px,
-      #d1d5db 28px,
-      #d1d5db 29px
+      transparent 27px,
+      #ddd6c4 27px,
+      #ddd6c4 28px
     );
-  background-color: rgba(255,255,255,0.95);
+  background-color: #fffdf9;
   background-position: 0 8px;
+  box-shadow: inset 0 0 0 1.5px var(--border-soft);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 
-/* DRAW ZONE: large empty space for a child's drawing */
 .draw-zone {
-  border: 2.5px dashed var(--land-color, #10B981);
+  border: 2.5px dashed var(--land-color, #5fb685);
   border-radius: var(--radius-md);
-  min-height: 210px;   /* generous space for a child to draw */
+  min-height: 200px;
   margin: var(--space-sm) 0;
-  background: rgba(255,255,255,0.9);
+  background: #fffdf9;
   position: relative;
 }
 
@@ -298,21 +354,48 @@ body {
   position: absolute;
   bottom: var(--space-sm);
   right: var(--space-md);
-  font-size: 0.68rem;
+  font-size: 0.66rem;
   color: var(--text-hint);
   font-style: italic;
   pointer-events: none;
 }
 
 .zone-label {
-  font-size: 0.78rem;
-  color: var(--text-hint);
+  font-family: var(--font-accent);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--land-deep, var(--text-hint));
   margin-top: var(--space-sm);
   display: block;
 }
 
+/* Handwriting practice sheet — distinct ruled-paper treatment */
+.handwriting-zone.write-zone {
+  min-height: 96px;
+  background:
+    repeating-linear-gradient(
+      transparent,
+      transparent 22px,
+      #cfc7ad 22px,
+      #cfc7ad 23px,
+      transparent 23px,
+      transparent 34px,
+      #e8e2d0 34px,
+      #e8e2d0 35px
+    );
+  background-color: #fffef9;
+  background-position: 0 6px;
+}
+
+.handwriting-zone.draw-zone {
+  min-height: 150px;
+  border-style: dotted;
+}
+
 /* =========================================================
-   ESOL / SPELLING / BILINGUAL SUPPORT PANEL
+   ESOL / SPELLING PANEL
    ========================================================= */
 .esol-panel {
   display: flex;
@@ -320,37 +403,35 @@ body {
   gap: var(--space-sm) var(--space-md);
   align-items: center;
   margin: var(--space-sm) 0;
-  padding: var(--space-sm) var(--space-md);
-  border-radius: var(--radius-sm);
-  background: rgba(255,255,255,0.75);
-  border: 1px solid var(--border-soft);
+  padding: 10px var(--space-md);
+  border-radius: 100px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(26,26,46,0.07);
 }
 
-/* Spelling word (how it's written) */
 .esol-panel .spell-word {
+  font-family: var(--font-display);
   font-weight: 700;
-  font-size: 1rem;
-  color: var(--text-primary);
+  font-size: 0.95rem;
+  color: var(--land-deep, var(--text-primary));
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  border-right: 2px solid var(--land-color, #d4a843);
+  border-right: 2.5px solid var(--land-color, #d4a843);
   padding-right: var(--space-sm);
-  margin-right: calc(var(--space-sm) * -1);
 }
 
-/* Phonetic pronunciation */
 .esol-panel .phonetic {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: var(--text-hint);
   font-style: italic;
   font-family: 'Courier New', monospace;
 }
 
 .esol-panel .my-language {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   color: var(--text-secondary);
   border-bottom: 1.5px solid var(--border-dashed);
-  min-width: 160px;
+  min-width: 150px;
   padding-bottom: 2px;
   padding-left: 4px;
 }
@@ -362,18 +443,30 @@ body {
 }
 
 /* =========================================================
-   CHARACTER TIP BOX
+   CHARACTER TIP — speech-bubble card
    ========================================================= */
 .char-tip {
   display: flex;
   gap: var(--space-md);
   align-items: flex-start;
-  background: rgba(255,255,255,0.88);
+  background: #fff;
   border-radius: var(--radius-md);
-  padding: var(--space-md);
+  padding: 14px var(--space-md);
   margin-top: var(--space-md);
-  border: 1.5px solid var(--border-soft);
-  border-left: 4px solid var(--land-color, #d4a843);
+  border: none;
+  box-shadow: 0 4px 12px rgba(26,26,46,0.09);
+  position: relative;
+}
+
+.char-tip::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 34px;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  transform: rotate(45deg);
 }
 
 .char-tip img.char-avatar {
@@ -383,58 +476,64 @@ body {
   object-fit: cover;
   object-position: top center;
   flex-shrink: 0;
-  border: 2px solid var(--land-color, #d4a843);
-  background: #f3f4f6;
+  border: 3px solid var(--land-color, #d4a843);
+  background: #f6f3ea;
+  box-shadow: 0 3px 8px rgba(26,26,46,0.14);
+  transform: rotate(3deg);
 }
 
 .char-tip .tip-content em {
   display: block;
-  font-size: 0.68rem;
+  font-family: var(--font-accent);
+  font-size: 0.62rem;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--land-color, #d4a843);
-  margin-bottom: 5px;
+  letter-spacing: 0.11em;
+  color: var(--land-deep, #8a6d2f);
+  margin-bottom: 4px;
   font-style: normal;
 }
 
 .char-tip .tip-content p {
-  font-size: 0.83rem;
+  font-size: 0.82rem;
   color: var(--text-secondary);
-  line-height: 1.6;
+  line-height: 1.55;
 }
 
 /* =========================================================
-   END-OF-DAY REFLECTION BUBBLE (Land 7 — Celestia)
+   REFLECTION BUBBLE — celebration medallion
    ========================================================= */
 .reflection-bubble {
-  background: var(--bg-card);
+  background: radial-gradient(circle at 30% 18%, #f6effd, #e7dbf6);
   border-radius: var(--radius-xl);
-  border: 2px solid var(--border-soft);
-  padding: var(--space-lg);
+  border: none;
+  padding: 26px var(--space-lg);
   margin-top: var(--space-lg);
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 8px 22px rgba(94,75,140,0.18);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 
 .reflection-bubble .stars {
-  font-size: 1.5rem;
-  letter-spacing: 6px;
+  font-size: 1.7rem;
+  letter-spacing: 10px;
+  color: var(--land7-deep);
   margin-bottom: var(--space-sm);
   display: block;
 }
 
 .reflection-bubble p {
-  font-size: 0.85rem;
-  color: var(--text-secondary);
+  font-size: 0.86rem;
+  color: var(--land7-deep);
   margin-bottom: var(--space-md);
   line-height: 1.6;
 }
 
 .reflection-bubble .sign-off {
-  font-size: 0.75rem;
-  color: var(--text-hint);
-  border-top: 1.5px dashed var(--border-dashed);
+  font-size: 0.74rem;
+  color: #7c6da0;
+  border-top: 1.5px dashed #c5b4e3;
   padding-top: var(--space-sm);
   margin-top: var(--space-sm);
 }
@@ -445,15 +544,19 @@ body {
 .week-intro {
   text-align: center;
   padding: var(--space-xl) var(--space-lg);
-  background: linear-gradient(160deg, #f5f1fd 0%, #ecfdf5 100%);
+  background: linear-gradient(150deg, #f3eefb 0%, #eaf5ee 55%, #fdf7e9 100%);
   border-radius: var(--radius-xl);
   margin-bottom: var(--space-xl);
+  box-shadow: 0 10px 28px rgba(26,26,46,0.09);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 
 .week-intro .week-num {
-  font-family: var(--font-display);
-  font-size: 0.8rem;
-  letter-spacing: 0.2em;
+  font-family: var(--font-accent);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--text-hint);
   margin-bottom: var(--space-sm);
@@ -461,10 +564,10 @@ body {
 
 .week-intro .week-theme {
   font-family: var(--font-display);
-  font-size: 2rem;
+  font-size: 2.1rem;
   font-weight: 700;
   color: var(--text-primary);
-  line-height: 1.2;
+  line-height: 1.15;
   margin-bottom: var(--space-md);
 }
 
@@ -477,11 +580,13 @@ body {
 }
 
 .lands-pills .pill {
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   font-weight: 700;
-  padding: 4px 12px;
+  padding: 5px 14px;
   border-radius: 100px;
   color: #fff;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 .pill.l1 { background: var(--land1-color); }
 .pill.l2 { background: var(--land2-color); }
@@ -492,7 +597,28 @@ body {
 .pill.l7 { background: var(--land7-color); }
 
 /* =========================================================
-   UTILITY CLASSES
+   FRONT/BACK-MATTER SUPPORT (block-header/content, guide)
+   ========================================================= */
+.block-header { margin-bottom: var(--space-sm); }
+.block-content { font-size: 0.9rem; color: var(--text-secondary); }
+.guide-section {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  border-top: 5px solid var(--section-color, var(--brand-orange));
+  padding: 20px 24px;
+  margin-bottom: var(--space-lg);
+  box-shadow: 0 6px 18px rgba(26,26,46,0.08);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+.guide-section h2 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  margin-bottom: var(--space-sm);
+}
+
+/* =========================================================
+   UTILITY
    ========================================================= */
 .sr-only {
   position: absolute; width: 1px; height: 1px;
@@ -502,22 +628,47 @@ body {
 
 .divider {
   border: none;
-  border-top: 1px solid var(--border-soft);
-  margin: var(--space-md) 0;
+  border-top: none;
+  height: 12px;
+  margin: var(--space-sm) 0 var(--space-md);
+  background: none;
+  position: relative;
+}
+
+.divider::after {
+  content: '· · ♪ · ·';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -6px;
+  font-size: 0.7rem;
+  letter-spacing: 4px;
+  color: #cfc7ad;
 }
 
 /* =========================================================
-   PRINT MEDIA OVERRIDES
+   PRINT MEDIA OVERRIDES — letter, print-first fidelity
    ========================================================= */
 @media print {
-  @page { size: letter; margin: 15mm 12mm; }
-  body { background: white; padding: 0; font-size: 10.5pt; max-width: 100%; }
-  .activity-block { box-shadow: none; border-left-width: 4pt; break-inside: avoid; }
-  .write-zone { min-height: 22mm; }
-  .draw-zone  { min-height: 38mm; }
+  @page { size: letter; margin: 13mm 11mm; }
+  body { background: var(--bg-page); padding: 0; font-size: 10.5pt; max-width: 100%; }
+  .day-page { page-break-before: always; }
+  .activity-block { break-inside: avoid; box-shadow: 0 2px 8px rgba(26,26,46,0.10); }
+  .write-zone { min-height: 24mm; }
+  .draw-zone  { min-height: 40mm; }
+  .handwriting-zone.write-zone { min-height: 20mm; }
   .dict-image-zone { break-inside: avoid; }
   .char-tip { break-inside: avoid; }
-  .day-header { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  a { text-decoration: none; color: inherit; }
   .reflection-bubble { break-inside: avoid; }
+  .goal-tracker { break-inside: avoid; }
+  .day-header,
+  .goal-tracker,
+  .activity-block,
+  .block-time,
+  .write-zone,
+  .reflection-bubble,
+  .week-intro,
+  .lands-pills .pill,
+  .guide-section { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  a { text-decoration: none; color: inherit; }
 }

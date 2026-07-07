@@ -57,3 +57,10 @@ The Sound of Essentials Deluxe Edition Music/
 # Large images (>5MB)
 *.psd
 *.ai
+
+# Workbook build outputs and art staging (regeneratable)
+workbook/SOE_The_Summer_Stretch_Workbook_print.html
+workbook/SOE_The_Summer_Stretch_Workbook_print.pdf
+workbook/OEBPS/images_print/
+workbook/art_generated/
+__pycache__/
