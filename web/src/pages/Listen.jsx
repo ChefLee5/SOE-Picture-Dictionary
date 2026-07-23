@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { assetPath } from '../utils/assetPath';
@@ -7,6 +7,7 @@ import { RevealSection } from '../hooks/useReveal';
 import tracksData from '../data/tracks.json';
 import JsonLd from '../components/JsonLd';
 import { mediaRoomSchema } from '../utils/schema';
+import BeehiivSubscribeForm from '../components/BeehiivSubscribeForm';
 import {
   AudioPlayer,
   GalleryGrid,
@@ -15,10 +16,6 @@ import {
   galleryShots,
 } from './MediaRoom';
 import './Listen.css';
-
-// ── Kit.com v3 API Config ──────────────────────────────────────
-const KIT_API_KEY = 'P-utcloLVPjLE6oDuz3-sA';
-const KIT_TAG_ID = 19643125; // "listen-optin" tag
 
 const STORAGE_KEY = 'soe_listen_unlocked';
 
@@ -30,11 +27,7 @@ const Listen = () => {
     try { return localStorage.getItem(STORAGE_KEY) === '1'; } catch { return false; }
   });
 
-  // ── Form State ──────────────────────────────────────────────
-  const [email, setEmail] = useState('');
-  const [firstName, setFirstName] = useState('');
-  const [formStatus, setFormStatus] = useState('idle');
-  const [errorMsg, setErrorMsg] = useState('');
+  const [searchParams, setSearchParams] = useSearchParams();
   const [justUnlocked, setJustUnlocked] = useState(false);
 
   // ── Book viewer state ───────────────────────────────────────
@@ -65,61 +58,36 @@ const Listen = () => {
     setJustUnlocked(true);
   };
 
-  // ── Kit.com Form Submission ─────────────────────────────────
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (!email || !email.includes('@')) {
-      setErrorMsg('Please enter a valid email address.');
-      setFormStatus('error');
-      return;
-    }
-    setFormStatus('loading');
-    setErrorMsg('');
+  // ── Beehiiv subscribe success detection ─────────────────────
+  // Beehiiv's embed widget has no JS success callback — the form's Beehiiv
+  // dashboard config redirects back here with ?unlocked=true on a real signup.
+  useEffect(() => {
+    if (searchParams.get('unlocked') !== 'true') return;
 
-    try {
-      const response = await fetch(
-        `https://api.convertkit.com/v3/tags/${KIT_TAG_ID}/subscribe`,
-        {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json; charset=utf-8' },
-          body: JSON.stringify({
-            api_key: KIT_API_KEY,
-            email: email.trim(),
-            first_name: firstName.trim() || undefined,
-          }),
-        }
-      );
-
-      if (response.ok) {
-        setFormStatus('success');
-        // Fire conversion events
-        if (typeof window !== 'undefined') {
-          if (window.gtag) {
-            window.gtag('event', 'generate_lead', {
-              event_category: 'funnel',
-              event_label: 'listen_optin',
-              value: 1,
-            });
-          }
-          if (window.fbq) {
-            window.fbq('track', 'Lead', {
-              content_name: 'listen_optin',
-              content_category: 'email_funnel',
-            });
-          }
-        }
-        // Unlock the content
-        unlock();
-      } else {
-        const data = await response.json().catch(() => ({}));
-        throw new Error(data.message || data.error || 'Subscription failed');
+    if (typeof window !== 'undefined') {
+      if (window.gtag) {
+        window.gtag('event', 'generate_lead', {
+          event_category: 'funnel',
+          event_label: 'listen_optin',
+          value: 1,
+        });
       }
-    } catch (err) {
-      console.error('Kit.com subscription error:', err);
-      setErrorMsg(err.message || 'Something went wrong. Please try again.');
-      setFormStatus('error');
+      if (window.fbq) {
+        window.fbq('track', 'Lead', {
+          content_name: 'listen_optin',
+          content_category: 'email_funnel',
+        });
+      }
     }
-  };
+
+    unlock();
+    setSearchParams((prev) => {
+      const next = new URLSearchParams(prev);
+      next.delete('unlocked');
+      return next;
+    }, { replace: true });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [searchParams]);
 
   // ── Print coloring page ─────────────────────────────────────
   const printColoringPage = () => {
@@ -249,42 +217,7 @@ const Listen = () => {
                 coloring pages, and start a free 5-day learning journey.
               </p>
 
-              {formStatus === 'error' && errorMsg && (
-                <div className="listen-optin__error">{errorMsg}</div>
-              )}
-
-              <form className="listen-optin__form" onSubmit={handleSubmit}>
-                <div className="listen-optin__row">
-                  <input
-                    type="text"
-                    className="listen-optin__input"
-                    placeholder="First name (optional)"
-                    value={firstName}
-                    onChange={(e) => setFirstName(e.target.value)}
-                    aria-label="First name"
-                    id="listen-first-name"
-                  />
-                  <input
-                    type="email"
-                    className="listen-optin__input"
-                    placeholder="Your best email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                    aria-label="Email address"
-                    id="listen-email"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className={`listen-optin__submit ${formStatus === 'loading' ? 'listen-optin__submit--loading' : ''}`}
-                  disabled={formStatus === 'loading'}
-                  id="listen-submit-btn"
-                >
-                  {formStatus === 'loading' && <span className="listen-optin__spinner" />}
-                  Unlock & Start Listening →
-                </button>
-              </form>
+              <BeehiivSubscribeForm className="listen-optin__form" />
               <p className="listen-optin__disclaimer">
                 No spam, ever. Unsubscribe anytime. We respect your family's inbox.
               </p>

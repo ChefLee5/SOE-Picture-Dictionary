@@ -1,28 +1,22 @@
 import React, { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { assetPath } from '../utils/assetPath';
 import FullSection from '../components-v2/FullSection';
 import CharSplitText from '../components-v2/CharSplitText';
 import { RevealV2 } from '../hooks/useScrollReveal';
+import BeehiivSubscribeForm from '../components/BeehiivSubscribeForm';
 import tracksData from '../data/tracks.json';
 
-// ── Kit.com (ConvertKit) v3 config — same funnel as original Listen page ──
-const KIT_API_KEY = 'P-utcloLVPjLE6oDuz3-sA';
-const KIT_TAG_ID = 19643125; // "listen-optin" tag
 const STORAGE_KEY = 'soe_listen_unlocked';
 
 const ListenV2 = () => {
   const { t } = useTranslation();
-  const location = useLocation();
+  const [searchParams, setSearchParams] = useSearchParams();
 
   const [isUnlocked, setIsUnlocked] = useState(() => {
     try { return localStorage.getItem(STORAGE_KEY) === '1'; } catch { return false; }
   });
-  const [email, setEmail] = useState(location.state?.email || '');
-  const [firstName, setFirstName] = useState('');
-  const [status, setStatus] = useState('idle'); // idle | loading | error
-  const [errorMsg, setErrorMsg] = useState('');
   const [justUnlocked, setJustUnlocked] = useState(false);
 
   useEffect(() => {
@@ -45,41 +39,24 @@ const ListenV2 = () => {
     setJustUnlocked(true);
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (!email || !email.includes('@')) {
-      setErrorMsg('Please enter a valid email address.');
-      setStatus('error');
-      return;
+  // Beehiiv's embed widget has no JS success callback — the form's Beehiiv
+  // dashboard config redirects back here with ?unlocked=true on a real signup.
+  useEffect(() => {
+    if (searchParams.get('unlocked') !== 'true') return;
+
+    if (typeof window !== 'undefined') {
+      window.gtag?.('event', 'generate_lead', { event_category: 'funnel', event_label: 'listen_optin_v2', value: 1 });
+      window.fbq?.('track', 'Lead', { content_name: 'listen_optin_v2', content_category: 'email_funnel' });
     }
-    setStatus('loading');
-    setErrorMsg('');
-    try {
-      const res = await fetch(`https://api.convertkit.com/v3/tags/${KIT_TAG_ID}/subscribe`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json; charset=utf-8' },
-        body: JSON.stringify({
-          api_key: KIT_API_KEY,
-          email: email.trim(),
-          first_name: firstName.trim() || undefined,
-        }),
-      });
-      if (res.ok) {
-        if (typeof window !== 'undefined') {
-          window.gtag?.('event', 'generate_lead', { event_category: 'funnel', event_label: 'listen_optin_v2', value: 1 });
-          window.fbq?.('track', 'Lead', { content_name: 'listen_optin_v2', content_category: 'email_funnel' });
-        }
-        unlock();
-      } else {
-        const data = await res.json().catch(() => ({}));
-        throw new Error(data.message || data.error || 'Subscription failed');
-      }
-    } catch (err) {
-      console.error('Kit.com subscription error:', err);
-      setErrorMsg(err.message || 'Something went wrong. Please try again.');
-      setStatus('error');
-    }
-  };
+
+    unlock();
+    setSearchParams((prev) => {
+      const next = new URLSearchParams(prev);
+      next.delete('unlocked');
+      return next;
+    }, { replace: true });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [searchParams]);
 
   return (
     <div className="listen-v2">
@@ -114,34 +91,7 @@ const ListenV2 = () => {
               <p className="v2-body v2-body--lg" style={{ maxWidth: '480px', margin: '1rem auto 2rem' }}>
                 Enter your email to unlock all 19 tracks and start a free 5-day learning journey.
               </p>
-              {status === 'error' && errorMsg && (
-                <p style={{ color: '#e53935', fontWeight: 500, marginBottom: '1rem' }}>{errorMsg}</p>
-              )}
-              <form onSubmit={handleSubmit} style={{ maxWidth: '480px', margin: '0 auto' }}>
-                <input
-                  type="text"
-                  className="v2-email-capture__input"
-                  placeholder="First name (optional)"
-                  value={firstName}
-                  onChange={(e) => setFirstName(e.target.value)}
-                  aria-label="First name"
-                  style={{ width: '100%', marginBottom: '0.75rem' }}
-                />
-                <div className="v2-email-capture" style={{ maxWidth: '100%' }}>
-                  <input
-                    type="email"
-                    className="v2-email-capture__input"
-                    placeholder="Your best email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                    aria-label="Email address"
-                  />
-                  <button type="submit" className="v2-btn v2-btn--gold" disabled={status === 'loading'}>
-                    {status === 'loading' ? 'Unlocking…' : 'Unlock →'}
-                  </button>
-                </div>
-              </form>
+              <BeehiivSubscribeForm className="v2-email-capture" />
               <p className="v2-email-meta">No spam, ever. Unsubscribe anytime.</p>
             </RevealV2>
           </div>

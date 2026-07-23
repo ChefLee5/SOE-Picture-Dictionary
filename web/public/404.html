@@ -7,7 +7,7 @@
     <script>
         // SPA redirect for GitHub Pages
         // Converts the path into a query string so index.html can handle routing
-        const segment = 1; // number of path segments to keep (repo name)
+        const segment = 0; // custom domain (thesoundofessentials.com) serves from root — no repo-name subpath to keep
         const loc = window.location;
         loc.replace(
             loc.protocol + '//' + loc.hostname + (loc.port ? ':' + loc.port : '') +

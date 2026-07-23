@@ -3,36 +3,16 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { RevealSection } from '../hooks/useReveal';
 import { assetPath } from '../utils/assetPath';
+import BeehiivSubscribeForm from '../components/BeehiivSubscribeForm';
 
 const JoinQuest = () => {
     const { t } = useTranslation();
     useEffect(() => { document.title = 'Join the Quest — SOE Rhythm Quest'; }, []);
-    // Newsletter State
-    const [newsletter, setNewsletter] = useState({ email: '', submitted: false });
-    const [newsLoading, setNewsLoading] = useState(false);
-    const [newsError, setNewsError] = useState('');
 
     // Contact State
     const [contact, setContact] = useState({ name: '', org: '', email: '', message: '', submitted: false });
     const [contactLoading, setContactLoading] = useState(false);
     const [contactError, setContactError] = useState('');
-
-    const handleNewsletter = async (e) => {
-        e.preventDefault();
-        setNewsError('');
-
-        if (!newsletter.email.includes('@')) {
-            setNewsError(t('join.email_error'));
-            return;
-        }
-
-        setNewsLoading(true);
-        // Simulate API call
-        await new Promise(res => setTimeout(res, 1500));
-
-        setNewsLoading(false);
-        setNewsletter({ ...newsletter, submitted: true });
-    };
 
     const handleContact = async (e) => {
         e.preventDefault();
@@ -86,37 +66,7 @@ const JoinQuest = () => {
                                 </p>
                             </div>
 
-                            {newsletter.submitted ? (
-                                <div className="newsletter-success">
-                                    <span style={{ fontSize: '2rem' }}>✨</span>
-                                    <h3 className="text-sage">{t('join.welcome_quest')}</h3>
-                                    <p>{t('join.welcome_desc')}</p>
-                                </div>
-                            ) : (
-                                <form className="newsletter-form" onSubmit={handleNewsletter}>
-                                    <div className="newsletter-form__row">
-                                        <input
-                                            type="email"
-                                            required
-                                            disabled={newsLoading}
-                                            placeholder={t('join.email_placeholder')}
-                                            value={newsletter.email}
-                                            onChange={(e) => setNewsletter({ ...newsletter, email: e.target.value })}
-                                            className="form-input"
-                                            aria-label="Email address for newsletter"
-                                        />
-                                        <button type="submit" className="btn btn-gold" disabled={newsLoading}>
-                                            {newsLoading ? (
-                                                <span className="btn-loader"></span>
-                                            ) : t('join.subscribe')}
-                                        </button>
-                                    </div>
-                                    {newsError && <p className="form-error-msg animate-fade-in">{newsError}</p>}
-                                    <p className="form-note">
-                                        {t('join.no_spam')}
-                                    </p>
-                                </form>
-                            )}
+                            <BeehiivSubscribeForm className="newsletter-form" />
                         </div>
                     </RevealSection>
                 </div>
