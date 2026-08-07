@@ -5,10 +5,7 @@ import TrackStack from '../components/TrackStack';
 import { assetPath } from '../utils/assetPath';
 import { supabase } from '../lib/supabase';
 
-// STOPGAP (2026-08-07): the `audio` bucket was deleted during an upload; the 19
-// remastered tracks currently live in the media-archive bucket instead. Restore
-// this to 'audio' once they are re-uploaded there - it is the only change needed.
-const AUDIO_BUCKET = 'M & M media arts group';
+const AUDIO_BUCKET = 'audio';
 
 const Player = () => {
   const { t } = useTranslation();
