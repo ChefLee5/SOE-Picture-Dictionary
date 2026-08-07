@@ -43,7 +43,7 @@ const Player = () => {
           title: t(`media.tracks.${track.id}.title`),
           artist: 'The Sound of Essentials',
           cover: assetPath(`/assets/track-art/${track.cover}`),
-          src: assetPath(`/audio/${track.audio_file}`),
+          src: supabase.storage.from('audio').getPublicUrl(track.audio_file).data.publicUrl,
           color: track.color,
           domainIcon: track.domain_icon,
           lyrics: track.lyrics || null,
