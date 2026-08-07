@@ -15,6 +15,7 @@
     "@octokit/rest": "^22.0.1",
     "@remotion/player": "4.0.427",
     "@splinetool/react-spline": "^4.1.0",
+    "@supabase/supabase-js": "^2.112.2",
     "animejs": "^4.3.6",
     "axios": "^1.13.5",
     "dotenv": "^17.3.1",

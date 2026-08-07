@@ -3,63 +3,141 @@ import { useTranslation } from 'react-i18next';
 import MusicPlayerWidget from '../components/MusicPlayerWidget';
 import TrackStack from '../components/TrackStack';
 import { assetPath } from '../utils/assetPath';
-import tracksData from '../data/tracks.json';
+import { supabase } from '../lib/supabase';
 
 const Player = () => {
   const { t } = useTranslation();
   const [activeTrack, setActiveTrack] = useState(0);
   const [selectedTrack, setSelectedTrack] = useState(null);
+  const [tracks, setTracks] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     document.title = 'Now Playing — SOE Rhythm Quest';
   }, []);
 
-  // Map track data to MusicPlayerWidget format
-  const tracks = tracksData.map(track => ({
-    id: track.id,
-    title: t(`media.tracks.${track.id}.title`),
-    artist: 'The Sound of Essentials',
-    cover: assetPath(`/assets/track-art/${track.cover}`),
-    src: assetPath(`/audio/${track.audioFile}`),
-    color: track.color,
-    domainIcon: track.domainIcon,
-    lyrics: track.lyrics || null,
-  }));
+  useEffect(() => {
+    const fetchTracks = async () => {
+      try {
+        setLoading(true);
+        setError(null);
 
-  // When the player changes tracks (next/prev/autoplay), sync the stack
+        const { data, error: fetchError } = await supabase
+          .from('tracks')
+          .select('id, slug, audio_file, cover, color, domain_icon, lyrics')
+          .order('id', { ascending: true });
+
+        if (fetchError) {
+          throw fetchError;
+        }
+
+        if (!data || data.length === 0) {
+          setTracks([]);
+          setLoading(false);
+          return;
+        }
+
+        const formattedTracks = data.map(track => ({
+          id: track.id,
+          title: t(`media.tracks.${track.slug}.title`),
+          artist: 'The Sound of Essentials',
+          cover: assetPath(`/assets/track-art/${track.cover}`),
+          src: assetPath(`/audio/${track.audio_file}`),
+          color: track.color,
+          domainIcon: track.domain_icon,
+          lyrics: track.lyrics || null,
+        }));
+
+        setTracks(formattedTracks);
+      } catch (err) {
+        console.error('Error fetching tracks from Supabase:', err);
+        setError(err.message || 'Failed to load tracks. Please try refreshing the page.');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchTracks();
+  }, []);
+
   const handleTrackChange = useCallback((index) => {
     setActiveTrack(index);
   }, []);
 
-  // When you click a track in the stack, tell the player to jump there
   const handleStackSelect = useCallback((index) => {
     setSelectedTrack(index);
     setActiveTrack(index);
   }, []);
 
+  if (loading) {
+    return (
+      <div className="player-page">
+        <div className="player-page__bg" aria-hidden="true">
+          <img src={assetPath('/assets/luminosity-hall.png')} alt="" className="player-page__bg-img" />
+        </div>
+        <div className="player-page__overlay" aria-hidden="true" />
+        <div className="player-page__inner">
+          <div className="player-page__header">
+            <p style={{ color: '#fff', textAlign: 'center' }}>Loading tracks...</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="player-page">
+        <div className="player-page__bg" aria-hidden="true">
+          <img src={assetPath('/assets/luminosity-hall.png')} alt="" className="player-page__bg-img" />
+        </div>
+        <div className="player-page__overlay" aria-hidden="true" />
+        <div className="player-page__inner">
+          <div className="player-page__header">
+            <h2 style={{ color: '#fff', textAlign: 'center' }}>Oops!</h2>
+            <p style={{ color: '#aaa', textAlign: 'center' }}>{error}</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (tracks.length === 0) {
+    return (
+      <div className="player-page">
+        <div className="player-page__bg" aria-hidden="true">
+          <img src={assetPath('/assets/luminosity-hall.png')} alt="" className="player-page__bg-img" />
+        </div>
+        <div className="player-page__overlay" aria-hidden="true" />
+        <div className="player-page__inner">
+          <div className="player-page__header">
+            <p style={{ color: '#aaa', textAlign: 'center' }}>No tracks are available right now.</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="player-page">
-      {/* Full-bleed background image */}
       <div className="player-page__bg" aria-hidden="true">
         <img src={assetPath('/assets/luminosity-hall.png')} alt="" className="player-page__bg-img" />
       </div>
       <div className="player-page__overlay" aria-hidden="true" />
 
       <div className="player-page__inner">
-        {/* Header */}
         <div className="player-page__header">
           <span className="player-page__label">♫ Now Playing</span>
           <h1 className="player-page__title">
             Rhythm <span className="accent-text">Quest</span>
           </h1>
           <p className="player-page__subtitle">
-            19 tracks · 7 Lands · Designed for the developing brain
+            {tracks.length} tracks · 7 Lands · Designed for the developing brain
           </p>
         </div>
 
-        {/* Two-panel layout: Player + Playlist */}
         <div className="player-page__layout">
-          {/* Left: Vinyl Player */}
           <div className="player-page__player-col">
             <MusicPlayerWidget
               tracks={tracks}
@@ -68,7 +146,6 @@ const Player = () => {
             />
           </div>
 
-          {/* Right: Visual Track Browser */}
           <div className="player-page__stack-col">
             <div className="player-page__stack-label">
               <span className="player-page__stack-icon">🎵</span>
@@ -88,10 +165,6 @@ const Player = () => {
       </div>
 
       <style>{`
-        /* ═══════════════════════════════════════
-           Player Page — SOE Product Colors
-           ═══════════════════════════════════════ */
-
         .player-page {
           position: relative;
           min-height: 100vh;
@@ -103,7 +176,6 @@ const Player = () => {
           overflow: hidden;
         }
 
-        /* ── Full-Bleed Background Image ── */
         .player-page__bg {
           position: fixed;
           inset: 0;
@@ -114,223 +186,98 @@ const Player = () => {
           width: 100%;
           height: 100%;
           object-fit: cover;
-          object-position: center bottom;
-          display: block;
-          animation: playerBgZoom 30s ease-in-out infinite alternate;
+          object-position: center;
         }
 
-        @keyframes playerBgZoom {
-          from { transform: scale(1); }
-          to   { transform: scale(1.06) translateY(-1%); }
-        }
-
-        /* Dark vignette overlay for readability */
         .player-page__overlay {
           position: fixed;
           inset: 0;
+          background: rgba(10, 6, 4, 0.75);
           z-index: 1;
-          background:
-            radial-gradient(ellipse at center, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.4) 100%),
-            linear-gradient(to top, rgba(10,6,4,0.55) 0%, rgba(10,6,4,0.15) 40%, rgba(10,6,4,0.05) 70%, rgba(10,6,4,0.25) 100%);
-          pointer-events: none;
         }
 
-        /* ── Inner Content ── */
         .player-page__inner {
           position: relative;
           z-index: 2;
+          max-width: 1200px;
           width: 100%;
-          max-width: 1100px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 2rem;
         }
 
-        /* ── Header ── */
-        .player-page__header { text-align: center; }
+        .player-page__header {
+          text-align: center;
+          margin-bottom: 3rem;
+          color: #fff;
+        }
 
         .player-page__label {
-          font-family: var(--font-heading);
-          font-size: 0.75rem;
-          font-weight: 700;
-          text-transform: uppercase;
-          letter-spacing: 0.2em;
-          color: #FFB74D;
+          display: block;
+          font-size: 1rem;
+          font-weight: 500;
+          color: #ccc;
+          margin-bottom: 0.5rem;
+          letter-spacing: 0.05em;
         }
 
         .player-page__title {
-          font-family: var(--font-display);
-          font-size: clamp(2rem, 5vw, 3rem);
+          font-size: clamp(2.5rem, 8vw, 4rem);
           font-weight: 700;
-          line-height: 1.1;
-          margin: 0.4rem 0 0;
+          margin: 0 0 0.5rem 0;
           color: #fff;
-          text-shadow: 0 2px 12px rgba(0,0,0,0.4);
-        }
-
-        .player-page__title .accent-text {
-          color: #FFD54F;
         }
 
         .player-page__subtitle {
-          font-family: var(--font-cursive);
-          font-size: clamp(1rem, 2.5vw, 1.3rem);
-          color: rgba(255,220,160,0.7);
-          margin: 0.3rem 0 0;
+          font-size: 1rem;
+          color: #aaa;
+          margin: 0;
+          letter-spacing: 0.05em;
         }
 
-        /* ── Two-Panel Layout ── */
         .player-page__layout {
-          display: flex;
-          align-items: center;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
           gap: 3rem;
-          width: 100%;
+          margin-bottom: 2rem;
+        }
+
+        @media (max-width: 768px) {
+          .player-page__layout {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+          }
         }
 
         .player-page__player-col {
-          flex: 1;
-          min-width: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
 
         .player-page__stack-col {
-          flex: 0 0 340px;
           display: flex;
           flex-direction: column;
-          align-items: center;
-          gap: 0.75rem;
+          gap: 1rem;
         }
 
         .player-page__stack-label {
           display: flex;
           align-items: center;
           gap: 0.5rem;
-          font-family: var(--font-heading);
-          font-size: 0.75rem;
-          font-weight: 700;
-          text-transform: uppercase;
-          letter-spacing: 0.15em;
-          color: rgba(255,200,120,0.6);
+          font-size: 1rem;
+          font-weight: 600;
+          color: #fff;
+          margin-bottom: 0.5rem;
         }
 
-        .player-page__stack-icon { font-size: 1rem; }
+        .player-page__stack-icon {
+          font-size: 1.25rem;
+        }
 
-        /* ── Hint ── */
         .player-page__hint {
-          font-family: var(--font-body);
-          font-size: 0.7rem;
-          color: rgba(255,220,160,0.3);
           text-align: center;
-          letter-spacing: 0.04em;
-        }
-
-        /* ── Override MusicPlayerWidget for dark/gold theme ── */
-        .player-page .mpw-card {
-          --mpw-bg: rgba(10,6,4,0.85);
-          --mpw-fg: #fff;
-          --mpw-accent: #FFB74D;
-          --mpw-muted: rgba(255,200,120,0.45);
-          border: 1px solid rgba(255,200,120,0.15);
-          box-shadow: 0 12px 50px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,200,120,0.06);
-          backdrop-filter: blur(20px);
-        }
-
-        .player-page .mpw-card.is-playing {
-          box-shadow: 0 16px 60px rgba(0,0,0,0.5), 0 0 50px rgba(255,183,77,0.15), 0 0 0 1px rgba(255,200,120,0.1);
-        }
-
-        .player-page .mpw-hole {
-          background: rgba(10,6,4,0.9);
-          border-color: rgba(255,200,120,0.15);
-        }
-
-        .player-page .mpw-hole-inner {
-          background: rgba(255,200,120,0.08);
-        }
-
-        .player-page .mpw-bar {
-          background: rgba(255,255,255,0.1);
-        }
-
-        .player-page .mpw-ctrl {
-          color: rgba(255,200,120,0.45);
-        }
-
-        .player-page .mpw-ctrl:hover {
-          color: #FFD54F;
-          background: rgba(255,200,120,0.1);
-        }
-
-        .player-page .mpw-ctrl-play {
-          background: linear-gradient(135deg, #FF8F00, #FFB74D);
-          color: #1a0f00;
-        }
-
-        .player-page .mpw-ctrl-play:hover {
-          background: linear-gradient(135deg, #FF8F00, #FFB74D);
-          filter: brightness(1.15);
-        }
-
-        .player-page .mpw-ctrl-toggle.is-active {
-          color: #FFB74D;
-        }
-
-        .player-page .mpw-scales {
-          fill: #FFB74D;
-        }
-
-        .player-page .mpw-lyrics {
-          background: rgba(255,200,120,0.06);
-        }
-
-        /* ── TrackStack overrides for dark theme ── */
-        .player-page .ts-counter__current {
-          color: #FFD54F;
-        }
-
-        .player-page .ts-counter__divider {
-          background: rgba(255,200,120,0.2);
-        }
-
-        .player-page .ts-counter__total {
-          color: rgba(255,200,120,0.4);
-        }
-
-        .player-page .ts-dot {
-          background: rgba(255,200,120,0.25);
-        }
-
-        .player-page .ts-dot:hover {
-          background: #FFB74D;
-        }
-
-        .player-page .ts-dot--active {
-          background: #FFB74D;
-        }
-
-        .player-page .ts-hint {
-          color: rgba(255,200,120,0.3);
-        }
-
-        /* ── Responsive ── */
-        @media (max-width: 900px) {
-          .player-page__layout {
-            flex-direction: column;
-            gap: 2rem;
-          }
-
-          .player-page__stack-col {
-            flex: auto;
-            width: 100%;
-          }
-
-          .player-page { padding: 5rem 1rem 2rem; }
-        }
-
-        @media (max-width: 600px) {
-          .player-page .mpw-card {
-            max-width: 100%;
-          }
+          font-size: 0.875rem;
+          color: #999;
+          margin: 0;
+          margin-top: 2rem;
         }
       `}</style>
     </div>

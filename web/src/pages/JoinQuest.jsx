@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { RevealSection } from '../hooks/useReveal';
 import { assetPath } from '../utils/assetPath';
 import BeehiivSubscribeForm from '../components/BeehiivSubscribeForm';
+import { submitSoeInterest } from '../services/soeSubmissions';
 
 const JoinQuest = () => {
     const { t } = useTranslation();
@@ -24,11 +25,21 @@ const JoinQuest = () => {
         }
 
         setContactLoading(true);
-        // Simulate API call
-        await new Promise(res => setTimeout(res, 2000));
-
-        setContactLoading(false);
-        setContact({ ...contact, submitted: true });
+        try {
+            await submitSoeInterest({
+                kind: 'partnership',
+                name: contact.name,
+                organizationName: contact.org,
+                email: contact.email,
+                message: contact.message,
+                sourcePath: window.location.pathname,
+            });
+            setContact({ ...contact, submitted: true });
+        } catch {
+            setContactError(t('join.org_submit_error'));
+        } finally {
+            setContactLoading(false);
+        }
     };
 
     return (

@@ -3,6 +3,7 @@ import { assetPath } from '../utils/assetPath';
 import FullSection from '../components-v2/FullSection';
 import CharSplitText from '../components-v2/CharSplitText';
 import { RevealV2 } from '../hooks/useScrollReveal';
+import { submitSoeInterest } from '../services/soeSubmissions';
 
 const JoinQuestV2 = () => {
   const [name, setName] = useState('');
@@ -23,10 +24,19 @@ const JoinQuestV2 = () => {
       return;
     }
     setLoading(true);
-    // Simulated submission — mirrors the original JoinQuest newsletter flow.
-    await new Promise((res) => setTimeout(res, 1200));
-    setLoading(false);
-    setSubmitted(true);
+    try {
+      await submitSoeInterest({
+        kind: 'interest',
+        name,
+        email,
+        sourcePath: window.location.pathname,
+      });
+      setSubmitted(true);
+    } catch (submissionError) {
+      setError(submissionError.message);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (

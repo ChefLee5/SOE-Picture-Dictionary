@@ -493,6 +493,7 @@
         "subscribe": "Subscribe",
         "email_error": "Please enter a valid email address.",
         "org_email_error": "Please enter a valid organization email.",
+        "org_submit_error": "We couldn't send your message right now. Please try again.",
         "no_spam": "No spam. Just calm, essential content. Unsubscribe anytime.",
         "who_we_serve": "Who We Serve",
         "find_your_role_1": "Find Your ",

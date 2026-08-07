@@ -493,6 +493,7 @@
         "subscribe": "S'abonner",
         "email_error": "Veuillez entrer une adresse e-mail valide.",
         "org_email_error": "Veuillez entrer une adresse e-mail d'organisation valide.",
+        "org_submit_error": "Nous n'avons pas pu envoyer votre message. Veuillez réessayer.",
         "no_spam": "Pas de spam. Juste du contenu essentiel et apaisant. Désabonnez-vous à tout moment.",
         "who_we_serve": "Qui nous servons",
         "find_your_role_1": "Trouvez votre ",
