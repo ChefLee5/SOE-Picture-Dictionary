@@ -40,7 +40,7 @@ const Player = () => {
 
         const formattedTracks = data.map(track => ({
           id: track.id,
-          title: t(`media.tracks.${track.slug}.title`),
+          title: t(`media.tracks.${track.id}.title`),
           artist: 'The Sound of Essentials',
           cover: assetPath(`/assets/track-art/${track.cover}`),
           src: assetPath(`/audio/${track.audio_file}`),
