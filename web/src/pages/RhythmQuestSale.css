@@ -1574,30 +1574,6 @@
   margin-top: 3rem;
 }
 
-.rq-quest__rail {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
-}
-
-.rq-quest__spine {
-  position: absolute;
-  left: calc(1rem + 18.5px);
-  top: 1.6rem;
-  bottom: 1.6rem;
-  width: 3px;
-  border-radius: 3px;
-  background: var(--color-border-light);
-}
-
-.rq-quest__spine--lit {
-  background: linear-gradient(180deg, var(--color-orange-light), var(--color-orange));
-  transform-origin: top center;
-  transform: scaleY(var(--rq-progress, 0));
-  transition: transform 0.7s var(--ease-gentle);
-}
-
 .rq-week {
   position: relative;
   display: grid;
@@ -1701,107 +1677,6 @@
   transition: border-color var(--transition-slow) var(--ease-gentle);
 }
 
-.rq-stage__art {
-  position: relative;
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-  animation: rqStageIn 0.55s var(--ease-gentle) both;
-}
-
-.rq-stage__img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  animation: kenBurns 18s var(--ease-gentle) both;
-}
-
-.rq-stage__scrim {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.42) 100%);
-}
-
-.rq-stage__tag {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  font-family: var(--font-heading);
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--color-text-dark);
-  background: rgba(255, 255, 255, 0.92);
-  border-radius: var(--radius-xl);
-  padding: 0.35rem 0.9rem;
-}
-
-.rq-stage__heroes {
-  position: absolute;
-  right: 1.1rem;
-  bottom: 1.1rem;
-  display: flex;
-}
-
-.rq-stage__hero {
-  width: 56px;
-  height: 56px;
-  border-radius: var(--radius-full);
-  object-fit: cover;
-  background: #fff;
-  border: 3px solid rgba(255, 255, 255, 0.92);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
-}
-
-.rq-stage__hero + .rq-stage__hero { margin-left: -14px; }
-
-.rq-stage__body {
-  padding: 1.75rem 1.9rem 2rem;
-  animation: rqBodyIn 0.5s var(--ease-gentle) both;
-  animation-delay: 0.08s;
-}
-
-.rq-stage__name {
-  margin: 0;
-  font-size: clamp(1.4rem, 3vw, 1.9rem);
-  color: var(--color-text-dark);
-}
-
-.rq-stage__focus {
-  margin: 0.2rem 0 0.9rem;
-  font-family: var(--font-heading);
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.11em;
-  text-transform: uppercase;
-  color: var(--color-text-dark-secondary);
-}
-
-.rq-stage__line {
-  margin: 0 0 1.25rem;
-  max-width: 56ch;
-  font-size: 1rem;
-  line-height: 1.7;
-  color: var(--color-text-dark-secondary);
-}
-
-.rq-stage__tracks {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.rq-stage__tracks-label {
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.11em;
-  text-transform: uppercase;
-  color: var(--color-text-dark-secondary);
-  margin-right: 0.15rem;
-}
-
 .rq-chip {
   font-family: var(--font-heading);
   font-size: 0.82rem;
@@ -1819,13 +1694,6 @@
   background: rgba(255, 255, 255, 0.7);
   border-style: dashed;
   color: var(--color-text-dark-secondary);
-}
-
-.rq-stage__more {
-  margin: 0.9rem 0 0;
-  font-family: var(--font-cursive);
-  font-size: 1.05rem;
-  color: var(--color-orange);
 }
 
 @keyframes rqStageIn {
@@ -2536,11 +2404,6 @@
   color: var(--color-text-dark-secondary);
 }
 
-.rq-weeks {
-  position: relative;
-  margin: 1.75rem 0 3.5rem;
-}
-
 /* Sits behind the dots, at exactly dot-centre height:
    week label (1rem) + its margin (0.55rem) + half of the 64px dot. */
 .rq-weeks__track {
@@ -2555,40 +2418,7 @@
   overflow: hidden;
 }
 
-.rq-weeks__track::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    90deg,
-    var(--color-orange) 0%,
-    var(--color-yellow) 55%,
-    var(--color-green) 100%
-  );
-  transform: scaleX(0);
-  transform-origin: left center;
-  transition: transform 1.6s var(--ease-gentle) 0.15s;
-}
-
 .reveal-block.revealed .rq-weeks__track::after { transform: scaleX(1); }
-
-.rq-weeks__list {
-  position: relative;
-  z-index: 1;
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  gap: 0.75rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.rq-weeks__step {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
 
 .reveal-block.revealed .rq-weeks__step {
   animation: rqStepIn 0.55s var(--ease-gentle) calc(0.2s + var(--i) * 0.12s) both;
@@ -2597,72 +2427,6 @@
 @keyframes rqStepIn {
   from { opacity: 0; transform: translateY(14px) scale(0.94); }
   to   { opacity: 1; transform: none; }
-}
-
-.rq-weeks__num {
-  height: 1rem;
-  margin-bottom: 0.55rem;
-  font-family: var(--font-heading);
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--land-color, var(--color-orange));
-}
-
-.rq-weeks__dot {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  overflow: hidden;
-  background: #fff;
-  border: 3px solid var(--land-color, var(--color-orange));
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
-  transition: transform 0.35s var(--ease-gentle), box-shadow 0.35s var(--ease-gentle);
-}
-
-.rq-weeks__dot img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.5s var(--ease-gentle);
-}
-
-.rq-weeks__step:hover .rq-weeks__dot {
-  transform: translateY(-4px) scale(1.06);
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.16);
-}
-
-.rq-weeks__step:hover .rq-weeks__dot img { transform: scale(1.12); }
-
-.rq-weeks__land {
-  margin-top: 0.6rem;
-  font-family: var(--font-heading);
-  font-size: 0.86rem;
-  font-weight: 700;
-  color: var(--color-text-dark);
-}
-
-.rq-weeks__focus {
-  font-size: 0.7rem;
-  line-height: 1.35;
-  color: var(--color-text-dark-secondary);
-}
-
-.rq-weeks__duo {
-  margin-top: 0.2rem;
-  font-family: var(--font-heading);
-  font-size: 0.68rem;
-  font-weight: 600;
-  color: var(--land-color, var(--color-green));
-}
-
-.rq-weeks__step--finish { --land-color: var(--color-green); }
-
-.rq-weeks__step--finish .rq-weeks__dot {
-  border-style: dashed;
-  border-width: 3px;
 }
 
 /* ── The offer card ── */
