@@ -120,9 +120,14 @@ const Listen = () => {
             <div className="listen-cover__img-wrap">
               <img
                 className="listen-cover__img"
-                src={assetPath('/assets/marketing/quest-collage.webp')}
-                alt="The Sound of Essentials: Rhythm Quest album cover"
+                src={assetPath('/assets/marketing/soe-deluxe-cover.webp')}
+                srcSet={`${assetPath('/assets/marketing/soe-deluxe-cover-600.webp')} 600w, ${assetPath('/assets/marketing/soe-deluxe-cover.webp')} 1200w`}
+                sizes="(max-width: 600px) 100vw, 600px"
+                width="1200"
+                height="1200"
+                alt="The Sound of Essentials: A Musical Learning Experience — album cover. Seriphia holds a glowing open book, ringed by a golden staff of musical notes, with seven children gathered around her and a lit path winding into the hills behind."
                 loading="eager"
+                fetchPriority="high"
               />
               <span className="listen-cover__badge">19 Tracks • Ages 2–7</span>
             </div>
