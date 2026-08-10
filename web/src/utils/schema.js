@@ -160,7 +160,9 @@ export function productsSchema() {
     '@type': product.type === 'music-album' ? 'MusicAlbum' : 'Product',
     name: product.name,
     description: product.description,
-    image: `${SITE_URL}${product.cover}`,
+    // Omit rather than emit an unreachable URL — Google drops the whole Product result
+    // for a broken image. Products with no cover art yet carry `cover: null`.
+    ...(product.cover ? { image: `${SITE_URL}${product.cover}` } : {}),
     brand: {
       '@type': 'Brand',
       name: 'Sound of Essentials',
@@ -168,8 +170,8 @@ export function productsSchema() {
     audience: {
       '@type': 'EducationalAudience',
       educationalRole: 'student',
-      suggestedMinAge: 3,
-      suggestedMaxAge: 9,
+      suggestedMinAge: 2,
+      suggestedMaxAge: 7,
     },
     offers: {
       '@type': 'Offer',

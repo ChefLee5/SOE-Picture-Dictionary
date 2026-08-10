@@ -7,6 +7,7 @@ import { assetPath } from '../utils/assetPath';
 import { RevealSection } from '../hooks/useReveal';
 import { useAnimeReveal } from '../hooks/useAnimeReveal';
 import tracksData from '../data/tracks.json';
+import { audioUrl } from '../utils/audioUrl';
 import JsonLd from '../components/JsonLd';
 import { mediaRoomSchema } from '../utils/schema';
 
@@ -395,7 +396,7 @@ const MediaRoom = () => {
     domain: t(`media.tracks.${track.id}.domain`),
     domainIcon: track.domainIcon,
     desc: t(`media.tracks.${track.id}.desc`),
-    src: assetPath(`/audio/${track.audioFile}`),
+    src: audioUrl(track.audioFile),
     color: track.color,
     lyrics: track.lyrics,
     cover: assetPath(`/assets/track-art/${track.cover}`),

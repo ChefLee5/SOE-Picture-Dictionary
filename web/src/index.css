@@ -283,7 +283,10 @@ img {
 
 .btn-gold {
   background: linear-gradient(135deg, var(--color-orange), var(--color-orange-light));
-  color: #fff;
+  /* #fff on #FF6F00 measures 2.81:1 — below the design system's 4.5:1 floor.
+     --color-text-dark measures 6.11:1 on #FF6F00 and 7.91:1 on #FF9800,
+     so it passes across the whole gradient. Measured in-browser 2026-08-10. */
+  color: var(--color-text-dark);
   box-shadow: 0 4px 20px var(--color-orange-soft);
 }
 

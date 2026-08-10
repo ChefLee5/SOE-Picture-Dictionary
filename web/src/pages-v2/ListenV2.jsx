@@ -7,6 +7,7 @@ import CharSplitText from '../components-v2/CharSplitText';
 import { RevealV2 } from '../hooks/useScrollReveal';
 import BeehiivSubscribeForm from '../components/BeehiivSubscribeForm';
 import tracksData from '../data/tracks.json';
+import { audioUrl } from '../utils/audioUrl';
 
 const STORAGE_KEY = 'soe_listen_unlocked';
 
@@ -30,7 +31,7 @@ const ListenV2 = () => {
     domainIcon: track.domainIcon,
     color: track.color,
     cover: assetPath(`/assets/track-art/${track.cover}`),
-    src: assetPath(`/audio/${track.audioFile}`),
+    src: audioUrl(track.audioFile),
   }));
 
   const unlock = () => {
