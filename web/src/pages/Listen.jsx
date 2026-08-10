@@ -124,7 +124,7 @@ const Listen = () => {
                 alt="The Sound of Essentials: Rhythm Quest album cover"
                 loading="eager"
               />
-              <span className="listen-cover__badge">19 Tracks • Ages 2–8</span>
+              <span className="listen-cover__badge">19 Tracks • Ages 2–7</span>
             </div>
           </div>
         </div>
@@ -143,7 +143,7 @@ const Listen = () => {
               <div className="listen-proof__label">Learning Domains</div>
             </div>
             <div className="listen-proof__stat">
-              <div className="listen-proof__number">3,400+</div>
+              <div className="listen-proof__number">4,000+</div>
               <div className="listen-proof__label">Words in the Dictionary</div>
             </div>
           </div>

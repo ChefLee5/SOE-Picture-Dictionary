@@ -158,11 +158,11 @@ const Home = () => {
 
         {/* Bottom info strip */}
         <div className="hero__info-strip">
-          <span>🎵 14 Characters</span>
+          <span>🎵 15 Characters</span>
           <span className="hero__info-sep">·</span>
           <span>🗺️ 7 Musical Lands</span>
           <span className="hero__info-sep">·</span>
-          <span>📚 Ages 2–8</span>
+          <span>📚 Ages 2–7</span>
         </div>
 
         <div className="hero__scroll-hint" aria-hidden="true"><span>↓</span></div>

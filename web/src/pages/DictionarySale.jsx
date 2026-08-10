@@ -29,7 +29,7 @@ const dictLandNames = {
 };
 
 const features = [
-  { icon: '📖', title: '3,400+ Words', desc: 'Organized across 125 illustrated scenes spanning the full Oxford Picture Dictionary scope.', color: '#FF6F00' },
+  { icon: '📖', title: '4,000+ Words', desc: 'Organized across 125 illustrated scenes spanning the full Oxford Picture Dictionary scope.', color: '#FF6F00' },
   { icon: '🔤', title: 'Phonetic Guides', desc: 'Every word includes pronunciation support — Sound Before Symbol, always.', color: '#4CAF50' },
   { icon: '🌍', title: 'Bilingual EN/ES', desc: 'Built-in bilingual framework with space for home language equity.', color: '#1E88E5' },
   { icon: '🗺️', title: '7 Lands', desc: 'From Harmonia to Celestia — vocabulary embedded in a living, character-driven world.', color: '#7B1FA2' },
@@ -83,7 +83,7 @@ const DictionarySale = () => {
   const scrollRef = useRef(null);
 
   useEffect(() => {
-    document.title = 'SOE Rhythm Quest: Essential Picture Dictionary — 3,400+ Words Across 7 Lands';
+    document.title = 'SOE Rhythm Quest: Essential Picture Dictionary — 4,000+ Words Across 7 Lands';
   }, []);
 
   /* Build the character parade — double the array for seamless loop */
@@ -120,7 +120,7 @@ const DictionarySale = () => {
             </h1>
             <p className="section-subtitle dict-hero__subtitle">
               The most immersive picture dictionary ever designed for young learners.
-              3,400+ words. 125 illustrated scenes. 7 magical lands.
+              4,000+ words. 125 illustrated scenes. 7 magical lands.
               Powered by music, guided by 15 hero characters.
             </p>
             <div className="dict-hero__price-tag">
@@ -160,7 +160,7 @@ const DictionarySale = () => {
       <div className="dict-proof-strip">
         <div className="dict-proof-strip__inner">
           <div className="dict-proof-item">
-            <span className="dict-proof-item__value">3,400+</span>
+            <span className="dict-proof-item__value">4,000+</span>
             <span className="dict-proof-item__label">Vocabulary Words</span>
           </div>
           <div className="dict-proof-item">
@@ -408,7 +408,7 @@ const DictionarySale = () => {
                 Start the Quest Today
               </h2>
               <p className="section-subtitle" style={{ marginTop: '1rem' }}>
-                3,400 words. 7 Lands. 15 heroes. One incredible journey.
+                4,000+ words. 7 Lands. 15 heroes. One incredible journey.
                 <br />
                 <span style={{ color: 'var(--color-green)', fontWeight: 600 }}>
                   Crafted by a father's heart and mother's love.
