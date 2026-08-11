@@ -304,7 +304,12 @@ const Listen = () => {
             </section>
 
             {/* ── Coloring Book ── */}
-            <section className="section glow-plum">
+            {/* Anchor for deep links (Email 0 promises the coloring pages as their own
+                destination). NOTE: #coloring does not scroll yet — the unlock effect
+                above calls setSearchParams, which rebuilds the URL without the hash,
+                and this SPA has no scroll-to-hash handler. Landing is correct, the
+                jump is not. Fix both before advertising the anchor in copy. */}
+            <section className="section glow-plum" id="coloring">
               <div className="container">
                 <RevealSection className="text-center">
                   <div className="section-label">{t('media.coloring_label')}</div>
