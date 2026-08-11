@@ -659,17 +659,17 @@ const questWeeks = [
     landId: 'luminosity',
     page: 17,
     art: 'march-luminosity.webp',
-    tracks: ['Le Cheval', 'Hard Words'],
-    task: 'Pick one hard word a day. Say it, spell it, use it at dinner.',
-    note: 'Le Cheval is sung in French. Saying one line back is the whole exercise.',
+    tracks: ['Le Cheval'],
+    task: 'Say one line back in French. That is the whole exercise.',
+    note: 'Le Cheval is sung in French. Hearing a second language is the lesson.',
   },
   {
     landId: 'aquaria',
     page: 35,
     art: 'b-roll-boats.webp',
-    tracks: [],
-    task: 'Name one feeling a day. Then say where it sits in the body.',
-    note: 'Some weeks should be slower. This is the one.',
+    tracks: ['Hard Words'],
+    task: 'Pick one hard word a day. Say it, spell it, use it at dinner.',
+    note: 'Name one feeling a day too, and say where it sits in the body.',
   },
   {
     landId: 'terrasol',
@@ -860,8 +860,11 @@ const RqQuestMap = () => {
                                 <span key={t} className="rq-qmap__chip">{t}</span>
                               ))
                             ) : (
+                              /* Every Land has a song as of 2026-08-10. Kept as a guard so a
+                                 future data change degrades quietly instead of rendering an
+                                 empty row. */
                               <span className="rq-qmap__chip rq-qmap__chip--quiet">
-                                Read the water instead
+                                Read together this week
                               </span>
                             )}
                           </span>
