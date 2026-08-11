@@ -10,7 +10,11 @@ import { useEffect, useRef } from 'react';
  * postMessage event; the only documented success signal is a dashboard-configured
  * post-submission redirect URL (see callers that read a query param on mount).
  */
-const BEEHIIV_FORM_ID = '7adc612d-4edf-4d38-9cc5-192c7f376963';
+// Must be an INLINE form. A popup-type form ignores this container and overlays
+// the page on its own trigger instead, leaving the embed slot empty — which is
+// indistinguishable, on the page, from the dead-form-ID failure this replaced.
+// Verify with: GET subscribe-forms.beehiiv.com/api/v3/forms/<id> → render_type.
+const BEEHIIV_FORM_ID = '136770c4-5130-4baa-a77c-cc824baa4ddb';
 
 const BeehiivSubscribeForm = ({ className = '' }) => {
     const containerRef = useRef(null);
