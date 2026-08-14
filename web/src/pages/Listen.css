@@ -102,12 +102,14 @@
   display: block;
 }
 
+/* Sits BELOW the sleeve, not on it. The album cover carries its own subtitle
+   ("A Musical Learning Experience") across the bottom edge, and an overlaid
+   badge clipped it. Nothing should be printed over the artwork. */
 .listen-cover__badge {
-  position: absolute;
-  bottom: 12px;
-  right: 12px;
+  display: block;
+  width: fit-content;
+  margin: 0.9rem auto 0;
   background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(8px);
   color: #fff;
   font-family: var(--font-heading);
   font-size: 0.72rem;

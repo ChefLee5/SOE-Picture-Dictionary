@@ -204,7 +204,15 @@ img {
 }
 
 .text-gold {
-  color: var(--color-orange);
+  /* --color-orange (#FF6F00) as foreground measures 2.79:1 on white and 2.65:1 on
+     cream, which fails even the 3:1 large-text threshold. This utility is used 27
+     times across 10 pages, almost all as heading accent spans.
+     --color-text-primary (#E65100) is the palette's own text orange: 3.79:1 on white,
+     3.60:1 on cream, so it clears large text.
+     NOTE: still short of the design system's blanket 4.5:1. Clearing that needs a
+     darker brand orange (#C2410C measures 5.18:1) - a brand decision, not a bug fix.
+     Do not use this utility on body-size text until that call is made. */
+  color: var(--color-text-primary);
 }
 
 .text-sage {
@@ -283,7 +291,10 @@ img {
 
 .btn-gold {
   background: linear-gradient(135deg, var(--color-orange), var(--color-orange-light));
-  color: #fff;
+  /* #fff on #FF6F00 measures 2.81:1 — below the design system's 4.5:1 floor.
+     --color-text-dark measures 6.11:1 on #FF6F00 and 7.91:1 on #FF9800,
+     so it passes across the whole gradient. Measured in-browser 2026-08-10. */
+  color: var(--color-text-dark);
   box-shadow: 0 4px 20px var(--color-orange-soft);
 }
 

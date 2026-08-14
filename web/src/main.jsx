@@ -4,8 +4,11 @@ import { BrowserRouter } from 'react-router-dom'
 import './index.css'
 import App from './App.jsx'
 import './i18n/config'
+import { initAnalytics } from './lib/analytics'
 
 const basename = import.meta.env.BASE_URL === '/' ? '/' : import.meta.env.BASE_URL.replace(/\/$/, '');
+
+initAnalytics();
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

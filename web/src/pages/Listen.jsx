@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { assetPath } from '../utils/assetPath';
 import { RevealSection } from '../hooks/useReveal';
 import tracksData from '../data/tracks.json';
+import { audioUrl } from '../utils/audioUrl';
 import JsonLd from '../components/JsonLd';
 import { mediaRoomSchema } from '../utils/schema';
 import BeehiivSubscribeForm from '../components/BeehiivSubscribeForm';
@@ -41,7 +42,7 @@ const Listen = () => {
     domain: t(`media.tracks.${track.id}.domain`),
     domainIcon: track.domainIcon,
     desc: t(`media.tracks.${track.id}.desc`),
-    src: assetPath(`/audio/${track.audioFile}`),
+    src: audioUrl(track.audioFile),
     color: track.color,
     lyrics: track.lyrics,
     cover: assetPath(`/assets/track-art/${track.cover}`),
@@ -119,11 +120,16 @@ const Listen = () => {
             <div className="listen-cover__img-wrap">
               <img
                 className="listen-cover__img"
-                src={assetPath('/assets/marketing/quest-collage.webp')}
-                alt="The Sound of Essentials: Rhythm Quest album cover"
+                src={assetPath('/assets/marketing/soe-deluxe-cover.webp')}
+                srcSet={`${assetPath('/assets/marketing/soe-deluxe-cover-600.webp')} 600w, ${assetPath('/assets/marketing/soe-deluxe-cover.webp')} 1200w`}
+                sizes="(max-width: 600px) 100vw, 600px"
+                width="1200"
+                height="1200"
+                alt="The Sound of Essentials: A Musical Learning Experience — album cover. Seriphia holds a glowing open book, ringed by a golden staff of musical notes, with seven children gathered around her and a lit path winding into the hills behind."
                 loading="eager"
+                fetchPriority="high"
               />
-              <span className="listen-cover__badge">19 Tracks • Ages 2–8</span>
+              <span className="listen-cover__badge">19 Tracks • Ages 2–7</span>
             </div>
           </div>
         </div>
@@ -142,7 +148,7 @@ const Listen = () => {
               <div className="listen-proof__label">Learning Domains</div>
             </div>
             <div className="listen-proof__stat">
-              <div className="listen-proof__number">3,400+</div>
+              <div className="listen-proof__number">4,000+</div>
               <div className="listen-proof__label">Words in the Dictionary</div>
             </div>
           </div>
@@ -298,7 +304,12 @@ const Listen = () => {
             </section>
 
             {/* ── Coloring Book ── */}
-            <section className="section glow-plum">
+            {/* Anchor for deep links (Email 0 promises the coloring pages as their own
+                destination). NOTE: #coloring does not scroll yet — the unlock effect
+                above calls setSearchParams, which rebuilds the URL without the hash,
+                and this SPA has no scroll-to-hash handler. Landing is correct, the
+                jump is not. Fix both before advertising the anchor in copy. */}
+            <section className="section glow-plum" id="coloring">
               <div className="container">
                 <RevealSection className="text-center">
                   <div className="section-label">{t('media.coloring_label')}</div>

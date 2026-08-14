@@ -348,7 +348,7 @@ const Mission = () => {
                     </p>
                   </div>
                   <div className="flow-column">
-                    <p className="flow-column__title">3,400+ Words</p>
+                    <p className="flow-column__title">4,000+ Words</p>
                     <p className="flow-column__text">
                       A picture dictionary hand-illustrated across 125 scenes. Not stock. Not AI. Hand-drawn.
                     </p>
