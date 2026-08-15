@@ -63,9 +63,15 @@ const Listen = () => {
 
   // ── Beehiiv subscribe success detection ─────────────────────
   // Beehiiv's embed widget has no JS success callback — the form's Beehiiv
-  // dashboard config redirects back here with ?unlocked=true on a real signup.
+  // dashboard config redirects back here with ?unlocked=true (or ?_bhref=subscribe-forms / ?email=...) on a real signup.
   useEffect(() => {
-    if (searchParams.get('unlocked') !== 'true') return;
+    const isBeehiivRedirect =
+      searchParams.get('unlocked') === 'true' ||
+      searchParams.get('_bhref') === 'subscribe-forms' ||
+      searchParams.has('email') ||
+      searchParams.has('subscriber_id');
+
+    if (!isBeehiivRedirect) return;
 
     if (typeof window !== 'undefined') {
       if (window.gtag) {
@@ -87,6 +93,9 @@ const Listen = () => {
     setSearchParams((prev) => {
       const next = new URLSearchParams(prev);
       next.delete('unlocked');
+      next.delete('_bhref');
+      next.delete('email');
+      next.delete('subscriber_id');
       return next;
     }, { replace: true });
     // eslint-disable-next-line react-hooks/exhaustive-deps
