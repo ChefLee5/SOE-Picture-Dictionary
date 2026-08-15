@@ -20,7 +20,7 @@ import './RhythmQuestSale.css';
  * an absolute https:// URL renders a plain <a>. Rendering an absolute URL
  * through <Link> would make react-router treat it as a relative path and 404.
  */
-const CHECKOUT_URL = '/join';
+const CHECKOUT_URL = 'https://the-sound-of-essentials.myshopify.com/cart/53204514799932:1';
 const CHECKOUT_IS_ABSOLUTE = /^https?:\/\//i.test(CHECKOUT_URL);
 
 /** The page's only buy control. Every CTA goes through it. */
