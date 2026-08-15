@@ -16,6 +16,7 @@ import {
   soeBookPages,
   galleryShots,
 } from './MediaRoom';
+import { triggerQuestCelebration, TiltCard, MagneticPill } from '../components/ui/DesignSpells';
 import './Listen.css';
 
 const STORAGE_KEY = 'soe_listen_unlocked';
@@ -57,6 +58,7 @@ const Listen = () => {
     try { localStorage.setItem(STORAGE_KEY, '1'); } catch { /* ignore localStorage error */ }
     setIsUnlocked(true);
     setJustUnlocked(true);
+    triggerQuestCelebration();
   };
 
   // ── Beehiiv subscribe success detection ─────────────────────
@@ -117,20 +119,22 @@ const Listen = () => {
             Designed for the developing brain — not the algorithm.
           </p>
           <div className="listen-cover">
-            <div className="listen-cover__img-wrap">
-              <img
-                className="listen-cover__img"
-                src={assetPath('/assets/marketing/soe-deluxe-cover.webp')}
-                srcSet={`${assetPath('/assets/marketing/soe-deluxe-cover-600.webp')} 600w, ${assetPath('/assets/marketing/soe-deluxe-cover.webp')} 1200w`}
-                sizes="(max-width: 600px) 100vw, 600px"
-                width="1200"
-                height="1200"
-                alt="The Sound of Essentials: A Musical Learning Experience — album cover. Seriphia holds a glowing open book, ringed by a golden staff of musical notes, with seven children gathered around her and a lit path winding into the hills behind."
-                loading="eager"
-                fetchPriority="high"
-              />
-              <span className="listen-cover__badge">19 Tracks • Ages 2–7</span>
-            </div>
+            <TiltCard style={{ display: 'inline-block' }}>
+              <div className="listen-cover__img-wrap">
+                <img
+                  className="listen-cover__img"
+                  src={assetPath('/assets/marketing/soe-deluxe-cover.webp')}
+                  srcSet={`${assetPath('/assets/marketing/soe-deluxe-cover-600.webp')} 600w, ${assetPath('/assets/marketing/soe-deluxe-cover.webp')} 1200w`}
+                  sizes="(max-width: 600px) 100vw, 600px"
+                  width="1200"
+                  height="1200"
+                  alt="The Sound of Essentials: A Musical Learning Experience — album cover. Seriphia holds a glowing open book, ringed by a golden staff of musical notes, with seven children gathered around her and a lit path winding into the hills behind."
+                  loading="eager"
+                  fetchPriority="high"
+                />
+                <span className="listen-cover__badge">19 Tracks • Ages 2–7</span>
+              </div>
+            </TiltCard>
           </div>
         </div>
       </section>
@@ -170,42 +174,49 @@ const Listen = () => {
 
           <div className="listen-preview__grid">
             {tracks.map((track, i) => (
-              <div
+              <TiltCard
                 key={track.id}
-                className="listen-preview__card"
-                style={{ '--card-accent': track.color }}
+                className="listen-preview__card-tilt"
+                accentColor={track.color}
               >
-                <div className="listen-preview__art-wrap">
-                  <img
-                    className="listen-preview__art"
-                    src={track.cover}
-                    alt={track.title}
-                    loading="lazy"
-                  />
-                  <span className="listen-preview__number">{String(i + 1).padStart(2, '0')}</span>
-                  {!isUnlocked && (
-                    <span className="listen-preview__lock">🔒</span>
-                  )}
+                <div
+                  className="listen-preview__card"
+                  style={{ '--card-accent': track.color }}
+                >
+                  <div className="listen-preview__art-wrap">
+                    <img
+                      className="listen-preview__art"
+                      src={track.cover}
+                      alt={track.title}
+                      loading="lazy"
+                    />
+                    <span className="listen-preview__number">{String(i + 1).padStart(2, '0')}</span>
+                    {!isUnlocked && (
+                      <span className="listen-preview__lock">🔒</span>
+                    )}
+                  </div>
+                  <div className="listen-preview__info">
+                    <h3 className="listen-preview__title">{track.title}</h3>
+                    <span
+                      className="listen-preview__domain"
+                      style={{ color: track.color }}
+                    >
+                      {track.domainIcon} {track.domain}
+                    </span>
+                    <p className="listen-preview__desc">{track.desc}</p>
+                  </div>
                 </div>
-                <div className="listen-preview__info">
-                  <h3 className="listen-preview__title">{track.title}</h3>
-                  <span
-                    className="listen-preview__domain"
-                    style={{ color: track.color }}
-                  >
-                    {track.domainIcon} {track.domain}
-                  </span>
-                  <p className="listen-preview__desc">{track.desc}</p>
-                </div>
-              </div>
+              </TiltCard>
             ))}
           </div>
 
           {!isUnlocked && (
             <div className="listen-preview__cta text-center" style={{ marginTop: '2.5rem' }}>
-              <a href="#optin" className="btn btn-gold" style={{ fontSize: '1rem', padding: '0.85rem 2.5rem' }}>
-                🎧 Unlock All 19 Tracks Free →
-              </a>
+              <MagneticPill intensity={0.25}>
+                <a href="#optin" className="btn btn-gold btn-shimmer" style={{ fontSize: '1rem', padding: '0.85rem 2.5rem' }}>
+                  🎧 Unlock All 19 Tracks Free →
+                </a>
+              </MagneticPill>
             </div>
           )}
         </div>

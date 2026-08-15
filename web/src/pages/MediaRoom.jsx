@@ -8,6 +8,7 @@ import { RevealSection } from '../hooks/useReveal';
 import { useAnimeReveal } from '../hooks/useAnimeReveal';
 import tracksData from '../data/tracks.json';
 import { audioUrl } from '../utils/audioUrl';
+import { triggerNoteBurst } from '../components/ui/DesignSpells';
 import JsonLd from '../components/JsonLd';
 import { mediaRoomSchema } from '../utils/schema';
 
@@ -243,7 +244,7 @@ export const AudioPlayer = ({ tracks }) => {
     }
   }, [currentTrack]);
 
-  const togglePlay = () => {
+  const togglePlay = (e) => {
     initAudio();
     if (audioContextRef.current?.state === 'suspended') {
       audioContextRef.current.resume();
@@ -253,6 +254,9 @@ export const AudioPlayer = ({ tracks }) => {
       audio.pause();
     } else {
       audio.play().catch(() => { });
+      if (e?.clientX && e?.clientY) {
+        triggerNoteBurst(e.clientX, e.clientY, track.color);
+      }
     }
     setIsPlaying(!isPlaying);
   };
@@ -266,14 +270,17 @@ export const AudioPlayer = ({ tracks }) => {
     setProgress(pct * duration);
   };
 
-  const selectTrack = (i) => {
+  const selectTrack = (i, e) => {
     initAudio();
     if (audioContextRef.current?.state === 'suspended') {
       audioContextRef.current.resume();
     }
     if (i === currentTrack && isPlaying) {
-      togglePlay();
+      togglePlay(e);
       return;
+    }
+    if (e?.clientX && e?.clientY) {
+      triggerNoteBurst(e.clientX, e.clientY, tracks[i]?.color || '#FF6F00');
     }
     setCurrentTrack(i);
     setIsPlaying(true);
@@ -309,7 +316,7 @@ export const AudioPlayer = ({ tracks }) => {
 
       {/* Controls */}
       <div className="audio-player__controls">
-        <button className="audio-player__play-btn" onClick={togglePlay} aria-label={isPlaying ? 'Pause' : 'Play'}>
+        <button className="audio-player__play-btn" onClick={(e) => togglePlay(e)} aria-label={isPlaying ? 'Pause' : 'Play'}>
           {isPlaying ? (
             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1" /><rect x="14" y="4" width="4" height="16" rx="1" /></svg>
           ) : (
@@ -355,7 +362,7 @@ export const AudioPlayer = ({ tracks }) => {
           <button
             key={t.id}
             className={`audio-player__track ${i === currentTrack ? 'audio-player__track--active' : ''}`}
-            onClick={() => selectTrack(i)}
+            onClick={(e) => selectTrack(i, e)}
             aria-label={`Play ${t.title}`}
           >
             {t.cover ? (

@@ -256,6 +256,35 @@
   line-height: 1.5;
 }
 
+/* ── Shimmer & Spell Enhancements ── */
+.btn-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shimmer::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -60%;
+  width: 50%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    rgba(255, 255, 255, 0) 20%,
+    rgba(255, 255, 255, 0.45) 50%,
+    rgba(255, 255, 255, 0) 80%
+  );
+  transform: rotate(25deg);
+  animation: btnShimmerSweep 4s infinite ease-in-out;
+  pointer-events: none;
+}
+
+@keyframes btnShimmerSweep {
+  0% { transform: translateX(-100%) rotate(25deg); }
+  25%, 100% { transform: translateX(450%) rotate(25deg); }
+}
+
 /* ── Unlocked Banner ── */
 .listen-unlocked-banner {
   padding: 2.5rem 0 1.5rem;
