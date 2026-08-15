@@ -26,7 +26,20 @@ const Listen = () => {
 
   // ── Gate State (persisted) ──────────────────────────────────
   const [isUnlocked, setIsUnlocked] = useState(() => {
-    try { return localStorage.getItem(STORAGE_KEY) === '1'; } catch { return false; }
+    try {
+      const urlParams = typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : null;
+      const isParamUnlocked = urlParams && (
+        urlParams.get('unlocked') === 'true' ||
+        urlParams.get('_bhref') === 'subscribe-forms' ||
+        urlParams.has('email') ||
+        urlParams.has('subscriber_id')
+      );
+      if (isParamUnlocked) {
+        localStorage.setItem(STORAGE_KEY, '1');
+        return true;
+      }
+      return localStorage.getItem(STORAGE_KEY) === '1';
+    } catch { return false; }
   });
 
   const [searchParams, setSearchParams] = useSearchParams();
@@ -120,13 +133,24 @@ const Listen = () => {
       {/* ── Hero ── */}
       <section className="listen-hero">
         <div className="container">
-          <span className="listen-hero__eyebrow">🎵 Free Preview • 19 Tracks</span>
+          <span className="listen-hero__eyebrow">🎵 {isUnlocked ? 'Full Quest Unlocked • 19 Tracks' : 'Free Preview • 19 Tracks'}</span>
           <h1 className="listen-hero__title">
             Hear What <em>Learning</em> Sounds Like
           </h1>
           <p className="section-subtitle listen-hero__subtitle">
             Designed for the developing brain — not the algorithm.
           </p>
+
+          {!isUnlocked && (
+            <div style={{ margin: '1.5rem auto 2rem auto', display: 'flex', justifyContent: 'center' }}>
+              <MagneticPill intensity={0.25}>
+                <a href="#optin" className="btn btn-gold btn-shimmer" style={{ fontSize: '1.05rem', padding: '0.9rem 2.5rem' }}>
+                  🎧 Unlock All 19 Tracks Free →
+                </a>
+              </MagneticPill>
+            </div>
+          )}
+
           <div className="listen-cover">
             <TiltCard style={{ display: 'inline-block' }}>
               <div className="listen-cover__img-wrap">
