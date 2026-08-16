@@ -44,15 +44,16 @@ const Footer = () => {
             <Link to="/heroes" className="footer__link">{t('navbar.heroes')}</Link>
             <Link to="/science" className="footer__link">{t('footer.sci_sound')}</Link>
             <Link to="/mission" className="footer__link">{t('navbar.mission')}</Link>
-            <Link to="/listen" className="footer__link">{t('navbar.media')}</Link>
+            <Link to="/allies" className="footer__link">🤝 Ally Annex</Link>
           </div>
 
-          {/* Get Involved */}
+          {/* Shop & Quest Products */}
           <div className="footer__col">
-            <h4 className="footer__heading">{t('footer.get_involved')}</h4>
+            <h4 className="footer__heading">Shop &amp; Quest</h4>
+            <Link to="/listen" className="footer__link">🎧 Free 19-Track Album</Link>
+            <Link to="/rhythm-quest" className="footer__link">📖 Rhythm Quest ($19)</Link>
+            <Link to="/dictionary" className="footer__link">📚 Picture Dictionary ($55)</Link>
             <Link to="/join" className="footer__link">{t('hero.join_button')}</Link>
-            <Link to="/join" className="footer__link">{t('footer.partner')}</Link>
-            <Link to="/join" className="footer__link">{t('footer.newsletter')}</Link>
           </div>
 
           {/* Stay Connected */}

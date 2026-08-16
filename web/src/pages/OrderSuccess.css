@@ -1,0 +1,389 @@
+/* ========================================
+   OrderSuccess — Post-Purchase Fulfillment Portal
+   Joyful. Friction-free. High-touch.
+   ======================================== */
+
+.order-success-page {
+  padding-top: 8.5rem;
+  padding-bottom: 6rem;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.order-success__glow {
+  position: absolute;
+  top: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(255, 111, 0, 0.12) 0%, transparent 65%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.order-success-page .container {
+  position: relative;
+  z-index: 1;
+  max-width: 960px;
+}
+
+/* ── Header Celebration ── */
+.order-success__header {
+  margin-bottom: 3rem;
+}
+
+.order-success__badge-icon {
+  font-size: 3.5rem;
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  filter: drop-shadow(0 8px 20px rgba(255, 111, 0, 0.25));
+}
+
+.order-success__eyebrow {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-green);
+  background: rgba(76, 175, 80, 0.12);
+  padding: 0.35rem 1.2rem;
+  border-radius: var(--radius-xl);
+  margin-bottom: 1rem;
+}
+
+.order-success__title {
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  color: var(--color-text-dark);
+  line-height: 1.15;
+  margin-bottom: 0.75rem;
+}
+
+.order-success__subtitle {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+  max-width: 580px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ── Main Fulfillment Card ── */
+.order-success__main {
+  margin-bottom: 4rem;
+}
+
+.order-success__card {
+  padding: 2.5rem;
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid var(--color-orange);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 20px 50px rgba(255, 111, 0, 0.12);
+}
+
+.order-success__card-grid {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.order-success__cover-wrap {
+  position: relative;
+  text-align: center;
+}
+
+.order-success__cover-img {
+  width: 100%;
+  max-width: 240px;
+  border-radius: var(--radius-md);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.15);
+  display: block;
+  margin: 0 auto;
+}
+
+.order-success__format-tag {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+  background: rgba(0, 0, 0, 0.05);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-sm);
+}
+
+.order-success__meta-row {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.85rem;
+}
+
+.order-success__pages-badge,
+.order-success__size-badge,
+.order-success__age-badge {
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-xl);
+}
+
+.order-success__pages-badge {
+  background: rgba(255, 111, 0, 0.12);
+  color: var(--color-orange);
+}
+
+.order-success__size-badge {
+  background: rgba(76, 175, 80, 0.12);
+  color: var(--color-green);
+}
+
+.order-success__age-badge {
+  background: rgba(30, 136, 229, 0.12);
+  color: #1E88E5;
+}
+
+.order-success__product-title {
+  font-size: 1.65rem;
+  color: var(--color-text-dark);
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+.order-success__product-desc {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: 1.75rem;
+}
+
+.order-success__actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.order-success__dl-btn {
+  font-size: 1.05rem;
+  padding: 0.9rem 2.2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.order-success__bookmark-tip {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  padding: 0.75rem 1rem;
+  background: rgba(0, 0, 0, 0.03);
+  border-radius: var(--radius-sm);
+}
+
+.order-success__copy-link-btn {
+  background: none;
+  border: none;
+  color: var(--color-orange);
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  font-size: inherit;
+}
+
+/* ── Device Quick-Guide ── */
+.order-success__guide {
+  margin-bottom: 4rem;
+}
+
+.order-success__tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.order-success__tab {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--color-border);
+  padding: 0.65rem 1.4rem;
+  border-radius: var(--radius-xl);
+  font-family: var(--font-heading);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: all 0.25s var(--ease-gentle);
+}
+
+.order-success__tab:hover {
+  border-color: var(--color-orange);
+  color: var(--color-orange);
+}
+
+.order-success__tab--active {
+  background: var(--color-orange);
+  color: #fff;
+  border-color: var(--color-orange);
+  box-shadow: 0 4px 16px rgba(255, 111, 0, 0.25);
+}
+
+.order-success__tab-content {
+  padding: 2rem;
+  border-radius: var(--radius-md);
+}
+
+.order-success__guide-item h3 {
+  font-size: 1.25rem;
+  color: var(--color-text-dark);
+  margin-bottom: 1rem;
+}
+
+.order-success__guide-item ol {
+  padding-left: 1.5rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.order-success__guide-item li {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+/* ── Audio Launch Strip ── */
+.order-success__audio-launch {
+  margin-bottom: 4rem;
+}
+
+.order-success__launch-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem 2.5rem;
+  background: linear-gradient(135deg, rgba(76, 175, 80, 0.08), rgba(30, 136, 229, 0.08));
+  border: 2px solid var(--color-green);
+  border-radius: var(--radius-lg);
+}
+
+.order-success__launch-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.order-success__launch-content {
+  flex: 1;
+}
+
+.order-success__launch-content h3 {
+  font-size: 1.35rem;
+  color: var(--color-text-dark);
+  margin-bottom: 0.4rem;
+}
+
+.order-success__launch-content p {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ── Ascension Offers ── */
+.order-success__ascension {
+  margin-bottom: 2rem;
+}
+
+.order-success__ascension-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.order-success__ascension-card {
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+}
+
+.order-success__ascension-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-orange);
+  margin-bottom: 0.75rem;
+}
+
+.order-success__ascension-card h3 {
+  font-size: 1.25rem;
+  color: var(--color-text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.order-success__ascension-card p {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.order-success__ascension-price {
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+}
+
+.order-success__ascension-price strong {
+  font-size: 1.6rem;
+  color: var(--color-text-dark);
+  font-family: var(--font-heading);
+}
+
+.order-success__ascension-price span {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+}
+
+.order-success__ascension-card .btn {
+  width: 100%;
+  justify-content: center;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .order-success__card-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .order-success__meta-row {
+    justify-content: center;
+  }
+
+  .order-success__actions {
+    justify-content: center;
+  }
+
+  .order-success__launch-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .order-success__ascension-grid {
+    grid-template-columns: 1fr;
+  }
+}

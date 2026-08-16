@@ -17,6 +17,7 @@ import {
   galleryShots,
 } from './MediaRoom';
 import { triggerQuestCelebration, TiltCard, MagneticPill } from '../components/ui/DesignSpells';
+import './MediaRoom.css';
 import './Listen.css';
 
 const STORAGE_KEY = 'soe_listen_unlocked';
@@ -48,6 +49,19 @@ const Listen = () => {
   // ── Book viewer state ───────────────────────────────────────
   const [bookIndex, setBookIndex] = useState(0);
   const [soeBookIndex, setSoeBookIndex] = useState(0);
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyShareLink = () => {
+    try {
+      const shareUrl = typeof window !== 'undefined' ? `${window.location.origin}/listen` : 'https://thesoundofessentials.com/listen';
+      navigator.clipboard.writeText(shareUrl);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2500);
+    } catch {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2500);
+    }
+  };
 
   // ── Track data (for AudioPlayer + JSON-LD) ──────────────────
   const tracks = tracksData.map(track => ({
@@ -297,6 +311,32 @@ const Listen = () => {
               </section>
             )}
 
+            {/* ── Tripwire Companion Upsell Bridge ── */}
+            <section className="listen-tripwire-bridge">
+              <div className="container">
+                <div className="listen-tripwire-card glass-card">
+                  <div className="listen-tripwire-card__content">
+                    <span className="listen-tripwire-card__badge">✨ Level Up The Experience</span>
+                    <h3 className="listen-tripwire-card__title">
+                      Bring The Music To Life With The 66-Page Storybook
+                    </h3>
+                    <p className="listen-tripwire-card__text">
+                      Seriphia guides Kenji &amp; Aiko through all 7 Lands, paired track-by-track with the album and featuring the <em>My Word Quest</em> visual glossary.
+                    </p>
+                  </div>
+                  <div className="listen-tripwire-card__action">
+                    <div className="listen-tripwire-card__price">
+                      <span className="listen-tripwire-card__price-tag">$19</span>
+                      <span className="listen-tripwire-card__price-sub">Digital Storybook</span>
+                    </div>
+                    <Link to="/rhythm-quest" className="btn btn-gold btn-shimmer" style={{ fontSize: '1.02rem', padding: '0.85rem 1.8rem' }}>
+                      Get Rhythm Quest ($19) →
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </section>
+
             {/* ── Full Audio Player (from MediaRoom) ── */}
             <section className="section glow-sage">
               <div className="container">
@@ -417,7 +457,9 @@ const Listen = () => {
                         disabled={soeBookIndex === soeBookPages.length - 1} aria-label="Next page">{t('media.next')}</button>
                     </div>
                     <div className="text-center" style={{ marginTop: '1.5rem' }}>
-                      <Link to="/join" className="btn btn-gold">{t('media.pre_order_book')}</Link>
+                      <Link to="/rhythm-quest" className="btn btn-gold btn-shimmer" style={{ fontSize: '1.05rem', padding: '0.85rem 2.2rem' }}>
+                        📖 Get the Full 66-Page Rhythm Quest Storybook ($19) →
+                      </Link>
                     </div>
                   </div>
                 </RevealSection>
@@ -530,6 +572,37 @@ const Listen = () => {
                       <div className="shape-card__fact">{s.fact}</div>
                     </div>
                   ))}
+                </div>
+              </div>
+            </section>
+
+            {/* ── Viral Referral Loop ("Gift a Free Track") ── */}
+            <section className="listen-referral-section section">
+              <div className="container">
+                <div className="listen-referral-card glass-card text-center">
+                  <div className="listen-referral-card__icon" aria-hidden="true">🎁</div>
+                  <h3 className="listen-referral-card__title">Gift Free Music to a Friend</h3>
+                  <p className="listen-referral-card__desc">
+                    Know a family, homeschool pod, or teacher who would love screen-free, music-powered learning?
+                    Share this free 19-track experience with them.
+                  </p>
+                  <div className="listen-referral-card__actions">
+                    <button
+                      onClick={handleCopyShareLink}
+                      className="btn btn-gold btn-shimmer"
+                      aria-label="Copy free invite link"
+                    >
+                      {copied ? '✅ Link Copied to Clipboard!' : '🔗 Copy Free Invite Link'}
+                    </button>
+                    <a
+                      href={`https://wa.me/?text=${encodeURIComponent("Hey! Check out this free 19-track musical learning experience & coloring book for kids: " + (typeof window !== 'undefined' ? window.location.origin + '/listen' : 'https://thesoundofessentials.com/listen'))}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-outline"
+                    >
+                      💬 Share on WhatsApp
+                    </a>
+                  </div>
                 </div>
               </div>
             </section>

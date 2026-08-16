@@ -126,14 +126,10 @@ const DictionarySale = () => {
             <div className="dict-hero__price-tag">
               <span className="dict-hero__price-retail">$79</span>
               <span className="dict-hero__price-listed">$55</span>
-              <span className="dict-hero__price-note">listed price</span>
-            </div>
-            <div className="dict-hero__price-tag">
-              <span className="dict-hero__price">$19</span>
-              <span className="dict-hero__price-note">ebook · pay what you like</span>
+              <span className="dict-hero__price-note">Pre-Sale Special · Honest Compare-At $79</span>
             </div>
             <div className="dict-hero__actions">
-              <Link to="/join" className="btn btn-gold">Get Your Copy</Link>
+              <a href="#pricing" className="btn btn-gold btn-shimmer">Pre-Order Now — $55 →</a>
               <a href="#preview" className="btn btn-outline">Preview Pages ↓</a>
             </div>
           </div>
@@ -337,53 +333,68 @@ const DictionarySale = () => {
         </div>
       </section>
 
-      {/* ═══ PAY WHAT YOU LIKE ═══ */}
-      <section className="dict-pricing section">
+      {/* ═══ CANONICAL PRICING & BUNDLE ═══ */}
+      <section className="dict-pricing section" id="pricing">
         <div className="container text-center">
           <RevealSection>
-            <div className="section-label">Pay What You Like</div>
+            <div className="section-label">Pre-Sale Offers</div>
             <h2 className="section-title" style={{ color: 'var(--color-text-dark)' }}>
-              Choose Your <span className="text-sage">Path</span>
+              Choose Your <span className="text-gold">Learning Journey</span>
             </h2>
             <p className="section-subtitle">
-              Fine arts education shouldn't require a trust fund.
+              Transparent, honest pricing crafted with love for growing minds (Ages 2–7).
             </p>
           </RevealSection>
 
           <RevealSection delay={0.15}>
-            <div className="dict-pricing__grid">
-              {/* Tier 1 */}
+            <div className="dict-pricing__grid dict-pricing__grid--two">
+              {/* Tier 1: Essential Picture Dictionary */}
               <div className="dict-price-card">
-                <span className="dict-price-card__emoji">🎁</span>
-                <div className="dict-price-card__label">Gift a Copy</div>
-                <div className="dict-price-card__price">$9</div>
-                <p className="dict-price-card__hook">
-                  Support a family who can't afford it. Your generosity plants a seed.
-                </p>
-                <Link to="/join" className="btn btn-outline">Gift a Copy</Link>
-              </div>
-
-              {/* Tier 2 — Featured */}
-              <div className="dict-price-card dict-price-card--featured">
-                <span className="dict-price-card__badge">Most Popular</span>
                 <span className="dict-price-card__emoji">📖</span>
-                <div className="dict-price-card__label">Get Your Copy</div>
-                <div className="dict-price-card__price">$19</div>
+                <div className="dict-price-card__label">Essential Picture Dictionary</div>
+                <div className="dict-price-card__price-wrap">
+                  <span className="dict-price-card__retail">$79</span>
+                  <span className="dict-price-card__price">$55</span>
+                  <span className="dict-price-card__discount-badge">SAVE 30%</span>
+                </div>
                 <p className="dict-price-card__hook">
-                  The full 125-scene dictionary. $79 retail value — yours as an ebook.
+                  The complete 4,000+ word visual vocabulary journey across 125 illustrated scenes. Instant digital EPUB delivery.
                 </p>
-                <Link to="/join" className="btn btn-gold">Get Your Copy</Link>
+                <ul className="dict-price-card__features">
+                  <li>✓ 4,000+ verified vocabulary words</li>
+                  <li>✓ 125 thematic illustrated scenes</li>
+                  <li>✓ All 7 Lands &amp; 15 heroes included</li>
+                  <li>✓ Phonetic pronunciation guides</li>
+                  <li>✓ Bilingual EN/ES support</li>
+                </ul>
+                <Link to="/join" className="btn btn-gold">
+                  Pre-Order Dictionary ($55) →
+                </Link>
               </div>
 
-              {/* Tier 3 */}
-              <div className="dict-price-card">
+              {/* Tier 2: The Full Quest Bundle — Featured */}
+              <div className="dict-price-card dict-price-card--featured">
+                <span className="dict-price-card__badge">Best Value • Complete Suite</span>
                 <span className="dict-price-card__emoji">🌟</span>
-                <div className="dict-price-card__label">Founding Supporter</div>
-                <div className="dict-price-card__price">$29+</div>
+                <div className="dict-price-card__label">The Full Quest Bundle</div>
+                <div className="dict-price-card__price-wrap">
+                  <span className="dict-price-card__retail">$148</span>
+                  <span className="dict-price-card__price">$89</span>
+                  <span className="dict-price-card__discount-badge">SAVE 40%</span>
+                </div>
                 <p className="dict-price-card__hook">
-                  Join the founding circle. Your name goes in the next edition.
+                  Everything for a full year of music-powered learning. Complete digital access across all core and premium products.
                 </p>
-                <Link to="/join" className="btn btn-sage">Become a Founder</Link>
+                <ul className="dict-price-card__features">
+                  <li>✓ Essential Picture Dictionary ($55 value)</li>
+                  <li>✓ 19-Track Rhythm Quest Album ($0 free)</li>
+                  <li>✓ 66-Page Rhythm Quest Storybook ($19 value)</li>
+                  <li>✓ Summer Stretch Workbook Digital ($21 value)</li>
+                  <li>✓ Bonus printable activity sheets &amp; parent guide</li>
+                </ul>
+                <Link to="/join" className="btn btn-gold btn-shimmer">
+                  Get Full Bundle ($89) →
+                </Link>
               </div>
             </div>
           </RevealSection>
@@ -415,8 +426,9 @@ const DictionarySale = () => {
                 </span>
               </p>
               <div className="dict-cta-actions">
-                <Link to="/join" className="btn btn-gold">Get the Dictionary — $19</Link>
-                <Link to="/join" className="btn btn-sage">Full Quest Bundle — $89</Link>
+                <a href="#pricing" className="btn btn-gold">Get the Dictionary — $55</a>
+                <a href="#pricing" className="btn btn-sage">Full Quest Bundle — $89</a>
+                <Link to="/rhythm-quest" className="btn btn-outline">Explore $19 Storybook →</Link>
               </div>
               <div className="dict-guarantee">
                 <span>🔒</span> Instant digital delivery · EPUB format · Read on any device

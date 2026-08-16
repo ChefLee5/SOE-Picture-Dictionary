@@ -16,7 +16,7 @@
       "Curriculum-aligned content"
     ],
     "trackCount": 19,
-    "ageRange": "Ages 2-7",
+    "ageRange": "Ages 2–7",
     "gradeRange": "Pre-K to Grade 2",
     "isbn": null,
     "cover": "/assets/marketing/quest-collage.webp",
@@ -31,7 +31,7 @@
     ],
     "funnelStage": "lead-magnet",
     "status": "available",
-    "storeUrl": null
+    "storeUrl": "/listen"
   },
   {
     "id": "rhythm-quest-ebook",
@@ -50,7 +50,7 @@
       "Paired to the 19-track album",
       "30-day money-back guarantee"
     ],
-    "ageRange": "Ages 2-7",
+    "ageRange": "Ages 2–7",
     "gradeRange": "Pre-K to Grade 2",
     "isbn": null,
     "cover": "/assets/book/soe-rhythm-quest-cover.webp",
@@ -62,9 +62,9 @@
       "seven-lands",
       "literacy"
     ],
-    "funnelStage": "lead-product",
+    "funnelStage": "tripwire",
     "status": "available",
-    "storeUrl": null
+    "storeUrl": "https://the-sound-of-essentials.myshopify.com/cart/53204514799932:1"
   },
   {
     "id": "summer-stretch-workbook",
@@ -84,10 +84,10 @@
       "All 15 hero characters featured",
       "Movement and mindfulness breaks"
     ],
-    "ageRange": "Ages 2-7",
+    "ageRange": "Ages 2–7",
     "gradeRange": "Pre-K to Grade 2",
     "isbn": null,
-    "cover": null,
+    "cover": "/assets/marketing/summer-stretch-cover.webp",
     "category": "education",
     "tags": [
       "workbook",
@@ -96,7 +96,7 @@
       "activities",
       "STEM"
     ],
-    "funnelStage": "second-sale",
+    "funnelStage": "core-offer",
     "status": "pre-sale",
     "storeUrl": null
   },
@@ -119,10 +119,10 @@
       "Parent/Teacher guide",
       "Bilingual EN/ES support"
     ],
-    "ageRange": "Pre-K through Grade 3",
-    "gradeRange": "K-3",
+    "ageRange": "Ages 2–7",
+    "gradeRange": "Pre-K to Grade 2",
     "isbn": null,
-    "cover": null,
+    "cover": "/assets/marketing/picture-dictionary-cover.webp",
     "category": "education",
     "tags": [
       "vocabulary",
@@ -131,7 +131,7 @@
       "bilingual",
       "phonics"
     ],
-    "funnelStage": "parked-b2c",
+    "funnelStage": "premium-offer",
     "status": "pre-sale",
     "storeUrl": null
   },
@@ -143,10 +143,11 @@
     "format": "Digital Bundle",
     "price": 89.0,
     "currency": "USD",
-    "description": "The complete Sound of Essentials learning experience. Includes the Rhythm Quest album (19 tracks), Essential Picture Dictionary, and Summer Stretch Workbook — everything a family needs for a full year of music-powered learning.",
+    "description": "The complete Sound of Essentials learning experience. Includes the Rhythm Quest album (19 tracks), Essential Picture Dictionary, Rhythm Quest Storybook, and Summer Stretch Workbook — everything a family needs for a full year of music-powered learning.",
     "features": [
       "19-track Rhythm Quest album",
       "Essential Picture Dictionary (EPUB)",
+      "66-page Rhythm Quest Storybook (EPUB)",
       "Summer Stretch Workbook (PDF)",
       "Bonus: printable activity sheets",
       "Bonus: parent quick-start guide"
@@ -154,12 +155,13 @@
     "includes": [
       "picture-dictionary",
       "summer-stretch-workbook",
-      "rhythm-quest-album"
+      "rhythm-quest-album",
+      "rhythm-quest-ebook"
     ],
-    "ageRange": "Pre-K through Grade 3",
-    "gradeRange": "K-3",
+    "ageRange": "Ages 2–7",
+    "gradeRange": "Pre-K to Grade 2",
     "isbn": null,
-    "cover": null,
+    "cover": "/assets/marketing/full-quest-bundle-cover.webp",
     "category": "education",
     "tags": [
       "bundle",
@@ -169,7 +171,7 @@
       "workbook",
       "dictionary"
     ],
-    "funnelStage": "parked",
+    "funnelStage": "bundle-offer",
     "status": "pre-sale",
     "storeUrl": null
   }

@@ -505,8 +505,152 @@
   animation: fadeIn 0.3s ease;
 }
 
+/* ── Tripwire Companion Upsell Bridge ── */
+.listen-tripwire-bridge {
+  padding: 1.5rem 0 2rem;
+}
+
+.listen-tripwire-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem 2.5rem;
+  background: linear-gradient(135deg, rgba(255, 248, 240, 0.95), rgba(255, 237, 213, 0.9));
+  border: 2px solid var(--color-orange);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 16px 36px rgba(255, 111, 0, 0.12);
+  position: relative;
+  overflow: hidden;
+}
+
+.listen-tripwire-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -20%;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(255, 111, 0, 0.15), transparent 70%);
+  pointer-events: none;
+}
+
+.listen-tripwire-card__content {
+  flex: 1;
+}
+
+.listen-tripwire-card__badge {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-orange);
+  background: rgba(255, 111, 0, 0.12);
+  padding: 0.3rem 0.9rem;
+  border-radius: var(--radius-xl);
+  margin-bottom: 0.75rem;
+}
+
+.listen-tripwire-card__title {
+  font-size: clamp(1.2rem, 2.8vw, 1.55rem);
+  color: var(--color-text-dark);
+  line-height: 1.25;
+  margin-bottom: 0.5rem;
+}
+
+.listen-tripwire-card__text {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  margin: 0;
+  max-width: 620px;
+}
+
+.listen-tripwire-card__action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.listen-tripwire-card__price {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35rem;
+}
+
+.listen-tripwire-card__price-tag {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--color-orange);
+}
+
+.listen-tripwire-card__price-sub {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
+/* ── Viral Referral Loop Card ── */
+.listen-referral-section {
+  padding: 4rem 0;
+}
+
+.listen-referral-card {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 3rem 2.5rem;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(79, 70, 229, 0.15);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.06);
+}
+
+.listen-referral-card__icon {
+  font-size: 2.75rem;
+  margin-bottom: 1rem;
+}
+
+.listen-referral-card__title {
+  font-size: 1.6rem;
+  color: var(--color-text-dark);
+  margin-bottom: 0.75rem;
+}
+
+.listen-referral-card__desc {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  max-width: 520px;
+  margin: 0 auto 2rem;
+}
+
+.listen-referral-card__actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
 /* ── Responsive ── */
 @media (max-width: 640px) {
+  .listen-tripwire-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.75rem 1.25rem;
+    gap: 1.25rem;
+  }
+
+  .listen-referral-card {
+    padding: 2rem 1.25rem;
+  }
+
   .listen-hero {
     padding-top: 7rem;
     padding-bottom: 2rem;

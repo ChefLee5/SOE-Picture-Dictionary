@@ -266,6 +266,11 @@ const Home = () => {
 
           <RevealSection delay={0.2}>
             <ExpandableGallery />
+            <div style={{ marginTop: '2.5rem' }}>
+              <Link to="/dictionary" className="btn btn-gold btn-shimmer">
+                📚 Explore the Complete Picture Dictionary ($55 Pre-Sale) →
+              </Link>
+            </div>
           </RevealSection>
         </div>
       </section>
