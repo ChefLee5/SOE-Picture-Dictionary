@@ -29,53 +29,167 @@
         "weekly_activities": "Activités hebdomadaires neuro-affirmantes et sorties musicales."
     },
     "home": {
+        "announcement": {
+            "tag": "OFFRE FAMILLES FONDATRICES",
+            "text": "Gratuit en ce moment pour les familles fondatrices · Rejoignez l'aventure",
+            "action": "Accéder Gratuitement →"
+        },
+        "hero_offer": {
+            "eyebrow": "THE SOUND OF ESSENTIALS DELUXE · ÂGES 2–7",
+            "title_main": "Une Expérience d'Apprentissage Musicale",
+            "title_highlight": "(Gratuit Aujourd'hui)",
+            "subtitle": "Un voyage sonore immersif à travers la phonétique, les nombres, le mouvement et le monde naturel. Conçu pour le cerveau en développement, pas pour l'algorithme.",
+            "price_strike": "Valeur de 19$",
+            "price_tag": "Gratuit pour les Familles Fondatrices",
+            "price_note": "Accès Numérique Immédiat · À Vous pour Toujours",
+            "check_1": "19 chansons originales qui enseignent la phonétique, les maths et les sciences",
+            "check_2": "Livre de coloriage Rhythm Quest de 40 pages et fiches imprimables inclus",
+            "check_3": "Diffusion numérique instantanée et téléchargement audio MP3 direct",
+            "check_4": "Accès 100% Gratuit à l'Album · Envoi Immédiat par Email",
+            "cta_primary": "Commencer l'Expérience Gratuite →",
+            "cta_secondary": "Explorer The Seven Land Quest ($19) →",
+            "guarantee_badge": "Gratuit pour toujours · Accès numérique immédiat · Aucun envoi physique"
+        },
         "hero_label": "Médias Neuro-Affirmants",
         "hero_title_1": "Conçu pour le cerveau en développement,",
         "hero_title_2": "pas pour l'algorithme.",
-        "hero_subtitle": "Un écosystème scientifiquement fondé et axé sur la musique.",
+        "hero_subtitle": "Un écosystème scientifiquement fondé et axé sur la musique pour la petite enfance. Calme. Concentré. Essentiel.",
         "hero_note": "Pour les enfants de 2 à 7 ans · Fondé sur les neurosciences",
+        "voices": {
+            "label": "Voix de l'Univers & Mission",
+            "title": "Guidé par la Vocation & le Récit",
+            "seriphia_quote": "Bienvenue, jeune explorateur. Le chemin du son commence ici. Écoute attentivement, bouge en rythme et regarde le monde se révéler.",
+            "seriphia_author": "Seriphia",
+            "seriphia_role": "Gardienne du Son",
+            "founder_quote": "Conçu par un père ayant vécu la crise des apprentissages précoces et bâti la solution avec dévouement. 15 années de passion.",
+            "founder_author": "Lee Murphy",
+            "founder_role": "Fondateur & Premier Auditeur",
+            "hero_quote": "Dans Harmonia, chaque rythme est un mot qui attend d'être découvert. Le langage commence dans l'oreille.",
+            "hero_author": "Kenji & Aiko",
+            "hero_role": "Héros de Harmonia"
+        },
+        "quest_offer": {
+            "label": "L'Aventure Guidée de 7 Semaines",
+            "title_1": "The Seven Land",
+            "title_2": "Quest ($19)",
+            "subtitle": "La quête musicale complète qui transforme l'écoute passive en maîtrise active des compétences fondamentales. 7 semaines, 7 univers, 15 héros mentors.",
+            "feat_1_title": "7 Contrées Musicales",
+            "feat_1_desc": "De la phonétique d'Harmonia aux rythmes du temps dans Celestia.",
+            "feat_2_title": "400 Activités Multisensorielles",
+            "feat_2_desc": "Des séquences quotidiennes de 10 minutes de rythme pour préparer à la lecture.",
+            "feat_3_title": "Feuille de Route Familiale",
+            "feat_3_desc": "Cartes d'aventure imprimables, fiches d'activités et certificats d'étapes.",
+            "cta": "Explorer The Seven Land Quest ($19) →"
+        },
         "why_label": "La Double Crise",
         "why_title_1": "Nous transformons un État d'Urgence",
         "why_title_2": "en Sound of Essentials: Rhythm Quest.",
         "why_subtitle": "300 millions d'enfants dans le monde ne savent pas lire correctement.",
         "stat_1_val": "300M",
-        "stat_1_lab": "Les enfants manquent de compétences en lecture",
+        "stat_1_lab": "Enfants privés de compétences fondamentales en lecture",
         "stat_2_val": "44M",
-        "stat_2_lab": "Déficit mondial d'enseignants",
+        "stat_2_lab": "Pénurie mondiale d'enseignants dans la petite enfance",
         "stat_3_val": "1M",
-        "stat_3_lab": "Connexions neurales formées par seconde durant les 1 000 premiers jours",
+        "stat_3_lab": "Connexions neurales créées par seconde dans la petite enfance",
         "approach_label": "Notre Approche",
         "approach_title_1": "Pas du divertissement.",
         "approach_title_2": "Une intervention.",
-        "approach_subtitle": "Chaque élément de SOE est conçu pour protéger et nourrir le cerveau.",
+        "approach_subtitle": "Chaque élément de SOE est conçu pour protéger et nourrir le cerveau en développement par le langage universel de la musique.",
         "curriculum_label": "Le Programme",
         "curriculum_title_1": "Cinq Domaines d'",
         "curriculum_title_2": "Apprentissage Essentiel",
-        "curriculum_subtitle": "Chaque leçon tisse les cinq domaines de développement.",
-        "cta_title": "La biologie n'attend pas que les systèmes se réparent d'eux-mêmes.",
-        "cta_subtitle": "Rejoignez l'écosystème de soutien.",
-        "explore_media": "Explorer la Médiathèque →",
+        "curriculum_subtitle": "Chaque leçon s'articule autour des cinq domaines clés du développement.",
         "domains": {
             "language": {
-                "title": "Langage",
-                "desc": "Phonétique, vocabulaire et communication par la chanson et le rythme."
+                "title": "Langage & Phonétique",
+                "desc": "Conscience phonémique, vocabulaire et communication par la chanson et le rythme."
             },
             "cognitive": {
-                "title": "Cognitif",
-                "desc": "Reconnaissance des formes, mémoire et résolution de problèmes par le jeu musical."
+                "title": "Cognitif & Mathématiques",
+                "desc": "Reconnaissance des formes, mémoire spatiale, calcul et résolution de problèmes."
             },
             "physical": {
-                "title": "Physique",
-                "desc": "Capacités motrices et conscience corporelle par le mouvement et la danse."
+                "title": "Physique & Moteur",
+                "desc": "Motricité, coordination bilatérale et conscience corporelle en rythme actif."
             },
             "science": {
-                "title": "Science",
-                "desc": "Nature, anatomie et découverte par l'exploration sensorielle."
+                "title": "Science & Nature",
+                "desc": "Observation de la nature, anatomie, astronomie et exploration sensorielle."
             },
             "social_emotional": {
                 "title": "Socio-Émotionnel",
-                "desc": "Savoir-vivre, empathie et autorégulation par la musique collaborative."
+                "desc": "Empathie, coopération, savoir-vivre et autorégulation par la musique partagée."
             }
+        },
+        "credibility": {
+            "quote": "Bâti par un père confronté au problème. Fondé sur la science de l'apprentissage des enfants.",
+            "sub": "Aucun capital-risque. Aucun piège algorithmique à dopamine. Uniquement des beaux-arts artisanaux et une science cognitive validée."
+        },
+        "science_trust": {
+            "label": "Fondé sur la Science",
+            "title_1": "Pourquoi le Rythme",
+            "title_2": "Développe les Futurs Lecteurs",
+            "subtitle": "Notre pédagogie repose sur des neurosciences évaluées par les pairs, la psychologie cognitive et des essais contrôlés randomisés.",
+            "card_1_tag": "Nature Scientific Reports (2022)",
+            "card_1_title": "Le Rythme Porte la Lecture",
+            "card_1_desc": "La recherche prouve que la perception du rythme (et non la mélodie) est le médiateur direct de la lecture via la conscience phonologique et la mémoire auditive (Sousa et al.).",
+            "card_2_tag": "Nature Human Behaviour (2024)",
+            "card_2_title": "16 Régions Génomiques Communes",
+            "card_2_desc": "L'analyse de plus d'1 million de génomes révèle des liens génétiques profonds entre rythme musical, langage et dyslexie (le gène DLAT).",
+            "card_3_tag": "Frontiers in Psychology (2011/2016)",
+            "card_3_title": "Démontré en Maternelle (ECR)",
+            "card_3_desc": "Un essai clinique de 20 semaines a prouvé que 10 minutes quotidiennes de rythme musical améliorent la conscience phonologique autant qu'un programme dédié de phonétique.",
+            "card_4_tag": "Harvard Developing Child (2024)",
+            "card_4_title": "1 Million de Synapses / Sec",
+            "card_4_desc": "Le cortex auditif est au pic de sa plasticité avant 7 ans. L'apprentissage rythmique multisensoriel crée des circuits neuronaux durables.",
+            "stats_title": "L'État d'Urgence dans la Petite Enfance",
+            "stat_naep_val": "69%",
+            "stat_naep_lab": "Élèves de CM1 aux USA sous le seuil de compétence en lecture (NAEP 2024)",
+            "stat_unesco_val": "300M",
+            "stat_unesco_lab": "Enfants en situation de pauvreté des apprentissages (UNESCO 2024)",
+            "stat_teachers_val": "44M",
+            "stat_teachers_lab": "Déficit mondial d'enseignants dans l'éducation de base (UNESCO 2024)",
+            "accordion_btn_open": "Consulter les Références & Publications Scientifiques ↓",
+            "accordion_btn_close": "Masquer les Références ↑"
+        },
+        "comparison": {
+            "label": "Pourquoi SOE ?",
+            "title_1": "Conçu pour le Cerveau en Développement —",
+            "title_2": "Pas pour l'Algorithme",
+            "subtitle": "Un contraste évident entre une éducation sensorielle bienveillante et la distraction commerciale des écrans.",
+            "col_feature": "Vecteur Pédagogique",
+            "col_soe": "The Sound of Essentials",
+            "col_algo": "L'Algorithme d'Attention",
+            "row_1_title": "Cœur Pédagogique",
+            "row_1_soe": "Stimulation neuronale active par le rythme et la phonétique",
+            "row_1_algo": "Boucles passives et flashs de dopamine",
+            "row_2_title": "Univers Narratif",
+            "row_2_soe": "7 Contrées cohérentes et 15 Héros mentors",
+            "row_2_algo": "Mini-jeux décousus et publicités intrusives",
+            "row_3_title": "Rythme Nerveux",
+            "row_3_soe": "Tempo apaisé, neuro-affirmant et silences intentionnels",
+            "row_3_algo": "Surstimulation et coupures visuelles frénétiques",
+            "row_4_title": "Confidentialité & Respect",
+            "row_4_soe": "100% Sans Pub, Zéro Traçage de Données",
+            "row_4_algo": "Traçage comportemental et incitations d'achats in-app",
+            "row_5_title": "Origine & Artisanat",
+            "row_5_soe": "Créé par un père avec d'authentiques beaux-arts",
+            "row_5_algo": "Optimisation automatisée de fermes de contenu"
+        },
+        "faq": {
+            "label": "Encore des Questions ?",
+            "title": "Foire Aux Questions",
+            "subtitle": "Tout ce que vous devez savoir sur l'album Deluxe gratuit et l'écosystème Rhythm Quest.",
+            "q1": "Pourquoi The Sound of Essentials Deluxe est-il entièrement gratuit ?",
+            "a1": "The Sound of Essentials a été créé comme un don authentique aux familles. L'édition Deluxe demeure gratuite afin que chaque enfant bénéficie d'un éveil sensoriel et musical fondamental. L'accès numérique immédiat ne nécessite qu'un email, avec des matériels d'apprentissage et éditions physiques optionnels disponibles à la commande.",
+            "q2": "Comment obtenir l'accès numérique immédiat ?",
+            "a2": "Cliquez simplement sur 'Commencer l'Expérience Gratuite' et saisissez votre adresse email. Vous recevrez instantanément l'accès privé aux 19 pistes audio, les liens de téléchargement direct et le livre de coloriage de 40 pages en PDF.",
+            "q3": "À quelle tranche d'âge ce programme s'adresse-t-il ?",
+            "a3": "The Sound of Essentials est spécialement conçu pour les enfants de 2 à 7 ans (de la Toute Petite Section au CE1). Il convient aussi bien au foyer qu'aux classes d'éveil.",
+            "q4": "Comment le rythme aide-t-il l'enfant à apprendre à lire ?",
+            "a4": "Les publications scientifiques dans Nature Scientific Reports confirment que la discrimination rythmique développe le traitement temporel cérébral : le mécanisme fondamental servant à découper syllabes et phonèmes lors de l'apprentissage de la lecture.",
+            "q5": "Qu'est-ce que The Seven Land Quest ($19) ?",
+            "a5": "The Seven Land Quest est notre guide d'accompagnement sur 7 semaines. Il prolonge les 19 chansons à travers 400 activités interactives, des jeux corporels, des cartes d'aventure à imprimer et des étapes rythmiques hebdomadaires."
         },
         "features": {
             "active": {
@@ -93,7 +207,10 @@
                 "subtitle": "Aucun Enseignant Requis",
                 "desc": "Conçu pour le déficit d'enseignants."
             }
-        }
+        },
+        "cta_title": "La biologie n'attend pas que les systèmes se réparent d'eux-mêmes.",
+        "cta_subtitle": "Ouvrez la porte aux apprentissages par la musique.",
+        "explore_media": "Commencer l'Expérience Gratuite →"
     },
     "universe": {
         "hero_label": "Le Programme",

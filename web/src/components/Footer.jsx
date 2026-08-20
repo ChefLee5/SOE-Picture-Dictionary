@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { assetPath } from '../utils/assetPath';
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -13,7 +14,11 @@ const Footer = () => {
           {/* Brand */}
           <div className="footer__brand">
             <div className="footer__logo">
-              <span className="footer__logo-icon">♪</span>
+              <img
+                src={assetPath('/assets/soe-official-logo.webp')}
+                alt="SOE Logo"
+                className="footer__logo-img"
+              />
               <span>Sound of Essentials: <span className="logo-accent-cursive">Rhythm Quest</span></span>
             </div>
             <p className="footer__tagline">{t('footer.tagline')}</p>
@@ -146,17 +151,12 @@ const Footer = () => {
           margin-bottom: 0.8rem;
         }
 
-        .footer__logo-icon {
-          font-size: 1.1rem;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          width: 34px;
-          height: 34px;
-          background: linear-gradient(135deg, var(--color-green), var(--color-blue));
-          color: #fff;
-          border-radius: var(--radius-full);
+        .footer__logo-img {
+          width: 38px;
+          height: 38px;
+          object-fit: contain;
           flex-shrink: 0;
+          filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.3));
         }
 
         .footer__tagline {

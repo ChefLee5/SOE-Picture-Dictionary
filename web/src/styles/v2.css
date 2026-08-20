@@ -568,9 +568,10 @@
 }
 
 .v2-nav__logo {
-  width: 36px;
-  height: 36px;
+  width: 42px;
+  height: 42px;
   object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
 }
 
 .v2-nav__brand-text {
@@ -586,6 +587,56 @@
   display: block;
   font-weight: 800;
   color: var(--v2-accent-orange);
+}
+
+/* ── Hero Official Crest Badge ── */
+.v2-hero-crest-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+  background: rgba(255, 248, 240, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 0.45rem 1.2rem 0.45rem 0.6rem;
+  border-radius: 50px;
+  border: 1.5px solid rgba(255, 179, 0, 0.5);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  margin-bottom: 1.5rem;
+  transition: transform 0.25s ease;
+}
+
+.v2-hero-crest-badge:hover {
+  transform: translateY(-2px);
+}
+
+.v2-hero-crest-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.2));
+}
+
+.v2-hero-crest-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.v2-hero-crest-title {
+  font-family: var(--v2-font-display);
+  font-weight: 800;
+  font-size: 0.85rem;
+  color: #B25E00;
+  letter-spacing: 0.04em;
+}
+
+.v2-hero-crest-sub {
+  font-family: var(--v2-font-body);
+  font-weight: 600;
+  font-size: 0.72rem;
+  color: #4A5568;
 }
 
 /* Top-right: Links */

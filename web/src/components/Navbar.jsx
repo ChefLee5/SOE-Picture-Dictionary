@@ -90,8 +90,8 @@ const Navbar = () => {
       <Link to="/" className="navbar__logo" aria-label={t('app_title')}>
         <div className="navbar__logo-icon-wrap">
           <img
-            src={assetPath('/assets/soe-icon.png')}
-            alt="SOE Logo"
+            src={assetPath('/assets/soe-official-logo.webp')}
+            alt="The Sound of Essentials Official Logo"
             className="navbar__logo-img"
           />
           <div className="navbar__logo-sparkle" aria-hidden="true">✨</div>

@@ -43,8 +43,8 @@ const NavbarV2 = () => {
       {/* ── Top-left: Brand ── */}
       <Link to="/v2" className="v2-nav__brand" onClick={closeMobile}>
         <img
-          src={`${BASE}assets/soe-logo.webp`}
-          alt="SOE"
+          src={`${BASE}assets/soe-official-logo.webp`}
+          alt="The Sound of Essentials Official Logo"
           className="v2-nav__logo"
         />
         <div className="v2-nav__brand-text">

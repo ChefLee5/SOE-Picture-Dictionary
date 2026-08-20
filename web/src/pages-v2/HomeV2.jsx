@@ -37,6 +37,19 @@ const HomeV2 = () => {
       >
         <div className="v2-container" style={{ alignSelf: 'flex-start', marginTop: '4vh' }}>
           <RevealV2>
+            {/* Official Brand Logo Seal */}
+            <div className="v2-hero-crest-badge">
+              <img
+                src={assetPath('/assets/soe-official-logo.webp')}
+                alt="The Sound of Essentials Official Crest"
+                className="v2-hero-crest-img"
+              />
+              <div className="v2-hero-crest-text">
+                <span className="v2-hero-crest-title">THE SOUND OF ESSENTIALS</span>
+                <span className="v2-hero-crest-sub">Staying on the Path, Always Learning!</span>
+              </div>
+            </div>
+
             <p className="v2-serif-italic" style={{ fontSize: 'clamp(1.25rem, 2.4vw, 1.9rem)', maxWidth: '620px', lineHeight: 1.4 }}>
               A scientifically grounded, music-driven ecosystem for early childhood development.
             </p>
