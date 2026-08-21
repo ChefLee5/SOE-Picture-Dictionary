@@ -20,38 +20,42 @@ interface KineticGridItemProps {
 const KineticGridItem: React.FC<KineticGridItemProps> = ({ item, scrollVelocity }) => {
   const itemObj: GalleryItem = typeof item === 'string' ? { src: item, title: 'Storybook Illustration' } : item;
 
-  // Smooth the velocity value for a gradual skew effect
+  // Smooth velocity for gentle skew without clipping content
   const smoothedVelocity = useSpring(scrollVelocity, {
     mass: 0.1,
-    stiffness: 80,
-    damping: 40,
+    stiffness: 90,
+    damping: 45,
   });
 
-  // Transform velocity into skew angle
-  const skew = useTransform(smoothedVelocity, [-1500, 0, 1500], [-14, 0, 14]);
+  // Transform velocity into subtle skew
+  const skew = useTransform(smoothedVelocity, [-1500, 0, 1500], [-6, 0, 6]);
 
   return (
     <motion.div
       className={`kinetic-gallery-card group ${itemObj.isTextbook ? 'kinetic-gallery-card--textbook' : ''}`}
       style={{ skewX: skew }}
+      whileHover={{ y: -6, scale: 1.02 }}
+      transition={{ type: 'spring', stiffness: 350, damping: 25 }}
     >
-      <img
-        src={assetPath(itemObj.src)}
-        alt={itemObj.title}
-        className="kinetic-gallery-img"
-        style={{
-          transform: "scale(1.15)" // Prevent white edges during dynamic skew
-        }}
-        loading="lazy"
-      />
-
-      {/* Glassmorphic Description Overlay */}
-      <div className="kinetic-gallery-overlay">
+      {/* Framed Thumbnail Window */}
+      <div className="kinetic-gallery-window">
+        <img
+          src={assetPath(itemObj.src)}
+          alt={itemObj.title}
+          className="kinetic-gallery-img"
+          loading="lazy"
+        />
         {itemObj.land && (
-          <span className={`kinetic-gallery-tag ${itemObj.isTextbook ? 'kinetic-gallery-tag--textbook' : ''}`}>
-            {itemObj.isTextbook ? `📖 ${itemObj.land}` : itemObj.land}
-          </span>
+          <div className="kinetic-gallery-window-badge">
+            <span className={`kinetic-gallery-tag ${itemObj.isTextbook ? 'kinetic-gallery-tag--textbook' : ''}`}>
+              {itemObj.isTextbook ? `📖 ${itemObj.land}` : itemObj.land}
+            </span>
+          </div>
         )}
+      </div>
+
+      {/* Structured Info Pane */}
+      <div className="kinetic-gallery-info">
         <h3 className="kinetic-gallery-card-title">{itemObj.title}</h3>
         {itemObj.caption && (
           <p className="kinetic-gallery-card-caption">{itemObj.caption}</p>
