@@ -212,15 +212,15 @@ const SummerStretchHero = () => {
       <div className="rq-hero__inner">
         <div className="rq-hero__grid">
           <div className="rq-hero__copy">
-            <span className="rq-hero__badge">☀️ The Summer Stretch · 8 Weeks · 40 Days · K–3</span>
+            <span className="rq-hero__badge">📚 Workbook &amp; Curriculum · 8 Weeks · 40 Days · K–3</span>
 
             <h1 className="rq-hero__title">
-              The Summer Stretch
+              Workbook &amp; Curriculum
               <span className="rq-hero__title-accent">8 Weeks. 40 Days. 240+ Activities.</span>
             </h1>
 
             <p className="section-subtitle rq-hero__hook">
-              Prevent the summer learning slide with music-powered daily micro-quests.
+              A multi-sensory, cross-curricular daily learning quest across the Seven Lands.
             </p>
 
             <p className="rq-hero__lede">
@@ -240,13 +240,13 @@ const SummerStretchHero = () => {
               </p>
 
               <div className="rq-hero__actions">
-                <RqBuyLink className="btn btn-gold">Get The Summer Stretch · $21</RqBuyLink>
+                <RqBuyLink className="btn btn-gold">Get Workbook &amp; Curriculum · $21</RqBuyLink>
                 <a href="#whats-inside" className="btn btn-outline">Explore the 8 Weeks ↓</a>
               </div>
 
               <ul className="rq-hero__assure">
                 <li>30-day 100% money back guarantee</li>
-                <li>Instant printable PDF & tablet-ready</li>
+                <li>Instant printable PDF &amp; tablet-ready</li>
                 <li>Built for Grades K–3 (Ages 4 to 8)</li>
               </ul>
 
@@ -625,7 +625,7 @@ const SummerStretchWhatsInside = () => {
               </div>
             </div>
 
-            <RqBuyLink className="btn btn-gold">Get The Summer Stretch · $21</RqBuyLink>
+            <RqBuyLink className="btn btn-gold">Get the Workbook &amp; Curriculum · $21</RqBuyLink>
             <p className="rq-inside__cta-note">
               Instant PDF Download · 30-Day Money Back Guarantee · Ready to Print Today
             </p>
@@ -653,7 +653,7 @@ const SummerStretchRoadmap = () => {
     <section className="rq-qmap section" id="curriculum-map" aria-labelledby="ss-qmap-title">
       <div className="container">
         <RevealSection className="text-center">
-          <div className="section-label">8-Week Scope & Sequence</div>
+          <div className="section-label">8-Week Scope &amp; Sequence</div>
           <h2 className="section-title" id="ss-qmap-title" style={{ color: 'var(--color-text-dark)' }}>
             The 8-Week Scope: <span className="text-plum">40 Days of Learning</span>
           </h2>
@@ -748,7 +748,7 @@ const SummerStretchRoadmap = () => {
                 <div className="rq-qmap__art">
                   <img
                     src={assetPath('/assets/marketing/quest-complete.webp')}
-                    alt="Artwork marking the end of the Summer Stretch"
+                    alt="Artwork marking the end of the Workbook and Curriculum"
                     loading="lazy"
                   />
                 </div>
@@ -756,11 +756,11 @@ const SummerStretchRoadmap = () => {
                   <span className="rq-qmap__eyebrow">The Finish Line</span>
                   <h3 className="rq-qmap__land">Week 8 Completed. 40 Days of Mastery.</h3>
                   <p className="rq-qmap__focus rq-qmap__focus--wide">
-                    Your child finishes the summer ahead of the curve — energized with confidence in reading,
+                    Your child finishes the quest ahead of the curve — energized with confidence in reading,
                     math, science, somatic regulation, and creative expression.
                   </p>
                   <div className="rq-qmap__cta">
-                    <RqBuyLink className="btn btn-gold">Get The Summer Stretch · $21</RqBuyLink>
+                    <RqBuyLink className="btn btn-gold">Get the Workbook &amp; Curriculum · $21</RqBuyLink>
                     <span className="rq-qmap__guarantee">
                       Instant digital delivery · 30-day money-back guarantee
                     </span>
@@ -788,14 +788,14 @@ const SummerStretchOffer = () => (
           <span className="rq-offer__title-accent">One Payment of $21.</span>
         </h2>
         <p className="section-subtitle" style={{ margin: '0 auto' }}>
-          Everything you need for an unforgettable, low-stress summer of learning.
+          Everything you need for an unforgettable, low-stress journey of learning.
         </p>
       </RevealSection>
 
       <RevealSection delay={0.15}>
         <div className="rq-offer">
           <div className="rq-offer__includes">
-            <h3 className="rq-offer__includes-title">What The Summer Stretch Includes</h3>
+            <h3 className="rq-offer__includes-title">What the Workbook &amp; Curriculum Includes</h3>
             <ul className="rq-offer__list">
               <li className="rq-offer__item">
                 <span className="rq-offer__tick" aria-hidden="true">✓</span>
@@ -818,13 +818,13 @@ const SummerStretchOffer = () => (
               <li className="rq-offer__item">
                 <span className="rq-offer__tick" aria-hidden="true">✓</span>
                 <span>
-                  <strong>15 Hero Guides & Coaching Tips.</strong> Character mentorship for daily motivation.
+                  <strong>15 Hero Guides &amp; Coaching Tips.</strong> Character mentorship for daily motivation.
                 </span>
               </li>
               <li className="rq-offer__item">
                 <span className="rq-offer__tick" aria-hidden="true">✓</span>
                 <span>
-                  <strong>Friday Milestone Celebrations & Quest Stars.</strong> Gamified rewards & progress mapping.
+                  <strong>Friday Milestone Celebrations &amp; Quest Stars.</strong> Gamified rewards &amp; progress mapping.
                 </span>
               </li>
               <li className="rq-offer__item">
@@ -853,7 +853,7 @@ const SummerStretchOffer = () => (
             </p>
 
             <RqBuyLink className="btn btn-gold rq-offer__buy">
-              <span>Get The Summer Stretch</span>
+              <span>Get the Workbook &amp; Curriculum</span>
               <span className="rq-offer__buy-price">$21</span>
             </RqBuyLink>
 
@@ -881,9 +881,9 @@ const faqs = [
   {
     id: 'grades',
     color: 'var(--color-orange)',
-    q: 'What age and grade levels is The Summer Stretch designed for?',
+    q: 'What age and grade levels is the Workbook & Curriculum designed for?',
     a: [
-      'The Summer Stretch is engineered for Kindergarten through 3rd Grade (ages 4 to 8).',
+      'The Workbook & Curriculum is engineered for Kindergarten through 3rd Grade (ages 4 to 8).',
       'For younger learners (Pre-K / K), parents guide the 6 short blocks together. For older learners (1st–3rd Grade), children can complete the blocks independently with parent check-ins.',
     ],
     chips: ['Grades K–3', 'Ages 4 to 8', 'Guided or Independent'],
@@ -934,7 +934,7 @@ const faqs = [
     q: 'What is your refund policy?',
     a: [
       'We offer a 30-day 100% money-back guarantee.',
-      'If The Summer Stretch is not a great fit for your child, simply send us an email within 30 days and we will refund your purchase completely.',
+      'If the Workbook & Curriculum is not a great fit for your child, simply send us an email within 30 days and we will refund your purchase completely.',
     ],
     chips: ['30-day guarantee', 'One email refund', 'Zero risk'],
   },
@@ -990,7 +990,7 @@ const SummerStretchFaq = () => (
             Frequently Asked <span className="text-sage">Questions</span>
           </h2>
           <p className="section-subtitle">
-            Everything you need to know about The Summer Stretch curriculum.
+            Everything you need to know about the Workbook &amp; Curriculum.
           </p>
         </RevealSection>
 
@@ -1002,12 +1002,12 @@ const SummerStretchFaq = () => (
 
         <RevealSection className="rq-faq__aside" delay={0.15}>
           <div className="rq-faq__cta">
-            <span className="rq-faq__cta-eyebrow">Ready for Summer</span>
+            <span className="rq-faq__cta-eyebrow">Ready to Begin</span>
             <p className="rq-faq__cta-price">
               <strong>$21</strong> complete 8-week workbook
             </p>
             <RqBuyLink className="btn btn-gold rq-faq__cta-btn">
-              Get The Summer Stretch · $21
+              Get the Workbook &amp; Curriculum · $21
             </RqBuyLink>
             <p className="rq-faq__cta-fine">
               30-day money-back guarantee · Instant PDF download
@@ -1024,7 +1024,7 @@ const SummerStretchFaq = () => (
    ═══════════════════════════════════════════════════════════════ */
 const RhythmQuestSale = () => {
   useEffect(() => {
-    document.title = 'The Sound of Essentials: The Summer Stretch — 8-Week Learning Quest (Grades K–3)';
+    document.title = 'The Sound of Essentials: Workbook & Curriculum — 8-Week Learning Quest (Grades K–3)';
   }, []);
 
   const carouselOrder = [
@@ -1088,19 +1088,19 @@ const RhythmQuestSale = () => {
                 />
                 <div className="scene-backdrop__scrim" />
               </div>
-              <div className="rq-cta-card__icon" aria-hidden="true">☀️</div>
+              <div className="rq-cta-card__icon" aria-hidden="true">📚</div>
               <h2 className="section-title" style={{ color: 'var(--color-text-dark)' }}>
-                Start The Summer Stretch Today
+                Get the Workbook &amp; Curriculum Today
               </h2>
               <p className="section-subtitle" style={{ marginTop: '1rem' }}>
                 8 Weeks. 40 Days. 240+ Daily Activities. Grades K–3.
                 <br />
                 <span style={{ color: 'var(--color-green)', fontWeight: 600 }}>
-                  Prevent the summer slide with music-powered joy.
+                  A multi-sensory, music-powered learning routine.
                 </span>
               </p>
               <div className="rq-cta-actions">
-                <RqBuyLink className="btn btn-gold">Get The Summer Stretch — $21</RqBuyLink>
+                <RqBuyLink className="btn btn-gold">Get the Workbook &amp; Curriculum — $21</RqBuyLink>
                 <Link to="/listen" className="btn btn-sage">Get the Free Album First</Link>
               </div>
               <div className="rq-guarantee">

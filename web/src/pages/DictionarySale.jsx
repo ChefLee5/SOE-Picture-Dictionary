@@ -428,7 +428,7 @@ const DictionarySale = () => {
               <div className="dict-cta-actions">
                 <a href="#pricing" className="btn btn-gold">Get the Dictionary — $55</a>
                 <a href="#pricing" className="btn btn-sage">Full Quest Bundle — $89</a>
-                <Link to="/rhythm-quest" className="btn btn-outline">Explore $19 Storybook →</Link>
+                <Link to="/workbook" className="btn btn-outline">Explore $21 Workbook &amp; Curriculum →</Link>
               </div>
               <div className="dict-guarantee">
                 <span>🔒</span> Instant digital delivery · EPUB format · Read on any device

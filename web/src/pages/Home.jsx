@@ -693,8 +693,8 @@ const Home = () => {
               <Link to="/dictionary" className="btn btn-gold btn-shimmer">
                 📚 Explore the Picture Dictionary ($55 Pre-Sale) →
               </Link>
-              <Link to="/rhythm-quest" className="btn btn-outline">
-                🗺️ View the 7-Week Quest ($19) →
+              <Link to="/workbook" className="btn btn-outline">
+                📚 View Workbook &amp; Curriculum ($21) →
               </Link>
             </div>
           </RevealSection>

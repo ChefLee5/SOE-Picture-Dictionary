@@ -316,21 +316,21 @@ const Listen = () => {
               <div className="container">
                 <div className="listen-tripwire-card glass-card">
                   <div className="listen-tripwire-card__content">
-                    <span className="listen-tripwire-card__badge">✨ Level Up The Experience</span>
+                    <span className="listen-tripwire-card__badge">📚 Daily Learning Quest</span>
                     <h3 className="listen-tripwire-card__title">
-                      Bring The Music To Life With The 66-Page Storybook
+                      Bring The Music To Life With The 8-Week Workbook &amp; Curriculum
                     </h3>
                     <p className="listen-tripwire-card__text">
-                      Seriphia guides Kenji &amp; Aiko through all 7 Lands, paired track-by-track with the album and featuring the <em>My Word Quest</em> visual glossary.
+                      40 structured day-by-day lessons across all 7 Lands, with 240+ daily activities in phonics, math, science, movement, civics, and reflection.
                     </p>
                   </div>
                   <div className="listen-tripwire-card__action">
                     <div className="listen-tripwire-card__price">
-                      <span className="listen-tripwire-card__price-tag">$19</span>
-                      <span className="listen-tripwire-card__price-sub">Digital Storybook</span>
+                      <span className="listen-tripwire-card__price-tag">$21</span>
+                      <span className="listen-tripwire-card__price-sub">Digital Workbook</span>
                     </div>
-                    <Link to="/rhythm-quest" className="btn btn-gold btn-shimmer" style={{ fontSize: '1.02rem', padding: '0.85rem 1.8rem' }}>
-                      Get Rhythm Quest ($19) →
+                    <Link to="/workbook" className="btn btn-gold btn-shimmer" style={{ fontSize: '1.02rem', padding: '0.85rem 1.8rem' }}>
+                      Get Workbook ($21) →
                     </Link>
                   </div>
                 </div>
