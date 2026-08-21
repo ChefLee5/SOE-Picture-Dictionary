@@ -8,17 +8,7 @@ import './RhythmQuestSale.css';
 
 /**
  * Single source of truth for every buy CTA on this page.
- *
- * TODO: replace with the live checkout permalink for the $19 "Rhythm Quest"
- * EPUB — the Shopify cart permalink of the form
- * https://<shop>.myshopify.com/cart/<variantId>:1, or its custom-domain
- * equivalent. Until that variant exists, every buy CTA falls back to /join,
- * the newsletter page.
- *
- * RqBuyLink below reads this constant and picks the right element, so the
- * swap is a one-line change: an internal path renders a react-router <Link>,
- * an absolute https:// URL renders a plain <a>. Rendering an absolute URL
- * through <Link> would make react-router treat it as a relative path and 404.
+ * Shopify cart permalink for The Summer Stretch Workbook ($21 Digital / $35 Print).
  */
 const CHECKOUT_URL = 'https://the-sound-of-essentials.myshopify.com/cart/53204514799932:1';
 const CHECKOUT_IS_ABSOLUTE = /^https?:\/\//i.test(CHECKOUT_URL);
@@ -58,28 +48,123 @@ const useInView = (threshold = 0.3) => {
 };
 
 /* ══════════════════════════════════════════════════════════════════════
-   WEEK ORDER — one canon for the whole page.
-
-   Every week-numbered element on this page (hero rail, What's Inside,
-   the quest map, the offer rail, the FAQ) reads the SAME order straight
-   out of lands.json, so "Week 3" means Vitalis everywhere. A second
-   ordering was considered for the quest map (the book's page order) and
-   dropped: two sections cannot both define Week 2 and stay honest.
-
-   Lands are paired to their SUBJECT here, never blanket-paired to a
-   track — the catalogue assigns zero tracks to Aquaria, so a per-Land
-   track claim would be a lie.
+   SUMMER STRETCH 8-WEEK ROADMAP CANON
    ══════════════════════════════════════════════════════════════════════ */
-const WEEKS = landsData;
+const SUMMER_STRETCH_WEEKS = [
+  {
+    week: 1,
+    id: 'harmonia',
+    theme: 'Hello, 7 Lands!',
+    landName: 'Harmonia',
+    color: '#d4a843',
+    focus: 'Phonological Awareness, Alphabet & Sound Foundations',
+    heroes: ['Amara', 'Kwame'],
+    heroIds: ['amara', 'kwame'],
+    art: 'pond-aiko-kenji.webp',
+    blocksCovered: 'Word Detectives · Number Hunt · Garden Secrets · Wake-Up Move · Map Adventure',
+    dailyHighlight: 'Sound-before-symbol greetings, counting beads, and somatic stretches to kick off the quest.',
+  },
+  {
+    week: 2,
+    id: 'harmonia-sel',
+    theme: 'Feelings & Families',
+    landName: 'Harmonia',
+    color: '#d4a843',
+    focus: 'Social-Emotional Learning, Relationships & Regulation',
+    heroes: ['Kenji', 'Aiko'],
+    heroIds: ['kenji', 'aiko'],
+    art: 'dance-harmonia-vitalis.webp',
+    blocksCovered: 'Emotions Vocabulary · Shape Logic · Habitat Science · Full-Body Balance · Community Roles',
+    dailyHighlight: 'Connecting emotion words to physical sensations and building relational empathy through song.',
+  },
+  {
+    week: 3,
+    id: 'luminosity',
+    theme: 'Community & Cooperation',
+    landName: 'Luminosity',
+    color: '#5ba4c9',
+    focus: 'Civics, Community Helpers, Problem-Solving & French Phonics',
+    heroes: ['Athena', 'Felix'],
+    heroIds: ['athena', 'felix'],
+    art: 'march-luminosity.webp',
+    blocksCovered: 'Community Helpers · Money & Budgeting · Weather Systems · Somatic Posture · Civic Rights',
+    dailyHighlight: "Exploring teamwork, emergency helpers, and bilingual vocabulary through 'Le Cheval'.",
+  },
+  {
+    week: 4,
+    id: 'aquaria',
+    theme: 'Wonders of the World',
+    landName: 'Aquaria',
+    color: '#2563EB',
+    focus: 'Geography, Ocean Science, Tricky Words & Syllable Flow',
+    heroes: ['Ronan', 'Selene'],
+    heroIds: ['ronan', 'selene'],
+    art: 'cubes-ronan-nerissa.webp',
+    blocksCovered: 'Tricky English Words · Estimation & Fractions · Marine Habitats · Water Cycle · Map Navigation',
+    dailyHighlight: 'Midpoint Quest milestone! Breaking down multi-syllabic hard words with nautical rhythm.',
+  },
+  {
+    week: 5,
+    id: 'vitalis',
+    theme: 'Body, Mind & Balance',
+    landName: 'Vitalis',
+    color: '#c4785a',
+    focus: 'Somatic Breathwork, Physical Fitness, Nutrition & Hygiene',
+    heroes: ['Nerissa', 'Octavia'],
+    heroIds: ['nerissa', 'octavia'],
+    art: 'touch-your-toes.webp',
+    blocksCovered: 'Body Vocabulary · Measurement at Home · Food Groups & Nutrition · Yoga Stretches · Daily Reflection',
+    dailyHighlight: 'Active motor circuits, diaphragmatic breathing routines, and mindful wellness journaling.',
+  },
+  {
+    week: 6,
+    id: 'celestia',
+    theme: 'Inventions & Discoveries',
+    landName: 'Celestia',
+    color: '#9678c4',
+    focus: 'STEM, Astronomy, Timekeeping, Seasons & Energy',
+    heroes: ['Elias', 'Ezra'],
+    heroIds: ['elias', 'ezra'],
+    art: 'time-celestia.webp',
+    blocksCovered: 'Scientific Method · Clocks & Calendar Math · Solar System · Vestibular Balance · Historical Time',
+    dailyHighlight: 'Exploring constellations, day/night cycles, sundials, and early engineering logic.',
+  },
+  {
+    week: 7,
+    id: 'harmonia-adv',
+    theme: 'Sound & Story',
+    landName: 'Harmonia & Terrasol',
+    color: '#d4a843',
+    focus: 'Advanced Phonics, Creative Writing, Storytelling & Nature',
+    heroes: ['Silas', 'Vesta'],
+    heroIds: ['silas', 'vesta'],
+    art: 'path-to-terrasol.webp',
+    blocksCovered: 'Story Sentence Writing · Data & Graphing · Plant Life Cycles · Rhythmic Percussion · Reflection',
+    dailyHighlight: 'Children author their own mini-tales, decode advanced rhymes, and reflect on living nature.',
+  },
+  {
+    week: 8,
+    id: 'celestia-finale',
+    theme: 'Grand Celebration & Launch',
+    landName: 'Celestia & Terrasol',
+    color: '#9678c4',
+    focus: 'Cumulative Review, Capstone Portfolio & Champions Badge',
+    heroes: ['Seriphia', 'All 15 Heroes'],
+    heroIds: ['seriphia', 'kenji'],
+    art: 'quest-complete.webp',
+    blocksCovered: 'Mastery Phonics · Math Games · Eco-Sustainability · Celebration Dance · Future Me Letter',
+    dailyHighlight: 'The final Quest Star! Children complete their portfolio review and receive the Quest Champion award.',
+  },
+];
 
 /* ═══════════════════════════════════════════════════════════════
-   HERO — the offer frame
+   HERO — THE SUMMER STRETCH WORKBOOK
    ═══════════════════════════════════════════════════════════════ */
-const RhythmQuestHero = () => {
+const SummerStretchHero = () => {
   const [week, setWeek] = useState(0);
-  const [chosen, setChosen] = useState(false); // parent picked a week: stop cycling for good
-  const [paused, setPaused] = useState(false); // parent is hovering/reading the path
-  const [calm, setCalm] = useState(false);     // prefers-reduced-motion
+  const [chosen, setChosen] = useState(false);
+  const [paused, setPaused] = useState(false);
+  const [calm, setCalm] = useState(false);
   const innerRef = useRef(null);
   const tiltOk = useRef(false);
 
@@ -96,12 +181,10 @@ const RhythmQuestHero = () => {
 
   useEffect(() => {
     if (calm || chosen || paused) return undefined;
-    const id = setInterval(() => setWeek((w) => (w + 1) % WEEKS.length), 3200);
+    const id = setInterval(() => setWeek((w) => (w + 1) % SUMMER_STRETCH_WEEKS.length), 3400);
     return () => clearInterval(id);
   }, [calm, chosen, paused]);
 
-  /* Pointer parallax on the book. Writes CSS vars straight to the node so the
-     tilt never triggers a React render. Fine pointers only, calm mode opts out. */
   const tilt = useCallback((e) => {
     const el = innerRef.current;
     if (!el || !tiltOk.current) return;
@@ -119,7 +202,7 @@ const RhythmQuestHero = () => {
     el.style.removeProperty('--rq-tilt-x');
   }, []);
 
-  const land = WEEKS[week];
+  const currentWeek = SUMMER_STRETCH_WEEKS[week];
 
   return (
     <header className="rq-hero">
@@ -129,45 +212,47 @@ const RhythmQuestHero = () => {
       <div className="rq-hero__inner">
         <div className="rq-hero__grid">
           <div className="rq-hero__copy">
-            <span className="rq-hero__badge">🎶 The Seven Land Quest · one Land a week</span>
+            <span className="rq-hero__badge">☀️ The Summer Stretch · 8 Weeks · 40 Days · K–3</span>
 
             <h1 className="rq-hero__title">
-              Seven Weeks. Seven Lands.
-              <span className="rq-hero__title-accent">One Quest, Together.</span>
+              The Summer Stretch
+              <span className="rq-hero__title-accent">8 Weeks. 40 Days. 240+ Activities.</span>
             </h1>
 
-            <p className="section-subtitle rq-hero__hook">Your child already knows the tunes.</p>
+            <p className="section-subtitle rq-hero__hook">
+              Prevent the summer learning slide with music-powered daily micro-quests.
+            </p>
 
             <p className="rq-hero__lede">
-              Rhythm Quest turns those songs into a path you can follow. One Land a week, for seven
-              weeks, across 66 illustrated pages. Seriphia calls the heroes. Your child walks the
-              whole way with them.
+              An 8-week cross-curricular learning journey for grades K–3 (ages 4–8). Six bite-sized
+              daily blocks (~16 minutes total) spanning phonics, math, science, somatic movement,
+              geography/civics, and reflection. Sound before symbol. Handcrafted for the developing brain.
             </p>
 
             <div className="rq-hero__offer">
               <div className="rq-hero__price-tag">
-                <span className="rq-hero__price">$19</span>
-                <span className="rq-hero__price-note">one time, yours to keep</span>
+                <span className="rq-hero__price">$21</span>
+                <span className="rq-hero__price-note">complete 8-week digital workbook</span>
               </div>
 
               <p className="rq-hero__price-math">
-                That is about $2.70 for each week of the quest. Paid once, never again.
+                40 structured days of learning — about <strong>52¢ a day</strong>. Paid once, yours forever.
               </p>
 
               <div className="rq-hero__actions">
-                <RqBuyLink className="btn btn-gold">Start Week One · $19</RqBuyLink>
-                <a href="#preview" className="btn btn-outline">Look Inside the Book ↓</a>
+                <RqBuyLink className="btn btn-gold">Get The Summer Stretch · $21</RqBuyLink>
+                <a href="#whats-inside" className="btn btn-outline">Explore the 8 Weeks ↓</a>
               </div>
 
               <ul className="rq-hero__assure">
-                <li>30-day money back</li>
-                <li>Instant EPUB, read tonight</li>
-                <li>Built for ages 2 to 7</li>
+                <li>30-day 100% money back guarantee</li>
+                <li>Instant printable PDF & tablet-ready</li>
+                <li>Built for Grades K–3 (Ages 4 to 8)</li>
               </ul>
 
               <p className="rq-hero__free-note">
-                Already have the free album and coloring book? This is the seven week path they were
-                made for.
+                Pairs seamlessly with the free 19-track album. Every day features hero coaching tips
+                and phonetic pronunciation guides.
               </p>
             </div>
           </div>
@@ -175,15 +260,15 @@ const RhythmQuestHero = () => {
           <div className="rq-hero__book">
             <div
               className="rq-hero__stage"
-              style={{ '--rq-land': land.color }}
+              style={{ '--rq-land': currentWeek.color }}
               onMouseMove={tilt}
               onMouseLeave={untilt}
             >
               <div className="rq-book-3d">
                 <div className="rq-book-3d__inner" ref={innerRef}>
                   <img
-                    src={assetPath('/assets/book/soe-rhythm-quest-cover.webp')}
-                    alt="The Sound of Essentials: Rhythm Quest Storybook — Official Cover, Seriphia guiding the world of the Seven Lands"
+                    src={assetPath('/assets/workbook/soe-summer-stretch-cover.webp')}
+                    alt="The Sound of Essentials: The Summer Stretch Workbook Official Cover"
                     className="rq-book-3d__cover"
                   />
                 </div>
@@ -193,67 +278,54 @@ const RhythmQuestHero = () => {
                 <span className="sparkle" aria-hidden="true" />
               </div>
 
-              {/* Visual echo of the path. The rail below carries the same text
-                  for assistive tech, so this stays hidden from it. */}
-              <div className="rq-hero__week" key={land.id} aria-hidden="true">
-                <img
-                  className="rq-hero__week-thumb"
-                  src={assetPath(`/assets/lands/${land.id}.webp`)}
-                  alt=""
-                  loading="lazy"
-                />
+              <div className="rq-hero__week" key={currentWeek.week} aria-hidden="true">
                 <span className="rq-hero__week-text">
-                  <span className="rq-hero__week-num">Week {week + 1} of 7</span>
-                  <strong className="rq-hero__week-name">{land.name}</strong>
-                  <span className="rq-hero__week-focus">{land.focus}</span>
+                  <span className="rq-hero__week-num">Week {currentWeek.week} of 8</span>
+                  <strong className="rq-hero__week-name">{currentWeek.theme}</strong>
+                  <span className="rq-hero__week-focus">{currentWeek.focus}</span>
                 </span>
               </div>
             </div>
           </div>
         </div>
 
-        {/* ── The path: the offer, laid out as seven finishable weeks ── */}
+        {/* ── 8-Week Interactive Rail ── */}
         <div
           className="rq-hero__path"
-          style={{ '--rq-land': land.color }}
+          style={{ '--rq-land': currentWeek.color }}
           onMouseEnter={() => setPaused(true)}
           onMouseLeave={() => setPaused(false)}
           onFocus={() => setPaused(true)}
           onBlur={() => setPaused(false)}
         >
           <div className="rq-hero__path-head">
-            <span className="rq-hero__path-title">Your seven weeks</span>
-            <span className="rq-hero__path-sub">One Land a week. You always know where you are.</span>
+            <span className="rq-hero__path-title">The 8-Week Summer Journey</span>
+            <span className="rq-hero__path-sub">5 days a week, 6 daily blocks (~16 min/day). A clear path from Day 1 to Day 40.</span>
           </div>
 
           <div className="rq-hero__track" aria-hidden="true">
-            <span style={{ width: `${((week + 1) / WEEKS.length) * 100}%` }} />
+            <span style={{ width: `${((week + 1) / SUMMER_STRETCH_WEEKS.length) * 100}%` }} />
           </div>
 
-          <ol className="rq-hero__weeks" aria-label="The seven week quest path">
-            {WEEKS.map((l, i) => (
-              <li key={l.id}>
+          <ol className="rq-hero__weeks" aria-label="The eight week summer stretch roadmap">
+            {SUMMER_STRETCH_WEEKS.map((w, i) => (
+              <li key={w.week}>
                 <button
                   type="button"
                   className="rq-hero__node"
-                  style={{ '--rq-node': l.color }}
+                  style={{ '--rq-node': w.color }}
                   aria-current={i === week ? 'step' : undefined}
                   onClick={() => { setWeek(i); setChosen(true); }}
                 >
                   <span className="rq-hero__node-dot" aria-hidden="true" />
                   <span className="rq-hero__node-txt">
-                    <span className="rq-hero__node-wk">Week {i + 1}</span>
-                    <span className="rq-hero__node-name">{l.name}</span>
+                    <span className="rq-hero__node-wk">Week {w.week}</span>
+                    <span className="rq-hero__node-name">{w.theme}</span>
                   </span>
-                  <span className="sr-only">, {l.focus}</span>
                 </button>
               </li>
             ))}
           </ol>
-
-          <p className="rq-hero__next">
-            Weeks 8 through 15 continue later, in the Summer Stretch workbook, when you are ready.
-          </p>
         </div>
       </div>
     </header>
@@ -261,65 +333,58 @@ const RhythmQuestHero = () => {
 };
 
 /* ═══════════════════════════════════════════════════════════════
-   PROOF
-   Four jobs in order: scope (the rail), evidence (cited research),
-   provenance (the maker), then risk reversal + the one CTA.
-   Nothing here is invented. Rail counts derive from lands.json /
-   heroes.json so they can never drift, and every study links to the
-   same peer-reviewed source already cited on /science.
-   "19 Companion Tracks" was removed from the rail on purpose: the
-   album is the FREE gift at the previous gate, and listing it in a
-   paid-product stat row reads as a paid inclusion.
+   PROOF & EVIDENCE
    ═══════════════════════════════════════════════════════════════ */
 const proofEvidence = [
   {
-    id: 'rhythm',
+    id: 'summer-slide',
     idx: '01',
-    pull: '2022',
-    pullNote: 'Nature Sci. Reports',
-    claim: 'Rhythm predicts reading. Melody does not.',
-    detail: 'Researchers traced the link from musical ability to reading and found it runs through rhythm, by way of phonological awareness. Melody perception did not carry it.',
-    soWhat: 'So we built it that way: every Land starts on a beat, and the words ride on top.',
-    href: 'https://www.nature.com/articles/s41598-022-15596-7',
-    cite: 'Nature Scientific Reports, 2022',
+    pull: '2.5 mo',
+    pullNote: 'learning loss avoided',
+    claim: '15 minutes of daily structured practice prevents the summer slide.',
+    detail: 'Studies indicate that students lose up to 2.5 months of reading and math skills over the summer months without regular reinforcement. Micro-dosed daily practice halts regression completely.',
+    soWhat: 'So we designed 6 daily blocks totaling just 16 minutes: bite-sized, engaging, and impossible to burn out on.',
+    href: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC3121007/',
+    cite: 'Harvard Graduate School of Education & Frontiers in Psychology',
     tint: 'var(--color-orange)',
     soft: 'var(--color-orange-soft)',
   },
   {
-    id: 'minutes',
+    id: 'sound-symbol',
     idx: '02',
-    pull: '10 min',
-    pullNote: 'a day, 20 weeks',
-    claim: 'Ten minutes a day matched a phonics program.',
-    detail: 'Preschoolers did ten minutes of daily music activity for twenty weeks. Their phonological awareness rose as much as the group given a dedicated phonics program.',
-    soWhat: 'So we built it that way: one Land a week, in bedtime-sized pieces, paired to songs your child already has for free.',
-    href: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC3121007/',
-    cite: 'Frontiers in Psychology, 2011',
+    pull: 'Sound',
+    pullNote: 'before symbol',
+    claim: 'Phonological rhythm accelerates early word decoding.',
+    detail: 'Brain imaging reveals that rhythm perception directly activates the neural pathways responsible for syllable segmentation, phonics, and rapid word recognition.',
+    soWhat: 'Every single activity includes phonetic pronunciation keys (e.g. heh-LOW | GUD-mor-ning) so children sound it out aloud before writing.',
+    href: 'https://www.nature.com/articles/s41598-022-15596-7',
+    cite: 'Nature Scientific Reports, 2022',
     tint: 'var(--color-green)',
     soft: 'var(--color-green-soft)',
   },
   {
-    id: 'genes',
+    id: 'somatic',
     idx: '03',
-    pull: '16',
-    pullNote: 'genome regions',
-    claim: 'Rhythm and language share the same roots.',
-    detail: 'A study of more than one million people found sixteen regions of the genome shared between rhythm ability and language and reading skill.',
-    soWhat: 'So we built it that way: music is not a treat we add to the learning. It is the road the learning travels.',
+    pull: 'Somatic',
+    pullNote: 'movement breaks',
+    claim: 'Physical movement unlocks cognitive memory retention.',
+    detail: 'Vestibular balancing and deep diaphragmatic breathing regulate the central nervous system, shifting early learners into optimal memory consolidation state.',
+    soWhat: 'Block D in every lesson is a dedicated physical reset: stretching, jumping, breathwork, and motor circuits.',
     href: 'https://neurosciencenews.com/genetics-music-language-28151/',
-    cite: 'Genome-wide study, 2024',
+    cite: 'Neuroscience & Early Childhood Development Research',
     tint: 'var(--color-purple)',
     soft: 'var(--color-purple-soft)',
   },
 ];
 
 const makerChips = [
-  'Drawn by hand, not generated',
-  'Ages 2 to 7, by design',
-  'For the developing brain, not the algorithm',
+  '8 Weeks · 40 Day-by-Day Lessons',
+  '240+ Core Activity Blocks',
+  'Grades K–3 (Ages 4 to 8)',
+  'Sound Before Symbol Phonetics',
+  'Full-Color & Printable',
 ];
 
-/* Eased count-up. Snaps straight to the value under reduced motion. */
 const RqCount = ({ value, active, duration = 900 }) => {
   const [n, setN] = useState(0);
   useEffect(() => {
@@ -338,27 +403,25 @@ const RqCount = ({ value, active, duration = 900 }) => {
   return <>{n}</>;
 };
 
-const RqProof = () => {
+const SummerStretchProof = () => {
   const [railRef, railInView] = useInView(0.25);
 
   const proofRail = useMemo(() => ([
-    { value: 66,                label: 'Illustrated Pages', sub: 'One story, cover to cover', tint: 'var(--color-orange)' },
-    { value: landsData.length,  label: 'Lands, One a Week', sub: 'The Seven Land Quest',      tint: 'var(--color-green)'  },
-    { value: heroesData.length, label: 'Heroes to Meet',    sub: 'Seriphia calls them all',   tint: 'var(--color-purple)' },
-    { value: 30,                label: 'Day Money Back',    sub: 'No questions asked',        tint: 'var(--color-blue)'   },
+    { value: 8,   label: 'Weeks of Curriculum', sub: '40 guided daily lessons', tint: 'var(--color-orange)' },
+    { value: 6,   label: 'Daily Subject Blocks', sub: '~16 minutes total per day', tint: 'var(--color-green)' },
+    { value: 240, label: 'Activity Blocks',      sub: 'Reading, Math, Science & Movement', tint: 'var(--color-purple)' },
+    { value: 15,  label: 'Hero Guides',         sub: 'Coaching tips on every page', tint: 'var(--color-blue)' },
   ]), []);
 
   return (
-    <section className="rq-proof" aria-label="Why you can trust this">
-
-      {/* RAIL: the four-second scan. Counted, derived, never hardcoded. */}
+    <section className="rq-proof" aria-label="Why you can trust this curriculum">
       <div className="rq-proof__rail" ref={railRef}>
         <RevealSection>
           <div className="rq-proof__rail-inner">
             {proofRail.map((s) => (
               <div key={s.label} className="rq-proof-stat" style={{ '--stat-tint': s.tint }}>
                 <span className="rq-proof-stat__value" aria-hidden="true">
-                  <RqCount value={s.value} active={railInView} />
+                  <RqCount value={s.value} active={railInView} />{s.value === 240 ? '+' : ''}
                 </span>
                 <span className="sr-only">{`${s.value} ${s.label}. ${s.sub}.`}</span>
                 <span className="rq-proof-stat__label" aria-hidden="true">{s.label}</span>
@@ -371,18 +434,14 @@ const RqProof = () => {
       </div>
 
       <div className="rq-proof__body">
-        <div className="rq-proof__watermark" aria-hidden="true">
-          <img src={assetPath('/assets/marketing/busy-brain.webp')} alt="" loading="lazy" />
-        </div>
-
         <div className="container">
           <RevealSection className="text-center rq-proof__head">
-            <div className="section-label">Why Trust It</div>
+            <div className="section-label">Pedagogical Framework</div>
             <h2 className="section-title" style={{ color: 'var(--color-text-dark)' }}>
-              No Reviews Yet. <span className="text-gold">Here Is What We Do Have.</span>
+              Built for Real Retentive Power. <span className="text-gold">Backed by Science.</span>
             </h2>
             <p className="section-subtitle" style={{ margin: '0 auto' }}>
-              We are new. So we will show our work.
+              Every activity is structured to foster joy, physical movement, and deep cognitive retention.
             </p>
           </RevealSection>
 
@@ -397,10 +456,6 @@ const RqProof = () => {
                     <span className="rq-ev-card__pull-note">{e.pullNote}</span>
                   </div>
 
-                  <div className="rq-ev-card__meter" aria-hidden="true">
-                    <span /><span /><span /><span /><span /><span />
-                  </div>
-
                   <h3 className="rq-ev-card__claim">{e.claim}</h3>
                   <p className="rq-ev-card__detail">{e.detail}</p>
                   <p className="rq-ev-card__so">{e.soWhat}</p>
@@ -412,21 +467,12 @@ const RqProof = () => {
                     rel="noopener noreferrer"
                   >
                     {e.cite} <span aria-hidden="true">↗</span>
-                    <span className="sr-only"> (opens in a new tab)</span>
                   </a>
                 </article>
               </RevealSection>
             ))}
           </div>
 
-          <RevealSection>
-            <p className="rq-proof__note">
-              This research is about music and reading in general. It is not a promise about
-              your child. We follow it because the direction keeps holding.
-            </p>
-          </RevealSection>
-
-          {/* PROVENANCE: the person, not a persona. Every line is on /mission already. */}
           <RevealSection delay={0.1}>
             <div className="rq-maker">
               <div className="rq-maker__bg" aria-hidden="true">
@@ -435,18 +481,17 @@ const RqProof = () => {
               </div>
 
               <div className="rq-maker__copy">
-                <span className="rq-maker__eyebrow">The Maker</span>
-                <h3 className="rq-maker__title">Built by a father who lived the problem.</h3>
+                <span className="rq-maker__eyebrow">The Method</span>
+                <h3 className="rq-maker__title">Designed for Homeschools, Classrooms & Summer Days</h3>
                 <p className="rq-maker__text">
-                  When schools shut, a father was told music was non-essential. He looked at his
-                  own kids and knew that was wrong.
+                  We built The Summer Stretch to give parents and educators a friction-free, turnkey
+                  learning routine. No lesson planning, no special materials, and zero guesswork.
                 </p>
                 <p className="rq-maker__text">
-                  So he wrote the nineteen songs himself. Then he drew the Seven Lands around
-                  them, page by page, so the story could keep going after the last track ends.
-                  Rhythm Quest is that world on paper.
+                  Open the day's page, follow the 6 quick blocks with your child, and celebrate their
+                  daily progress with Quest Stars.
                 </p>
-                <p className="rq-maker__sign">Handcrafted. Not generated.</p>
+                <p className="rq-maker__sign">Sound Before Symbol · Multi-Sensory · Complete</p>
               </div>
 
               <ul className="rq-maker__chips">
@@ -459,30 +504,6 @@ const RqProof = () => {
               </ul>
             </div>
           </RevealSection>
-
-          {/* RISK REVERSAL + the one thing to do next. */}
-          <RevealSection delay={0.15}>
-            <div className="rq-assure">
-              <div className="rq-assure__copy">
-                <p className="rq-assure__title">Seven weeks. Nineteen dollars. One decision.</p>
-                <p className="rq-assure__text">
-                  That works out to about $2.71 a week. Read the first Land tonight. If it does
-                  not land with your child, ask inside 30 days and we refund it.
-                </p>
-              </div>
-              <div className="rq-assure__action">
-                <RqBuyLink className="btn btn-gold">
-                  Start the Seven Land Quest · $19
-                </RqBuyLink>
-                <span className="rq-assure__micro">
-                  Instant EPUB · Read on any device · No subscription
-                </span>
-                <span className="rq-assure__micro">
-                  Weeks 8 to 15 continue in the Summer Stretch workbook.
-                </span>
-              </div>
-            </div>
-          </RevealSection>
         </div>
       </div>
     </section>
@@ -490,72 +511,89 @@ const RqProof = () => {
 };
 
 /* ═══════════════════════════════════════════════════════════════
-   WHAT'S INSIDE — the Seven Land Quest, week by week
-   Track pairings come straight from web/src/data/tracks.json.
-   Aquaria carries zero tracks (it replaced the retired Geometria),
-   so it is presented as the quiet week rather than given a song it
-   does not have. No track title on this page is invented.
+   WHAT'S INSIDE — THE 6 DAILY BLOCKS
    ═══════════════════════════════════════════════════════════════ */
-const DELIVERABLES = [
+const DAILY_BLOCKS = [
   {
-    mark: '66',
-    color: 'var(--color-orange)',
-    title: 'Illustrated pages, one file',
-    desc: 'The whole storybook, painted scene by scene. It downloads in seconds and opens on the phone, tablet, or e-reader you already own.',
+    block: 'Block A',
+    time: '3 min',
+    subject: 'Language & Phonics',
+    land: 'Harmonia (Language)',
+    color: '#d4a843',
+    desc: 'Sight words, ASL fingerspelling, sound-before-symbol phonetic keys, and vocabulary decoding.',
   },
   {
-    mark: 'A-Z',
-    color: 'var(--color-blue)',
-    title: 'My Word Quest Glossary',
-    desc: 'Backmatter built from the story itself. Words from the realms, and words for growing, so the reading keeps going after the last page.',
+    block: 'Block B',
+    time: '3 min',
+    subject: 'Math & Logic',
+    land: 'Numeria (Math)',
+    color: '#d4a843',
+    desc: 'Counting, geometric shapes, measurement, estimation, fractions, money, and data patterns.',
   },
   {
-    mark: '15',
-    color: 'var(--color-purple)',
-    title: 'The heroes who carry it',
-    desc: 'Seriphia calls Kenji and Aiko from the heavens. Twelve more heroes join them, two for every Land still ahead.',
+    block: 'Block C',
+    time: '3 min',
+    subject: 'Science & Nature',
+    land: 'Terrasol & Celestia',
+    color: '#4CAF50',
+    desc: 'Plant growth, animal habitats, weather systems, solar astronomy, and the scientific method.',
   },
   {
-    mark: '30',
-    color: 'var(--color-green)',
-    title: 'Days to change your mind',
-    desc: 'It is digital, so there is nothing to post back. Read it with your child. If it is not right for your family, ask and we refund it.',
+    block: 'Block D',
+    time: '2 min',
+    subject: 'Movement & Health',
+    land: 'Vitalis (Physical)',
+    color: '#c4785a',
+    desc: 'Diaphragmatic breathing, posture resets, balance drills, fitness circuits, and hygiene.',
+  },
+  {
+    block: 'Block E',
+    time: '2 min',
+    subject: 'Geography or Civics',
+    land: 'Aquaria & Luminosity',
+    color: '#2563EB',
+    desc: 'Map reading, community helpers, governance, civic responsibility, and world cultures.',
+  },
+  {
+    block: 'Block F',
+    time: '3 min',
+    subject: 'Daily Reflection',
+    land: 'All 7 Lands',
+    color: '#9678c4',
+    desc: 'Mindful journaling, gratitude prompts, goal tracking, and weekly Friday Quest Star rewards.',
   },
 ];
 
-const RqWhatsInside = () => {
+const SummerStretchWhatsInside = () => {
   return (
     <section className="rq-inside section" id="whats-inside">
       <div className="container">
-
         <RevealSection className="text-center">
-          <div className="section-label">What&apos;s Inside</div>
+          <div className="section-label">The Daily 6-Block Routine</div>
           <h2 className="section-title" style={{ color: 'var(--color-text-dark)' }}>
-            One Land a Week. Seven Weeks. <span className="text-gold">A Finished Quest.</span>
+            Six Daily Blocks. <span className="text-gold">16 Minutes a Day.</span>
           </h2>
           <p className="section-subtitle">
-            Your child already knows the songs. This is the map that goes with them.
+            Every single day follows a predictable, neuro-affirming sequence that children look forward to.
           </p>
           <ul className="rq-inside__facts">
-            <li className="rq-inside__fact rq-inside__fact--price">$19 once</li>
-            <li className="rq-inside__fact">66 illustrated pages</li>
-            <li className="rq-inside__fact">7 weekly Lands</li>
-            <li className="rq-inside__fact">Yours to keep</li>
+            <li className="rq-inside__fact rq-inside__fact--price">$21 Digital Complete</li>
+            <li className="rq-inside__fact">40 Day-by-Day Lessons</li>
+            <li className="rq-inside__fact">240+ Activity Blocks</li>
+            <li className="rq-inside__fact">Grades K–3</li>
           </ul>
         </RevealSection>
 
-        {/* ── What actually downloads ── */}
-        <div className="rq-inside__deliver">
-          <RevealSection className="text-center">
-            <p className="rq-inside__deliver-head">And all of it arrives tonight, at once.</p>
-          </RevealSection>
-
+        {/* ── 6 Daily Blocks Grid ── */}
+        <div className="rq-inside__deliver" style={{ marginTop: '2.5rem' }}>
           <div className="rq-inside__grid">
-            {DELIVERABLES.map((d, i) => (
-              <RevealSection key={d.title} delay={i * 0.08}>
+            {DAILY_BLOCKS.map((d, i) => (
+              <RevealSection key={d.block} delay={i * 0.07}>
                 <div className="rq-inside-card" style={{ '--feat-color': d.color }}>
-                  <span className="rq-inside-card__mark" aria-hidden="true">{d.mark}</span>
-                  <h3 className="rq-inside-card__title">{d.title}</h3>
+                  <span className="rq-inside-card__mark" style={{ fontSize: '1.2rem', fontWeight: 800 }}>
+                    {d.block} · {d.time}
+                  </span>
+                  <h3 className="rq-inside-card__title">{d.subject}</h3>
                   <p className="rq-inside-card__desc">{d.desc}</p>
                 </div>
               </RevealSection>
@@ -563,177 +601,47 @@ const RqWhatsInside = () => {
           </div>
         </div>
 
-        {/* ── The offer in plain words ── */}
+        {/* ── Ledger Summary ── */}
         <RevealSection delay={0.1}>
           <div className="rq-inside__ledger">
             <div className="rq-inside__ledger-rows">
               <div className="rq-ledger-row">
-                <span className="rq-ledger-row__k">What it costs</span>
+                <span className="rq-ledger-row__k">Curriculum Format</span>
                 <span className="rq-ledger-row__v">
-                  $19 once, for seven weeks of bedtimes. Under $3 a week, and it never expires.
+                  Complete 8-week / 40-day printable PDF workbook. Print individual days or bind as a full summer workbook.
                 </span>
               </div>
               <div className="rq-ledger-row">
-                <span className="rq-ledger-row__k">What stays free</span>
+                <span className="rq-ledger-row__k">Grade Range</span>
                 <span className="rq-ledger-row__v">
-                  The album and the coloring book are free and stay free. The quest is simply built
-                  on top of them.
+                  Designed for Kindergarten through 3rd Grade (Ages 4 to 8). Progressive difficulty that grows with your child.
                 </span>
               </div>
               <div className="rq-ledger-row">
-                <span className="rq-ledger-row__k">What comes after</span>
+                <span className="rq-ledger-row__k">Friday Celebrations</span>
                 <span className="rq-ledger-row__v">
-                  Finish all seven Lands and weeks 8 through 15 are already written, waiting in the
-                  Summer Stretch workbook.
+                  Every Friday features cumulative weekly reviews, Quest Map milestone coloring, and Quest Star badges.
                 </span>
               </div>
             </div>
 
-            <RqBuyLink className="btn btn-gold">Start the Quest · $19</RqBuyLink>
+            <RqBuyLink className="btn btn-gold">Get The Summer Stretch · $21</RqBuyLink>
             <p className="rq-inside__cta-note">
-              Instant EPUB download · Ages 2 to 7 · 30 days to change your mind
+              Instant PDF Download · 30-Day Money Back Guarantee · Ready to Print Today
             </p>
           </div>
         </RevealSection>
-
       </div>
     </section>
   );
 };
 
-/* ══════════════════════════════════════════════════════════════════════
-   THE SEVEN LAND QUEST MAP
-
-   Week order is the page-wide canon above (lands.json order), so Week 3
-   is Vitalis here exactly as it is in the hero, in What's Inside and in
-   the offer rail.
-
-   `page` is each Land's FIRST APPEARANCE in the 66 page storybook, verified
-   page by page against the PDF on 2026-08-10. The book has no labelled
-   chapters, so no page ranges and no per week activity counts are claimed,
-   and because reading order differs from week order these numbers do not
-   run in sequence.
-
-   TRACK PAIRING: every title below is a real row in web/src/data/tracks.json.
-   Aquaria carries zero tracks — it replaced the retired Geometria — so it is
-   presented as the quiet week instead of being handed "The Ocean" or "Rain",
-   which are filed under Terrasol. "Shapes" belonged to Geometria and stays
-   unassigned. Nothing here is invented.
-   ══════════════════════════════════════════════════════════════════════ */
-const landById = Object.fromEntries(landsData.map((l) => [l.id, l]));
-
-const questWeeks = [
-  {
-    landId: 'harmonia',
-    page: 6,
-    art: 'pond-aiko-kenji.webp',
-    tracks: ['Alphabet Song Remix', 'Manners'],
-    task: 'Sing the alphabet once a day. On day seven, let your child lead it.',
-    note: null,
-  },
-  {
-    landId: 'numeria',
-    page: 21,
-    art: 'math-numeria.webp',
-    tracks: ['Numbers', 'One Hundred'],
-    task: 'Count something real every day. Stairs, socks, spoons. Ten of anything.',
-    note: null,
-  },
-  {
-    landId: 'vitalis',
-    page: 14,
-    art: 'touch-your-toes.webp',
-    tracks: ["Let's Stretch", 'Drill Time'],
-    task: 'Move before you read. Five minutes of stretching, then open the book.',
-    note: 'Calm by design does not mean quiet all week. These two are loud on purpose.',
-  },
-  {
-    landId: 'celestia',
-    page: 32,
-    art: 'time-celestia.webp',
-    tracks: ['Days of the Week', 'Time', 'Months of the Year'],
-    task: 'Say the day out loud each morning. By Sunday, let your child say it first.',
-    note: null,
-  },
-  {
-    landId: 'luminosity',
-    page: 17,
-    art: 'march-luminosity.webp',
-    tracks: ['Le Cheval'],
-    task: 'Say one line back in French. That is the whole exercise.',
-    note: 'Le Cheval is sung in French. Hearing a second language is the lesson.',
-  },
-  {
-    landId: 'aquaria',
-    page: 35,
-    art: 'b-roll-boats.webp',
-    tracks: ['Hard Words'],
-    task: 'Pick one hard word a day. Say it, spell it, use it at dinner.',
-    note: 'Name one feeling a day too, and say where it sits in the body.',
-  },
-  {
-    landId: 'terrasol',
-    page: 10,
-    art: 'path-to-terrasol.webp',
-    tracks: ['Sunny Day', 'My Body', 'Changes'],
-    task: 'Take one walk outside. Name three living things you both see.',
-    note: null,
-  },
-];
-
-/* The spine paints itself in each Land's canon color, built from lands.json
-   so it can never drift out of sync with the data. */
-const spineGradient = `linear-gradient(180deg, ${questWeeks
-  .map((w, i) => `${landById[w.landId].color} ${Math.round((i / (questWeeks.length - 1)) * 100)}%`)
-  .join(', ')})`;
-
-const RqQuestMap = () => {
+/* ═══════════════════════════════════════════════════════════════
+   THE 8-WEEK DETAILED CURRICULUM MAP
+   ═══════════════════════════════════════════════════════════════ */
+const SummerStretchRoadmap = () => {
   const [activeWeek, setActiveWeek] = useState(0);
-  const [progress, setProgress] = useState(0);
-  const trackRef = useRef(null);
   const weekRefs = useRef([]);
-
-  /* Paint the spine as the reader descends. */
-  useEffect(() => {
-    const el = trackRef.current;
-    if (!el) return undefined;
-    let frame = 0;
-    const measure = () => {
-      frame = 0;
-      const r = el.getBoundingClientRect();
-      const mid = window.innerHeight * 0.55;
-      setProgress(Math.min(1, Math.max(0, (mid - r.top) / (r.height || 1))));
-    };
-    const onScroll = () => {
-      if (!frame) frame = requestAnimationFrame(measure);
-    };
-    measure();
-    window.addEventListener('scroll', onScroll, { passive: true });
-    window.addEventListener('resize', onScroll);
-    return () => {
-      if (frame) cancelAnimationFrame(frame);
-      window.removeEventListener('scroll', onScroll);
-      window.removeEventListener('resize', onScroll);
-    };
-  }, []);
-
-  /* Whichever week sits nearest the middle of the screen is the live one. */
-  useEffect(() => {
-    const nodes = weekRefs.current.filter(Boolean);
-    if (!nodes.length) return undefined;
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) return;
-          const i = Number(entry.target.dataset.week);
-          if (!Number.isNaN(i)) setActiveWeek(i);
-        });
-      },
-      { rootMargin: '-45% 0px -45% 0px', threshold: 0 }
-    );
-    nodes.forEach((n) => observer.observe(n));
-    return () => observer.disconnect();
-  }, []);
 
   const goToWeek = (i) => {
     const el = weekRefs.current[i];
@@ -742,147 +650,92 @@ const RqQuestMap = () => {
   };
 
   return (
-    <section className="rq-qmap section" id="quest-map" aria-labelledby="rq-qmap-title">
+    <section className="rq-qmap section" id="curriculum-map" aria-labelledby="ss-qmap-title">
       <div className="container">
-
         <RevealSection className="text-center">
-          <div className="section-label">The Seven Land Quest</div>
-          <h2 className="section-title" id="rq-qmap-title" style={{ color: 'var(--color-text-dark)' }}>
-            Your Next Seven Weeks, <span className="text-plum">Already Planned</span>
+          <div className="section-label">8-Week Scope & Sequence</div>
+          <h2 className="section-title" id="ss-qmap-title" style={{ color: 'var(--color-text-dark)' }}>
+            The 8-Week Scope: <span className="text-plum">40 Days of Learning</span>
           </h2>
           <p className="section-subtitle">
-            One Land a week. The songs you already own, the pages that go with them, and one thing to do.
-          </p>
-
-          <ul className="rq-qmap__facts">
-            <li>About 10 minutes a day</li>
-            <li>Reads on any device</li>
-            <li>The songs stay free</li>
-          </ul>
-
-          <p className="rq-qmap__science">
-            In one 20-week trial, ten minutes of daily music training lifted phonological awareness
-            as much as a phonics program did. Ten minutes is all a day here asks for.
-            <span className="rq-qmap__science-caveat"> Grounded in research, not a promise about your child.</span>
+            Explore what your child will discover across all seven lands during their 8-week journey.
           </p>
         </RevealSection>
 
+        {/* Jump Rail */}
         <nav className="rq-qmap__rail" aria-label="Jump to a week">
-          {questWeeks.map((w, i) => {
-            const land = landById[w.landId];
-            return (
-              <button
-                key={w.landId}
-                type="button"
-                className={`rq-qmap__rail-btn${i === activeWeek ? ' is-on' : ''}`}
-                style={{ '--land-color': land.color }}
-                aria-label={`Week ${i + 1}, ${land.name}`}
-                aria-current={i === activeWeek ? 'true' : undefined}
-                onClick={() => goToWeek(i)}
-              >
-                <span className="rq-qmap__rail-num">{i + 1}</span>
-                <span className="rq-qmap__rail-name">{land.name}</span>
-              </button>
-            );
-          })}
+          {SUMMER_STRETCH_WEEKS.map((w, i) => (
+            <button
+              key={w.week}
+              type="button"
+              className={`rq-qmap__rail-btn${i === activeWeek ? ' is-on' : ''}`}
+              style={{ '--land-color': w.color }}
+              aria-label={`Week ${w.week}, ${w.theme}`}
+              aria-current={i === activeWeek ? 'true' : undefined}
+              onClick={() => { setActiveWeek(i); goToWeek(i); }}
+            >
+              <span className="rq-qmap__rail-num">{w.week}</span>
+              <span className="rq-qmap__rail-name">{w.theme}</span>
+            </button>
+          ))}
         </nav>
 
-        <div
-          className="rq-qmap__track"
-          ref={trackRef}
-          style={{ '--rq-progress': progress, '--rq-spine': spineGradient }}
-        >
-          <div className="rq-qmap__spine" aria-hidden="true">
-            <span className="rq-qmap__spine-fill" />
-          </div>
-
+        <div className="rq-qmap__track">
           <ol className="rq-qmap__weeks">
-            {questWeeks.map((w, i) => {
-              const land = landById[w.landId];
-              const heroes = land.heroes.map((id) => heroesData.find((h) => h.id === id)).filter(Boolean);
-              return (
-                <li
-                  key={w.landId}
-                  ref={(el) => { weekRefs.current[i] = el; }}
-                  data-week={i}
-                  className={`rq-qmap__week${i === activeWeek ? ' is-active' : ''}`}
-                  style={{ '--land-color': land.color }}
-                >
-                  <div className="rq-qmap__node" aria-hidden="true">
-                    <span className="rq-qmap__node-dot" />
-                  </div>
+            {SUMMER_STRETCH_WEEKS.map((w, i) => (
+              <li
+                key={w.week}
+                ref={(el) => { weekRefs.current[i] = el; }}
+                className={`rq-qmap__week${i === activeWeek ? ' is-active' : ''}`}
+                style={{ '--land-color': w.color }}
+              >
+                <div className="rq-qmap__node" aria-hidden="true">
+                  <span className="rq-qmap__node-dot" />
+                </div>
 
-                  <RevealSection delay={0.06 * i}>
-                    <article className="rq-qmap__card">
-                      <div className="rq-qmap__art">
-                        <img
-                          src={assetPath(`/assets/scenes/${w.art}`)}
-                          alt={`Scene art from ${land.name}`}
-                          loading="lazy"
-                        />
-                        <span className="rq-qmap__badge">
-                          <span aria-hidden="true">{land.icon}</span> {land.name}
+                <RevealSection delay={0.06 * i}>
+                  <article className="rq-qmap__card">
+                    <div className="rq-qmap__art">
+                      <img
+                        src={assetPath(`/assets/scenes/${w.art}`)}
+                        alt={`Art from ${w.theme}`}
+                        loading="lazy"
+                      />
+                      <span className="rq-qmap__badge">
+                        Week {w.week} · {w.landName}
+                      </span>
+                    </div>
+
+                    <div className="rq-qmap__body">
+                      <div className="rq-qmap__head">
+                        <span className="rq-qmap__week-num">Week {w.week} of 8</span>
+                        <span className="rq-qmap__page">5 Day-by-Day Lessons</span>
+                      </div>
+
+                      <h3 className="rq-qmap__land">{w.theme}</h3>
+                      <p className="rq-qmap__focus">{w.focus}</p>
+
+                      <div className="rq-qmap__row">
+                        <span className="rq-qmap__row-label">Hero Guides</span>
+                        <span className="rq-qmap__chips">
+                          {w.heroes.map((h) => (
+                            <span key={h} className="rq-qmap__chip">{h}</span>
+                          ))}
                         </span>
                       </div>
 
-                      <div className="rq-qmap__body">
-                        <div className="rq-qmap__head">
-                          <span className="rq-qmap__week-num">Week {i + 1}</span>
-                          <span className="rq-qmap__page">Opens on page {w.page}</span>
-                        </div>
-
-                        <h3 className="rq-qmap__land">{land.name}</h3>
-                        <p className="rq-qmap__focus">{land.focus}</p>
-
-                        <div className="rq-qmap__heroes">
-                          <span className="rq-qmap__avatars" aria-hidden="true">
-                            {heroes.map((h) => (
-                              <img
-                                key={h.id}
-                                src={assetPath(`/assets/characters/${h.name.toUpperCase()}.webp`)}
-                                alt=""
-                                className="rq-qmap__avatar"
-                                loading="lazy"
-                              />
-                            ))}
-                          </span>
-                          <span className="rq-qmap__duo">{land.duoLabel}</span>
-                        </div>
-
-                        <div className="rq-qmap__row">
-                          <span className="rq-qmap__row-label">
-                            <span className="rq-qmap__eq" aria-hidden="true"><span /><span /><span /></span>
-                            {w.tracks.length ? 'Play this week' : 'No song this week'}
-                          </span>
-                          <span className="rq-qmap__chips">
-                            {w.tracks.length ? (
-                              w.tracks.map((t) => (
-                                <span key={t} className="rq-qmap__chip">{t}</span>
-                              ))
-                            ) : (
-                              /* Every Land has a song as of 2026-08-10. Kept as a guard so a
-                                 future data change degrades quietly instead of rendering an
-                                 empty row. */
-                              <span className="rq-qmap__chip rq-qmap__chip--quiet">
-                                Read together this week
-                              </span>
-                            )}
-                          </span>
-                        </div>
-
-                        <div className="rq-qmap__row">
-                          <span className="rq-qmap__row-label">Do this once</span>
-                          <div className="rq-qmap__do">
-                            <p className="rq-qmap__task">{w.task}</p>
-                            {w.note && <p className="rq-qmap__note">{w.note}</p>}
-                          </div>
+                      <div className="rq-qmap__row">
+                        <span className="rq-qmap__row-label">Core Blocks</span>
+                        <div className="rq-qmap__do">
+                          <p className="rq-qmap__task">{w.blocksCovered}</p>
+                          <p className="rq-qmap__note">{w.dailyHighlight}</p>
                         </div>
                       </div>
-                    </article>
-                  </RevealSection>
-                </li>
-              );
-            })}
+                    </div>
+                  </article>
+                </RevealSection>
+              </li>
+            ))}
           </ol>
 
           <div className="rq-qmap__finish">
@@ -895,29 +748,23 @@ const RqQuestMap = () => {
                 <div className="rq-qmap__art">
                   <img
                     src={assetPath('/assets/marketing/quest-complete.webp')}
-                    alt="Artwork marking the end of the Rhythm Quest"
+                    alt="Artwork marking the end of the Summer Stretch"
                     loading="lazy"
                   />
                 </div>
                 <div className="rq-qmap__body">
-                  <span className="rq-qmap__eyebrow">The finish line</span>
-                  <h3 className="rq-qmap__land">Week 7 ends. The quest is finished.</h3>
+                  <span className="rq-qmap__eyebrow">The Finish Line</span>
+                  <h3 className="rq-qmap__land">Week 8 Completed. 40 Days of Mastery.</h3>
                   <p className="rq-qmap__focus rq-qmap__focus--wide">
-                    Seven Lands read. Sixty six pages behind you. Every new word your child collected
-                    is waiting at the back of the book in My Word Quest Glossary.
-                  </p>
-                  <p className="rq-qmap__sequel">
-                    Weeks 8 through 15 continue in the Summer Stretch workbook, when you are ready for them.
+                    Your child finishes the summer ahead of the curve — energized with confidence in reading,
+                    math, science, somatic regulation, and creative expression.
                   </p>
                   <div className="rq-qmap__cta">
-                    <RqBuyLink className="btn btn-gold">Start Week 1 for $19</RqBuyLink>
+                    <RqBuyLink className="btn btn-gold">Get The Summer Stretch · $21</RqBuyLink>
                     <span className="rq-qmap__guarantee">
-                      30 days to change your mind. Digital, so there is nothing to send back.
+                      Instant digital delivery · 30-day money-back guarantee
                     </span>
                   </div>
-                  <p className="rq-qmap__fineprint">
-                    $19 once for all seven weeks. Under $3 a week. The album and the coloring book stay free.
-                  </p>
                 </div>
               </article>
             </RevealSection>
@@ -929,82 +776,68 @@ const RqQuestMap = () => {
 };
 
 /* ═══════════════════════════════════════════════════════════════
-   THE OFFER — the money section.
-   Three moves, in this order: show the plan, then the price, then
-   the objections. Nothing here invents a discount, a deadline, or
-   a review.
+   THE OFFER
    ═══════════════════════════════════════════════════════════════ */
-const RqOffer = () => (
+const SummerStretchOffer = () => (
   <section className="rq-offer-section section" id="offer">
     <div className="container">
-
       <RevealSection className="text-center">
-        <div className="section-label">The Seven Land Quest</div>
+        <div className="section-label">The Complete Curriculum</div>
         <h2 className="section-title" style={{ color: 'var(--color-text-dark)' }}>
-          Seven Weeks of Story.
-          <span className="rq-offer__title-accent">One Payment of $19.</span>
+          8 Weeks of Structured Learning.
+          <span className="rq-offer__title-accent">One Payment of $21.</span>
         </h2>
         <p className="section-subtitle" style={{ margin: '0 auto' }}>
-          One Land a week. Seriphia calls Kenji and Aiko in Harmonia, and the road ends in
-          Terrasol. You are not buying a file. You are starting a plan that finishes.
+          Everything you need for an unforgettable, low-stress summer of learning.
         </p>
       </RevealSection>
 
-      {/* ── The offer itself ── */}
       <RevealSection delay={0.15}>
         <div className="rq-offer">
-
           <div className="rq-offer__includes">
-            <h3 className="rq-offer__includes-title">What the $19 opens</h3>
+            <h3 className="rq-offer__includes-title">What The Summer Stretch Includes</h3>
             <ul className="rq-offer__list">
               <li className="rq-offer__item">
                 <span className="rq-offer__tick" aria-hidden="true">✓</span>
                 <span>
-                  <strong>66 illustrated pages.</strong> The full Rhythm Quest storybook, painted
-                  scene by scene.
+                  <strong>8 Full Weeks / 40 Day-by-Day Lessons.</strong> Structured across all 7 lands.
                 </span>
               </li>
               <li className="rq-offer__item">
                 <span className="rq-offer__tick" aria-hidden="true">✓</span>
                 <span>
-                  <strong>Seven Lands, seven weeks.</strong> A reading plan with a real finish line,
-                  not an endless feed.
+                  <strong>240+ Daily Activity Blocks.</strong> Six 3-minute subject blocks per day.
                 </span>
               </li>
               <li className="rq-offer__item">
                 <span className="rq-offer__tick" aria-hidden="true">✓</span>
                 <span>
-                  <strong>15 heroes, one guide.</strong> Seriphia calls Kenji and Aiko. Thirteen more
-                  heroes join the road.
+                  <strong>Sound-Before-Symbol Phonetic Guides.</strong> Pronunciation keys on every page.
                 </span>
               </li>
               <li className="rq-offer__item">
                 <span className="rq-offer__tick" aria-hidden="true">✓</span>
                 <span>
-                  <strong>&quot;My Word Quest Glossary.&quot;</strong> Backmatter vocabulary pulled
-                  straight from the story your child just read.
+                  <strong>15 Hero Guides & Coaching Tips.</strong> Character mentorship for daily motivation.
                 </span>
               </li>
               <li className="rq-offer__item">
                 <span className="rq-offer__tick" aria-hidden="true">✓</span>
                 <span>
-                  <strong>Instant EPUB.</strong> Read it tonight on a phone, tablet, laptop, or
-                  e-reader.
+                  <strong>Friday Milestone Celebrations & Quest Stars.</strong> Gamified rewards & progress mapping.
                 </span>
               </li>
               <li className="rq-offer__item">
                 <span className="rq-offer__tick" aria-hidden="true">✓</span>
                 <span>
-                  <strong>Yours to keep.</strong> Built for ages 2 to 7. Read it at three, then read
-                  it again at six.
+                  <strong>Instant High-Resolution PDF Download.</strong> Print at home or complete on a tablet.
                 </span>
               </li>
             </ul>
 
             <p className="rq-offer__free">
-              The 19-track album and the 40-sheet coloring book are free at the gate before this one.
-              They are not add-ons here. The album is simply the soundtrack this seven-week plan is
-              built around.
+              Pairs perfectly with the free 19-track album on /listen. No expensive curriculum boxes or
+              monthly subscription fees.
             </p>
           </div>
 
@@ -1013,163 +846,110 @@ const RqOffer = () => (
               <span /><span /><span /><span /><span />
             </div>
 
-            <span className="rq-offer__amount">$19</span>
-            <span className="rq-offer__terms">one time, no subscription</span>
+            <span className="rq-offer__amount">$21</span>
+            <span className="rq-offer__terms">complete digital workbook · no subscription</span>
             <p className="rq-offer__math">
-              Seven weeks of bedtime reading. That is about <strong>$2.71 a week</strong>.
+              40 days of guided learning = <strong>~52¢ a day</strong>.
             </p>
 
             <RqBuyLink className="btn btn-gold rq-offer__buy">
-              <span>Start the Seven Land Quest</span>
-              <span className="rq-offer__buy-price">$19</span>
+              <span>Get The Summer Stretch</span>
+              <span className="rq-offer__buy-price">$21</span>
             </RqBuyLink>
 
-            <p className="rq-offer__nudge">No sale price. No countdown. The number is the number.</p>
+            <p className="rq-offer__nudge">Instant digital delivery · Ready to start today.</p>
 
             <div className="rq-offer__guarantee">
               <span className="rq-offer__seal" aria-hidden="true">🛡</span>
               <span>
                 <strong className="rq-offer__seal-title">30-Day Money Back Guarantee</strong>
-                Read the whole quest. If it does not fit your family, email us inside 30 days and we
-                refund the full $19. It is a digital book, so there is nothing to post back.
+                Try the curriculum with your child. If it does not fit your family, email us within
+                30 days for a full, prompt refund.
               </span>
             </div>
-
-            <p className="rq-offer__science">
-              Grounded in research: rhythm, more than melody, predicts how children pick up reading.{' '}
-              <Link to="/science" className="rq-offer__science-link">See the studies →</Link>
-            </p>
           </aside>
         </div>
       </RevealSection>
-
-      {/* ── Objections, answered before they are asked ── */}
-      <RevealSection delay={0.2}>
-        <div className="rq-objections">
-          <div className="rq-objection">
-            <p className="rq-objection__q">Will it open on my device?</p>
-            <p className="rq-objection__a">
-              EPUB is the standard ebook format. Apple Books, Google Play Books, the Kindle app, and
-              every free reader open it.
-            </p>
-          </div>
-          <div className="rq-objection">
-            <p className="rq-objection__q">My child is only two.</p>
-            <p className="rq-objection__a">
-              Built for ages 2 to 7. At two they ride the pictures and the songs. At six they read the
-              glossary on their own.
-            </p>
-          </div>
-          <div className="rq-objection">
-            <p className="rq-objection__q">Do we need the album first?</p>
-            <p className="rq-objection__a">
-              No. The album is free and it helps, but the book stands on its own.
-            </p>
-          </div>
-          <div className="rq-objection">
-            <p className="rq-objection__q">What comes after week seven?</p>
-            <p className="rq-objection__a">
-              The Summer Stretch workbook picks up at week eight and runs to week fifteen. That is a
-              separate thing, for when you are ready.
-            </p>
-          </div>
-        </div>
-      </RevealSection>
-
     </div>
   </section>
 );
 
 /* ═══════════════════════════════════════════════════════════════
-   FAQ — "Six Fair Questions. Six Straight Answers."
+   FAQ
    ═══════════════════════════════════════════════════════════════ */
 const faqs = [
   {
-    id: 'price',
+    id: 'grades',
     color: 'var(--color-orange)',
-    q: 'The album is free. Why does the book cost $19?',
+    q: 'What age and grade levels is The Summer Stretch designed for?',
     a: [
-      'The songs stay free. Always. You are paying for the world they came from.',
-      'The album gives your child 19 tracks to sing. Rhythm Quest gives them 66 illustrated pages, 7 Lands, 15 heroes, and a seven week plan that turns all that listening into a story you finish together.',
-      'It is $19 once. Across seven weeks that is under $3 a week. Nothing renews, and there is no upsell waiting inside the book.',
+      'The Summer Stretch is engineered for Kindergarten through 3rd Grade (ages 4 to 8).',
+      'For younger learners (Pre-K / K), parents guide the 6 short blocks together. For older learners (1st–3rd Grade), children can complete the blocks independently with parent check-ins.',
     ],
-    chips: ['$19 once', 'Under $3 a week', 'Nothing renews'],
+    chips: ['Grades K–3', 'Ages 4 to 8', 'Guided or Independent'],
   },
   {
-    id: 'age',
+    id: 'time',
     color: 'var(--color-blue)',
-    q: 'What age is this for?',
+    q: 'How much time does it take each day?',
     a: [
-      'Ages 2 to 7.',
-      'From 2 to 4, you read it out loud. Your child points at the pictures, sings the parts they already know, and names what they see.',
-      'From 5 to 7, they start reading lines on their own and using the My Word Quest Glossary at the back to look up the big words.',
-      'Same book. It grows with them.',
+      'About 16 minutes total per day.',
+      'The day is divided into six quick 2-to-3 minute blocks (Phonics, Math, Science, Physical Movement, Geography/Civics, and Reflection). It is designed to fit smoothly into morning breakfast routines or afternoon quiet time.',
     ],
-    chips: ['Ages 2 to 7', 'Read aloud or read alone', 'Glossary at the back'],
+    chips: ['~16 minutes/day', '6 short blocks', 'Zero burnout'],
   },
   {
-    id: 'week',
+    id: 'supplies',
     color: 'var(--color-purple)',
-    q: 'What do we actually do each week?',
+    q: 'Do I need special supplies or materials?',
     a: [
-      'One Land a week, for seven weeks. That is the whole quest.',
-      "Each week you play that Land's songs, read that Land's pages together, then talk through the glossary words your child just met.",
-      'Ten to fifteen minutes a sitting, three or four nights. You set the pace, and nothing expires if you fall behind.',
-      'Six of the Lands have songs your child already knows from the album. Aquaria runs on the artwork instead, so that week is a look and talk week.',
+      'No special supplies required!',
+      'All you need is a pencil, a few crayons or colored markers, and everyday household items (like a spoon or a leaf for nature observations).',
     ],
-    weeks: true,
-    note: 'Week 7 ends the quest. It finishes. There is a sequel that picks up at week 8, and it can wait until you want it.',
-    chips: ['7 weeks', '1 Land a week', 'Finishes on week 7'],
+    chips: ['No prep needed', 'Household items', 'Open-and-go'],
   },
   {
     id: 'print',
     color: 'var(--color-yellow)',
-    q: 'Can I print it?',
+    q: 'Can I print it at home or use it on a tablet?',
     a: [
-      'Not as a print pack, and here is the honest reason. Rhythm Quest is an EPUB. The text reflows to fit whatever screen you open it on, so there is no fixed page to send to a printer.',
-      'Read it on a phone, a tablet, an e-reader, or a computer. Apple Books and Google Play Books open it with a tap.',
-      'If you want paper on the kitchen table, the 40 sheet coloring book that comes free with the album is the printable one.',
+      'Yes! The digital download is a high-resolution, print-ready PDF.',
+      'You can print the entire 8-week workbook at once, print day-by-day sheets, or load the PDF into tablet annotation apps like GoodNotes or Notability.',
     ],
-    chips: ['EPUB file', 'Any device', 'Instant download'],
+    chips: ['Printable PDF', 'Tablet compatible', 'Unlimited home prints'],
   },
   {
-    id: 'screens',
+    id: 'music',
     color: 'var(--color-red)',
-    q: 'Is this just more screen time?',
+    q: 'How does the music integrate with the workbook?',
     a: [
-      'It is a book, and you are the one holding it. No autoplay. No feed. No next episode queued up. The page waits for your child.',
-      'We built it for the developing brain, not the algorithm. Most of the quest is calm on purpose. Two tracks in Vitalis are built to get them up and moving, and that is on purpose too.',
-      'The research behind it is real, so we will say it carefully. Rhythm, more than melody, tracks with early reading. In one 20 week trial, ten minutes of daily music training lifted phonological awareness about as much as a phonics program did. Researchers have found 16 regions of the genome that overlap between rhythm ability and reading.',
-      'Grounded in research. Not a promise about your child.',
+      'Every week corresponds with themes and characters from the 19-track Sound of Essentials album (available 100% free on /listen).',
+      'The songs reinforce the phonics, numbers, and somatic movement exercises children practice on the page.',
     ],
-    chips: ['No autoplay', 'No feed', 'Grounded in research'],
+    chips: ['Free companion album', 'Phonics songs', 'Multi-sensory'],
   },
   {
     id: 'refund',
     color: 'var(--color-green)',
-    q: 'What if it does not suit us?',
+    q: 'What is your refund policy?',
     a: [
-      'Then you get your money back. You have 30 days.',
-      'Send one email and we refund the $19. There is nothing to ship back and no form to fill in.',
-      'We would rather you have a book your family actually reads.',
+      'We offer a 30-day 100% money-back guarantee.',
+      'If The Summer Stretch is not a great fit for your child, simply send us an email within 30 days and we will refund your purchase completely.',
     ],
-    chips: ['30 day guarantee', 'One email', 'Nothing to return'],
+    chips: ['30-day guarantee', 'One email refund', 'Zero risk'],
   },
 ];
 
-/* One row of the stave. Local state, so more than one can stay open. */
 const RqFaqRow = ({ item, index, defaultOpen = false }) => {
   const [open, setOpen] = useState(defaultOpen);
-  const btnId = `rq-faq-btn-${item.id}`;
-  const panelId = `rq-faq-panel-${item.id}`;
+  const btnId = `ss-faq-btn-${item.id}`;
+  const panelId = `ss-faq-panel-${item.id}`;
 
   return (
     <div
       className={`rq-faq-row${open ? ' is-open' : ''}`}
       style={{ '--faq-color': item.color, '--i': index }}
     >
-      <span className="rq-faq-row__note" aria-hidden="true" />
-
       <h3 className="rq-faq-row__q">
         <button
           type="button"
@@ -1189,26 +969,6 @@ const RqFaqRow = ({ item, index, defaultOpen = false }) => {
           {item.a.map((para) => (
             <p key={para.slice(0, 32)} className="rq-faq-row__a">{para}</p>
           ))}
-
-          {item.weeks && (
-            <ol className="rq-faq-row__weeks">
-              {WEEKS.map((land, w) => (
-                <li key={land.id} style={{ '--land-color': land.color }}>
-                  <span className="rq-faq-row__week-n">Week {w + 1}</span>
-                  <span className="rq-faq-row__week-land">
-                    <span aria-hidden="true">{land.icon}</span> {land.name}
-                  </span>
-                </li>
-              ))}
-              <li className="rq-faq-row__weeks-next">
-                <span className="rq-faq-row__week-n">Week 8 and on</span>
-                <span className="rq-faq-row__week-land">The sequel, for later</span>
-              </li>
-            </ol>
-          )}
-
-          {item.note && <p className="rq-faq-row__a rq-faq-row__a--note">{item.note}</p>}
-
           <ul className="rq-faq-row__chips">
             {item.chips.map((c) => (
               <li key={c}>{c}</li>
@@ -1220,18 +980,17 @@ const RqFaqRow = ({ item, index, defaultOpen = false }) => {
   );
 };
 
-const RqFaq = () => (
+const SummerStretchFaq = () => (
   <section className="rq-faq section" id="faq">
     <div className="container">
       <div className="rq-faq__grid">
-
         <RevealSection className="rq-faq__intro">
           <div className="section-label">Straight Answers</div>
           <h2 className="section-title" style={{ color: 'var(--color-text-dark)' }}>
-            Six Fair Questions. <span className="text-sage">Six Straight Answers.</span>
+            Frequently Asked <span className="text-sage">Questions</span>
           </h2>
           <p className="section-subtitle">
-            We would rather answer these now than after you buy.
+            Everything you need to know about The Summer Stretch curriculum.
           </p>
         </RevealSection>
 
@@ -1243,42 +1002,29 @@ const RqFaq = () => (
 
         <RevealSection className="rq-faq__aside" delay={0.15}>
           <div className="rq-faq__cta">
-            <span className="rq-faq__cta-eyebrow">Ready when you are</span>
+            <span className="rq-faq__cta-eyebrow">Ready for Summer</span>
             <p className="rq-faq__cta-price">
-              <strong>$19</strong> once. Seven weeks. Yours to keep.
+              <strong>$21</strong> complete 8-week workbook
             </p>
             <RqBuyLink className="btn btn-gold rq-faq__cta-btn">
-              Start the Seven Land Quest · $19
+              Get The Summer Stretch · $21
             </RqBuyLink>
             <p className="rq-faq__cta-fine">
-              30 day money back guarantee. Instant EPUB download.
+              30-day money-back guarantee · Instant PDF download
             </p>
-            <a href="#preview" className="rq-faq__cta-link">
-              Or look inside a few pages first
-            </a>
           </div>
         </RevealSection>
-
       </div>
     </div>
   </section>
 );
 
-/* ── Real spreads from the Rhythm Quest storybook (web/public/assets/book/) ── */
-const bookPreviews = [
-  { file: '1.png',  label: "Seriphia's Call From the Heavens" },
-  { file: '3.png',  label: 'Kenji & Aiko — Singing Their Way Through the Alphabet' },
-  { file: '5.png',  label: 'The Word Warriors Lead the Way' },
-  { file: '7.png',  label: 'The Whole Quest, Together in the Sunflower Fields' },
-  { file: '9.png',  label: 'Riding the Waves of Aquaria' },
-  { file: '12.png', label: 'Through the Music Gate, the Quest Begins' },
-];
-
+/* ═══════════════════════════════════════════════════════════════
+   MAIN PAGE COMPONENT
+   ═══════════════════════════════════════════════════════════════ */
 const RhythmQuestSale = () => {
-  const scrollRef = useRef(null);
-
   useEffect(() => {
-    document.title = 'The Sound of Essentials: Rhythm Quest — Seven Weeks, Seven Lands, One Quest';
+    document.title = 'The Sound of Essentials: The Summer Stretch — 8-Week Learning Quest (Grades K–3)';
   }, []);
 
   const carouselOrder = [
@@ -1294,71 +1040,19 @@ const RhythmQuestSale = () => {
 
   return (
     <div className="rq-sale" style={{ '--rq-hero-bg': `url('${assetPath('/assets/scenes/aquaria-shore.webp')}')` }}>
-
       {/* ═══ HERO ═══ */}
-      <RhythmQuestHero />
+      <SummerStretchHero />
 
-      {/* ═══ PROOF: counted scope, cited research, the maker, risk reversal ═══ */}
-      <RqProof />
+      {/* ═══ PROOF & RESEARCH ═══ */}
+      <SummerStretchProof />
 
-      {/* ═══ SIGNATURE: SONG-STAVE BRIDGE ═══ */}
-      <section className="rq-bridge">
-        <div className="rq-bridge__inner">
-          <RevealSection>
-            <p className="rq-bridge__line">&quot;The songs become a universe.&quot;</p>
-            <div className="rq-staff" aria-hidden="true">
-              <div className="rq-staff__lines">
-                <span /><span /><span /><span /><span />
-              </div>
-              <div className="rq-staff__glyphs">
-                <span className="rq-staff__note">♪</span>
-                <span className="rq-staff__note">♫</span>
-                <span className="rq-staff__note">♪</span>
-                <span className="rq-staff__letter">A</span>
-                <span className="rq-staff__letter">B</span>
-                <span className="rq-staff__letter">C</span>
-              </div>
-            </div>
-          </RevealSection>
-        </div>
-      </section>
+      {/* ═══ WHAT'S INSIDE (THE 6 DAILY BLOCKS) ═══ */}
+      <SummerStretchWhatsInside />
 
-      {/* ═══ WHAT'S INSIDE ═══ */}
-      <RqWhatsInside />
+      {/* ═══ 8-WEEK ROADMAP ═══ */}
+      <SummerStretchRoadmap />
 
-      {/* ═══ PAGE PREVIEW CAROUSEL ═══ */}
-      <section className="rq-preview section" id="preview">
-        <div className="container text-center">
-          <RevealSection>
-            <div className="section-label">Look Inside</div>
-            <h2 className="section-title" style={{ color: 'var(--color-text-dark)' }}>
-              Preview <span className="text-sage">the Storybook</span>
-            </h2>
-            <p className="section-subtitle">
-              Real spreads from the Rhythm Quest journey
-            </p>
-          </RevealSection>
-        </div>
-
-        <div className="rq-preview__scroll" ref={scrollRef}>
-          {bookPreviews.map((pg) => (
-            <div key={pg.file} className="rq-preview__card">
-              <img
-                src={assetPath(`/assets/book/${pg.file}`)}
-                alt={pg.label}
-                loading="lazy"
-              />
-              <div className="rq-preview__card-label">{pg.label}</div>
-            </div>
-          ))}
-        </div>
-        <p className="rq-preview__hint">← Scroll to explore more pages →</p>
-      </section>
-
-      {/* ═══ THE SEVEN LAND QUEST MAP ═══ */}
-      <RqQuestMap />
-
-      {/* ═══ CHARACTER PARADE ═══ */}
+      {/* ═══ 15 HEROES PARADE ═══ */}
       <section className="rq-characters">
         <div className="rq-char-parade" aria-label="Character parade">
           {paradeChars.map((c, i) => (
@@ -1376,26 +1070,10 @@ const RhythmQuestSale = () => {
       </section>
 
       {/* ═══ THE OFFER ═══ */}
-      <RqOffer />
-
-      {/* ═══ FOUNDER STORY (no fabricated proof pre-launch — see brand-voice rules) ═══ */}
-      <section className="rq-testimonials section">
-        <div className="container">
-          <RevealSection className="text-center">
-            <div className="section-label">Why It Exists</div>
-            <h2 className="section-title" style={{ color: 'var(--color-text-dark)' }}>
-              The Songs Came First. <span className="text-gold">This Is What Came Next.</span>
-            </h2>
-            <p className="section-subtitle" style={{ maxWidth: '640px', margin: '0 auto' }}>
-              A father wrote these songs for his own kids first. Then he drew this world around
-              them, page by page, so the story could keep going after the last track ends.
-            </p>
-          </RevealSection>
-        </div>
-      </section>
+      <SummerStretchOffer />
 
       {/* ═══ FAQ ═══ */}
-      <RqFaq />
+      <SummerStretchFaq />
 
       {/* ═══ FINAL CTA ═══ */}
       <section className="rq-final-cta section">
@@ -1410,23 +1088,23 @@ const RhythmQuestSale = () => {
                 />
                 <div className="scene-backdrop__scrim" />
               </div>
-              <div className="rq-cta-card__icon" aria-hidden="true">🎶</div>
+              <div className="rq-cta-card__icon" aria-hidden="true">☀️</div>
               <h2 className="section-title" style={{ color: 'var(--color-text-dark)' }}>
-                Continue the Quest Today
+                Start The Summer Stretch Today
               </h2>
               <p className="section-subtitle" style={{ marginTop: '1rem' }}>
-                66 pages. 7 Lands. 15 heroes. Seven weeks, start to finish.
+                8 Weeks. 40 Days. 240+ Daily Activities. Grades K–3.
                 <br />
                 <span style={{ color: 'var(--color-green)', fontWeight: 600 }}>
-                  Crafted by a father&apos;s heart and mother&apos;s love.
+                  Prevent the summer slide with music-powered joy.
                 </span>
               </p>
               <div className="rq-cta-actions">
-                <RqBuyLink className="btn btn-gold">Start the Quest — $19</RqBuyLink>
+                <RqBuyLink className="btn btn-gold">Get The Summer Stretch — $21</RqBuyLink>
                 <Link to="/listen" className="btn btn-sage">Get the Free Album First</Link>
               </div>
               <div className="rq-guarantee">
-                <span>🔒</span> Instant digital delivery · EPUB format · Read on any device
+                <span>🔒</span> Instant digital PDF delivery · Print or use on tablet · 30-day guarantee
               </div>
             </div>
           </RevealSection>

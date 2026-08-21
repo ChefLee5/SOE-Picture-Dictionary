@@ -81,6 +81,7 @@ const App = () => {
                 <Route path="/allies"    element={<AnimatedPage><AllyAnnex /></AnimatedPage>} />
                 <Route path="/dictionary" element={<AnimatedPage><DictionarySale /></AnimatedPage>} />
                 <Route path="/rhythm-quest" element={<AnimatedPage><RhythmQuestSale /></AnimatedPage>} />
+                <Route path="/summer-stretch" element={<AnimatedPage><RhythmQuestSale /></AnimatedPage>} />
                 <Route path="/gallery"    element={<AnimatedPage><Gallery /></AnimatedPage>} />
                 <Route path="/player"     element={<AnimatedPage><Player /></AnimatedPage>} />
                 <Route path="/order-success" element={<AnimatedPage><OrderSuccess /></AnimatedPage>} />
