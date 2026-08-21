@@ -1094,9 +1094,9 @@ const Home = () => {
         .hero__3d-book-img {
           display: block;
           width: 100%;
-          max-width: 380px;
+          max-width: 400px;
           height: auto;
-          aspect-ratio: 3 / 4;
+          aspect-ratio: 1 / 1;
           object-fit: cover;
           border-radius: 14px;
         }
