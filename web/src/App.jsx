@@ -27,6 +27,7 @@ const RhythmQuestSale = lazy(() => import('./pages/RhythmQuestSale'));
 const Listen     = lazy(() => import('./pages/Listen'));
 const Player     = lazy(() => import('./pages/Player'));
 const OrderSuccess = lazy(() => import('./pages/OrderSuccess'));
+const Gallery    = lazy(() => import('./pages/Gallery'));
 
 // ── V2 Redesign Routes (parallel, isolated under /v2) ───────────
 const HomeV2      = lazy(() => import('./pages-v2/HomeV2'));
@@ -83,6 +84,7 @@ const App = () => {
                 <Route path="/allies"    element={<AnimatedPage><AllyAnnex /></AnimatedPage>} />
                 <Route path="/dictionary" element={<AnimatedPage><DictionarySale /></AnimatedPage>} />
                 <Route path="/rhythm-quest" element={<AnimatedPage><RhythmQuestSale /></AnimatedPage>} />
+                <Route path="/gallery"    element={<AnimatedPage><Gallery /></AnimatedPage>} />
                 <Route path="/player"     element={<AnimatedPage><Player /></AnimatedPage>} />
                 <Route path="/order-success" element={<AnimatedPage><OrderSuccess /></AnimatedPage>} />
                 <Route path="/download"   element={<AnimatedPage><OrderSuccess /></AnimatedPage>} />

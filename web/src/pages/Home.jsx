@@ -275,7 +275,8 @@ const Home = () => {
                 <Floating3DBook
                   imageSrc="/assets/marketing/soe-album-storybook-cover.webp"
                   altText="The Sound of Essentials Rhythm Quest Storybook & Album Cover"
-                  badgeText="🎵 Official Storybook Companion"
+                  badgeText="📖 Storybook Gallery • Click to Explore"
+                  to="/gallery"
                 />
               </div>
             </div>

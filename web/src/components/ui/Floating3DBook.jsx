@@ -1,11 +1,14 @@
 import React, { useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { assetPath } from '../../utils/assetPath';
 
 export const Floating3DBook = ({
   imageSrc = '/assets/marketing/soe-album-storybook-cover.webp',
   altText = 'The Sound of Essentials Rhythm Quest Storybook & Album Cover',
-  badgeText = '🎵 Official Storybook Companion',
+  badgeText = '📖 Storybook Gallery • Click to Explore',
+  to = '/gallery',
 }) => {
+  const navigate = useNavigate();
   const cardRef = useRef(null);
   const [isHovered, setIsHovered] = useState(false);
   const [shinePos, setShinePos] = useState({ x: 50, y: 50 });
@@ -43,10 +46,32 @@ export const Floating3DBook = ({
     card.style.transform = 'perspective(1200px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
   };
 
+  const handleClick = (e) => {
+    e.preventDefault();
+    if (to) {
+      navigate(to);
+    }
+  };
+
   return (
     <div
       className="hero__3d-book-container"
-      style={{ perspective: '1200px' }}
+      role="button"
+      tabIndex={0}
+      aria-label={`${altText} - Click to view gallery`}
+      onClick={handleClick}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          handleClick(e);
+        }
+      }}
+      style={{
+        perspective: '1200px',
+        cursor: 'pointer',
+        display: 'inline-block',
+        outline: 'none',
+      }}
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
@@ -58,6 +83,7 @@ export const Floating3DBook = ({
         style={{
           transform: isHovered ? 'scale(1.15)' : 'scale(1)',
           opacity: isHovered ? 0.95 : 0.75,
+          pointerEvents: 'none',
         }}
       />
 
@@ -103,6 +129,7 @@ export const Floating3DBook = ({
                 opacity: isHovered ? 0.65 : 0,
                 background: `radial-gradient(circle at ${shinePos.x}% ${shinePos.y}%, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.15) 40%, transparent 70%)`,
                 transform: 'translateZ(55px)',
+                pointerEvents: 'none',
               }}
             />
           </div>
