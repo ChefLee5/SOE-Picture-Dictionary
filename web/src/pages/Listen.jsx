@@ -156,12 +156,15 @@ const Listen = () => {
           </p>
 
           {!isUnlocked && (
-            <div style={{ margin: '1.5rem auto 2rem auto', display: 'flex', justifyContent: 'center' }}>
+            <div style={{ margin: '1.5rem auto 2rem auto', display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', alignItems: 'center' }}>
               <MagneticPill intensity={0.25}>
                 <a href="#optin" className="btn btn-gold btn-shimmer" style={{ fontSize: '1.05rem', padding: '0.9rem 2.5rem' }}>
                   🎧 Unlock All 19 Tracks Free →
                 </a>
               </MagneticPill>
+              <Link to="/workbook" className="btn btn-outline" style={{ fontSize: '1rem', padding: '0.85rem 1.8rem', background: 'rgba(255, 255, 255, 0.8)' }}>
+                📚 Workbook &amp; Curriculum ($21) →
+              </Link>
             </div>
           )}
 
@@ -456,9 +459,9 @@ const Listen = () => {
                       <button className="btn btn-outline" onClick={() => setSoeBookIndex(Math.min(soeBookPages.length - 1, soeBookIndex + 1))}
                         disabled={soeBookIndex === soeBookPages.length - 1} aria-label="Next page">{t('media.next')}</button>
                     </div>
-                    <div className="text-center" style={{ marginTop: '1.5rem' }}>
-                      <Link to="/rhythm-quest" className="btn btn-gold btn-shimmer" style={{ fontSize: '1.05rem', padding: '0.85rem 2.2rem' }}>
-                        📖 Get the Full 66-Page Rhythm Quest Storybook ($19) →
+                    <div className="text-center" style={{ marginTop: '1.5rem', display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+                      <Link to="/workbook" className="btn btn-gold btn-shimmer" style={{ fontSize: '1.05rem', padding: '0.85rem 2.2rem' }}>
+                        📚 Get the 8-Week Workbook &amp; Curriculum ($21) →
                       </Link>
                     </div>
                   </div>
@@ -573,6 +576,36 @@ const Listen = () => {
                     </div>
                   ))}
                 </div>
+              </div>
+            </section>
+
+            {/* ── Workbook & Curriculum Cross-Promotion Banner ── */}
+            <section className="section glow-gold">
+              <div className="container">
+                <RevealSection>
+                  <div className="listen-tripwire-card glass-card" style={{ padding: '2.5rem', background: 'linear-gradient(135deg, rgba(255, 248, 240, 0.95), rgba(255, 255, 255, 0.92))', border: '2px solid rgba(255, 111, 0, 0.25)' }}>
+                    <div className="listen-tripwire-card__content">
+                      <span className="listen-tripwire-card__badge" style={{ background: 'rgba(255, 111, 0, 0.15)', color: 'var(--color-orange)' }}>
+                        📚 Complete 8-Week Curriculum · Grades K–3
+                      </span>
+                      <h3 className="listen-tripwire-card__title" style={{ fontSize: '1.8rem', marginTop: '0.5rem' }}>
+                        Pair This Album With The Daily Workbook &amp; Curriculum
+                      </h3>
+                      <p className="listen-tripwire-card__text" style={{ fontSize: '1.05rem', lineHeight: '1.6' }}>
+                        Turn every song into a daily lesson! 40 day-by-day guided lessons across all 7 Lands, featuring 240+ activities in phonics, math, science, somatic movement, civics, and reflection.
+                      </p>
+                    </div>
+                    <div className="listen-tripwire-card__action" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.6rem' }}>
+                      <div className="listen-tripwire-card__price">
+                        <span className="listen-tripwire-card__price-tag">$21</span>
+                        <span className="listen-tripwire-card__price-sub">Digital Workbook</span>
+                      </div>
+                      <Link to="/workbook" className="btn btn-gold btn-shimmer" style={{ fontSize: '1.08rem', padding: '0.9rem 2.2rem', whiteSpace: 'nowrap' }}>
+                        Explore Workbook &amp; Curriculum →
+                      </Link>
+                    </div>
+                  </div>
+                </RevealSection>
               </div>
             </section>
 

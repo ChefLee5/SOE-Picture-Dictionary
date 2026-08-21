@@ -622,7 +622,7 @@ const MediaRoom = () => {
                 </button>
               </div>
               <div className="text-center" style={{ marginTop: '1.5rem' }}>
-                <Link to="/join" className="btn btn-gold">{t('media.pre_order_book')}</Link>
+                <Link to="/workbook" className="btn btn-gold">📚 Get the 8-Week Workbook &amp; Curriculum ($21) →</Link>
               </div>
             </div>
           </RevealSection>
