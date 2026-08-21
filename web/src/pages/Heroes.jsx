@@ -189,7 +189,7 @@ const Characters = () => {
                         </p>
                         <div className="char-hero__actions">
                             <Link to="/join" className="btn btn-gold">{t('hero.join_button')}</Link>
-                            <Link to="/universe" className="btn btn-outline">{t('navbar.universe')} →</Link>
+                            <Link to="/gallery" className="btn btn-outline">Storybook Gallery →</Link>
                         </div>
                     </div>
                 </div>

@@ -15,7 +15,6 @@ import V2Layout from './components-v2/V2Layout';
 // Each page loads only when the user navigates to that route,
 // cutting the initial JS bundle by ~40%.
 const Home       = lazy(() => import('./pages/Home'));
-const Universe   = lazy(() => import('./pages/Universe'));
 // MediaRoom is now merged into Listen — /media redirects to /listen
 const Mission    = lazy(() => import('./pages/Mission'));
 const JoinQuest  = lazy(() => import('./pages/JoinQuest'));
@@ -31,7 +30,6 @@ const Gallery    = lazy(() => import('./pages/Gallery'));
 
 // ── V2 Redesign Routes (parallel, isolated under /v2) ───────────
 const HomeV2      = lazy(() => import('./pages-v2/HomeV2'));
-const UniverseV2  = lazy(() => import('./pages-v2/UniverseV2'));
 const HeroesV2    = lazy(() => import('./pages-v2/HeroesV2'));
 const ListenV2    = lazy(() => import('./pages-v2/ListenV2'));
 const ScienceV2   = lazy(() => import('./pages-v2/ScienceV2'));
@@ -61,7 +59,6 @@ const App = () => {
             <Routes location={location}>
               <Route path="/v2" element={<V2Layout />}>
                 <Route index element={<HomeV2 />} />
-                <Route path="universe" element={<UniverseV2 />} />
                 <Route path="heroes" element={<HeroesV2 />} />
                 <Route path="listen" element={<ListenV2 />} />
                 <Route path="science" element={<ScienceV2 />} />
@@ -73,7 +70,7 @@ const App = () => {
             <AnimatePresence mode="wait">
               <Routes location={location} key={location.pathname}>
                 <Route path="/"           element={<AnimatedPage><Home /></AnimatedPage>} />
-                <Route path="/universe"   element={<AnimatedPage><Universe /></AnimatedPage>} />
+                <Route path="/universe"   element={<Navigate to="/heroes" replace />} />
                 <Route path="/media"      element={<Navigate to="/listen" replace />} />
                 <Route path="/mission"    element={<AnimatedPage><Mission /></AnimatedPage>} />
                 <Route path="/listen"    element={<AnimatedPage><Listen /></AnimatedPage>} />

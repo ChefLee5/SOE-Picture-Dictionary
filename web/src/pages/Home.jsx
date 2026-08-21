@@ -270,13 +270,13 @@ const Home = () => {
                 </div>
               </div>
 
-              {/* Hero Visual: 3D Interactive Floating Album & Storybook Cover Showcase */}
+              {/* Hero Visual: 3D Interactive Floating Album Cover Showcase */}
               <div className="hero__visual animate-fade-up">
                 <Floating3DBook
-                  imageSrc="/assets/marketing/soe-album-storybook-cover.webp"
-                  altText="The Sound of Essentials Rhythm Quest Storybook & Album Cover"
-                  badgeText="📖 Storybook Gallery • Click to Explore"
-                  to="/gallery"
+                  imageSrc="/assets/marketing/soe-deluxe-cover.webp"
+                  altText="The Sound of Essentials Deluxe 19-Track Album Cover"
+                  badgeText="🎵 Free 19-Track Album • Stream Now"
+                  to="/listen"
                 />
               </div>
             </div>
@@ -429,31 +429,44 @@ const Home = () => {
             <div className="divider divider-center" />
           </RevealSection>
 
-          {/* 3 Pillars */}
-          <div className="quest-pillars-grid">
-            <RevealSection delay={0.1}>
-              <div className="glass-card quest-pillar-card">
-                <div className="quest-pillar__icon">🗺️</div>
-                <h3 className="quest-pillar__title">{t('home.quest_offer.feat_1_title')}</h3>
-                <p className="quest-pillar__desc">{t('home.quest_offer.feat_1_desc')}</p>
-              </div>
+          {/* Quest Storybook Visual & Pillars Showcase */}
+          <div className="quest-showcase-grid">
+            <RevealSection delay={0.1} className="quest-showcase__book-col">
+              <Floating3DBook
+                imageSrc="/assets/marketing/soe-album-storybook-cover.webp"
+                altText="The Sound of Essentials Rhythm Quest Storybook & Curriculum"
+                badgeText="📖 Storybook Gallery • Click to Explore"
+                to="/gallery"
+              />
             </RevealSection>
 
-            <RevealSection delay={0.2}>
-              <div className="glass-card quest-pillar-card quest-pillar-card--highlight">
-                <div className="quest-pillar__icon">🎯</div>
-                <h3 className="quest-pillar__title">{t('home.quest_offer.feat_2_title')}</h3>
-                <p className="quest-pillar__desc">{t('home.quest_offer.feat_2_desc')}</p>
-              </div>
-            </RevealSection>
+            <div className="quest-showcase__pillars-col">
+              <div className="quest-pillars-grid">
+                <RevealSection delay={0.15}>
+                  <div className="glass-card quest-pillar-card">
+                    <div className="quest-pillar__icon">🗺️</div>
+                    <h3 className="quest-pillar__title">{t('home.quest_offer.feat_1_title')}</h3>
+                    <p className="quest-pillar__desc">{t('home.quest_offer.feat_1_desc')}</p>
+                  </div>
+                </RevealSection>
 
-            <RevealSection delay={0.3}>
-              <div className="glass-card quest-pillar-card">
-                <div className="quest-pillar__icon">🏅</div>
-                <h3 className="quest-pillar__title">{t('home.quest_offer.feat_3_title')}</h3>
-                <p className="quest-pillar__desc">{t('home.quest_offer.feat_3_desc')}</p>
+                <RevealSection delay={0.2}>
+                  <div className="glass-card quest-pillar-card quest-pillar-card--highlight">
+                    <div className="quest-pillar__icon">🎯</div>
+                    <h3 className="quest-pillar__title">{t('home.quest_offer.feat_2_title')}</h3>
+                    <p className="quest-pillar__desc">{t('home.quest_offer.feat_2_desc')}</p>
+                  </div>
+                </RevealSection>
+
+                <RevealSection delay={0.25}>
+                  <div className="glass-card quest-pillar-card">
+                    <div className="quest-pillar__icon">🏅</div>
+                    <h3 className="quest-pillar__title">{t('home.quest_offer.feat_3_title')}</h3>
+                    <p className="quest-pillar__desc">{t('home.quest_offer.feat_3_desc')}</p>
+                  </div>
+                </RevealSection>
               </div>
-            </RevealSection>
+            </div>
           </div>
 
           {/* 7 Lands Mini Carousel/Grid */}
@@ -1552,6 +1565,27 @@ const Home = () => {
         }
 
         /* ── SECTION 4: Quest Offer ── */
+        .quest-showcase-grid {
+          display: grid;
+          grid-template-columns: 380px 1fr;
+          gap: 3rem;
+          align-items: center;
+          margin-top: 2.5rem;
+        }
+
+        .quest-showcase__book-col {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .quest-showcase__pillars-col .quest-pillars-grid {
+          display: flex;
+          flex-direction: column;
+          gap: 1.25rem;
+          margin-top: 0;
+        }
+
         .quest-pillars-grid {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
@@ -1999,12 +2033,18 @@ const Home = () => {
 
         @media (max-width: 992px) {
           .voices-grid { grid-template-columns: 1fr; }
+          .quest-showcase-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+          .quest-showcase__pillars-col .quest-pillars-grid { display: grid; grid-template-columns: 1fr; }
           .quest-pillars-grid { grid-template-columns: 1fr; }
           .lands-preview-grid { grid-template-columns: repeat(4, 1fr); }
           .domains-grid { grid-template-columns: repeat(3, 1fr); }
           .credibility-pillars { grid-template-columns: 1fr; }
           .science-cards-grid { grid-template-columns: 1fr; }
           .macro-stats__grid { grid-template-columns: 1fr; }
+        }
+
+        @media (min-width: 768px) and (max-width: 992px) {
+          .quest-showcase__pillars-col .quest-pillars-grid { grid-template-columns: repeat(3, 1fr); }
         }
 
         @media (max-width: 768px) {

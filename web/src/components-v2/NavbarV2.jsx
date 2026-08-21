@@ -21,7 +21,6 @@ const NavbarV2 = () => {
   const closeMobile = useCallback(() => setMobileOpen(false), []);
 
   const links = [
-    { to: '/v2/universe', label: 'UNIVERSE' },
     { to: '/v2/listen',   label: 'LISTEN' },
     { to: '/v2/science',  label: 'SCIENCE' },
     { to: '/v2/heroes',   label: 'HEROES' },

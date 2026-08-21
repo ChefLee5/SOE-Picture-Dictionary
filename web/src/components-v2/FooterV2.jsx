@@ -23,7 +23,6 @@ const FooterV2 = () => {
           {/* Column 2: Pages */}
           <div className="v2-footer__col">
             <div className="v2-footer__col-title">Explore</div>
-            <Link to="/v2/universe" className="v2-footer__link">Universe</Link>
             <Link to="/v2/heroes" className="v2-footer__link">Heroes</Link>
             <Link to="/v2/listen" className="v2-footer__link">Listen</Link>
             <Link to="/v2/science" className="v2-footer__link">Science</Link>
