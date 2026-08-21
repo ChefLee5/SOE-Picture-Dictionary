@@ -10,25 +10,49 @@ async function processImage() {
   await mkdir(OUT_SCENES, { recursive: true });
   await mkdir(OUT_MARKETING, { recursive: true });
 
-  // 1. High-resolution background for desktop/retina hero (1920 width, WebP quality 88)
+  // 1. FULL uncropped original artwork at pristine fidelity (1024x1024 WebP)
   await sharp(SRC)
-    .resize({ width: 1920, height: 1080, fit: 'cover', position: 'center' })
-    .webp({ quality: 88, effort: 6 })
+    .webp({ quality: 92, effort: 6 })
     .toFile(join(OUT_SCENES, 'seriphia-seven-lands-path.webp'));
 
-  // 2. Full artwork square / uncropped version
+  // 2. High-res copy in marketing
   await sharp(SRC)
-    .resize({ width: 1400, height: 1400, fit: 'contain', background: { r: 255, g: 248, b: 240, alpha: 1 } })
+    .webp({ quality: 92, effort: 6 })
+    .toFile(join(OUT_MARKETING, 'seriphia-seven-lands-path.webp'));
+
+  // 3. Wide 1920x1080 extended panorama with full uncropped artwork centered-right
+  // Matching sky: #A5D8F3, Matching meadow: #C8E6C9 / #FFF8F0
+  const artworkBuffer = await sharp(SRC)
+    .resize({ height: 1000, fit: 'contain' })
+    .toBuffer();
+
+  const backgroundSvg = Buffer.from(`
+    <svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#9AD7F5"/>
+          <stop offset="35%" stop-color="#C5E8FA"/>
+          <stop offset="60%" stop-color="#FFE8D0"/>
+          <stop offset="85%" stop-color="#C8E6A5"/>
+          <stop offset="100%" stop-color="#A5D685"/>
+        </linearGradient>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#skyGrad)"/>
+    </svg>
+  `);
+
+  await sharp(backgroundSvg)
+    .composite([
+      {
+        input: artworkBuffer,
+        left: 460,
+        top: 40,
+      }
+    ])
     .webp({ quality: 90, effort: 6 })
-    .toFile(join(OUT_MARKETING, 'seriphia-seven-lands-square.webp'));
+    .toFile(join(OUT_SCENES, 'seriphia-seven-lands-panorama.webp'));
 
-  // 3. Ultra-optimized backdrop version with soft warm luminance
-  await sharp(SRC)
-    .resize({ width: 1920, withoutEnlargement: true })
-    .webp({ quality: 85, effort: 6 })
-    .toFile(join(OUT_SCENES, 'summer-stretch-hero-bg.webp'));
-
-  console.log('✓ Successfully processed and optimized Seriphia 7 Lands background image!');
+  console.log('✓ Successfully created uncropped and wide panorama Seriphia backgrounds!');
 }
 
 processImage();
