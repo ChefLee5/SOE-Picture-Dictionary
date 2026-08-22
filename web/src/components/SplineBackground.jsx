@@ -181,11 +181,15 @@ const CanvasBackground = () => {
       sparkles = Array.from({ length: 40 }, () => new Sparkle(W, H));
     };
 
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let isRunning = !prefersReducedMotion;
+
     const draw = () => {
+      if (!isRunning) return;
       const W = canvas.width;
       const H = canvas.height;
 
-      // Background fill — warm cream white matching --color-bg-white
+      // Background fill — clear frame
       ctx.clearRect(0, 0, W, H);
 
       // Draw layers: orbs → sparkles → notes
@@ -198,18 +202,37 @@ const CanvasBackground = () => {
     };
 
     setup();
-    draw();
+    if (isRunning) {
+      draw();
+    } else {
+      // Single static render for reduced motion
+      const W = canvas.width;
+      const H = canvas.height;
+      for (const o of orbs) o.draw(ctx);
+    }
 
     const onResize = () => {
       cancelAnimationFrame(raf);
       setup();
-      draw();
+      if (isRunning) draw();
+    };
+
+    const onVisibilityChange = () => {
+      if (document.hidden) {
+        isRunning = false;
+        cancelAnimationFrame(raf);
+      } else if (!prefersReducedMotion) {
+        isRunning = true;
+        raf = requestAnimationFrame(draw);
+      }
     };
 
     window.addEventListener('resize', onResize, { passive: true });
+    document.addEventListener('visibilitychange', onVisibilityChange);
     return () => {
       cancelAnimationFrame(raf);
       window.removeEventListener('resize', onResize);
+      document.removeEventListener('visibilitychange', onVisibilityChange);
     };
   }, []);
 
