@@ -67,15 +67,15 @@
     "storeUrl": "https://the-sound-of-essentials.myshopify.com/cart/53204514799932:1"
   },
   {
-    "id": "summer-stretch-workbook",
-    "name": "SOE Rhythm Quest: Summer Stretch Workbook",
-    "shortName": "Summer Stretch Workbook",
+    "id": "rhythmready-workbook",
+    "name": "SOE Rhythm Quest: Rhythm Ready Workbook",
+    "shortName": "Rhythm Ready Workbook",
     "type": "digital-workbook",
     "format": "PDF",
     "price": 21.0,
     "printPrice": 35.0,
     "currency": "USD",
-    "description": "An 8-week cross-curricular workbook spanning all 7 Lands. 40 days, 10 activity blocks a day — 400 activities in about 30 minutes a day, with progressive difficulty and character rotation.",
+    "description": "An 8-week cross-curricular readiness workbook spanning all 7 Lands. 40 days, 10 activity blocks a day — 400 activities in about 30 minutes a day, building bedrock skills and learning momentum with progressive difficulty and character rotation.",
     "features": [
       "8 weeks of structured activities",
       "400 activities across 40 days",
@@ -91,7 +91,7 @@
     "category": "education",
     "tags": [
       "workbook",
-      "summer-learning",
+      "school-readiness",
       "cross-curricular",
       "activities",
       "STEM"
@@ -143,18 +143,18 @@
     "format": "Digital Bundle",
     "price": 89.0,
     "currency": "USD",
-    "description": "The complete Sound of Essentials learning experience. Includes the Rhythm Quest album (19 tracks), Essential Picture Dictionary, Rhythm Quest Storybook, and Summer Stretch Workbook — everything a family needs for a full year of music-powered learning.",
+    "description": "The complete Sound of Essentials learning experience. Includes the Rhythm Quest album (19 tracks), Essential Picture Dictionary, Rhythm Quest Storybook, and Rhythm Ready Workbook — everything a family needs for a full year of music-powered learning.",
     "features": [
       "19-track Rhythm Quest album",
       "Essential Picture Dictionary (EPUB)",
       "66-page Rhythm Quest Storybook (EPUB)",
-      "Summer Stretch Workbook (PDF)",
+      "Rhythm Ready Workbook (PDF)",
       "Bonus: printable activity sheets",
       "Bonus: parent quick-start guide"
     ],
     "includes": [
       "picture-dictionary",
-      "summer-stretch-workbook",
+      "rhythmready-workbook",
       "rhythm-quest-album",
       "rhythm-quest-ebook"
     ],

@@ -682,7 +682,7 @@ const Home = () => {
               Every Word Has a <span className="text-gold">World Behind It</span>
             </h2>
             <p className="section-subtitle" style={{ margin: '0 auto 2.5rem auto', maxWidth: '680px' }}>
-              4,232 words. 157 illustrated scenes. 7 lands. The SOE Rhythm Quest Picture Dictionary and Summer Stretch
+              4,232 words. 157 illustrated scenes. 7 lands. The SOE Rhythm Quest Picture Dictionary and Rhythm Ready
               Workbook expand auditory learning into rich visual and tactile mastery.
             </p>
           </RevealSection>
@@ -848,7 +848,7 @@ const Home = () => {
               </div>
               
               <div className="final-cta-content">
-                <div className="cta-icon" aria-hidden="true">🔔</div>
+                <div className="cta-icon" aria-hidden="true">🌟</div>
                 <h2 className="final-cta-title">{t('home.final_cta.title')}</h2>
                 <p className="final-cta-subtitle">{t('home.final_cta.subtitle')}</p>
 
@@ -856,13 +856,13 @@ const Home = () => {
                   <Link to="/listen" className="btn btn-gold btn-shimmer btn-lg">
                     {t('home.final_cta.btn_free')}
                   </Link>
-                  <Link to="/rhythm-quest" className="btn btn-sage btn-lg">
+                  <Link to="/rhythm-ready" className="btn btn-sage btn-lg">
                     {t('home.final_cta.btn_quest')}
                   </Link>
                 </div>
 
                 <div className="final-cta-badge">
-                  <span>{t('home.final_cta.badge')}</span>
+                  <span>🔒 {t('home.final_cta.badge')}</span>
                 </div>
               </div>
             </div>
@@ -1988,8 +1988,32 @@ const Home = () => {
           overflow: hidden;
           padding: 5.5rem 3rem;
           border-radius: var(--radius-xl);
-          background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 111, 0, 0.08));
+          background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 248, 240, 0.92));
           border: 2px solid rgba(255, 111, 0, 0.25);
+          box-shadow: 0 20px 40px -15px rgba(255, 111, 0, 0.12);
+        }
+
+        .scene-backdrop {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+          border-radius: inherit;
+          z-index: 1;
+          pointer-events: none;
+        }
+
+        .scene-backdrop__img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          opacity: 0.18;
+          filter: saturate(1.2);
+        }
+
+        .scene-backdrop__scrim {
+          position: absolute;
+          inset: 0;
+          background: radial-gradient(circle at center, rgba(255, 248, 240, 0.7) 0%, rgba(255, 248, 240, 0.96) 100%);
         }
 
         .final-cta-content {
@@ -1999,10 +2023,18 @@ const Home = () => {
           margin: 0 auto;
         }
 
+        .cta-icon {
+          font-size: 2.5rem;
+          margin-bottom: 1rem;
+          display: inline-block;
+        }
+
         .final-cta-title {
           font-size: clamp(2rem, 3.8vw, 3rem);
           line-height: 1.2;
           margin-bottom: 1.25rem;
+          color: var(--color-text-primary);
+          font-weight: 800;
         }
 
         .final-cta-subtitle {
@@ -2021,7 +2053,7 @@ const Home = () => {
         }
 
         .final-cta-badge {
-          font-size: 0.85rem;
+          font-size: 0.9rem;
           color: var(--color-green);
           font-weight: 600;
         }

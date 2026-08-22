@@ -1,6 +1,6 @@
 {
-  "title": "SOE Rhythm Quest: The Summer Stretch Workbook",
-  "subtitle": "The Summer Stretch",
+  "title": "SOE Rhythm Quest: RhythmReady Workbook",
+  "subtitle": "RhythmReady: The 8-Week Readiness Quest",
   "grades": "K–3",
   "weeks": [
     {
@@ -1238,7 +1238,7 @@
               "char_names": "Elias & Ezra"
             },
             "F": {
-              "reflection_prompt": "3 weeks done! Color 3 stars on your Quest Map. Write: The best thing about this summer stretch so far is ___"
+              "reflection_prompt": "3 weeks done! Color 3 stars on your Quest Map. Write: The best thing about my RhythmReady journey so far is ___"
             },
             "G": {
               "title": "Handwriting Self-Assessment",
@@ -2072,7 +2072,7 @@
               "char_names": "Elias & Ezra"
             },
             "F": {
-              "reflection_prompt": "5 weeks complete! You are a Summer Stretch Champion! Write: My biggest growth this summer has been ___ and next week I plan to ___"
+              "reflection_prompt": "5 weeks complete! You are a RhythmReady Champion! Write: My biggest growth on this quest has been ___ and next week I plan to ___"
             },
             "G": {
               "title": "Speed Writing Sprint",
@@ -2578,7 +2578,7 @@
               "char_names": "Ronan & Selene"
             },
             "F": {
-              "reflection_prompt": "If your summer stretch was a story, what would the title be? Write 3 sentences describing the plot so far."
+              "reflection_prompt": "If your RhythmReady journey was a story, what would the title be? Write 3 sentences describing the plot so far."
             },
             "G": {
               "title": "Writing a Mini Story by Hand",
@@ -2906,7 +2906,7 @@
               "char_names": "Elias & Ezra"
             },
             "F": {
-              "reflection_prompt": "7 weeks! ONE week to go! Write: The story of my Summer Stretch, in exactly 7 words (one for each week)."
+              "reflection_prompt": "7 weeks! ONE week to go! Write: The story of my RhythmReady Quest, in exactly 7 words (one for each week)."
             },
             "G": {
               "title": "Handwriting Fluency Test",
@@ -3077,7 +3077,7 @@
               "char_names": "Ezra & Athena"
             },
             "F": {
-              "reflection_prompt": "Design the cover of your Summer Stretch memory book. Draw it in the box and write the title in your best handwriting."
+              "reflection_prompt": "Design the cover of your RhythmReady memory book. Draw it in the box and write the title in your best handwriting."
             },
             "G": {
               "title": "Writing Awards & Certificates",
@@ -3102,14 +3102,14 @@
           "primary_char_names": "Elias, Ezra & All",
           "blocks": {
             "A": {
-              "title": "My Summer Stretch Story",
+              "title": "My RhythmReady Story",
               "time": 3,
               "img": "land1_school-events-activities.jpg",
               "img_alt": "Children celebrating learning accomplishments in Harmonia",
               "img_source": "SOE Picture Dictionary — Land 1",
               "phonetic": "STORY | BEGIN | MID-ul | END | de-TAIL-s | PROUD",
-              "instructions": "Write your complete Summer Stretch Story: beginning (how you started), middle (your biggest challenge), end (what you learned). Aim for 8-10 sentences!",
-              "tip": "Amara says: Every learner has a hero's story. You are the hero of yours!"
+              "instructions": "Write your complete RhythmReady Story: beginning (how you started), middle (your biggest challenge), end (what you learned). Aim for 8-10 sentences!",
+              "tip": "Kenji says: Every learner has a hero's story. You are the hero of yours!"
             },
             "B": {
               "title": "Math Celebration Problems",
@@ -3129,7 +3129,7 @@
               "img_source": "SOE Picture Dictionary — Land 7",
               "phonetic": "CAL-en-der | CYCLE | PLAN | DIS-ciplin | GOAL | DREAM",
               "instructions": "Mark your school year calendar with 4 big goals: one per quarter. Write each as: 'By [month], I will have ___.' Sign and date it as a contract with yourself!",
-              "tip": "Ezra says: A written goal is a commitment. A committed learner is unstoppable!"
+              "tip": "Vesta says: A written goal is a commitment. A committed learner is unstoppable!"
             },
             "D": {
               "title": "Vitalis Vitality Dance",
@@ -3313,7 +3313,7 @@
               "img_source": "SOE Picture Dictionary — All 7 Lands",
               "phonetic": "DREɑ-m | FU-cher | A-CHIEVE | BE-COME | POS-sih-bul | DARE",
               "instructions": "Draw ALL 7 of your hero characters gathered together. Write a speech bubble for each with one word of encouragement. You lead them all now!",
-              "tip": "All Heroes say: You completed The Summer Stretch! The 7 Lands are inside you now. Go change the world!",
+              "tip": "All Heroes say: You completed RhythmReady! The 7 Lands are inside you now. Go change the world!",
               "land": 7,
               "land_class": "land7",
               "land_name": "Celestia",
@@ -3323,7 +3323,7 @@
               "char_names": "Every Hero United"
             },
             "F": {
-              "reflection_prompt": "🎉 CONGRATULATIONS, Summer Stretch CHAMPION! 🎉 Fill in your Quest Achievement Chart. Then write three words that describe the learner you have become this summer."
+              "reflection_prompt": "🎉 CONGRATULATIONS, RhythmReady CHAMPION! 🎉 Fill in your Quest Achievement Chart. Then write three words that describe the learner you have become on this quest."
             },
             "G": {
               "title": "🏆 Grand Penmanship Showcase",
@@ -3332,7 +3332,7 @@
               "img_alt": "Grand handwriting showcase in Celestia celebration hall",
               "img_source": "SOE Picture Dictionary — All Lands",
               "phonetic": "SHOW-kays | CHAMP-ee-on | MAS-ter | PROUD | FOR-ev-er",
-              "instructions": "Final showcase: Write the Summer Stretch Champion Pledge in your most beautiful handwriting: 'I pledge to write with confidence, care, and creativity. My handwriting is my voice on paper. I am a Penmanship Champion!' Sign and date it.",
+              "instructions": "Final showcase: Write the RhythmReady Champion Pledge in your most beautiful handwriting: 'I pledge to write with confidence, care, and creativity. My handwriting is my voice on paper. I am a RhythmReady Champion!' Sign and date it.",
               "tip": "All Heroes say: Your handwriting journey has transformed you from a writer into an ARTIST of words. Carry this confidence into everything you write!"
             }
           }

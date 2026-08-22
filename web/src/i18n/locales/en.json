@@ -210,7 +210,14 @@
         },
         "cta_title": "Biology doesn't wait for systems to fix themselves.",
         "cta_subtitle": "Open the door to learning with music.",
-        "explore_media": "Start the Free Experience →"
+        "explore_media": "Start the Free Experience →",
+        "final_cta": {
+            "title": "Begin Your Family's Rhythm Quest Today",
+            "subtitle": "19 original songs, 7 learning lands, and daily neuro-affirming activities designed for the developing brain.",
+            "btn_free": "Start the Free Experience →",
+            "btn_quest": "Explore The 7-Land Quest ($19) →",
+            "badge": "Instant Digital Access · Zero Screen Overwhelm · 100% Free to Start"
+        }
     },
     "universe": {
         "hero_label": "The Curriculum",

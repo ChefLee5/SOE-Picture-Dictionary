@@ -8,7 +8,7 @@ import './RhythmQuestSale.css';
 
 /**
  * Single source of truth for every buy CTA on this page.
- * Shopify cart permalink for The Summer Stretch Workbook ($21 Digital / $35 Print).
+ * Shopify cart permalink for The Rhythm Ready Workbook ($21 Digital / $35 Print).
  */
 const CHECKOUT_URL = 'https://the-sound-of-essentials.myshopify.com/cart/53204514799932:1';
 const CHECKOUT_IS_ABSOLUTE = /^https?:\/\//i.test(CHECKOUT_URL);
@@ -48,9 +48,9 @@ const useInView = (threshold = 0.3) => {
 };
 
 /* ══════════════════════════════════════════════════════════════════════
-   SUMMER STRETCH 8-WEEK ROADMAP CANON
+   RHYTHMREADY 8-WEEK ROADMAP CANON
    ══════════════════════════════════════════════════════════════════════ */
-const SUMMER_STRETCH_WEEKS = [
+const RHYTHMREADY_WEEKS = [
   {
     week: 1,
     id: 'harmonia',
@@ -158,9 +158,9 @@ const SUMMER_STRETCH_WEEKS = [
 ];
 
 /* ═══════════════════════════════════════════════════════════════
-   HERO — THE SUMMER STRETCH WORKBOOK
+   HERO — RHYTHMREADY WORKBOOK
    ═══════════════════════════════════════════════════════════════ */
-const SummerStretchHero = () => {
+const RhythmReadyHero = () => {
   const [week, setWeek] = useState(0);
   const [chosen, setChosen] = useState(false);
   const [paused, setPaused] = useState(false);
@@ -181,7 +181,7 @@ const SummerStretchHero = () => {
 
   useEffect(() => {
     if (calm || chosen || paused) return undefined;
-    const id = setInterval(() => setWeek((w) => (w + 1) % SUMMER_STRETCH_WEEKS.length), 3400);
+    const id = setInterval(() => setWeek((w) => (w + 1) % RHYTHMREADY_WEEKS.length), 3400);
     return () => clearInterval(id);
   }, [calm, chosen, paused]);
 
@@ -202,7 +202,7 @@ const SummerStretchHero = () => {
     el.style.removeProperty('--rq-tilt-x');
   }, []);
 
-  const currentWeek = SUMMER_STRETCH_WEEKS[week];
+  const currentWeek = RHYTHMREADY_WEEKS[week];
 
   return (
     <header className="rq-hero">
@@ -268,7 +268,7 @@ const SummerStretchHero = () => {
                 <div className="rq-book-3d__inner" ref={innerRef}>
                   <img
                     src={assetPath('/assets/workbook/soe-summer-stretch-cover.webp')}
-                    alt="The Sound of Essentials: The Summer Stretch Workbook Official Cover"
+                    alt="The Sound of Essentials: Rhythm Ready Workbook Official Cover"
                     className="rq-book-3d__cover"
                   />
                 </div>
@@ -299,16 +299,16 @@ const SummerStretchHero = () => {
           onBlur={() => setPaused(false)}
         >
           <div className="rq-hero__path-head">
-            <span className="rq-hero__path-title">The 8-Week Summer Journey</span>
+            <span className="rq-hero__path-title">The 8-Week Rhythm Ready Journey</span>
             <span className="rq-hero__path-sub">5 days a week, 6 daily blocks (~16 min/day). A clear path from Day 1 to Day 40.</span>
           </div>
 
           <div className="rq-hero__track" aria-hidden="true">
-            <span style={{ width: `${((week + 1) / SUMMER_STRETCH_WEEKS.length) * 100}%` }} />
+            <span style={{ width: `${((week + 1) / RHYTHMREADY_WEEKS.length) * 100}%` }} />
           </div>
 
-          <ol className="rq-hero__weeks" aria-label="The eight week summer stretch roadmap">
-            {SUMMER_STRETCH_WEEKS.map((w, i) => (
+          <ol className="rq-hero__weeks" aria-label="The eight week Rhythm Ready roadmap">
+            {RHYTHMREADY_WEEKS.map((w, i) => (
               <li key={w.week}>
                 <button
                   type="button"
@@ -337,12 +337,12 @@ const SummerStretchHero = () => {
    ═══════════════════════════════════════════════════════════════ */
 const proofEvidence = [
   {
-    id: 'summer-slide',
+    id: 'learning-loss',
     idx: '01',
     pull: '2.5 mo',
     pullNote: 'learning loss avoided',
-    claim: '15 minutes of daily structured practice prevents the summer slide.',
-    detail: 'Studies indicate that students lose up to 2.5 months of reading and math skills over the summer months without regular reinforcement. Micro-dosed daily practice halts regression completely.',
+    claim: '15 minutes of daily structured practice builds bedrock mastery and momentum.',
+    detail: 'Studies indicate that students lose up to 2.5 months of reading and math skills without regular reinforcement. Micro-dosed daily rhythm halts regression completely.',
     soWhat: 'So we designed 6 daily blocks totaling just 16 minutes: bite-sized, engaging, and impossible to burn out on.',
     href: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC3121007/',
     cite: 'Harvard Graduate School of Education & Frontiers in Psychology',
@@ -403,7 +403,7 @@ const RqCount = ({ value, active, duration = 900 }) => {
   return <>{n}</>;
 };
 
-const SummerStretchProof = () => {
+const RhythmReadyProof = () => {
   const [railRef, railInView] = useInView(0.25);
 
   const proofRail = useMemo(() => ([
@@ -437,7 +437,7 @@ const SummerStretchProof = () => {
         <div className="container">
           <RevealSection className="text-center rq-proof__head">
             <div className="section-label">Pedagogical Framework</div>
-            <h2 className="section-title" style={{ color: 'var(--color-text-dark)' }}>
+            <h2 className="section-title">
               Built for Real Retentive Power. <span className="text-gold">Backed by Science.</span>
             </h2>
             <p className="section-subtitle" style={{ margin: '0 auto' }}>
@@ -482,9 +482,9 @@ const SummerStretchProof = () => {
 
               <div className="rq-maker__copy">
                 <span className="rq-maker__eyebrow">The Method</span>
-                <h3 className="rq-maker__title">Designed for Homeschools, Classrooms & Summer Days</h3>
+                <h3 className="rq-maker__title">Designed for Homeschools, Classrooms &amp; Sanctuary Learning</h3>
                 <p className="rq-maker__text">
-                  We built The Summer Stretch to give parents and educators a friction-free, turnkey
+                  We built Rhythm Ready to give parents and educators a friction-free, turnkey
                   learning routine. No lesson planning, no special materials, and zero guesswork.
                 </p>
                 <p className="rq-maker__text">
@@ -564,13 +564,13 @@ const DAILY_BLOCKS = [
   },
 ];
 
-const SummerStretchWhatsInside = () => {
+const RhythmReadyWhatsInside = () => {
   return (
     <section className="rq-inside section" id="whats-inside">
       <div className="container">
         <RevealSection className="text-center">
           <div className="section-label">The Daily 6-Block Routine</div>
-          <h2 className="section-title" style={{ color: 'var(--color-text-dark)' }}>
+          <h2 className="section-title">
             Six Daily Blocks. <span className="text-gold">16 Minutes a Day.</span>
           </h2>
           <p className="section-subtitle">
@@ -608,7 +608,7 @@ const SummerStretchWhatsInside = () => {
               <div className="rq-ledger-row">
                 <span className="rq-ledger-row__k">Curriculum Format</span>
                 <span className="rq-ledger-row__v">
-                  Complete 8-week / 40-day printable PDF workbook. Print individual days or bind as a full summer workbook.
+                  Complete 8-week / 40-day printable PDF workbook. Print individual days or bind as a full readiness workbook.
                 </span>
               </div>
               <div className="rq-ledger-row">
@@ -639,7 +639,7 @@ const SummerStretchWhatsInside = () => {
 /* ═══════════════════════════════════════════════════════════════
    THE 8-WEEK DETAILED CURRICULUM MAP
    ═══════════════════════════════════════════════════════════════ */
-const SummerStretchRoadmap = () => {
+const RhythmReadyRoadmap = () => {
   const [activeWeek, setActiveWeek] = useState(0);
   const weekRefs = useRef([]);
 
@@ -654,7 +654,7 @@ const SummerStretchRoadmap = () => {
       <div className="container">
         <RevealSection className="text-center">
           <div className="section-label">8-Week Scope &amp; Sequence</div>
-          <h2 className="section-title" id="ss-qmap-title" style={{ color: 'var(--color-text-dark)' }}>
+          <h2 className="section-title" id="ss-qmap-title">
             The 8-Week Scope: <span className="text-plum">40 Days of Learning</span>
           </h2>
           <p className="section-subtitle">
@@ -664,7 +664,7 @@ const SummerStretchRoadmap = () => {
 
         {/* Jump Rail */}
         <nav className="rq-qmap__rail" aria-label="Jump to a week">
-          {SUMMER_STRETCH_WEEKS.map((w, i) => (
+          {RHYTHMREADY_WEEKS.map((w, i) => (
             <button
               key={w.week}
               type="button"
@@ -682,7 +682,7 @@ const SummerStretchRoadmap = () => {
 
         <div className="rq-qmap__track">
           <ol className="rq-qmap__weeks">
-            {SUMMER_STRETCH_WEEKS.map((w, i) => (
+            {RHYTHMREADY_WEEKS.map((w, i) => (
               <li
                 key={w.week}
                 ref={(el) => { weekRefs.current[i] = el; }}
@@ -778,12 +778,12 @@ const SummerStretchRoadmap = () => {
 /* ═══════════════════════════════════════════════════════════════
    THE OFFER
    ═══════════════════════════════════════════════════════════════ */
-const SummerStretchOffer = () => (
+const RhythmReadyOffer = () => (
   <section className="rq-offer-section section" id="offer">
     <div className="container">
       <RevealSection className="text-center">
         <div className="section-label">The Complete Curriculum</div>
-        <h2 className="section-title" style={{ color: 'var(--color-text-dark)' }}>
+        <h2 className="section-title">
           8 Weeks of Structured Learning.
           <span className="rq-offer__title-accent">One Payment of $21.</span>
         </h2>
@@ -980,13 +980,13 @@ const RqFaqRow = ({ item, index, defaultOpen = false }) => {
   );
 };
 
-const SummerStretchFaq = () => (
+const RhythmReadyFaq = () => (
   <section className="rq-faq section" id="faq">
     <div className="container">
       <div className="rq-faq__grid">
         <RevealSection className="rq-faq__intro">
           <div className="section-label">Straight Answers</div>
-          <h2 className="section-title" style={{ color: 'var(--color-text-dark)' }}>
+          <h2 className="section-title">
             Frequently Asked <span className="text-sage">Questions</span>
           </h2>
           <p className="section-subtitle">
@@ -1024,7 +1024,7 @@ const SummerStretchFaq = () => (
    ═══════════════════════════════════════════════════════════════ */
 const RhythmQuestSale = () => {
   useEffect(() => {
-    document.title = 'The Sound of Essentials: Workbook & Curriculum — 8-Week Learning Quest (Grades K–3)';
+    document.title = 'The Sound of Essentials: Rhythm Ready Workbook — 8-Week Readiness Quest (Grades K–3)';
   }, []);
 
   const carouselOrder = [
@@ -1041,16 +1041,16 @@ const RhythmQuestSale = () => {
   return (
     <div className="rq-sale" style={{ '--rq-hero-bg': `url('${assetPath('/assets/scenes/seriphia-seven-lands-path.webp')}')` }}>
       {/* ═══ HERO ═══ */}
-      <SummerStretchHero />
+      <RhythmReadyHero />
 
       {/* ═══ PROOF & RESEARCH ═══ */}
-      <SummerStretchProof />
+      <RhythmReadyProof />
 
       {/* ═══ WHAT'S INSIDE (THE 6 DAILY BLOCKS) ═══ */}
-      <SummerStretchWhatsInside />
+      <RhythmReadyWhatsInside />
 
       {/* ═══ 8-WEEK ROADMAP ═══ */}
-      <SummerStretchRoadmap />
+      <RhythmReadyRoadmap />
 
       {/* ═══ 15 HEROES PARADE ═══ */}
       <section className="rq-characters">
@@ -1070,10 +1070,10 @@ const RhythmQuestSale = () => {
       </section>
 
       {/* ═══ THE OFFER ═══ */}
-      <SummerStretchOffer />
+      <RhythmReadyOffer />
 
       {/* ═══ FAQ ═══ */}
-      <SummerStretchFaq />
+      <RhythmReadyFaq />
 
       {/* ═══ FINAL CTA ═══ */}
       <section className="rq-final-cta section">
@@ -1089,7 +1089,7 @@ const RhythmQuestSale = () => {
                 <div className="scene-backdrop__scrim" />
               </div>
               <div className="rq-cta-card__icon" aria-hidden="true">📚</div>
-              <h2 className="section-title" style={{ color: 'var(--color-text-dark)' }}>
+              <h2 className="section-title">
                 Get the Workbook &amp; Curriculum Today
               </h2>
               <p className="section-subtitle" style={{ marginTop: '1rem' }}>

@@ -67,7 +67,11 @@ export async function handleShopifyOrderPaid(order) {
   const tags = ['customer', 'soe_buyer'];
   if (isRhythmQuest) tags.push('buyer:rhythm-quest');
   if (isDictionary) tags.push('buyer:picture-dictionary');
-  if (isWorkbook) tags.push('buyer:summer-stretch');
+  if (isWorkbook) {
+    tags.push('buyer:rhythm-ready');
+    tags.push('buyer:rhythmready');
+    tags.push('buyer:summer-stretch');
+  }
   if (isBundle) tags.push('buyer:full-bundle');
 
   // 1. Sync & Tag in Beehiiv to trigger onboarding / delivery sequence

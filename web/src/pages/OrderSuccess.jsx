@@ -220,16 +220,16 @@ const OrderSuccess = () => {
 
           <div className="order-success__ascension-grid">
             <div className="order-success__ascension-card glass-card">
-              <span className="order-success__ascension-badge">Core 8-Week Curriculum</span>
-              <h3>Summer Stretch Workbook</h3>
+              <span className="order-success__ascension-badge">Core 8-Week Readiness Curriculum</span>
+              <h3>Rhythm Ready Workbook</h3>
               <p>
                 400 structured activity blocks across 40 days. Progressive phonics, math, science, and movement.
               </p>
               <div className="order-success__ascension-price">
                 <strong>$21</strong> <span>Digital PDF</span>
               </div>
-              <Link to="/join" className="btn btn-outline">
-                Explore Workbook →
+              <Link to="/rhythm-ready" className="btn btn-outline">
+                Explore Rhythm Ready →
               </Link>
             </div>
 

@@ -193,7 +193,7 @@
 /* ── Partner Card ── */
 .annex-card {
   background: #ffffff;
-  color: #1a1a2e;
+  color: var(--color-text-dark);
   border: 2px solid var(--color-border);
   border-radius: var(--radius-lg);
   display: flex;
@@ -349,7 +349,7 @@
 .annex-card__name {
   font-family: var(--font-heading);
   font-size: 1.2rem;
-  color: #1a1a2e;
+  color: var(--color-text-dark);
   margin: 0;
 }
 
@@ -390,7 +390,7 @@
 .annex-card__meta-value {
   font-family: var(--font-heading);
   font-size: 0.95rem;
-  color: #1a1a2e;
+  color: var(--color-text-dark);
   font-weight: 600;
 }
 

@@ -130,7 +130,7 @@ SOE-Picture-Dictionary/
 │   ├── convert-assets.mjs         # Image optimization pipeline (→ WebP)
 │   ├── vite.config.js             # Vite config with ebook serving plugin
 │   └── package.json
-├── workbook/                      # Summer Stretch Workbook source + generated pages
+├── workbook/                      # Rhythm Ready Workbook source + generated pages
 │   ├── workbook_content.json      # 664 lines of activity data
 │   └── generate_workbook.py
 ├── vercel.json                    # Vercel deployment config
@@ -151,14 +151,17 @@ All routes use `React.lazy()` code-splitting. Page transitions use Framer Motion
 | `/listen` | Listen | Music listening experience and funnel gate (email opt-in for free tracks) |
 | `/player` | Player | Full music player page |
 | `/dictionary` | DictionarySale | Picture Dictionary product/sales page |
+| `/workbook` | RhythmQuestSale | Rhythm Ready Workbook & Curriculum sales page |
+| `/rhythm-ready` | RhythmQuestSale | Rhythm Ready Workbook direct sales route |
 | `/science` | Science | Science behind the curriculum |
 | `/mission` | Mission | Mission statement and philosophy |
 | `/join` | JoinQuest | Newsletter signup + partnership contact form |
 | `/allies` | AllyAnnex | Affiliate partnerships page |
 
-**Redirects:**
+**Redirects & Aliases:**
 - `/characters` → `/heroes`
 - `/media` → `/listen`
+- `/rhythmready`, `/summer-stretch`, `/curriculum` → `/workbook`
 
 ---
 
@@ -199,7 +202,7 @@ All routes use `React.lazy()` code-splitting. Page transitions use Framer Motion
 |---------|-------|--------|----------|
 | Rhythm Quest Album (19 tracks) | Free stream / $19 download | Digital Audio | `rhythm-quest-album` |
 | Essential Picture Dictionary | **$55** | EPUB | `picture-dictionary` |
-| Summer Stretch Workbook | $35 | PDF | `summer-stretch-workbook` |
+| Rhythm Ready Workbook | $21 / $35 | PDF | `rhythmready-workbook` |
 | The Full Quest Bundle | $89 | Digital Bundle | `full-quest-bundle` |
 
 Data source: `web/src/data/products.json`

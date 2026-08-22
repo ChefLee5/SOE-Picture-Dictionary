@@ -416,7 +416,7 @@ const Navbar = () => {
           font-size: 0.78rem;
           font-weight: 700;
           letter-spacing: 0.04em;
-          color: #1a1a2e;
+          color: var(--color-text-dark, #2B2016);
           background: none;
           border: 1.5px solid rgba(0,0,0,0.18);
           border-radius: 8px;
@@ -517,7 +517,7 @@ const Navbar = () => {
         .navbar__lang-option-native {
           font-size: 0.88rem;
           font-weight: 600;
-          color: #1a1a2e;
+          color: var(--color-text-dark, #2B2016);
         }
 
         .navbar__lang-option-soon {

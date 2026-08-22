@@ -23,9 +23,26 @@ export const FULFILLMENT_FILES = {
     pages: 20,
     cover: '/assets/marketing/quest-collage.webp',
   },
+  'rhythm-ready-workbook': {
+    title: 'SOE Rhythm Quest: Rhythm Ready Workbook',
+    filename: 'SOE_RhythmReady_Workbook_COMPLETE.pdf',
+    format: 'PDF',
+    size: '24.8 MB',
+    pages: 80,
+    cover: '/assets/marketing/summer-stretch-cover.webp',
+  },
+  'rhythmready-workbook': {
+    title: 'SOE Rhythm Quest: Rhythm Ready Workbook',
+    filename: 'SOE_RhythmReady_Workbook_COMPLETE.pdf',
+    format: 'PDF',
+    size: '24.8 MB',
+    pages: 80,
+    cover: '/assets/marketing/summer-stretch-cover.webp',
+  },
+  // Backwards-compatibility alias
   'summer-stretch-workbook': {
-    title: 'SOE Rhythm Quest: Summer Stretch Workbook',
-    filename: 'SOE_Summer_Stretch_Workbook_COMPLETE.pdf',
+    title: 'SOE Rhythm Quest: Rhythm Ready Workbook',
+    filename: 'SOE_RhythmReady_Workbook_COMPLETE.pdf',
     format: 'PDF',
     size: '24.8 MB',
     pages: 80,

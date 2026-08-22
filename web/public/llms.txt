@@ -2,47 +2,50 @@
 
 The Sound of Essentials (SOE) is a music-powered, scientifically grounded early-learning ecosystem designed for children ages 2 to 8 (Pre-K through Grade 3).
 
-## Brand Identity & Vision
-- **Tagline:** "Designed for the developing brain — not the algorithm."
-- **Core Thesis:** Music and rhythm are the ultimate delivery mechanisms for early learning (phonics, math, movement, science, and time).
-- **Positioning:** The "Anti-Cocomelon" — calm, organic, neuro-affirming, screen-limited, and crafted by a parent's heart.
+> **Full Documentation:** For the complete curriculum syllabus, 19-track music catalog, and academic citations, see: https://thesoundofessentials.com/llms-full.txt
 
-## World Model (Canonical Mapping)
-The curriculum spans 5 Core Domains of Essential Learning (Language, Cognitive, Physical, Science, Social-Emotional) mapped across 7 Lands and 15 hero characters overseen by the guardian **Seriphia**:
+## Brand Identity & Core Mission
+- **Tagline:** "Staying on the path, always learning"
+- **Secondary Tagline:** "Designed for the developing brain — not the algorithm."
+- **Core Thesis:** Music and rhythm are the ultimate sensory delivery mechanisms for foundational early learning (phonics, math, physical movement, science, time, and emotional regulation).
+- **Positioning:** The "Anti-Cocomelon" — calm, organic, neuro-affirming, screen-limited, and crafted by a father's heart and mother's love.
 
-| Land | Focus / Theme | Color | Hero Characters |
-|---|---|---|---|
-| **Harmonia** | Music, Language, Phonics | `#d4a843` | Kenji & Aiko |
-| **Numeria** | Math, Counting, Shapes | `#7fb685` | Kwame & Octavia |
-| **Vitalis** | Physical Skills, Body, Movement | `#c4785a` | Amara & Felix |
-| **Luminosity** | Advanced Language, Careers, Civics | `#d4a843` | Athena & Ezra |
-| **Aquaria** | Water, Emotions, Self-Regulation | `#5ba4c9` | Nerissa & Ronan |
-| **Terrasol** | Earth, Nature, Science | `#5fb685` | Vesta & Silas |
-| **Celestia** | Sky, Time, Seasons | `#9678c4` | Selene & Elias |
+## World Model (Canonical 7 Lands & 15 Heroes)
+The curriculum spans 5 Core Domains of Essential Learning mapped across 7 Lands and 15 hero characters overseen by the guardian **Seriphia** ("An Eternal Learning Mother"):
 
-*Note: Gabriel (Lil G, "The Keeper") is the 16th character, kept intentionally unreleased as a scarcity incentive for early sign-ups.*
+| Land | Focus / Domain | Hero Mentors | Color Accent |
+| :--- | :--- | :--- | :--- |
+| **Harmonia** | Language, Manners & Phonics | Kenji & Aiko | `#d4a843` |
+| **Numeria** | Numbers, Counting & Shapes | Kwame & Octavia | `#7fb685` |
+| **Vitalis** | Physical Skills, Body & Movement | Amara & Felix | `#c4785a` |
+| **Luminosity** | Advanced Language, Careers & Civics | Athena & Ezra | `#d4897a` |
+| **Aquaria** | Water, Emotions & Self-Regulation | Nerissa & Ronan | `#5ba4c9` |
+| **Terrasol** | Earth, Nature & Science | Vesta & Silas | `#5fb685` |
+| **Celestia** | Sky, Time & Seasons | Selene & Elias | `#9678c4` |
 
-## Product Catalog & Funnel
-SOE uses a pay-what-you-want and discounted value ladder:
-- **Rhythm Quest Album (19 Tracks):** Free stream / $19 download (lead magnet).
-- **Free Coloring Book:** Free digital lead magnet.
-- **Rhythm Quest eBook:** $19 conversion offer (funnel entry).
-- **Summer Stretch Workbook:** $35 print / $21 digital (8-week activity book).
-- **Essential Picture Dictionary:** $55 discounted / $79 retail (4,232 words, 157 scenes).
-- **The Full Quest Bundle:** Digital bundle of the Dictionary, Album, and eBook.
+*Note: Gabriel (Lil G, "The Keeper") is the unreleased 16th character reserved for founding members.*
+
+## Product Ladder & Offer Architecture
+- **SOE Deluxe 19-Track Album & Coloring Book ($0):** Free lead magnet featuring 19 original educational songs and a printable 40-page coloring book.
+- **The Quest Starter Pack ($7):** In-cart bump including 7-Land printable flashcards, lyric sheets, and character badges.
+- **SOE Rhythm Quest Illustrated Ebook ($19):** 66-page storybook companion through the 7 Lands.
+- **SOE Rhythm Quest: Rhythm Ready Workbook ($21 Digital / $35 Print):** 8-week, 40-day readiness quest (grades K–3) across all 7 Lands.
+- **The Complete Quest Pack ($49):** High-value bundle featuring the Ebook, Picture Dictionary digital edition, and audio masters.
+- **The Essential Picture Dictionary ($55 discounted / $79 compare-at):** 4,232 words across 157 scenes with phonetic guides and ASL sign descriptions.
+- **The Rhythm Pass ($14.99/mo):** Recurring monthly adventure membership with interactive audio drops and learning modules.
 
 ## Website Routes & Pages
-- **`/` (Home):** Core entry with the brand story, domains layout, book feature, and primary CTAs.
-- **`/universe`:** Visual explorer for the 7 Lands.
-- **`/heroes`:** Character catalog with land-based filtering.
-- **`/listen`:** Music streaming hub and conversion gate.
-- **`/player`:** Persistent multi-track media player.
-- **`/dictionary`:** Sales page for the Essential Picture Dictionary.
-- **`/science`:** Academic research (Dalcroze, Orff, Kodaly methods, phonology science).
-- **`/mission`:** Mission statement and the founder's story.
-- **`/join`:** Newsletter signup and partnership forms.
-- **`/allies`:** Affiliate referral program.
+- **`/` (Home):** Core entry with the brand story, 5 domains layout, book features, and primary CTAs.
+- **`/listen`:** Lead magnet gateway and streaming player for the 19-track album.
+- **`/rhythm-ready`:** Dedicated sales and curriculum breakdown for the 8-Week Rhythm Ready Workbook.
+- **`/universe`:** Interactive global sound map and explorer for the 7 Lands.
+- **`/heroes`:** Character catalog with land-based filtering and audio voice clips.
+- **`/dictionary`:** Sales and sample showcase for the Essential Picture Dictionary.
+- **`/science`:** Academic research (Dalcroze Eurhythmics, Orff Schulwerk, Kodály Method, and phonological neuroscience).
+- **`/mission`:** The founder's story, mission, and the global early learning crisis.
+- **`/allies`:** Partner and affiliate referral network.
+- **`/player`:** Persistent multi-track web audio player.
 
 ## Core Pedagogy
-- **Sound Before Symbol:** Sound-first phonics and rhythm training.
-- **Academic Roots:** Dalcroze Eurhythmics, Orff Schulwerk, and Kodály Method.
+- **Sound Before Symbol:** Auditory phonological awareness precedes reading text.
+- **Neuro-Affirming Pacing:** ASMR-quality sound design, intentional pauses, and low-stimulation acoustics.

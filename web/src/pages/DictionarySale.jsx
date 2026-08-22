@@ -389,7 +389,7 @@ const DictionarySale = () => {
                   <li>✓ Essential Picture Dictionary ($55 value)</li>
                   <li>✓ 19-Track Rhythm Quest Album ($0 free)</li>
                   <li>✓ 66-Page Rhythm Quest Storybook ($19 value)</li>
-                  <li>✓ Summer Stretch Workbook Digital ($21 value)</li>
+                  <li>✓ Rhythm Ready Workbook Digital ($21 value)</li>
                   <li>✓ Bonus printable activity sheets &amp; parent guide</li>
                 </ul>
                 <Link to="/join" className="btn btn-gold btn-shimmer">

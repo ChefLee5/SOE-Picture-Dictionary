@@ -162,8 +162,8 @@ const Listen = () => {
                   🎧 Unlock All 19 Tracks Free →
                 </a>
               </MagneticPill>
-              <Link to="/workbook" className="btn btn-outline" style={{ fontSize: '1rem', padding: '0.85rem 1.8rem', background: 'rgba(255, 255, 255, 0.8)' }}>
-                📚 Workbook &amp; Curriculum ($21) →
+              <Link to="/rhythm-ready" className="btn btn-outline" style={{ fontSize: '1rem', padding: '0.85rem 1.8rem', background: 'rgba(255, 255, 255, 0.8)' }}>
+                📚 Rhythm Ready Workbook ($21) →
               </Link>
             </div>
           )}
@@ -321,7 +321,7 @@ const Listen = () => {
                   <div className="listen-tripwire-card__content">
                     <span className="listen-tripwire-card__badge">📚 Daily Learning Quest</span>
                     <h3 className="listen-tripwire-card__title">
-                      Bring The Music To Life With The 8-Week Workbook &amp; Curriculum
+                      Bring The Music To Life With The 8-Week Rhythm Ready Workbook
                     </h3>
                     <p className="listen-tripwire-card__text">
                       40 structured day-by-day lessons across all 7 Lands, with 240+ daily activities in phonics, math, science, movement, civics, and reflection.
@@ -332,8 +332,8 @@ const Listen = () => {
                       <span className="listen-tripwire-card__price-tag">$21</span>
                       <span className="listen-tripwire-card__price-sub">Digital Workbook</span>
                     </div>
-                    <Link to="/workbook" className="btn btn-gold btn-shimmer" style={{ fontSize: '1.02rem', padding: '0.85rem 1.8rem' }}>
-                      Get Workbook ($21) →
+                    <Link to="/rhythm-ready" className="btn btn-gold btn-shimmer" style={{ fontSize: '1.02rem', padding: '0.85rem 1.8rem' }}>
+                      Get Rhythm Ready Workbook ($21) →
                     </Link>
                   </div>
                 </div>
@@ -589,7 +589,7 @@ const Listen = () => {
                         📚 Complete 8-Week Curriculum · Grades K–3
                       </span>
                       <h3 className="listen-tripwire-card__title" style={{ fontSize: '1.8rem', marginTop: '0.5rem' }}>
-                        Pair This Album With The Daily Workbook &amp; Curriculum
+                        Pair This Album With The Daily Rhythm Ready Workbook
                       </h3>
                       <p className="listen-tripwire-card__text" style={{ fontSize: '1.05rem', lineHeight: '1.6' }}>
                         Turn every song into a daily lesson! 40 day-by-day guided lessons across all 7 Lands, featuring 240+ activities in phonics, math, science, somatic movement, civics, and reflection.
@@ -600,8 +600,8 @@ const Listen = () => {
                         <span className="listen-tripwire-card__price-tag">$21</span>
                         <span className="listen-tripwire-card__price-sub">Digital Workbook</span>
                       </div>
-                      <Link to="/workbook" className="btn btn-gold btn-shimmer" style={{ fontSize: '1.08rem', padding: '0.9rem 2.2rem', whiteSpace: 'nowrap' }}>
-                        Explore Workbook &amp; Curriculum →
+                      <Link to="/rhythm-ready" className="btn btn-gold btn-shimmer" style={{ fontSize: '1.08rem', padding: '0.9rem 2.2rem', whiteSpace: 'nowrap' }}>
+                        Explore Rhythm Ready Workbook →
                       </Link>
                     </div>
                   </div>

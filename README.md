@@ -6,7 +6,7 @@ The project brings together the React/Vite marketing site, multilingual learning
 What This Includes
 React + Vite website for the public SOE experience
 Rhythm Quest pages for the universe, heroes, listening experience, products, science, mission, join flow, and allies
-Product data for the Picture Dictionary, Summer Stretch Workbook, Full Quest Bundle, and Rhythm Quest album
+Product data for the Picture Dictionary, Rhythm Ready Workbook, Full Quest Bundle, and Rhythm Quest album
 Ebook source content, generated XHTML pages, posters, and production scripts
 Workbook source data, generated XHTML pages, images, and production scripts
 Brand and design-system references for The Sound of Essentials

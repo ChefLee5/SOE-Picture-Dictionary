@@ -210,7 +210,14 @@
         },
         "cta_title": "La biología no espera a que los sistemas se arreglen solos.",
         "cta_subtitle": "Abre la puerta al aprendizaje con música.",
-        "explore_media": "Comenzar la Experiencia Gratis →"
+        "explore_media": "Comenzar la Experiencia Gratis →",
+        "final_cta": {
+            "title": "Comienza la Búsqueda del Ritmo de tu Familia",
+            "subtitle": "19 canciones originales, 7 tierras de aprendizaje y actividades neuroafirmativas diseñadas para el cerebro en desarrollo.",
+            "btn_free": "Comenzar la Experiencia Gratis →",
+            "btn_quest": "Explorar La Aventura de 7 Tierras ($19) →",
+            "badge": "Acceso Digital Instantáneo · Sin Sobrecarga de Pantallas · 100% Gratis para Empezar"
+        }
     },
     "universe": {
         "hero_label": "El Currículo",

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-SOE Summer Stretch Workbook — Print PDF Builder
+SOE RhythmReady Workbook — Print PDF Builder
 Merges cover + frontmatter + all 40 day pages + back matter into a
 single print HTML, then drives headless Microsoft Edge to produce
 the letter-size print PDF automatically (no manual print dialog).
@@ -21,8 +21,8 @@ if sys.platform == "win32":
 BASE = Path(__file__).resolve().parent
 PAGES = BASE / "OEBPS" / "pages"
 CSS_FILE = BASE / "OEBPS" / "styles" / "workbook.css"
-HTML_OUT = BASE / "SOE_The_Summer_Stretch_Workbook_print.html"
-PDF_OUT = BASE / "SOE_The_Summer_Stretch_Workbook_print.pdf"
+HTML_OUT = BASE / "SOE_RhythmReady_Workbook_print.html"
+PDF_OUT = BASE / "SOE_RhythmReady_Workbook_print.pdf"
 
 EDGE_CANDIDATES = [
     r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
@@ -106,7 +106,7 @@ def build():
     css = re.sub(r"@import url\([^)]*\);", "", css)
     parts = [
         "<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'/>",
-        "<title>SOE Rhythm Quest: The Summer Stretch Workbook — Print</title>",
+        "<title>SOE Rhythm Quest: RhythmReady Workbook — Print</title>",
         f"<style>{css}</style>",
         "</head><body>",
     ]

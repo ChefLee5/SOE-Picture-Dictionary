@@ -210,7 +210,14 @@
         },
         "cta_title": "La biologie n'attend pas que les systèmes se réparent d'eux-mêmes.",
         "cta_subtitle": "Ouvrez la porte aux apprentissages par la musique.",
-        "explore_media": "Commencer l'Expérience Gratuite →"
+        "explore_media": "Commencer l'Expérience Gratuite →",
+        "final_cta": {
+            "title": "Commencez la Quête du Rythme de Votre Famille",
+            "subtitle": "19 chansons originales, 7 contrées d'apprentissage et des activités quotidiennes neuro-affirmatives conçues pour le cerveau en développement.",
+            "btn_free": "Commencer l'Expérience Gratuite →",
+            "btn_quest": "Explorer La Quête des 7 Contrées (19 $) →",
+            "badge": "Accès Numérique Immédiat · Sans Surcharge d'Écran · 100 % Gratuit pour Commencer"
+        }
     },
     "universe": {
         "hero_label": "Le Programme",

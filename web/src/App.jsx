@@ -82,6 +82,8 @@ const App = () => {
                 <Route path="/dictionary" element={<AnimatedPage><DictionarySale /></AnimatedPage>} />
                 <Route path="/workbook" element={<AnimatedPage><RhythmQuestSale /></AnimatedPage>} />
                 <Route path="/curriculum" element={<AnimatedPage><RhythmQuestSale /></AnimatedPage>} />
+                <Route path="/rhythmready" element={<AnimatedPage><RhythmQuestSale /></AnimatedPage>} />
+                <Route path="/rhythm-ready" element={<AnimatedPage><RhythmQuestSale /></AnimatedPage>} />
                 <Route path="/summer-stretch" element={<AnimatedPage><RhythmQuestSale /></AnimatedPage>} />
                 <Route path="/rhythm-quest" element={<AnimatedPage><RhythmQuestSale /></AnimatedPage>} />
                 <Route path="/gallery"    element={<AnimatedPage><Gallery /></AnimatedPage>} />

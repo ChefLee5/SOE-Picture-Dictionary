@@ -1,6 +1,6 @@
 # Workbook Art Manifest — unique replacement illustrations
 
-Rule (owner, 2026-07-06): the Summer Stretch Workbook must NOT reuse Picture
+Rule (owner, 2026-07-06): the RhythmReady Workbook must NOT reuse Picture
 Dictionary scene art — no duplicate images between products. The dictionary
 keeps its 157 scene JPGs; every image below needs a NEW workbook-original
 illustration generated with the character reference files (`<Name> Ref.jpeg`)
@@ -122,7 +122,7 @@ Total images to replace: 125
 
 ## land1_school-events-activities.jpg
 - **Land:** Harmonia · **Heroes:** Kenji & Aiko · **Accent:** #d4a843
-- **Used by 7 activities:** Cursive Capitals: M-R; Handwriting Fluency Test; My Summer Stretch Story; School Events & Activities …
+- **Used by 7 activities:** Cursive Capitals: M-R; Handwriting Fluency Test; My RhythmReady Story; School Events & Activities …
 - **Current alt text:** School fair, science day and field trip in Harmonia
 - **Generation brief:** Harmonia scene — School fair, science day and field trip in Harmonia. Feature Kenji & Aiko on-model
   (reference-conditioned), themes of music, greetings, language, classroom, accent #d4a843, workbook style per global brief.
