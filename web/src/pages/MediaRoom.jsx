@@ -11,6 +11,7 @@ import { audioUrl } from '../utils/audioUrl';
 import { triggerNoteBurst } from '../components/ui/DesignSpells';
 import JsonLd from '../components/JsonLd';
 import { mediaRoomSchema } from '../utils/schema';
+import { trackAudioPlay } from '../utils/analytics';
 import './MediaRoom.css';
 
 /* ── Book Pages (Coloring) ── */
@@ -242,8 +243,25 @@ export const AudioPlayer = ({ tracks }) => {
     audio.load();
     if (isPlaying) {
       audio.play().catch(() => { });
+      recordTrackEngagement(tracks[currentTrack]);
     }
   }, [currentTrack]);
+
+  const recordTrackEngagement = (t) => {
+    if (!t) return;
+    trackAudioPlay({ trackId: t.id, trackTitle: t.title, domain: t.domain });
+    try {
+      const stored = JSON.parse(localStorage.getItem('soe_played_tracks') || '[]');
+      if (!stored.includes(t.id)) {
+        const next = [...stored, t.id];
+        localStorage.setItem('soe_played_tracks', JSON.stringify(next));
+        if (next.length >= 3 && !localStorage.getItem('soe_milestone_3tracks_shown')) {
+          localStorage.setItem('soe_milestone_3tracks_shown', '1');
+          window.dispatchEvent(new CustomEvent('soe:milestone:3tracks', { detail: { land: t.domain || 'Harmonia' } }));
+        }
+      }
+    } catch { /* ignore */ }
+  };
 
   const togglePlay = (e) => {
     initAudio();
@@ -255,6 +273,7 @@ export const AudioPlayer = ({ tracks }) => {
       audio.pause();
     } else {
       audio.play().catch(() => { });
+      recordTrackEngagement(track);
       if (e?.clientX && e?.clientY) {
         triggerNoteBurst(e.clientX, e.clientY, track.color);
       }

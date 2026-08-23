@@ -17,6 +17,10 @@ import {
   galleryShots,
 } from './MediaRoom';
 import { triggerQuestCelebration, TiltCard, MagneticPill } from '../components/ui/DesignSpells';
+import ProofInThePause from '../components/ui/ProofInThePause';
+import StickyThumbCta from '../components/ui/StickyThumbCta';
+import GiftALandModal from '../components/GiftALandModal';
+import { trackLead } from '../utils/analytics';
 import './MediaRoom.css';
 import './Listen.css';
 
@@ -45,6 +49,8 @@ const Listen = () => {
 
   const [searchParams, setSearchParams] = useSearchParams();
   const [justUnlocked, setJustUnlocked] = useState(false);
+  const [isGiftModalOpen, setIsGiftModalOpen] = useState(false);
+  const [giftLand, setGiftLand] = useState('Harmonia');
 
   // ── Book viewer state ───────────────────────────────────────
   const [bookIndex, setBookIndex] = useState(0);
@@ -52,15 +58,7 @@ const Listen = () => {
   const [copied, setCopied] = useState(false);
 
   const handleCopyShareLink = () => {
-    try {
-      const shareUrl = typeof window !== 'undefined' ? `${window.location.origin}/listen` : 'https://thesoundofessentials.com/listen';
-      navigator.clipboard.writeText(shareUrl);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2500);
-    } catch {
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2500);
-    }
+    setIsGiftModalOpen(true);
   };
 
   // ── Track data (for AudioPlayer + JSON-LD) ──────────────────
@@ -78,6 +76,17 @@ const Listen = () => {
 
   useEffect(() => {
     document.title = 'Listen — SOE Rhythm Quest';
+
+    const onMilestone = (e) => {
+      if (e?.detail?.land) {
+        setGiftLand(e.detail.land);
+      }
+      setIsGiftModalOpen(true);
+      triggerQuestCelebration();
+    };
+
+    window.addEventListener('soe:milestone:3tracks', onMilestone);
+    return () => window.removeEventListener('soe:milestone:3tracks', onMilestone);
   }, []);
 
   // ── Unlock handler ──────────────────────────────────────────
@@ -100,21 +109,8 @@ const Listen = () => {
 
     if (!isBeehiivRedirect) return;
 
-    if (typeof window !== 'undefined') {
-      if (window.gtag) {
-        window.gtag('event', 'generate_lead', {
-          event_category: 'funnel',
-          event_label: 'listen_optin',
-          value: 1,
-        });
-      }
-      if (window.fbq) {
-        window.fbq('track', 'Lead', {
-          content_name: 'listen_optin',
-          content_category: 'email_funnel',
-        });
-      }
-    }
+    // Dispatch unified Lead event
+    trackLead({ formName: 'listen_optin', source: 'listen_page' });
 
     unlock();
     setSearchParams((prev) => {
@@ -156,16 +152,19 @@ const Listen = () => {
           </p>
 
           {!isUnlocked && (
-            <div style={{ margin: '1.5rem auto 2rem auto', display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', alignItems: 'center' }}>
-              <MagneticPill intensity={0.25}>
-                <a href="#optin" className="btn btn-gold btn-shimmer" style={{ fontSize: '1.05rem', padding: '0.9rem 2.5rem' }}>
-                  🎧 Unlock All 19 Tracks Free →
-                </a>
-              </MagneticPill>
-              <Link to="/rhythm-ready" className="btn btn-outline" style={{ fontSize: '1rem', padding: '0.85rem 1.8rem', background: 'rgba(255, 255, 255, 0.8)' }}>
-                📚 Rhythm Ready Workbook ($21) →
-              </Link>
-            </div>
+            <>
+              <div style={{ margin: '1.5rem auto 1rem auto', display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', alignItems: 'center' }}>
+                <MagneticPill intensity={0.25}>
+                  <a href="#optin" className="btn btn-gold btn-shimmer" style={{ fontSize: '1.05rem', padding: '0.9rem 2.5rem' }}>
+                    🎧 Unlock All 19 Tracks Free →
+                  </a>
+                </MagneticPill>
+                <Link to="/rhythm-ready" className="btn btn-outline" style={{ fontSize: '1rem', padding: '0.85rem 1.8rem', background: 'rgba(255, 255, 255, 0.8)' }}>
+                  📚 Rhythm Ready Workbook ($21) →
+                </Link>
+              </div>
+              <ProofInThePause variant="compact" />
+            </>
           )}
 
           <div className="listen-cover">
@@ -283,6 +282,8 @@ const Listen = () => {
                 Enter your email to unlock all 19 tracks, music videos,
                 coloring pages, and start a free 5-day learning journey.
               </p>
+
+              <ProofInThePause variant="quote" />
 
               <BeehiivSubscribeForm className="listen-optin__form" />
               <p className="listen-optin__disclaimer">
@@ -643,6 +644,21 @@ const Listen = () => {
           </motion.div>
         )}
       </AnimatePresence>
+
+      {/* ── Mobile Sticky Thumb Zone CTA ── */}
+      <StickyThumbCta
+        targetUrl={isUnlocked ? '/rhythm-ready' : '#optin'}
+        label={isUnlocked ? '📚 Get Rhythm Ready Workbook ($21) →' : '🎧 Unlock 19 Tracks Free →'}
+        subtext={isUnlocked ? '40 guided daily lessons across all 7 Lands' : '100% Free • No Credit Card Required'}
+        badge={isUnlocked ? '📚 Next Step in Quest' : '⚡️ Free Instant Access'}
+      />
+
+      {/* ── Viral Referral Milestone Modal ── */}
+      <GiftALandModal
+        isOpen={isGiftModalOpen}
+        onClose={() => setIsGiftModalOpen(false)}
+        triggerLand={giftLand}
+      />
     </div>
   );
 };

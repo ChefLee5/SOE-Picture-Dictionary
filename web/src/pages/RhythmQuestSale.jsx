@@ -4,6 +4,9 @@ import { RevealSection } from '../hooks/useReveal';
 import heroesData from '../data/heroes.json';
 import landsData from '../data/lands.json';
 import { assetPath } from '../utils/assetPath';
+import ProofInThePause from '../components/ui/ProofInThePause';
+import StickyThumbCta from '../components/ui/StickyThumbCta';
+import { trackInitiateCheckout, appendUtmsToUrl } from '../utils/analytics';
 import './RhythmQuestSale.css';
 
 /**
@@ -14,12 +17,26 @@ const CHECKOUT_URL = 'https://the-sound-of-essentials.myshopify.com/cart/5320451
 const CHECKOUT_IS_ABSOLUTE = /^https?:\/\//i.test(CHECKOUT_URL);
 
 /** The page's only buy control. Every CTA goes through it. */
-const RqBuyLink = ({ className = '', children }) =>
-  CHECKOUT_IS_ABSOLUTE ? (
-    <a href={CHECKOUT_URL} rel="noopener" className={className}>{children}</a>
+const RqBuyLink = ({ className = '', children }) => {
+  const checkoutUrlWithUtms = useMemo(() => appendUtmsToUrl(CHECKOUT_URL), []);
+  const handleClick = () => {
+    trackInitiateCheckout({
+      sku: 'SOE-RQ-WORKBOOK',
+      name: 'Rhythm Ready Workbook ($21 Digital / $35 Print)',
+      price: 21.00,
+    });
+  };
+
+  return CHECKOUT_IS_ABSOLUTE ? (
+    <a href={checkoutUrlWithUtms} rel="noopener" className={className} onClick={handleClick}>
+      {children}
+    </a>
   ) : (
-    <Link to={CHECKOUT_URL} className={className}>{children}</Link>
+    <Link to={checkoutUrlWithUtms} className={className} onClick={handleClick}>
+      {children}
+    </Link>
   );
+};
 
 const prefersReducedMotion = () =>
   typeof window !== 'undefined' &&
@@ -238,6 +255,8 @@ const RhythmReadyHero = () => {
               <p className="rq-hero__price-math">
                 40 structured days of learning — about <strong>52¢ a day</strong>. Paid once, yours forever.
               </p>
+
+              <ProofInThePause variant="compact" />
 
               <div className="rq-hero__actions">
                 <RqBuyLink className="btn btn-gold">Get Workbook &amp; Curriculum · $21</RqBuyLink>
@@ -1110,6 +1129,16 @@ const RhythmQuestSale = () => {
           </RevealSection>
         </div>
       </section>
+
+      {/* ── Mobile Sticky Thumb Zone CTA ── */}
+      <StickyThumbCta
+        targetUrl={appendUtmsToUrl(CHECKOUT_URL)}
+        isExternal={CHECKOUT_IS_ABSOLUTE}
+        label="📚 Get the Workbook ($21) →"
+        subtext="8-Week Guided Phonics & Learning Quest"
+        badge="⚡️ Instant Digital PDF"
+        onClick={() => trackInitiateCheckout({ sku: 'SOE-RQ-WORKBOOK', name: 'Rhythm Ready Workbook', price: 21.00 })}
+      />
     </div>
   );
 };

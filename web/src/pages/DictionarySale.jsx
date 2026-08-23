@@ -4,6 +4,9 @@ import { RevealSection } from '../hooks/useReveal';
 import heroesData from '../data/heroes.json';
 import landsData from '../data/lands.json';
 import { assetPath } from '../utils/assetPath';
+import ProofInThePause from '../components/ui/ProofInThePause';
+import StickyThumbCta from '../components/ui/StickyThumbCta';
+import { trackInitiateCheckout } from '../utils/analytics';
 import './DictionarySale.css';
 
 /* ── Land-specific stats from the pipeline knowledge base ── */
@@ -347,6 +350,7 @@ const DictionarySale = () => {
           </RevealSection>
 
           <RevealSection delay={0.15}>
+            <ProofInThePause variant="compact" />
             <div className="dict-pricing__grid dict-pricing__grid--two">
               {/* Tier 1: Essential Picture Dictionary */}
               <div className="dict-price-card">
@@ -367,7 +371,11 @@ const DictionarySale = () => {
                   <li>✓ Phonetic pronunciation guides</li>
                   <li>✓ Bilingual EN/ES support</li>
                 </ul>
-                <Link to="/join" className="btn btn-gold">
+                <Link
+                  to="/join"
+                  className="btn btn-gold"
+                  onClick={() => trackInitiateCheckout({ sku: 'SOE-DICTIONARY', name: 'Essential Picture Dictionary', price: 55.00 })}
+                >
                   Pre-Order Dictionary ($55) →
                 </Link>
               </div>
@@ -392,7 +400,11 @@ const DictionarySale = () => {
                   <li>✓ Rhythm Ready Workbook Digital ($21 value)</li>
                   <li>✓ Bonus printable activity sheets &amp; parent guide</li>
                 </ul>
-                <Link to="/join" className="btn btn-gold btn-shimmer">
+                <Link
+                  to="/join"
+                  className="btn btn-gold btn-shimmer"
+                  onClick={() => trackInitiateCheckout({ sku: 'SOE-QUEST-PACK', name: 'The Full Quest Bundle', price: 89.00 })}
+                >
                   Get Full Bundle ($89) →
                 </Link>
               </div>
@@ -437,6 +449,15 @@ const DictionarySale = () => {
           </RevealSection>
         </div>
       </section>
+
+      {/* ── Mobile Sticky Thumb Zone CTA ── */}
+      <StickyThumbCta
+        targetUrl="#pricing"
+        label="📖 Pre-Order Dictionary ($55) →"
+        subtext="4,000+ Words • 125 Illustrated Scenes"
+        badge="🌟 Ages 2–8"
+        onClick={() => trackInitiateCheckout({ sku: 'SOE-DICTIONARY', name: 'Essential Picture Dictionary', price: 55.00 })}
+      />
     </div>
   );
 };

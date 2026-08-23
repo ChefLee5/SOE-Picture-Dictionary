@@ -83,6 +83,7 @@ const AnimatedStat = ({ value, suffix = '', label, color }) => {
 
 /* ── Ambient Scene Gallery ── */
 const SCENES = [
+  { src: 'soe-globe-earth.webp',       caption: 'The Seven Lands Universe', land: 'All Seven Lands' },
   { src: 'b-roll-boats.webp',          caption: 'On the Water',            land: 'Luminosity' },
   { src: 'b-roll-flowers.webp',        caption: 'Through the Fields',      land: 'Terrasol' },
   { src: 'climb-numeria.webp',         caption: 'Climbing Numeria',        land: 'Numeria' },
@@ -143,15 +144,21 @@ const Mission = () => {
     React.useEffect(() => { document.title = 'Our Mission — SOE Rhythm Quest'; }, []);
     return (
         <div className="mission-page">
+            {/* ── Fixed Cosmic 7 Lands Background Layer ── */}
+            <div className="mission-bg-layer" aria-hidden="true">
+                <div className="mission-bg-img" />
+                <div className="mission-bg-overlay" />
+            </div>
+
             {/* ── Hero ── */}
             <header className="mission-hero">
                 <div className="container text-center">
-                    <div className="animate-fade-up">
+                    <div className="mission-hero-card animate-fade-up">
                         <div className="section-label">Our Mission</div>
                         <h1>
                             A <span className="accent-text">State of Emergency</span>
                         </h1>
-                        <p className="section-subtitle" style={{ margin: '1rem auto' }}>
+                        <p className="section-subtitle">
                             The world's most vulnerable children are running out of time.
                             SOE exists to change that equation through the universal language of music.
                         </p>
@@ -436,18 +443,6 @@ const Mission = () => {
 
             </StoryScroll>
 
-
-            {/* ── Scene Strip: Into the World ── */}
-            <div className="scene-strip" aria-hidden="true">
-              <img
-                src={assetPath('/assets/scenes/wildflower-path.webp')}
-                alt=""
-                className="scene-strip__img"
-                loading="lazy"
-              />
-              <div className="scene-strip__overlay" />
-            </div>
-
             {/* ── Ambient Scene Gallery ── */}
             <MissionSceneGallery />
 
@@ -497,49 +492,117 @@ const Mission = () => {
         /* ── Ken Burns keyframes ── */
         @keyframes kenBurnsMission {
           0%   { transform: scale(1.0) translate(0, 0); }
-          25%  { transform: scale(1.07) translate(-1%, -0.8%); }
-          50%  { transform: scale(1.11) translate(0.5%, -1.5%); }
-          75%  { transform: scale(1.05) translate(1%, -0.3%); }
+          25%  { transform: scale(1.06) translate(-1.2%, -0.6%); }
+          50%  { transform: scale(1.10) translate(0.8%, -1.2%); }
+          75%  { transform: scale(1.04) translate(1.4%, -0.4%); }
           100% { transform: scale(1.0) translate(0, 0); }
         }
 
-        /* ── Full-page wave background with Ken Burns ── */
+        /* ── Full-page SOE 7 Lands Cosmic Earth Background ── */
         .mission-page {
           position: relative;
+          min-height: 100vh;
+          background: transparent;
+        }
+
+        .mission-bg-layer {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          z-index: 0;
+          pointer-events: none;
           overflow: hidden;
         }
 
-        .mission-page::before {
-          content: '';
-          position: fixed;
-          inset: -5%;
-          width: 110%;
-          height: 110%;
-          z-index: -1;
+        .mission-bg-img {
+          position: absolute;
+          inset: -6%;
+          width: 112%;
+          height: 112%;
           background:
-            ${assetCssUrl('/assets/scenes/wave.webp')} center center / cover no-repeat;
-          animation: kenBurnsMission 38s ease-in-out infinite;
+            ${assetCssUrl('/assets/backgrounds/soe-globe-earth.webp')} center center / cover no-repeat;
+          animation: kenBurnsMission 42s ease-in-out infinite;
           will-change: transform;
         }
 
-        .mission-page::after {
-          content: '';
-          position: fixed;
+        .mission-bg-overlay {
+          position: absolute;
           inset: 0;
-          z-index: -1;
-          background: linear-gradient(
-            180deg,
-            rgba(220, 245, 250, 0.55) 0%,
-            rgba(230, 248, 252, 0.40) 25%,
-            rgba(240, 252, 255, 0.35) 50%,
-            rgba(235, 250, 253, 0.45) 75%,
-            rgba(225, 245, 248, 0.55) 100%
-          );
-          pointer-events: none;
+          background:
+            radial-gradient(
+              ellipse at 50% 25%,
+              rgba(255, 248, 240, 0.05) 0%,
+              rgba(14, 12, 28, 0.30) 50%,
+              rgba(8, 7, 18, 0.65) 100%
+            ),
+            linear-gradient(
+              180deg,
+              rgba(255, 248, 240, 0.20) 0%,
+              rgba(255, 248, 240, 0.02) 12%,
+              rgba(12, 10, 24, 0.12) 45%,
+              rgba(255, 248, 240, 0.12) 75%,
+              rgba(255, 248, 240, 0.40) 100%
+            );
+        }
+
+        .mission-page > header,
+        .mission-page > section,
+        .mission-page > div:not(.mission-bg-layer) {
+          position: relative;
+          z-index: 1;
         }
 
         .mission-hero {
-          padding: 10rem 0 4rem;
+          padding: 8.5rem 0 3rem;
+          position: relative;
+        }
+
+        .mission-hero-card {
+          max-width: 820px;
+          margin: 0 auto;
+          padding: 2.5rem 2.5rem;
+          background: rgba(255, 248, 240, 0.88);
+          backdrop-filter: blur(16px);
+          -webkit-backdrop-filter: blur(16px);
+          border: 1px solid rgba(255, 255, 255, 0.7);
+          border-radius: var(--radius-xl, 36px);
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25), 0 0 30px rgba(255, 111, 0, 0.12);
+        }
+
+        .mission-hero h1 {
+          color: var(--color-text-dark, #2B2016);
+          margin-bottom: 0.8rem;
+          font-size: clamp(2.2rem, 5vw, 3.6rem);
+        }
+
+        .mission-hero .section-subtitle {
+          color: var(--color-text-dark-secondary, #5D4037);
+          font-family: var(--font-body);
+          font-size: clamp(1rem, 2vw, 1.25rem);
+          font-style: normal;
+          line-height: 1.6;
+          max-width: 680px;
+          margin: 0 auto;
+        }
+
+        .manifesto-block {
+          background: rgba(255, 248, 240, 0.85);
+          backdrop-filter: blur(16px);
+          -webkit-backdrop-filter: blur(16px);
+          border: 1px solid rgba(255, 255, 255, 0.6);
+          border-radius: var(--radius-lg);
+          padding: 3.5rem 2.5rem;
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25), 0 0 40px rgba(255, 111, 0, 0.10);
+        }
+
+        .manifesto-block h2 {
+          color: var(--color-text-dark, #1a1a2e);
+        }
+
+        .manifesto-block .section-subtitle {
+          color: var(--color-text-dark-secondary, #4a4a68);
         }
 
         /* ── Stats ── */
@@ -736,13 +799,18 @@ const Mission = () => {
 
         /* ── Marquee Sections ── */
         .mission-marquee-section {
-          padding: 2rem 0;
+          padding: 1.75rem 0;
           position: relative;
           overflow: hidden;
+          background: rgba(255, 248, 240, 0.70);
+          backdrop-filter: blur(12px);
+          -webkit-backdrop-filter: blur(12px);
+          border-top: 1px solid rgba(255, 255, 255, 0.4);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.4);
         }
 
         .mission-marquee-section--concord {
-          padding: 3rem 0;
+          padding: 2.5rem 0;
         }
 
         @media (max-width: 968px) {

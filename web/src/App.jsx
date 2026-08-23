@@ -10,6 +10,7 @@ import CubeLoader from './components/CubeLoader';
 import CanvasBackground from './components/SplineBackground';
 import './styles/v2.css';
 import V2Layout from './components-v2/V2Layout';
+import useAnalytics from './hooks/useAnalytics';
 
 // ── Route-level code splitting ──────────────────────────────────
 // Each page loads only when the user navigates to that route,
@@ -27,6 +28,7 @@ const Listen     = lazy(() => import('./pages/Listen'));
 const Player     = lazy(() => import('./pages/Player'));
 const OrderSuccess = lazy(() => import('./pages/OrderSuccess'));
 const Gallery    = lazy(() => import('./pages/Gallery'));
+const AdsShowcase = lazy(() => import('./pages/AdsShowcase'));
 
 // ── V2 Redesign Routes (parallel, isolated under /v2) ───────────
 const HomeV2      = lazy(() => import('./pages-v2/HomeV2'));
@@ -37,6 +39,7 @@ const MissionV2   = lazy(() => import('./pages-v2/MissionV2'));
 const JoinQuestV2 = lazy(() => import('./pages-v2/JoinQuestV2'));
 
 const App = () => {
+  useAnalytics();
   const [showSplash, setShowSplash] = useState(true);
   const handleSplashFinished = useCallback(() => setShowSplash(false), []);
   const location = useLocation();
@@ -88,6 +91,8 @@ const App = () => {
                 <Route path="/rhythm-quest" element={<AnimatedPage><RhythmQuestSale /></AnimatedPage>} />
                 <Route path="/gallery"    element={<AnimatedPage><Gallery /></AnimatedPage>} />
                 <Route path="/player"     element={<AnimatedPage><Player /></AnimatedPage>} />
+                <Route path="/ads"        element={<AnimatedPage><AdsShowcase /></AnimatedPage>} />
+                <Route path="/campaigns"  element={<AnimatedPage><AdsShowcase /></AnimatedPage>} />
                 <Route path="/order-success" element={<AnimatedPage><OrderSuccess /></AnimatedPage>} />
                 <Route path="/download"   element={<AnimatedPage><OrderSuccess /></AnimatedPage>} />
               </Routes>
