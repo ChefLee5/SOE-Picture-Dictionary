@@ -106,7 +106,7 @@ const Player = () => {
     <div className="player-page">
       <div className="player-page__bg" aria-hidden="true">
         <img
-          src={assetPath('/assets/scenes/tulip-river-path.webp')}
+          src={assetPath('/assets/luminosity-hall.png')}
           alt=""
           className="player-page__bg-img"
         />
@@ -240,14 +240,12 @@ const Player = () => {
           height: 100%;
           object-fit: cover;
           object-position: center;
-          filter: blur(8px) brightness(0.4);
-          transform: scale(1.05);
         }
 
         .player-page__overlay {
           position: fixed;
           inset: 0;
-          background: radial-gradient(circle at center, rgba(10, 6, 4, 0.7) 0%, rgba(10, 6, 4, 0.94) 100%);
+          background: rgba(10, 6, 4, 0.75);
           z-index: 1;
         }
 
