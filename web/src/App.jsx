@@ -92,6 +92,7 @@ const App = () => {
                 <Route path="/gallery"    element={<AnimatedPage><Gallery /></AnimatedPage>} />
                 <Route path="/player"     element={<AnimatedPage><Player /></AnimatedPage>} />
                 <Route path="/ads"        element={<AnimatedPage><AdsShowcase /></AnimatedPage>} />
+                <Route path="/ads-showcase" element={<AnimatedPage><AdsShowcase /></AnimatedPage>} />
                 <Route path="/campaigns"  element={<AnimatedPage><AdsShowcase /></AnimatedPage>} />
                 <Route path="/order-success" element={<AnimatedPage><OrderSuccess /></AnimatedPage>} />
                 <Route path="/download"   element={<AnimatedPage><OrderSuccess /></AnimatedPage>} />
