@@ -37,10 +37,10 @@ export const StickyThumbCta = ({
       {isVisible && (
         <motion.div
           className="sticky-thumb-cta"
-          initial={{ y: 100, opacity: 0 }}
+          initial={{ y: 90, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          exit={{ y: 100, opacity: 0 }}
-          transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
+          exit={{ y: 90, opacity: 0 }}
+          transition={{ type: 'spring', damping: 26, stiffness: 280, mass: 0.8 }}
         >
           <div className="sticky-thumb-cta__inner">
             <div className="sticky-thumb-cta__content">

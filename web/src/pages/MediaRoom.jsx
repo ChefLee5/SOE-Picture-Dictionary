@@ -281,13 +281,30 @@ export const AudioPlayer = ({ tracks }) => {
     setIsPlaying(!isPlaying);
   };
 
-  const handleSeek = (e) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    const x = e.clientX - rect.left;
+  const updateSeekFromPointer = (e, targetEl) => {
+    const rect = (targetEl || e.currentTarget).getBoundingClientRect();
+    const clientX = e.clientX ?? (e.touches && e.touches[0]?.clientX) ?? 0;
+    const x = Math.max(0, Math.min(clientX - rect.left, rect.width));
     const pct = x / rect.width;
     const audio = audioRef.current;
-    audio.currentTime = pct * duration;
-    setProgress(pct * duration);
+    if (audio && duration) {
+      audio.currentTime = pct * duration;
+      setProgress(pct * duration);
+    }
+  };
+
+  const handlePointerDownSeek = (e) => {
+    const el = e.currentTarget;
+    if (el.setPointerCapture) {
+      try { el.setPointerCapture(e.pointerId); } catch { /* ignore */ }
+    }
+    updateSeekFromPointer(e, el);
+  };
+
+  const handlePointerMoveSeek = (e) => {
+    if (e.buttons === 1) {
+      updateSeekFromPointer(e, e.currentTarget);
+    }
   };
 
   const selectTrack = (i, e) => {
@@ -344,7 +361,16 @@ export const AudioPlayer = ({ tracks }) => {
           )}
         </button>
 
-        <div className="audio-player__progress-wrap" onClick={handleSeek} role="slider" aria-label="Track progress" aria-valuenow={progress} aria-valuemax={duration}>
+        <div
+          className="audio-player__progress-wrap"
+          onPointerDown={handlePointerDownSeek}
+          onPointerMove={handlePointerMoveSeek}
+          role="slider"
+          aria-label="Track progress"
+          aria-valuenow={progress}
+          aria-valuemax={duration}
+          style={{ touchAction: 'none', cursor: 'pointer' }}
+        >
           <div className="audio-player__progress-bar">
             <div className="audio-player__progress-fill" style={{ width: `${duration ? (progress / duration) * 100 : 0}%`, background: track.color }}></div>
           </div>

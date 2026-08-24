@@ -278,13 +278,40 @@ img {
   font-size: 1rem;
   border: none;
   cursor: pointer;
-  transition: all var(--transition-med);
+  transition: transform 0.24s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.24s cubic-bezier(0.2, 0.8, 0.2, 1), background 0.2s ease, border-color 0.2s ease;
   text-decoration: none;
   line-height: 1;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
 }
 
 .btn:hover {
   transform: translateY(-2px);
+}
+
+/* ── Apple Fluid Touch Feedback (Rule #1: Kill Latency) ── */
+.btn:active,
+.btn-gold:active,
+.btn-sage:active,
+.btn-plum:active,
+.btn-outline:active,
+.btn--primary:active,
+.btn--outline:active,
+.nav-link:active,
+.rq-hero__node:active,
+.shape-card:active,
+.track-card:active {
+  transform: scale(0.965);
+  transition: transform 90ms cubic-bezier(0.2, 0.9, 0.4, 1.1) !important;
+}
+
+button,
+a,
+input,
+select {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .btn-gold {
@@ -297,7 +324,7 @@ img {
 }
 
 .btn-gold:hover {
-  box-shadow: 0 8px 32px rgba(255, 111, 0, 0.25);
+  box-shadow: 0 8px 32px rgba(255, 111, 0, 0.28);
 }
 
 .btn-outline {
@@ -332,7 +359,7 @@ img {
 }
 
 .btn--primary:hover {
-  box-shadow: 0 8px 32px rgba(255, 111, 0, 0.25);
+  box-shadow: 0 8px 32px rgba(255, 111, 0, 0.28);
 }
 
 .btn--outline {
@@ -355,34 +382,40 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  transition: transform 0.3s ease;
+  transition: transform 0.24s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .page-bottom-link:hover {
   transform: translateX(5px);
 }
 
-/* ── Cards ── */
+.page-bottom-link:active {
+  transform: translateX(2px) scale(0.98);
+}
+
+/* ── Cards (Apple Translucent Materials & Specular Rim Light) ── */
 .glass-card {
   background: var(--color-bg-card);
   color: var(--color-text-primary);
-  border: 2px solid var(--color-border);
+  border: 1.5px solid var(--color-border);
   border-radius: var(--radius-lg);
   padding: 2rem;
-  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.05);
-  transition: all var(--transition-med);
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.6), 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  transition: transform 0.28s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.28s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.28s ease;
 }
 
 .glass-card:hover {
-  border-color: rgba(76, 175, 80, 0.25);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.10);
+  border-color: rgba(76, 175, 80, 0.35);
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.8), 0 12px 36px -4px rgba(0, 0, 0, 0.10);
   transform: translateY(-4px);
 }
 
 /* Static variant — no lift on hover (use on stat blocks, info panels) */
 .glass-card--static:hover {
   transform: none;
-  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.6), 0 4px 20px -2px rgba(0, 0, 0, 0.04);
 }
 
 /* ── Colored Section Backgrounds ── */

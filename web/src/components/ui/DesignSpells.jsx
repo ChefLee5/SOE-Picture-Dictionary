@@ -180,12 +180,13 @@ export const triggerNoteBurst = (x, y, color = '#FF6F00') => {
 };
 
 /**
- * Magnetic button wrapper with silky spring physics.
+ * Magnetic button wrapper with Apple critically damped spring physics.
  */
-export const MagneticPill = ({ children, className = '', style = {}, intensity = 0.25, ...props }) => {
+export const MagneticPill = ({ children, className = '', style = {}, intensity = 0.22, ...props }) => {
   const ref = useRef(null);
-  const x = useSpring(0, { stiffness: 260, damping: 20 });
-  const y = useSpring(0, { stiffness: 260, damping: 20 });
+  // Apple WWDC 2018 parameters: critically damped (no overshoot, snappy response)
+  const x = useSpring(0, { stiffness: 300, damping: 30, mass: 0.8 });
+  const y = useSpring(0, { stiffness: 300, damping: 30, mass: 0.8 });
 
   const handleMouseMove = (e) => {
     if (!ref.current) return;
@@ -206,7 +207,7 @@ export const MagneticPill = ({ children, className = '', style = {}, intensity =
   return (
     <motion.div
       ref={ref}
-      style={{ x, y, display: 'inline-block', ...style }}
+      style={{ x, y, display: 'inline-block', touchAction: 'manipulation', ...style }}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       className={className}
@@ -218,66 +219,73 @@ export const MagneticPill = ({ children, className = '', style = {}, intensity =
 };
 
 /**
- * 3D Magnetic Tilt Card for Track Previews & Album Art.
+ * 3D Magnetic Tilt Card for Track Previews & Album Art with Apple spring physics.
  */
-export const TiltCard = ({ children, className = '', style = {}, ...props }) => {
-  const [rotation, setRotation] = useState({ x: 0, y: 0 });
+export const TiltCard = ({ children, className = '', style = {}, maxTilt = 8, ...props }) => {
+  const ref = useRef(null);
+  // Apple WWDC 2018 fluid rotation springs
+  const rotX = useSpring(0, { stiffness: 280, damping: 28, mass: 0.8 });
+  const rotY = useSpring(0, { stiffness: 280, damping: 28, mass: 0.8 });
   const [glare, setGlare] = useState({ x: 50, y: 50, opacity: 0 });
 
   const handleMouseMove = (e) => {
-    const rect = e.currentTarget.getBoundingClientRect();
+    if (!ref.current) return;
+    const rect = ref.current.getBoundingClientRect();
     const px = (e.clientX - rect.left) / rect.width;
     const py = (e.clientY - rect.top) / rect.height;
     
-    // Tilt angle max +/- 6 degrees for subtle sophistication
-    const rotY = (px - 0.5) * 12;
-    const rotX = (0.5 - py) * 12;
+    // Direct 1:1 physical rotation mapping
+    rotY.set((px - 0.5) * (maxTilt * 2));
+    rotX.set((0.5 - py) * (maxTilt * 2));
 
-    setRotation({ x: rotX, y: rotY });
-    setGlare({ x: px * 100, y: py * 100, opacity: 0.15 });
+    setGlare({ x: px * 100, y: py * 100, opacity: 0.16 });
   };
 
   const handleMouseLeave = () => {
-    setRotation({ x: 0, y: 0 });
-    setGlare(g => ({ ...g, opacity: 0 }));
+    rotX.set(0);
+    rotY.set(0);
+    setGlare((g) => ({ ...g, opacity: 0 }));
   };
 
   return (
     <div
+      ref={ref}
       className={className}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       style={{
-        perspective: '900px',
+        perspective: '1000px',
         transformStyle: 'preserve-3d',
+        touchAction: 'manipulation',
         ...style,
       }}
       {...props}
     >
-      <div
+      <motion.div
         style={{
-          transform: `rotateX(${rotation.x}deg) rotateY(${rotation.y}deg)`,
-          transition: 'transform 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+          rotateX: rotX,
+          rotateY: rotY,
           position: 'relative',
           width: '100%',
           height: '100%',
+          transformStyle: 'preserve-3d',
         }}
       >
         {children}
-        {/* Subtle Specular Shine */}
+        {/* Apple-style specular rim / glare shine */}
         <div
           style={{
             position: 'absolute',
             inset: 0,
             pointerEvents: 'none',
             borderRadius: 'inherit',
-            background: `radial-gradient(circle at ${glare.x}% ${glare.y}%, rgba(255,255,255,0.4) 0%, transparent 60%)`,
+            background: `radial-gradient(circle at ${glare.x}% ${glare.y}%, rgba(255,255,255,0.45) 0%, transparent 65%)`,
             opacity: glare.opacity,
-            transition: 'opacity 0.3s ease',
+            transition: 'opacity 0.25s cubic-bezier(0.2, 0.8, 0.2, 1)',
             zIndex: 3,
           }}
         />
-      </div>
+      </motion.div>
     </div>
   );
 };
