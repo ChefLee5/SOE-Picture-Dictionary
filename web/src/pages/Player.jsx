@@ -240,14 +240,14 @@ const Player = () => {
           height: 100%;
           object-fit: cover;
           object-position: center;
-          opacity: 0.42;
-          filter: saturate(130%) contrast(105%);
+          opacity: 0.92;
+          filter: saturate(115%) contrast(105%);
         }
 
         .player-page__overlay {
           position: fixed;
           inset: 0;
-          background: radial-gradient(circle at 50% 30%, rgba(255, 248, 240, 0.72) 0%, rgba(250, 244, 235, 0.88) 100%);
+          background: radial-gradient(circle at 50% 35%, rgba(255, 248, 240, 0.18) 0%, rgba(255, 248, 240, 0.42) 65%, rgba(250, 244, 235, 0.65) 100%);
           z-index: 1;
         }
 
@@ -261,6 +261,7 @@ const Player = () => {
         .player-page__header {
           text-align: center;
           margin-bottom: 2.5rem;
+          text-shadow: 0 2px 12px rgba(255, 255, 255, 0.95), 0 0 25px rgba(255, 248, 240, 0.85);
         }
 
         .player-page__label {
