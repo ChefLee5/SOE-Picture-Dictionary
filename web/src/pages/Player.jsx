@@ -9,7 +9,7 @@ import { assetPath } from '../utils/assetPath';
 import { audioUrl } from '../utils/audioUrl';
 import tracksData from '../data/tracks.json';
 import { trackLead } from '../utils/analytics';
-import { triggerQuestCelebration } from '../components/ui/DesignSpells';
+import { triggerQuestCelebration, TiltCard } from '../components/ui/DesignSpells';
 
 const STORAGE_KEY = 'soe_listen_unlocked';
 
@@ -136,6 +136,13 @@ const Player = () => {
               </div>
 
               <div className="player-gate-card">
+                <TiltCard maxTilt={8} style={{ margin: '0 auto 1.5rem auto', display: 'inline-block' }}>
+                  <img
+                    src={assetPath('/assets/marketing/soe-deluxe-cover.webp')}
+                    alt="The Sound of Essentials Deluxe Album Cover"
+                    className="player-gate-cover-img"
+                  />
+                </TiltCard>
                 <div className="player-gate-badge">🎧 100% Free · Instant Unlock</div>
                 <h2 className="player-gate-title">Enter your email to start listening</h2>
                 <p className="player-gate-desc">
@@ -194,6 +201,24 @@ const Player = () => {
                     onTrackChange={handleTrackChange}
                     selectedTrack={selectedTrack}
                   />
+
+                  {/* ── Official Album Cover Companion Card ── */}
+                  <div className="player-album-companion">
+                    <TiltCard maxTilt={6} className="player-album-cover-tilt">
+                      <img
+                        src={assetPath('/assets/marketing/soe-deluxe-cover.webp')}
+                        alt="The Sound of Essentials: A Musical Learning Experience Album Cover"
+                        className="player-album-cover-img"
+                      />
+                    </TiltCard>
+                    <div className="player-album-meta">
+                      <span className="player-album-badge">✨ Official 19-Track Album</span>
+                      <h3 className="player-album-title">The Sound of Essentials</h3>
+                      <p className="player-album-desc">
+                        A Musical Learning Experience · Deluxe 19-Track Edition
+                      </p>
+                    </div>
+                  </div>
                 </div>
 
                 <div className="player-page__stack-col">
@@ -313,8 +338,80 @@ const Player = () => {
 
         .player-page__player-col {
           display: flex;
-          justify-content: center;
+          flex-direction: column;
           align-items: center;
+          gap: 1.5rem;
+        }
+
+        /* ── Album Companion Card ── */
+        .player-album-companion {
+          display: flex;
+          align-items: center;
+          gap: 1.25rem;
+          width: 100%;
+          max-width: 680px;
+          padding: 1.1rem 1.4rem;
+          background: rgba(255, 255, 255, 0.9);
+          border: 1.5px solid rgba(255, 111, 0, 0.18);
+          border-radius: 20px;
+          backdrop-filter: blur(16px) saturate(160%);
+          box-shadow: 0 10px 30px rgba(74, 53, 30, 0.08), inset 0 1px 1px 0 rgba(255, 255, 255, 0.95);
+        }
+
+        .player-album-cover-tilt {
+          flex-shrink: 0;
+          cursor: pointer;
+        }
+
+        .player-album-cover-img {
+          width: 76px;
+          height: 76px;
+          border-radius: 14px;
+          object-fit: cover;
+          display: block;
+          box-shadow: 0 6px 18px rgba(74, 53, 30, 0.2), 0 0 0 1px rgba(255, 111, 0, 0.25);
+        }
+
+        .player-album-meta {
+          flex: 1;
+          min-width: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 0.2rem;
+        }
+
+        .player-album-badge {
+          display: inline-block;
+          font-size: 0.72rem;
+          font-weight: 700;
+          color: var(--color-orange, #FF6F00);
+          text-transform: uppercase;
+          letter-spacing: 0.06em;
+        }
+
+        .player-album-title {
+          font-family: var(--font-heading, Fredoka, sans-serif);
+          font-size: 1.15rem;
+          font-weight: 700;
+          color: var(--color-text, #2D3142);
+          margin: 0;
+          line-height: 1.2;
+        }
+
+        .player-album-desc {
+          font-size: 0.85rem;
+          color: var(--color-text-light, #5C6479);
+          margin: 0;
+          line-height: 1.4;
+        }
+
+        .player-gate-cover-img {
+          width: 160px;
+          height: 160px;
+          border-radius: 22px;
+          object-fit: cover;
+          display: block;
+          box-shadow: 0 16px 40px rgba(74, 53, 30, 0.22), 0 0 0 2px rgba(255, 111, 0, 0.35);
         }
 
         .player-page__stack-col {
