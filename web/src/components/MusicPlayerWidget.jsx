@@ -618,15 +618,15 @@ export function MusicPlayerWidget({ tracks, crossOrigin, onTrackChange, selected
 
       <style>{`
         /* ════════════════════════════════════════════════════════════
-           MusicPlayerWidget — SOE Vanilla CSS
+           MusicPlayerWidget — SOE Vanilla CSS (Bright & Playful)
            ════════════════════════════════════════════════════════════ */
 
         .mpw-card {
-          --mpw-bg: #0d0d0d;
-          --mpw-fg: #fff;
-          --mpw-accent: var(--color-gold, #FF6F00);
-          --mpw-muted: rgba(255,255,255,0.45);
-          --mpw-radius: 24px;
+          --mpw-bg: rgba(255, 255, 255, 0.94);
+          --mpw-fg: var(--color-text, #2D3142);
+          --mpw-accent: var(--color-orange, #FF6F00);
+          --mpw-muted: var(--color-text-light, #5C6479);
+          --mpw-radius: 28px;
 
           position: relative;
           display: flex;
@@ -634,18 +634,21 @@ export function MusicPlayerWidget({ tracks, crossOrigin, onTrackChange, selected
           gap: 2rem;
           max-width: 680px;
           margin: 0 auto;
-          padding: 1.5rem;
+          padding: 1.75rem;
           background: var(--mpw-bg);
           border-radius: var(--mpw-radius);
+          border: 1.5px solid rgba(255, 111, 0, 0.20);
           color: var(--mpw-fg);
-          box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.06);
+          box-shadow: 0 20px 50px rgba(74, 53, 30, 0.10), inset 0 1px 1px 0 rgba(255, 255, 255, 0.95);
+          backdrop-filter: blur(16px) saturate(160%);
           overflow: hidden;
-          transition: box-shadow 0.4s ease;
+          transition: box-shadow 0.4s ease, border-color 0.3s ease;
           font-family: var(--font-body, system-ui, sans-serif);
         }
 
         .mpw-card.is-playing {
-          box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 40px rgba(255,111,0,0.12), 0 0 0 1px rgba(255,255,255,0.08);
+          box-shadow: 0 20px 50px rgba(74, 53, 30, 0.12), 0 0 35px rgba(255, 111, 0, 0.18), inset 0 1px 1px 0 rgba(255, 255, 255, 0.95);
+          border-color: rgba(255, 111, 0, 0.4);
         }
 
         /* ── Disc ── */
@@ -657,6 +660,7 @@ export function MusicPlayerWidget({ tracks, crossOrigin, onTrackChange, selected
           border-radius: 50%;
           overflow: hidden;
           cursor: pointer;
+          box-shadow: 0 10px 25px rgba(74, 53, 30, 0.2);
           transition: transform 0.5s cubic-bezier(0.16,1,0.3,1);
         }
 
@@ -696,18 +700,19 @@ export function MusicPlayerWidget({ tracks, crossOrigin, onTrackChange, selected
         .mpw-hole {
           position: absolute;
           top: 50%; left: 50%;
-          width: 28px; height: 28px;
+          width: 30px; height: 30px;
           transform: translate(-50%, -50%);
           border-radius: 50%;
-          background: var(--mpw-bg);
-          border: 2px solid rgba(255,255,255,0.1);
+          background: #FAF9F7;
+          border: 2px solid rgba(255, 111, 0, 0.3);
+          box-shadow: 0 2px 6px rgba(0,0,0,0.15);
         }
 
         .mpw-hole-inner {
           width: 10px; height: 10px;
           border-radius: 50%;
-          background: rgba(255,255,255,0.08);
-          margin: 7px auto 0;
+          background: #FF6F00;
+          margin: 8px auto 0;
         }
 
         /* ── Info panel ── */
@@ -724,7 +729,7 @@ export function MusicPlayerWidget({ tracks, crossOrigin, onTrackChange, selected
           width: 100%;
           height: 80px;
           fill: var(--mpw-accent);
-          opacity: 0.6;
+          opacity: 0.75;
           transition: opacity 0.3s;
         }
 
@@ -738,7 +743,7 @@ export function MusicPlayerWidget({ tracks, crossOrigin, onTrackChange, selected
 
         .mpw-artist {
           font-size: 0.75rem;
-          font-weight: 600;
+          font-weight: 700;
           text-transform: uppercase;
           letter-spacing: 0.12em;
           color: var(--mpw-muted);
@@ -746,9 +751,10 @@ export function MusicPlayerWidget({ tracks, crossOrigin, onTrackChange, selected
         }
 
         .mpw-track {
-          font-family: var(--font-heading, var(--font-body));
-          font-size: 1.25rem;
+          font-family: var(--font-heading, Fredoka, system-ui);
+          font-size: 1.35rem;
           font-weight: 700;
+          color: var(--mpw-fg);
           line-height: 1.2;
           margin: 0;
           white-space: nowrap;
@@ -772,23 +778,24 @@ export function MusicPlayerWidget({ tracks, crossOrigin, onTrackChange, selected
         .mpw-bar {
           width: 100%;
           height: 6px;
-          background: rgba(255,255,255,0.1);
-          border-radius: 3px;
+          background: rgba(0, 0, 0, 0.08);
+          border-radius: 4px;
           cursor: pointer;
           overflow: hidden;
         }
 
         .mpw-bar-fill {
           height: 100%;
-          background: var(--mpw-accent);
-          border-radius: 3px;
+          background: linear-gradient(90deg, #FF6F00, #FFB300);
+          border-radius: 4px;
           transition: width 0.1s linear;
         }
 
         .mpw-time {
           display: flex;
           gap: 0.3rem;
-          font-size: 0.7rem;
+          font-size: 0.75rem;
+          font-weight: 600;
           font-variant-numeric: tabular-nums;
           color: var(--mpw-muted);
         }
@@ -805,10 +812,10 @@ export function MusicPlayerWidget({ tracks, crossOrigin, onTrackChange, selected
           display: flex;
           align-items: center;
           justify-content: center;
-          width: 36px; height: 36px;
+          width: 38px; height: 38px;
           border: none;
           border-radius: 50%;
-          background: transparent;
+          background: rgba(0, 0, 0, 0.04);
           color: var(--mpw-muted);
           cursor: pointer;
           transition: color 0.2s, background 0.2s, transform 0.15s;
@@ -816,19 +823,20 @@ export function MusicPlayerWidget({ tracks, crossOrigin, onTrackChange, selected
 
         .mpw-ctrl:hover {
           color: var(--mpw-fg);
-          background: rgba(255,255,255,0.08);
+          background: rgba(255, 111, 0, 0.12);
           transform: scale(1.1);
         }
 
         .mpw-ctrl-play {
-          width: 44px; height: 44px;
-          background: var(--mpw-accent);
+          width: 46px; height: 46px;
+          background: linear-gradient(135deg, #FF6F00, #FF9800);
           color: #fff;
+          box-shadow: 0 4px 15px rgba(255, 111, 0, 0.35);
         }
 
         .mpw-ctrl-play:hover {
-          background: var(--mpw-accent);
-          filter: brightness(1.2);
+          background: linear-gradient(135deg, #FF6F00, #FFA726);
+          filter: brightness(1.08);
           transform: scale(1.12);
         }
 
@@ -864,8 +872,9 @@ export function MusicPlayerWidget({ tracks, crossOrigin, onTrackChange, selected
           max-height: 180px;
           overflow-y: auto;
           padding: 0.75rem 1rem;
-          background: rgba(0,0,0,0.06);
-          border-radius: 12px;
+          background: rgba(255, 248, 240, 0.95);
+          border: 1px solid rgba(255, 111, 0, 0.18);
+          border-radius: 14px;
           animation: mpw-lyrics-in 0.3s ease forwards;
         }
 
@@ -876,7 +885,7 @@ export function MusicPlayerWidget({ tracks, crossOrigin, onTrackChange, selected
 
         .mpw-lyrics__content p {
           font-family: var(--font-body, system-ui);
-          font-size: 0.75rem;
+          font-size: 0.8rem;
           line-height: 1.7;
           color: var(--mpw-muted);
           margin: 0;
@@ -886,7 +895,7 @@ export function MusicPlayerWidget({ tracks, crossOrigin, onTrackChange, selected
         .mpw-lyrics__label {
           font-weight: 700 !important;
           color: var(--mpw-accent) !important;
-          font-size: 0.7rem !important;
+          font-size: 0.75rem !important;
           text-transform: uppercase;
           letter-spacing: 0.08em;
           margin-top: 0.6rem !important;
@@ -898,7 +907,7 @@ export function MusicPlayerWidget({ tracks, crossOrigin, onTrackChange, selected
 
         .mpw-lyrics::-webkit-scrollbar { width: 4px; }
         .mpw-lyrics::-webkit-scrollbar-track { background: transparent; }
-        .mpw-lyrics::-webkit-scrollbar-thumb { background: var(--mpw-muted); border-radius: 2px; }
+        .mpw-lyrics::-webkit-scrollbar-thumb { background: rgba(255, 111, 0, 0.3); border-radius: 2px; }
 
         /* ── Responsive ── */
         @media (max-width: 600px) {
@@ -911,7 +920,7 @@ export function MusicPlayerWidget({ tracks, crossOrigin, onTrackChange, selected
 
           .mpw-mask { width: 180px; height: 180px; }
           .mpw-scales { height: 60px; }
-          .mpw-track { font-size: 1.1rem; }
+          .mpw-track { font-size: 1.15rem; }
         }
       `}</style>
     </>

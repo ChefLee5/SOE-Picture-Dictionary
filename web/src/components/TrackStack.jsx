@@ -188,7 +188,8 @@ export function TrackStack({ tracks, currentIndex: controlledIndex, onSelect }) 
           height: 380px;
           overflow: hidden;
           border-radius: var(--radius-lg, 24px);
-          border: 2px solid rgba(255,255,255,0.12);
+          border: 2px solid rgba(255, 111, 0, 0.25);
+          box-shadow: 0 20px 45px -10px rgba(74, 53, 30, 0.18);
           transition: box-shadow 0.3s ease;
         }
 
@@ -196,7 +197,7 @@ export function TrackStack({ tracks, currentIndex: controlledIndex, onSelect }) 
           position: absolute;
           inset: 0;
           border-radius: inherit;
-          background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, transparent 40%);
+          background: linear-gradient(to bottom, rgba(255,255,255,0.2) 0%, transparent 40%);
           z-index: 1;
           pointer-events: none;
         }
@@ -215,7 +216,7 @@ export function TrackStack({ tracks, currentIndex: controlledIndex, onSelect }) 
           flex-direction: column;
           justify-content: flex-end;
           padding: 1.25rem;
-          background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.15) 40%, transparent 70%);
+          background: linear-gradient(to top, rgba(15, 10, 5, 0.75) 0%, rgba(15, 10, 5, 0.2) 45%, transparent 75%);
           z-index: 2;
         }
 
@@ -223,35 +224,37 @@ export function TrackStack({ tracks, currentIndex: controlledIndex, onSelect }) 
           position: absolute;
           top: 1rem;
           right: 1rem;
-          font-family: var(--font-heading, sans-serif);
-          font-size: 0.7rem;
+          font-family: var(--font-heading, Fredoka, sans-serif);
+          font-size: 0.75rem;
           font-weight: 700;
-          letter-spacing: 0.12em;
-          color: rgba(255,255,255,0.5);
-          background: rgba(0,0,0,0.3);
-          padding: 0.25rem 0.6rem;
+          letter-spacing: 0.08em;
+          color: #FF6F00;
+          background: rgba(255, 255, 255, 0.9);
+          border: 1px solid rgba(255, 111, 0, 0.25);
+          padding: 0.25rem 0.65rem;
           border-radius: 100px;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.1);
           backdrop-filter: blur(8px);
         }
 
         .ts-card__meta { display: flex; flex-direction: column; gap: 0.15rem; }
 
         .ts-card__title {
-          font-family: var(--font-heading, sans-serif);
-          font-size: 1.05rem;
+          font-family: var(--font-heading, Fredoka, sans-serif);
+          font-size: 1.15rem;
           font-weight: 700;
           color: #fff;
           line-height: 1.2;
-          text-shadow: 0 1px 4px rgba(0,0,0,0.3);
+          text-shadow: 0 1px 4px rgba(0,0,0,0.4);
         }
 
         .ts-card__artist {
           font-family: var(--font-body, sans-serif);
-          font-size: 0.7rem;
-          font-weight: 500;
+          font-size: 0.72rem;
+          font-weight: 600;
           text-transform: uppercase;
           letter-spacing: 0.1em;
-          color: rgba(255,255,255,0.6);
+          color: rgba(255, 255, 255, 0.85);
         }
 
         /* ── Navigation Dots ── */
@@ -271,7 +274,7 @@ export function TrackStack({ tracks, currentIndex: controlledIndex, onSelect }) 
           border-radius: 100px;
           border: none;
           cursor: pointer;
-          background: var(--color-text-muted, rgba(255,111,0,0.3));
+          background: rgba(255, 111, 0, 0.25);
           transition: all 0.3s ease;
           padding: 0;
         }
@@ -281,6 +284,7 @@ export function TrackStack({ tracks, currentIndex: controlledIndex, onSelect }) 
         .ts-dot--active {
           height: 22px;
           background: var(--color-orange, #FF6F00);
+          box-shadow: 0 0 10px rgba(255, 111, 0, 0.4);
         }
 
         /* ── Counter ── */
@@ -295,24 +299,26 @@ export function TrackStack({ tracks, currentIndex: controlledIndex, onSelect }) 
         }
 
         .ts-counter__current {
-          font-family: var(--font-display, sans-serif);
+          font-family: var(--font-display, Fredoka, sans-serif);
           font-size: 2rem;
-          font-weight: 300;
-          color: var(--color-text-primary, #E65100);
+          font-weight: 700;
+          color: var(--color-orange, #FF6F00);
           font-variant-numeric: tabular-nums;
         }
 
         .ts-counter__divider {
           width: 28px;
-          height: 1px;
-          background: var(--color-border-light, rgba(0,0,0,0.1));
+          height: 2px;
+          background: rgba(255, 111, 0, 0.25);
           margin: 0.4rem 0;
+          border-radius: 2px;
         }
 
         .ts-counter__total {
           font-family: var(--font-body, sans-serif);
           font-size: 0.85rem;
-          color: var(--color-text-muted, rgba(0,0,0,0.4));
+          font-weight: 600;
+          color: var(--color-text-light, #5C6479);
           font-variant-numeric: tabular-nums;
         }
 
@@ -326,13 +332,13 @@ export function TrackStack({ tracks, currentIndex: controlledIndex, onSelect }) 
           flex-direction: column;
           align-items: center;
           gap: 0.25rem;
-          color: var(--color-text-muted, rgba(0,0,0,0.35));
+          color: var(--color-text-muted, #8E95A5);
         }
 
         .ts-hint__text {
           font-family: var(--font-body, sans-serif);
-          font-size: 0.6rem;
-          font-weight: 600;
+          font-size: 0.65rem;
+          font-weight: 700;
           letter-spacing: 0.15em;
           text-transform: uppercase;
         }

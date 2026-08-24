@@ -26,8 +26,8 @@ const Navbar = () => {
   const langRef = useRef(null);
   const location = useLocation();
 
-  // Dark-background pages where navbar needs inverted colors
-  const isDark = location.pathname.startsWith('/player');
+  // Dark-background pages (none currently, player is now bright & playful)
+  const isDark = false;
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 40);

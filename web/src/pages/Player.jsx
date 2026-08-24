@@ -169,18 +169,18 @@ const Player = () => {
               transition={{ type: 'spring', damping: 28, stiffness: 280 }}
             >
               <div className="player-page__header">
-                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '0.75rem', marginBottom: '0.5rem' }}>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '0.75rem', marginBottom: '0.6rem' }}>
                   <span className="player-page__label" style={{ margin: 0 }}>♫ Now Playing</span>
                   <Link
                     to="/listen?unlocked=true"
                     className="player-page__back-link"
-                    style={{ fontSize: '0.85rem', color: '#FFB300', textDecoration: 'none', background: 'rgba(255,111,0,0.18)', padding: '0.2rem 0.8rem', borderRadius: '20px' }}
+                    style={{ fontSize: '0.85rem', color: 'var(--color-orange, #FF6F00)', fontWeight: 600, textDecoration: 'none', background: 'rgba(255,111,0,0.12)', border: '1px solid rgba(255,111,0,0.22)', padding: '0.25rem 0.9rem', borderRadius: '20px' }}
                   >
                     ← Media Room &amp; Gallery
                   </Link>
                 </div>
                 <h1 className="player-page__title">
-                  Rhythm <span className="accent-text">Quest</span>
+                  Rhythm <span className="accent-text" style={{ color: 'var(--color-orange, #FF6F00)' }}>Quest</span>
                 </h1>
                 <p className="player-page__subtitle">
                   {tracks.length} tracks · 7 Lands · Designed for the developing brain
@@ -224,8 +224,8 @@ const Player = () => {
           display: flex;
           align-items: center;
           justify-content: center;
-          padding: 6rem 1.5rem 3rem;
-          background: #0a0604;
+          padding: 6.5rem 1.5rem 3.5rem;
+          background: var(--color-bg-cream, #FFF8F0);
           overflow-x: hidden;
         }
 
@@ -240,12 +240,14 @@ const Player = () => {
           height: 100%;
           object-fit: cover;
           object-position: center;
+          opacity: 0.42;
+          filter: saturate(130%) contrast(105%);
         }
 
         .player-page__overlay {
           position: fixed;
           inset: 0;
-          background: rgba(10, 6, 4, 0.75);
+          background: radial-gradient(circle at 50% 30%, rgba(255, 248, 240, 0.72) 0%, rgba(250, 244, 235, 0.88) 100%);
           z-index: 1;
         }
 
@@ -259,14 +261,17 @@ const Player = () => {
         .player-page__header {
           text-align: center;
           margin-bottom: 2.5rem;
-          color: #fff;
         }
 
         .player-page__label {
           display: inline-block;
-          font-size: 0.95rem;
-          font-weight: 600;
-          color: var(--color-orange-light, #FF9800);
+          font-size: 0.85rem;
+          font-weight: 700;
+          color: var(--color-orange, #FF6F00);
+          background: rgba(255, 111, 0, 0.12);
+          border: 1px solid rgba(255, 111, 0, 0.22);
+          padding: 0.25rem 0.9rem;
+          border-radius: 50px;
           letter-spacing: 0.08em;
           text-transform: uppercase;
         }
@@ -275,14 +280,14 @@ const Player = () => {
           font-size: clamp(2.5rem, 7vw, 3.8rem);
           font-family: var(--font-heading, Fredoka, sans-serif);
           font-weight: 700;
-          margin: 0.2rem 0 0.5rem 0;
-          color: #fff;
+          margin: 0.4rem 0 0.5rem 0;
+          color: var(--color-text, #2D3142);
           letter-spacing: -0.015em;
         }
 
         .player-page__subtitle {
           font-size: 1.05rem;
-          color: rgba(255, 255, 255, 0.75);
+          color: var(--color-text-light, #5C6479);
           margin: 0;
           max-width: 620px;
           margin-left: auto;
@@ -321,9 +326,10 @@ const Player = () => {
           display: flex;
           align-items: center;
           gap: 0.5rem;
-          font-size: 1rem;
-          font-weight: 600;
-          color: #fff;
+          font-size: 1.05rem;
+          font-family: var(--font-heading, Fredoka, sans-serif);
+          font-weight: 700;
+          color: var(--color-text, #2D3142);
           margin-bottom: 0.5rem;
         }
 
@@ -334,7 +340,7 @@ const Player = () => {
         .player-page__hint {
           text-align: center;
           font-size: 0.875rem;
-          color: rgba(255, 255, 255, 0.5);
+          color: var(--color-text-muted, #8E95A5);
           margin: 0;
           margin-top: 2rem;
         }
@@ -346,18 +352,18 @@ const Player = () => {
         }
 
         .player-gate-card {
-          background: rgba(26, 18, 14, 0.85);
-          border: 2px solid rgba(255, 111, 0, 0.35);
+          background: rgba(255, 255, 255, 0.94);
+          border: 2px solid rgba(255, 111, 0, 0.25);
           border-radius: var(--radius-lg, 28px);
           padding: 3rem 2rem;
           text-align: center;
           backdrop-filter: blur(20px) saturate(160%);
-          box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.2), 0 20px 50px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.9), 0 20px 50px rgba(74, 53, 30, 0.10);
         }
 
         .player-gate-badge {
           display: inline-block;
-          background: rgba(255, 111, 0, 0.2);
+          background: rgba(255, 111, 0, 0.12);
           color: var(--color-orange, #FF6F00);
           font-weight: 700;
           font-size: 0.85rem;
@@ -369,14 +375,14 @@ const Player = () => {
         }
 
         .player-gate-title {
-          color: #fff;
+          color: var(--color-text, #2D3142);
           font-size: clamp(1.6rem, 4vw, 2.2rem);
           font-family: var(--font-heading, Fredoka, sans-serif);
           margin-bottom: 0.75rem;
         }
 
         .player-gate-desc {
-          color: rgba(255, 255, 255, 0.8);
+          color: var(--color-text-light, #5C6479);
           font-size: 1rem;
           line-height: 1.6;
           max-width: 520px;
@@ -391,7 +397,7 @@ const Player = () => {
           gap: 0.75rem;
           flex-wrap: wrap;
           font-size: 0.85rem;
-          color: rgba(255, 255, 255, 0.6);
+          color: var(--color-text-muted, #8E95A5);
         }
       `}</style>
     </div>
