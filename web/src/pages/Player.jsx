@@ -175,25 +175,50 @@ const Player = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ type: 'spring', damping: 28, stiffness: 280 }}
             >
-              <div className="player-page__header">
-                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '0.75rem', marginBottom: '0.6rem' }}>
-                  <span className="player-page__label" style={{ margin: 0 }}>♫ Now Playing</span>
-                  <Link
-                    to="/listen?unlocked=true"
-                    className="player-page__back-link"
-                    style={{ fontSize: '0.85rem', color: 'var(--color-orange, #FF6F00)', fontWeight: 600, textDecoration: 'none', background: 'rgba(255,111,0,0.12)', border: '1px solid rgba(255,111,0,0.22)', padding: '0.25rem 0.9rem', borderRadius: '20px' }}
-                  >
-                    ← Media Room &amp; Gallery
-                  </Link>
+              {/* ── HERO ALBUM HEADLINER CENTERPIECE ── */}
+              <div className="player-hero-headliner">
+                <div className="player-hero-headliner__artwork-wrap">
+                  <TiltCard maxTilt={10} className="player-hero-headliner__tilt">
+                    <div className="player-hero-headliner__glow" />
+                    <img
+                      src={assetPath('/assets/marketing/soe-deluxe-cover.webp')}
+                      alt="The Sound of Essentials: A Musical Learning Experience Official Album Cover"
+                      className="player-hero-headliner__img"
+                    />
+                  </TiltCard>
                 </div>
-                <h1 className="player-page__title">
-                  Rhythm <span className="accent-text" style={{ color: 'var(--color-orange, #FF6F00)' }}>Quest</span>
-                </h1>
-                <p className="player-page__subtitle">
-                  {tracks.length} tracks · 7 Lands · Designed for the developing brain
-                </p>
+
+                <div className="player-hero-headliner__details">
+                  <div className="player-hero-headliner__top-row">
+                    <span className="player-hero-headliner__badge">🌟 The Official Headliner Album</span>
+                    <Link
+                      to="/listen?unlocked=true"
+                      className="player-hero-headliner__back-link"
+                    >
+                      ← Media Room &amp; Gallery
+                    </Link>
+                  </div>
+
+                  <h1 className="player-hero-headliner__title">
+                    The Sound of <span className="accent-text" style={{ color: 'var(--color-orange, #FF6F00)' }}>Essentials</span>
+                  </h1>
+                  <h2 className="player-hero-headliner__subtitle">
+                    A Musical Learning Experience · Rhythm Quest
+                  </h2>
+                  <p className="player-hero-headliner__desc">
+                    19 remastered tracks across all 7 Lands, designed for early childhood cognitive development, phonics, and joy.
+                  </p>
+
+                  <div className="player-hero-headliner__pills">
+                    <span className="player-pill">🎵 19 Tracks</span>
+                    <span className="player-pill">🌍 7 Lands</span>
+                    <span className="player-pill">🧠 Ages 2–8</span>
+                    <span className="player-pill">✨ 100% Screen-Free</span>
+                  </div>
+                </div>
               </div>
 
+              {/* ── INTERACTIVE CONTROLS ROW (Turntable + 3D Track Stack) ── */}
               <div className="player-page__layout">
                 <div className="player-page__player-col">
                   <MusicPlayerWidget
@@ -201,24 +226,6 @@ const Player = () => {
                     onTrackChange={handleTrackChange}
                     selectedTrack={selectedTrack}
                   />
-
-                  {/* ── Official Album Cover Companion Card ── */}
-                  <div className="player-album-companion">
-                    <TiltCard maxTilt={6} className="player-album-cover-tilt">
-                      <img
-                        src={assetPath('/assets/marketing/soe-deluxe-cover.webp')}
-                        alt="The Sound of Essentials: A Musical Learning Experience Album Cover"
-                        className="player-album-cover-img"
-                      />
-                    </TiltCard>
-                    <div className="player-album-meta">
-                      <span className="player-album-badge">✨ Official 19-Track Album</span>
-                      <h3 className="player-album-title">The Sound of Essentials</h3>
-                      <p className="player-album-desc">
-                        A Musical Learning Experience · Deluxe 19-Track Edition
-                      </p>
-                    </div>
-                  </div>
                 </div>
 
                 <div className="player-page__stack-col">
@@ -283,135 +290,200 @@ const Player = () => {
           width: 100%;
         }
 
-        .player-page__header {
-          text-align: center;
-          margin-bottom: 2.5rem;
-          text-shadow: 0 2px 12px rgba(255, 255, 255, 0.95), 0 0 25px rgba(255, 248, 240, 0.85);
+        /* ── Hero Headliner Showcase ── */
+        .player-hero-headliner {
+          display: flex;
+          align-items: center;
+          gap: 2.5rem;
+          max-width: 1100px;
+          margin: 0 auto 2.75rem;
+          padding: 2rem 2.5rem;
+          background: rgba(255, 255, 255, 0.92);
+          border: 2px solid rgba(255, 111, 0, 0.24);
+          border-radius: 28px;
+          backdrop-filter: blur(20px) saturate(160%);
+          box-shadow: 0 20px 50px -10px rgba(74, 53, 30, 0.14), inset 0 1px 1px 0 rgba(255, 255, 255, 0.95);
         }
 
-        .player-page__label {
-          display: inline-block;
-          font-size: 0.85rem;
+        @media (max-width: 900px) {
+          .player-hero-headliner {
+            flex-direction: column;
+            text-align: center;
+            padding: 1.75rem 1.5rem;
+            gap: 1.75rem;
+          }
+        }
+
+        .player-hero-headliner__artwork-wrap {
+          flex-shrink: 0;
+          position: relative;
+        }
+
+        .player-hero-headliner__tilt {
+          position: relative;
+          cursor: pointer;
+        }
+
+        .player-hero-headliner__img {
+          width: 220px;
+          height: 220px;
+          border-radius: 22px;
+          object-fit: cover;
+          display: block;
+          position: relative;
+          z-index: 2;
+          box-shadow: 0 16px 36px rgba(74, 53, 30, 0.24), 0 0 0 2px rgba(255, 111, 0, 0.35);
+        }
+
+        @media (max-width: 600px) {
+          .player-hero-headliner__img {
+            width: 170px;
+            height: 170px;
+          }
+        }
+
+        .player-hero-headliner__glow {
+          position: absolute;
+          inset: -10px;
+          border-radius: 28px;
+          background: radial-gradient(circle, rgba(255, 111, 0, 0.35) 0%, transparent 70%);
+          z-index: 1;
+          filter: blur(12px);
+          pointer-events: none;
+        }
+
+        .player-hero-headliner__details {
+          flex: 1;
+          min-width: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+
+        .player-hero-headliner__top-row {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          gap: 0.75rem;
+          margin-bottom: 0.25rem;
+        }
+
+        @media (max-width: 900px) {
+          .player-hero-headliner__top-row {
+            justify-content: center;
+          }
+        }
+
+        .player-hero-headliner__badge {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.35rem;
+          font-size: 0.78rem;
           font-weight: 700;
-          color: var(--color-orange, #FF6F00);
+          color: #FF6F00;
           background: rgba(255, 111, 0, 0.12);
-          border: 1px solid rgba(255, 111, 0, 0.22);
-          padding: 0.25rem 0.9rem;
+          border: 1px solid rgba(255, 111, 0, 0.25);
+          padding: 0.3rem 0.85rem;
           border-radius: 50px;
-          letter-spacing: 0.08em;
+          letter-spacing: 0.06em;
           text-transform: uppercase;
         }
 
-        .player-page__title {
-          font-size: clamp(2.5rem, 7vw, 3.8rem);
-          font-family: var(--font-heading, Fredoka, sans-serif);
-          font-weight: 700;
-          margin: 0.4rem 0 0.5rem 0;
-          color: var(--color-text, #2D3142);
-          letter-spacing: -0.015em;
+        .player-hero-headliner__back-link {
+          font-size: 0.85rem;
+          color: #FF6F00;
+          font-weight: 600;
+          text-decoration: none;
+          background: rgba(255, 111, 0, 0.08);
+          border: 1px solid rgba(255, 111, 0, 0.2);
+          padding: 0.3rem 0.85rem;
+          border-radius: 50px;
+          transition: all 0.2s ease;
         }
 
-        .player-page__subtitle {
-          font-size: 1.05rem;
-          color: var(--color-text-light, #5C6479);
+        .player-hero-headliner__back-link:hover {
+          background: rgba(255, 111, 0, 0.18);
+          transform: translateX(-2px);
+        }
+
+        .player-hero-headliner__title {
+          font-family: var(--font-display, Fredoka, sans-serif);
+          font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+          font-weight: 700;
+          color: #2D3142;
           margin: 0;
-          max-width: 620px;
-          margin-left: auto;
-          margin-right: auto;
-          line-height: 1.6;
+          line-height: 1.15;
+          letter-spacing: -0.01em;
+        }
+
+        .player-hero-headliner__subtitle {
+          font-family: var(--font-heading, Fredoka, sans-serif);
+          font-size: clamp(1.05rem, 2vw, 1.25rem);
+          font-weight: 600;
+          color: #FF6F00;
+          margin: 0;
+          line-height: 1.3;
+        }
+
+        .player-hero-headliner__desc {
+          font-size: 0.95rem;
+          color: #5C6479;
+          margin: 0.2rem 0 0.4rem;
+          line-height: 1.5;
+        }
+
+        .player-hero-headliner__pills {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 0.5rem;
+          margin-top: 0.3rem;
+        }
+
+        @media (max-width: 900px) {
+          .player-hero-headliner__pills {
+            justify-content: center;
+          }
+        }
+
+        .player-pill {
+          font-size: 0.78rem;
+          font-weight: 700;
+          color: #2D3142;
+          background: #FFF8F0;
+          border: 1px solid rgba(255, 111, 0, 0.2);
+          padding: 0.25rem 0.75rem;
+          border-radius: 100px;
         }
 
         .player-page__layout {
           display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 3rem;
-          margin-bottom: 2rem;
+          grid-template-columns: 1fr 340px;
+          gap: 2.5rem;
           align-items: start;
         }
 
-        @media (max-width: 860px) {
+        @media (max-width: 1024px) {
           .player-page__layout {
             grid-template-columns: 1fr;
-            gap: 2.5rem;
+            gap: 2rem;
           }
         }
 
         .player-page__player-col {
           display: flex;
-          flex-direction: column;
+          justify-content: center;
           align-items: center;
-          gap: 1.5rem;
-        }
-
-        /* ── Album Companion Card ── */
-        .player-album-companion {
-          display: flex;
-          align-items: center;
-          gap: 1.25rem;
-          width: 100%;
-          max-width: 680px;
-          padding: 1.1rem 1.4rem;
-          background: rgba(255, 255, 255, 0.9);
-          border: 1.5px solid rgba(255, 111, 0, 0.18);
-          border-radius: 20px;
-          backdrop-filter: blur(16px) saturate(160%);
-          box-shadow: 0 10px 30px rgba(74, 53, 30, 0.08), inset 0 1px 1px 0 rgba(255, 255, 255, 0.95);
-        }
-
-        .player-album-cover-tilt {
-          flex-shrink: 0;
-          cursor: pointer;
-        }
-
-        .player-album-cover-img {
-          width: 76px;
-          height: 76px;
-          border-radius: 14px;
-          object-fit: cover;
-          display: block;
-          box-shadow: 0 6px 18px rgba(74, 53, 30, 0.2), 0 0 0 1px rgba(255, 111, 0, 0.25);
-        }
-
-        .player-album-meta {
-          flex: 1;
-          min-width: 0;
-          display: flex;
-          flex-direction: column;
-          gap: 0.2rem;
-        }
-
-        .player-album-badge {
-          display: inline-block;
-          font-size: 0.72rem;
-          font-weight: 700;
-          color: var(--color-orange, #FF6F00);
-          text-transform: uppercase;
-          letter-spacing: 0.06em;
-        }
-
-        .player-album-title {
-          font-family: var(--font-heading, Fredoka, sans-serif);
-          font-size: 1.15rem;
-          font-weight: 700;
-          color: var(--color-text, #2D3142);
-          margin: 0;
-          line-height: 1.2;
-        }
-
-        .player-album-desc {
-          font-size: 0.85rem;
-          color: var(--color-text-light, #5C6479);
-          margin: 0;
-          line-height: 1.4;
         }
 
         .player-gate-cover-img {
-          width: 160px;
-          height: 160px;
-          border-radius: 22px;
+          width: 200px;
+          height: 200px;
+          border-radius: 24px;
           object-fit: cover;
           display: block;
-          box-shadow: 0 16px 40px rgba(74, 53, 30, 0.22), 0 0 0 2px rgba(255, 111, 0, 0.35);
+          box-shadow: 0 20px 45px rgba(74, 53, 30, 0.25), 0 0 0 3px rgba(255, 111, 0, 0.35);
         }
 
         .player-page__stack-col {
