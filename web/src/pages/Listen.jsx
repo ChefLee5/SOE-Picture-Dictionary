@@ -10,10 +10,7 @@ import JsonLd from '../components/JsonLd';
 import { mediaRoomSchema } from '../utils/schema';
 import BeehiivSubscribeForm from '../components/BeehiivSubscribeForm';
 import {
-  AudioPlayer,
   GalleryGrid,
-  bookPages,
-  soeBookPages,
   galleryShots,
 } from './MediaRoom';
 import { triggerQuestCelebration, TiltCard, MagneticPill } from '../components/ui/DesignSpells';
@@ -52,9 +49,6 @@ const Listen = () => {
   const [isGiftModalOpen, setIsGiftModalOpen] = useState(false);
   const [giftLand, setGiftLand] = useState('Harmonia');
 
-  // ── Book viewer state ───────────────────────────────────────
-  const [bookIndex, setBookIndex] = useState(0);
-  const [soeBookIndex, setSoeBookIndex] = useState(0);
   const [copied, setCopied] = useState(false);
 
   const handleCopyShareLink = () => {
@@ -123,15 +117,6 @@ const Listen = () => {
     }, { replace: true });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchParams]);
-
-  // ── Print coloring page ─────────────────────────────────────
-  const printColoringPage = () => {
-    const w = window.open('', '_blank');
-    w.document.write(`<html><head><title>SOE Coloring Page ${bookIndex + 1}</title>
-      <style>*{margin:0;padding:0}body{display:flex;justify-content:center;align-items:center;min-height:100vh;background:#fff}img{max-width:100%;max-height:100vh;object-fit:contain}@media print{@page{margin:.5cm;size:auto}}</style>
-      </head><body><img src="${bookPages[bookIndex]}" onload="window.print();window.close();" /></body></html>`);
-    w.document.close();
-  };
 
   // ──────────────────────────────────────────────────────────────
   // RENDER
@@ -341,164 +326,6 @@ const Listen = () => {
               </div>
             </section>
 
-            {/* ── Full Audio Player (from MediaRoom) ── */}
-            <section className="section glow-sage">
-              <div className="container">
-                <RevealSection className="text-center">
-                  <div className="section-label">{t('media.audio_label')}</div>
-                  <h2 className="section-title">
-                    {t('media.audio_title_1')} <span className="text-sage">{t('media.audio_title_2')}</span>
-                  </h2>
-                  <p className="section-subtitle" style={{ margin: '0 auto 2rem auto' }}>
-                    {t('media.audio_subtitle')}
-                  </p>
-                </RevealSection>
-                <RevealSection>
-                  <AudioPlayer tracks={tracks} />
-                </RevealSection>
-              </div>
-            </section>
-
-            {/* ── Le Cheval Music Video ── */}
-            <section className="section">
-              <div className="container">
-                <RevealSection className="text-center">
-                  <div className="section-label">🎬 Music Video</div>
-                  <h2 className="section-title">Le <span className="text-gold">Cheval</span></h2>
-                  <p className="section-subtitle" style={{ margin: '0 auto 2rem auto' }}>
-                    A bilingual musical journey celebrating the majesty of the horse — sung in French and English.
-                  </p>
-                </RevealSection>
-                <RevealSection>
-                  <div className="video-feature glass-card">
-                    <video
-                      className="video-feature__player"
-                      src={assetPath('/videos/Le Cheval Video.mp4')}
-                      poster={assetPath('/assets/characters/RONAN.png')}
-                      controls preload="metadata" playsInline
-                      aria-label="Le Cheval music video"
-                    />
-                    <div className="video-feature__meta">
-                      <span className="video-feature__badge" style={{ background: '#1E88E5' }}>🇫🇷 Bilingual</span>
-                      <h3 className="video-feature__title">Le Cheval — Track 5</h3>
-                      <p className="video-feature__desc">
-                        Ronan &amp; Nerissa guide learners through the world of horses with rich French vocabulary,
-                        movement, and cross-cultural storytelling from the land of Luminosity.
-                      </p>
-                    </div>
-                  </div>
-                </RevealSection>
-              </div>
-            </section>
-
-            {/* ── Coloring Book ── */}
-            {/* Anchor for deep links (Email 0 promises the coloring pages as their own
-                destination). NOTE: #coloring does not scroll yet — the unlock effect
-                above calls setSearchParams, which rebuilds the URL without the hash,
-                and this SPA has no scroll-to-hash handler. Landing is correct, the
-                jump is not. Fix both before advertising the anchor in copy. */}
-            <section className="section glow-plum" id="coloring">
-              <div className="container">
-                <RevealSection className="text-center">
-                  <div className="section-label">{t('media.coloring_label')}</div>
-                  <h2 className="section-title">
-                    {t('media.coloring_title_1')} <span className="text-plum">{t('media.coloring_title_2')}</span>
-                  </h2>
-                  <p className="section-subtitle" style={{ margin: '0 auto 2rem auto' }}>
-                    {t('media.coloring_subtitle')}
-                  </p>
-                </RevealSection>
-                <RevealSection>
-                  <div className="book-viewer glass-card">
-                    <div className="book-viewer__display">
-                      <img src={bookPages[bookIndex]} alt={`Coloring book page ${bookIndex + 1}`}
-                        className="book-viewer__page" style={{ width: '100%', display: 'block', borderRadius: 'var(--radius-md)' }} />
-                    </div>
-                    <div className="book-viewer__controls">
-                      <button className="btn btn-outline" onClick={() => setBookIndex(Math.max(0, bookIndex - 1))}
-                        disabled={bookIndex === 0} aria-label="Previous page">{t('media.prev')}</button>
-                      <span className="book-viewer__counter">{bookIndex + 1} / {bookPages.length}</span>
-                      <button className="btn btn-outline" onClick={() => setBookIndex(Math.min(bookPages.length - 1, bookIndex + 1))}
-                        disabled={bookIndex === bookPages.length - 1} aria-label="Next page">{t('media.next')}</button>
-                    </div>
-                    <div className="book-viewer__actions" style={{ display: 'flex', justifyContent: 'center', gap: '1rem', marginTop: '1.5rem', flexWrap: 'wrap' }}>
-                      <button className="btn btn-outline" onClick={printColoringPage} aria-label="Print this page">
-                        🖨️ Print This Page
-                      </button>
-                      <a className="btn btn-outline" href={bookPages[bookIndex]}
-                        download={`SOE-Coloring-Page-${bookIndex + 1}.png`} aria-label="Download this page">
-                        ⬇️ Download
-                      </a>
-                    </div>
-                  </div>
-                </RevealSection>
-              </div>
-            </section>
-
-            {/* ── SOE Storybook ── */}
-            <section className="section">
-              <div className="container">
-                <RevealSection className="text-center">
-                  <div className="section-label">{t('media.read_label')}</div>
-                  <h2 className="section-title">
-                    {t('media.read_title_1')} <span className="text-gold">{t('media.read_title_2')}</span>
-                  </h2>
-                  <p className="section-subtitle" style={{ margin: '0 auto 2rem auto' }}>
-                    {t('media.read_subtitle')}
-                  </p>
-                </RevealSection>
-                <RevealSection>
-                  <div className="book-viewer glass-card">
-                    <div className="book-viewer__display">
-                      <img src={soeBookPages[soeBookIndex]} alt={`SOE Storybook page ${soeBookIndex + 1}`}
-                        className="book-viewer__page" style={{ width: '100%', display: 'block', borderRadius: 'var(--radius-md)' }} />
-                    </div>
-                    <div className="book-viewer__controls">
-                      <button className="btn btn-outline" onClick={() => setSoeBookIndex(Math.max(0, soeBookIndex - 1))}
-                        disabled={soeBookIndex === 0} aria-label="Previous page">{t('media.prev')}</button>
-                      <span className="book-viewer__counter">{soeBookIndex + 1} / {soeBookPages.length}</span>
-                      <button className="btn btn-outline" onClick={() => setSoeBookIndex(Math.min(soeBookPages.length - 1, soeBookIndex + 1))}
-                        disabled={soeBookIndex === soeBookPages.length - 1} aria-label="Next page">{t('media.next')}</button>
-                    </div>
-                    <div className="text-center" style={{ marginTop: '1.5rem', display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-                      <Link to="/workbook" className="btn btn-gold btn-shimmer" style={{ fontSize: '1.05rem', padding: '0.85rem 2.2rem' }}>
-                        📚 Get the 8-Week Workbook &amp; Curriculum ($21) →
-                      </Link>
-                    </div>
-                  </div>
-                </RevealSection>
-              </div>
-            </section>
-
-            {/* ── SOE Globe Video ── */}
-            <section className="section">
-              <div className="container">
-                <RevealSection className="text-center">
-                  <div className="section-label">🌍 The SOE Globe</div>
-                  <h2 className="section-title">A World <span className="text-gold">in Motion</span></h2>
-                  <p className="section-subtitle" style={{ margin: '0 auto 2rem auto' }}>
-                    Watch the Seven Lands come alive — an animated panorama of the entire Rhythm Quest universe.
-                  </p>
-                </RevealSection>
-                <RevealSection>
-                  <div className="video-feature glass-card">
-                    <video className="video-feature__player"
-                      src={assetPath('/videos/SOE Globe.mp4')}
-                      poster={assetPath('/assets/marketing/quest-collage.webp')}
-                      controls preload="metadata" playsInline loop
-                      aria-label="SOE Globe panoramic animation" />
-                    <div className="video-feature__meta">
-                      <span className="video-feature__badge" style={{ background: '#4CAF50' }}>🌍 Animated</span>
-                      <h3 className="video-feature__title">The SOE Globe</h3>
-                      <p className="video-feature__desc">
-                        A rotating panorama showcasing all seven lands, their heroes, and the vibrant world of SOE.
-                      </p>
-                    </div>
-                  </div>
-                </RevealSection>
-              </div>
-            </section>
-
             {/* ── World Art Gallery ── */}
             <section className="section">
               <div className="container">
@@ -547,36 +374,6 @@ const Listen = () => {
                   </p>
                 </RevealSection>
                 <GalleryGrid shots={galleryShots} />
-              </div>
-            </section>
-
-            {/* ── Shape Gallery ── */}
-            <section className="section glow-plum">
-              <div className="container">
-                <RevealSection className="text-center">
-                  <div className="section-label">📐 Shape Art</div>
-                  <h2 className="section-title">Interactive <span className="text-plum">Shape Gallery</span></h2>
-                  <p className="section-subtitle" style={{ margin: '0 auto 2.5rem auto' }}>
-                    Beautiful hand-drawn shapes from the land of Terrasol.
-                  </p>
-                </RevealSection>
-                <div className="shape-gallery">
-                  {[
-                    { name: 'Circle', file: 'circle.webp', fact: '360° of infinite symmetry' },
-                    { name: 'Triangle', file: 'triangle.webp', fact: '3 sides — the strongest shape' },
-                    { name: 'Rectangle', file: 'rectangle.webp', fact: '4 right angles, 2 pairs' },
-                    { name: 'Star', file: 'star.webp', fact: '5 points of light' },
-                    { name: 'Hexagon', file: 'hexagon.webp', fact: "6 sides — nature's favorite" },
-                    { name: 'Heptagon', file: 'heptagon.webp', fact: '7 sides — one for each land' },
-                  ].map((s) => (
-                    <div key={s.name} className="shape-card">
-                      <img src={assetPath(`/assets/shapes/${s.file}`)} alt={s.name}
-                        className="shape-card__img" loading="lazy" />
-                      <div className="shape-card__name">{s.name}</div>
-                      <div className="shape-card__fact">{s.fact}</div>
-                    </div>
-                  ))}
-                </div>
               </div>
             </section>
 
