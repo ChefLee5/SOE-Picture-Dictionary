@@ -290,12 +290,21 @@ const Listen = () => {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
             {/* ── Success Banner (only on fresh unlock) ── */}
-            {justUnlocked && (
-              <section className="listen-unlocked-banner">
+            {isUnlocked && (
+              <section className="listen-unlocked-banner glow-cream">
                 <div className="container text-center">
                   <span className="listen-unlocked-banner__icon">🎉</span>
                   <h2>You're In, Explorer!</h2>
-                  <p>All 19 tracks, videos, and coloring pages are now unlocked below.</p>
+                  <p>All 19 tracks, lyrics, and interactive tools are now unlocked.</p>
+                  <div style={{ marginTop: '1.25rem' }}>
+                    <Link
+                      to="/player"
+                      className="btn btn-primary btn-shimmer"
+                      style={{ fontSize: '1.05rem', padding: '0.85rem 2.2rem', boxShadow: '0 8px 25px rgba(255, 111, 0, 0.35)' }}
+                    >
+                      🎧 Launch Interactive Music Player App →
+                    </Link>
+                  </div>
                 </div>
               </section>
             )}
