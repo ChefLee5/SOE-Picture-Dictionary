@@ -212,7 +212,7 @@ const Player = () => {
                   <div className="player-hero-headliner__pills">
                     <span className="player-pill">🎵 19 Tracks</span>
                     <span className="player-pill">🌍 7 Lands</span>
-                    <span className="player-pill">🧠 Ages 2–8</span>
+                    <span className="player-pill">🧠 Ages 2–7</span>
                     <span className="player-pill">✨ 100% Screen-Free</span>
                   </div>
                 </div>

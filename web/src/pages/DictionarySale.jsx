@@ -455,7 +455,7 @@ const DictionarySale = () => {
         targetUrl="#pricing"
         label="📖 Pre-Order Dictionary ($55) →"
         subtext="4,000+ Words • 125 Illustrated Scenes"
-        badge="🌟 Ages 2–8"
+        badge="🌟 Ages 2–7"
         onClick={() => trackInitiateCheckout({ sku: 'SOE-DICTIONARY', name: 'Essential Picture Dictionary', price: 55.00 })}
       />
     </div>

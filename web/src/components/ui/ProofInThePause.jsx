@@ -53,7 +53,7 @@ export const ProofInThePause = ({
           <span className="proof-badge-icon">🛡️</span>
           <div className="proof-item-text">
             <strong>100% Screen-Free Audio</strong>
-            <span>Built for early learners ages 2–8</span>
+            <span>Built for early learners ages 2–7</span>
           </div>
         </div>
       </div>

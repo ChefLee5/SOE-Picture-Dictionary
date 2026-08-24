@@ -115,7 +115,7 @@ Built around 7 magical lands, The Sound of Essentials gives children a multi-sen
 
 19 songs. Zero screen fatigue. Free today.`,
     headline: 'Rhythm Math That Clicks',
-    description: 'Ages 2–8 • Free Album',
+    description: 'Ages 2–7 • Free Album',
     cta: 'LEARN_MORE',
     url: 'https://thesoundofessentials.com/listen?utm_source=meta&utm_medium=paid_social&utm_campaign=cold_numeria&utm_content=ad07_numeria_math',
   },
@@ -131,7 +131,7 @@ No subscription. No credit card required. Just rich, beautiful learning music fo
 
 Tap below for instant access.`,
     headline: '19 Free Educational Songs + Art',
-    description: 'Ages 2–8 • Instant Access',
+    description: 'Ages 2–7 • Instant Access',
     cta: 'LISTEN_NOW',
     url: 'https://thesoundofessentials.com/listen?utm_source=meta&utm_medium=paid_social&utm_campaign=cold_direct&utm_content=ad08_free_album',
   },
@@ -147,7 +147,7 @@ Discover the serene coastal land of Aquaria where Ronan & Nerissa guide children
 
 Stream free now.`,
     headline: 'Emotional Literacy & Calm',
-    description: 'Ages 2–8 • 19 Free Songs',
+    description: 'Ages 2–7 • 19 Free Songs',
     cta: 'LISTEN_NOW',
     url: 'https://thesoundofessentials.com/listen?utm_source=meta&utm_medium=paid_social&utm_campaign=cold_aquaria&utm_content=ad09_aquaria_calm',
   },
