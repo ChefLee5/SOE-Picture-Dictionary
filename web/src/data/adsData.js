@@ -8,7 +8,7 @@ export const ADS_DATA = [
     wave: 'Wave 5',
     delta: 'Δ4: Institution vs. Sanctuary',
     audience: 'Worried Parents Seeking Balance',
-    image: '/assets/marketing/meta-ads/ad01_the_enemy_before_after.jpg',
+    image: '/assets/marketing/meta-ads/ad01_feel_felt_found.jpg',
     primaryText: `You felt like you were the only parent worried about what school ISN'T teaching anymore.
 
 Other parents felt the same. The arts are gone. Music is "non-essential." Movement got cut. And you're left wondering: am I supposed to fix this myself?
@@ -31,7 +31,7 @@ Not a replacement for school. A sanctuary from what school forgot.
     wave: 'Wave 2',
     delta: 'Δ2: Testing vs. Arts',
     audience: 'Educators & STEM Parents',
-    image: '/assets/marketing/meta-ads/ad02_what_they_took.jpg',
+    image: '/assets/marketing/meta-ads/ad02_myth_deflection.jpg',
     primaryText: `Myth: Arts education is a nice-to-have. Something you squeeze in after the "real" subjects.
 
 Truth: Neuroscience proves that music, movement, and visual art are the foundation of cognitive development — not the decoration on top of it.
@@ -54,7 +54,7 @@ The Sound of Essentials is built on this science. 19 tracks across 5 development
     wave: 'Wave 1',
     delta: 'Δ1: Screen vs. Sensory',
     audience: 'Screen-Concerned & Homeschool Parents',
-    image: '/assets/marketing/meta-ads/ad03_the_other_side_harmonia.jpg',
+    image: '/assets/marketing/meta-ads/ad03_before_after_bridge.jpg',
     primaryText: `Before: 3 hours of screen time. Glazed eyes. Another autoplay rabbit hole.
 
 After: A child on a quest through 7 magical lands — counting with Kwame, dancing with Felix, exploring science with Ezra — singing songs they actually learn from.
@@ -79,7 +79,7 @@ Ages 2–7. Free 19-track album streaming today.
     wave: 'Wave 2',
     delta: 'Δ2: Testing vs. Arts',
     audience: 'Alternative Education Advocates',
-    image: '/assets/marketing/meta-ads/ad04_the_name_seriphia.jpg',
+    image: '/assets/marketing/meta-ads/ad04_contrarian_drums.jpg',
     primaryText: `Everyone says kids need more STEM. We say they need more drums.
 
 More story. More paint. More rhythm. More movement.
@@ -104,7 +104,7 @@ The Sound of Essentials is 19 tracks that teach math, language, science, and mov
     wave: 'Wave 4',
     delta: 'Δ5: Consumption vs. Quest',
     audience: 'Active Parents Seeking Engagement',
-    image: '/assets/marketing/meta-ads/ad05_victory_garden_terrasol.jpg',
+    image: '/assets/marketing/meta-ads/ad05_challenge_clapping.jpg',
     primaryText: `Play one SOE song for your child tonight. Just one. Then tell me they didn't ask for more.
 
 We dare you.
@@ -127,7 +127,7 @@ Kids don't just listen to the Rhythm Quest. They request it. They sing it back. 
     wave: 'Wave 3',
     delta: 'Δ3: Algorithm vs. Handcrafted',
     audience: 'Skeptical Conscious Parents',
-    image: '/assets/marketing/meta-ads/ad06_trojan_horse_vitalis.jpg',
+    image: '/assets/marketing/meta-ads/ad06_holographic_universe.jpg',
     primaryText: `I thought it was just another children's album. Cute illustrations, forgettable songs, $19 gone.
 
 Then my daughter started counting in Spanish. Unprompted.
@@ -152,7 +152,7 @@ I was wrong. Very wrong.
     wave: 'Wave 3',
     delta: 'Δ5: Consumption vs. Quest',
     audience: 'Preschool & Kindergarten Families',
-    image: '/assets/marketing/meta-ads/ad07_numeria_counting_stem.jpg',
+    image: '/assets/marketing/meta-ads/ad07_morning_routine.jpg',
     primaryText: `Picture your morning routine six weeks from now.
 
 No negotiating over the iPad. No frantic searches for "educational" videos.
@@ -175,7 +175,7 @@ That's the Rhythm Quest. 19 songs. 7 Lands. 100% free streaming.
     wave: 'Wave 2',
     delta: 'Δ1: Screen vs. Sensory',
     audience: 'Anti-Screen & Mindful Parents',
-    image: '/assets/marketing/meta-ads/ad08_official_quest_book_hero.jpg',
+    image: '/assets/marketing/meta-ads/ad08_anti_cocomelon_detox.jpg',
     primaryText: `The modern children's entertainment industry is worth billions. And it produces content designed to hypnotize, not educate.
 
 Fast cuts. Sensory overload. Autoplay hooks. Dopamine loops that leave kids dysregulated, irritable, and craving more screen time.
@@ -200,7 +200,7 @@ No ads. No algorithms. Just pure, brain-building music.
     wave: 'Wave 1',
     delta: 'Δ4: Institution vs. Sanctuary',
     audience: 'Disillusioned School Parents',
-    image: '/assets/marketing/meta-ads/ad09_aquaria_ronan_nerissa.jpg',
+    image: '/assets/marketing/meta-ads/ad09_pas_classroom_to_sanctuary.jpg',
     primaryText: `Problem: Over 44 million teachers are missing worldwide, and early childhood arts programs have been stripped down to the bone.
 
 Agitation: Your child's critical brain development window (ages 2–7) doesn't pause while school systems figure this out. Once neural connections for language, rhythm, and spatial reasoning form, that foundational window is set.
@@ -221,7 +221,7 @@ Solution: The Sound of Essentials puts the power back in your hands. 19 songs ac
     wave: 'Wave 1',
     delta: 'Δ5: Consumption vs. Quest',
     audience: 'Broad Early Childhood Market',
-    image: '/assets/marketing/meta-ads/ad10_crystal_creek_routine.jpg',
+    image: '/assets/marketing/meta-ads/ad10_aida_heroes_quest.jpg',
     primaryText: `Attention: 19 songs. 15 heroes. 7 Lands. 100% free.
 
 Interest: Built around the Dalcroze and Kodály music education methods, every song in The Sound of Essentials is engineered to teach core early learning concepts — phonics, math, science, movement, and emotional literacy.
@@ -243,7 +243,7 @@ Action: Tap below to stream all 19 tracks immediately. Free coloring pages inclu
     wave: 'Wave 2',
     delta: 'Δ4: Institution vs. Sanctuary',
     audience: 'Purpose-Driven Families & Teachers',
-    image: '/assets/marketing/meta-ads/ad04_the_name_seriphia.jpg',
+    image: '/assets/marketing/meta-ads/ad06_holographic_universe.jpg',
     primaryText: `When my children started school, I noticed what was missing. No singing. No dancing. No art. Just standardized drill and screen worksheets.
 
 So I spent 4 years building The Sound of Essentials from scratch.
@@ -266,7 +266,7 @@ We don't charge for the music. Every child deserves this foundation.
     wave: 'Wave 5',
     delta: 'Δ1: Screen vs. Sensory',
     audience: 'Anti-Algorithm & Screen Detox Families',
-    image: '/assets/marketing/meta-ads/ad01_the_enemy_before_after.jpg',
+    image: '/assets/marketing/meta-ads/ad08_anti_cocomelon_detox.jpg',
     primaryText: `The enemy isn't your child's attention span. The enemy is an algorithm designed to fracture it.
 
 When kids watch hyper-stimulating video loops, their brains receive high-frequency dopamine spikes without semantic meaning.
@@ -289,7 +289,7 @@ Built for ages 2–7. Zero screen fatigue.
     wave: 'Wave 2',
     delta: 'Δ4: Institution vs. Sanctuary',
     audience: 'Community Seekers & Early Educators',
-    image: '/assets/marketing/meta-ads/ad05_victory_garden_terrasol.jpg',
+    image: '/assets/marketing/meta-ads/ad01_feel_felt_found.jpg',
     primaryText: `Over 1,200 families and classrooms across 14 countries have made The Sound of Essentials part of their daily rhythm.
 
 "Our mornings went from chaos to calm in 3 days."
@@ -312,7 +312,7 @@ Built for ages 2–7. Zero screen fatigue.
     wave: 'Wave 3',
     delta: 'Δ5: Consumption vs. Quest',
     audience: 'Creative & Imaginative Learners',
-    image: '/assets/marketing/meta-ads/ad03_the_other_side_harmonia.jpg',
+    image: '/assets/marketing/meta-ads/ad10_aida_heroes_quest.jpg',
     primaryText: `What if learning felt like a quest through 7 magical realms?
 
 In Harmonia, they discover musical syllables. In Numeria, they skip-count to the drumbeat. In Aquaria, they practice calm emotional regulation with ocean melodies.
@@ -335,7 +335,7 @@ No tests. No pressure. Just pure wonder.
     wave: 'Wave 4',
     delta: 'Δ2: Testing vs. Arts',
     audience: 'Parents of 2–7 Year Olds',
-    image: '/assets/marketing/meta-ads/ad02_what_they_took.jpg',
+    image: '/assets/marketing/meta-ads/ad02_myth_deflection.jpg',
     primaryText: `The neuroplastic window between ages 2 and 7 only happens once in a lifetime.
 
 During these critical years, the brain builds synaptic highways for language, tone discrimination, and mathematical patterns faster than it ever will again.
@@ -358,7 +358,7 @@ The entire 19-track Sound of Essentials album is free right now.
     wave: 'Wave 1',
     delta: 'Δ1: Screen vs. Sensory',
     audience: 'Mindful Sovereign Parents',
-    image: '/assets/marketing/meta-ads/ad01_the_enemy_before_after.jpg',
+    image: '/assets/marketing/meta-ads/ad03_before_after_bridge.jpg',
     primaryText: `There are two kinds of parents right now. Those handing their kids a tablet. And those handing them a quest.
 
 One group watches their child scroll. The other watches their child sing the days of the week in three languages, draw shapes from memory, and ask to "visit Harmonia" at bedtime.
@@ -383,7 +383,7 @@ The Sound of Essentials is for the parents who choose the quest. 19 songs. 7 Lan
     wave: 'Wave 4',
     delta: 'Δ5: Consumption vs. Quest',
     audience: 'Low-Friction Trial Seekers',
-    image: '/assets/marketing/meta-ads/ad08_official_quest_book_hero.jpg',
+    image: '/assets/marketing/meta-ads/ad07_morning_routine.jpg',
     primaryText: `Step 1: Listen to a 60-second preview of Le Cheval. Just 60 seconds.
 
 Step 2: If your child smiles — and they will — stream one full track like "Do You Know What Time It Is?".
@@ -410,7 +410,7 @@ Step 5: You'll know. The quest chose your family.
     wave: 'Wave 5',
     delta: 'Δ3: Algorithm vs. Handcrafted',
     audience: 'Educational Innovators',
-    image: '/assets/marketing/meta-ads/ad04_the_name_seriphia.jpg',
+    image: '/assets/marketing/meta-ads/ad06_holographic_universe.jpg',
     primaryText: `A father spent 4 years building something most people don't believe exists until they hear it.
 
 7 Lands. 15 heroes. 19 original songs. 3 languages. 157 illustrated scenes. 4,000+ vocabulary words. A full developmental curriculum for ages 2–7.
@@ -433,7 +433,7 @@ Built by one person for his children, and now shared freely with the world.
     wave: 'Wave 5',
     delta: 'Δ5: Consumption vs. Quest',
     audience: 'Montessori & World Music Enthusiasts',
-    image: '/assets/marketing/meta-ads/ad05_victory_garden_terrasol.jpg',
+    image: '/assets/marketing/meta-ads/ad01_feel_felt_found.jpg',
     primaryText: `Imagine if Montessori, Sesame Street, and a world music festival had a baby.
 
 And that baby was raised by an educator who actually cared about neuroscience.
@@ -456,7 +456,7 @@ That's The Sound of Essentials. It has the structure of Montessori — self-dire
     wave: 'Wave 5',
     delta: 'Δ4: Institution vs. Sanctuary',
     audience: 'Homeschool & Early Ed Pioneers',
-    image: '/assets/marketing/meta-ads/ad02_what_they_took.jpg',
+    image: '/assets/marketing/meta-ads/ad09_pas_classroom_to_sanctuary.jpg',
     primaryText: `Day 1: Schools cut the arts.
 Day 100: Music rooms closed.
 Day 365: A father completed an entire early childhood learning universe.
@@ -479,7 +479,7 @@ The developing brain keeps developing — with or without the system.
     wave: 'Wave 1',
     delta: 'Δ2: Testing vs. Arts',
     audience: 'Art & Music Education Advocates',
-    image: '/assets/marketing/meta-ads/ad02_what_they_took.jpg',
+    image: '/assets/marketing/meta-ads/ad04_contrarian_drums.jpg',
     primaryText: `They called music "non-essential." We called it The Sound of Essentials.
 
 That's the whole story. A system decided that the thing neuroscience says matters most — arts-integrated, rhythm-based, movement-driven learning — was expendable. So a father built what the system threw away.
@@ -502,7 +502,7 @@ No paywall for the music. Ever.
     wave: 'Wave 3',
     delta: 'Δ4: Institution vs. Sanctuary',
     audience: 'Storytelling & Character Lovers',
-    image: '/assets/marketing/meta-ads/ad04_the_name_seriphia.jpg',
+    image: '/assets/marketing/meta-ads/ad10_aida_heroes_quest.jpg',
     primaryText: `It starts with Seriphia, the guardian learning mother standing at the gates of the 7 Lands.
 
 She introduces your child to Kenji and Aiko in Harmonia, who teach speech rhythms. Then Kwame and Octavia in Numeria, who make skip-counting feel like a dance.
@@ -525,7 +525,7 @@ Before you know it, your child has traveled through 7 Lands, mastered 5 developm
     wave: 'Wave 5',
     delta: 'Δ1: Screen vs. Sensory',
     audience: 'Tired Parents Seeking Relief',
-    image: '/assets/marketing/meta-ads/ad09_aquaria_ronan_nerissa.jpg',
+    image: '/assets/marketing/meta-ads/ad05_challenge_clapping.jpg',
     primaryText: `Here is your permission slip to turn off the frantic cartoon videos without feeling guilty.
 
 You don't need hyper-animated neon flashing to keep your toddler engaged. You just need rhythm.
@@ -548,7 +548,7 @@ Better than Baby Shark. Way better.
     wave: 'Wave 1',
     delta: 'Δ2: Testing vs. Arts',
     audience: 'Data-Driven & STEM Parents',
-    image: '/assets/marketing/meta-ads/ad02_what_they_took.jpg',
+    image: '/assets/marketing/meta-ads/ad02_myth_deflection.jpg',
     primaryText: `In controlled clinical trials, 10 minutes of daily musical rhythm training built phonological awareness in preschoolers as effectively as a dedicated phonics drill program.
 
 Rhythm activates both hemispheres of the developing brain simultaneously.
@@ -571,7 +571,7 @@ Science-backed. Screen-free. Free today.
     wave: 'Wave 3',
     delta: 'Δ3: Algorithm vs. Handcrafted',
     audience: 'Multicultural & Multilingual Families',
-    image: '/assets/marketing/meta-ads/ad03_the_other_side_harmonia.jpg',
+    image: '/assets/marketing/meta-ads/ad07_morning_routine.jpg',
     primaryText: `A kindergarten teacher in Chicago shared this:
 
 "I put on The Sound of Essentials during our quiet drawing block. Within 20 minutes, 18 five-year-olds were quietly clapping in unison, singing the French lyrics to Le Cheval, and completely locked into their work. I have never seen 18 kids focus like that."
@@ -594,7 +594,7 @@ Built for ages 2–7 in 3 languages.
     wave: 'Wave 3',
     delta: 'Δ4: Institution vs. Sanctuary',
     audience: 'Homeschool & Stressed Parents',
-    image: '/assets/marketing/meta-ads/ad05_victory_garden_terrasol.jpg',
+    image: '/assets/marketing/meta-ads/ad01_feel_felt_found.jpg',
     primaryText: `I used to feel like a failure every time I turned on the TV so I could make dinner in peace.
 
 The guilt was real. I wanted my kids to learn, but after working all day, I didn't have the energy to run a 4-part homeschooling lesson.
@@ -617,7 +617,7 @@ Zero screen guilt. 100% peace of mind.
     wave: 'Wave 4',
     delta: 'Δ5: Consumption vs. Quest',
     audience: 'Active Kids & Playful Learners',
-    image: '/assets/marketing/meta-ads/ad06_trojan_horse_vitalis.jpg',
+    image: '/assets/marketing/meta-ads/ad04_contrarian_drums.jpg',
     primaryText: `They think they're just having a dance party in the living room.
 
 Their brain is mastering syllable segmentation, bilateral coordination, and phonemic awareness.
@@ -640,7 +640,7 @@ That's the Trojan Horse of music-driven learning. When children move to the beat
     wave: 'Wave 4',
     delta: 'Δ3: Algorithm vs. Handcrafted',
     audience: 'Value & Quality Conscious Buyers',
-    image: '/assets/marketing/meta-ads/ad08_official_quest_book_hero.jpg',
+    image: '/assets/marketing/meta-ads/ad08_anti_cocomelon_detox.jpg',
     primaryText: `Most early learning subscription apps charge $12.99 to $19.99 every single month to keep your child glued to a screen.
 
 The Sound of Essentials gives you the complete 19-track developmental music library 100% free.
@@ -663,7 +663,7 @@ No subscription trap. No forced upgrades. Just high-quality early education musi
     wave: 'Wave 2',
     delta: 'Δ2: Testing vs. Arts',
     audience: 'Analytical Parents & Speech Therapists',
-    image: '/assets/marketing/meta-ads/ad07_numeria_counting_stem.jpg',
+    image: '/assets/marketing/meta-ads/ad02_myth_deflection.jpg',
     primaryText: `Why does music teach reading faster than flashcards?
 
 Because rhythm provides the temporal scaffolding that speech requires. When a child claps to a syllable, auditory processing and motor cortex fire together.
@@ -688,7 +688,7 @@ Stream free today.
     wave: 'Wave 4',
     delta: 'Δ5: Consumption vs. Quest',
     audience: 'Pioneering Conscious Families',
-    image: '/assets/marketing/meta-ads/ad10_crystal_creek_routine.jpg',
+    image: '/assets/marketing/meta-ads/ad05_challenge_clapping.jpg',
     primaryText: `You aren't just raising a student. You are raising an explorer.
 
 A child who connects with rhythm, respects their own curiosity, and moves through the world with confidence and joy.
