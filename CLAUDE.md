@@ -4,7 +4,7 @@
 
 ## Project Identity
 
-**The Sound of Essentials: Rhythm Quest** is a multilingual, music-driven early childhood learning ecosystem. The companion website introduces 7 themed Lands, 15 hero characters (guided by Seriphia), and a scientifically grounded curriculum for ages 2–8.
+**The Sound of Essentials: Rhythm Quest** is a multilingual, music-driven early childhood learning ecosystem. The companion website introduces 7 themed Lands, 15 hero characters (guided by Seriphia), and a scientifically grounded curriculum for ages 2–7.
 
 **Tagline:** "Designed for the developing brain — not the algorithm."
 **Target audience:** Parents, educators, and early childhood professionals.
@@ -455,3 +455,7 @@ Converts source images to optimized WebP for production use.
 8. **Scene images are WebP** — All scene/background images should be optimized WebP format.
 9. **Page titles** — Every page sets `document.title` via `useEffect`.
 10. **Preserve the calm aesthetic** — "Bright & Playful" means warm and vibrant, not loud or overstimulating. Respect the neuro-affirming design philosophy.
+11. **Canonical Age Range (Ages 2–7)** — Always use **Ages 2–7** across all copy, UI badges, ad creatives, metadata, and multilingual translation strings (EN: "Ages 2–7", ES: "2 a 7 años", FR: "2 à 7 ans"). Never use "Ages 2–8", "Pre-K to Grade 3", or other variants.
+12. **Streamlined Funnel Unlock** — Upon lead capture / unlock on `/listen`, keep the transition seamless without redundant full-width success banners. Flow directly into the interactive player launch CTA and the $21 Rhythm Ready Workbook tripwire bridge.
+13. **Asset & PDF Compression Pipeline** — Illustrated book PDFs and high-res print deliverables must be optimized using PyMuPDF (`garbage=4`, `deflate=True`, `clean=True`) with raster downsampling (150 DPI for web digital downloads, 300 DPI for print PDFs) to keep digital deliverables under 15MB.
+
