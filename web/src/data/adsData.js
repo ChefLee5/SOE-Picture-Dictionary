@@ -199,7 +199,7 @@ No ads, no algorithms, and no screen fatigue, just brain-building melody.
     image: '/assets/marketing/meta-ads/ad09_pas_classroom_to_sanctuary.jpg',
     primaryText: `With over 44 million teachers missing worldwide and early childhood arts programs reduced, parents carry the weight of early enrichment.
 
-The window between ages 2 and 7 represents a unique developmental period for forming neural pathways in language, rhythm, and spatial reasoning.
+The critical window for ages 2 to 7 represents a unique developmental period for forming neural pathways in language, rhythm, and spatial reasoning.
 
 The Sound of Essentials brings that foundation home. Nineteen tracks across 7 Lands transform everyday playtime into an acoustic space for phonics, math, and coordination.
 
@@ -330,7 +330,7 @@ Curiosity leads the way without tests or pressure.
     delta: 'Δ2: Testing vs. Arts',
     audience: 'Parents of 2–7 Year Olds',
     image: '/assets/marketing/meta-ads/ad02_myth_deflection.jpg',
-    primaryText: `The developmental window between ages 2 and 7 happens once.
+    primaryText: `The developmental window for ages 2 to 7 happens once.
 
 During these early years, neural networks for language, tone discrimination, and mathematical patterns form at peak speed.
 
