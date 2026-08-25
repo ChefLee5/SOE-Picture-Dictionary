@@ -1,4 +1,4 @@
-import { lazy, Suspense, useState, useCallback } from 'react';
+import { lazy, Suspense, useState, useCallback, useMemo } from 'react';
 import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import AnimatedPage from './components/AnimatedPage';
