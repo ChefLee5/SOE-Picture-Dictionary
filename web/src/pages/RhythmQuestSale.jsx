@@ -766,8 +766,8 @@ const RhythmReadyRoadmap = () => {
               <article className="rq-qmap__card rq-qmap__card--finish">
                 <div className="rq-qmap__art">
                   <img
-                    src={assetPath('/assets/marketing/quest-complete.webp')}
-                    alt="Artwork marking the end of the Workbook and Curriculum"
+                    src={assetPath('/assets/marketing/quest-finish-line.webp')}
+                    alt="Artwork marking the finish line celebration of the Workbook and Curriculum"
                     loading="lazy"
                   />
                 </div>
