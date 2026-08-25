@@ -682,7 +682,7 @@ const Home = () => {
               Every Word Has a <span className="text-gold">World Behind It</span>
             </h2>
             <p className="section-subtitle" style={{ margin: '0 auto 2.5rem auto', maxWidth: '680px' }}>
-              4,232 words. 157 illustrated scenes. 7 lands. The SOE Rhythm Quest Picture Dictionary and Rhythm Ready
+              4,000+ words. 125 illustrated scenes. 7 Lands. The SOE Rhythm Quest Picture Dictionary and Rhythm Ready
               Workbook expand auditory learning into rich visual and tactile mastery.
             </p>
           </RevealSection>

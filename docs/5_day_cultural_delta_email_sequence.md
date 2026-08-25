@@ -142,7 +142,7 @@ Warmly,
 
 * **Send Timing:** 72 hours post-opt-in
 * **From:** Lee @ The Sound of Essentials `<info@soelearn.com>`
-* **Subject A:** 4,232 words. 7 Lands. One living curriculum.
+* **Subject A:** 4,000+ words. 7 Lands. One living curriculum.
 * **Subject B:** Why we mapped early childhood into 7 worlds
 * **Preview Text:** A vocabulary journey crafted by a father's heart and mother's love.
 * **Primary CTA:** Explore The Essential Picture Dictionary
@@ -166,7 +166,7 @@ That’s why the Sound of Essentials universe is structured across **Seven Firma
 6. 🌱 **Terrasol:** Nature, Zoology & Earth Science
 7. ⏳ **Celestia:** Time, Clocks, Solar Rhythms & Seasons
 
-To anchor this entire world, we built **The Essential Picture Dictionary** — 4,232 words across 125 richly illustrated scenes spanning the complete Oxford Picture Dictionary scope, fully neuro-affirming and bilingual.
+To anchor this entire world, we built **The Essential Picture Dictionary** — 4,000+ words across 125 richly illustrated scenes spanning the complete Oxford Picture Dictionary scope, fully neuro-affirming and bilingual.
 
 Whether you're homeschooling, supplementing preschool, or simply curating a richer sanctuary at home, these 7 Lands will become part of your family's daily language.
 

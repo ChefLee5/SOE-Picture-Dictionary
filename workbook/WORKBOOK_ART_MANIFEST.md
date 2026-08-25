@@ -2,7 +2,7 @@
 
 Rule (owner, 2026-07-06): the RhythmReady Workbook must NOT reuse Picture
 Dictionary scene art — no duplicate images between products. The dictionary
-keeps its 157 scene JPGs; every image below needs a NEW workbook-original
+keeps its 125 scene JPGs; every image below needs a NEW workbook-original
 illustration generated with the character reference files (`<Name> Ref.jpeg`)
 via a reference-conditioned model (Nano Banana / Seedream).
 

@@ -403,7 +403,7 @@ Seven Lands, 19 songs, and free streaming for ages 2 to 7.
     image: '/assets/marketing/meta-ads/ad06_holographic_universe.jpg',
     primaryText: `A father spent four years creating an early learning world that surprises parents when they first hear it.
 
-Seven Lands, 15 hero characters, 19 original songs in 3 languages, 157 illustrated scenes, and 4,000+ vocabulary words in the companion dictionary create a complete early curriculum for ages 2 to 7.
+Seven Lands, 15 hero characters, 19 original songs in 3 languages, 125 illustrated scenes, and 4,000+ vocabulary words in the companion dictionary create a complete early curriculum for ages 2 to 7.
 
 Built independently for his own family, it is now shared freely with homes and classrooms worldwide.
 
