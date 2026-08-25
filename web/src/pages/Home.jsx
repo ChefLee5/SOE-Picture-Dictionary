@@ -1502,11 +1502,18 @@ const Home = () => {
           flex-direction: column;
           justify-content: space-between;
           position: relative;
+          border-radius: var(--radius-xl);
+          background: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.80));
+          border: 1.5px solid rgba(255, 255, 255, 0.85);
+          box-shadow: inset 0 1.5px 1.5px 0 rgba(255, 255, 255, 0.9), 0 8px 28px -4px rgba(0, 0, 0, 0.06);
+          backdrop-filter: blur(16px) saturate(160%);
+          -webkit-backdrop-filter: blur(16px) saturate(160%);
         }
 
         .voice-card--featured {
           border: 2px solid rgba(150, 120, 196, 0.35);
-          background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(150, 120, 196, 0.1));
+          background: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(150, 120, 196, 0.12));
+          box-shadow: inset 0 1.5px 1.5px 0 rgba(255, 255, 255, 0.9), 0 12px 32px -4px rgba(150, 120, 196, 0.15);
         }
 
         .voice-card__quote-mark {
@@ -1533,8 +1540,8 @@ const Home = () => {
         }
 
         .voice-avatar {
-          width: 46px;
-          height: 46px;
+          width: 48px;
+          height: 48px;
           border-radius: 50%;
           overflow: hidden;
           background: #fff;
@@ -1544,12 +1551,16 @@ const Home = () => {
           justify-content: center;
           font-size: 1.4rem;
           flex-shrink: 0;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
 
         .voice-avatar img {
           width: 100%;
           height: 100%;
           object-fit: cover;
+          object-position: center 15%;
+          transform: scale(1.35);
+          transform-origin: center 18%;
         }
 
         .voice-name {
@@ -1596,11 +1607,18 @@ const Home = () => {
         .quest-pillar-card {
           padding: 2rem 1.5rem;
           text-align: center;
+          border-radius: var(--radius-xl);
+          background: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.80));
+          border: 1.5px solid rgba(255, 255, 255, 0.85);
+          box-shadow: inset 0 1.5px 1.5px 0 rgba(255, 255, 255, 0.9), 0 8px 28px -4px rgba(0, 0, 0, 0.06);
+          backdrop-filter: blur(16px) saturate(160%);
+          -webkit-backdrop-filter: blur(16px) saturate(160%);
         }
 
         .quest-pillar-card--highlight {
           border: 2px solid rgba(255, 179, 0, 0.4);
-          background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 179, 0, 0.08));
+          background: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(255, 179, 0, 0.10));
+          box-shadow: inset 0 1.5px 1.5px 0 rgba(255, 255, 255, 0.9), 0 12px 32px -4px rgba(255, 179, 0, 0.15);
         }
 
         .quest-pillar__icon {
@@ -1627,21 +1645,25 @@ const Home = () => {
         }
 
         .land-mini-card {
-          background: rgba(255, 255, 255, 0.75);
-          border: 1px solid var(--color-border);
+          background: rgba(255, 255, 255, 0.85);
+          border: 1px solid rgba(255, 255, 255, 0.85);
           border-top: 3px solid var(--land-color);
-          border-radius: var(--radius-md);
+          border-radius: var(--radius-lg);
           padding: 1rem 0.5rem;
           text-align: center;
           display: flex;
           flex-direction: column;
           align-items: center;
           gap: 0.25rem;
-          transition: transform 0.2s ease;
+          box-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.04);
+          backdrop-filter: blur(12px);
+          -webkit-backdrop-filter: blur(12px);
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
         .land-mini-card:hover {
           transform: translateY(-4px);
+          box-shadow: 0 8px 24px -2px rgba(0, 0, 0, 0.08);
         }
 
         .land-mini-card__icon { font-size: 1.25rem; }
@@ -1660,8 +1682,14 @@ const Home = () => {
         .domain-card {
           text-align: center;
           padding: 2rem 1.25rem;
+          border-radius: var(--radius-xl);
+          border: 1.5px solid rgba(255, 255, 255, 0.85);
           border-top: 4px solid var(--domain-color);
-          transition: transform 0.3s ease;
+          background: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.80));
+          box-shadow: inset 0 1.5px 1.5px 0 rgba(255, 255, 255, 0.9), 0 8px 28px -4px rgba(0, 0, 0, 0.06);
+          backdrop-filter: blur(16px) saturate(160%);
+          -webkit-backdrop-filter: blur(16px) saturate(160%);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .domain-card:hover {
@@ -1754,6 +1782,14 @@ const Home = () => {
         .science-card {
           padding: 2rem;
           border-left: 4px solid var(--color-blue);
+          border-radius: var(--radius-xl);
+          background: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.80));
+          border-right: 1.5px solid rgba(255, 255, 255, 0.85);
+          border-top: 1.5px solid rgba(255, 255, 255, 0.85);
+          border-bottom: 1.5px solid rgba(255, 255, 255, 0.85);
+          box-shadow: inset 0 1.5px 1.5px 0 rgba(255, 255, 255, 0.9), 0 8px 28px -4px rgba(0, 0, 0, 0.06);
+          backdrop-filter: blur(16px) saturate(160%);
+          -webkit-backdrop-filter: blur(16px) saturate(160%);
         }
 
         .science-card__tag {
@@ -1781,6 +1817,12 @@ const Home = () => {
           margin-top: 2.5rem;
           padding: 2.25rem;
           text-align: center;
+          border-radius: var(--radius-xl);
+          background: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.80));
+          border: 1.5px solid rgba(255, 255, 255, 0.85);
+          box-shadow: inset 0 1.5px 1.5px 0 rgba(255, 255, 255, 0.9), 0 8px 28px -4px rgba(0, 0, 0, 0.06);
+          backdrop-filter: blur(16px) saturate(160%);
+          -webkit-backdrop-filter: blur(16px) saturate(160%);
         }
 
         .macro-stats__header h3 {
@@ -1857,6 +1899,11 @@ const Home = () => {
           overflow-x: auto;
           padding: 1.5rem;
           border-radius: var(--radius-xl);
+          background: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.82));
+          border: 1.5px solid rgba(255, 255, 255, 0.85);
+          box-shadow: inset 0 1.5px 1.5px 0 rgba(255, 255, 255, 0.9), 0 8px 28px -4px rgba(0, 0, 0, 0.06);
+          backdrop-filter: blur(16px) saturate(160%);
+          -webkit-backdrop-filter: blur(16px) saturate(160%);
         }
 
         .comparison-table {
@@ -1944,7 +1991,13 @@ const Home = () => {
         .faq-accordion-card {
           padding: 0;
           overflow: hidden;
-          transition: border-color 0.2s ease;
+          border-radius: var(--radius-xl);
+          background: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.80));
+          border: 1.5px solid rgba(255, 255, 255, 0.85);
+          box-shadow: inset 0 1.5px 1.5px 0 rgba(255, 255, 255, 0.9), 0 6px 20px -4px rgba(0, 0, 0, 0.05);
+          backdrop-filter: blur(16px) saturate(160%);
+          -webkit-backdrop-filter: blur(16px) saturate(160%);
+          transition: border-color 0.2s ease, box-shadow 0.2s ease;
         }
 
         .faq-accordion-card.is-open {
