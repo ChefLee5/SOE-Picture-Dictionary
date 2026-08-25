@@ -42,11 +42,16 @@ const App = () => {
   useAnalytics();
   const [showSplash, setShowSplash] = useState(true);
   const handleSplashFinished = useCallback(() => setShowSplash(false), []);
-  const location = useLocation();
+  // Normalize duplicate slashes in pathname (e.g., //rhythm-ready -> /rhythm-ready)
+  const cleanPathname = location.pathname.replace(/\/+/g, '/');
+  const normalizedLocation = useMemo(() => ({
+    ...location,
+    pathname: cleanPathname
+  }), [location, cleanPathname]);
 
   // The v2 redesign lives under /v2 with its own isolated chrome (NavbarV2,
   // FooterV2, SplashV2 via V2Layout). Suppress the original site chrome there.
-  const isV2 = location.pathname === '/v2' || location.pathname.startsWith('/v2/');
+  const isV2 = cleanPathname === '/v2' || cleanPathname.startsWith('/v2/');
 
   return (
     <div className="app">
@@ -59,7 +64,7 @@ const App = () => {
           {isV2 ? (
             // ── V2 routes: no AnimatePresence keying, so V2Layout persists
             //    across child navigations (splash plays once). ──
-            <Routes location={location}>
+            <Routes location={normalizedLocation}>
               <Route path="/v2" element={<V2Layout />}>
                 <Route index element={<HomeV2 />} />
                 <Route path="heroes" element={<HeroesV2 />} />
@@ -71,7 +76,7 @@ const App = () => {
             </Routes>
           ) : (
             <AnimatePresence mode="wait">
-              <Routes location={location} key={location.pathname}>
+              <Routes location={normalizedLocation} key={cleanPathname}>
                 <Route path="/"           element={<AnimatedPage><Home /></AnimatedPage>} />
                 <Route path="/universe"   element={<Navigate to="/heroes" replace />} />
                 <Route path="/media"      element={<Navigate to="/listen" replace />} />
@@ -96,6 +101,7 @@ const App = () => {
                 <Route path="/campaigns"  element={<AnimatedPage><AdsShowcase /></AnimatedPage>} />
                 <Route path="/order-success" element={<AnimatedPage><OrderSuccess /></AnimatedPage>} />
                 <Route path="/download"   element={<AnimatedPage><OrderSuccess /></AnimatedPage>} />
+                <Route path="*"           element={<Navigate to="/" replace />} />
               </Routes>
             </AnimatePresence>
           )}
