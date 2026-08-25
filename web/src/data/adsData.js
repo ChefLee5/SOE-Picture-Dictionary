@@ -13,9 +13,9 @@ export const ADS_DATA = [
 
 Other parents felt the same. The arts are gone. Music is "non-essential." Movement got cut. And you're left wondering: am I supposed to fix this myself?
 
-Then they found The Sound of Essentials — a music-driven learning universe built for ages 2–7. 7 Lands. 15 heroes. 19 original songs that teach vocabulary, counting, shapes, science, and emotional regulation.
+Then they found The Sound of Essentials: Rhythm Quest — a music-driven learning universe built for ages 2–7. 7 Lands. 15 heroes. 19 original songs that teach vocabulary, counting, science, movement, and emotional regulation.
 
-Not a replacement for school. A sanctuary from what school forgot.
+Not a replacement for school. A sanctuary from what school forgot. Crafted by a Father's heart and Mother's Love.
 
 🎵 Listen free — tap below. No credit card. No spam.`,
     headline: 'A Musical Sanctuary for Young Minds',
@@ -34,11 +34,11 @@ Not a replacement for school. A sanctuary from what school forgot.
     image: '/assets/marketing/meta-ads/ad02_myth_deflection.jpg',
     primaryText: `Myth: Arts education is a nice-to-have. Something you squeeze in after the "real" subjects.
 
-Truth: Neuroscience proves that music, movement, and visual art are the foundation of cognitive development — not the decoration on top of it.
+Truth: Neuroscience proves that music, movement, and acoustic rhythm are the foundation of cognitive development — not the decoration on top of it.
 
 Children who receive arts-integrated learning show stronger memory, better executive function, and faster language acquisition. The developing brain doesn't separate "art" from "learning." Adults do.
 
-The Sound of Essentials is built on this science. 19 tracks across 5 developmental domains. Dalcroze. Orff. Kodály. Not a playlist — a curriculum.
+The Sound of Essentials is built on this science for ages 2–7. 19 tracks across 5 developmental domains. Dalcroze. Orff. Kodály. Not a playlist — a curriculum.
 
 🧠 Stream free. See the science for yourself → link below.`,
     headline: 'Backed by Science. Loved by Kids.',
@@ -57,11 +57,11 @@ The Sound of Essentials is built on this science. 19 tracks across 5 development
     image: '/assets/marketing/meta-ads/ad03_before_after_bridge.jpg',
     primaryText: `Before: 3 hours of screen time. Glazed eyes. Another autoplay rabbit hole.
 
-After: A child on a quest through 7 magical lands — counting with Kwame, dancing with Felix, exploring science with Ezra — singing songs they actually learn from.
+After: A child on a quest through 7 magical lands — language with Kenji & Aiko in Harmonia, counting with Kwame & Octavia in Numeria, dancing with Felix & Amara in Vitalis, exploring science with Silas & Vesta in Terrasol.
 
-The bridge? One book. One music library. One decision to swap passive consumption for active learning.
+The bridge? One music library. One decision to swap passive consumption for active learning.
 
-The Sound of Essentials: Rhythm Quest. 19 original songs. 15 characters. 5 developmental domains. Built for the developing brain, not the algorithm.
+The Sound of Essentials: Rhythm Quest. 19 original songs. 15 characters guided by Seriphia. 5 developmental domains. Built for the developing brain, not the algorithm.
 
 Ages 2–7. Free 19-track album streaming today.
 
@@ -80,15 +80,15 @@ Ages 2–7. Free 19-track album streaming today.
     delta: 'Δ2: Testing vs. Arts',
     audience: 'Alternative Education Advocates',
     image: '/assets/marketing/meta-ads/ad04_contrarian_drums.jpg',
-    primaryText: `Everyone says kids need more STEM. We say they need more drums.
+    primaryText: `Everyone says kids need more STEM worksheets. We say they need more drums.
 
-More story. More paint. More rhythm. More movement.
+More story. More acoustic melody. More rhythm. More movement.
 
 And before you call that soft — neuroscience agrees with us. Music builds the exact neural pathways that STEM requires: pattern recognition, sequential logic, spatial reasoning, working memory.
 
 You can't build the house without the foundation. Arts ARE the foundation.
 
-The Sound of Essentials is 19 tracks that teach math, language, science, and movement through music. Not as a supplement. As the core.
+The Sound of Essentials is 19 tracks that teach math, language, science, and movement through music for ages 2–7. Not as a supplement. As the core.
 
 🎵 Free for every family. Listen now → tap below.`,
     headline: 'More Than Music. It\'s a Curriculum.',
@@ -109,11 +109,11 @@ The Sound of Essentials is 19 tracks that teach math, language, science, and mov
 
 We dare you.
 
-Pick any track — "Do You Know What Time It Is?" for time concepts, "My Body" for anatomy, "Le Cheval" for pure joy. Watch what happens when music is actually designed for learning, not just background noise.
+Pick any track — "Do You Know What Time It Is?" for temporal concepts in Celestia, "My Body" for anatomy in Vitalis, "Le Cheval" for French language immersion in Harmonia. Watch what happens when music is actually designed for learning, not just background noise.
 
 Kids don't just listen to the Rhythm Quest. They request it. They sing it back. They ask to "go to Numeria" at bedtime.
 
-🎵 One song. That's all it takes. Free streaming — tap below.`,
+🎵 One song. That's all it takes. Free streaming for ages 2–7 — tap below.`,
     headline: 'Listen Free: 19 Educational Songs',
     description: 'Instant access. No spam.',
     cta: 'LISTEN_NOW',
@@ -128,13 +128,13 @@ Kids don't just listen to the Rhythm Quest. They request it. They sing it back. 
     delta: 'Δ3: Algorithm vs. Handcrafted',
     audience: 'Skeptical Conscious Parents',
     image: '/assets/marketing/meta-ads/ad06_holographic_universe.jpg',
-    primaryText: `I thought it was just another children's album. Cute illustrations, forgettable songs, $19 gone.
+    primaryText: `I thought it was just another children's album. Cute illustrations, forgettable songs.
 
-Then my daughter started counting in Spanish. Unprompted.
+Then my 4-year-old started skip-counting with Octavia and Kwame in Numeria. Unprompted.
 
-Then she asked to "visit Numeria" again. Then she drew shapes she'd learned from Silas and Vesta. Then she sang the days of the week — in French.
+Then she asked to explore Terrasol with Silas and Vesta. Then she sang the French lyrics to Le Cheval from Harmonia.
 
-This isn't just music. It's a universe. 7 Lands, 15 characters, 19 original songs, and a curriculum built on actual neuroscience for ages 2–7. A father built this from scratch because nothing else was good enough.
+This isn't just music. It's a universe. 7 Lands, 15 hero characters, 19 original songs, and a curriculum built on actual neuroscience for ages 2–7. A father built this from scratch because nothing else was good enough for his children.
 
 I was wrong. Very wrong.
 
@@ -157,9 +157,9 @@ I was wrong. Very wrong.
 
 No negotiating over the iPad. No frantic searches for "educational" videos.
 
-Instead: your child is humming a melody about skip counting while putting on their shoes. They know all 7 Lands of The Sound of Essentials. They know Seriphia, Kenji, Aiko, and Amara. They ask for the music in the car, and by the time you arrive, they've practiced phonics, rhythm, and spatial reasoning — without even realizing they were learning.
+Instead: your child is humming a melody about skip-counting while putting on their shoes. They know all 7 Lands of The Sound of Essentials. They know Seriphia, Kenji, Aiko, Kwame, and Amara. They ask for the music in the car, and by the time you arrive, they've practiced phonics, rhythm, and spatial reasoning — without even realizing they were learning.
 
-That's the Rhythm Quest. 19 songs. 7 Lands. 100% free streaming.
+That's the Rhythm Quest. 19 songs. 7 Lands. 100% free streaming for ages 2–7.
 
 🎵 Start the journey this morning → tap below.`,
     headline: 'Your Child\'s New Favorite Songs',
@@ -222,11 +222,11 @@ Solution: The Sound of Essentials puts the power back in your hands. 19 songs ac
     delta: 'Δ5: Consumption vs. Quest',
     audience: 'Broad Early Childhood Market',
     image: '/assets/marketing/meta-ads/ad10_aida_heroes_quest.jpg',
-    primaryText: `Attention: 19 songs. 15 heroes. 7 Lands. 100% free.
+    primaryText: `Attention: 19 songs. 15 heroes. 7 Lands. 100% free streaming.
 
-Interest: Built around the Dalcroze and Kodály music education methods, every song in The Sound of Essentials is engineered to teach core early learning concepts — phonics, math, science, movement, and emotional literacy.
+Interest: Built around Dalcroze, Orff, and Kodály music education methods, every song in The Sound of Essentials is engineered to teach core early learning concepts — phonics, math, science, movement, and emotional literacy for ages 2–7.
 
-Desire: Imagine your 4-year-old singing about skip counting and anatomy with pure joy, completely screen-free.
+Desire: Imagine your 4-year-old singing about skip-counting and anatomy with pure joy, completely screen-free.
 
 Action: Tap below to stream all 19 tracks immediately. Free coloring pages included.`,
     headline: '15 Characters. 7 Lands. 1 Quest.',
@@ -248,7 +248,7 @@ Action: Tap below to stream all 19 tracks immediately. Free coloring pages inclu
 
 So I spent 4 years building The Sound of Essentials from scratch.
 
-A full 19-track developmental music ecosystem, guided by Seriphia and 14 hero characters, covering 5 core learning domains for ages 2–7.
+A full 19-track developmental music ecosystem, guided by Seriphia and 14 hero characters across 7 Lands, covering 5 core learning domains for ages 2–7.
 
 We don't charge for the music. Every child deserves this foundation.
 
@@ -273,7 +273,7 @@ When kids watch hyper-stimulating video loops, their brains receive high-frequen
 
 The Sound of Essentials replaces the loop with rhythm, cadence, and human story. 19 acoustic songs that ground developing nervous systems and accelerate reading readiness.
 
-Built for ages 2–7. Zero screen fatigue.
+Built for ages 2–7. Zero screen fatigue. Staying on the path, always learning.
 
 🎧 Reclaim calm focus → stream free below.`,
     headline: 'Built for Brains, Not Algorithms',
@@ -296,7 +296,7 @@ Built for ages 2–7. Zero screen fatigue.
 "My 4-year-old learned French days of the week just by dancing to Le Cheval."
 "The only audio curriculum my kindergarteners beg for."
 
-19 songs. 7 developmental Lands. 100% screen-free.
+19 songs. 7 developmental Lands. 100% screen-free for ages 2–7.
 
 🎵 Join the global learning sanctuary free → link below.`,
     headline: 'Music Learning for Every Child 🌍',
@@ -315,9 +315,9 @@ Built for ages 2–7. Zero screen fatigue.
     image: '/assets/marketing/meta-ads/ad10_aida_heroes_quest.jpg',
     primaryText: `What if learning felt like a quest through 7 magical realms?
 
-In Harmonia, they discover musical syllables. In Numeria, they skip-count to the drumbeat. In Aquaria, they practice calm emotional regulation with ocean melodies.
+In Harmonia, they discover musical syllables with Kenji and Aiko. In Numeria, they skip-count to the drumbeat with Kwame and Octavia. In Aquaria, they practice calm emotional regulation with ocean melodies. In Terrasol, they explore nature with Silas and Vesta.
 
-15 hero mentors guide their way, matching their unique personality and learning pace.
+15 hero mentors guided by Seriphia match their unique personality and learning pace for ages 2–7.
 
 No tests. No pressure. Just pure wonder.
 
@@ -361,13 +361,13 @@ The entire 19-track Sound of Essentials album is free right now.
     image: '/assets/marketing/meta-ads/ad03_before_after_bridge.jpg',
     primaryText: `There are two kinds of parents right now. Those handing their kids a tablet. And those handing them a quest.
 
-One group watches their child scroll. The other watches their child sing the days of the week in three languages, draw shapes from memory, and ask to "visit Harmonia" at bedtime.
+One group watches their child scroll. The other watches their child sing the days of the week in three languages, explore nature concepts, and ask to "visit Harmonia" at bedtime.
 
 The difference isn't money. It's not privilege.
 
 It's one decision: algorithm or architecture? Consumption or quest?
 
-The Sound of Essentials is for the parents who choose the quest. 19 songs. 7 Lands. 15 heroes. Free music.
+The Sound of Essentials is for the parents who choose the quest. 19 songs. 7 Lands. 15 heroes. Free music for ages 2–7.
 
 🎵 You already know which side you're on → tap below.`,
     headline: 'Replace Junk Content With This',
@@ -386,15 +386,15 @@ The Sound of Essentials is for the parents who choose the quest. 19 songs. 7 Lan
     image: '/assets/marketing/meta-ads/ad07_morning_routine.jpg',
     primaryText: `Step 1: Listen to a 60-second preview of Le Cheval. Just 60 seconds.
 
-Step 2: If your child smiles — and they will — stream one full track like "Do You Know What Time It Is?".
+Step 2: If your child smiles — and they will — stream one full track like "Do You Know What Time It Is?" in Celestia.
 
-Step 3: Meet the 15 characters. See who they connect with: Kenji? Amara? Felix?
+Step 3: Meet the 15 characters. See who they connect with: Kenji? Amara? Felix? Octavia?
 
 Step 4: Download the free coloring sheets.
 
 Step 5: You'll know. The quest chose your family.
 
-7 Lands. 19 songs. The music is 100% free.
+7 Lands. 19 songs. The music is 100% free for ages 2–7.
 
 🎵 Start with Step 1 → tap below.`,
     headline: 'Unlock the Full Rhythm Quest 🎵',
@@ -413,7 +413,7 @@ Step 5: You'll know. The quest chose your family.
     image: '/assets/marketing/meta-ads/ad06_holographic_universe.jpg',
     primaryText: `A father spent 4 years building something most people don't believe exists until they hear it.
 
-7 Lands. 15 heroes. 19 original songs. 3 languages. 157 illustrated scenes. 4,000+ vocabulary words. A full developmental curriculum for ages 2–7.
+7 Lands. 15 heroes. 19 original songs. 3 languages. 157 illustrated scenes. 4,000+ vocabulary words in the companion dictionary. A full developmental curriculum for ages 2–7.
 
 Not backed by a tech corporation. Not funded by venture capital. Not watered down by a committee.
 
@@ -438,9 +438,9 @@ Built by one person for his children, and now shared freely with the world.
 
 And that baby was raised by an educator who actually cared about neuroscience.
 
-That's The Sound of Essentials. It has the structure of Montessori — self-directed domain learning. The warmth of classic storytelling — characters kids fall in love with. And the soul of global acoustic music — West African drums, French cadences, Latin percussion.
+That's The Sound of Essentials. It has the structure of Montessori — self-directed domain learning across 7 Lands. The warmth of classic storytelling — 15 characters kids fall in love with. And the soul of global acoustic music — West African drums, French cadences, Latin percussion.
 
-19 songs. 7 Lands. 15 heroes. Free streaming today.
+19 songs. 7 Lands. 15 heroes. Free streaming today for ages 2–7.
 
 🎵 Nothing else sounds like this → tap below.`,
     headline: 'A Musical Universe for Young Minds',
@@ -463,7 +463,7 @@ Day 365: A father completed an entire early childhood learning universe.
 Day 400: Over 1,000 families replaced morning screen chaos with acoustic rhythm.
 Today: Your child's quest begins in 30 seconds.
 
-The developing brain keeps developing — with or without the system.
+The developing brain keeps developing — with or without the system. Built for ages 2–7.
 
 🎵 The 19-track album is free. Tap below to start.`,
     headline: 'Explore 7 Magical Lands Free 🌍',
@@ -505,11 +505,11 @@ No paywall for the music. Ever.
     image: '/assets/marketing/meta-ads/ad10_aida_heroes_quest.jpg',
     primaryText: `It starts with Seriphia, the guardian learning mother standing at the gates of the 7 Lands.
 
-She introduces your child to Kenji and Aiko in Harmonia, who teach speech rhythms. Then Kwame and Octavia in Numeria, who make skip-counting feel like a dance.
+She introduces your child to Kenji and Aiko in Harmonia, who teach speech rhythms. Then Kwame and Octavia in Numeria, who make skip-counting feel like a dance. Then Felix and Amara in Vitalis, who get their whole body moving.
 
 Before you know it, your child has traveled through 7 Lands, mastered 5 developmental domains, and built unbreakable foundations in reading and math.
 
-19 songs. 100% free streaming.
+19 songs. 100% free streaming for ages 2–7.
 
 🎵 Open the gates to the 7 Lands → tap below.`,
     headline: 'Meet the Characters of Rhythm Quest',
@@ -530,7 +530,7 @@ Before you know it, your child has traveled through 7 Lands, mastered 5 developm
 
 You don't need hyper-animated neon flashing to keep your toddler engaged. You just need rhythm.
 
-The Sound of Essentials gives children rich melodies, acoustic instruments, and joyful call-and-response songs that satisfy their sensory curiosity while keeping their nervous system calm.
+The Sound of Essentials gives children rich melodies, acoustic instruments, and joyful call-and-response songs that satisfy their sensory curiosity while keeping their nervous system calm. Built for ages 2–7.
 
 Better than Baby Shark. Way better.
 
@@ -553,7 +553,7 @@ Better than Baby Shark. Way better.
 
 Rhythm activates both hemispheres of the developing brain simultaneously.
 
-The Sound of Essentials is designed around this exact neuro-affirming principle for ages 2–7. 19 tracks. 7 Lands.
+The Sound of Essentials is designed around this exact neuro-affirming principle for ages 2–7. 19 tracks across 7 Lands.
 
 Science-backed. Screen-free. Free today.
 
@@ -576,9 +576,7 @@ Science-backed. Screen-free. Free today.
 
 "I put on The Sound of Essentials during our quiet drawing block. Within 20 minutes, 18 five-year-olds were quietly clapping in unison, singing the French lyrics to Le Cheval, and completely locked into their work. I have never seen 18 kids focus like that."
 
-That's the power of intentional acoustic tempo and multi-sensory design.
-
-Built for ages 2–7 in 3 languages.
+That's the power of intentional acoustic tempo and multi-sensory design for ages 2–7 in 3 languages.
 
 🎵 Bring this focus to your home or classroom free → tap below.`,
     headline: 'See Your Child in These Heroes',
@@ -599,7 +597,7 @@ Built for ages 2–7 in 3 languages.
 
 The guilt was real. I wanted my kids to learn, but after working all day, I didn't have the energy to run a 4-part homeschooling lesson.
 
-That's why I created The Sound of Essentials. It's the "put it on and let the music do the teaching" system. 19 songs that teach real phonics, math, and motor skills while you cook dinner.
+That's why I created The Sound of Essentials. It's the "put it on and let the music do the teaching" system. 19 songs that teach real phonics, math, and motor skills while you cook dinner for ages 2–7.
 
 Zero screen guilt. 100% peace of mind.
 
@@ -618,7 +616,7 @@ Zero screen guilt. 100% peace of mind.
     delta: 'Δ5: Consumption vs. Quest',
     audience: 'Active Kids & Playful Learners',
     image: '/assets/marketing/meta-ads/ad04_contrarian_drums.jpg',
-    primaryText: `They think they're just having a dance party in the living room.
+    primaryText: `They think they're just having a dance party in the living room with Felix and Amara.
 
 Their brain is mastering syllable segmentation, bilateral coordination, and phonemic awareness.
 
@@ -645,9 +643,9 @@ That's the Trojan Horse of music-driven learning. When children move to the beat
 
 The Sound of Essentials gives you the complete 19-track developmental music library 100% free.
 
-15 hero guides. 7 Lands. Scientifically grounded in Dalcroze and Kodály methods for ages 2–7.
+15 hero guides across 7 Lands. Scientifically grounded in Dalcroze and Kodály methods for ages 2–7.
 
-No subscription trap. No forced upgrades. Just high-quality early education music.
+No subscription trap. No forced upgrades. Just high-quality early childhood acoustic education.
 
 🎵 Claim your free album access right now → tap below.`,
     headline: '19 Songs. 7 Worlds. 100% Free.',
@@ -693,7 +691,7 @@ Stream free today.
 
 A child who connects with rhythm, respects their own curiosity, and moves through the world with confidence and joy.
 
-The Sound of Essentials: Rhythm Quest is designed for families who believe early childhood should be filled with wonder, song, and meaningful connection.
+The Sound of Essentials: Rhythm Quest is designed for families who believe early childhood should be filled with wonder, song, and meaningful connection. Crafted by a Father's heart and Mother's Love.
 
 19 songs. 7 Lands. 15 heroes. Free to every family.
 
