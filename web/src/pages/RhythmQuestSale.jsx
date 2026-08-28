@@ -825,7 +825,7 @@ const RhythmReadyOffer = () => (
               <li className="rq-offer__item">
                 <span className="rq-offer__tick" aria-hidden="true">✓</span>
                 <span>
-                  <strong>240+ Daily Activity Blocks.</strong> Six 3-minute subject blocks per day.
+                  <strong>400+ Daily Activity Blocks.</strong> Ten 3-minute subject blocks per day (~30 mins/day).
                 </span>
               </li>
               <li className="rq-offer__item">
@@ -902,20 +902,20 @@ const faqs = [
     color: 'var(--color-orange)',
     q: 'What age and grade levels is the Workbook & Curriculum designed for?',
     a: [
-      'The Workbook & Curriculum is engineered for Kindergarten through 3rd Grade (ages 4 to 8).',
-      'For younger learners (Pre-K / K), parents guide the 6 short blocks together. For older learners (1st–3rd Grade), children can complete the blocks independently with parent check-ins.',
+      'The Workbook & Curriculum is engineered for Pre-K through 2nd Grade (ages 2 to 7).',
+      'For younger learners (ages 2–4), parents guide the 10 short blocks together. For emerging readers and older learners (ages 5–7), children complete the blocks with joyful independence.',
     ],
-    chips: ['Grades K–3', 'Ages 4 to 8', 'Guided or Independent'],
+    chips: ['Pre-K to Grade 2', 'Ages 2 to 7', 'Guided & Independent'],
   },
   {
     id: 'time',
     color: 'var(--color-blue)',
     q: 'How much time does it take each day?',
     a: [
-      'About 16 minutes total per day.',
-      'The day is divided into six quick 2-to-3 minute blocks (Phonics, Math, Science, Physical Movement, Geography/Civics, and Reflection). It is designed to fit smoothly into morning breakfast routines or afternoon quiet time.',
+      'About 30 minutes total per day.',
+      'The day is divided into ten quick 3-minute blocks (Phonics, Math, Science, Physical Movement, Geography/Civics, French/Bilingual, and Reflection). It is designed to fit smoothly into morning breakfast routines or afternoon quiet time with zero burnout.',
     ],
-    chips: ['~16 minutes/day', '6 short blocks', 'Zero burnout'],
+    chips: ['~30 minutes/day', '10 short blocks', 'Zero burnout'],
   },
   {
     id: 'supplies',
