@@ -8,7 +8,7 @@ export const ADS_DATA = [
     wave: 'Wave 5',
     delta: 'Δ4: Institution vs. Sanctuary',
     audience: 'Worried Parents Seeking Balance',
-    image: '/assets/marketing/meta-ads/ad01_feel_felt_found.jpg',
+    image: '/assets/marketing/meta-ads/ad_press_conference_world_map.jpg',
     primaryText: `You felt like you were the only parent worried about what school dropped from the day.
 
 Other parents felt the same. The arts are gone. Music got labeled non-essential. Movement got cut. And you are left wondering how to fill the gap at home.
@@ -54,7 +54,7 @@ The Sound of Essentials builds on Dalcroze, Orff, and Kodály methods for ages 2
     wave: 'Wave 1',
     delta: 'Δ1: Screen vs. Sensory',
     audience: 'Screen-Concerned & Homeschool Parents',
-    image: '/assets/marketing/meta-ads/ad03_before_after_bridge.jpg',
+    image: '/assets/marketing/meta-ads/ad_seriphia_golden_path_rainbow.jpg',
     primaryText: `Before: Three hours on a tablet. Glazed eyes. Another autoplay loop.
 
 After: A child journeying through 7 lands, learning language with Kenji and Aiko in Harmonia, counting with Kwame and Octavia in Numeria, dancing with Felix and Amara in Vitalis, and exploring science with Silas and Vesta in Terrasol.
@@ -125,7 +125,7 @@ Children request the Rhythm Quest tracks on repeat, sing the lyrics back, and as
     wave: 'Wave 3',
     delta: 'Δ3: Algorithm vs. Handcrafted',
     audience: 'Skeptical Conscious Parents',
-    image: '/assets/marketing/meta-ads/ad06_holographic_universe.jpg',
+    image: '/assets/marketing/meta-ads/ad_seven_lands_musical_orbit.png',
     primaryText: `I expected another generic children's album with repetitive tunes and forgettable lyrics.
 
 Then my four-year-old started skip-counting with Octavia and Kwame in Numeria.
@@ -217,7 +217,7 @@ The Sound of Essentials brings that foundation home. Nineteen tracks across 7 La
     wave: 'Wave 1',
     delta: 'Δ5: Consumption vs. Quest',
     audience: 'Broad Early Childhood Market',
-    image: '/assets/marketing/meta-ads/ad10_aida_heroes_quest.jpg',
+    image: '/assets/marketing/meta-ads/ad_seven_lands_musical_orbit.png',
     primaryText: `Nineteen songs, 15 hero guides, 7 Lands, and free streaming access.
 
 Built on Dalcroze, Orff, and Kodály music education methods, each track in The Sound of Essentials teaches foundational early skills in phonics, numbers, nature, movement, and emotional literacy for ages 2 to 7.
@@ -239,7 +239,7 @@ Tap below to stream all 19 tracks immediately, with free printable coloring shee
     wave: 'Wave 2',
     delta: 'Δ4: Institution vs. Sanctuary',
     audience: 'Purpose-Driven Families & Teachers',
-    image: '/assets/marketing/meta-ads/ad06_holographic_universe.jpg',
+    image: '/assets/marketing/meta-ads/ad_seriphia_golden_path_rainbow.jpg',
     primaryText: `When my children entered school, the daily routine lacked music, dance, and creative exploration in favor of repetitive digital drills.
 
 I spent four years developing The Sound of Essentials from the ground up.
@@ -444,7 +444,7 @@ Nineteen songs across 7 Lands, streaming free for ages 2 to 7.
     wave: 'Wave 5',
     delta: 'Δ4: Institution vs. Sanctuary',
     audience: 'Homeschool & Early Ed Pioneers',
-    image: '/assets/marketing/meta-ads/ad09_pas_classroom_to_sanctuary.jpg',
+    image: '/assets/marketing/meta-ads/ad_press_conference_world_map.jpg',
     primaryText: `Day 1: School music and art budgets face cuts.
 Day 100: Dedicated creative time disappears from classrooms.
 Day 365: A father completes an independent early learning music curriculum.
@@ -467,7 +467,7 @@ The young mind grows rapidly during these formative years. Built for ages 2 to 7
     wave: 'Wave 1',
     delta: 'Δ2: Testing vs. Arts',
     audience: 'Art & Music Education Advocates',
-    image: '/assets/marketing/meta-ads/ad04_contrarian_drums.jpg',
+    image: '/assets/marketing/meta-ads/ad_seriphia_floating_sanctuary.jpg',
     primaryText: `When school systems called arts education non-essential, we built The Sound of Essentials.
 
 Neuroscience demonstrates that rhythm, vocal melody, and physical movement form the core of early literacy and numeracy. A father created this curriculum to restore what schools removed.
@@ -557,7 +557,7 @@ Nineteen songs, screen-free and streaming free today.
     wave: 'Wave 3',
     delta: 'Δ3: Algorithm vs. Handcrafted',
     audience: 'Multicultural & Multilingual Families',
-    image: '/assets/marketing/meta-ads/ad07_morning_routine.jpg',
+    image: '/assets/marketing/meta-ads/ad_seriphia_floating_sanctuary.jpg',
     primaryText: `A Chicago kindergarten teacher described her classroom experience:
 
 "I played The Sound of Essentials during our drawing block. Within 20 minutes, 18 five-year-olds were clapping in rhythm, singing the French lyrics to Le Cheval, and focused entirely on their artwork. I had never seen the class so settled and engaged."
@@ -670,7 +670,7 @@ Nineteen original tracks, streaming free today.
     wave: 'Wave 4',
     delta: 'Δ5: Consumption vs. Quest',
     audience: 'Pioneering Conscious Families',
-    image: '/assets/marketing/meta-ads/ad05_challenge_clapping.jpg',
+    image: '/assets/marketing/soe-album-storybook-cover.webp',
     primaryText: `You are nurturing an explorer, not just preparing a test-taker.
 
 A child who moves to rhythm, trusts their curiosity, and approaches learning with confidence.
