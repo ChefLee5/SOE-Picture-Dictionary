@@ -2150,7 +2150,10 @@ const Home = () => {
             display: flex;
             gap: 1.25rem;
             overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            overscroll-behavior-x: contain;
             scroll-snap-type: x mandatory;
+            scroll-padding: 0 1rem;
             padding: 1rem 2rem;
             scrollbar-width: none;
           }
@@ -2197,6 +2200,7 @@ const Home = () => {
           .hero__checkmarks { grid-template-columns: 1fr; }
           .lands-preview-grid { grid-template-columns: repeat(2, 1fr); }
           .domains-grid { grid-template-columns: repeat(2, 1fr); }
+          .faq-question-btn { min-height: 52px; padding: 1rem; }
           .faq-answer-pane { padding-left: 1.75rem; }
         }
 
@@ -2209,6 +2213,51 @@ const Home = () => {
           .domains-grid { grid-template-columns: 1fr; }
           .lands-preview-grid { grid-template-columns: 1fr; }
           .final-cta-card { padding: 3.5rem 1.5rem; }
+        }
+
+        @media (max-width: 480px) {
+          .hero__actions {
+            flex-direction: column;
+            width: 100%;
+            gap: 0.75rem;
+          }
+          .hero__actions .btn {
+            width: 100%;
+            min-height: 50px;
+            justify-content: center;
+          }
+          .final-cta-actions {
+            flex-direction: column;
+            width: 100%;
+            gap: 0.75rem;
+          }
+          .final-cta-actions .btn {
+            width: 100%;
+            min-height: 50px;
+            justify-content: center;
+          }
+          .hero__mobile-scroll {
+            padding: 0.75rem 1rem;
+            gap: 0.85rem;
+          }
+          .hero__mobile-card {
+            flex: 0 0 120px;
+            padding: 1rem 0.35rem;
+          }
+          .hero__mobile-card-img {
+            width: 95px;
+            height: 135px;
+          }
+        }
+
+        @media (max-width: 375px) {
+          .hero__mobile-card {
+            flex: 0 0 110px;
+          }
+          .hero__mobile-card-img {
+            width: 85px;
+            height: 120px;
+          }
         }
       `}</style>
     </div>

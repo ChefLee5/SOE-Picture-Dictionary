@@ -1,0 +1,99 @@
+const FALLBACK_DB_URL = 'postgresql://neondb_owner:npg_ks2SarDnOB1E@ep-wandering-voice-ae85papv.c-2.us-east-2.aws.neon.tech/neondb?sslmode=require';
+
+async function queryNeon(databaseUrl, sql, params = []) {
+  const finalUrl = databaseUrl || FALLBACK_DB_URL;
+  const urlObj = new URL(finalUrl);
+  const host = urlObj.host;
+  const neonHttpEndpoint = `https://${host}/sql`;
+
+  const res = await fetch(neonHttpEndpoint, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Neon-Connection-String': finalUrl,
+    },
+    body: JSON.stringify({ query: sql, params }),
+  });
+
+  if (!res.ok) {
+    const err = await res.text();
+    throw new Error(`Database error: ${err}`);
+  }
+  return res.json();
+}
+
+export async function onRequestGet(context) {
+  try {
+    const { request, env } = context;
+    const databaseUrl = env?.NEON_DATABASE_URL || env?.DATABASE_URL || FALLBACK_DB_URL;
+
+    const url = new URL(request.url);
+    const contactId = url.searchParams.get('contact_id');
+    const limit = parseInt(url.searchParams.get('limit') || '50', 10);
+
+    let sql, params;
+    if (contactId) {
+      sql = `
+        SELECT a.*, c.name as contact_name, c.email as contact_email
+        FROM crm_activities a
+        JOIN crm_contacts c ON a.contact_id = c.id
+        WHERE a.contact_id = $1
+        ORDER BY a.created_at DESC
+        LIMIT $2;
+      `;
+      params = [contactId, limit];
+    } else {
+      sql = `
+        SELECT a.*, c.name as contact_name, c.email as contact_email, c.organization
+        FROM crm_activities a
+        JOIN crm_contacts c ON a.contact_id = c.id
+        ORDER BY a.created_at DESC
+        LIMIT $1;
+      `;
+      params = [limit];
+    }
+
+    const data = await queryNeon(databaseUrl, sql, params);
+    return new Response(JSON.stringify({ activities: data.rows }), {
+      status: 200,
+      headers: { 'Content-Type': 'application/json' },
+    });
+  } catch (err) {
+    return new Response(JSON.stringify({ error: err.message }), { status: 500 });
+  }
+}
+
+export async function onRequestPost(context) {
+  try {
+    const { request, env } = context;
+    const databaseUrl = env.NEON_DATABASE_URL || env.DATABASE_URL;
+    const body = await request.json();
+
+    const { contact_id, deal_id, activity_type, title, description, metadata } = body;
+    if (!contact_id || !title) {
+      return new Response(JSON.stringify({ error: 'Contact ID and Title are required' }), { status: 400 });
+    }
+
+    const sql = `
+      INSERT INTO crm_activities (contact_id, deal_id, activity_type, title, description, metadata)
+      VALUES ($1, $2, $3, $4, $5, $6)
+      RETURNING *;
+    `;
+
+    const data = await queryNeon(databaseUrl, sql, [
+      contact_id,
+      deal_id || null,
+      activity_type || 'admin_note',
+      title,
+      description || null,
+      JSON.stringify(metadata || {}),
+    ]);
+
+    return new Response(JSON.stringify({ activity: data.rows[0] }), {
+      status: 200,
+      headers: { 'Content-Type': 'application/json' },
+    });
+  } catch (err) {
+    return new Response(JSON.stringify({ error: err.message }), { status: 500 });
+  }
+}

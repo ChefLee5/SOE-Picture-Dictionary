@@ -23,13 +23,25 @@ const SplashScreen = ({ onFinished }) => {
     };
   }, [onFinished]);
 
+  const handleSkip = () => {
+    setPhase('done');
+    onFinished?.();
+  };
+
   if (phase === 'done') return null;
 
   const titleLine2   = t('splash.line2');
   const subtitleText = t('splash.subtitle');
 
   return (
-    <div className={`splash-screen splash-screen--${phase}`} aria-hidden="true">
+    <div
+      className={`splash-screen splash-screen--${phase}`}
+      onClick={handleSkip}
+      role="button"
+      tabIndex={0}
+      aria-label="Skip intro animation"
+      onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') handleSkip(); }}
+    >
 
       {/* Animated colour orbs */}
       <div className="splash-screen__orbs">
@@ -121,6 +133,11 @@ const SplashScreen = ({ onFinished }) => {
       {/* Loading bar */}
       <div className="splash-screen__loader">
         <div className="splash-screen__loader-bar" />
+      </div>
+
+      {/* Skip indicator for mobile / impatient users */}
+      <div className="splash-screen__skip-hint" aria-hidden="true">
+        <span>Tap to skip ✕</span>
       </div>
 
       <style>{`
@@ -487,15 +504,52 @@ const SplashScreen = ({ onFinished }) => {
           100% { background-position: -200% center; }
         }
 
+        /* ── Skip Hint ── */
+        .splash-screen__skip-hint {
+          position: absolute;
+          bottom: max(1.25rem, env(safe-area-inset-bottom, 0px));
+          left: 50%;
+          transform: translateX(-50%);
+          font-family: var(--font-body, system-ui);
+          font-size: 0.72rem;
+          font-weight: 500;
+          letter-spacing: 0.05em;
+          color: rgba(230, 81, 0, 0.55);
+          background: rgba(255, 255, 255, 0.75);
+          padding: 0.35rem 0.85rem;
+          border-radius: 99px;
+          border: 1px solid rgba(230, 81, 0, 0.15);
+          backdrop-filter: blur(8px);
+          -webkit-backdrop-filter: blur(8px);
+          cursor: pointer;
+          transition: all 0.2s ease;
+          animation: splash-text-up 0.6s 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+        }
+
+        .splash-screen__skip-hint:hover {
+          color: var(--color-orange);
+          background: #ffffff;
+          border-color: var(--color-orange);
+        }
+
         /* ── Mobile ── */
         @media (max-width: 600px) {
-          .splash-screen__title-line2 { font-size: 2.6rem; }
-          .splash-screen__subtitle    { font-size: 1.2rem; }
-          .splash-cube-scene          { width: 60px; height: 60px; }
-          .splash-cube__core          { width: 18px; height: 18px; }
-          .splash-cube__shadow        { width: 60px; bottom: -48px; }
+          .splash-screen__title-line2 { font-size: 2.4rem; }
+          .splash-screen__subtitle    { font-size: 1.15rem; }
+          .splash-cube-scene          { width: 55px; height: 55px; }
+          .splash-cube__core          { width: 16px; height: 16px; }
+          .splash-cube__shadow        { width: 55px; bottom: -44px; }
           .splash-screen__ring--3     { display: none; }
           .splash-orb--3              { display: none; }
+          .splash-screen__loader      { width: 170px; bottom: 44px; }
+        }
+
+        @media (max-width: 375px) {
+          .splash-screen__title-line1 { font-size: 0.75rem; letter-spacing: 0.12em; }
+          .splash-screen__title-line2 { font-size: 2rem; }
+          .splash-screen__subtitle    { font-size: 1rem; }
+          .splash-screen__tagline     { font-size: 0.72rem; }
+          .splash-screen__loader      { width: 140px; }
         }
       `}</style>
     </div>

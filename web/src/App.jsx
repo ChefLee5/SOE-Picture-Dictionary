@@ -29,6 +29,7 @@ const Player     = lazy(() => import('./pages/Player'));
 const OrderSuccess = lazy(() => import('./pages/OrderSuccess'));
 const Gallery    = lazy(() => import('./pages/Gallery'));
 const AdsShowcase = lazy(() => import('./pages/AdsShowcase'));
+const AdminCrm   = lazy(() => import('./pages/AdminCrm'));
 
 // ── V2 Redesign Routes (parallel, isolated under /v2) ───────────
 const HomeV2      = lazy(() => import('./pages-v2/HomeV2'));
@@ -40,31 +41,24 @@ const JoinQuestV2 = lazy(() => import('./pages-v2/JoinQuestV2'));
 
 const App = () => {
   useAnalytics();
+  const location = useLocation();
   const [showSplash, setShowSplash] = useState(true);
   const handleSplashFinished = useCallback(() => setShowSplash(false), []);
-  // Normalize duplicate slashes in pathname (e.g., //rhythm-ready -> /rhythm-ready)
-  const cleanPathname = location.pathname.replace(/\/+/g, '/');
-  const normalizedLocation = useMemo(() => ({
-    ...location,
-    pathname: cleanPathname
-  }), [location, cleanPathname]);
-
-  // The v2 redesign lives under /v2 with its own isolated chrome (NavbarV2,
-  // FooterV2, SplashV2 via V2Layout). Suppress the original site chrome there.
-  const isV2 = cleanPathname === '/v2' || cleanPathname.startsWith('/v2/');
+  const isV2 = location.pathname === '/v2' || location.pathname.startsWith('/v2/');
+  const isAdmin = location.pathname.startsWith('/admin') || location.pathname.startsWith('/crm');
 
   return (
     <div className="app">
-      {!isV2 && showSplash && <SplashScreen onFinished={handleSplashFinished} />}
+      {!isV2 && !isAdmin && showSplash && <SplashScreen onFinished={handleSplashFinished} />}
       {!isV2 && <CanvasBackground />}
       <ScrollToTop />
-      {!isV2 && <Navbar />}
+      {!isV2 && !isAdmin && <Navbar />}
       <main>
         <Suspense fallback={<CubeLoader compact />}>
           {isV2 ? (
             // ── V2 routes: no AnimatePresence keying, so V2Layout persists
             //    across child navigations (splash plays once). ──
-            <Routes location={normalizedLocation}>
+            <Routes>
               <Route path="/v2" element={<V2Layout />}>
                 <Route index element={<HomeV2 />} />
                 <Route path="heroes" element={<HeroesV2 />} />
@@ -76,7 +70,7 @@ const App = () => {
             </Routes>
           ) : (
             <AnimatePresence mode="wait">
-              <Routes location={normalizedLocation} key={cleanPathname}>
+              <Routes key={location.pathname}>
                 <Route path="/"           element={<AnimatedPage><Home /></AnimatedPage>} />
                 <Route path="/universe"   element={<Navigate to="/heroes" replace />} />
                 <Route path="/media"      element={<Navigate to="/listen" replace />} />
@@ -101,13 +95,19 @@ const App = () => {
                 <Route path="/campaigns"  element={<AnimatedPage><AdsShowcase /></AnimatedPage>} />
                 <Route path="/order-success" element={<AnimatedPage><OrderSuccess /></AnimatedPage>} />
                 <Route path="/download"   element={<AnimatedPage><OrderSuccess /></AnimatedPage>} />
+                <Route path="/admin/crm"  element={<AnimatedPage><AdminCrm /></AnimatedPage>} />
+                <Route path="/admin/crm/*" element={<AnimatedPage><AdminCrm /></AnimatedPage>} />
+                <Route path="/admin"      element={<Navigate to="/admin/crm" replace />} />
+                <Route path="/admin/*"    element={<Navigate to="/admin/crm" replace />} />
+                <Route path="/crm"        element={<Navigate to="/admin/crm" replace />} />
+                <Route path="/crm/*"      element={<Navigate to="/admin/crm" replace />} />
                 <Route path="*"           element={<Navigate to="/" replace />} />
               </Routes>
             </AnimatePresence>
           )}
         </Suspense>
       </main>
-      {!isV2 && <Footer />}
+      {!isV2 && !isAdmin && <Footer />}
     </div>
   );
 };

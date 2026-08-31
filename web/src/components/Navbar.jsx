@@ -128,6 +128,24 @@ const Navbar = () => {
           </Link>
         ))}
 
+        {/* Language selector inside mobile drawer */}
+        <div className="navbar__drawer-lang">
+          <span className="navbar__drawer-lang-title">🌍 Language</span>
+          <div className="navbar__drawer-lang-grid">
+            {LANGUAGES.filter(l => l.active).map(lang => (
+              <button
+                key={lang.code}
+                type="button"
+                className={`navbar__drawer-lang-chip ${lang.code === currentLang.code ? 'navbar__drawer-lang-chip--active' : ''}`}
+                onClick={() => selectLanguage(lang)}
+              >
+                <span>{lang.flag}</span>
+                <span>{lang.native}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+
         {/* CTA inside mobile drawer */}
         <Link to="/listen" className="navbar__cta-btn navbar__cta-btn--mobile">
           🎧 Listen Free
@@ -557,7 +575,11 @@ const Navbar = () => {
         .navbar__hamburger {
           display: none;
           flex-direction: column;
+          align-items: center;
+          justify-content: center;
           gap: 5px;
+          min-width: 44px;
+          min-height: 44px;
           background: none;
           border: none;
           cursor: pointer;
@@ -575,7 +597,7 @@ const Navbar = () => {
         .navbar__hamburger span {
           width: 22px;
           height: 2px;
-          background: #1a1a2e;
+          background: var(--color-text-primary);
           border-radius: 2px;
           display: block;
           transition: all 0.3s ease;
@@ -599,23 +621,29 @@ const Navbar = () => {
 
         /* ── Mobile ── */
         @media (max-width: 840px) {
+          .navbar {
+            padding: max(0.5rem, env(safe-area-inset-top, 0px)) 1rem 0.5rem 1rem;
+          }
+
           .navbar__links {
             position: fixed;
             top: 0;
             right: -100%;
-            width: 80%;
-            max-width: 310px;
+            width: 85%;
+            max-width: 320px;
             height: 100vh;
+            height: 100dvh;
             flex-direction: column;
             align-items: flex-start;
             justify-content: flex-start;
             gap: 0.25rem;
-            padding: 0 1.5rem 2rem;
+            padding: max(1.25rem, env(safe-area-inset-top, 0px)) 1.5rem max(2rem, env(safe-area-inset-bottom, 0px));
             background: #fff;
-            box-shadow: -8px 0 40px rgba(0,0,0,0.1);
+            box-shadow: -8px 0 40px rgba(0,0,0,0.15);
             transition: right 0.38s cubic-bezier(0.4, 0, 0.2, 1);
             z-index: 1000;
             overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
           }
 
           .navbar__links--open {
@@ -628,7 +656,7 @@ const Navbar = () => {
             align-items: center;
             justify-content: space-between;
             width: 100%;
-            padding: 1.5rem 0 1rem;
+            padding: 0.5rem 0 1rem;
             margin-bottom: 0.5rem;
             border-bottom: 1px solid var(--color-border);
           }
@@ -645,11 +673,15 @@ const Navbar = () => {
           .navbar__drawer-close {
             background: none;
             border: none;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             cursor: pointer;
             color: var(--color-text-secondary);
-            padding: 0.25rem 0.5rem;
-            border-radius: 6px;
+            min-width: 44px;
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
             transition: background 0.2s;
           }
 
@@ -658,10 +690,60 @@ const Navbar = () => {
           }
 
           .navbar__link {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             width: 100%;
-            padding: 0.75rem 0.5rem;
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+            padding: 0.65rem 0.75rem;
             border-radius: 10px;
+          }
+
+          /* Language selector inside mobile drawer */
+          .navbar__drawer-lang {
+            width: 100%;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--color-border);
+          }
+
+          .navbar__drawer-lang-title {
+            display: block;
+            font-family: var(--font-display);
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--color-text-muted);
+            margin-bottom: 0.6rem;
+          }
+
+          .navbar__drawer-lang-grid {
+            display: flex;
+            gap: 0.4rem;
+            flex-wrap: wrap;
+          }
+
+          .navbar__drawer-lang-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            padding: 0.45rem 0.8rem;
+            min-height: 40px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            border-radius: var(--radius-xl);
+            background: var(--color-bg-light);
+            color: var(--color-text-dark);
+            border: 1.5px solid transparent;
+            cursor: pointer;
+            transition: all 0.2s ease;
+          }
+
+          .navbar__drawer-lang-chip--active {
+            background: var(--color-orange-soft);
+            border-color: var(--color-orange);
+            color: var(--color-orange);
           }
 
           /* Mobile CTA inside drawer */
@@ -670,8 +752,9 @@ const Navbar = () => {
             align-items: center;
             justify-content: center;
             width: 100%;
-            margin-top: 1rem;
-            padding: 0.9rem;
+            margin-top: 1.25rem;
+            min-height: 48px;
+            padding: 0.85rem;
             font-size: 1rem;
           }
 

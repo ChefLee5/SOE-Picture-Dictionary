@@ -34,6 +34,8 @@ yarn-error.log*
 # Misc
 *.tgz
 .cache/
+.wrangler/
+.neon/
 
 # ─── Large Media (excluded to keep repo under GitHub limits) ───
 # These folders contain large PNGs, MP3s, and MP4s

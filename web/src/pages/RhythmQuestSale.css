@@ -1020,6 +1020,19 @@
   .rq-hero__weeks li { flex: 1 1 46%; }
 }
 
+@media (max-width: 480px) {
+  .rq-hero__actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+  .rq-hero__actions .btn {
+    width: 100%;
+    min-height: 50px;
+    justify-content: center;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .rq-hero__bg,
   .rq-hero__stage .rq-book-3d,

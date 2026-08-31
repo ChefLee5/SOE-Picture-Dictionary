@@ -50,12 +50,19 @@ export const FULFILLMENT_FILES = {
   },
 };
 
+const R2_PUBLIC_HOST = import.meta.env.VITE_R2_PUBLIC_HOST || import.meta.env.VITE_ASSET_HOST || '';
+
 /**
  * Generates the download URL for a digital product.
- * Checks Supabase Storage bucket first, with a fallback to local/CDN assets.
+ * Streams with zero egress from Cloudflare R2 first, with graceful fallbacks.
  */
 export const getDeliveryUrl = (productKey = 'rhythm-quest-storybook') => {
   const item = FULFILLMENT_FILES[productKey] || FULFILLMENT_FILES['rhythm-quest-storybook'];
+
+  if (R2_PUBLIC_HOST) {
+    return `${R2_PUBLIC_HOST.replace(/\/+$/, '')}/downloads/${item.filename}`;
+  }
+
   try {
     const { data } = supabase.storage.from(FULFILLMENT_BUCKET).getPublicUrl(item.filename);
     if (data?.publicUrl) {
@@ -64,6 +71,7 @@ export const getDeliveryUrl = (productKey = 'rhythm-quest-storybook') => {
   } catch {
     // Fallback if supabase client is offline
   }
+
   return assetPath(`/downloads/${item.filename}`);
 };
 

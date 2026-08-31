@@ -642,19 +642,8 @@
 
 /* ── Responsive ── */
 @media (max-width: 640px) {
-  .listen-tripwire-card {
-    flex-direction: column;
-    text-align: center;
-    padding: 1.75rem 1.25rem;
-    gap: 1.25rem;
-  }
-
-  .listen-referral-card {
-    padding: 2rem 1.25rem;
-  }
-
   .listen-hero {
-    padding-top: 7rem;
+    padding-top: max(6.5rem, calc(4.5rem + env(safe-area-inset-top, 0px)));
     padding-bottom: 2rem;
   }
 
@@ -663,11 +652,46 @@
   }
 
   .listen-optin__card {
-    padding: 2rem 1.5rem;
+    padding: 2rem 1.25rem;
   }
 
   .listen-optin__row {
     flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .listen-optin__input {
+    width: 100%;
+    min-height: 48px;
+    font-size: 16px !important;
+  }
+
+  .listen-optin__submit {
+    width: 100%;
+    min-height: 50px;
+    justify-content: center;
+    font-size: 1.05rem;
+  }
+
+  .listen-tripwire-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.75rem 1.25rem;
+    gap: 1.25rem;
+  }
+
+  .listen-tripwire-actions {
+    width: 100%;
+  }
+
+  .listen-tripwire-btn {
+    width: 100%;
+    min-height: 50px;
+    justify-content: center;
+  }
+
+  .listen-referral-card {
+    padding: 2rem 1.25rem;
   }
 
   .listen-proof__grid {
@@ -683,6 +707,11 @@
     grid-template-columns: 1fr;
   }
 
+  .listen-track-item {
+    min-height: 48px;
+    padding: 0.75rem 1rem;
+  }
+
   .listen-now-playing__progress {
     display: none;
   }
@@ -690,7 +719,16 @@
 
 @media (max-width: 480px) {
   .listen-optin__card {
-    margin: 0 0.5rem;
-    padding: 1.5rem 1.25rem;
+    margin: 0;
+    padding: 1.5rem 1rem;
+    border-radius: var(--radius-md);
+  }
+
+  .listen-cover__img-wrap {
+    width: 190px;
+  }
+
+  .listen-hero__title {
+    font-size: 2.1rem;
   }
 }

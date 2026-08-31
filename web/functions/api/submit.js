@@ -1,0 +1,188 @@
+/**
+ * Cloudflare Pages Function: /api/submit
+ * Handles contact and partnership submissions directly at edge,
+ * saving records into Neon Serverless PostgreSQL over HTTP (Zero TCP connection overhead, pure Edge compatible).
+ */
+
+const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+export async function onRequestPost(context) {
+  try {
+    const { request, env } = context;
+    const body = await request.json();
+
+    const {
+      kind,
+      name,
+      email,
+      organizationName,
+      message,
+      sourcePath,
+      honeypot,
+    } = body;
+
+    // Honeypot spam protection
+    if (honeypot) {
+      return new Response(JSON.stringify({ success: true }), {
+        status: 200,
+        headers: { 'Content-Type': 'application/json' },
+      });
+    }
+
+    const normalizedName = name?.trim();
+    const normalizedEmail = email?.trim().toLowerCase();
+
+    if (!['interest', 'partnership', 'newsletter'].includes(kind)) {
+      return new Response(JSON.stringify({ error: 'Unsupported submission kind.' }), {
+        status: 400,
+        headers: { 'Content-Type': 'application/json' },
+      });
+    }
+
+    if (!normalizedName || normalizedName.length > 120) {
+      return new Response(JSON.stringify({ error: 'Please enter your name.' }), {
+        status: 400,
+        headers: { 'Content-Type': 'application/json' },
+      });
+    }
+
+    if (!normalizedEmail || !EMAIL_PATTERN.test(normalizedEmail)) {
+      return new Response(JSON.stringify({ error: 'Please enter a valid email address.' }), {
+        status: 400,
+        headers: { 'Content-Type': 'application/json' },
+      });
+    }
+
+    const databaseUrl = env.NEON_DATABASE_URL || env.DATABASE_URL;
+
+    if (!databaseUrl) {
+      console.warn('NEON_DATABASE_URL not configured. Gracefully acknowledging.');
+      return new Response(JSON.stringify({ success: true, warning: 'Database URL not set' }), {
+        status: 200,
+        headers: { 'Content-Type': 'application/json' },
+      });
+    }
+
+    // Execute query via Neon Serverless HTTP API
+    const sqlQuery = `
+      INSERT INTO soe_submissions (kind, name, email, organization_name, message, source_path)
+      VALUES ($1, $2, $3, $4, $5, $6)
+      RETURNING id, created_at;
+    `;
+
+    const values = [
+      kind,
+      normalizedName,
+      normalizedEmail,
+      organizationName?.trim() || null,
+      message?.trim() || null,
+      sourcePath?.slice(0, 500) || null,
+    ];
+
+    // Neon HTTP endpoint
+    const urlObj = new URL(databaseUrl);
+    const host = urlObj.host;
+    const neonHttpEndpoint = `https://${host}/sql`;
+
+    const neonRes = await fetch(neonHttpEndpoint, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Neon-Connection-String': databaseUrl,
+      },
+      body: JSON.stringify({
+        query: sqlQuery,
+        params: values,
+      }),
+    });
+
+    if (!neonRes.ok) {
+      const errText = await neonRes.text();
+      console.error('Neon HTTP error:', errText);
+      throw new Error('Database query failed');
+    }
+
+    const neonData = await neonRes.json();
+    const submissionId = neonData?.rows?.[0]?.id;
+
+    // Background CRM Contact & Activity Upsert
+    try {
+      const persona = kind === 'partnership' ? (organizationName ? 'institution' : 'educator') : 'parent';
+      const crmUpsertSql = `
+        INSERT INTO crm_contacts (email, name, organization, persona, lifecycle_stage, source_path, lead_score, updated_at)
+        VALUES ($1, $2, $3, $4, 'lead', $5, 25, CURRENT_TIMESTAMP)
+        ON CONFLICT (email) DO UPDATE SET
+          name = COALESCE(NULLIF($2, 'Rhythm Explorer'), crm_contacts.name),
+          organization = COALESCE($3, crm_contacts.organization),
+          persona = COALESCE($4, crm_contacts.persona),
+          lead_score = crm_contacts.lead_score + 15,
+          last_active_at = CURRENT_TIMESTAMP,
+          updated_at = CURRENT_TIMESTAMP
+        RETURNING id;
+      `;
+
+      const crmRes = await fetch(neonHttpEndpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Neon-Connection-String': databaseUrl,
+        },
+        body: JSON.stringify({
+          query: crmUpsertSql,
+          params: [
+            normalizedEmail,
+            normalizedName || 'Rhythm Explorer',
+            organizationName?.trim() || null,
+            persona,
+            sourcePath?.slice(0, 500) || '/listen',
+          ],
+        }),
+      });
+
+      const crmContact = await crmRes.json();
+      const contactId = crmContact?.rows?.[0]?.id;
+
+      if (contactId) {
+        const activityTitle = kind === 'partnership' 
+          ? `Partnership Inquiry: ${organizationName || normalizedName}`
+          : `Album Unlocked & Lead Captured`;
+
+        await fetch(neonHttpEndpoint, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Neon-Connection-String': databaseUrl,
+          },
+          body: JSON.stringify({
+            query: `INSERT INTO crm_activities (contact_id, activity_type, title, description, metadata) VALUES ($1, 'form_submit', $2, $3, $4);`,
+            params: [
+              contactId,
+              activityTitle,
+              message?.trim() || `Submitted via ${sourcePath || '/listen'}`,
+              JSON.stringify({ kind, sourcePath, submissionId }),
+            ],
+          }),
+        });
+      }
+    } catch (crmErr) {
+      console.warn('CRM Sync notice (non-blocking):', crmErr);
+    }
+
+    return new Response(
+      JSON.stringify({ success: true, submissionId }),
+      {
+        status: 200,
+        headers: { 'Content-Type': 'application/json' },
+      }
+    );
+  } catch (error) {
+    console.error('Submission API Error:', error);
+    return new Response(
+      JSON.stringify({ error: 'We could not process your submission at this time.' }),
+      {
+        status: 500,
+        headers: { 'Content-Type': 'application/json' },
+      }
+    );
+  }
+}

@@ -777,11 +777,21 @@ export function MusicPlayerWidget({ tracks, crossOrigin, onTrackChange, selected
         /* ── Progress ── */
         .mpw-bar {
           width: 100%;
-          height: 6px;
+          height: 8px;
           background: rgba(0, 0, 0, 0.08);
           border-radius: 4px;
           cursor: pointer;
-          overflow: hidden;
+          position: relative;
+          touch-action: none;
+        }
+
+        .mpw-bar::before {
+          content: '';
+          position: absolute;
+          top: -12px;
+          bottom: -12px;
+          left: 0;
+          right: 0;
         }
 
         .mpw-bar-fill {
@@ -812,23 +822,24 @@ export function MusicPlayerWidget({ tracks, crossOrigin, onTrackChange, selected
           display: flex;
           align-items: center;
           justify-content: center;
-          width: 38px; height: 38px;
+          width: 44px; height: 44px;
           border: none;
           border-radius: 50%;
           background: rgba(0, 0, 0, 0.04);
           color: var(--mpw-muted);
           cursor: pointer;
           transition: color 0.2s, background 0.2s, transform 0.15s;
+          touch-action: manipulation;
         }
 
         .mpw-ctrl:hover {
           color: var(--mpw-fg);
           background: rgba(255, 111, 0, 0.12);
-          transform: scale(1.1);
+          transform: scale(1.08);
         }
 
         .mpw-ctrl-play {
-          width: 46px; height: 46px;
+          width: 50px; height: 50px;
           background: linear-gradient(135deg, #FF6F00, #FF9800);
           color: #fff;
           box-shadow: 0 4px 15px rgba(255, 111, 0, 0.35);
@@ -837,7 +848,7 @@ export function MusicPlayerWidget({ tracks, crossOrigin, onTrackChange, selected
         .mpw-ctrl-play:hover {
           background: linear-gradient(135deg, #FF6F00, #FFA726);
           filter: brightness(1.08);
-          transform: scale(1.12);
+          transform: scale(1.1);
         }
 
         .mpw-ctrl-toggle.is-active { color: var(--mpw-accent); }
@@ -871,6 +882,7 @@ export function MusicPlayerWidget({ tracks, crossOrigin, onTrackChange, selected
         .mpw-lyrics {
           max-height: 180px;
           overflow-y: auto;
+          -webkit-overflow-scrolling: touch;
           padding: 0.75rem 1rem;
           background: rgba(255, 248, 240, 0.95);
           border: 1px solid rgba(255, 111, 0, 0.18);
@@ -914,13 +926,16 @@ export function MusicPlayerWidget({ tracks, crossOrigin, onTrackChange, selected
           .mpw-card {
             flex-direction: column;
             align-items: center;
-            padding: 1.25rem;
-            max-width: 340px;
+            padding: 1.25rem 1rem;
+            max-width: 100%;
+            width: 100%;
           }
 
-          .mpw-mask { width: 180px; height: 180px; }
-          .mpw-scales { height: 60px; }
+          .mpw-mask { width: 170px; height: 170px; }
+          .mpw-scales { height: 54px; }
           .mpw-track { font-size: 1.15rem; }
+          .mpw-lyrics { max-height: 140px; }
+          .mpw-controls { gap: 0.35rem; width: 100%; justify-content: space-evenly; }
         }
       `}</style>
     </>

@@ -607,32 +607,54 @@ const Characters = () => {
                         min-height: 200px;
                     }
                     .char-filters {
-                        gap: 0.4rem;
+                        display: flex;
+                        flex-wrap: nowrap;
+                        overflow-x: auto;
+                        -webkit-overflow-scrolling: touch;
+                        overscroll-behavior-x: contain;
+                        scrollbar-width: none;
+                        padding: 0.5rem 1rem;
+                        margin: 0 -1rem;
+                        gap: 0.45rem;
+                        justify-content: flex-start;
+                    }
+                    .char-filters::-webkit-scrollbar {
+                        display: none;
                     }
                     .char-filter-btn {
-                        padding: 0.4rem 0.9rem;
-                        font-size: 0.78rem;
+                        white-space: nowrap;
+                        flex-shrink: 0;
+                        padding: 0.45rem 1rem;
+                        min-height: 40px;
+                        font-size: 0.82rem;
                     }
                 }
 
                 @media (max-width: 480px) {
                     .char-grid {
                         grid-template-columns: 1fr;
-                        gap: 1rem;
+                        gap: 1.25rem;
                     }
                     .char-card__image--selfie {
-                        height: 300px;
+                        height: 280px;
                         object-position: center 35%;
                     }
                     .char-card__name {
-                        font-size: 1.2rem;
+                        font-size: 1.25rem;
                     }
                     .char-card__info {
-                        padding: 1rem;
+                        padding: 1.15rem;
                     }
                     .char-hero__actions {
                         flex-direction: column;
-                        align-items: center;
+                        align-items: stretch;
+                        width: 100%;
+                        gap: 0.75rem;
+                    }
+                    .char-hero__actions .btn {
+                        width: 100%;
+                        min-height: 48px;
+                        justify-content: center;
                     }
                 }
             `}</style>

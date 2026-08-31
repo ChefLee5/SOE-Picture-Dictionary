@@ -79,6 +79,9 @@ const Footer = () => {
           <div className="footer__bottom-links">
             <Link to="/mission" className="footer__bottom-link">{t('navbar.mission')}</Link>
             <Link to="/join" className="footer__bottom-link">{t('hero.join_button')}</Link>
+            <Link to="/admin/crm" className="footer__bottom-link" style={{ opacity: 0.8, display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}>
+              🔐 Admin CRM
+            </Link>
           </div>
         </div>
       </div>
@@ -131,29 +134,32 @@ const Footer = () => {
 
         .footer__grid {
           display: grid;
-          grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+          grid-template-columns: 2fr 1fr 1fr 1.2fr;
           gap: 3rem;
-          margin-bottom: 3rem;
+          margin-bottom: 3.5rem;
         }
 
         .footer__brand {
-          max-width: 300px;
+          max-width: 320px;
         }
 
         .footer__logo {
           display: flex;
           align-items: center;
-          gap: 0.6rem;
+          gap: 0.75rem;
+          margin-bottom: 1rem;
+        }
+
+        .footer__logo span {
           font-family: var(--font-heading);
           font-weight: 700;
-          font-size: 1.05rem;
+          font-size: 1.15rem;
           color: #ffffff;
-          margin-bottom: 0.8rem;
         }
 
         .footer__logo-img {
-          width: 38px;
-          height: 38px;
+          width: 36px;
+          height: 36px;
           object-fit: contain;
           flex-shrink: 0;
           filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.3));
@@ -178,8 +184,8 @@ const Footer = () => {
           display: flex;
           align-items: center;
           justify-content: center;
-          width: 36px;
-          height: 36px;
+          width: 44px;
+          height: 44px;
           border-radius: var(--radius-full);
           background: rgba(255,255,255,0.12);
           border: 1.5px solid rgba(255,255,255,0.25);

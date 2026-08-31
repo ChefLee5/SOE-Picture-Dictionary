@@ -913,3 +913,39 @@
     height: 270px;
   }
 }
+
+@media (max-width: 480px) {
+  .dict-hero__actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .dict-hero__actions .btn {
+    width: 100%;
+    min-height: 50px;
+    justify-content: center;
+  }
+
+  .dict-preview__scroll {
+    padding: 1rem 1rem 2rem;
+    gap: 1rem;
+    overscroll-behavior-x: contain;
+  }
+
+  .dict-preview__card {
+    flex: 0 0 190px;
+  }
+
+  .dict-preview__card img {
+    height: 250px;
+  }
+
+  .dict-pricing__grid {
+    max-width: 100%;
+  }
+
+  .dict-price-card {
+    padding: 2rem 1.25rem;
+  }
+}

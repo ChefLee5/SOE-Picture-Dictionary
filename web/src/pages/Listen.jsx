@@ -10,6 +10,7 @@ import JsonLd from '../components/JsonLd';
 import { mediaRoomSchema } from '../utils/schema';
 import BeehiivSubscribeForm from '../components/BeehiivSubscribeForm';
 import {
+  AudioPlayer,
   GalleryGrid,
   galleryShots,
 } from './MediaRoom';
@@ -18,6 +19,8 @@ import ProofInThePause from '../components/ui/ProofInThePause';
 import StickyThumbCta from '../components/ui/StickyThumbCta';
 import GiftALandModal from '../components/GiftALandModal';
 import { trackLead } from '../utils/analytics';
+import { submitSoeInterest } from '../services/soeSubmissions';
+import { getDeliveryUrl } from '../utils/deliveryUrl';
 import './MediaRoom.css';
 import './Listen.css';
 
@@ -50,6 +53,38 @@ const Listen = () => {
   const [giftLand, setGiftLand] = useState('Harmonia');
 
   const [copied, setCopied] = useState(false);
+
+  // Direct email capture state
+  const [directEmail, setDirectEmail] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [optinError, setOptinError] = useState('');
+
+  const handleDirectOptin = async (e) => {
+    e.preventDefault();
+    setOptinError('');
+    if (!directEmail || !directEmail.includes('@')) {
+      setOptinError('Please enter a valid email address.');
+      return;
+    }
+
+    setIsSubmitting(true);
+    try {
+      await submitSoeInterest({
+        kind: 'interest',
+        email: directEmail,
+        name: 'Rhythm Explorer',
+        sourcePath: window.location.pathname,
+      });
+      trackLead({ formName: 'listen_direct_optin', email: directEmail, source: 'listen_page' });
+      unlock();
+    } catch (err) {
+      console.warn('Direct optin notice:', err);
+      trackLead({ formName: 'listen_direct_optin', email: directEmail, source: 'listen_page' });
+      unlock();
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   const handleCopyShareLink = () => {
     setIsGiftModalOpen(true);
@@ -264,14 +299,47 @@ const Listen = () => {
               <span className="listen-optin__icon">🎧</span>
               <h2 className="listen-optin__heading">Unlock the Full Quest</h2>
               <p className="listen-optin__subtext">
-                Enter your email to unlock all 19 tracks, music videos,
-                coloring pages, and start a free 5-day learning journey.
+                Enter your email to unlock all 19 tracks, waveform audio player,
+                printable coloring book, and start a free 5-day sensory learning journey.
               </p>
+
+              <form onSubmit={handleDirectOptin} className="listen-direct-form" style={{ maxWidth: '460px', margin: '1.5rem auto 1rem auto', display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+                <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                  <input
+                    type="email"
+                    required
+                    placeholder="Enter your best email..."
+                    value={directEmail}
+                    onChange={(e) => setDirectEmail(e.target.value)}
+                    style={{
+                      flex: 1,
+                      minWidth: '220px',
+                      padding: '0.85rem 1.25rem',
+                      borderRadius: '50px',
+                      border: '2px solid rgba(255, 111, 0, 0.35)',
+                      background: '#ffffff',
+                      fontSize: '1rem',
+                      outline: 'none',
+                    }}
+                  />
+                  <button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="btn btn-gold btn-shimmer"
+                    style={{ padding: '0.85rem 1.8rem', borderRadius: '50px', whiteSpace: 'nowrap' }}
+                  >
+                    {isSubmitting ? 'Unlocking...' : '🎧 Unlock 19 Tracks →'}
+                  </button>
+                </div>
+                {optinError && <p style={{ color: '#E11D48', fontSize: '0.9rem', margin: '0.25rem 0' }}>{optinError}</p>}
+              </form>
 
               <ProofInThePause variant="quote" />
 
-              <BeehiivSubscribeForm className="listen-optin__form" />
-              <p className="listen-optin__disclaimer">
+              <div style={{ marginTop: '1.5rem', borderTop: '1px solid rgba(0,0,0,0.06)', paddingTop: '1rem' }}>
+                <BeehiivSubscribeForm className="listen-optin__form" />
+              </div>
+              <p className="listen-optin__disclaimer" style={{ marginTop: '0.75rem' }}>
                 No spam, ever. Unsubscribe anytime. We respect your family's inbox.
               </p>
             </div>
@@ -289,6 +357,35 @@ const Listen = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
+            {/* ── Unlocked Success Banner & Audio Player ── */}
+            <section className="section glow-gold" style={{ paddingTop: '2.5rem', paddingBottom: '3.5rem' }}>
+              <div className="container">
+                <div className="text-center" style={{ marginBottom: '2.5rem' }}>
+                  <span className="section-label">🎉 Full Experience Unlocked</span>
+                  <h2 className="section-title">
+                    The Deluxe <span className="text-gold">19-Track Player</span>
+                  </h2>
+                  <p className="section-subtitle" style={{ margin: '0 auto 1.5rem auto', maxWidth: '600px' }}>
+                    Enjoy screen-free, music-powered early learning. Stream high-fidelity audio or download your free companion files.
+                  </p>
+
+                  <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', marginTop: '1.5rem' }}>
+                    <a
+                      href={getDeliveryUrl('coloring-book')}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-gold btn-shimmer"
+                      style={{ fontSize: '0.98rem', padding: '0.85rem 1.8rem' }}
+                    >
+                      🎨 Download Free Coloring Book (PDF) ↓
+                    </a>
+                  </div>
+                </div>
+
+                <AudioPlayer tracks={tracks} />
+              </div>
+            </section>
+
             {/* ── Tripwire Companion Upsell Bridge ── */}
             <section className="listen-tripwire-bridge">
               <div className="container">

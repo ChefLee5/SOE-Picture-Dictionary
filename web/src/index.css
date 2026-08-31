@@ -81,6 +81,12 @@
   --font-cursive: 'Dancing Script', cursive;
   --font-sugar: 'More Sugar', 'Fredoka', cursive;
 
+  /* ── Safe Area Insets ── */
+  --safe-area-top: env(safe-area-inset-top, 0px);
+  --safe-area-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-area-left: env(safe-area-inset-left, 0px);
+  --safe-area-right: env(safe-area-inset-right, 0px);
+
   /* ── Spacing & Radius ── */
   --radius-sm: 12px;
   --radius-md: 20px;
@@ -95,7 +101,7 @@
   --transition-fast: 0.18s var(--ease-gentle);
 }
 
-/* ── Reset ── */
+/* ── Reset & Mobile Base ── */
 *,
 *::before,
 *::after {
@@ -107,6 +113,8 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -115,10 +123,18 @@ body {
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
   line-height: 1.7;
   min-height: 100vh;
   overflow-x: hidden;
   background-attachment: fixed;
+}
+
+/* Prevent unwanted iOS auto-zoom on input focus */
+@media (max-width: 768px) {
+  input, select, textarea {
+    font-size: 16px !important;
+  }
 }
 
 .app {

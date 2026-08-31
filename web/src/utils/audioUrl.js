@@ -1,14 +1,21 @@
-import { supabase } from '../lib/supabase';
+/**
+ * Album audio streams with $0.00 egress from Cloudflare R2 bucket (`soemedia`).
+ * Fallback to Supabase Storage if custom host is not configured.
+ */
+const R2_PUBLIC_HOST = import.meta.env.VITE_R2_PUBLIC_HOST || import.meta.env.VITE_ASSET_HOST || '';
 
-// Album audio lives in Supabase Storage. `web/public/audio/` exists but is empty, so any
-// assetPath('/audio/...') call site plays nothing — that is what killed the player on
-// /listen after the Player.jsx migration moved only one of the four call sites.
-//
-// Kept as a module-level constant to match Player.jsx: the bucket name being in exactly
-// one place per module is what made the 2026-08-07 outage flip-back a one-line change.
 export const AUDIO_BUCKET = 'audio';
 
-// getPublicUrl only builds a string — no network call — so callers stay synchronous and
-// tracklists have no empty first paint.
-export const audioUrl = (file) =>
-  supabase.storage.from(AUDIO_BUCKET).getPublicUrl(file).data.publicUrl;
+export const audioUrl = (file) => {
+  if (!file) return '';
+  if (/^(https?:)?\/\//.test(file)) return file;
+
+  const normalized = file.startsWith('/') ? file : `/${file}`;
+  
+  if (R2_PUBLIC_HOST) {
+    return `${R2_PUBLIC_HOST.replace(/\/+$/, '')}/audio${normalized}`;
+  }
+
+  // Supabase fallback
+  return supabase.storage.from(AUDIO_BUCKET).getPublicUrl(file).data.publicUrl;
+};
