@@ -8,6 +8,7 @@
         "media": "Sala de Medios",
         "mission": "Nuestra Misión",
         "join": "Únete a la Búsqueda",
+        "contact": "Contáctanos",
         "toggle_menu": "Alternar menú de navegación",
         "toggle_lang": "Cambiar idioma"
     },
@@ -21,6 +22,8 @@
         "explore": "Explorar",
         "get_involved": "Involúcrate",
         "stay_connected": "Mantente Conectado",
+        "contact_us": "Contáctanos",
+        "contact_email": "info@soelearn.com",
         "subscribe": "Suscribirse",
         "all_rights_reserved": "Todos los derechos reservados.",
         "sci_sound": "Ciencia del Sonido",

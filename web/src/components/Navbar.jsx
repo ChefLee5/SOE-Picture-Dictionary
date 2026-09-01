@@ -70,9 +70,10 @@ const Navbar = () => {
     { to: '/heroes',     label: t('navbar.heroes') },
     { to: '/science',    label: t('navbar.science') },
     { to: '/mission',    label: t('navbar.mission') },
-    { to: '/listen',    label: t('navbar.media') },
+    { to: '/listen',     label: t('navbar.media') },
     { to: '/gallery',    label: '📖 Gallery' },
     { to: '/allies',     label: '🤝 Ally Annex' },
+    { to: '/join',       label: '✉️ ' + t('navbar.contact', 'Contact') },
   ];
 
   const isActive = (to) =>
@@ -144,6 +145,14 @@ const Navbar = () => {
               </button>
             ))}
           </div>
+        </div>
+
+        {/* Contact info inside mobile drawer */}
+        <div className="navbar__drawer-contact">
+          <span className="navbar__drawer-contact-title">✉️ Direct Inquiries</span>
+          <a href="mailto:info@soelearn.com" className="navbar__drawer-contact-email">
+            info@soelearn.com
+          </a>
         </div>
 
         {/* CTA inside mobile drawer */}
@@ -744,6 +753,41 @@ const Navbar = () => {
             background: var(--color-orange-soft);
             border-color: var(--color-orange);
             color: var(--color-orange);
+          }
+
+          /* Contact block inside drawer */
+          .navbar__drawer-contact {
+            width: 100%;
+            margin-top: 1rem;
+            padding: 0.9rem 1rem;
+            background: var(--color-orange-soft, rgba(255,111,0,0.08));
+            border-radius: 12px;
+            border: 1px solid rgba(255,111,0,0.2);
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+          }
+
+          .navbar__drawer-contact-title {
+            font-family: var(--font-display);
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--color-orange, #FF6F00);
+          }
+
+          .navbar__drawer-contact-email {
+            font-family: var(--font-display);
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--color-text-dark, #2B2016);
+            text-decoration: none;
+            transition: color 0.2s ease;
+          }
+
+          .navbar__drawer-contact-email:hover {
+            color: var(--color-green, #4CAF50);
           }
 
           /* Mobile CTA inside drawer */

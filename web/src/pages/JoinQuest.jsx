@@ -14,6 +14,7 @@ const JoinQuest = () => {
     const [contact, setContact] = useState({ name: '', org: '', email: '', message: '', submitted: false });
     const [contactLoading, setContactLoading] = useState(false);
     const [contactError, setContactError] = useState('');
+    const [copied, setCopied] = useState(false);
 
     const handleContact = async (e) => {
         e.preventDefault();
@@ -145,8 +146,8 @@ const JoinQuest = () => {
                 </div>
             </section>
 
-            {/* ── Partnership Form ── */}
-            <section className="section glow-plum">
+            {/* ── Direct Contact & Partnership Form ── */}
+            <section className="section glow-plum" id="contact">
                 <div className="container">
                     <RevealSection className="text-center">
                         <div className="section-label">{t('join.partnerships_label')}</div>
@@ -158,8 +159,64 @@ const JoinQuest = () => {
                         </p>
                     </RevealSection>
 
+                    {/* Direct Contact Action Card */}
                     <RevealSection>
+                        <div className="direct-contact-card glass-card">
+                            <div className="direct-contact-header">
+                                <span className="direct-contact-icon" aria-hidden="true">✉️</span>
+                                <div>
+                                    <h3 className="direct-contact-title">{t('join.direct_contact_title')}</h3>
+                                    <p className="direct-contact-desc">
+                                        {t('join.direct_contact_desc')}
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="direct-contact-actions">
+                                <a
+                                    href="mailto:info@soelearn.com"
+                                    className="btn btn-gold direct-email-btn"
+                                    title="Open email to info@soelearn.com"
+                                >
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                        <polyline points="22,6 12,13 2,6" />
+                                    </svg>
+                                    <span>info@soelearn.com</span>
+                                </a>
+
+                                <button
+                                    type="button"
+                                    className="btn btn-outline direct-copy-btn"
+                                    onClick={() => {
+                                        navigator.clipboard.writeText('info@soelearn.com');
+                                        setCopied(true);
+                                        setTimeout(() => setCopied(false), 2500);
+                                    }}
+                                    aria-label="Copy email address to clipboard"
+                                >
+                                    {copied ? t('join.direct_email_copied') : t('join.direct_email_copy')}
+                                </button>
+                            </div>
+
+                            <div className="direct-contact-meta">
+                                <span>{t('join.direct_response_time')}</span>
+                            </div>
+                        </div>
+                    </RevealSection>
+
+                    <RevealSection delay={0.15}>
                         <div className="contact-form-card glass-card">
+                            <div className="contact-form-header text-center" style={{ marginBottom: '1.75rem' }}>
+                                <h3 style={{ fontSize: '1.25rem', marginBottom: '0.4rem' }}>Or Send an Instant Inquiry</h3>
+                                <p style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>
+                                    Fill out the form below or email us directly at{' '}
+                                    <a href="mailto:info@soelearn.com" style={{ color: 'var(--color-orange)', fontWeight: 600 }}>
+                                        info@soelearn.com
+                                    </a>
+                                </p>
+                            </div>
+
                             {contact.submitted ? (
                                 <div className="contact-success text-center">
                                     <span style={{ fontSize: '3rem' }}>🤝</span>
@@ -389,6 +446,85 @@ const JoinQuest = () => {
         .audience-card p {
           position: relative;
           z-index: 1;
+        }
+
+        /* ── Direct Contact Card ── */
+        .direct-contact-card {
+          max-width: 650px;
+          margin: 0 auto 2rem auto;
+          padding: 2.25rem 2.5rem;
+          background: rgba(255, 255, 255, 0.95);
+          border: 2px solid rgba(255, 111, 0, 0.25);
+          border-radius: var(--radius-lg, 16px);
+          box-shadow: 0 12px 36px rgba(255, 111, 0, 0.1);
+        }
+
+        .direct-contact-header {
+          display: flex;
+          align-items: flex-start;
+          gap: 1.25rem;
+          margin-bottom: 1.5rem;
+        }
+
+        .direct-contact-icon {
+          font-size: 2.5rem;
+          line-height: 1;
+          flex-shrink: 0;
+          background: var(--color-orange-soft, rgba(255, 111, 0, 0.12));
+          padding: 0.75rem;
+          border-radius: 14px;
+        }
+
+        .direct-contact-title {
+          font-family: var(--font-heading);
+          font-size: 1.35rem;
+          font-weight: 700;
+          color: var(--color-text-dark, #2B2016);
+          margin-bottom: 0.35rem;
+        }
+
+        .direct-contact-desc {
+          font-size: 0.92rem;
+          color: var(--color-text-secondary, #555);
+          line-height: 1.55;
+          margin: 0;
+        }
+
+        .direct-contact-actions {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          flex-wrap: wrap;
+          margin-bottom: 1rem;
+        }
+
+        .direct-email-btn {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.6rem;
+          padding: 0.75rem 1.6rem;
+          font-family: var(--font-heading);
+          font-weight: 700;
+          font-size: 1rem;
+          border-radius: var(--radius-xl, 99px);
+          text-decoration: none;
+        }
+
+        .direct-copy-btn {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.4rem;
+          padding: 0.75rem 1.25rem;
+          font-size: 0.9rem;
+          font-weight: 600;
+          border-radius: var(--radius-xl, 99px);
+          cursor: pointer;
+        }
+
+        .direct-contact-meta {
+          font-size: 0.8rem;
+          color: var(--color-text-muted, #777);
+          font-style: italic;
         }
 
         /* ── Contact Form ── */

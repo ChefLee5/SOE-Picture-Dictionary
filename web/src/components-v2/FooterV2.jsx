@@ -33,7 +33,7 @@ const FooterV2 = () => {
             <div className="v2-footer__col-title">Resources</div>
             <Link to="/v2/mission" className="v2-footer__link">Mission</Link>
             <Link to="/v2/join" className="v2-footer__link">Join</Link>
-            <a href="mailto:hello@thesoundofessentials.com" className="v2-footer__link">Contact</a>
+            <a href="mailto:info@soelearn.com" className="v2-footer__link">Contact: info@soelearn.com</a>
           </div>
 
           {/* Right: CTA */}

@@ -832,6 +832,27 @@ const Home = () => {
               );
             })}
           </div>
+
+          {/* FAQ Direct Contact Card */}
+          <RevealSection delay={0.4} className="text-center">
+            <div className="faq-contact-card glass-card" style={{ maxWidth: '680px', margin: '2.5rem auto 0', padding: '2rem', textAlign: 'center' }}>
+              <span style={{ fontSize: '2rem', display: 'block', marginBottom: '0.5rem' }}>💬</span>
+              <h3 style={{ fontSize: '1.25rem', fontFamily: 'var(--font-heading)', color: 'var(--color-text-dark, #2B2016)', marginBottom: '0.4rem' }}>
+                Still Have Questions?
+              </h3>
+              <p style={{ fontSize: '0.92rem', color: 'var(--color-text-secondary, #555)', maxWidth: '480px', margin: '0 auto 1.25rem', lineHeight: 1.6 }}>
+                We're always happy to help parents, educators, and schools. Reach out directly anytime.
+              </p>
+              <div style={{ display: 'flex', justifyContent: 'center', gap: '0.8rem', flexWrap: 'wrap' }}>
+                <a href="mailto:info@soelearn.com" className="btn btn-gold" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}>
+                  ✉️ Email Us: info@soelearn.com
+                </a>
+                <Link to="/join" className="btn btn-outline">
+                  Contact &amp; Partnerships →
+                </Link>
+              </div>
+            </div>
+          </RevealSection>
         </div>
       </section>
 
@@ -863,6 +884,13 @@ const Home = () => {
 
                 <div className="final-cta-badge">
                   <span>🔒 {t('home.final_cta.badge')}</span>
+                </div>
+
+                <div style={{ marginTop: '1.25rem', fontSize: '0.85rem', color: 'rgba(255,255,255,0.85)' }}>
+                  Questions or custom school inquiries? Email us directly at{' '}
+                  <a href="mailto:info@soelearn.com" style={{ color: '#ffffff', textDecoration: 'underline', fontWeight: 700 }}>
+                    info@soelearn.com
+                  </a>
                 </div>
               </div>
             </div>

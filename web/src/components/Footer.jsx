@@ -39,6 +39,17 @@ const Footer = () => {
                 </svg>
               </a>
             </div>
+
+            {/* Direct Email Badge */}
+            <div className="footer__email-badge">
+              <a href="mailto:info@soelearn.com" className="footer__email-pill" title="Email us directly">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                <span>info@soelearn.com</span>
+              </a>
+            </div>
           </div>
 
           {/* Quick Links */}
@@ -50,6 +61,7 @@ const Footer = () => {
             <Link to="/science" className="footer__link">{t('footer.sci_sound')}</Link>
             <Link to="/mission" className="footer__link">{t('navbar.mission')}</Link>
             <Link to="/allies" className="footer__link">🤝 Ally Annex</Link>
+            <Link to="/join" className="footer__link">✉️ {t('navbar.contact', 'Contact Us')}</Link>
           </div>
 
           {/* Shop & Quest Products */}
@@ -65,20 +77,32 @@ const Footer = () => {
           <div className="footer__col">
             <h4 className="footer__heading">{t('footer.stay_connected')}</h4>
             <p className="footer__newsletter-text">{t('footer.weekly_activities')}</p>
-            <Link
-              to="/join"
-              className="footer__subscribe-btn"
-            >
-              {t('footer.subscribe')}
-            </Link>
+            <div className="footer__btn-group">
+              <Link
+                to="/join"
+                className="footer__subscribe-btn"
+              >
+                {t('footer.subscribe')}
+              </Link>
+              <a
+                href="mailto:info@soelearn.com"
+                className="footer__contact-us-btn"
+                title="Send an email to info@soelearn.com"
+              >
+                ✉️ Email Us
+              </a>
+            </div>
           </div>
         </div>
 
         <div className="footer__bottom">
           <p>© {new Date().getFullYear()} The Sound of Essentials: <span className="logo-accent-cursive">Rhythm Quest</span>. {t('footer.all_rights_reserved')}</p>
           <div className="footer__bottom-links">
+            <a href="mailto:info@soelearn.com" className="footer__bottom-link footer__bottom-email">
+              ✉️ info@soelearn.com
+            </a>
+            <Link to="/join" className="footer__bottom-link">{t('navbar.contact', 'Contact Us')}</Link>
             <Link to="/mission" className="footer__bottom-link">{t('navbar.mission')}</Link>
-            <Link to="/join" className="footer__bottom-link">{t('hero.join_button')}</Link>
             <Link to="/admin/crm" className="footer__bottom-link" style={{ opacity: 0.8, display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}>
               🔐 Admin CRM
             </Link>
@@ -199,6 +223,35 @@ const Footer = () => {
           box-shadow: 0 4px 12px rgba(0,0,0,0.2);
         }
 
+        .footer__email-badge {
+          margin-top: 1.1rem;
+        }
+
+        .footer__email-pill {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.45rem;
+          background: rgba(255, 255, 255, 0.16);
+          border: 1.5px solid rgba(255, 255, 255, 0.35);
+          color: #ffffff;
+          padding: 0.45rem 0.9rem;
+          border-radius: var(--radius-xl, 99px);
+          font-family: var(--font-display, inherit);
+          font-weight: 700;
+          font-size: 0.82rem;
+          text-decoration: none;
+          transition: all var(--transition-med, 0.25s ease);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer__email-pill:hover {
+          background: #ffffff;
+          color: #FF6F00;
+          border-color: #ffffff;
+          transform: translateY(-2px);
+          box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        }
+
         .footer__col {
           display: flex;
           flex-direction: column;
@@ -235,11 +288,17 @@ const Footer = () => {
           margin-bottom: 0.25rem;
         }
 
+        .footer__btn-group {
+          display: flex;
+          flex-direction: column;
+          gap: 0.6rem;
+          margin-top: 0.4rem;
+        }
+
         .footer__subscribe-btn {
           display: inline-flex;
           align-items: center;
           justify-content: center;
-          margin-top: 0.25rem;
           padding: 0.6rem 1.4rem;
           background: linear-gradient(135deg, var(--color-green), var(--color-blue));
           color: #fff;
@@ -256,6 +315,36 @@ const Footer = () => {
         .footer__subscribe-btn:hover {
           transform: translateY(-2px);
           box-shadow: 0 8px 20px rgba(76,175,80,0.25);
+        }
+
+        .footer__contact-us-btn {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0.55rem 1.2rem;
+          background: rgba(255, 255, 255, 0.15);
+          border: 1.5px solid rgba(255, 255, 255, 0.35);
+          color: #ffffff;
+          font-family: var(--font-heading);
+          font-weight: 600;
+          font-size: 0.82rem;
+          border-radius: var(--radius-xl);
+          text-decoration: none;
+          transition: all var(--transition-med);
+          width: fit-content;
+        }
+
+        .footer__contact-us-btn:hover {
+          background: #ffffff;
+          color: var(--color-orange, #FF6F00);
+          border-color: #ffffff;
+          transform: translateY(-2px);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .footer__bottom-email {
+          font-weight: 600;
+          color: rgba(255, 255, 255, 0.85) !important;
         }
 
         .footer__bottom {

@@ -23,10 +23,17 @@ export function homeSchema() {
       '@type': 'EducationalOrganization',
       name: SITE_NAME,
       url: SITE_URL,
+      email: 'info@soelearn.com',
       logo: ORG_LOGO,
       description: 'A music-powered educational experience designed for the developing brain. 19 original tracks, 15 hero characters, and 7 thematic lands guide children Pre-K through Grade 3 through language, math, movement, science, and more.',
       foundingDate: '2024',
       sameAs: [],
+      contactPoint: {
+        '@type': 'ContactPoint',
+        email: 'info@soelearn.com',
+        contactType: 'Customer Support',
+        availableLanguage: ['English', 'Spanish', 'French'],
+      },
       areaServed: {
         '@type': 'Place',
         name: 'Worldwide',
