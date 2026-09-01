@@ -1,3 +1,6 @@
+import { supabase } from '../lib/supabase';
+import { assetPath } from './assetPath';
+
 /**
  * Album audio streams with $0.00 egress from Cloudflare R2 bucket (`soemedia`).
  * Fallback to Supabase Storage if custom host is not configured.
@@ -17,5 +20,16 @@ export const audioUrl = (file) => {
   }
 
   // Supabase fallback
-  return supabase.storage.from(AUDIO_BUCKET).getPublicUrl(file).data.publicUrl;
+  try {
+    const rawFile = file.replace(/^\/+/, '');
+    const { data } = supabase.storage.from(AUDIO_BUCKET).getPublicUrl(rawFile);
+    if (data?.publicUrl) {
+      return data.publicUrl;
+    }
+  } catch (err) {
+    console.warn('Audio URL fallback notice:', err);
+  }
+
+  // Local static fallback
+  return assetPath(`/audio${normalized}`);
 };
