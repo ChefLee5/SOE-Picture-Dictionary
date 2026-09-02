@@ -50,19 +50,19 @@ export const FULFILLMENT_FILES = {
   },
 };
 
-const R2_PUBLIC_HOST = import.meta.env.VITE_R2_PUBLIC_HOST || import.meta.env.VITE_ASSET_HOST || '';
-
 /**
  * Generates the download URL for a digital product.
- * Streams with zero egress from Cloudflare R2 first, with graceful fallbacks.
+ * Serves direct static files from `/downloads/...` with zero-egress Supabase fallback.
  */
 export const getDeliveryUrl = (productKey = 'rhythm-quest-storybook') => {
   const item = FULFILLMENT_FILES[productKey] || FULFILLMENT_FILES['rhythm-quest-storybook'];
 
-  if (R2_PUBLIC_HOST) {
-    return `${R2_PUBLIC_HOST.replace(/\/+$/, '')}/downloads/${item.filename}`;
+  // 1. Local static downloads (instant, always reliable)
+  if (item?.filename) {
+    return assetPath(`/downloads/${item.filename}`);
   }
 
+  // 2. Supabase Storage fallback
   try {
     const { data } = supabase.storage.from(FULFILLMENT_BUCKET).getPublicUrl(item.filename);
     if (data?.publicUrl) {
@@ -81,10 +81,13 @@ export const getDeliveryUrl = (productKey = 'rhythm-quest-storybook') => {
 export const triggerBrowserDownload = (url, filename) => {
   const link = document.createElement('a');
   link.href = url;
-  link.setAttribute('download', filename);
+  if (filename) {
+    link.setAttribute('download', filename);
+  }
   link.setAttribute('target', '_blank');
   link.setAttribute('rel', 'noopener noreferrer');
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
 };
+

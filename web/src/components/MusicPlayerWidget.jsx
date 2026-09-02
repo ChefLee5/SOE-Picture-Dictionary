@@ -26,108 +26,6 @@ function useRafLoop(cb) {
   }, []);
 }
 
-/* -------------------------------------------------- useTransitionSound */
-function useTransitionSound() {
-  const ctxRef = useRef(null);
-  useEffect(() => {
-    return () => {
-      ctxRef.current?.close().catch(() => {});
-      ctxRef.current = null;
-    };
-  }, []);
-  return useCallback((bassEnergy = 0.5) => {
-    try {
-      if (!ctxRef.current) {
-        const Ctor = window.AudioContext || window.webkitAudioContext;
-        if (!Ctor) return;
-        ctxRef.current = new Ctor();
-      }
-      const ctx = ctxRef.current;
-      if (ctx.state === 'suspended') ctx.resume();
-      const now = ctx.currentTime;
-      const osc = ctx.createOscillator();
-      const gain = ctx.createGain();
-      const startFreq = 440 + bassEnergy * 440;
-      const endFreq = startFreq * (2 / 3);
-      osc.type = 'triangle';
-      osc.frequency.setValueAtTime(startFreq, now);
-      osc.frequency.exponentialRampToValueAtTime(endFreq, now + 0.09);
-      gain.gain.setValueAtTime(0.0001, now);
-      gain.gain.exponentialRampToValueAtTime(0.06, now + 0.012);
-      gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.16);
-      osc.connect(gain).connect(ctx.destination);
-      osc.start(now);
-      osc.stop(now + 0.18);
-    } catch { /* Web Audio unavailable */ }
-  }, []);
-}
-
-/* --------------------------------------------------- useAudioAnalyser */
-const FFT_SIZE = 256;
-
-function useAudioAnalyser(audioRef) {
-  const ctxRef = useRef(null);
-  const analyserRef = useRef(null);
-  const dataRef = useRef(new Uint8Array(FFT_SIZE / 2));
-  const connectedRef = useRef(false);
-
-  const connect = useCallback(() => {
-    const audio = audioRef.current;
-    if (!audio || connectedRef.current) return;
-    try {
-      const Ctor = window.AudioContext || window.webkitAudioContext;
-      if (!Ctor) return;
-      const ctx = new Ctor();
-      const analyser = ctx.createAnalyser();
-      analyser.fftSize = FFT_SIZE;
-      analyser.smoothingTimeConstant = 0.8;
-      const source = ctx.createMediaElementSource(audio);
-      source.connect(analyser);
-      analyser.connect(ctx.destination);
-      ctxRef.current = ctx;
-      analyserRef.current = analyser;
-      dataRef.current = new Uint8Array(analyser.frequencyBinCount);
-      connectedRef.current = true;
-      if (ctx.state === 'suspended') ctx.resume().catch(() => {});
-    } catch { /* unavailable or already connected */ }
-  }, [audioRef]);
-
-  useEffect(() => {
-    const audio = audioRef.current;
-    if (!audio) return;
-    audio.addEventListener('play', connect, { once: true });
-    return () => audio.removeEventListener('play', connect);
-  }, [audioRef, connect]);
-
-  useEffect(() => {
-    return () => {
-      ctxRef.current?.close().catch(() => {});
-      ctxRef.current = null;
-    };
-  }, []);
-
-  const getFrequencyData = useCallback(() => {
-    const analyser = analyserRef.current;
-    if (!analyser) return null;
-    if (ctxRef.current?.state === 'suspended')
-      ctxRef.current.resume().catch(() => {});
-    analyser.getByteFrequencyData(dataRef.current);
-    return dataRef.current;
-  }, []);
-
-  const getBandEnergy = useCallback((startBin, endBin) => {
-    if (!analyserRef.current) return 0;
-    const data = dataRef.current;
-    const count = endBin - startBin;
-    if (count <= 0) return 0;
-    let sum = 0;
-    for (let i = startBin; i < endBin && i < data.length; i++) sum += data[i];
-    return sum / count / 255;
-  }, []);
-
-  return { getFrequencyData, getBandEnergy };
-}
-
 /* ------------------------------------------------------ useAudioPlayer */
 function shuffleOrder(pinFirst, count) {
   const rest = Array.from({ length: count }, (_, i) => i).filter(x => x !== pinFirst);
@@ -172,25 +70,29 @@ function useAudioPlayer(tracks) {
     direction: null,
   });
 
-  const { getFrequencyData, getBandEnergy } = useAudioAnalyser(audioRef);
-  const playTransitionSound = useTransitionSound();
-
   const loadTrack = useCallback((index, autoplay, direction) => {
     const audio = audioRef.current;
     if (!audio) return;
-    const bassEnergy = getBandEnergy(0, 4);
-    playTransitionSound(bassEnergy);
     dispatch({ type: 'SET_TRACK', index, direction });
     audio.src = tracks[index].src;
     audio.load();
-    if (autoplay) audio.play().catch(() => {});
-  }, [tracks, playTransitionSound, getBandEnergy]);
+    if (autoplay) {
+      audio.play().catch((err) => {
+        console.warn('Playback note:', err);
+      });
+    }
+  }, [tracks]);
 
   const toggle = useCallback(() => {
     const audio = audioRef.current;
     if (!audio) return;
-    if (audio.paused) audio.play().catch(() => {});
-    else audio.pause();
+    if (audio.paused) {
+      audio.play().catch((err) => {
+        console.warn('Playback note:', err);
+      });
+    } else {
+      audio.pause();
+    }
   }, []);
 
   const next = useCallback((forceAutoplay) => {
@@ -269,7 +171,7 @@ function useAudioPlayer(tracks) {
   return {
     audioRef, state, currentTime, duration,
     currentTrack: tracks[state.currentIndex],
-    toggle, next, prev, seek, toggleShuffle, cycleLoop, getFrequencyData, loadTrack,
+    toggle, next, prev, seek, toggleShuffle, cycleLoop, loadTrack,
   };
 }
 
@@ -294,10 +196,6 @@ function useKeyboardShortcuts(actions) {
 /* --------------------------------------------------------- ScalesMixer */
 const COLS = 10;
 const ROWS = 10;
-const BAND_RANGES = [
-  [0, 1], [1, 3], [3, 6], [6, 10], [10, 16],
-  [16, 24], [24, 36], [36, 52], [52, 74], [74, 100],
-];
 const sineOut = (x) => Math.sin((x * Math.PI) / 2);
 const sineIn = (x) => 1 - Math.cos((x * Math.PI) / 2);
 const sineInOut = (x) => -(Math.cos(Math.PI * x) - 1) / 2;
@@ -329,7 +227,7 @@ function partBCircle(time, col, row) {
   return [lerp(yFrom, yTo, e), lerp(SCALE_FROM, SCALE_TO, e)];
 }
 
-function ScalesMixer({ isPlaying, getFrequencyData }) {
+function ScalesMixer({ isPlaying }) {
   const maskId = useId().replace(/:/g, '_');
   const colRefs = useRef([]);
   const circleRefs = useRef(Array.from({ length: COLS }, () => []));
@@ -338,24 +236,14 @@ function ScalesMixer({ isPlaying, getFrequencyData }) {
   useRafLoop((_, dt) => {
     if (isPlaying) tRef.current += dt / 1000;
     const time = tRef.current;
-    const freqData = getFrequencyData?.();
     for (let c = 0; c < COLS; c++) {
-      let energy = 1.0;
-      if (freqData) {
-        const [binStart, binEnd] = BAND_RANGES[c];
-        let sum = 0;
-        for (let b = binStart; b < binEnd; b++) sum += freqData[b] ?? 0;
-        energy = Math.sqrt(sum / (binEnd - binStart) / 255);
-      }
-      const bobGain = freqData ? 0.4 + energy : 1;
-      const scaleGain = freqData ? 0.5 + energy : 1;
       const colEl = colRefs.current[c];
-      if (colEl) colEl.style.transform = `translate(${c * 10}px, ${partAColumnY(time, c) * bobGain}px)`;
+      if (colEl) colEl.style.transform = `translate(${c * 10}px, ${partAColumnY(time, c)}px)`;
       for (let r = 0; r < ROWS; r++) {
         const circle = circleRefs.current[c][r];
         if (!circle) continue;
         const [ty, s] = partBCircle(time, c, r);
-        circle.style.transform = `translateY(${ty}px) scale(${s * scaleGain})`;
+        circle.style.transform = `translateY(${ty}px) scale(${s})`;
       }
     }
   });
@@ -602,7 +490,7 @@ export function MusicPlayerWidget({ tracks, crossOrigin, onTrackChange, selected
           onZoomToggle={() => setIsZoomed(z => !z)}
         />
         <div className="mpw-info">
-          <ScalesMixer isPlaying={player.state.isPlaying} getFrequencyData={player.getFrequencyData} />
+          <ScalesMixer isPlaying={player.state.isPlaying} />
           <TrackInfo layers={layers} />
           <ProgressBar currentTime={player.currentTime} duration={player.duration} onSeek={player.seek} />
           <Controls

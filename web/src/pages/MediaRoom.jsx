@@ -189,23 +189,9 @@ export const AudioPlayer = ({ tracks }) => {
   const [showLyrics, setShowLyrics] = useState(false);
   const [analyser, setAnalyser] = useState(null);
   const audioRef = useRef(null);
-  const audioContextRef = useRef(null);
 
   const initAudio = () => {
-    if (audioContextRef.current) return;
-    try {
-      const AudioContext = window.AudioContext || window.webkitAudioContext;
-      const context = new AudioContext();
-      const analyserNode = context.createAnalyser();
-      analyserNode.fftSize = 64;
-      const source = context.createMediaElementSource(audioRef.current);
-      source.connect(analyserNode);
-      analyserNode.connect(context.destination);
-      audioContextRef.current = context;
-      setAnalyser(analyserNode);
-    } catch (err) {
-      console.error("AudioPlayer: Failed to init audio graph", err);
-    }
+    // Native audio playback without Web Audio interception
   };
 
   const track = tracks[currentTrack];

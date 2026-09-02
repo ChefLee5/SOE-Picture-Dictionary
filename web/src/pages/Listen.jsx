@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Link, useSearchParams } from 'react-router-dom';
+import { Link, useSearchParams, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { assetPath } from '../utils/assetPath';
@@ -10,7 +10,6 @@ import JsonLd from '../components/JsonLd';
 import { mediaRoomSchema } from '../utils/schema';
 import BeehiivSubscribeForm from '../components/BeehiivSubscribeForm';
 import {
-  AudioPlayer,
   GalleryGrid,
   galleryShots,
 } from './MediaRoom';
@@ -28,6 +27,7 @@ const STORAGE_KEY = 'soe_listen_unlocked';
 
 const Listen = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   // ── Gate State (persisted) ──────────────────────────────────
   const [isUnlocked, setIsUnlocked] = useState(() => {
@@ -77,10 +77,12 @@ const Listen = () => {
       });
       trackLead({ formName: 'listen_direct_optin', email: directEmail, source: 'listen_page' });
       unlock();
+      navigate('/player?unlocked=true');
     } catch (err) {
       console.warn('Direct optin notice:', err);
       trackLead({ formName: 'listen_direct_optin', email: directEmail, source: 'listen_page' });
       unlock();
+      navigate('/player?unlocked=true');
     } finally {
       setIsSubmitting(false);
     }
@@ -171,7 +173,26 @@ const Listen = () => {
             Designed for the developing brain — not the algorithm.
           </p>
 
-          {!isUnlocked && (
+          {isUnlocked ? (
+            <div style={{ margin: '1.5rem auto 1rem auto', display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', alignItems: 'center' }}>
+              <MagneticPill intensity={0.25}>
+                <Link to="/player" className="btn btn-gold btn-shimmer" style={{ fontSize: '1.05rem', padding: '0.9rem 2.5rem' }}>
+                  🎧 Launch 19-Track Player →
+                </Link>
+              </MagneticPill>
+              <a
+                href={getDeliveryUrl('coloring-book')}
+                download="SOE_Rhythm_Quest_Coloring_Book.pdf"
+                className="btn btn-outline"
+                style={{ fontSize: '1rem', padding: '0.85rem 1.8rem', background: 'rgba(255, 255, 255, 0.8)' }}
+              >
+                🎨 Download Free Coloring Book (PDF) ↓
+              </a>
+              <Link to="/rhythm-ready" className="btn btn-outline" style={{ fontSize: '1rem', padding: '0.85rem 1.8rem', background: 'rgba(255, 255, 255, 0.8)' }}>
+                📚 Rhythm Ready Workbook ($21) →
+              </Link>
+            </div>
+          ) : (
             <>
               <div style={{ margin: '1.5rem auto 1rem auto', display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', alignItems: 'center' }}>
                 <MagneticPill intensity={0.25}>
@@ -279,12 +300,20 @@ const Listen = () => {
             ))}
           </div>
 
-          {!isUnlocked && (
+          {!isUnlocked ? (
             <div className="listen-preview__cta text-center" style={{ marginTop: '2.5rem' }}>
               <MagneticPill intensity={0.25}>
                 <a href="#optin" className="btn btn-gold btn-shimmer" style={{ fontSize: '1rem', padding: '0.85rem 2.5rem' }}>
                   🎧 Unlock All 19 Tracks Free →
                 </a>
+              </MagneticPill>
+            </div>
+          ) : (
+            <div className="listen-preview__cta text-center" style={{ marginTop: '2.5rem' }}>
+              <MagneticPill intensity={0.25}>
+                <Link to="/player" className="btn btn-gold btn-shimmer" style={{ fontSize: '1rem', padding: '0.85rem 2.5rem' }}>
+                  🎧 Launch 19-Track Player →
+                </Link>
               </MagneticPill>
             </div>
           )}
@@ -357,35 +386,6 @@ const Listen = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
-            {/* ── Unlocked Success Banner & Audio Player ── */}
-            <section className="section glow-gold" style={{ paddingTop: '2.5rem', paddingBottom: '3.5rem' }}>
-              <div className="container">
-                <div className="text-center" style={{ marginBottom: '2.5rem' }}>
-                  <span className="section-label">🎉 Full Experience Unlocked</span>
-                  <h2 className="section-title">
-                    The Deluxe <span className="text-gold">19-Track Player</span>
-                  </h2>
-                  <p className="section-subtitle" style={{ margin: '0 auto 1.5rem auto', maxWidth: '600px' }}>
-                    Enjoy screen-free, music-powered early learning. Stream high-fidelity audio or download your free companion files.
-                  </p>
-
-                  <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', marginTop: '1.5rem' }}>
-                    <a
-                      href={getDeliveryUrl('coloring-book')}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn btn-gold btn-shimmer"
-                      style={{ fontSize: '0.98rem', padding: '0.85rem 1.8rem' }}
-                    >
-                      🎨 Download Free Coloring Book (PDF) ↓
-                    </a>
-                  </div>
-                </div>
-
-                <AudioPlayer tracks={tracks} />
-              </div>
-            </section>
-
             {/* ── Tripwire Companion Upsell Bridge ── */}
             <section className="listen-tripwire-bridge">
               <div className="container">
