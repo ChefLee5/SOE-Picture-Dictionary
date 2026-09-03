@@ -354,6 +354,104 @@ const Home = () => {
       </header>
 
       {/* ═══════════════════════════════════════════════════════
+          SECTION 3: THE STATE OF EMERGENCY IN EARLY EDUCATION
+      ═══════════════════════════════════════════════════════ */}
+      <section className="section emergency-section glow-orange" id="crisis">
+        <div className="container">
+          <RevealSection className="text-center">
+            <div className="section-label section-label--emergency">
+              ⚠️ The State of Emergency in Early Education
+            </div>
+            <h2 className="section-title">
+              We Are Turning a <span className="text-orange">State of Emergency</span>
+              <br />
+              Back Into Joyful Mastery
+            </h2>
+            <p className="section-subtitle" style={{ maxWidth: '720px', margin: '0.75rem auto 2.75rem' }}>
+              Across the nation and the globe, early literacy is in crisis. While addictive screen algorithms capture
+              developing attention spans, classrooms face historic shortages during the developing brain's most critical auditory wiring window.
+            </p>
+          </RevealSection>
+
+          {/* Stats Grid */}
+          <div className="emergency-stats-grid">
+            <RevealSection delay={0.1}>
+              <div className="emergency-stat-card glass-card">
+                <div className="emergency-stat-icon" aria-hidden="true">📉</div>
+                <div className="emergency-stat-val text-orange">69%</div>
+                <div className="emergency-stat-title">Below Proficient Reading</div>
+                <p className="emergency-stat-desc">
+                  Nearly 7 in 10 U.S. 4th graders cannot read proficiently on national assessments. Reading struggles begin years earlier when auditory foundation is skipped.
+                </p>
+                <span className="emergency-stat-source">Source: NAEP Nation's Report Card (2024)</span>
+              </div>
+            </RevealSection>
+
+            <RevealSection delay={0.18}>
+              <div className="emergency-stat-card glass-card">
+                <div className="emergency-stat-icon" aria-hidden="true">🌍</div>
+                <div className="emergency-stat-val text-purple">300M</div>
+                <div className="emergency-stat-title">Global Learning Poverty</div>
+                <p className="emergency-stat-desc">
+                  300 million children worldwide cannot read or comprehend a basic sentence. Each one is a brilliant mind at risk of being permanently left behind.
+                </p>
+                <span className="emergency-stat-source">Source: UNESCO &amp; World Bank (2024)</span>
+              </div>
+            </RevealSection>
+
+            <RevealSection delay={0.26}>
+              <div className="emergency-stat-card glass-card">
+                <div className="emergency-stat-icon" aria-hidden="true">🏫</div>
+                <div className="emergency-stat-val text-blue">44M</div>
+                <div className="emergency-stat-title">Teacher Shortage Deficit</div>
+                <p className="emergency-stat-desc">
+                  Classrooms face an unprecedented 44 million teacher deficit, shifting an unsustainable educational burden directly onto parents and caregivers.
+                </p>
+                <span className="emergency-stat-source">Source: UNESCO Global Teacher Report</span>
+              </div>
+            </RevealSection>
+
+            <RevealSection delay={0.34}>
+              <div className="emergency-stat-card glass-card emergency-stat-card--highlight">
+                <div className="emergency-stat-icon" aria-hidden="true">⚡️</div>
+                <div className="emergency-stat-val text-green">1M/sec</div>
+                <div className="emergency-stat-title">The Biological Imperative</div>
+                <p className="emergency-stat-desc">
+                  In the first 1,000 days, the young brain forms over 1 million neural connections every second. Miss this auditory window, and remediation becomes exponentially harder.
+                </p>
+                <span className="emergency-stat-source">Source: Harvard Center on the Developing Child</span>
+              </div>
+            </RevealSection>
+          </div>
+
+          {/* Contrast / Intervention Callout */}
+          <RevealSection delay={0.4}>
+            <div className="emergency-callout glass-card">
+              <div className="emergency-callout__content">
+                <div className="emergency-callout__badge">The SOE Intervention</div>
+                <h3 className="emergency-callout__headline">
+                  Not More Screen Distraction. Active Rhythm Wiring.
+                </h3>
+                <p className="emergency-callout__text">
+                  Children don’t build literacy through passive dopamine loops. They wire durable neural pathways through{' '}
+                  <strong>sound-before-symbol pedagogy, active rhythm, singing, whole-body movement, and joyful storytelling</strong>.
+                  The Sound of Essentials provides homes and classrooms with an open-and-go sanctuary routine.
+                </p>
+              </div>
+              <div className="emergency-callout__actions">
+                <Link to="/science" className="btn btn-outline">
+                  See the Neuroscience &amp; Research →
+                </Link>
+                <Link to="/workbook" className="btn btn-gold btn-shimmer">
+                  Explore the 8-Week Solution ($21) →
+                </Link>
+              </div>
+            </div>
+          </RevealSection>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════
           SECTION 4: THE SEVEN LAND QUEST ($19 LEAD PRODUCT)
       ═══════════════════════════════════════════════════════ */}
       <section className="section quest-feature-section glow-gold">
@@ -1780,6 +1878,152 @@ const Home = () => {
           line-height: 1.6;
         }
 
+        /* ── Emergency in Education Section ── */
+        .emergency-section {
+          padding: 5.5rem 0 5rem;
+          background: radial-gradient(ellipse at 50% 15%, rgba(255, 111, 0, 0.07), transparent 75%);
+          border-bottom: 1px solid var(--color-border);
+          position: relative;
+        }
+
+        .section-label--emergency {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.4rem;
+          padding: 0.35rem 0.95rem;
+          background: rgba(220, 38, 38, 0.08);
+          color: #dc2626;
+          border: 1px solid rgba(220, 38, 38, 0.22);
+          border-radius: 50px;
+          font-size: 0.82rem;
+          font-weight: 700;
+          letter-spacing: 0.04em;
+          margin-bottom: 1rem;
+        }
+
+        .emergency-stats-grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 1.5rem;
+          margin-bottom: 2.75rem;
+        }
+
+        .emergency-stat-card {
+          padding: 2.25rem 1.6rem;
+          border-radius: var(--radius-2xl);
+          text-align: left;
+          display: flex;
+          flex-direction: column;
+          background: linear-gradient(145deg, rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.82));
+          border: 1.5px solid rgba(255, 255, 255, 0.9);
+          box-shadow: 0 10px 30px -6px rgba(0, 0, 0, 0.05);
+          transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .emergency-stat-card:hover {
+          transform: translateY(-4px);
+          box-shadow: 0 18px 40px -8px rgba(255, 111, 0, 0.12);
+        }
+
+        .emergency-stat-card--highlight {
+          border-color: rgba(34, 197, 94, 0.35);
+          background: linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(240, 253, 244, 0.75));
+        }
+
+        .emergency-stat-icon {
+          font-size: 1.85rem;
+          margin-bottom: 0.85rem;
+        }
+
+        .emergency-stat-val {
+          font-family: var(--font-heading);
+          font-size: 2.85rem;
+          font-weight: 800;
+          line-height: 1;
+          margin-bottom: 0.55rem;
+          letter-spacing: -0.02em;
+        }
+
+        .emergency-stat-title {
+          font-family: var(--font-heading);
+          font-size: 1.08rem;
+          font-weight: 700;
+          color: var(--color-text-primary);
+          margin-bottom: 0.55rem;
+        }
+
+        .emergency-stat-desc {
+          font-size: 0.88rem;
+          color: var(--color-text-secondary);
+          line-height: 1.55;
+          flex-grow: 1;
+          margin-bottom: 1.15rem;
+        }
+
+        .emergency-stat-source {
+          font-size: 0.72rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          color: var(--color-text-secondary);
+          opacity: 0.75;
+          border-top: 1px solid rgba(0, 0, 0, 0.06);
+          padding-top: 0.75rem;
+        }
+
+        .emergency-callout {
+          padding: 2.5rem 2.75rem;
+          border-radius: var(--radius-2xl);
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 2.5rem;
+          background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 248, 240, 0.92));
+          border: 1.5px solid rgba(255, 111, 0, 0.22);
+          box-shadow: 0 16px 40px -8px rgba(255, 111, 0, 0.08);
+        }
+
+        .emergency-callout__content {
+          max-width: 680px;
+          text-align: left;
+        }
+
+        .emergency-callout__badge {
+          display: inline-block;
+          padding: 0.25rem 0.8rem;
+          border-radius: 50px;
+          font-size: 0.75rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.06em;
+          background: rgba(255, 111, 0, 0.12);
+          color: #c45000;
+          margin-bottom: 0.85rem;
+        }
+
+        .emergency-callout__headline {
+          font-family: var(--font-heading);
+          font-size: 1.45rem;
+          font-weight: 700;
+          color: var(--color-text-primary);
+          margin-bottom: 0.65rem;
+          line-height: 1.3;
+        }
+
+        .emergency-callout__text {
+          font-size: 0.96rem;
+          color: var(--color-text-secondary);
+          line-height: 1.65;
+          margin: 0;
+        }
+
+        .emergency-callout__actions {
+          display: flex;
+          gap: 1rem;
+          flex-shrink: 0;
+          align-items: center;
+        }
+
         .science-macro-stats {
           margin-top: 2.5rem;
           padding: 2.25rem;
@@ -2165,6 +2409,10 @@ const Home = () => {
             margin-top: 0.5rem;
           }
           .hero__checkmarks { grid-template-columns: 1fr; }
+          .emergency-stats-grid { grid-template-columns: repeat(2, 1fr); }
+          .emergency-callout { flex-direction: column; align-items: flex-start; padding: 2rem 1.75rem; }
+          .emergency-callout__actions { width: 100%; }
+          .emergency-callout__actions .btn { width: 100%; min-height: 48px; justify-content: center; }
           .lands-preview-grid { grid-template-columns: repeat(2, 1fr); }
           .domains-grid { grid-template-columns: repeat(2, 1fr); }
           .faq-question-btn { min-height: 52px; padding: 1rem; }
@@ -2172,6 +2420,8 @@ const Home = () => {
         }
 
         @media (max-width: 640px) {
+          .emergency-stats-grid { grid-template-columns: 1fr; }
+          .emergency-stat-card { padding: 1.75rem 1.25rem; }
           .hero__content { text-align: center; }
           .hero__subtitle { margin: 0 auto 1.5rem; text-align: center; }
           .hero__price-line { justify-content: center; }
