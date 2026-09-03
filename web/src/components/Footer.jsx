@@ -69,7 +69,7 @@ const Footer = () => {
             <h4 className="footer__heading">Shop &amp; Quest</h4>
             <Link to="/listen" className="footer__link">🎧 Free 19-Track Album</Link>
             <Link to="/workbook" className="footer__link">📚 Workbook &amp; Curriculum ($21)</Link>
-            <Link to="/dictionary" className="footer__link">📖 Picture Dictionary ($55)</Link>
+            <Link to="/workbook#dictionary-presale" className="footer__link">📖 Picture Dictionary ($55 Pre-Sale)</Link>
             <Link to="/join" className="footer__link">{t('hero.join_button')}</Link>
           </div>
 

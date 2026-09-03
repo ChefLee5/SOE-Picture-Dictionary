@@ -3181,3 +3181,89 @@
 
   .rq-faq__list .rq-faq-row { opacity: 1; transform: none; }
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   DICTIONARY PRE-SALE STYLES
+   ═══════════════════════════════════════════════════════════════ */
+.rq-dict-section {
+  padding: 5rem 0;
+  border-top: 1px solid var(--color-border);
+  background: radial-gradient(ellipse at 50% 10%, rgba(255, 111, 0, 0.05), transparent 70%);
+}
+
+.rq-offer--dict {
+  border-color: rgba(255, 111, 0, 0.35);
+  box-shadow: 0 20px 60px rgba(255, 111, 0, 0.08), 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.rq-dict-tag-row {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.rq-dict-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.8rem;
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, var(--color-orange, #FF6F00), #e65100);
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(255, 111, 0, 0.3);
+}
+
+.rq-dict-subbadge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.65rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-text-dark-secondary);
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 50px;
+}
+
+.rq-offer__price--dict {
+  background: linear-gradient(
+    160deg,
+    rgba(255, 111, 0, 0.12) 0%,
+    rgba(255, 183, 77, 0.08) 50%,
+    rgba(255, 248, 240, 0.85) 100%
+  );
+}
+
+.rq-dict-price-badge {
+  display: inline-block;
+  padding: 0.25rem 0.8rem;
+  margin-bottom: 0.75rem;
+  font-family: var(--font-heading);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #c45000;
+  background: rgba(255, 111, 0, 0.14);
+  border: 1px solid rgba(255, 111, 0, 0.25);
+  border-radius: 50px;
+}
+
+.rq-dict-price-wrap {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.rq-dict-retail {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text-dark-secondary);
+  text-decoration: line-through;
+  opacity: 0.65;
+}
+

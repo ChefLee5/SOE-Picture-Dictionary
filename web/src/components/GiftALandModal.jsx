@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { trackReferralShare } from '../utils/analytics';
 import { assetPath } from '../utils/assetPath';
+import EmailDownloadGateModal from './EmailDownloadGateModal';
 import './GiftALandModal.css';
 
 /**
@@ -11,6 +12,8 @@ import './GiftALandModal.css';
 export const GiftALandModal = ({ isOpen, onClose, triggerLand = 'Harmonia' }) => {
   const [copied, setCopied] = useState(false);
   const [bonusUnlocked, setBonusUnlocked] = useState(false);
+  const [isGateOpen, setIsGateOpen] = useState(false);
+
 
   if (!isOpen) return null;
 
@@ -118,17 +121,30 @@ export const GiftALandModal = ({ isOpen, onClose, triggerLand = 'Harmonia' }) =>
                 <span className="gift-modal-bonus-icon">🎁</span>
                 <div>
                   <strong>Secret Bonus Unlocked!</strong>
-                  <p>Thank you for sharing! Click below to download the Gabriel bonus coloring activity:</p>
-                  <a
-                    href={assetPath('/assets/marketing/gabriel-coloring-sheet.webp')}
-                    download="Gabriel-Secret-Bonus-Coloring-Sheet.png"
+                  <button
+                    type="button"
+                    onClick={() => {
+                      const storedEmail = typeof window !== 'undefined' ? localStorage.getItem('soe_user_email') : null;
+                      if (storedEmail && storedEmail.includes('@')) {
+                        const link = document.createElement('a');
+                        link.href = assetPath('/assets/marketing/gabriel-coloring-sheet.webp');
+                        link.download = 'Gabriel-Secret-Bonus-Coloring-Sheet.png';
+                        document.body.appendChild(link);
+                        link.click();
+                        document.body.removeChild(link);
+                      } else {
+                        setIsGateOpen(true);
+                      }
+                    }}
                     className="gift-modal-download-link"
+                    style={{ border: 'none', cursor: 'pointer', display: 'inline-block' }}
                   >
                     ⬇️ Download Bonus Coloring Sheet
-                  </a>
+                  </button>
                 </div>
               </div>
             </motion.div>
+
           ) : (
             <p className="gift-modal-footer-note">
               🔒 <em>Bonus unlocks automatically when you share with your friends.</em>
@@ -136,8 +152,20 @@ export const GiftALandModal = ({ isOpen, onClose, triggerLand = 'Harmonia' }) =>
           )}
         </motion.div>
       </div>
+
+      <EmailDownloadGateModal
+        isOpen={isGateOpen}
+        onClose={() => setIsGateOpen(false)}
+        downloadItem={{
+          title: 'Gabriel Secret Bonus Activity Sheet',
+          filename: 'Gabriel-Secret-Bonus-Coloring-Sheet.png',
+          url: assetPath('/assets/marketing/gabriel-coloring-sheet.webp'),
+          kind: 'interest',
+        }}
+      />
     </AnimatePresence>
   );
 };
 
 export default GiftALandModal;
+

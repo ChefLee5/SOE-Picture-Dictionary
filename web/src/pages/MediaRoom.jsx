@@ -12,7 +12,10 @@ import { triggerNoteBurst } from '../components/ui/DesignSpells';
 import JsonLd from '../components/JsonLd';
 import { mediaRoomSchema } from '../utils/schema';
 import { trackAudioPlay } from '../utils/analytics';
+import EmailDownloadGateModal from '../components/EmailDownloadGateModal';
+import { triggerBrowserDownload } from '../utils/deliveryUrl';
 import './MediaRoom.css';
+
 
 /* ── Book Pages (Coloring) ── */
 export const bookPages = [
@@ -427,6 +430,25 @@ const MediaRoom = () => {
   useEffect(() => { document.title = 'Media Room — SOE Rhythm Quest'; }, []);
   const [bookIndex, setBookIndex] = useState(0);
   const [soeBookIndex, setSoeBookIndex] = useState(0);
+  const [isGateOpen, setIsGateOpen] = useState(false);
+  const [gateItem, setGateItem] = useState(null);
+
+  const handleDownloadColoringPage = (index) => {
+    const item = {
+      title: `SOE Coloring Page #${index + 1}`,
+      filename: `SOE-Coloring-Page-${index + 1}.png`,
+      url: bookPages[index],
+      kind: 'interest',
+    };
+    const storedEmail = typeof window !== 'undefined' ? localStorage.getItem('soe_user_email') : null;
+    if (storedEmail && storedEmail.includes('@')) {
+      triggerBrowserDownload(item.url, item.filename);
+    } else {
+      setGateItem(item);
+      setIsGateOpen(true);
+    }
+  };
+
 
   /* ── Track Data (from canonical data layer) ── */
   const tracks = tracksData.map(track => ({
@@ -593,14 +615,16 @@ const MediaRoom = () => {
                 >
                   🖨️ Print This Page
                 </button>
-                <a
+                <button
+                  type="button"
                   className="btn btn-outline"
-                  href={bookPages[bookIndex]}
-                  download={`SOE-Coloring-Page-${bookIndex + 1}.png`}
+                  onClick={() => handleDownloadColoringPage(bookIndex)}
                   aria-label="Download this page"
+                  style={{ cursor: 'pointer' }}
                 >
                   ⬇️ Download
-                </a>
+                </button>
+
                 <Link to="/join" className="btn btn-gold">{t('media.pre_order_coloring')}</Link>
               </div>
             </div>
@@ -794,8 +818,22 @@ const MediaRoom = () => {
           </RevealSection>
         </div>
       </section>
+
+      {/* ── Universal Email Download Gate Modal ── */}
+
+      <EmailDownloadGateModal
+        isOpen={isGateOpen}
+        onClose={() => setIsGateOpen(false)}
+        downloadItem={gateItem || {
+          title: 'SOE Coloring Page',
+          filename: 'SOE-Coloring-Page.png',
+          url: bookPages[bookIndex],
+          kind: 'interest',
+        }}
+      />
     </div>
   );
+
 };
 
 export default MediaRoom;

@@ -894,9 +894,146 @@ const RhythmReadyOffer = () => (
 );
 
 /* ═══════════════════════════════════════════════════════════════
+   DICTIONARY PRE-SALE OFFER COMPONENT
+   ═══════════════════════════════════════════════════════════════ */
+const DictionaryPreSaleOffer = () => {
+  const handleDictCheckout = () => {
+    trackInitiateCheckout({
+      sku: 'SOE-DICTIONARY',
+      name: 'Essential Picture Dictionary ($55 Pre-Sale)',
+      price: 55.00,
+    });
+  };
+
+  return (
+    <section className="rq-offer-section rq-dict-section section" id="dictionary-presale">
+      <div id="dictionary" style={{ position: 'relative', top: '-90px', visibility: 'hidden' }} />
+      <div className="container">
+        <RevealSection className="text-center">
+          <div className="section-label">📖 Companion Vocabulary Reference · Pre-Sale</div>
+          <h2 className="section-title">
+            Essential Picture Dictionary
+            <span className="rq-offer__title-accent">4,000+ Words. 125 Scenes. $55 Pre-Sale.</span>
+          </h2>
+          <p className="section-subtitle" style={{ margin: '0 auto 2.25rem auto', maxWidth: '680px' }}>
+            The comprehensive visual companion to the Rhythm Quest universe. Built for early learners (Ages 2–7),
+            homeschoolers, and ESL families to transform auditory rhythm into rich, lasting vocabulary mastery.
+          </p>
+        </RevealSection>
+
+        <RevealSection delay={0.15}>
+          <div className="rq-offer rq-offer--dict">
+            <div className="rq-offer__includes">
+              <div className="rq-dict-tag-row">
+                <span className="rq-dict-badge">🌟 Pre-Sale Reservation</span>
+                <span className="rq-dict-subbadge">Ages 2–7 · All 7 Lands</span>
+              </div>
+              <h3 className="rq-offer__includes-title" style={{ marginTop: '0.85rem' }}>
+                What the Essential Picture Dictionary Includes
+              </h3>
+              <ul className="rq-offer__list">
+                <li className="rq-offer__item">
+                  <span className="rq-offer__tick" aria-hidden="true">✓</span>
+                  <span>
+                    <strong>4,000+ Verified Vocabulary Words.</strong> Organized across 125 thematic illustrated scenes.
+                  </span>
+                </li>
+                <li className="rq-offer__item">
+                  <span className="rq-offer__tick" aria-hidden="true">✓</span>
+                  <span>
+                    <strong>All 7 Lands &amp; 15 Hero Mentors.</strong> Contextualized in a living world with Seriphia’s guidance.
+                  </span>
+                </li>
+                <li className="rq-offer__item">
+                  <span className="rq-offer__tick" aria-hidden="true">✓</span>
+                  <span>
+                    <strong>Sound-Before-Symbol Phonetic Guides.</strong> Every single word includes pronunciation keys.
+                  </span>
+                </li>
+                <li className="rq-offer__item">
+                  <span className="rq-offer__tick" aria-hidden="true">✓</span>
+                  <span>
+                    <strong>Bilingual English &amp; Spanish (EN/ES).</strong> Culturally rich, home-language affirming design.
+                  </span>
+                </li>
+                <li className="rq-offer__item">
+                  <span className="rq-offer__tick" aria-hidden="true">✓</span>
+                  <span>
+                    <strong>Comprehensive Back Matter Mastery.</strong> Sight words, action verbs, adjectives, and ASL alphabet.
+                  </span>
+                </li>
+                <li className="rq-offer__item">
+                  <span className="rq-offer__tick" aria-hidden="true">✓</span>
+                  <span>
+                    <strong>Parent &amp; Teacher Pedagogical Guide.</strong> Visual glossary and conversation prompts.
+                  </span>
+                </li>
+                <li className="rq-offer__item">
+                  <span className="rq-offer__tick" aria-hidden="true">✓</span>
+                  <span>
+                    <strong>Instant Digital EPUB Delivery Upon Release.</strong> High-fidelity digital format readable on any device.
+                  </span>
+                </li>
+              </ul>
+
+              <p className="rq-offer__free">
+                Designed to pair seamlessly with the <strong>Rhythm Ready Workbook</strong> and <strong>19-Track Free Album</strong>.
+              </p>
+            </div>
+
+            <aside className="rq-offer__price rq-offer__price--dict">
+              <div className="rq-dict-price-badge">SAVE 30% ON PRE-SALE</div>
+              
+              <div className="rq-dict-price-wrap">
+                <span className="rq-dict-retail">$79</span>
+                <span className="rq-offer__amount">$55</span>
+              </div>
+              <span className="rq-offer__terms">limited pre-sale pricing · compare at $79</span>
+              <p className="rq-offer__math">
+                Over 4,000 words &amp; 125 scenes = <strong>~1.3¢ per illustrated word</strong>.
+              </p>
+
+              <Link
+                to="/join#contact"
+                className="btn btn-gold btn-shimmer rq-offer__buy"
+                onClick={handleDictCheckout}
+              >
+                <span>Reserve Pre-Sale Order</span>
+                <span className="rq-offer__buy-price">$55</span>
+              </Link>
+
+              <p className="rq-offer__nudge">Priority fulfillment queue · Reserved digital edition.</p>
+
+              <div className="rq-offer__guarantee">
+                <span className="rq-offer__seal" aria-hidden="true">🛡</span>
+                <span>
+                  <strong className="rq-offer__seal-title">100% Satisfaction Guarantee</strong>
+                  Honest, risk-free pre-sale reservation. Cancel or request a full refund anytime before or within 30 days of release.
+                </span>
+              </div>
+            </aside>
+          </div>
+        </RevealSection>
+      </div>
+    </section>
+  );
+};
+
+/* ═══════════════════════════════════════════════════════════════
    FAQ
    ═══════════════════════════════════════════════════════════════ */
 const faqs = [
+  {
+    id: 'dictionary-presale',
+    color: 'var(--color-gold, #FF6F00)',
+    q: 'How does the Essential Picture Dictionary pre-sale work?',
+    a: [
+      'The Essential Picture Dictionary is currently in pre-sale at a special price of $55 (compare at $79 retail — save 30%).',
+      'By reserving your pre-sale copy today, you secure priority access to the complete 4,000+ word, 125-scene digital EPUB edition as soon as the final release is live, along with all companion bonuses and future updates.',
+      'Your pre-sale is backed by our full 30-day money-back guarantee upon delivery.',
+    ],
+    chips: ['$55 Pre-Sale (Save 30%)', '4,000+ Words', 'Priority Access'],
+  },
   {
     id: 'grades',
     color: 'var(--color-orange)',
@@ -1088,8 +1225,11 @@ const RhythmQuestSale = () => {
         </div>
       </section>
 
-      {/* ═══ THE OFFER ═══ */}
+      {/* ═══ THE OFFER (WORKBOOK) ═══ */}
       <RhythmReadyOffer />
+
+      {/* ═══ COMPANION DICTIONARY PRE-SALE ═══ */}
+      <DictionaryPreSaleOffer />
 
       {/* ═══ FAQ ═══ */}
       <RhythmReadyFaq />
@@ -1120,6 +1260,7 @@ const RhythmQuestSale = () => {
               </p>
               <div className="rq-cta-actions">
                 <RqBuyLink className="btn btn-gold">Get the Workbook &amp; Curriculum — $21</RqBuyLink>
+                <a href="#dictionary-presale" className="btn btn-outline">Pre-Order Picture Dictionary — $55 ↓</a>
                 <Link to="/listen" className="btn btn-sage">Get the Free Album First</Link>
               </div>
               <div className="rq-guarantee">

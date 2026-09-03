@@ -4,7 +4,14 @@
 
 ## Project Identity
 
-**The Sound of Essentials: Rhythm Quest** is a multilingual, music-driven early childhood learning ecosystem. The companion website introduces 7 themed Lands, 15 hero characters (guided by Seriphia), and a scientifically grounded curriculum for ages 2–7.
+**The Sound of Essentials: Rhythm Quest** is an **artist collective** and sensory-first, music-driven early childhood learning ecosystem. The companion website introduces 7 themed Lands, 15 hero characters (guided and marketed by Seriphia), and a scientifically grounded curriculum for ages 2–7.
+
+**Organizational Structure & Personas:**
+- **Artist Collective:** SOE is an *artist collective* of musicians, vocalists, acoustic artisans, and educators.
+- **Founder Role (L.D. Murray):** L.D. Murray is the **Founder** in a **strategic background role**. L.D. Murray is *not* an artist, *not* a performer, and *never* front-facing on-camera/acoustic performance talent.
+- **Lead Marketer & Sovereign Guide (Seriphia):** **Seriphia** is the primary forefront persona and **Lead Marketer**. She brings wisdom to teach the early learners and inspire parents in the essentials of learning.
+- **The Heroes:** Early learners learn directly from the **15 Character Heroes** across the 7 Lands.
+- **Core Motto:** *"Staying on the path, always learning."*
 
 **Tagline:** "Designed for the developing brain — not the algorithm."
 **Target audience:** Parents, educators, and early childhood professionals.

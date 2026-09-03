@@ -81,7 +81,7 @@ const App = () => {
                 <Route path="/heroes"     element={<AnimatedPage><Heroes /></AnimatedPage>} />
                 <Route path="/science"    element={<AnimatedPage><Science /></AnimatedPage>} />
                 <Route path="/allies"    element={<AnimatedPage><AllyAnnex /></AnimatedPage>} />
-                <Route path="/dictionary" element={<AnimatedPage><DictionarySale /></AnimatedPage>} />
+                <Route path="/dictionary" element={<Navigate to="/workbook#dictionary-presale" replace />} />
                 <Route path="/workbook" element={<AnimatedPage><RhythmQuestSale /></AnimatedPage>} />
                 <Route path="/curriculum" element={<AnimatedPage><RhythmQuestSale /></AnimatedPage>} />
                 <Route path="/rhythmready" element={<AnimatedPage><RhythmQuestSale /></AnimatedPage>} />

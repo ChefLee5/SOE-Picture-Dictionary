@@ -17,11 +17,13 @@ import { triggerQuestCelebration, TiltCard, MagneticPill } from '../components/u
 import ProofInThePause from '../components/ui/ProofInThePause';
 import StickyThumbCta from '../components/ui/StickyThumbCta';
 import GiftALandModal from '../components/GiftALandModal';
+import EmailDownloadGateModal from '../components/EmailDownloadGateModal';
 import { trackLead } from '../utils/analytics';
 import { submitSoeInterest } from '../services/soeSubmissions';
-import { getDeliveryUrl } from '../utils/deliveryUrl';
+import { getDeliveryUrl, triggerBrowserDownload } from '../utils/deliveryUrl';
 import './MediaRoom.css';
 import './Listen.css';
+
 
 const STORAGE_KEY = 'soe_listen_unlocked';
 
@@ -88,9 +90,24 @@ const Listen = () => {
     }
   };
 
+  const [isDownloadGateOpen, setIsDownloadGateOpen] = useState(false);
+
+  const handleColoringBookDownloadClick = (e) => {
+    if (e) e.preventDefault();
+    const storedEmail = typeof window !== 'undefined' ? localStorage.getItem('soe_user_email') : null;
+    if (storedEmail && storedEmail.includes('@')) {
+      // Already captured email: deliver directly
+      triggerBrowserDownload(getDeliveryUrl('coloring-book'), 'SOE_Rhythm_Quest_Coloring_Book.pdf');
+    } else {
+      // Gate download: require email capture first
+      setIsDownloadGateOpen(true);
+    }
+  };
+
   const handleCopyShareLink = () => {
     setIsGiftModalOpen(true);
   };
+
 
   // ── Track data (for AudioPlayer + JSON-LD) ──────────────────
   const tracks = tracksData.map(track => ({
@@ -180,14 +197,15 @@ const Listen = () => {
                   🎧 Launch 19-Track Player →
                 </Link>
               </MagneticPill>
-              <a
-                href={getDeliveryUrl('coloring-book')}
-                download="SOE_Rhythm_Quest_Coloring_Book.pdf"
+              <button
+                type="button"
+                onClick={handleColoringBookDownloadClick}
                 className="btn btn-outline"
-                style={{ fontSize: '1rem', padding: '0.85rem 1.8rem', background: 'rgba(255, 255, 255, 0.8)' }}
+                style={{ fontSize: '1rem', padding: '0.85rem 1.8rem', background: 'rgba(255, 255, 255, 0.8)', cursor: 'pointer' }}
               >
                 🎨 Download Free Coloring Book (PDF) ↓
-              </a>
+              </button>
+
               <Link to="/rhythm-ready" className="btn btn-outline" style={{ fontSize: '1rem', padding: '0.85rem 1.8rem', background: 'rgba(255, 255, 255, 0.8)' }}>
                 📚 Rhythm Ready Workbook ($21) →
               </Link>
@@ -536,14 +554,23 @@ const Listen = () => {
         badge={isUnlocked ? '📚 Next Step in Quest' : '⚡️ Free Instant Access'}
       />
 
-      {/* ── Viral Referral Milestone Modal ── */}
-      <GiftALandModal
-        isOpen={isGiftModalOpen}
-        onClose={() => setIsGiftModalOpen(false)}
-        triggerLand={giftLand}
+      {/* ── Universal Email Download Gate Modal ── */}
+      <EmailDownloadGateModal
+        isOpen={isDownloadGateOpen}
+        onClose={() => setIsDownloadGateOpen(false)}
+        downloadItem={{
+          title: 'SOE Rhythm Quest: 40-Page Coloring Book',
+          filename: 'SOE_Rhythm_Quest_Coloring_Book.pdf',
+          url: getDeliveryUrl('coloring-book'),
+          kind: 'interest',
+        }}
+        onSuccess={() => {
+          unlock();
+        }}
       />
     </div>
   );
+
 };
 
 export default Listen;

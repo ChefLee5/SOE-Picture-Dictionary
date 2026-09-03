@@ -40,7 +40,7 @@ The curriculum spans 5 Core Domains of Essential Learning mapped across 7 Lands 
 - **`/rhythm-ready`:** Dedicated sales and curriculum breakdown for the 8-Week Rhythm Ready Workbook.
 - **`/universe`:** Interactive global sound map and explorer for the 7 Lands.
 - **`/heroes`:** Character catalog with land-based filtering and audio voice clips.
-- **`/dictionary`:** Sales and sample showcase for the Essential Picture Dictionary.
+- **`/workbook#dictionary-presale`:** Pre-sale reservation and curriculum details for the Essential Picture Dictionary ($55 Pre-Sale, 4,000+ words).
 - **`/science`:** Academic research (Dalcroze Eurhythmics, Orff Schulwerk, Kodály Method, and phonological neuroscience).
 - **`/mission`:** The founder's story, mission, and the global early learning crisis.
 - **`/allies`:** Partner and affiliate referral network.

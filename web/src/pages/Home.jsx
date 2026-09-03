@@ -690,7 +690,7 @@ const Home = () => {
           <RevealSection delay={0.2}>
             <ExpandableGallery />
             <div className="ecosystem-actions" style={{ marginTop: '2.5rem', display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <Link to="/dictionary" className="btn btn-gold btn-shimmer">
+              <Link to="/workbook#dictionary-presale" className="btn btn-gold btn-shimmer">
                 📚 Explore the Picture Dictionary ($55 Pre-Sale) →
               </Link>
               <Link to="/workbook" className="btn btn-outline">

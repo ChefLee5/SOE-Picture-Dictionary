@@ -242,8 +242,8 @@ const OrderSuccess = () => {
               <div className="order-success__ascension-price">
                 <strong>$55</strong> <span>Pre-Sale (Compare at $79)</span>
               </div>
-              <Link to="/dictionary" className="btn btn-gold">
-                View Dictionary ($55) →
+              <Link to="/workbook#dictionary-presale" className="btn btn-gold">
+                Pre-Order Dictionary ($55) →
               </Link>
             </div>
           </div>
