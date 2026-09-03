@@ -354,67 +354,6 @@ const Home = () => {
       </header>
 
       {/* ═══════════════════════════════════════════════════════
-          SECTION 3: IN-WORLD VOICES & MISSION PROOF
-      ═══════════════════════════════════════════════════════ */}
-      <section className="section voices-section glow-purple">
-        <div className="container">
-          <RevealSection className="text-center">
-            <div className="section-label">{t('home.voices.label')}</div>
-            <h2 className="section-title">{t('home.voices.title')}</h2>
-            <div className="divider divider-center" />
-          </RevealSection>
-
-          <div className="voices-grid">
-            <RevealSection delay={0.1}>
-              <div className="voice-card voice-card--featured glass-card">
-                <div className="voice-card__quote-mark">“</div>
-                <p className="voice-card__quote">{t('home.voices.seriphia_quote')}</p>
-                <div className="voice-card__author">
-                  <div className="voice-avatar voice-avatar--seriphia">
-                    <img src={assetPath('/assets/characters/SERIPHIA.webp')} alt="Seriphia" />
-                  </div>
-                  <div>
-                    <div className="voice-name">{t('home.voices.seriphia_author')}</div>
-                    <div className="voice-role">{t('home.voices.seriphia_role')}</div>
-                  </div>
-                </div>
-              </div>
-            </RevealSection>
-
-            <RevealSection delay={0.2}>
-              <div className="voice-card glass-card">
-                <div className="voice-card__quote-mark">“</div>
-                <p className="voice-card__quote">{t('home.voices.founder_quote')}</p>
-                <div className="voice-card__author">
-                  <div className="voice-avatar voice-avatar--founder">👨‍👧</div>
-                  <div>
-                    <div className="voice-name">{t('home.voices.founder_author')}</div>
-                    <div className="voice-role">{t('home.voices.founder_role')}</div>
-                  </div>
-                </div>
-              </div>
-            </RevealSection>
-
-            <RevealSection delay={0.3}>
-              <div className="voice-card glass-card">
-                <div className="voice-card__quote-mark">“</div>
-                <p className="voice-card__quote">{t('home.voices.hero_quote')}</p>
-                <div className="voice-card__author">
-                  <div className="voice-avatar voice-avatar--heroes">
-                    <img src={assetPath('/assets/characters/KENJI.webp')} alt="Kenji" />
-                  </div>
-                  <div>
-                    <div className="voice-name">{t('home.voices.hero_author')}</div>
-                    <div className="voice-role">{t('home.voices.hero_role')}</div>
-                  </div>
-                </div>
-              </div>
-            </RevealSection>
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════
           SECTION 4: THE SEVEN LAND QUEST ($19 LEAD PRODUCT)
       ═══════════════════════════════════════════════════════ */}
       <section className="section quest-feature-section glow-gold">
