@@ -72,17 +72,17 @@
             "hero_role": "Heroes of Harmonia"
         },
         "quest_offer": {
-            "label": "The 7-Week Guided Adventure",
-            "title_1": "The Seven Land",
-            "title_2": "Quest ($19)",
-            "subtitle": "The comprehensive musical quest that turns passive listening into active foundational mastery. 7 weeks, 7 worlds, 15 hero mentors.",
-            "feat_1_title": "7 Musical Lands",
-            "feat_1_desc": "From Harmonia's phonics to Celestia's rhythms of time and seasons.",
-            "feat_2_title": "400 Multisensory Activities",
-            "feat_2_desc": "Daily 10-minute rhythm blocks that build reading and cognitive readiness.",
-            "feat_3_title": "Family Quest Roadmap",
-            "feat_3_desc": "Printable adventure maps, activity sheets, and milestone certificates.",
-            "cta": "Explore The Seven Land Quest ($19) →"
+            "label": "The Illustrated Companion Storybook",
+            "title_1": "Rhythm Quest",
+            "title_2": "Storybook ($19)",
+            "subtitle": "The full-color illustrated storybook that brings the music to life. Journey with Seriphia across all 7 Lands, meet the 15 Hero Mentors, and read along with every song.",
+            "feat_1_title": "All 7 Musical Lands",
+            "feat_1_desc": "Explore each world's unique story—from Harmonia's phonics to Celestia's rhythms of time.",
+            "feat_2_title": "Full-Color Storybook Adventure",
+            "feat_2_desc": "Rich hand-crafted storybook art, character backstories, and in-world foundational lore.",
+            "feat_3_title": "Lyrics & Read-Along Sing-Alongs",
+            "feat_3_desc": "Complete lyrics, phonetic cues, and dialogue for all 19 tracks so children can read as they listen.",
+            "cta": "Get the Rhythm Quest Storybook ($19) →"
         },
         "why_label": "The Twin Crisis",
         "why_title_1": "We are turning a State of Emergency",

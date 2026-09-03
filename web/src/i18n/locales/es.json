@@ -72,17 +72,17 @@
             "hero_role": "Héroes de Harmonia"
         },
         "quest_offer": {
-            "label": "La Aventura Guiada de 7 Semanas",
-            "title_1": "The Seven Land",
-            "title_2": "Quest ($19)",
-            "subtitle": "La travesía musical completa que convierte la escucha pasiva en dominio activo de habilidades fundamentales. 7 semanas, 7 mundos, 15 héroes mentores.",
-            "feat_1_title": "7 Tierras Musicales",
-            "feat_1_desc": "Desde la fonética de Harmonia hasta los ritmos del tiempo en Celestia.",
-            "feat_2_title": "400 Actividades Multisensoriales",
-            "feat_2_desc": "Bloques diarios de ritmo de 10 minutos que desarrollan la preparación para la lectura.",
-            "feat_3_title": "Hoja de Ruta Familiar",
-            "feat_3_desc": "Mapas de aventura imprimibles, hojas de actividades y certificados de hitos.",
-            "cta": "Explorar The Seven Land Quest ($19) →"
+            "label": "El Libro de Cuentos Ilustrado",
+            "title_1": "Rhythm Quest",
+            "title_2": "Libro de Cuentos ($19)",
+            "subtitle": "El libro de cuentos ilustrado a todo color que da vida a la música. Viaja con Seriphia por las 7 Tierras, conoce a los 15 Héroes Mentores y lee junto con cada canción.",
+            "feat_1_title": "Las 7 Tierras Musicales",
+            "feat_1_desc": "Explora la historia de cada mundo, desde la fonética de Harmonia hasta los ritmos de Celestia.",
+            "feat_2_title": "Aventura Ilustrada a Todo Color",
+            "feat_2_desc": "Arte artesanal, historias de personajes y rica tradición narrativa para el aprendizaje.",
+            "feat_3_title": "Letras y Cuentos para Cantar",
+            "feat_3_desc": "Letras completas, guías fonéticas y diálogos para las 19 pistas del álbum musical.",
+            "cta": "Obtener el Libro de Cuentos ($19) →"
         },
         "why_label": "La Doble Crisis",
         "why_title_1": "Estamos transformando un Estado de Emergencia",

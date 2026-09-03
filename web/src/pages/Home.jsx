@@ -18,9 +18,8 @@ const Home = () => {
     document.title = 'The Sound of Essentials Deluxe — A Musical Learning Experience';
   }, []);
 
-  /* ── Interactive State: FAQ & Science References Accordions ── */
+  /* ── Interactive State: FAQ Accordion ── */
   const [openFaq, setOpenFaq] = useState(null);
-  const [showReferences, setShowReferences] = useState(false);
 
   const toggleFaq = (index) => {
     setOpenFaq(prev => (prev === index ? null : index));
@@ -75,74 +74,6 @@ const Home = () => {
     { name: 'Luminosity', focus: 'Advanced Language', heroes: 'Athena & Ezra', color: '#f5c43a', icon: '💡' },
     { name: 'Aquaria', focus: 'Water & Emotion', heroes: 'Nerissa & Ronan', color: '#4dd0e1', icon: '🌊' },
     { name: 'Terrasol', focus: 'Science & Nature', heroes: 'Vesta & Silas', color: '#8d6e63', icon: '🌱' },
-  ];
-
-  /* ── 8 Verified Peer-Reviewed Scientific Citations ── */
-  const citations = [
-    {
-      authors: 'Sousa, L. L., et al.',
-      year: '2022',
-      title: 'Rhythm, not melody, mediates the link between musical abilities and reading.',
-      journal: 'Nature Scientific Reports',
-      doi: '10.1038/s41598-022-22588-w',
-      finding: 'Direct empirical proof that temporal auditory discrimination mediates phonological awareness.'
-    },
-    {
-      authors: 'Niarchou, M., Gordon, R. L., et al.',
-      year: '2024',
-      title: 'Genome-wide association study of musical beat synchronization identifies 16 loci and genetic overlap with dyslexia and reading.',
-      journal: 'Nature Human Behaviour (1M+ cohort)',
-      doi: '10.1038/s41562-024-02048-x',
-      finding: 'Identified 16 shared genomic regions (including DLAT) connecting rhythm timing and language processing.'
-    },
-    {
-      authors: 'Degé, F., & Schwarzer, G.',
-      year: '2011',
-      title: 'The effect of a music program on phonological awareness in preschoolers.',
-      journal: 'Frontiers in Psychology, 2, 124',
-      doi: '10.3389/fpsyg.2011.00124',
-      finding: '20-week preschool RCT: 10 min/day of music training matched dedicated phonics programs in raising phonological gains.'
-    },
-    {
-      authors: 'Habib, M., et al.',
-      year: '2016',
-      title: 'Cognitive Musical Training (CMT) for children with dyslexia: A randomized controlled trial.',
-      journal: 'Frontiers in Psychology, 7, 26',
-      doi: '10.3389/fpsyg.2016.00026',
-      finding: 'Rhythmic-musical intervention produced durable phonological gains persisting 6+ weeks post-training.'
-    },
-    {
-      authors: 'Center on the Developing Child at Harvard University',
-      year: '2024',
-      title: 'Brain Architecture & Neural Plasticity in Early Childhood (Ages 0–7).',
-      journal: 'InBrief Research Series',
-      doi: 'developingchild.harvard.edu',
-      finding: '1 million+ new neural connections per second formed in early development; auditory pathways wire before complex reading.'
-    },
-    {
-      authors: 'National Center for Education Statistics (NCES / NAEP)',
-      year: '2024',
-      title: 'The Nation’s Report Card: 4th-Grade Reading Assessment.',
-      journal: 'U.S. Department of Education',
-      doi: 'nationsreportcard.gov/reading',
-      finding: '69% of U.S. 4th-grade students perform below proficient reading levels (only 31% proficient).'
-    },
-    {
-      authors: 'UNESCO & The World Bank',
-      year: '2024',
-      title: 'The State of Global Learning Poverty & The 44 Million Global Teacher Shortage.',
-      journal: 'UNESCO Institute for Statistics',
-      doi: 'unesco.org/gem-report',
-      finding: 'Over 300 million children in learning poverty by 2030; early self-directed audio tools bridge the teacher deficit.'
-    },
-    {
-      authors: 'Hecht, C. A., et al.',
-      year: '2023',
-      title: 'Growth-Mindset Supportive Language (GMSL) and intrinsic motivation in early learning environments.',
-      journal: 'PNAS, 120(18)',
-      doi: '10.1073/pnas.2217743120',
-      finding: 'Warm, process-oriented affirmative language builds resilience and cognitive task endurance in children.'
-    }
   ];
 
   /* ── FAQ items ── */
@@ -452,7 +383,7 @@ const Home = () => {
       </section>
 
       {/* ═══════════════════════════════════════════════════════
-          SECTION 4: THE SEVEN LAND QUEST ($19 LEAD PRODUCT)
+          SECTION 4: THE RHYTHM QUEST STORYBOOK ($19 LEAD PRODUCT)
       ═══════════════════════════════════════════════════════ */}
       <section className="section quest-feature-section glow-gold">
         <div className="container">
@@ -471,7 +402,7 @@ const Home = () => {
             <RevealSection delay={0.1} className="quest-showcase__book-col">
               <Floating3DBook
                 imageSrc="/assets/marketing/soe-album-storybook-cover.webp"
-                altText="The Sound of Essentials Rhythm Quest Storybook & Curriculum"
+                altText="The Sound of Essentials Rhythm Quest Storybook"
                 badgeText="📖 Storybook Gallery • Click to Explore"
                 to="/gallery"
               />
@@ -600,110 +531,6 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </RevealSection>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════
-          SECTION 7: CITED READING SCIENCE TRUST BLOCK
-      ═══════════════════════════════════════════════════════ */}
-      <section className="section science-trust-section glow-blue">
-        <div className="container">
-          <RevealSection className="text-center">
-            <div className="section-label">{t('home.science_trust.label')}</div>
-            <h2 className="section-title">
-              {t('home.science_trust.title_1')}{' '}
-              <span className="text-blue">{t('home.science_trust.title_2')}</span>
-            </h2>
-            <p className="section-subtitle">{t('home.science_trust.subtitle')}</p>
-            <div className="divider divider-center" />
-          </RevealSection>
-
-          {/* 4 Science Cards */}
-          <div className="science-cards-grid">
-            <RevealSection delay={0.1}>
-              <div className="glass-card science-card">
-                <span className="science-card__tag">{t('home.science_trust.card_1_tag')}</span>
-                <h3 className="science-card__title">{t('home.science_trust.card_1_title')}</h3>
-                <p className="science-card__desc">{t('home.science_trust.card_1_desc')}</p>
-              </div>
-            </RevealSection>
-
-            <RevealSection delay={0.15}>
-              <div className="glass-card science-card">
-                <span className="science-card__tag">{t('home.science_trust.card_2_tag')}</span>
-                <h3 className="science-card__title">{t('home.science_trust.card_2_title')}</h3>
-                <p className="science-card__desc">{t('home.science_trust.card_2_desc')}</p>
-              </div>
-            </RevealSection>
-
-            <RevealSection delay={0.2}>
-              <div className="glass-card science-card">
-                <span className="science-card__tag">{t('home.science_trust.card_3_tag')}</span>
-                <h3 className="science-card__title">{t('home.science_trust.card_3_title')}</h3>
-                <p className="science-card__desc">{t('home.science_trust.card_3_desc')}</p>
-              </div>
-            </RevealSection>
-
-            <RevealSection delay={0.25}>
-              <div className="glass-card science-card">
-                <span className="science-card__tag">{t('home.science_trust.card_4_tag')}</span>
-                <h3 className="science-card__title">{t('home.science_trust.card_4_title')}</h3>
-                <p className="science-card__desc">{t('home.science_trust.card_4_desc')}</p>
-              </div>
-            </RevealSection>
-          </div>
-
-          {/* Macro Crisis Statistics */}
-          <RevealSection delay={0.3}>
-            <div className="science-macro-stats glass-card">
-              <div className="macro-stats__header">
-                <h3>{t('home.science_trust.stats_title')}</h3>
-              </div>
-              <div className="macro-stats__grid">
-                <div className="macro-stat-item">
-                  <span className="macro-stat-item__val text-orange">{t('home.science_trust.stat_naep_val')}</span>
-                  <span className="macro-stat-item__lab">{t('home.science_trust.stat_naep_lab')}</span>
-                </div>
-                <div className="macro-stat-item">
-                  <span className="macro-stat-item__val text-green">{t('home.science_trust.stat_unesco_val')}</span>
-                  <span className="macro-stat-item__lab">{t('home.science_trust.stat_unesco_lab')}</span>
-                </div>
-                <div className="macro-stat-item">
-                  <span className="macro-stat-item__val text-purple">{t('home.science_trust.stat_teachers_val')}</span>
-                  <span className="macro-stat-item__lab">{t('home.science_trust.stat_teachers_lab')}</span>
-                </div>
-              </div>
-            </div>
-          </RevealSection>
-
-          {/* Expandable References Accordion */}
-          <RevealSection delay={0.35} className="text-center">
-            <button 
-              className="btn btn-outline btn-sm science-citations-toggle"
-              onClick={() => setShowReferences(prev => !prev)}
-              aria-expanded={showReferences}
-            >
-              {showReferences ? t('home.science_trust.accordion_btn_close') : t('home.science_trust.accordion_btn_open')}
-            </button>
-
-            {showReferences && (
-              <div className="science-references-panel glass-card animate-fade-in">
-                <h4 className="science-references-title">Peer-Reviewed Bibliography & Reference Index</h4>
-                <div className="science-references-list">
-                  {citations.map((cite, idx) => (
-                    <div key={idx} className="reference-item">
-                      <div className="reference-header">
-                        <strong>{cite.authors} ({cite.year})</strong> — <em>{cite.title}</em>
-                      </div>
-                      <div className="reference-journal">{cite.journal}</div>
-                      <div className="reference-finding">“{cite.finding}”</div>
-                      <div className="reference-doi">DOI: <span className="mono-text">{cite.doi}</span></div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
           </RevealSection>
         </div>
       </section>
@@ -2023,86 +1850,6 @@ const Home = () => {
           flex-shrink: 0;
           align-items: center;
         }
-
-        .science-macro-stats {
-          margin-top: 2.5rem;
-          padding: 2.25rem;
-          text-align: center;
-          border-radius: var(--radius-xl);
-          background: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.80));
-          border: 1.5px solid rgba(255, 255, 255, 0.85);
-          box-shadow: inset 0 1.5px 1.5px 0 rgba(255, 255, 255, 0.9), 0 8px 28px -4px rgba(0, 0, 0, 0.06);
-          backdrop-filter: blur(16px) saturate(160%);
-          -webkit-backdrop-filter: blur(16px) saturate(160%);
-        }
-
-        .macro-stats__header h3 {
-          font-size: 1.15rem;
-          margin-bottom: 1.5rem;
-          color: var(--color-text-primary);
-        }
-
-        .macro-stats__grid {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 1.5rem;
-        }
-
-        .macro-stat-item {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 0.4rem;
-        }
-
-        .macro-stat-item__val {
-          font-family: var(--font-heading);
-          font-size: 3rem;
-          font-weight: 700;
-          line-height: 1;
-        }
-
-        .macro-stat-item__lab {
-          font-size: 0.88rem;
-          color: var(--color-text-secondary);
-          max-width: 240px;
-          line-height: 1.4;
-        }
-
-        .science-citations-toggle {
-          margin-top: 2rem;
-        }
-
-        .science-references-panel {
-          margin-top: 1.5rem;
-          padding: 2rem;
-          text-align: left;
-          background: rgba(255, 255, 255, 0.95);
-        }
-
-        .science-references-title {
-          font-size: 1.1rem;
-          margin-bottom: 1.5rem;
-          color: var(--color-text-primary);
-        }
-
-        .science-references-list {
-          display: grid;
-          gap: 1.25rem;
-        }
-
-        .reference-item {
-          padding-bottom: 1rem;
-          border-bottom: 1px solid var(--color-border);
-          font-size: 0.88rem;
-          line-height: 1.5;
-        }
-
-        .reference-header { color: var(--color-text-primary); }
-        .reference-journal { color: var(--color-blue); font-weight: 600; font-size: 0.82rem; margin: 0.2rem 0; }
-        .reference-finding { color: var(--color-text-secondary); font-style: italic; margin-bottom: 0.2rem; }
-        .reference-doi { font-size: 0.78rem; color: var(--color-text-muted); }
-        .mono-text { font-family: monospace; }
 
         /* ── SECTION 9: Comparison Table ── */
         .comparison-table-wrap {
