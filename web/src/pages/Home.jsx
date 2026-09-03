@@ -152,8 +152,17 @@ const Home = () => {
                   <span className="hero__badge">✨ {t('home.hero_offer.eyebrow')}</span>
                 </div>
                 <h1 className="hero__title">
-                  {t('home.hero_offer.title_main')}{' '}
-                  <span className="hero__title-accent">{t('home.hero_offer.title_highlight')}</span>
+                  <span className="hero__title-text">{t('home.hero_offer.title_main')}</span>
+                  <span className="hero__sticker-wrap" title="Free Today!">
+                    <img
+                      src={assetPath('/assets/stickers/free-today-sticker.webp')}
+                      alt={t('home.hero_offer.title_highlight') ? t('home.hero_offer.title_highlight').replace(/[()]/g, '') : 'Free Today!'}
+                      className="hero__sticker-img"
+                      width="180"
+                      height="145"
+                      loading="eager"
+                    />
+                  </span>
                 </h1>
                 <p className="section-subtitle hero__subtitle">{t('home.hero_offer.subtitle')}</p>
 
@@ -1153,10 +1162,64 @@ const Home = () => {
         }
 
         .hero__title {
-          font-size: clamp(2.4rem, 4.5vw, 3.6rem);
-          line-height: 1.15;
-          margin-bottom: 1rem;
+          font-size: clamp(2.3rem, 4.2vw, 3.4rem);
+          line-height: 1.18;
+          margin-bottom: 1.25rem;
           font-weight: 700;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 0.6rem 1rem;
+        }
+
+        .hero__title-text {
+          display: inline;
+        }
+
+        .hero__sticker-wrap {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          vertical-align: middle;
+          flex-shrink: 0;
+        }
+
+        .hero__sticker-img {
+          width: clamp(140px, 16vw, 195px);
+          height: auto;
+          display: block;
+          transform: rotate(-3.5deg);
+          filter: drop-shadow(0 10px 22px rgba(255, 111, 0, 0.32)) drop-shadow(0 2px 6px rgba(0, 0, 0, 0.12));
+          transition: transform 0.38s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.38s ease;
+          user-select: none;
+          cursor: pointer;
+          will-change: transform;
+          animation: sticker-pop-in 0.65s cubic-bezier(0.34, 1.56, 0.64, 1) 0.15s backwards;
+        }
+
+        .hero__sticker-img:hover {
+          transform: rotate(2deg) scale(1.08) translateY(-4px);
+          filter: drop-shadow(0 16px 30px rgba(255, 111, 0, 0.45)) drop-shadow(0 5px 12px rgba(0, 0, 0, 0.16));
+        }
+
+        .hero__sticker-img:active {
+          transform: rotate(-1deg) scale(0.96);
+          transition: transform 0.08s ease-out;
+        }
+
+        @keyframes sticker-pop-in {
+          0% {
+            opacity: 0;
+            transform: scale(0.6) rotate(-14deg);
+          }
+          70% {
+            transform: scale(1.06) rotate(1.5deg);
+          }
+          100% {
+            opacity: 1;
+            transform: scale(1) rotate(-3.5deg);
+          }
         }
 
         .hero__title-accent {
@@ -2180,6 +2243,12 @@ const Home = () => {
         }
 
         @media (max-width: 480px) {
+          .hero__title {
+            gap: 0.4rem 0.6rem;
+          }
+          .hero__sticker-img {
+            width: clamp(130px, 42vw, 165px);
+          }
           .hero__actions {
             flex-direction: column;
             width: 100%;
