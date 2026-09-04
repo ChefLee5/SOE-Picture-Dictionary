@@ -48,7 +48,7 @@ const NavbarV2 = () => {
         />
         <div className="v2-nav__brand-text">
           THE SOUND OF ESSENTIALS
-          <span>RHYTHM QUEST</span>
+          <span>A MUSICAL LEARNING EXPERIENCE</span>
         </div>
       </Link>
 

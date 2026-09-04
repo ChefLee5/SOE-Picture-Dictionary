@@ -63,7 +63,7 @@ const Navbar = () => {
         </div>
         <span className="navbar__logo-wordmark">
           <span className="navbar__logo-soe">The Sound of Essentials</span>
-          <span className="navbar__logo-sub">Rhythm Quest</span>
+          <span className="navbar__logo-sub">A Musical Learning Experience</span>
           <span className="navbar__logo-shine" aria-hidden="true" />
         </span>
       </Link>
@@ -228,14 +228,15 @@ const Navbar = () => {
 
         .navbar__logo-sub {
           font-family: var(--font-display);
-          font-weight: 500;
-          font-size: 0.65rem;
-          letter-spacing: 0.04em;
+          font-weight: 600;
+          font-size: 0.58rem;
+          letter-spacing: 0.025em;
           background: linear-gradient(90deg, var(--color-green), var(--color-blue));
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
           text-transform: uppercase;
+          white-space: nowrap;
         }
 
         /* ── Shimmer sweep across wordmark ── */
