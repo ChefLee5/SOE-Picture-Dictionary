@@ -1230,8 +1230,9 @@ const Home = () => {
           margin: 0 0 1.75rem 0;
           text-align: left;
           max-width: 620px;
-          font-size: 1.1rem;
-          line-height: 1.6;
+          font-size: clamp(1.2rem, 2vw, 1.4rem);
+          line-height: 1.55;
+          letter-spacing: 0.015em;
         }
 
         /* Hero Offer Card */
