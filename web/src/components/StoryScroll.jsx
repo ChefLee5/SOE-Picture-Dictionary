@@ -157,13 +157,15 @@ const StoryScroll = ({
           font-weight: 700;
           text-transform: uppercase;
           letter-spacing: 0.2em;
+          color: inherit;
         }
 
         .flow-section__divider {
           border: none;
           height: 1px;
           margin: 2vw 0;
-          opacity: 0.4;
+          opacity: 0.35;
+          background-color: currentColor;
         }
 
         .flow-section__headline {
@@ -173,6 +175,7 @@ const StoryScroll = ({
           line-height: 0.88;
           text-transform: uppercase;
           letter-spacing: -0.03em;
+          color: inherit;
         }
 
         .flow-section__body {
@@ -181,6 +184,7 @@ const StoryScroll = ({
           font-size: clamp(1rem, 2.2vw, 1.6rem);
           font-weight: 400;
           line-height: 1.65;
+          color: inherit;
         }
 
         .flow-section__body--right {
@@ -207,13 +211,15 @@ const StoryScroll = ({
           text-transform: uppercase;
           letter-spacing: 0.12em;
           margin-bottom: 0.5rem;
+          color: inherit;
         }
 
         .flow-column__text {
           font-family: var(--font-body);
           font-size: clamp(0.85rem, 1.3vw, 1rem);
           line-height: 1.65;
-          opacity: 0.75;
+          opacity: 0.85;
+          color: inherit;
         }
 
         /* ── Responsive ── */

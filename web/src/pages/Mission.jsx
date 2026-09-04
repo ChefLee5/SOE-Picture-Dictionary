@@ -215,7 +215,7 @@ const Mission = () => {
               {/* ── 01: THE ORIGIN ── */}
               <FlowSection aria-label="The Origin" style={{ backgroundColor: '#FF6F00', color: '#fff' }}>
                 <p className="flow-section__label">01 — The Origin</p>
-                <hr className="flow-section__divider" style={{ borderColor: 'rgba(0,0,0,0.3)' }} />
+                <hr className="flow-section__divider" style={{ borderColor: 'rgba(255, 255, 255, 0.35)' }} />
                 <div>
                   <h2 className="flow-section__headline">
                     They<br />
@@ -224,7 +224,7 @@ const Mission = () => {
                     Essential
                   </h2>
                 </div>
-                <hr className="flow-section__divider" style={{ borderColor: 'rgba(0,0,0,0.3)' }} />
+                <hr className="flow-section__divider" style={{ borderColor: 'rgba(255, 255, 255, 0.35)' }} />
                 <p className="flow-section__body">
                   When the world shut down, they told our children that music was "non-essential."
                   That art could wait. That movement wasn't a priority.
@@ -309,7 +309,7 @@ const Mission = () => {
               {/* ── 03: THE RESPONSE ── */}
               <FlowSection aria-label="The Response" style={{ backgroundColor: '#4CAF50', color: '#fff' }}>
                 <p className="flow-section__label">03 — The Response</p>
-                <hr className="flow-section__divider" style={{ borderColor: 'rgba(0,0,0,0.25)' }} />
+                <hr className="flow-section__divider" style={{ borderColor: 'rgba(255, 255, 255, 0.3)' }} />
                 <div>
                   <h2 className="flow-section__headline">
                     Handcrafted.<br />
@@ -317,13 +317,13 @@ const Mission = () => {
                     Generated.
                   </h2>
                 </div>
-                <hr className="flow-section__divider" style={{ borderColor: 'rgba(0,0,0,0.25)' }} />
+                <hr className="flow-section__divider" style={{ borderColor: 'rgba(255, 255, 255, 0.3)' }} />
                 <p className="flow-section__body">
                   The Sound of Essentials wasn't designed by an algorithm.
                   It was built the old way — by hand, by heart, by a father
                   who measured his children's needs and cut the curriculum to fit.
                 </p>
-                <hr className="flow-section__divider" style={{ borderColor: 'rgba(0,0,0,0.25)' }} />
+                <hr className="flow-section__divider" style={{ borderColor: 'rgba(255, 255, 255, 0.3)' }} />
                 <div className="flow-columns">
                   <div className="flow-column">
                     <p className="flow-column__title">19 Songs</p>
@@ -346,7 +346,7 @@ const Mission = () => {
                     </p>
                   </div>
                 </div>
-                <hr className="flow-section__divider" style={{ borderColor: 'rgba(0,0,0,0.25)' }} />
+                <hr className="flow-section__divider" style={{ borderColor: 'rgba(255, 255, 255, 0.3)' }} />
                 <div className="flow-columns">
                   <div className="flow-column">
                     <p className="flow-column__title">15 Heroes</p>
