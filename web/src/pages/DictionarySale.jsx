@@ -434,7 +434,7 @@ const DictionarySale = () => {
                 4,000+ words. 7 Lands. 15 heroes. One incredible journey.
                 <br />
                 <span style={{ color: 'var(--color-green)', fontWeight: 600 }}>
-                  Crafted by a father's heart and mother's love.
+                  Crafted by a father's heart and a mother's love.
                 </span>
               </p>
               <div className="dict-cta-actions">

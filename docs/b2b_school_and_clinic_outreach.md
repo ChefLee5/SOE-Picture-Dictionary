@@ -45,7 +45,7 @@ flowchart LR
 >
 > **The Sound of Essentials: Rhythm Quest** was engineered to solve that exact challenge.
 >
-> Built by an educator and father, it is a complete, neuro-affirming early childhood system spanning 7 developmental domains: language, counting, movement, science, time, emotional regulation, and advanced vocabulary. Nineteen original orchestral tracks, a 4,000+ word illustrated Picture Dictionary, and a structured daily workbook—all designed to run effortlessly with your existing classroom teachers.
+> Crafted by a father's heart and a mother's love with an experienced educator, it is a complete, neuro-affirming early childhood system spanning 7 developmental domains: language, counting, movement, science, time, emotional regulation, and advanced vocabulary. Nineteen original orchestral tracks, a 4,000+ word illustrated Picture Dictionary, and a structured daily workbook—all designed to run effortlessly with your existing classroom teachers.
 >
 > **Why preschool directors are adopting Rhythm Quest:**
 > - **"Teacher-in-a-Box" Delivery:** No specialist music background required for classroom teachers.

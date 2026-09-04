@@ -105,7 +105,7 @@ All primary text hooks are strictly engineered to front-load the punchline withi
 * **Asset File:** `Ad7_Before_After_Bridge.png`
 * **Cultural Delta:** Δ1 (Screen vs. Sensory)
 * **Headline:** Screen Time You Won't Feel Bad About
-* **Description:** 100% Free • No Credit Card
+* **Description:** 100% Free • Instant Access
 * **CTA Button:** `LISTEN_NOW`
 * **Destination URL:** `https://thesoundofessentials.com/listen?utm_source=meta&utm_medium=paid_social&utm_campaign=cold_delta1&utm_content=ad7_before_after`
 
@@ -139,7 +139,7 @@ All primary text hooks are strictly engineered to front-load the punchline withi
 * **Hook A (Classroom Injustice):**
   > They called music "non-essential" because it wasn't on the standardized test. (76 chars)
   >
-  > So a father sat down and built what the schools took away.
+  > So, guided by a father's heart and a mother's love, they sat down and built what the schools took away.
   >
   > 19 songs. 7 developmental lands. 15 hero mentors. A complete early learning curriculum where music and literacy are the exact same lesson.
   >
@@ -173,7 +173,7 @@ All primary text hooks are strictly engineered to front-load the punchline withi
 * **Asset File:** `Ad5_The_Name.png`
 * **Cultural Delta:** Δ4 (Institution vs. Sanctuary)
 * **Headline:** Built for Brains, Not Algorithms
-* **Description:** A father's mission for kids
+* **Description:** A parent's mission for kids
 * **CTA Button:** `LISTEN_NOW`
 * **Destination URL:** `https://thesoundofessentials.com/listen?utm_source=meta&utm_medium=paid_social&utm_campaign=cold_delta4&utm_content=ad5_the_name`
 
@@ -253,7 +253,7 @@ All primary text hooks are strictly engineered to front-load the punchline withi
 * **Hook A (Zero Friction):**
   > Unlock all 19 tracks of the Deluxe Rhythm Quest album + printable coloring sheets for free. (90 chars)
   >
-  > No subscription. No credit card required. Just rich, beautiful learning music for your family.
+  > No subscription required. Just rich, beautiful learning music for your family.
   >
   > Tap below for instant access.
 

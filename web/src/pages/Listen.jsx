@@ -550,7 +550,7 @@ const Listen = () => {
       <StickyThumbCta
         targetUrl={isUnlocked ? '/rhythm-ready' : '#optin'}
         label={isUnlocked ? '📚 Get Rhythm Ready Workbook ($21) →' : '🎧 Unlock 19 Tracks Free →'}
-        subtext={isUnlocked ? '40 guided daily lessons across all 7 Lands' : '100% Free • No Credit Card Required'}
+        subtext={isUnlocked ? '40 guided daily lessons across all 7 Lands' : '100% Free • Instant Access'}
         badge={isUnlocked ? '📚 Next Step in Quest' : '⚡️ Free Instant Access'}
       />
 

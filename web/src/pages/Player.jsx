@@ -232,7 +232,7 @@ const Player = () => {
 
 
                 <div className="player-gate-footer">
-                  <span>🔒 No credit card required</span>
+                  <span>🔒 Instant Access</span>
                   <span>•</span>
                   <span>⚡️ Instant browser streaming</span>
                   <span>•</span>

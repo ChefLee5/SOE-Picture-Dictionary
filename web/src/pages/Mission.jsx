@@ -228,8 +228,8 @@ const Mission = () => {
                 <p className="flow-section__body">
                   When the world shut down, they told our children that music was "non-essential."
                   That art could wait. That movement wasn't a priority.
-                  A father looked at his own children and knew — they were wrong.
-                  So he built the answer from scratch.
+                  Guided by a father's heart and a mother's love, they looked at their own children and knew — they were wrong.
+                  So they built the answer from scratch.
                 </p>
               </FlowSection>
 
@@ -320,8 +320,8 @@ const Mission = () => {
                 <hr className="flow-section__divider" style={{ borderColor: 'rgba(255, 255, 255, 0.3)' }} />
                 <p className="flow-section__body">
                   The Sound of Essentials wasn't designed by an algorithm.
-                  It was built the old way — by hand, by heart, by a father
-                  who measured his children's needs and cut the curriculum to fit.
+                  It was built the old way — by hand, by heart, crafted by a father's heart and a mother's love,
+                  measuring their children's needs and cutting the curriculum to fit.
                 </p>
                 <hr className="flow-section__divider" style={{ borderColor: 'rgba(255, 255, 255, 0.3)' }} />
                 <div className="flow-columns">

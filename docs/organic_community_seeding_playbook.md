@@ -51,9 +51,9 @@ flowchart TD
 >
 > It broke my heart. Music isn't an elective for a 4-year-old—it's the neurological foundation of how their brain learns to count, hear phonics, and calm down.
 >
-> So as a father, I spent months building what the schools took away. I created **The Sound of Essentials: Rhythm Quest**—19 original songs covering phonics, math, science, movement, and emotional regulation across 7 imaginary lands.
+> So, guided by a father's heart and a mother's love, we spent months building what the schools took away. I created **The Sound of Essentials: Rhythm Quest**—19 original songs covering phonics, math, science, movement, and emotional regulation across 7 imaginary lands.
 >
-> We just made the entire 19-track album completely free for homeschool families (no credit card or paid trial required). If you need something calming and educational for circle time or car rides:
+> We just made the entire 19-track album completely free for homeschool families (instant access, no paid trial required). If you need something calming and educational for circle time or car rides:
 >
 > 👉 You can stream and download all 19 tracks here: `thesoundofessentials.com/listen`
 >

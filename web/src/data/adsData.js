@@ -17,7 +17,7 @@ Then they found The Sound of Essentials: Rhythm Quest, a music-driven learning u
 
 It offers children a calm sanctuary where music brings foundational learning to life, crafted with care by parents who lived the same struggle.
 
-🎵 Listen free below. No credit card, no spam.`,
+🎵 Listen free below. Instant access, no spam.`,
     headline: 'A Musical Sanctuary for Young Minds',
     description: 'Free songs + coloring pages',
     cta: 'LISTEN_NOW',
@@ -132,7 +132,7 @@ Then my four-year-old started skip-counting with Octavia and Kwame in Numeria.
 
 Soon after, she described animal habitats she learned from Silas and Vesta in Terrasol, followed by the French lyrics to Le Cheval from Harmonia.
 
-The Sound of Essentials spans 7 Lands, 15 hero characters, and 19 original songs built on early childhood neuroscience for ages 2 to 7. A father built this from scratch because existing children's media fell short.
+The Sound of Essentials spans 7 Lands, 15 hero characters, and 19 original songs built on early childhood neuroscience for ages 2 to 7. Crafted by a father's heart and a mother's love because existing children's media fell short.
 
 It proved me wrong in the best way.
 
@@ -340,7 +340,7 @@ The full 19-track Sound of Essentials album is streaming free today.
 
 🎵 Start your family's access while the developmental window is open.`,
     headline: '19 Songs. 7 Worlds. 100% Free.',
-    description: 'No credit card required.',
+    description: 'Instant access for families.',
     cta: 'LISTEN_NOW',
     url: 'https://thesoundofessentials.com/listen?utm_source=meta&utm_medium=paid_social&utm_campaign=cold_delta2&utm_content=ad15_urgency',
   },
@@ -388,7 +388,7 @@ Seven Lands, 19 songs, and free streaming for ages 2 to 7.
 
 🎵 Begin with Step 1 below.`,
     headline: 'Unlock the Full Rhythm Quest 🎵',
-    description: 'No credit card required.',
+    description: 'Instant access for families.',
     cta: 'LISTEN_NOW',
     url: 'https://thesoundofessentials.com/listen?utm_source=meta&utm_medium=paid_social&utm_campaign=cold_delta5&utm_content=ad17_micro_commitment',
   },
@@ -401,11 +401,11 @@ Seven Lands, 19 songs, and free streaming for ages 2 to 7.
     delta: 'Δ3: Algorithm vs. Handcrafted',
     audience: 'Educational Innovators',
     image: '/assets/marketing/meta-ads/ad06_holographic_universe.jpg',
-    primaryText: `A father spent four years creating an early learning world that surprises parents when they first hear it.
+    primaryText: `Crafted by a father's heart and a mother's love over four years of devotion to create an early learning world that surprises parents when they first hear it.
 
 Seven Lands, 15 hero characters, 19 original songs in 3 languages, 125 illustrated scenes, and 4,000+ vocabulary words in the companion dictionary create a complete early curriculum for ages 2 to 7.
 
-Built independently for his own family, it is now shared freely with homes and classrooms worldwide.
+Built independently for their own family, it is now shared freely with homes and classrooms worldwide.
 
 🎵 Discover the music and stories with the link below.`,
     headline: 'A Social Enterprise for Kids',
@@ -447,7 +447,7 @@ Nineteen songs across 7 Lands, streaming free for ages 2 to 7.
     image: '/assets/marketing/meta-ads/ad_press_conference_world_map.jpg',
     primaryText: `Day 1: School music and art budgets face cuts.
 Day 100: Dedicated creative time disappears from classrooms.
-Day 365: A father completes an independent early learning music curriculum.
+Day 365: Guided by a father's heart and a mother's love, an independent early learning music curriculum is completed.
 Day 400: Over 1,000 families bring acoustic rhythm into their morning routines.
 Today: Your child can start listening in seconds.
 
@@ -470,7 +470,7 @@ The young mind grows rapidly during these formative years. Built for ages 2 to 7
     image: '/assets/marketing/meta-ads/ad_seriphia_floating_sanctuary.jpg',
     primaryText: `When school systems called arts education non-essential, we built The Sound of Essentials.
 
-Neuroscience demonstrates that rhythm, vocal melody, and physical movement form the core of early literacy and numeracy. A father created this curriculum to restore what schools removed.
+Neuroscience demonstrates that rhythm, vocal melody, and physical movement form the core of early literacy and numeracy. Crafted by a father's heart and a mother's love, this curriculum was created to restore what schools removed.
 
 Nineteen original songs, 7 Lands, and 15 hero mentors built for ages 2 to 7.
 
@@ -675,7 +675,7 @@ Nineteen original tracks, streaming free today.
 
 A child who moves to rhythm, trusts their curiosity, and approaches learning with confidence.
 
-The Sound of Essentials: Rhythm Quest supports families who believe early childhood deserves song, wonder, and meaningful connection. Crafted with a father's heart and mother's love.
+The Sound of Essentials: Rhythm Quest supports families who believe early childhood deserves song, wonder, and meaningful connection. Crafted by a father's heart and a mother's love.
 
 Nineteen songs, 7 Lands, and 15 hero guides, free for every family.
 

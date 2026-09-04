@@ -10,7 +10,7 @@ import './StickyThumbCta.css';
 export const StickyThumbCta = ({
   targetUrl = '#optin',
   label = '🎧 Unlock 19 Tracks Free →',
-  subtext = '100% Free • No Credit Card Required',
+  subtext = '100% Free • Instant Access',
   badge = '⚡️ Instant Access',
   onClick,
   isExternal = false,

@@ -64,7 +64,7 @@
             "seriphia_quote": "Bienvenue, jeune explorateur. Le chemin du son commence ici. Écoute attentivement, bouge en rythme et regarde le monde se révéler.",
             "seriphia_author": "Seriphia",
             "seriphia_role": "Gardienne du Son",
-            "founder_quote": "Conçu par un père ayant vécu la crise des apprentissages précoces et bâti la solution avec dévouement. 15 années de passion.",
+            "founder_quote": "Façonné par le cœur d'un père et l'amour d'une mère, né de la crise des apprentissages précoces et bâti avec un dévouement absolu. 15 années de passion.",
             "founder_author": "Lee Murphy",
             "founder_role": "Fondateur & Premier Auditeur",
             "hero_quote": "Dans Harmonia, chaque rythme est un mot qui attend d'être découvert. Le langage commence dans l'oreille.",
@@ -125,7 +125,7 @@
             }
         },
         "credibility": {
-            "quote": "Bâti par un père confronté au problème. Fondé sur la science de l'apprentissage des enfants.",
+            "quote": "Façonné par le cœur d'un père et l'amour d'une mère. Fondé sur la science des apprentissages réels des enfants.",
             "sub": "Aucun capital-risque. Aucun piège algorithmique à dopamine. Uniquement des beaux-arts artisanaux et une science cognitive validée."
         },
         "science_trust": {
@@ -176,7 +176,7 @@
             "row_4_soe": "100% Sans Pub, Zéro Traçage de Données",
             "row_4_algo": "Traçage comportemental et incitations d'achats in-app",
             "row_5_title": "Origine & Artisanat",
-            "row_5_soe": "Créé par un père avec d'authentiques beaux-arts",
+            "row_5_soe": "Façonné par le cœur d'un père et l'amour d'une mère, avec de véritables beaux-arts",
             "row_5_algo": "Optimisation automatisée de fermes de contenu"
         },
         "faq": {

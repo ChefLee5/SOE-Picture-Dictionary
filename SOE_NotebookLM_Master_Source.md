@@ -20,7 +20,7 @@ Before a child can decode an abstract visual symbol (the letter 'A' or numeral '
 - **Primary Tagline:** *"Staying on the path, always learning"*
 - **Secondary Tagline:** *"Designed for the developing brain — not the algorithm."*
 - **Brand Proof Line:** *"They called music 'non-essential.' We called it The Sound of Essentials."*
-- **Emotional Anchor:** *"Crafted by a father's heart and mother's love."*
+- **Emotional Anchor:** *"Crafted by a father's heart and a mother's love."*
 - **Tone Spectrum:** Warm, authoritative, calm, poetic, neuro-affirming.
 
 ---

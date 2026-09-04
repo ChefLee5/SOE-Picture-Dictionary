@@ -10,7 +10,7 @@
 
 | Day | Timing | Cultural Delta | Core Narrative Angle | Target CTA |
 |---|---|---|---|---|
-| **Day 1** | Immediate (+1 hr) | Δ4 (Institution vs. Sanctuary) | The Origin Story: Why a Father Built the Anti-Algorithm | Access 19 Tracks + Intro to Workbook ($21) |
+| **Day 1** | Immediate (+1 hr) | Δ4 (Institution vs. Sanctuary) | The Origin Story: Crafted by a Father's Heart and a Mother's Love | Access 19 Tracks + Intro to Workbook ($21) |
 | **Day 2** | Day 2 (+24 hrs) | Δ1 (Screen vs. Sensory) | The Sensory Dilemma: Why Flashing Screens Halt Real Phonics | Explore Rhythm Ready Phonics ($21) |
 | **Day 3** | Day 3 (+48 hrs) | Δ3 (Algorithm vs. Handcrafted) | Sound-Before-Symbol: Meet Kenji & Aiko in Harmonia | Try Track 1 Lesson + Workbook |
 | **Day 4** | Day 4 (+72 hrs) | Δ2 (Testing vs. Arts) | Why We Mapped Early Learning Into 7 Living Lands | The 7-Land Storybook & Dictionary |
@@ -22,7 +22,7 @@
 
 * **Send Trigger:** Immediate upon `/listen` email confirmation
 * **From:** Lee @ The Sound of Essentials `<info@soelearn.com>`
-* **Subject A (Primary):** A father built this for his kids. Then for yours.
+* **Subject A (Primary):** Crafted by a father's heart and a mother's love for our kids. Then for yours.
 * **Subject B (A/B Test):** Your music is ready, and there's a story behind it.
 * **Preview Text:** It started with a classroom that stopped singing.
 * **Primary CTA:** Start the 8-Week Quest ($21)
@@ -144,7 +144,7 @@ Warmly,
 * **From:** Lee @ The Sound of Essentials `<info@soelearn.com>`
 * **Subject A:** 4,000+ words. 7 Lands. One living curriculum.
 * **Subject B:** Why we mapped early childhood into 7 worlds
-* **Preview Text:** A vocabulary journey crafted by a father's heart and mother's love.
+* **Preview Text:** A vocabulary journey crafted by a father's heart and a mother's love.
 * **Primary CTA:** Explore The Essential Picture Dictionary
 * **CTA Link:** `https://thesoundofessentials.com/dictionary?utm_source=email&utm_medium=nurture&utm_campaign=day4_dictionary`
 

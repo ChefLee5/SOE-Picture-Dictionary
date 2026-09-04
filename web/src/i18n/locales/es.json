@@ -64,7 +64,7 @@
             "seriphia_quote": "Bienvenido, joven explorador. El sendero del sonido comienza aquí. Escucha con atención, muévete con el ritmo y observa cómo se revela el mundo.",
             "seriphia_author": "Seriphia",
             "seriphia_role": "Guardiana del Sonido",
-            "founder_quote": "Construido por un padre que vivió la crisis del aprendizaje temprano y creó la solución con devoción total. 15 años de dedicación.",
+            "founder_quote": "Forjado por el corazón de un padre y el amor de una madre, nacido de vivir la crisis del aprendizaje temprano y creado con devoción total. 15 años de dedicación.",
             "founder_author": "Lee Murphy",
             "founder_role": "Fundador y Primer Oyente",
             "hero_quote": "En Harmonia, cada ritmo es una palabra esperando a ser descubierta. El lenguaje comienza en el oído.",
@@ -125,7 +125,7 @@
             }
         },
         "credibility": {
-            "quote": "Construido por un padre que vivió el problema. Respaldado por la ciencia de cómo aprenden los niños.",
+            "quote": "Forjado por el corazón de un padre y el amor de una madre. Respaldado por la ciencia de cómo aprenden realmente los niños.",
             "sub": "Sin capital de riesgo. Sin trampas algorítmicas de dopamina. Solo bellas artes artesanales y ciencia cognitiva verificada."
         },
         "science_trust": {
@@ -176,7 +176,7 @@
             "row_4_soe": "100% Libre de Anuncios, Cero Rastreo de Datos",
             "row_4_algo": "Rastreo de comportamiento y compras dentro de la app",
             "row_5_title": "Origen y Artesanía",
-            "row_5_soe": "Creado por un padre con auténticas bellas artes",
+            "row_5_soe": "Forjado por el corazón de un padre y el amor de una madre, con bellas artes auténticas",
             "row_5_algo": "Optimización automatizada de granjas de contenido"
         },
         "faq": {

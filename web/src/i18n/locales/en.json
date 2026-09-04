@@ -64,7 +64,7 @@
             "seriphia_quote": "Welcome, young explorer. The path of sound begins here. Listen closely, move with the rhythm, and watch how the world reveals itself.",
             "seriphia_author": "Seriphia",
             "seriphia_role": "Guardian of the Sound",
-            "founder_quote": "Built by a father who lived the early learning crisis and built the solution with whole-heart devotion. 15 years in the making.",
+            "founder_quote": "Crafted by a father's heart and a mother's love, born from living the early learning crisis and built with whole-heart devotion. 15 years in the making.",
             "founder_author": "Lee Murphy",
             "founder_role": "Founder & First Listener",
             "hero_quote": "In Harmonia, every rhythm is a word waiting to be discovered. Language starts in the ear.",
@@ -125,7 +125,7 @@
             }
         },
         "credibility": {
-            "quote": "Built by a father who lived the problem. Backed by the science of how kids actually learn.",
+            "quote": "Crafted by a father's heart and a mother's love. Backed by the science of how kids actually learn.",
             "sub": "No venture capital. No algorithmic dopamine traps. Just scratch-made fine arts and verified cognitive science."
         },
         "science_trust": {
@@ -176,7 +176,7 @@
             "row_4_soe": "100% Ad-Free, Zero Data Tracking",
             "row_4_algo": "Behavioral tracking & in-app purchase lures",
             "row_5_title": "Craft & Origin",
-            "row_5_soe": "Father-crafted with authentic fine arts",
+            "row_5_soe": "Crafted by a father's heart and a mother's love, with authentic fine arts",
             "row_5_algo": "Automated content farm optimization"
         },
         "faq": {
