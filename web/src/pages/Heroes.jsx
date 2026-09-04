@@ -6,24 +6,6 @@ import { heroesSchema } from '../utils/schema';
 import { ShaderBackground } from '../components/ui/AnimatedShaderHero';
 import { assetPath } from '../utils/assetPath';
 
-/* ── Scene images for expanded character cards ── */
-const CHAR_SCENES = {
-  Kenji: 'pond-aiko-kenji.webp',
-  Aiko: 'pond-aiko-kenji.webp',
-  Silas: 'bubbles-vesta-silas.webp',
-  Vesta: 'bubbles-vesta-silas.webp',
-  Felix: 'creek-felix-elias.webp',
-  Amara: 'blanket-amara-octavia.webp',
-  Ezra: 'tent-ezra-athena.webp',
-  Athena: 'tent-ezra-athena.webp',
-  Kwame: 'honeycomb-kwame-selene.webp',
-  Octavia: 'kwame-counting.webp',
-  Elias: 'time-celestia.webp',
-  Selene: 'honeycomb-kwame-selene.webp',
-  Ronan: 'cubes-ronan-nerissa.webp',
-  Nerissa: 'aquaria-shore.webp',
-  Seriphia: 'seriphia-valley.webp',
-};
 
 /* ── Reveal on scroll ── */
 const RevealSection = ({ children, className = '', delay = 0 }) => {
@@ -127,14 +109,6 @@ const CharacterCard = ({ char, index, isExpanded, onToggle }) => {
 
                     {isExpanded && (
                         <div className="char-card__details animate-fade-in">
-                            {CHAR_SCENES[char.name] && (
-                                <img
-                                    src={assetPath(`/assets/scenes/${CHAR_SCENES[char.name]}`)}
-                                    alt={`${char.name} in their world`}
-                                    className="char-scene-img"
-                                    loading="lazy"
-                                />
-                            )}
                             <p className="char-card__bio">{t(`heroes.data.${char.name}.bio`)}</p>
                             <div className="char-card__traits">
                                 {char.traits.map((tId) => (
